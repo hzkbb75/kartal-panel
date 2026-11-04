@@ -23,6 +23,7 @@ warnings.filterwarnings("ignore")
 ROOT_DIR = "hektor_kutuphane"
 SIRKETLER_DIR = os.path.join(ROOT_DIR, "SIRKETLER")
 PORTFOY_DIR = os.path.join(ROOT_DIR, "PORTFOY")
+PANO_YOLU = os.path.join(PORTFOY_DIR, "index.html")
 GELEN_RAPOR_DIR = os.path.join(PORTFOY_DIR, "gelen_raporlar")
 ARSIV_RAPOR_DIR = os.path.join(PORTFOY_DIR, "arsiv_raporlar")
 
@@ -59,6 +60,17 @@ for yol in KAP_VE_TEKNIK_YOLLARI:
                 break
         except Exception as e:
             print(f"  [Uyarı] kap_ve_teknik.json okunamadı: {e}")
+
+# 3. Yerel KAP Haberleri Ambarını Yükle (Tüm BİST)
+YEREL_KAP_DOSYASI = os.path.join(ROOT_DIR, "tum_kap_haberleri.json")
+TUM_KAP_HABERLERI = {}
+if os.path.exists(YEREL_KAP_DOSYASI):
+    try:
+        with open(YEREL_KAP_DOSYASI, "r", encoding="utf-8") as f:
+            TUM_KAP_HABERLERI = json.load(f).get("kap_haberleri", {})
+            print(f"  [Bilgi] 'tum_kap_haberleri.json' başarıyla yüklendi ({len(TUM_KAP_HABERLERI)} şirket).")
+    except Exception as e:
+        print(f"  [Uyarı] tum_kap_haberleri.json okunamadı: {e}")
 
 BANKA_VE_FINANS_KODLARI = {
     "GARAN", "AKBNK", "ISCTR", "YKBNK", "VAKBN", "HALKB", "TSKB", "SKBNK",
@@ -941,7 +953,8 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
     )
 
     # KAP_VE_TEKNIK_AMBARI'ndan Gerçek Verileri Bağla
-    kap_verileri = KAP_VE_TEKNIK_AMBARI.get("kap_haberleri", {}).get(kod, [])
+    # YENİ HALİ:
+    kap_verileri = TUM_KAP_HABERLERI.get(kod) or KAP_VE_TEKNIK_AMBARI.get("kap_haberleri", {}).get(kod, [])
     teknik_veri = KAP_VE_TEKNIK_AMBARI.get("teknik_veriler", {}).get(kod, None)
 
     return {
@@ -1795,8 +1808,13 @@ def uret_portfoy_kalkani_html(tablo_verileri: list, karneler: dict, toplam_portf
 </body>
 </html>"""
 
-    pano_yolu = os.path.join(PORTFOY_DIR, "PORTFOY_Kalkani_ve_Radar.html")
-    with open(pano_yolu, "w", encoding="utf-8") as f:
+    PANO_YOLU = "index.html"
+    # 1. GitHub Pages ana sayfası için index.html
+    with open("index.html", "w", encoding="utf-8") as f:
+        f.write(html_icerik)
+
+    # 2. Yedek/eski linkleriniz için portfoy.html
+    with open("portfoy.html", "w", encoding="utf-8") as f:
         f.write(html_icerik)
 
 
@@ -2015,16 +2033,10 @@ if __name__ == "__main__":
 def github_guncelle():
     print("\n🚀 Güncel panolar GitHub Pages'e aktarılıyor...")
     try:
-        kaynak_portfoy = os.path.join(ROOT_DIR, "PORTFOY", "PORTFOY_Kalkani_ve_Radar.html")
-        hedef_portfoy = "portfoy.html"
-        if os.path.exists(kaynak_portfoy):
-            shutil.copy2(kaynak_portfoy, hedef_portfoy)
-            print("📋 Portföy Kalkanı yayına hazırlandı.")
-
         subprocess.run(["git", "add", "."], check=True)
-        subprocess.run(["git", "commit", "-m", "Oto-guncelleme: Portfoy ve Panolar (6 Sekmeli Tam Mimari)"], check=True)
+        subprocess.run(["git", "commit", "-m", "Oto-guncelleme: index.html ve panolar güncellendi"], check=True)
         subprocess.run(["git", "push", "origin", "main"], check=True)
-        print("✅ GitHub Pages başarıyla güncellendi!")
+        print("✅ GitHub Pages başarıyla güncellendi (index.html yayında)!")
     except Exception as e:
         print(f"⚠️ Git güncelleme atlandı: {e}")
 
