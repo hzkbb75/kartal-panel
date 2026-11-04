@@ -1,0 +1,21 @@
+{
+    "kod": "KRTEK",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Tekstil Entegre",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 50.6,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 4.32,
+    "aylik_degisim": -31.9,
+    "satis_milyon_tl": 2344.0,
+    "net_kar_milyon_tl": 19.0,
+    "cfo_milyon_tl": 633.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.2,
+    "nakit_dongusu_gun": 146.0,
+    "piotroski_skor": 7,
+    "sinyal": "FIRSAT ADAYI",
+    "rapor_linki": "SIRKETLER\\KRTEK\\KRTEK_Mikroskop_Raporu.html"
+}

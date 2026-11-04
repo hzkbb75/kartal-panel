@@ -1,0 +1,21 @@
+{
+    "kod": "OZGYO",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Özderici GYO",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 33.7,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 1.24,
+    "aylik_degisim": -21.0,
+    "satis_milyon_tl": 209.0,
+    "net_kar_milyon_tl": 63.0,
+    "cfo_milyon_tl": 230.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 16.0,
+    "piotroski_skor": 8,
+    "sinyal": "FIRSAT ADAYI",
+    "rapor_linki": "SIRKETLER\\OZGYO\\OZGYO_Mikroskop_Raporu.html"
+}

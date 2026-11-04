@@ -1,0 +1,21 @@
+{
+    "kod": "VKING",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Kağıt Ürünleri",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 42.0,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Aşırı Borç / Negatif EFK (61.89x), 2 Dönem Negatif Nakit Akışı (CFO < 0)",
+    "fiyat_tl": 10.5,
+    "aylik_degisim": -30.3,
+    "satis_milyon_tl": 945.0,
+    "net_kar_milyon_tl": -1222.0,
+    "cfo_milyon_tl": -421.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 61.89,
+    "nakit_dongusu_gun": 18.2,
+    "piotroski_skor": 2,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\VKING\\VKING_Mikroskop_Raporu.html"
+}

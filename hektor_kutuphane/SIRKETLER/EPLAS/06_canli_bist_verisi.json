@@ -1,0 +1,21 @@
+{
+    "kod": "EPLAS",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "İnşaat Malzemeleri",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 71.6,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%71.6)",
+    "fiyat_tl": 4.51,
+    "aylik_degisim": -12.8,
+    "satis_milyon_tl": 2645.0,
+    "net_kar_milyon_tl": -227.0,
+    "cfo_milyon_tl": -205.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.08,
+    "nakit_dongusu_gun": 5.9,
+    "piotroski_skor": 5,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\EPLAS\\EPLAS_Mikroskop_Raporu.html"
+}

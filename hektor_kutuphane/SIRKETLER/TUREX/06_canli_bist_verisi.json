@@ -1,0 +1,21 @@
+{
+    "kod": "TUREX",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Ulaştırma-Lojistik",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 37.0,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 5.1,
+    "aylik_degisim": -7.9,
+    "satis_milyon_tl": 9331.0,
+    "net_kar_milyon_tl": 717.0,
+    "cfo_milyon_tl": 1985.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 40.5,
+    "piotroski_skor": 9,
+    "sinyal": "FIRSAT ADAYI",
+    "rapor_linki": "SIRKETLER\\TUREX\\TUREX_Mikroskop_Raporu.html"
+}

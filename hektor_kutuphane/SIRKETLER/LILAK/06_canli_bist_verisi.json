@@ -1,0 +1,21 @@
+{
+    "kod": "LILAK",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Kağıt Ürünleri",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 17.0,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 17.06,
+    "aylik_degisim": -28.9,
+    "satis_milyon_tl": 16912.0,
+    "net_kar_milyon_tl": 2118.0,
+    "cfo_milyon_tl": 3648.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 117.3,
+    "piotroski_skor": 8,
+    "sinyal": "FIRSAT ADAYI",
+    "rapor_linki": "SIRKETLER\\LILAK\\LILAK_Mikroskop_Raporu.html"
+}

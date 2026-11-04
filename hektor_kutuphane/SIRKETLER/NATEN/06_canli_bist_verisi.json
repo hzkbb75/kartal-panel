@@ -1,0 +1,21 @@
+{
+    "kod": "NATEN",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Elektrik Enerji Ürt.Teçh/Tes",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 45.0,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 2.64,
+    "aylik_degisim": -33.2,
+    "satis_milyon_tl": 1892.0,
+    "net_kar_milyon_tl": -1312.0,
+    "cfo_milyon_tl": 631.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.57,
+    "nakit_dongusu_gun": 24.9,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\NATEN\\NATEN_Mikroskop_Raporu.html"
+}

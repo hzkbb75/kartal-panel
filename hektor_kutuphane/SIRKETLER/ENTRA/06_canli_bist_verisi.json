@@ -1,0 +1,21 @@
+{
+    "kod": "ENTRA",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Elektrik Üretim",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 19.8,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 4.39,
+    "aylik_degisim": 7.3,
+    "satis_milyon_tl": 4952.0,
+    "net_kar_milyon_tl": -2142.0,
+    "cfo_milyon_tl": 3769.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.27,
+    "nakit_dongusu_gun": -3.6,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\ENTRA\\ENTRA_Mikroskop_Raporu.html"
+}

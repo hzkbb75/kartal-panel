@@ -1,0 +1,21 @@
+{
+    "kod": "SARKY",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "İnşaat Malzemeleri",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 78.0,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%78.0)",
+    "fiyat_tl": 15.01,
+    "aylik_degisim": -25.9,
+    "satis_milyon_tl": 93164.0,
+    "net_kar_milyon_tl": 409.0,
+    "cfo_milyon_tl": -336.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 1.15,
+    "nakit_dongusu_gun": 50.2,
+    "piotroski_skor": 2,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\SARKY\\SARKY_Mikroskop_Raporu.html"
+}

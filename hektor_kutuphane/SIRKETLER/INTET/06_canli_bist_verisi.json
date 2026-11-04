@@ -1,0 +1,21 @@
+{
+    "kod": "INTET",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Teknoloji",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 20.9,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 41.68,
+    "aylik_degisim": -8.6,
+    "satis_milyon_tl": 2747.0,
+    "net_kar_milyon_tl": 184.0,
+    "cfo_milyon_tl": 114.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.3,
+    "nakit_dongusu_gun": 153.9,
+    "piotroski_skor": 6,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\INTET\\INTET_Mikroskop_Raporu.html"
+}

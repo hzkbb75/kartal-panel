@@ -1,0 +1,83 @@
+{
+  "kod": "KRONT",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 23.0,
+      "icr_kati": 1.61,
+      "tahakkuk_orani": 8.38,
+      "aga_orani": 0.0,
+      "ykp_orani": 4.1,
+      "dso_gun": 724.5,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.2,
+      "iliskili_orani": 0.0,
+      "dts_skor": 20,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%8.38): Kâr nakde dönüşmüyor."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 50.8,
+      "icr_kati": 2.03,
+      "tahakkuk_orani": -12.49,
+      "aga_orani": 68.5,
+      "ykp_orani": 2.4,
+      "dso_gun": 238.9,
+      "acm_makasi": -160.4,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -20,
+      "dso_delta": -485.6
+    },
+    "2026/03": {
+      "efm_yuzde": 31.4,
+      "icr_kati": 1.33,
+      "tahakkuk_orani": -17.42,
+      "aga_orani": 644.1,
+      "ykp_orani": 7.1,
+      "dso_gun": 596.6,
+      "acm_makasi": 70.4,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.5,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Alacak-Ciro makası +%70.4 açıldı (DSO: 596.6 gün).",
+        "🔴 Faiz karşılama oranı 1.33x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 30,
+      "dso_delta": 357.7
+    },
+    "2026/06": {
+      "efm_yuzde": 64.7,
+      "icr_kati": 1.25,
+      "tahakkuk_orani": -33.76,
+      "aga_orani": 133.0,
+      "ykp_orani": 13.3,
+      "dso_gun": 274.6,
+      "acm_makasi": -119.8,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.6,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 1.25x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": -322.0
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "kod": "LUKSK",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Tekstil Entegre",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 28.0,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 43.42,
+    "aylik_degisim": -32.7,
+    "satis_milyon_tl": 585.0,
+    "net_kar_milyon_tl": 49.0,
+    "cfo_milyon_tl": 104.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 147.5,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\LUKSK\\LUKSK_Mikroskop_Raporu.html"
+}

@@ -1,0 +1,21 @@
+{
+    "kod": "BMSCH",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Demir-Çelik Döküm",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 100.0,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%100.0), 2 Dönem Negatif Nakit Akışı (CFO < 0)",
+    "fiyat_tl": 7.95,
+    "aylik_degisim": -8.6,
+    "satis_milyon_tl": 2965.0,
+    "net_kar_milyon_tl": -90.0,
+    "cfo_milyon_tl": -128.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.54,
+    "nakit_dongusu_gun": 29.2,
+    "piotroski_skor": 4,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\BMSCH\\BMSCH_Mikroskop_Raporu.html"
+}

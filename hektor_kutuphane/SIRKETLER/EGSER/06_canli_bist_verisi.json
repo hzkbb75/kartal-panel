@@ -1,0 +1,21 @@
+{
+    "kod": "EGSER",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Seramik",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 34.3,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 1.91,
+    "aylik_degisim": -23.0,
+    "satis_milyon_tl": 5614.0,
+    "net_kar_milyon_tl": -1451.0,
+    "cfo_milyon_tl": -379.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 1.11,
+    "nakit_dongusu_gun": 145.6,
+    "piotroski_skor": 5,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\EGSER\\EGSER_Mikroskop_Raporu.html"
+}

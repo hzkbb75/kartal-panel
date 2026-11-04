@@ -1,0 +1,21 @@
+{
+    "kod": "SDTTR",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Savunma",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 23.7,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 11.5,
+    "aylik_degisim": -25.2,
+    "satis_milyon_tl": 2543.0,
+    "net_kar_milyon_tl": 36.0,
+    "cfo_milyon_tl": 408.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.06,
+    "nakit_dongusu_gun": 415.3,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\SDTTR\\SDTTR_Mikroskop_Raporu.html"
+}

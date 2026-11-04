@@ -1,0 +1,359 @@
+{
+  "kod": "BMSTL",
+  "sirket_adi": "BMS BİRLEŞİK METAL SANAYİ VE TİCARET A.Ş.",
+  "sektor": "BMS Birleşik Metal",
+  "kategori": "Hendeksiz",
+  "fiyat_tl": 29.9,
+  "f_skor": 8,
+  "tavan_agirlik": 3.0,
+  "mevcut_agirlik": 0.0,
+  "kademe_durumu": "1/3 Başlangıç",
+  "degerleme_bandi": {
+    "fk": 0.0,
+    "alt_fk": 6.0,
+    "medyan_fk": 11.0,
+    "ust_fk": 16.0,
+    "marj_durum": "NEGATİF KÂR / ZARARDA",
+    "marj_renk": "badge-fail",
+    "konum_yuzde": 5
+  },
+  "birikimli_dipnot": {
+    "kod": "BMSTL",
+    "son_guncelleme": "2026-11-02 17:24",
+    "donemler": {
+      "2025/06": {
+        "efm_yuzde": 10.3,
+        "icr_kati": 0.46,
+        "tahakkuk_orani": -1.74,
+        "aga_orani": 0.0,
+        "ykp_orani": 0.0,
+        "dso_gun": 81.9,
+        "acm_makasi": 0.0,
+        "serefiye_ozk_orani": 0.0,
+        "karsilik_ozk_orani": 1.2,
+        "iliskili_orani": 0.0,
+        "dts_skor": 15,
+        "uyarilar": [
+          "🔴 Faiz karşılama oranı 0.46x ile kritik sınırda (Efektif Borç Maliyeti: %10.3)."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": 0.0,
+        "tahakkuk_delta": 0.0
+      },
+      "2025/09": {
+        "efm_yuzde": 12.9,
+        "icr_kati": 0.61,
+        "tahakkuk_orani": -1.12,
+        "aga_orani": 0.0,
+        "ykp_orani": 0.0,
+        "dso_gun": 55.8,
+        "acm_makasi": -48.5,
+        "serefiye_ozk_orani": 0.0,
+        "karsilik_ozk_orani": 1.4,
+        "iliskili_orani": 0.0,
+        "dts_skor": 15,
+        "uyarilar": [
+          "🔴 Faiz karşılama oranı 0.61x ile kritik sınırda (Efektif Borç Maliyeti: %12.9)."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": -26.1,
+        "tahakkuk_delta": 0.62
+      },
+      "2026/06": {
+        "efm_yuzde": 10.4,
+        "icr_kati": 0.72,
+        "tahakkuk_orani": -0.42,
+        "aga_orani": 0.0,
+        "ykp_orani": 0.0,
+        "dso_gun": 108.0,
+        "acm_makasi": 77.1,
+        "serefiye_ozk_orani": 0.0,
+        "karsilik_ozk_orani": 1.6,
+        "iliskili_orani": 0.0,
+        "dts_skor": 30,
+        "uyarilar": [
+          "🟡 Alacak-Ciro makası +%77.1 açıldı (DSO: 108.0 gün): Şüpheli alacak ve vade uzaması riski.",
+          "🔴 Faiz karşılama oranı 0.72x ile kritik sınırda (Efektif Borç Maliyeti: %10.4)."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 15,
+        "dso_delta": 52.2,
+        "tahakkuk_delta": 0.7
+      },
+      "2026/09": {
+        "efm_yuzde": 22.5,
+        "icr_kati": 0.75,
+        "tahakkuk_orani": 0.11,
+        "aga_orani": 0.4,
+        "ykp_orani": 291.3,
+        "dso_gun": 76.4,
+        "acm_makasi": -46.9,
+        "serefiye_ozk_orani": 0.0,
+        "karsilik_ozk_orani": 1.7,
+        "iliskili_orani": 0.0,
+        "dts_skor": 30,
+        "uyarilar": [
+          "🟡 Kağıt üzeri kâr payı yüksek (%291.3): Değerleme ve ertelenmiş vergi geliri net kârı şişiriyor.",
+          "🔴 Faiz karşılama oranı 0.75x ile kritik sınırda (Efektif Borç Maliyeti: %22.5)."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": -31.6,
+        "tahakkuk_delta": 0.53
+      }
+    }
+  },
+  "sirketi_tani": {
+    "sirket_adi": "BMS BİRLEŞİK METAL SANAYİ VE TİCARET A.Ş.",
+    "ne_is_yapar": "BMS BİRLEŞİK METAL SANAYİ VE TİCARET A.Ş., BMS Birleşik Metal sektöründe üretim, satış ve operasyonel faaliyetlerini yürüten Borsa İstanbul şirketidir.",
+    "urun_ve_pazar": "BMS Birleşik Metal ana ürün ve hizmet grubu | Yurt içi kurumsal/bireysel müşteriler ve ihracat pazarları",
+    "piyasa_degeri": "9.3 milyar TL",
+    "net_kar_12ay": "3 milyon TL",
+    "net_kar_yorum": "Son dönemde 3 milyon TL net kâr elde edildi; yıllık değişim %+0.0.",
+    "roe_deger": "%0.2",
+    "roe_yorum": "Özkaynak kârlılığı (ROE) %0.2; BMS Birleşik Metal sektöründe sermaye maliyeti ve enflasyon karşısında izlemede.",
+    "carpan_ozet": "F/K: Hesaplanmadıx | FD/FAVÖK: 47.7x"
+  },
+  "dna_ve_gidisat": [
+    {
+      "baslik": "Büyüme & Satış Hızı (Satışlar Hızlanıyor mu?)",
+      "deger": "%+32.6",
+      "durum": "GÜÇLÜ",
+      "yorum": "Yıllık satış gelirleri 1.82 milyar TL seviyesinden 2.42 milyar TL seviyesine geldi (%+32.6)."
+    },
+    {
+      "baslik": "Operasyonel Kâr & Marjlar (Marjlar Güçleniyor mu?)",
+      "deger": "EFK Marjı %3.2",
+      "durum": "DARALMA VAR",
+      "yorum": "Esas faaliyet kârı 76 milyon TL oldu. Operasyonel kâr marjı geçen döneme göre -0.8 puan değişti."
+    },
+    {
+      "baslik": "Parası Var mı? (Kârın Nakde Dönüşüm Gücü)",
+      "deger": "1 TL Kâra 19.56 TL Nakit",
+      "durum": "SAĞLAM",
+      "yorum": "Her 1 liralık net kâra karşılık faaliyetlerden 19.56 lira nakit (CFO: 66 milyon TL) üretildi. Nakit kalitesi çok yüksek."
+    },
+    {
+      "baslik": "Bilanço Sağlamlığı & Borç Gidişatı (Borç Azalıyor mu?)",
+      "deger": "%0 Kısa Vadeli | 0.14x",
+      "durum": "GÜVENLİ",
+      "yorum": "Toplam yükümlülüklerin %0.0 kadarı kısa vadeli. Net borç değişimi: -531 milyon TL (Güncel Net Borç: 231 milyon TL)."
+    }
+  ],
+  "bilanco_degisimleri": [
+    {
+      "kalem": "ANA ORTAKLIK ÖZKAYNAĞI %29.4 YÜKSELDİ",
+      "guncel_tutar": "1.70 milyar TL",
+      "ne_ifade_ediyor": "1.32 milyar TL → 1.70 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %16.0 kadarı. Özkaynak artışı dönem net kârı ile beslendiğinde şirketin içsel değerini ve bilanço tamponunu büyütür."
+    },
+    {
+      "kalem": "MADDİ DURAN VARLIKLAR %14.0 YÜKSELDİ",
+      "guncel_tutar": "1.48 milyar TL",
+      "ne_ifade_ediyor": "1.30 milyar TL → 1.48 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %7.5 kadarı. Üretim tesisi, makine ve kapasite yatırımlarını gösterir; gelecek dönem reel büyümenin öncü göstergesidir."
+    },
+    {
+      "kalem": "ERTELENMİŞ GELİR & SİPARİŞ AVANSLARI %196.2 YÜKSELDİ",
+      "guncel_tutar": "39 milyon TL",
+      "ne_ifade_ediyor": "13 milyon TL → 39 milyon TL. Değişimin büyüklüğü önceki toplam varlığın %1.1 kadarı. Müşterilerden peşin alınan avansları ifade eder; şirketin pazarlık gücünü ve gelecekte yazılacak hazır hasılatı gösterir."
+    },
+    {
+      "kalem": "STOKLAR %69.1 YÜKSELDİ",
+      "guncel_tutar": "556 milyon TL",
+      "ne_ifade_ediyor": "328 milyon TL → 556 milyon TL. Değişimin büyüklüğü önceki toplam varlığın %9.4 kadarı. Stok artışının satış büyümesiyle uyumlu olması sağlıklıdır; satıştan kopuk stok şişmesi nakit döngüsünü yavaşlatır."
+    },
+    {
+      "kalem": "TİCARİ ALACAK BAKİYESİ %81.4 YÜKSELDİ",
+      "guncel_tutar": "506 milyon TL",
+      "ne_ifade_ediyor": "279 milyon TL → 506 milyon TL. Değişimin büyüklüğü önceki toplam varlığın %9.4 kadarı. Ticari alacak büyümesi ciro artışının altında kalıyorsa tahsilat disiplini güçlüdür; aşması durumunda vade açılması izlenmelidir."
+    }
+  ],
+  "kap_haberleri": [
+    {
+      "tarih": "02.11.2026",
+      "kategori": "KAP / Şirket Gelişmesi",
+      "baslik": "BMS Birleşik Metal, eylülde 4.212 ton üretim, 4.561 ton satış gerçekleştirdi",
+      "meal": "Şirketin ana faaliyet görünümüne, nakit akışına ve yatırım tezine olası etkisi faaliyet raporu dipnotlarıyla birlikte izlenmelidir."
+    },
+    {
+      "tarih": "30.10.2026",
+      "kategori": "Finansal Rapor",
+      "baslik": "BMSTL Bms Birleşik Metal Sanayi ve Tic. konsolide bilanço 2026 9 aylık net karı 3,399,040 TL (Önceki: 27,123,617 TL net zarar)",
+      "meal": "Açıklanan tablolarda net kârın işletme nakit akışına dönüşüm oranı (CFO > Net Kâr) ve kısa vadeli borç çevrimi teyit edilmelidir."
+    },
+    {
+      "tarih": "26.10.2026",
+      "kategori": "Yeni İş / Sipariş",
+      "baslik": "BMS Birleşik Metal, Kuzey Amerika'da bulunan bir müşterisinden 1.725.196 ABD doları tutarında yeni sipariş aldı",
+      "meal": "Sipariş hemen tek çeyrekte gelir yazılmaz; üretim ve sevkiyat takvimine göre kademeli olarak hasılatlaşır. Gelecek dönem ciro görünürlüğünü artırır."
+    },
+    {
+      "tarih": "28.07.2026",
+      "kategori": "Finansal Rapor",
+      "baslik": "BMSTL Bms Birleşik Metal Sanayi ve Tic. konsolide bilanço 2026 6 aylık net zararı 11,353,073 TL (Önceki: 39,733,087 TL net zarar)",
+      "meal": "Açıklanan tablolarda net kârın işletme nakit akışına dönüşüm oranı (CFO > Net Kâr) ve kısa vadeli borç çevrimi teyit edilmelidir."
+    },
+    {
+      "tarih": "20.07.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Haziran Ayında Dahilde İşleme İzin Belgesi Alan BİST Firmaları",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    }
+  ],
+  "son_soz": {
+    "dikkat_cekenler": [
+      "Güçlü nakit üretimi: Her 1 TL net kâra karşılık 19.56 TL işletme nakit akışı (CFO) üretildi.",
+      "Borç yükü çok düşük: Net Borç / Özkaynak rasyosu 0.14x ile finansal kalkan oldukça sağlam.",
+      "Dengeli borç vadesi: Kısa vadeli yükümlülük payı %0.0 ile çevrilebilir sınırda.",
+      "Finansal sağlık skoru yüksek: Piotroski F-Skoru 8/9 ile bilanço ivmesi pozitif."
+    ],
+    "sevmediklerim": [
+      "Temel tabloda kırmızı çizgi ihlali yok; sektörel talep ve çeyreklik marj seyri rutin izlenmeli."
+    ],
+    "borsaci_gozuyle": "BMS BİRLEŞİK METAL SANAYİ VE TİCARET A.Ş. (BMSTL), BMS Birleşik Metal sektöründe 'Hendeksiz' hendek yapısıyla faaliyet gösteriyor. Son dönemde 2.42 milyar TL satış geliri ve 3 milyon TL net kâr üretirken, her 1 TL kâra karşılık 19.56 TL işletme nakit akışı sağlaması işin motorunun nakit ürettiğini gösteriyor. Toplam yükümlülüklerin %0.0 seviyesinin kısa vadeli olması ve Net Borç/Özkaynak rasyosunun 0.14x düzeyinde bulunması nedeniyle Serkan Ünal kuralları çerçevesinde portföyde maksimum %3.0 ağırlık tavanıyla (1/3 Başlangıç) takip edilmesi rasyoneldir."
+  },
+  "bolum1_elemeler": [
+    {
+      "kriter": "Halka Açıklık Oranı & Ortaklık Yapısı",
+      "deger": "%59.6",
+      "durum": "GEÇTİ",
+      "not": "Tavan %70 sınırının altında, güvenli ortaklık yapısı"
+    },
+    {
+      "kriter": "Küçük Ortağı Ezen İmtiyaz Kontrolü",
+      "deger": "YOK",
+      "durum": "TEMİZ",
+      "not": "Kâr payı dağıtımında veya oyda küçük ortağı dışlayan imtiyaz yok"
+    },
+    {
+      "kriter": "Hâkim Ortak ve Yönetim Sicili",
+      "deger": "GÜVENİLİR",
+      "durum": "TEMİZ",
+      "not": "Geçmişte azınlık ortaklarını zarara uğratan sistematik karar yok"
+    },
+    {
+      "kriter": "İlişkili Taraflara Kaynak Çıkışı",
+      "deger": "%0.00",
+      "durum": "TEMİZ",
+      "not": "Holding veya grup şirketlerine faizsiz kaynak çıkışı yok (< %5)"
+    },
+    {
+      "kriter": "Finansal Borç ve Gelir Yapısı Uyumu",
+      "deger": "0.14x",
+      "durum": "GÜVENLİ",
+      "not": "Borçlanma döviz ve vade yapısı faaliyet gelirleriyle uyumlu"
+    },
+    {
+      "kriter": "Hâkim Ortak Borsa Hisse Satışı",
+      "deger": "BİLDİRİM YOK",
+      "durum": "TEMİZ",
+      "not": "Hâkim ortakların borsada doğrudan satış baskısı oluşturacak satışı bulunmuyor"
+    }
+  ],
+  "bolum2_is_kalitesi": [
+    {
+      "kriter": "Pazar Payı İstikrarı & Yeni Oyuncu Tehdidi",
+      "durum": "GÜÇLÜ",
+      "aciklama": "BMS Birleşik Metal sektöründe faaliyet gösteren ve temel finansal süzgeçleri geçen şirket."
+    },
+    {
+      "kriter": "Kârın Niteliği & Esas Faaliyet Dayanıklılığı",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Kâr doğrudan esas faaliyet ve operasyonel iş modelinden üretiliyor, reel ve sürdürülebilir"
+    },
+    {
+      "kriter": "Ekonomik Hendek Kaynağı & Korunabilirlik",
+      "durum": "HENDEKSIZ",
+      "aciklama": "Hendeksiz sınıfında; ölçek, dağıtım kanalı veya geçiş maliyeti avantajına sahip."
+    },
+    {
+      "kriter": "Kurumsal Yapı & Şahıstan Bağımsız İşleyiş",
+      "durum": "OTURMUŞ",
+      "aciklama": "Kişilerden bağımsız işleyen kurumsal organizasyon ve yönetim kurulu yapısı."
+    },
+    {
+      "kriter": "Yönetim Güvenilirliği & Hedef Tutarlılığı",
+      "durum": "TUTARLI",
+      "aciklama": "Faaliyet raporlarında ve sunumlarda verilen geçmiş dönem hedefleri ile gerçekleşmeler tutarlı"
+    },
+    {
+      "kriter": "Reel Büyüme & Faaliyet Marjı Koruması",
+      "durum": "DENGELİ",
+      "aciklama": "Enflasyon üzeri ciro büyümesi ve operasyonel FAVÖK marjı disiplini korunuyor"
+    }
+  ],
+  "bolum3_tablolar": [
+    {
+      "kriter": "Kâr Nakde Dönüşüyor mu? (CFO > Net Kâr)",
+      "durum": "BAŞARILI",
+      "aciklama": "Her 1 TL net kâra karşılık 19.56 TL işletme nakit akışı üretildi."
+    },
+    {
+      "kriter": "Kârın Tekrarlanabilirliği (Çekirdek Kâr Payı)",
+      "durum": "GÜÇLÜ",
+      "aciklama": "%80+ Ana operasyonel kâr; duran varlık satışı, kur farkı gibi tek seferlik etkiler arındırıldı"
+    },
+    {
+      "kriter": "Dipnot Riskleri (TRİ, Kefalet, Kısa Vade Borç)",
+      "durum": "TEMİZ",
+      "aciklama": "Kısa vadeli borç payı %0.0; TRİ ve kefaletler normal sınırda (< %20)"
+    },
+    {
+      "kriter": "Konsolidasyon Netliği & İştirak Saydamlığı",
+      "durum": "ŞEFFAF",
+      "aciklama": "Konsolide finansallar şirketin çekirdek işini doğrudan yansıtıyor, maskelenmiş zarar yok"
+    }
+  ],
+  "bolum4_fiyat_degerleme": [
+    {
+      "kriter": "Varsayım Tutarlılığı & Büyüme Senaryosu",
+      "durum": "RASYONEL",
+      "aciklama": "BMS Birleşik Metal pazar payı istikrarı, ciro büyümesi ve operasyonel marjların korunması varsayımı."
+    },
+    {
+      "kriter": "Çarpan Paydası Sürdürülebilirliği",
+      "durum": "SAĞLAM",
+      "aciklama": "Fiyat/Kazanç ve FD/FAVÖK çarpanlarının paydasındaki operasyonel kâr sürdürülebilir"
+    },
+    {
+      "kriter": "Büyümenin Değeri (ROIC > Sermaye Maliyeti)",
+      "durum": "VERİMLİ",
+      "aciklama": "Yatırılan sermayenin getirisi sermaye maliyetinin üzerinde; büyüme serbest nakit akışı üretiyor"
+    },
+    {
+      "kriter": "Güvenlik Marjı & Yanılma Payı Alanı",
+      "durum": "UYGUN",
+      "aciklama": "Tarihsel değerleme çarpanı bandında alt çeyrek / dengeli bölgede; analitik yanılma payı mevcut"
+    }
+  ],
+  "bolum5_karar_ve_cikis": {
+    "hendek_sinifi": "Hendeksiz",
+    "portfoy_tavani": "Maksimum %3.0",
+    "mevcut_agirlik": "%0.00",
+    "asamalandirma_kurali": "Min %1.0 ile başla, maks %3.0 tavanını aşma. Durum: 1/3 Başlangıç",
+    "cikis_tetikleyicileri": [
+      "(1) Yönetim veya hâkim hissedar değişimi ve kurumsal nitelik kaybı yaşanması",
+      "(2) Hâkim hissedarın borsada doğrudan pay satışı başlatması",
+      "(3) İlişkili taraflara şüpheli/denetimsiz finansal borç veya kaynak aktarımı",
+      "(4) Şirketin iş modelinde veya sektöründe kalıcı yapısal kırılma",
+      "(5) İlk yatırım analizinde sonradan önemli bir analitik hata tespit edilmesi"
+    ]
+  }
+}

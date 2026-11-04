@@ -1,0 +1,84 @@
+{
+  "kod": "BFREN",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 0.9,
+      "icr_kati": 3.68,
+      "tahakkuk_orani": 13.53,
+      "aga_orani": 0.0,
+      "ykp_orani": 100.0,
+      "dso_gun": 279.2,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 10.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%13.53): Kâr nakde dönüşmüyor.",
+        "🟡 Kağıt üzeri kâr payı yüksek (%100.0)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 42.6,
+      "icr_kati": 0.87,
+      "tahakkuk_orani": 14.18,
+      "aga_orani": 0.0,
+      "ykp_orani": 14.1,
+      "dso_gun": 109.3,
+      "acm_makasi": -168.4,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 7.7,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%14.18): Kâr nakde dönüşmüyor.",
+        "🔴 Faiz karşılama oranı 0.87x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -169.9
+    },
+    "2026/03": {
+      "efm_yuzde": 4.3,
+      "icr_kati": 14.26,
+      "tahakkuk_orani": -15.59,
+      "aga_orani": 0.0,
+      "ykp_orani": 6.5,
+      "dso_gun": 282.2,
+      "acm_makasi": 69.2,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 5.4,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🟡 Alacak-Ciro makası +%69.2 açıldı (DSO: 282.2 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -20,
+      "dso_delta": 172.9
+    },
+    "2026/06": {
+      "efm_yuzde": 6.4,
+      "icr_kati": 37.92,
+      "tahakkuk_orani": -9.45,
+      "aga_orani": 0.0,
+      "ykp_orani": 14.4,
+      "dso_gun": 128.6,
+      "acm_makasi": -116.4,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 4.9,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": -153.6
+    }
+  }
+}

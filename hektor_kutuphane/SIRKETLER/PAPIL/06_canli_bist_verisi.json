@@ -1,0 +1,21 @@
+{
+    "kod": "PAPIL",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Teknoloji",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 99.8,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%99.8)",
+    "fiyat_tl": 5.13,
+    "aylik_degisim": -29.7,
+    "satis_milyon_tl": 162.0,
+    "net_kar_milyon_tl": -105.0,
+    "cfo_milyon_tl": 177.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.58,
+    "nakit_dongusu_gun": 455.3,
+    "piotroski_skor": 5,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\PAPIL\\PAPIL_Mikroskop_Raporu.html"
+}

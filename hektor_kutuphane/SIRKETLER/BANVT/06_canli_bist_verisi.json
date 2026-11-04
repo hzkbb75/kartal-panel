@@ -1,0 +1,21 @@
+{
+    "kod": "BANVT",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Hayvancılık",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 100.0,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%100.0)",
+    "fiyat_tl": 108.8,
+    "aylik_degisim": -16.5,
+    "satis_milyon_tl": 39440.0,
+    "net_kar_milyon_tl": -3668.0,
+    "cfo_milyon_tl": -852.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.02,
+    "nakit_dongusu_gun": -22.9,
+    "piotroski_skor": 2,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\BANVT\\BANVT_Mikroskop_Raporu.html"
+}

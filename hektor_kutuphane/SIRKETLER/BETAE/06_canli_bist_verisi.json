@@ -1,0 +1,21 @@
+{
+    "kod": "BETAE",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Elektrik Enerji Ürt.Teçh/Tes",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 13.6,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 44.0,
+    "aylik_degisim": -20.2,
+    "satis_milyon_tl": 5020.0,
+    "net_kar_milyon_tl": 1079.0,
+    "cfo_milyon_tl": 1426.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 1.53,
+    "nakit_dongusu_gun": 62.2,
+    "piotroski_skor": 5,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\BETAE\\BETAE_Mikroskop_Raporu.html"
+}

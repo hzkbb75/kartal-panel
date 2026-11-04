@@ -1,0 +1,21 @@
+{
+    "kod": "ASTOR",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Enerji Ekipman",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 27.6,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 158.9,
+    "aylik_degisim": -16.6,
+    "satis_milyon_tl": 41558.0,
+    "net_kar_milyon_tl": 9031.0,
+    "cfo_milyon_tl": 3246.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.2,
+    "nakit_dongusu_gun": 196.1,
+    "piotroski_skor": 5,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\ASTOR\\ASTOR_Mikroskop_Raporu.html"
+}

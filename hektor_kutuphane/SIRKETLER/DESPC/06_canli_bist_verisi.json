@@ -1,0 +1,21 @@
+{
+    "kod": "DESPC",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Bilgisayar Toptancılığı",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 23.0,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 20.9,
+    "aylik_degisim": -30.1,
+    "satis_milyon_tl": 12874.0,
+    "net_kar_milyon_tl": -50.0,
+    "cfo_milyon_tl": 596.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": -0.6,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\DESPC\\DESPC_Mikroskop_Raporu.html"
+}

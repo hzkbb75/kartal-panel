@@ -1,0 +1,83 @@
+{
+  "kod": "ACSEL",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 1.7,
+      "icr_kati": -10.01,
+      "tahakkuk_orani": -14.0,
+      "aga_orani": 0.0,
+      "ykp_orani": 1.6,
+      "dso_gun": 290.2,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.8,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -10.01x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 15.7,
+      "icr_kati": -1.11,
+      "tahakkuk_orani": -26.55,
+      "aga_orani": 0.0,
+      "ykp_orani": 3.3,
+      "dso_gun": 146.6,
+      "acm_makasi": -118.5,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 2.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -1.11x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -143.6
+    },
+    "2026/03": {
+      "efm_yuzde": 0.6,
+      "icr_kati": 11.53,
+      "tahakkuk_orani": -5.67,
+      "aga_orani": 10.1,
+      "ykp_orani": 35.2,
+      "dso_gun": 294.9,
+      "acm_makasi": 64.8,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.6,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Kağıt üzeri kâr payı yüksek (%35.2).",
+        "🟡 Alacak-Ciro makası +%64.8 açıldı (DSO: 294.9 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": 148.3
+    },
+    "2026/06": {
+      "efm_yuzde": 5.7,
+      "icr_kati": 4.83,
+      "tahakkuk_orani": -14.51,
+      "aga_orani": 0.0,
+      "ykp_orani": 28.4,
+      "dso_gun": 159.3,
+      "acm_makasi": -94.1,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -30,
+      "dso_delta": -135.6
+    }
+  }
+}

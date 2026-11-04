@@ -1,0 +1,82 @@
+{
+  "kod": "TRILC",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 35.6,
+      "icr_kati": 0.24,
+      "tahakkuk_orani": -13.61,
+      "aga_orani": 0.0,
+      "ykp_orani": 3.2,
+      "dso_gun": 434.9,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.9,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 0.24x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 47.5,
+      "icr_kati": 0.31,
+      "tahakkuk_orani": -4.71,
+      "aga_orani": 0.1,
+      "ykp_orani": 1.7,
+      "dso_gun": 249.6,
+      "acm_makasi": -70.1,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.9,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 0.31x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -185.3
+    },
+    "2026/03": {
+      "efm_yuzde": 1.2,
+      "icr_kati": 8.07,
+      "tahakkuk_orani": -2.38,
+      "aga_orani": 35.6,
+      "ykp_orani": 0.0,
+      "dso_gun": 680.9,
+      "acm_makasi": 128.6,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🟡 Alacak-Ciro makası +%128.6 açıldı (DSO: 680.9 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 431.3
+    },
+    "2026/06": {
+      "efm_yuzde": 14.4,
+      "icr_kati": 1.21,
+      "tahakkuk_orani": -0.06,
+      "aga_orani": 0.6,
+      "ykp_orani": 0.9,
+      "dso_gun": 415.1,
+      "acm_makasi": -82.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.8,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 1.21x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -265.8
+    }
+  }
+}

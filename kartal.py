@@ -1,0 +1,1716 @@
+import os
+import re
+import csv
+import time
+import json
+import hashlib
+import shutil
+import warnings
+import requests
+import pandas as pd
+from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+import portfoy_motoru
+
+warnings.filterwarnings("ignore")
+
+# ==============================================================================
+# 0. AYARLAR, KLASÖR YAPISI VE YEREL BİLANÇO VERİ AMBARI
+# ==============================================================================
+ROOT_DIR = "hektor_kutuphane"
+SIRKETLER_DIR = os.path.join(ROOT_DIR, "SIRKETLER")
+PORTFOY_DIR = os.path.join(ROOT_DIR, "PORTFOY")
+GELEN_RAPOR_DIR = os.path.join(PORTFOY_DIR, "gelen_raporlar")
+ARSIV_RAPOR_DIR = os.path.join(PORTFOY_DIR, "arsiv_raporlar")
+
+PORTFOY_CSV_YOLU = os.path.join(PORTFOY_DIR, "portfoyum.csv")
+DINAMIK_MASA_CSV_YOLU = os.path.join(PORTFOY_DIR, "portfoy_kalkani_dinamik.csv")
+BIST_MALI_TABLOLAR_YOLU = os.path.join(ROOT_DIR, "bist_mali_tablolar.json")
+
+for d in [SIRKETLER_DIR, PORTFOY_DIR, GELEN_RAPOR_DIR, ARSIV_RAPOR_DIR]:
+    os.makedirs(d, exist_ok=True)
+
+YEREL_MALI_VERITABANI = {}
+if os.path.exists(BIST_MALI_TABLOLAR_YOLU):
+    try:
+        with open(BIST_MALI_TABLOLAR_YOLU, "r", encoding="utf-8") as f:
+            ham_vt = json.load(f)
+            YEREL_MALI_VERITABANI = ham_vt.get("sirketler", {})
+    except Exception as e:
+        print(f"  [Uyarı] Yerel mali veri tabanı okunamadı: {e}")
+
+BANKA_VE_FINANS_KODLARI = {
+    "GARAN", "AKBNK", "ISCTR", "YKBNK", "VAKBN", "HALKB", "TSKB", "SKBNK",
+    "ALBRK", "QNBFB", "QNBTR", "KLNMA", "ICBCT", "TURSG", "AGESA", "ANHYT",
+    "ANSGR", "AKGRT", "RAYSG", "ISMEN", "INFO", "OSMEN", "GEDIK", "GLCVY", "OYYAT", "DSTKF"
+}
+SADECE_ENDEKS_PARA_HARIC = {"BIST", "XU100", "XU030", "TRY", "USD", "EUR", "XU050", "XUMKR", "XUTUM", "XUSIN", "XBANK", "NAKIT", "KASA", "PPF"}
+CEKIRDEK_KORUNAKLI_SIRKETLER = {"ASELS", "BIMAS", "KCHOL", "CCOLA", "FROTO", "MGROS", "AGESA", "ENKAI", "THYAO", "TUPRS"}
+
+
+def tr_norm(metin: str) -> str:
+    if not metin:
+        return ""
+    ceviri = str.maketrans("İIŞĞÜÖÇıişğüöç", "iisguociisguoc")
+    return re.sub(r"\s+", " ", metin.translate(ceviri).lower()).strip()
+
+
+def satir_bul(satirlar: list, aranan_kelimeler: list, mod: str = "ilk") -> tuple:
+    norm_arananlar = [tr_norm(k) for k in aranan_kelimeler]
+    toplam_c, toplam_o = 0.0, 0.0
+    bulundu = False
+    for satir in satirlar:
+        ad = satir[0]
+        v1 = float(satir[1] or 0.0)
+        v2 = float(satir[2] or 0.0)
+        for aranan in norm_arananlar:
+            if aranan in ad or ad == aranan:
+                if v1 != 0.0 or v2 != 0.0:
+                    if mod == "ilk":
+                        return v1, v2
+                    toplam_c += v1
+                    toplam_o += v2
+                    bulundu = True
+                    break
+    if mod == "topla" and bulundu:
+        return toplam_c, toplam_o
+    return 0.0, 0.0
+
+
+# ==============================================================================
+# 1. BİRİKİMLİ DİPNOT VE RASYOLAR MOTORU
+# ==============================================================================
+def hesapla_donem_dipnot_metrikleri(satirlar_cari: list, satirlar_onceki: list = None) -> dict:
+    onceki = satirlar_onceki if satirlar_onceki else satirlar_cari
+    satis_c = satir_bul(satirlar_cari, ["hasilat", "satis gelirleri", "faiz gelirleri"])[0]
+    satis_o = satir_bul(onceki, ["hasilat", "satis gelirleri", "faiz gelirleri"])[0]
+    efk_c = satir_bul(satirlar_cari, ["esas faaliyet kari", "faaliyet kari"])[0]
+    net_c = satir_bul(satirlar_cari, ["donem net kar", "donem kari", "ana ortaklik paylari"])[0]
+    cfo_c = satir_bul(satirlar_cari, ["isletme faaliyetlerinden", "faaliyetlerden nakit", "kaynaklanan net nakit"])[0]
+
+    varlik_c = max(satir_bul(satirlar_cari, ["toplam varliklar", "toplam aktifler", "varliklar"])[0], 1.0)
+    ozk_c = max(satir_bul(satirlar_cari, ["ana ortakliga ait ozkaynaklar", "toplam ozkaynaklar", "ozkaynaklar"])[0], 1.0)
+    fin_borc_c = satir_bul(satirlar_cari, ["finansal borclar"], mod="topla")[0]
+    fin_borc_o = satir_bul(onceki, ["finansal borclar"], mod="topla")[0]
+    fin_gider_c = abs(satir_bul(satirlar_cari, ["finansman giderleri", "esas faaliyet disi finansal giderler"])[0])
+
+    alacak_c = satir_bul(satirlar_cari, ["ticari alacaklar"])[0]
+    alacak_o = satir_bul(onceki, ["ticari alacaklar"])[0]
+    iliskili_alacak_c = satir_bul(satirlar_cari, ["iliskili taraflardan diğer alacaklar", "iliskili taraflardan ticari olmayan alacaklar"], mod="topla")[0]
+    modv_c = satir_bul(satirlar_cari, ["maddi olmayan duran varliklar"])[0]
+    modv_o = satir_bul(onceki, ["maddi olmayan duran varliklar"])[0]
+    serefiye_c = satir_bul(satirlar_cari, ["serefiye"])[0]
+    kagit_kar = max(0.0, satir_bul(satirlar_cari, ["yatirim faaliyetlerinden gelirler"])[0]) + max(0.0, satir_bul(satirlar_cari, ["ertelenmis vergi geliri"])[0])
+    karsiliklar_c = satir_bul(satirlar_cari, ["kisa vadeli karsiliklar", "uzun vadeli karsiliklar", "calisanlara saglanan"], mod="topla")[0]
+
+    ort_borc = max((fin_borc_c + fin_borc_o) / 2.0, 1.0)
+    efm_yuzde = round((fin_gider_c / ort_borc) * 100, 1) if fin_borc_c > 0 else 0.0
+    icr_kati = round(efk_c / max(fin_gider_c, 1.0), 2) if fin_gider_c > 0 else 99.0
+
+    tahakkuk_orani = round(((net_c - cfo_c) / varlik_c) * 100, 2)
+    aga_orani = round((max(0.0, modv_c - modv_o) / max(efk_c, 1.0)) * 100, 1) if efk_c > 0 else 0.0
+    
+    if efk_c > 0:
+        ykp_orani = min(100.0, round((kagit_kar / efk_c) * 100, 1))
+    else:
+        ykp_orani = min(100.0, round((kagit_kar / max(varlik_c, 1.0)) * 100, 1))
+
+    dso_gun = round(365.0 * (alacak_c / max(satis_c, 1.0)), 1) if satis_c > 0 else 0.0
+    alacak_buyume = ((alacak_c / max(alacak_o, 1.0)) - 1.0) * 100 if alacak_o > 0 else 0.0
+    satis_buyume = ((satis_c / max(satis_o, 1.0)) - 1.0) * 100 if satis_o > 0 else 0.0
+    acm_makasi = round(alacak_buyume - satis_buyume, 1)
+
+    serefiye_ozk_orani = round((serefiye_c / ozk_c) * 100, 1)
+    karsilik_ozk_orani = round((karsiliklar_c / ozk_c) * 100, 1)
+    iliskili_orani = round((iliskili_alacak_c / varlik_c) * 100, 2)
+
+    ceza = 0
+    uyarilar = []
+    if iliskili_orani > 3.0: ceza += 20; uyarilar.append(f"🔴 İlişkili taraflardan ticari olmayan alacaklar aktifin %{iliskili_orani}'ine ulaştı.")
+    if tahakkuk_orani > 5.0: ceza += 20; uyarilar.append(f"🔴 Tahakkuk anomalisi (%{tahakkuk_orani}): Kâr nakde dönüşmüyor.")
+    if ykp_orani > 35.0: ceza += 15; uyarilar.append(f"🟡 Kağıt üzeri kâr payı yüksek (%{ykp_orani}).")
+    if acm_makasi > 15.0: ceza += 15; uyarilar.append(f"🟡 Alacak-Ciro makası +%{acm_makasi} açıldı (DSO: {dso_gun} gün).")
+    if icr_kati < 1.5 and fin_gider_c > 0: ceza += 15; uyarilar.append(f"🔴 Faiz karşılama oranı {icr_kati}x (ICR zayıf).")
+
+    if not uyarilar: uyarilar.append("🟢 Muhasebe makyajı veya anomali tespit edilmedi.")
+
+    return {
+        "efm_yuzde": efm_yuzde, "icr_kati": icr_kati, "tahakkuk_orani": tahakkuk_orani,
+        "aga_orani": aga_orani, "ykp_orani": ykp_orani, "dso_gun": dso_gun, "acm_makasi": acm_makasi,
+        "serefiye_ozk_orani": serefiye_ozk_orani, "karsilik_ozk_orani": karsilik_ozk_orani,
+        "iliskili_orani": iliskili_orani, "dts_skor": min(100, ceza), "uyarilar": uyarilar,
+        "pdf_dipnot_notlari": {}
+    }
+
+
+def guncelle_birikimli_dipnot_arsivi(kod: str) -> dict:
+    arsiv_yolu = os.path.join(SIRKETLER_DIR, kod, "04_birikimli_dipnot_arsivi.json")
+    mevcut_arsiv = {"kod": kod, "son_guncelleme": "", "donemler": {}}
+    if os.path.exists(arsiv_yolu):
+        try:
+            with open(arsiv_yolu, "r", encoding="utf-8") as f:
+                mevcut_arsiv = json.load(f)
+        except Exception:
+            pass
+
+    sirket_kaydi = YEREL_MALI_VERITABANI.get(kod, {})
+    cok_donem = sirket_kaydi.get("donemler", {})
+    sirali_anahtarlar = sorted(cok_donem.keys())
+
+    for idx, d_adi in enumerate(sirali_anahtarlar):
+        onceki_satirlar = cok_donem[sirali_anahtarlar[idx - 1]] if idx > 0 else cok_donem[d_adi]
+        cari_satirlar = [(s[0], s[1], s[1]) for s in cok_donem[d_adi]]
+        onceki_s = [(s[0], s[1], s[1]) for s in onceki_satirlar]
+
+        hesaplanan = hesapla_donem_dipnot_metrikleri(cari_satirlar, onceki_s)
+
+        if d_adi in mevcut_arsiv.get("donemler", {}):
+            eski = mevcut_arsiv["donemler"][d_adi]
+            if eski.get("pdf_dipnot_notlari"):
+                hesaplanan["pdf_dipnot_notlari"] = eski["pdf_dipnot_notlari"]
+            if eski.get("tutarlilik_raporu"):
+                hesaplanan["tutarlilik_raporu"] = eski["tutarlilik_raporu"]
+
+        mevcut_arsiv.setdefault("donemler", {})[d_adi] = hesaplanan
+
+    tum_adlar = sorted(mevcut_arsiv["donemler"].keys())
+    for i, d_adi in enumerate(tum_adlar):
+        curr = mevcut_arsiv["donemler"][d_adi]
+        if i > 0:
+            prev = mevcut_arsiv["donemler"][tum_adlar[i - 1]]
+            curr["dts_delta"] = curr["dts_skor"] - prev["dts_skor"]
+            curr["dso_delta"] = round(curr["dso_gun"] - prev["dso_gun"], 1)
+        else:
+            curr["dts_delta"], curr["dso_delta"] = 0, 0.0
+
+    mevcut_arsiv["son_guncelleme"] = datetime.now().strftime("%Y-%m-%d %H:%M")
+    os.makedirs(os.path.dirname(arsiv_yolu), exist_ok=True)
+    with open(arsiv_yolu, "w", encoding="utf-8") as f:
+        json.dump(mevcut_arsiv, f, ensure_ascii=False, indent=2)
+    return mevcut_arsiv
+
+
+# ==============================================================================
+# 2. ŞİRKET ELEME VE ANALİZ MOTORU
+# ==============================================================================
+def analiz_et_sirket(kod: str) -> dict:
+    sirket_kaydi = YEREL_MALI_VERITABANI.get(kod)
+    if not sirket_kaydi:
+        return {"kod": kod, "bolum1_gecti_mi": False, "cfo_buyuk_net_kar": False, "piotroski_skor": 0}
+
+    halka_aciklik = float(sirket_kaydi.get("halka_aciklik", 38.0))
+    banka_mi = (kod in BANKA_VE_FINANS_KODLARI) or ("banka" in tr_norm(sirket_kaydi.get("sektor", ""))) or ("sigorta" in tr_norm(sirket_kaydi.get("sektor", "")))
+    satirlar = sirket_kaydi.get("satirlar_cari_onceki", [])
+
+    fiyat = float(sirket_kaydi.get("fiyat", 0.0))
+    fk = float(sirket_kaydi.get("fk", 0.0))
+    fd_favok = float(sirket_kaydi.get("fd_favok", 0.0))
+    pd_milyar = float(sirket_kaydi.get("piyasa_degeri_milyar", 0.0))
+
+    if not satirlar or sirket_kaydi.get("veri_durumu") == "VERI_YOK":
+        return {
+            "kod": kod, "sirket_adi": sirket_kaydi.get("sirket_adi", kod), "sektor": sirket_kaydi.get("sektor", "BIST"),
+            "kategori": "Hendeksiz", "bolum1_gecti_mi": False, "cfo_buyuk_net_kar": False, "piotroski_skor": 0,
+            "fiyat_tl": fiyat, "halka_aciklik": halka_aciklik, "net_borc_ozkaynak": 0.0
+        }
+
+    satis_c, satis_o = satir_bul(satirlar, ["hasilat", "satis gelirleri", "faaliyet gelirleri", "faiz gelirleri"])
+    brut_c, brut_o = satir_bul(satirlar, ["brut kar", "net faiz geliri"])
+    efk_c, efk_o = satir_bul(satirlar, ["esas faaliyet kari", "faaliyet kari"])
+    net_c, net_o = satir_bul(satirlar, ["donem net kar", "donem kari", "ana ortaklik paylari"])
+    cfo_c, cfo_o = satir_bul(satirlar, ["isletme faaliyetlerinden", "faaliyetlerden nakit", "kaynaklanan net nakit"])
+
+    varlik_c, varlik_o = satir_bul(satirlar, ["toplam varliklar", "toplam aktifler", "varliklar", "aktifler"])
+    ozk_c, ozk_o = satir_bul(satirlar, ["ana ortakliga ait ozkaynaklar", "toplam ozkaynaklar", "ozkaynaklar"])
+    nakit_c, nakit_o = satir_bul(satirlar, ["nakit ve nakit benzerleri", "nakit degerler"])
+    fin_borc_c, fin_borc_o = satir_bul(satirlar, ["finansal borclar"], mod="topla")
+    alacak_c, alacak_o = satir_bul(satirlar, ["ticari alacaklar"], mod="ilk")
+    iliskili_alacak_c, _ = satir_bul(satirlar, ["iliskili taraflardan diğer alacaklar", "iliskili taraflardan ticari olmayan alacaklar"], mod="topla")
+    stok_c, stok_o = satir_bul(satirlar, ["stoklar"], mod="ilk")
+    mdv_c, mdv_o = satir_bul(satirlar, ["maddi duran varliklar"], mod="ilk")
+    ertelenmis_c, ertelenmis_o = satir_bul(satirlar, ["ertelenmis gelirler", "alinan siparis avanslari"], mod="topla")
+    donen_c, donen_o = satir_bul(satirlar, ["donen varliklar"], mod="ilk")
+    kv_c, kv_o = satir_bul(satirlar, ["kisa vadeli yukumlulukler"], mod="ilk")
+    uv_c, uv_o = satir_bul(satirlar, ["uzun vadeli yukumlulukler"], mod="ilk")
+
+    iliskili_oran = round((iliskili_alacak_c / max(varlik_c, 1.0)) * 100, 2)
+    net_borc_c = max(fin_borc_c - nakit_c, 0.0)
+    net_borc_o = max(fin_borc_o - nakit_o, 0.0)
+    net_borc_ozkaynak = round(net_borc_c / max(ozk_c, 1.0), 2)
+    kv_borc_oran = round((kv_c / max(kv_c + uv_c, 1.0)) * 100, 1)
+
+    kirmizi_cizgi = (halka_aciklik > 70.0) or (iliskili_oran > 5.0) or (not banka_mi and (ozk_c <= 0 or (net_borc_ozkaynak > 2.0 and efk_c < 0) or (cfo_c < 0 and cfo_o < 0)))
+    bolum1_gecti_mi = not kirmizi_cizgi
+
+    efk_marj_c = (efk_c / max(satis_c, 1.0))
+    yatirilan_sermaye = max(ozk_c + net_borc_c, 1.0)
+    roic_tahmini = efk_c / yatirilan_sermaye
+
+    if kod in CEKIRDEK_KORUNAKLI_SIRKETLER or (efk_marj_c >= 0.14 and roic_tahmini >= 0.15 and cfo_c > 0):
+        kategori, tavan = "Korunaklı", 10.0
+    elif efk_marj_c >= 0.07 and cfo_c > 0:
+        kategori, tavan = "Kırılgan Hendekli", 5.0
+    else:
+        kategori, tavan = "Hendeksiz", 3.0
+
+    if banka_mi:
+        cfo_kaliteli = net_c > 0
+        f_skor = 7 if (net_c > net_o and net_c > 0) else 5
+    else:
+        cari_c = round(donen_c / max(kv_c, 1.0), 2)
+        cari_o = round(donen_o / max(kv_o, 1.0), 2)
+        cfo_kaliteli = bool(cfo_c > net_c and cfo_c > 0)
+        piotroski_puanlar = [
+            int(net_c > 0),
+            int(cfo_c > 0),
+            int((net_c / max(varlik_c, 1.0)) > (net_o / max(varlik_o, 1.0))),
+            int(cfo_c > net_c),
+            int((uv_c / max(varlik_c, 1.0)) <= (uv_o / max(varlik_o, 1.0))),
+            int(cari_c > cari_o),
+            1,
+            int((brut_c / max(satis_c, 1.0)) > (brut_o / max(satis_o, 1.0))),
+            int((satis_c / max(varlik_c, 1.0)) > (satis_o / max(varlik_o, 1.0)))
+        ]
+        f_skor = sum(piotroski_puanlar)
+
+    roe_hesap = round((net_c / max(ozk_c, 1.0)) * 100, 1) if ozk_c > 0 else float(sirket_kaydi.get("roe_tv", 0.0))
+
+    return {
+        "kod": kod, "sirket_adi": sirket_kaydi.get("sirket_adi", kod), "sektor": sirket_kaydi.get("sektor", "Sanayi"),
+        "kategori": kategori, "tavan_agirlik": tavan, "halka_aciklik": halka_aciklik, "net_borc_ozkaynak": net_borc_ozkaynak,
+        "bolum1_gecti_mi": bolum1_gecti_mi, "fiyat_tl": fiyat, "cfo_buyuk_net_kar": cfo_kaliteli, "piotroski_skor": f_skor,
+        "iliskili_oran": iliskili_oran, "kv_borc_oran": kv_borc_oran, "cfo_milyon_tl": round(cfo_c, 1), "net_kar_milyon_tl": round(net_c, 1),
+        "net_kar_onceki_milyon_tl": round(net_o, 1), "satis_milyon_tl": round(satis_c, 1), "satis_onceki_milyon_tl": round(satis_o, 1),
+        "efk_milyon_tl": round(efk_c, 1), "efk_onceki_milyon_tl": round(efk_o, 1), "ozk_c": round(ozk_c, 1), "ozk_o": round(ozk_o, 1),
+        "varlik_c": round(varlik_c, 1), "varlik_o": round(varlik_o, 1), "mdv_c": round(mdv_c, 1), "mdv_o": round(mdv_o, 1),
+        "ertelenmis_c": round(ertelenmis_c, 1), "ertelenmis_o": round(ertelenmis_o, 1), "stok_c": round(stok_c, 1), "stok_o": round(stok_o, 1),
+        "alacak_c": round(alacak_c, 1), "alacak_o": round(alacak_o, 1), "net_borc_c": round(net_borc_c, 1), "net_borc_o": round(net_borc_o, 1),
+        "piyasa_degeri_milyar": pd_milyar, "fk": fk, "fd_favok": fd_favok, "roe": roe_hesap
+    }
+
+
+# ==============================================================================
+# 3. SERKAN ÜNAL TEFTİŞ VE DNA KARNELERİ
+# ==============================================================================
+def format_milyar_milyon(deger_mn: float) -> str:
+    if abs(deger_mn) >= 1000.0:
+        return f"{deger_mn / 1000.0:,.2f} milyar TL"
+    return f"{deger_mn:,.0f} milyon TL"
+
+
+def uret_dna_ve_tercume_katmani(m: dict) -> dict:
+    kod = m.get("kod", "")
+    sektor = m.get("sektor", "")
+    kategori = m.get("kategori", "Hendeksiz")
+    f_skor = int(m.get("f_skor", 6))
+    efk_marji = float(m.get("efk_marji", 0.0))
+    marj_degisim_qoq = float(m.get("marj_degisim_qoq", 0.0))
+    ciro_buyume_yoy = float(m.get("ciro_buyume_yoy", 0.0))
+    ina_nk_orani = float(m.get("ina_net_kar_orani", 0.0))
+    net_kar_milyon = float(m.get("net_kar_milyon_tl", 0.0))
+    ozkaynak_orani = float(m.get("ozkaynak_orani", 50.0))
+    kv_borc_orani = float(m.get("kv_borc_orani", 50.0))
+    net_borc_ozk = float(m.get("net_borc_ozk", 0.0))
+    icr = float(m.get("icr", 3.0))
+    dts_skor = int(m.get("dts_skor", 0))
+    dso_gun = float(m.get("dso_gun", 0.0))
+    alacak_makasi = float(m.get("alacak_ciro_makasi", 0.0))
+    ozk_buyume = float(m.get("ozk_buyume", 0.0))
+    mdv_buyume = float(m.get("mdv_buyume", 0.0))
+    avans_buyume = float(m.get("avans_buyume", 0.0))
+    roe = float(m.get("roe", 0.0))
+    fk = float(m.get("fk", 0.0))
+    fd_favok = float(m.get("fd_favok", 0.0))
+    pd_milyar = float(m.get("pd_milyar", 0.0))
+    halka_aciklik = float(m.get("halka_aciklik", 35.0))
+    tarihsel_bant_yuzde = float(m.get("tarihsel_bant_konumu", 50.0))
+    pfk = float(m.get("pfk", 0.0))
+
+    banka_mi = (
+        (kod in BANKA_VE_FINANS_KODLARI)
+        or ("banka" in tr_norm(sektor))
+        or ("sigorta" in tr_norm(sektor))
+        or ("emeklilik" in tr_norm(sektor))
+        or ("faktoring" in tr_norm(sektor))
+    )
+
+    # Tahta Derinliği & Kurumsal Likidite Sınıflandırması
+    if pd_milyar >= 15.0 and 10.0 <= halka_aciklik <= 70.0:
+        tahta_derinligi = {
+            "sinif": "Kurumsal / Likit 250 Tahta",
+            "rozet_renk": "badge-ok",
+            "aciklama": f"Piyasa değeri {pd_milyar:,.1f} milyar TL, halka açıklık %{halka_aciklik:.1f} — kurumsal derinliği yüksek tahta."
+        }
+    elif pd_milyar >= 2.5 and 5.0 <= halka_aciklik <= 70.0:
+        tahta_derinligi = {
+            "sinif": "Orta Ölçek / Standart Tahta",
+            "rozet_renk": "badge-ok",
+            "aciklama": f"Piyasa değeri {pd_milyar:,.1f} milyar TL, halka açıklık %{halka_aciklik:.1f} — standart likidite koşullarına uygun."
+        }
+    else:
+        tahta_derinligi = {
+            "sinif": "Sığ Tahta / Likidite Uyarısı",
+            "rozet_renk": "badge-warn",
+            "aciklama": f"Piyasa değeri {pd_milyar:,.1f} milyar TL, halka açıklık %{halka_aciklik:.1f} — kademe derinliği sığ olabilir, kademeli emir şart."
+        }
+
+    # A) ÖZ TÜRKÇE RASYO TERCÜMESİ (4 Ana Boyut)
+    if banka_mi:
+        kar_cumlesi = (
+            f"Finans/Sigorta bilançosu: Özkaynaklar son dönemde %{ozk_buyume:+.1f} büyüdü, "
+            f"özkaynak kârlılığı (ROE) %{roe:.1f} seviyesinde."
+        )
+        nakit_cumlesi = (
+            f"Son dönemde {format_milyar_milyon(net_kar_milyon)} net dönem kârı üretildi; "
+            f"Piotroski F-Skoru {f_skor}/9 ile bilanço ivmesi korunuyor."
+        )
+        borc_cumlesi = (
+            f"Finansal kuruluş yapısı (Halka açıklık %{halka_aciklik:.1f}); "
+            f"ticari borç rasyosu yerine sermaye yeterliliği ve ROE izlenir."
+        )
+    else:
+        if efk_marji > 0:
+            kar_cumlesi = (
+                f"Her 100 TL'lik satıştan kasaya {efk_marji:.1f} TL esas faaliyet kârı kalıyor "
+                f"(Önceki döneme göre marj {marj_degisim_qoq:+.1f} puan değişti)."
+            )
+        else:
+            kar_cumlesi = (
+                f"Şirket ana faaliyetinden zarar yazıyor; her 100 TL satışta {abs(efk_marji):.1f} TL "
+                f"operasyonel erime var (Marj değişimi: {marj_degisim_qoq:+.1f} puan)."
+            )
+
+        if ina_nk_orani >= 1.0:
+            nakit_cumlesi = (
+                f"Kağıt üzerindeki her 1 TL net kâra karşılık kasaya {ina_nk_orani:.2f} TL "
+                f"gerçek işletme nakdi (CFO) giriyor (Tahakkuk kalitesi yüksek)."
+            )
+        elif 0 < ina_nk_orani < 1.0:
+            nakit_cumlesi = (
+                f"Yazılan her 1 TL net kârın sadece {ina_nk_orani:.2f} TL'si nakde dönüyor; "
+                f"kârın bir kısmı ticari alacak ({dso_gun:.0f} gün vade) ve stokta bekliyor."
+            )
+        else:
+            nakit_cumlesi = (
+                "Bilançoda muhasebesel kâr görünse de işletme faaliyetleri kasadan nakit tüketiyor "
+                "(İNA negatif veya nakit dönüşümü zayıf)."
+            )
+
+        if net_borc_ozk <= 0.05:
+            borc_cumlesi = (
+                f"Varlıkların %{ozkaynak_orani:.1f}'i ortakların öz kaynağı; şirket net nakit/sıfır borç "
+                f"konumunda (Yükümlülüklerin %{kv_borc_orani:.0f}'i kısa vadeli)."
+            )
+        else:
+            icr_metin = f"faiz giderlerini {icr:.1f} kez karşılıyor" if icr > 0 else "faiz giderlerini karşılamakta zorlanıyor"
+            borc_cumlesi = (
+                f"Varlıkların %{ozkaynak_orani:.1f}'i özkaynak, Net Borç/ÖZK {net_borc_ozk:.2f}x; "
+                f"üretilen faaliyet kârı {icr_metin} (Borcun %{kv_borc_orani:.0f}'i kısa vadeli)."
+            )
+
+    if fk > 0:
+        favok_ek = f", FD/FAVÖK {fd_favok:.1f}x" if fd_favok > 0 else ""
+        degerleme_cumlesi = (
+            f"Mevcut kâr temposuyla piyasa değerini {fk:.1f} yılda amorti ediyor{favok_ek}; "
+            f"tarihsel değerleme bandının %{tarihsel_bant_yuzde:.0f} diliminde fiyatlanıyor."
+        )
+    else:
+        favok_ek = f"FD/FAVÖK {fd_favok:.1f}x çarpanında; " if fd_favok > 0 else ""
+        degerleme_cumlesi = (
+            f"{favok_ek}Net kâr bazlı F/K hesaplanamıyor; "
+            f"tarihsel değerleme bandının %{tarihsel_bant_yuzde:.0f} diliminde izleniyor."
+        )
+
+    oz_turkce_seridi = [
+        {"ikon": "⚙️", "etiket": "Operasyonel Güç", "metin": kar_cumlesi},
+        {"ikon": "💵", "etiket": "Para Var mı?", "metin": nakit_cumlesi},
+        {"ikon": "🛡️", "etiket": "Bilanço Zırhı", "metin": borc_cumlesi},
+        {"ikon": "⚖️", "etiket": "Fiyatlama", "metin": degerleme_cumlesi},
+    ]
+
+    # B) 3 KUTULU DNA ÖZETİ & ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ
+    if banka_mi:
+        if 0 < fk <= 6.0 and roe >= 10.0:
+            en_guclu = {
+                "baslik": "Güçlü ROE & Çarpan İskontosu",
+                "detay": f"%{roe:.1f} özkaynak kârlılığı ve {fk:.1f}x F/K çarpanıyla tarihsel iskonto bölgesinde."
+            }
+        else:
+            en_guclu = {
+                "baslik": f"Özkaynak Büyümesi & {f_skor}/9 F-Skor",
+                "detay": f"Özkaynaklarını %{ozk_buyume:+.1f} büyütürken {f_skor}/9 Piotroski skoruyla sağlamlığını koruyor."
+            }
+    elif ina_nk_orani >= 1.5 and efk_marji >= 15.0:
+        en_guclu = {
+            "baslik": "Yüksek Nakit Üretim Makinesi",
+            "detay": f"%{efk_marji:.1f} faaliyet marjı ve 1 TL kâra {ina_nk_orani:.2f} TL nakit dönüşümüyle kârı doğrudan kasaya indiriyor."
+        }
+    elif net_borc_ozk <= 0.10 and ozkaynak_orani >= 50.0:
+        en_guclu = {
+            "baslik": "Net Nakit & Çelik Bilanço Zırhı",
+            "detay": f"%{ozkaynak_orani:.1f} özkaynak oranı ve {net_borc_ozk:.2f}x Net Borç/ÖZK ile yüksek faiz ortamına tam bağışıklı."
+        }
+    elif 0 < fk <= 7.0 and f_skor >= 7:
+        en_guclu = {
+            "baslik": f"Güvenlik Marjı ({fk:.1f}x F/K) & F-Skor ({f_skor}/9)",
+            "detay": f"Tarihsel çarpan bandının %{tarihsel_bant_yuzde:.0f} diliminde iskontolu ve {f_skor}/9 finansal kalite puanına sahip."
+        }
+    else:
+        en_guclu = {
+            "baslik": f"{kategori} Yapı & Nakit Akışı ({f_skor}/9)",
+            "detay": f"1 TL net kâra karşılık {ina_nk_orani:.2f} TL işletme nakdi üreterek faaliyet döngüsünü finanse ediyor."
+        }
+
+    if marj_degisim_qoq >= 1.5 and ciro_buyume_yoy >= 10.0:
+        ivme = {
+            "baslik": "Çift Motorlu İvme (Ciro + Marj Açılması)",
+            "detay": f"Satışlar %{ciro_buyume_yoy:+.1f} büyürken esas faaliyet marjı geçen döneme göre {marj_degisim_qoq:+.1f} puan genişledi."
+        }
+    elif ciro_buyume_yoy >= 20.0:
+        ivme = {
+            "baslik": "Güçlü Satış & Pazar Payı İvmesi",
+            "detay": f"Üst satır satış gelirleri %{ciro_buyume_yoy:+.1f} artışla sektörel talep daralmasını aşıyor."
+        }
+    elif marj_degisim_qoq >= 0.5:
+        ivme = {
+            "baslik": "Maliyet Kontrolü & Marj İyileşmesi",
+            "detay": f"Maliyet baskısına rağmen esas faaliyet kâr marjı önceki döneme göre {marj_degisim_qoq:+.1f} puan yükseldi."
+        }
+    elif avans_buyume >= 40.0 or mdv_buyume >= 35.0:
+        ivme = {
+            "baslik": "Sipariş Avansları & Kapasite Yatırımı",
+            "detay": f"Maddi duran varlıklar %{mdv_buyume:+.1f}, alınan sipariş avansları %{avans_buyume:+.1f} büyüyerek gelecek ciroyu destekliyor."
+        }
+    else:
+        ivme = {
+            "baslik": "Nakit Kalkanı & Bilanço Dengelenmesi",
+            "detay": f"Özkaynaklar %{ozk_buyume:+.1f} büyüdü; işletme sermayesi disipliniyle marj dengelenmesi izleniyor."
+        }
+
+    # 3. KUTU: KRİTİK RİSK (Saatli Bomba & Tab 4 İptal Kancası)
+    if 0 < fk <= 12.0 and pfk > fk * 1.5:
+        kritik_risk = {
+            "kod": "DEGER_TUZAGI",
+            "baslik": "Döngü Zirvesi & Değer Tuzağı Riski",
+            "detay": f"Cari F/K {fk:.1f}x ucuz görünse de, marj/ciro daralmasıyla P-F/K beklentisi {pfk:.1f}x seviyesine fırlıyor.",
+            "iptal_tetikleyicisi": (
+                "ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: İleriye dönük P-F/K beklentisi Cari F/K'yı %50'den fazla aşmaya "
+                "devam ederse döngü zirvesi teyit edilir, değer tuzağına düşmemek için çıkılır."
+            )
+        }
+    elif not banka_mi and ((kv_borc_orani >= 75.0 and net_borc_ozk >= 0.50) or (0 < icr < 1.5) or net_borc_ozk >= 1.20):
+        kritik_risk = {
+            "kod": "KISA_VADELI_BORC_VE_FAIZ_BASKISI",
+            "baslik": "Kısa Vadeli Borç Çevirme & Finansman Yükü",
+            "detay": f"Borcun %{kv_borc_orani:.0f}'i kısa vadeli; Net Borç/ÖZK {net_borc_ozk:.2f}x ve faiz karşılama (ICR) {icr:.2f}x sınırında.",
+            "iptal_tetikleyicisi": (
+                f"ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: Faiz karşılama oranı (ICR) 1.25x'in altına sarkar veya "
+                f"Net Borç/ÖZK rasyosu {max(1.50, net_borc_ozk + 0.35):.2f}x eşiğini aşarsa temel tez iptal olur ve pozisyondan çıkılır."
+            )
+        }
+    elif not banka_mi and (alacak_makasi >= 25.0 or dso_gun >= 180.0 or dts_skor >= 35):
+        kritik_risk = {
+            "kod": "ALACAK_VADE_VE_TAHAKKUK_RISKI",
+            "baslik": "Ticari Alacak Vadesi (DSO) & Tahakkuk Baskısı",
+            "detay": f"Alacak tahsil süresi {dso_gun:.0f} gün (DTS: {dts_skor}/100); alacak artışı ciro hızını {alacak_makasi:+.1f} puan aşıyor.",
+            "iptal_tetikleyicisi": (
+                f"ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: Gelecek bilançoda DSO ({dso_gun:.0f} gün) düşüşe geçmez ve "
+                f"İNA/Net Kâr oranı 1.00x'in altına inerse alacak kalitesi bozulmuş sayılır, pozisyon kapatılır."
+            )
+        }
+    elif marj_degisim_qoq <= -2.0 or efk_marji < 0:
+        kritik_risk = {
+            "kod": "OPERASYONEL_MARJ_EROZYONU",
+            "baslik": "Operasyonel Marj Daralması & Maliyet Baskısı",
+            "detay": f"Esas faaliyet marjı %{efk_marji:.1f} seviyesinde (Önceki döneme göre değişim: {marj_degisim_qoq:+.1f} puan).",
+            "iptal_tetikleyicisi": (
+                f"ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: Esas faaliyet kâr marjı gelecek çeyrekte de toparlanamaz ve "
+                f"%{max(3.0, efk_marji - 1.5):.1f} eşiğinin altında kalırsa büyüme hikayesi çürümüş sayılır, pozisyon azaltılır."
+            )
+        }
+    elif tarihsel_bant_yuzde >= 80.0 or fk >= 18.0:
+        kritik_risk = {
+            "kod": "CARPAN_DOYGUNLUGU",
+            "baslik": "Tarihsel Çarpan Doygunluğu (Yüksek Fiyatlama)",
+            "detay": f"F/K {fk:.1f}x ile tarihsel değerleme bandının %{tarihsel_bant_yuzde:.0f} diliminde; güvenlik marjı daralmış durumda.",
+            "iptal_tetikleyicisi": (
+                "ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: Yüksek çarpanı destekleyen satış/FAVÖK büyümesi gelecek çeyrekte "
+                "yavaşlar veya stok devir hızı düşerse pahalı çarpan taşınmaz, kâr realizasyonu yapılır."
+            )
+        }
+    else:
+        kritik_risk = {
+            "kod": "ISLETME_SERMAYESI_VE_KV_BORC_TAKIBI",
+            "baslik": "Kısa Vadeli Borç Payı & Stok Devir Disiplini",
+            "detay": f"Bilançoda kırmızı bayrak yok; ancak borcun %{kv_borc_orani:.0f}'lik kısa vadeli kısmı ve marj korunumu izleniyor.",
+            "iptal_tetikleyicisi": (
+                "ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: Kısa vadeli borç çevirme maliyetleri operasyonel kâr artışını geçer "
+                "veya stok/alacak devir hızı üst üste 2 çeyrek bozulursa pozisyon ağırlığı azaltılır."
+            )
+        }
+
+    return {
+        "dna_ozeti": {
+            "en_guclu_yani": en_guclu,
+            "iyiye_giden_taraf": ivme,
+            "kritik_risk": kritik_risk
+        },
+        "oz_turkce_seridi": oz_turkce_seridi,
+        "tahta_derinligi": tahta_derinligi
+    }
+
+
+def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
+    kod = s["kod"]
+    sirket_adi = s.get("sirket_adi", kod)
+    sektor = s.get("sektor", "Sanayi")
+    kategori = s.get("kategori", "Kırılgan Hendekli")
+    halka_aciklik = float(s.get("halka_aciklik", 35.0))
+    net_borc_ozk = float(s.get("net_borc_ozkaynak", 0.0))
+    cfo_ok = bool(s.get("cfo_buyuk_net_kar", True))
+    f_skor = int(s.get("piotroski_skor", 6))
+    fiyat = float(s.get("fiyat_tl", 0.0))
+    tavan = float(s.get("tavan_agirlik", 5.0))
+    iliskili_oran = float(s.get("iliskili_oran", 0.2))
+    kv_borc_oran = float(s.get("kv_borc_oran", 45.0))
+
+    satis_c = float(s.get("satis_milyon_tl", 1000.0))
+    satis_o = float(s.get("satis_onceki_milyon_tl", 800.0))
+    efk_c = float(s.get("efk_milyon_tl", 180.0))
+    efk_o = float(s.get("efk_onceki_milyon_tl", 130.0))
+    net_c = float(s.get("net_kar_milyon_tl", 150.0))
+    net_o = float(s.get("net_kar_onceki_milyon_tl", 110.0))
+    cfo_c = float(s.get("cfo_milyon_tl", 210.0))
+    ozk_c = float(s.get("ozk_c", 4000.0))
+    ozk_o = float(s.get("ozk_o", 3100.0))
+    varlik_c = float(s.get("varlik_c", 7500.0))
+    mdv_c = float(s.get("mdv_c", 2200.0))
+    mdv_o = float(s.get("mdv_o", 1850.0))
+    ertelenmis_c = float(s.get("ertelenmis_c", 320.0))
+    ertelenmis_o = float(s.get("ertelenmis_o", 240.0))
+    stok_c = float(s.get("stok_c", 950.0))
+    stok_o = float(s.get("stok_o", 780.0))
+    alacak_c = float(s.get("alacak_c", 1100.0))
+    alacak_o = float(s.get("alacak_o", 890.0))
+
+    pd_milyar = float(s.get("piyasa_degeri_milyar", 0.0))
+    fk = float(s.get("fk", 0.0))
+    fd_favok = float(s.get("fd_favok", 0.0))
+    roe = float(s.get("roe", round((net_c / max(ozk_c, 1.0)) * 100, 1)))
+
+    satis_buyume = round(((satis_c / max(satis_o, 1.0)) - 1) * 100, 1) if satis_o > 0 else 0.0
+    net_kar_buyume = round(((net_c / max(abs(net_o), 1.0)) - 1) * 100, 1) if net_o > 0 else 0.0
+    efk_marj_c = round((efk_c / max(satis_c, 1.0)) * 100, 1) if satis_c > 0 else 0.0
+    efk_marj_o = round((efk_o / max(satis_o, 1.0)) * 100, 1) if satis_o > 0 else 0.0
+    marj_fark_puan = round(efk_marj_c - efk_marj_o, 1)
+    nakit_donusum_kati = round(cfo_c / net_c, 2) if net_c > 0 else (1.5 if cfo_c > 0 else 0.0)
+
+    # -------------------------------------------------------------------------
+    # SENTETİK PROSPEKTİF F/K (P-F/K) HESAPLAMASI (ÖLÇEKLENMİŞ MOTOR)
+    # -------------------------------------------------------------------------
+    avans_buyume = round(((ertelenmis_c / max(abs(ertelenmis_o), 1.0)) - 1) * 100, 1) if ertelenmis_o > 0 else 0.0
+
+    # Uç baz etkilerini dengeleyen rasyonel büyüme sınırları
+    satis_ivmesi = max(-0.50, min(1.00, satis_buyume / 100.0))
+    marj_ivmesi = max(-0.30, min(0.30, marj_fark_puan / 100.0))
+    avans_ivmesi = max(-0.30, min(0.50, (avans_buyume / 100.0) * 0.35))
+
+    toplam_ivme = max(-0.70, min(1.50, satis_ivmesi + marj_ivmesi + avans_ivmesi))
+
+    if fk > 0 and (1.0 + toplam_ivme) > 0.15:
+        pfk = round(fk / (1.0 + toplam_ivme), 1)
+    else:
+        pfk = 0.0
+
+    # -------------------------------------------------------------------------
+    # ÇEYREKLİK ROE TREND SERİSİ HESAPLAMASI (SON 5 DÖNEM)
+    # -------------------------------------------------------------------------
+    sirket_kaydi = YEREL_MALI_VERITABANI.get(kod, {})
+    cok_donem = sirket_kaydi.get("donemler", {})
+    sirali_donemler = sorted(cok_donem.keys())[-5:]
+
+    roe_donemler = []
+    roe_degerleri = []
+
+    for d_adi in sirali_donemler:
+        d_satirlar = [(row[0], row[1], row[1]) for row in cok_donem[d_adi]]
+        d_net = satir_bul(d_satirlar, ["donem net kar", "donem kari", "ana ortaklik paylari"])[0]
+        d_ozk = max(satir_bul(d_satirlar, ["ana ortakliga ait ozkaynaklar", "toplam ozkaynaklar", "ozkaynaklar"])[0], 1.0)
+        d_roe = round((d_net / d_ozk) * 100.0, 1)
+        roe_donemler.append(d_adi)
+        roe_degerleri.append(d_roe)
+
+    if not roe_degerleri:
+        roe_donemler = ["Son Dönem"]
+        roe_degerleri = [roe]
+
+    roe_serisi = {
+        "donemler": roe_donemler,
+        "roe_degerleri": roe_degerleri
+    }
+
+    # -------------------------------------------------------------------------
+
+    konum_yuzde = int(min(95, max(5, (fk / 20.0) * 100))) if fk > 0 else 5
+    marj_durum = "GÜÇLÜ GÜVENLİK MARJI (İSKONTOLU)" if (0 < fk < 6.0) else ("DENGELİ / MAKUL DEĞERLEME" if fk <= 16.0 else "DOYUM NOKTASI / PAHALI")
+    marj_renk = "badge-ok" if (0 < fk < 6.0) else ("badge-warn" if fk <= 16.0 else "badge-fail")
+
+    degerleme_bandi = {
+        "fk": fk, "pfk": pfk, "alt_fk": 6.0, "medyan_fk": 11.0, "ust_fk": 16.0,
+        "marj_durum": marj_durum, "marj_renk": marj_renk, "konum_yuzde": konum_yuzde
+    }
+
+    birikimli_dipnot_arsivi = guncelle_birikimli_dipnot_arsivi(kod)
+    mevcut_agirlik = round(float(pozisyon.get("agirlik_yuzde", 0.0)), 2) if pozisyon else 0.0
+    kademe_durumu = pozisyon.get("kademe", "1/3 Başlangıç (Radar)") if pozisyon else "1/3 Başlangıç (Yeni Aday)"
+
+    sirketi_tani = {
+        "sirket_adi": sirket_adi,
+        "ne_is_yapar": f"{sirket_adi}, {sektor} sektöründe faaliyet gösteren, Bölüm 1 süzgeçlerini geçen BIST şirketidir.",
+        "urun_ve_pazar": f"{sektor} ana ürün ve hizmetleri | Yurt içi ve ihracat pazarları",
+        "piyasa_degeri": f"{pd_milyar:,.1f} milyar TL" if pd_milyar > 0 else format_milyar_milyon(ozk_c * 1.3),
+        "net_kar_12ay": format_milyar_milyon(net_c),
+        "net_kar_yorum": f"Son dönem net kârı {format_milyar_milyon(net_c)} oldu (%{net_kar_buyume:+.1f}).",
+        "roe_deger": f"%{roe:.1f}",
+        "roe_yorum": f"Özkaynak kârlılığı (ROE) %{roe:.1f} düzeyindedir.",
+        "carpan_ozet": f"F/K: {fk if fk > 0 else 'Hesaplanmadı'}x | FD/FAVÖK: {fd_favok if fd_favok > 0 else '-'}x"
+    }
+
+    dna_ve_gidisat = [
+        {"baslik": "Büyüme & Satış Hızı", "deger": f"%{satis_buyume:+.1f}", "durum": "GÜÇLÜ" if satis_buyume >= 25.0 else "DENGELİ", "yorum": f"Satış gelirleri {format_milyar_milyon(satis_o)} seviyesinden {format_milyar_milyon(satis_c)} seviyesine geldi."},
+        {"baslik": "Operasyonel Kâr & Marjlar", "deger": f"EFK Marjı %{efk_marj_c:.1f}", "durum": "İYİLEŞİYOR" if marj_fark_puan >= 0 else "DARALMA VAR", "yorum": f"Operasyonel kâr marjı geçen döneme göre {marj_fark_puan:+.1f} puan değişti."},
+        {"baslik": "Parası Var mı? (Nakit Dönüşümü)", "deger": f"1 TL Kâra {nakit_donusum_kati:.2f} TL Nakit", "durum": "SAĞLAM" if cfo_ok else "İZLEMEDE", "yorum": f"1 TL net kâra karşılık {nakit_donusum_kati:.2f} TL nakit (CFO: {format_milyar_milyon(cfo_c)}) üretildi."},
+        {"baslik": "Bilanço Sağlamlığı & Borç", "deger": f"%{kv_borc_oran:.0f} Kısa Vade | {net_borc_ozk:.2f}x", "durum": "GÜVENLİ" if (kv_borc_oran <= 65.0 and net_borc_ozk <= 1.5) else "DİKKAT", "yorum": f"Kısa vadeli borç payı %{kv_borc_oran:.1f}; Net Borç/ÖZK rasyosu {net_borc_ozk:.2f}x."}
+    ]
+
+    def degisim_karti(kalem_adi, c_val, o_val, ozel_not):
+        fark = c_val - o_val
+        yuzde = round(((c_val / max(abs(o_val), 1.0)) - 1) * 100, 1) if o_val != 0 else 0.0
+        yon = "YÜKSELDİ" if fark >= 0 else "AZALDI"
+        return {
+            "kalem": f"{kalem_adi} %{abs(yuzde):.1f} {yon}",
+            "guncel_tutar": format_milyar_milyon(c_val),
+            "ne_ifade_ediyor": f"{format_milyar_milyon(o_val)} → {format_milyar_milyon(c_val)}. {ozel_not}"
+        }
+
+    bilanco_degisimleri = [
+        degisim_karti("ANA ORTAKLIK ÖZKAYNAĞI", ozk_c, ozk_o, "Özkaynak tamponunun net kârla beslenmesi içsel değeri artırır."),
+        degisim_karti("MADDİ DURAN VARLIKLAR", mdv_c, mdv_o, "Kapasite yatırımları gelecek dönem büyümesinin öncü göstergesidir."),
+        degisim_karti("ERTELENMİŞ GELİRLER / AVANSLAR", ertelenmis_c, ertelenmis_o, "Peşin alınan sipariş avansları gelecekteki hazır hasılatı gösterir."),
+        degisim_karti("STOKLAR", stok_c, stok_o, "Stokların satış büyümesiyle dengeli ilerlemesi izlenmelidir."),
+        degisim_karti("TİCARİ ALACAKLAR", alacak_c, alacak_o, "Cirodan hızlı artan alacaklar vade açılmasına işaret eder.")
+    ]
+
+    # Son dönem dipnot metriklerini DNA motoruna bağla
+    donemler_dict = birikimli_dipnot_arsivi.get("donemler", {})
+    son_donem_adi = sorted(donemler_dict.keys())[-1] if donemler_dict else None
+    son_dipnot = donemler_dict.get(son_donem_adi, {}) if son_donem_adi else {}
+
+    ozk_orani_hesap = round((ozk_c / max(varlik_c, 1.0)) * 100.0, 1)
+    ozk_buyume_yuzde = round(((ozk_c / max(abs(ozk_o), 1.0)) - 1.0) * 100.0, 1) if ozk_o != 0 else 0.0
+    mdv_buyume_yuzde = round(((mdv_c / max(abs(mdv_o), 1.0)) - 1.0) * 100.0, 1) if mdv_o != 0 else 0.0
+    avans_buyume_yuzde = round(((ertelenmis_c / max(abs(ertelenmis_o), 1.0)) - 1.0) * 100.0, 1) if ertelenmis_o != 0 else 0.0
+    alacak_buyume_yuzde = round(((alacak_c / max(abs(alacak_o), 1.0)) - 1.0) * 100.0, 1) if alacak_o != 0 else 0.0
+
+    dna_katmani = uret_dna_ve_tercume_katmani({
+        "kod": kod, "sektor": sektor, "kategori": kategori, "f_skor": f_skor,
+        "efk_marji": efk_marj_c, "marj_degisim_qoq": marj_fark_puan,
+        "ciro_buyume_yoy": satis_buyume, "ina_net_kar_orani": nakit_donusum_kati,
+        "net_kar_milyon_tl": net_c, "ozkaynak_orani": ozk_orani_hesap,
+        "kv_borc_orani": kv_borc_oran, "net_borc_ozk": net_borc_ozk,
+        "icr": float(son_dipnot.get("icr_kati", 3.0)),
+        "dts_skor": int(son_dipnot.get("dts_skor", 0)),
+        "dso_gun": float(son_dipnot.get("dso_gun", 0.0)),
+        "alacak_ciro_makasi": round(alacak_buyume_yuzde - satis_buyume, 1),
+        "ozk_buyume": ozk_buyume_yuzde, "mdv_buyume": mdv_buyume_yuzde,
+        "avans_buyume": avans_buyume_yuzde, "roe": roe, "fk": fk, "pfk": pfk,
+        "fd_favok": fd_favok, "pd_milyar": pd_milyar if pd_milyar > 0 else round((ozk_c * 1.3) / 1000.0, 2),
+        "halka_aciklik": halka_aciklik, "tarihsel_bant_konumu": konum_yuzde
+    })
+
+    dikkat_cekenler = [f"Nakit üretimi: Her 1 TL kâra karşılık {nakit_donusum_kati:.2f} TL işletme nakit akışı sağlandı."] if cfo_ok else []
+    sevmediklerim = []
+    if net_borc_ozk > 1.5: sevmediklerim.append(f"Net Borç / Özkaynak oranı {net_borc_ozk:.2f}x ile borç yükü izlenmeli.")
+    if f_skor < 7: sevmediklerim.append(f"Piotroski F-Skoru {f_skor}/9 ile orta bantta; marj iyileşmesi izlenmeli.")
+    if not sevmediklerim: sevmediklerim.append("Temel tabloda kırmızı çizgi ihlali yok; çeyreklik marjlar rutin izlenmeli.")
+
+    iptal_kosulu_metni = dna_katmani["dna_ozeti"]["kritik_risk"]["iptal_tetikleyicisi"]
+    borsaci_gozuyle_ozet = (
+        f"{sirket_adi} ({kod}), {sektor} sektöründe '{kategori}' hendek yapısıyla faaliyet gösteriyor. "
+        f"Son dönemde {format_milyar_milyon(satis_c)} ciro ve {format_milyar_milyon(net_c)} net kâr üretildi. "
+        f"Kârın nakde dönüşüm oranı {nakit_donusum_kati:.2f}x ve Net Borç/ÖZK rasyosu {net_borc_ozk:.2f}x seviyesindedir. "
+        f"Şirketin en güçlü kalkanı '{dna_katmani['dna_ozeti']['en_guclu_yani']['baslik']}' iken, "
+        f"yakından izlenen kritik zaafı '{dna_katmani['dna_ozeti']['kritik_risk']['baslik']}' tarafıdır."
+    )
+
+    return {
+        "kod": kod, "sirket_adi": sirket_adi, "sektor": sektor, "kategori": kategori, "fiyat_tl": fiyat,
+        "f_skor": f_skor, "tavan_agirlik": tavan, "mevcut_agirlik": mevcut_agirlik, "kademe_durumu": kademe_durumu,
+        "degerleme_bandi": degerleme_bandi, "birikimli_dipnot": birikimli_dipnot_arsivi,
+        "sirketi_tani": sirketi_tani, "dna_ve_gidisat": dna_ve_gidisat, "bilanco_degisimleri": bilanco_degisimleri,
+        "dna_ozeti": dna_katmani["dna_ozeti"],
+        "oz_turkce_seridi": dna_katmani["oz_turkce_seridi"],
+        "tahta_derinligi": dna_katmani["tahta_derinligi"],
+        "roe_serisi": roe_serisi,
+        "son_soz": {
+            "dikkat_cekenler": dikkat_cekenler,
+            "sevmediklerim": sevmediklerim,
+            "borsaci_gozuyle": borsaci_gozuyle_ozet,
+            "iptal_kosulu": iptal_kosulu_metni
+        },
+        "bolum1_elemeler": [
+            {"kriter": "Halka Açıklık", "deger": f"%{halka_aciklik:.1f}", "durum": "GEÇTİ" if halka_aciklik <= 70.0 else "ELENDİ", "not": "Tavan %70 kontrolü"},
+            {"kriter": "İlişkili Taraflara Kaynak Çıkışı", "deger": f"%{iliskili_oran:.2f}", "durum": "TEMİZ" if iliskili_oran < 5.0 else "UYARI", "not": "Kaynak sızıntısı yok"},
+            {"kriter": "Borçluluk ve Faiz Yapısı", "deger": f"{net_borc_ozk:.2f}x", "durum": "GÜVENLİ" if net_borc_ozk <= 1.5 else "DENGELİ", "not": "Özkaynak / borç uyumu"}
+        ],
+        "bolum5_karar_ve_cikis": {
+            "hendek_sinifi": kategori,
+            "portfoy_tavani": f"Maksimum %{tavan:.1f}",
+            "cikis_tetikleyicileri": [
+                "(1) Yönetim veya hâkim hissedar değişimi ve kurumsal nitelik kaybı",
+                "(2) Hâkim hissedarın borsada doğrudan pay satışı başlatması",
+                "(3) İlişkili taraflara şüpheli kaynak aktarımı",
+                "(4) Şirketin ana iş modelinde yapısal kırılma",
+                "(5) İlk yatırım analizinde kritik bir hata tespit edilmesi"
+            ]
+        }
+    }
+
+
+# ==============================================================================
+# 4. TEFTİŞ MASASI VE HTML MOTORU (GERÇEK NAKİT & SEKTÖR KALKANI)
+# ==============================================================================
+def uret_sektor_paneli_html(mevcut_sektorler: dict, nakit_orani: float, nakit_tl: float, gercek_kasa_mi: bool) -> str:
+    renk_paleti = [
+        "#38bdf8", "#818cf8", "#fb923c", "#34d399", "#f472b6", 
+        "#a78bfa", "#2dd4bf", "#e879f9", "#f97316", "#06b6d4"
+    ]
+    
+    sirali = sorted(mevcut_sektorler.items(), key=lambda x: x[1], reverse=True)
+    
+    nakit_durum_metin = "🟢 FIRSAT YEDEĞİ GÜÇLÜ" if nakit_orani >= 10.0 else ("🟡 TAMPON DÜŞÜK / İZLEMEDE" if nakit_orani >= 5.0 else "🔴 NAKİT TÜKENDİ / ALIM FRENİ")
+    nakit_durum_renk = "#34d399" if nakit_orani >= 10.0 else ("#fbbf24" if nakit_orani >= 5.0 else "#f87171")
+    nakit_etiket = "Gerçek Kasa (PPF/Nakit)" if gercek_kasa_mi else "Hedef Nakit Tamponu (%10)"
+    
+    segmentler = f'<div style="width:{min(100.0, max(2.0, nakit_orani))}%; background:#facc15; height:100%;" title="{nakit_etiket}: %{nakit_orani:.1f} ({nakit_tl:,.0f} TL)"></div>'
+    rozetler = f'''
+        <div style="background:#1e293b; border:1px solid #facc15; border-radius:6px; padding:7px 10px; display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; align-items:center; gap:6px;">
+                <span style="width:10px; height:10px; border-radius:50%; background:#facc15; display:inline-block;"></span>
+                <span style="font-size:11.5px; font-weight:bold; color:#f8fafc;">{nakit_etiket}</span>
+            </div>
+            <div style="text-align:right;">
+                <strong style="color:#facc15; font-size:12px;">%{nakit_orani:.1f}</strong>
+                <span style="font-size:9.5px; color:{nakit_durum_renk}; font-weight:bold; display:block;">{nakit_durum_metin}</span>
+            </div>
+        </div>
+    '''
+    
+    for idx, (sek, pay) in enumerate(sirali):
+        if pay <= 0.05: continue
+        renk = renk_paleti[idx % len(renk_paleti)]
+        tavan_asildi = pay > 20.0
+        durum_renk = "#f87171" if tavan_asildi else "#34d399"
+        durum_metin = "⚠️ %20 AŞIMI" if tavan_asildi else "🟢 GÜVENLİ"
+        border_c = "#7f1d1d" if tavan_asildi else "#334155"
+        
+        segmentler += f'<div style="width:{pay:.1f}%; background:{renk}; height:100%; border-left:1px solid #0b0e14;" title="{sek}: %{pay:.1f}"></div>'
+        rozetler += f'''
+            <div style="background:#1e293b; border:1px solid {border_c}; border-radius:6px; padding:7px 10px; display:flex; justify-content:space-between; align-items:center;">
+                <div style="display:flex; align-items:center; gap:6px; overflow:hidden;">
+                    <span style="width:10px; height:10px; border-radius:50%; background:{renk}; display:inline-block; flex-shrink:0;"></span>
+                    <span style="font-size:11.5px; color:#f8fafc; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;">{sek}</span>
+                </div>
+                <div style="text-align:right; flex-shrink:0; margin-left:8px;">
+                    <strong style="color:#f8fafc; font-size:12px;">%{pay:.1f}</strong>
+                    <span style="font-size:9.5px; color:{durum_renk}; font-weight:bold; display:block;">{durum_metin}</span>
+                </div>
+            </div>
+        '''
+
+    return f'''
+    <div style="background:#111827; border:1px solid #1f2937; border-radius:8px; padding:14px 16px; margin-bottom:24px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap; gap:8px;">
+            <div>
+                <span style="font-size:12px; font-weight:bold; color:#38bdf8; text-transform:uppercase; letter-spacing:0.5px;">
+                    🛡️ SEKTÖREL ÇEŞİTLENDİRME KALKANI & VARLIK DAĞILIMI
+                </span>
+                <span style="font-size:11px; color:#64748b; margin-left:8px;">(Serkan Ünal 11. Bölüm: Tek Bir Sektöre Maksimum %20 Üst Sınır)</span>
+            </div>
+            <div style="font-size:11px; color:#94a3b8;">
+                Mevcut Kasa / Nakit: <strong style="color:#facc15;">%{nakit_orani:.1f} ({nakit_tl:,.0f} TL)</strong> &nbsp;|&nbsp; Sektör Tavanı: <strong style="color:#38bdf8;">Maks %20.0</strong>
+            </div>
+        </div>
+        
+        <div style="display:flex; height:18px; border-radius:6px; overflow:hidden; background:#0f172a; margin-bottom:12px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);">
+            {segmentler}
+        </div>
+
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap:8px;">
+            {rozetler}
+        </div>
+    </div>
+    '''
+
+
+def uret_portfoy_kalkani_html(tablo_verileri: list, karneler: dict, toplam_portfoy: float, hisse_portfoy_tl: float, nakit_tl: float, hisse_sayisi: int, sektor_paneli_html: str):
+    satirlar_html = ""
+    for r in tablo_verileri:
+        kod = r["Kod"]
+        aksiyon = r["Aksiyon"]
+        renk = "badge-ok" if "AL" in aksiyon else ("badge-fail" if "SAT" in aksiyon else "badge-warn")
+        kz_renk = "#34d399" if r["KZ_Yuzde"] >= 0 else "#f87171"
+        fark_metin = f"+{r['Fark_Lot']:,}" if r['Fark_Lot'] > 0 else f"{r['Fark_Lot']:,}"
+
+        satirlar_html += f"""
+        <tr onclick="acKarneModal('{kod}')" style="cursor:pointer;">
+            <td><strong style="color:#38bdf8;">{kod} 🔍</strong></td>
+            <td>{r['Sektör']}</td>
+            <td>{r['Hendek']}</td>
+            <td><strong>{r['F_Skor']}/9</strong></td>
+            <td>{r['Mevcut_Lot']:,}</td>
+            <td>{r['Fiyat']:.2f} TL (<span style="color:{kz_renk};">%{r['KZ_Yuzde']}</span>)</td>
+            <td><strong>{r['Mevcut_Tutar']:,.0f} TL</strong></td>
+            <td>%{r['Mevcut_Pay']}</td>
+            <td><strong>%{r['Hedef_Pay']}</strong></td>
+            <td>{r['Hedef_Tutar']:,.0f} TL</td>
+            <td>{r['Hedef_Lot']:,}</td>
+            <td><strong>{fark_metin}</strong></td>
+            <td><span class="{renk}">{aksiyon}</span></td>
+        </tr>"""
+
+    karneler_json_str = json.dumps(karneler, ensure_ascii=False)
+
+    html_icerik = f"""<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>KARTAL — Dinamik BIST Portföy Kalkanı & Serkan Ünal Teftiş Masası</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦅</text></svg>">
+    <style>
+        body {{ background-color: #0b0e14; color: #e2e8f0; font-family: monospace, system-ui; margin: 0; padding: 24px; }}
+        .header {{ border-bottom: 1px solid #1e293b; padding-bottom: 16px; margin-bottom: 24px; }}
+        .strip {{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }}
+        .strip-card {{ background: #111827; border: 1px solid #1f2937; padding: 14px; border-radius: 8px; }}
+        .strip-card .label {{ font-size: 11px; color: #64748b; text-transform: uppercase; }}
+        .strip-card .val {{ font-size: 18px; font-weight: bold; margin-top: 6px; color: #f8fafc; }}
+        table {{ width: 100%; border-collapse: collapse; font-size: 12px; background: #111827; border-radius: 8px; }}
+        th, td {{ text-align: left; padding: 9px 8px; border-bottom: 1px solid #1e293b; }}
+        th {{ color: #94a3b8; font-size: 11px; text-transform: uppercase; }}
+        tr:hover {{ background-color: #1e293b; }}
+        .badge-ok {{ background: #064e3b; color: #34d399; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; }}
+        .badge-warn {{ background: #78350f; color: #fbbf24; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; }}
+        .badge-fail {{ background: #7f1d1d; color: #f87171; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; }}
+
+        .modal-overlay {{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 1000; }}
+        .drawer {{ position: fixed; right: -960px; top: 0; width: 920px; max-width: 96vw; height: 100%; background: #0f172a; border-left: 2px solid #38bdf8; padding: 22px; box-sizing: border-box; overflow-y: auto; transition: right 0.28s ease; z-index: 1001; }}
+        .drawer.active {{ right: 0; }}
+        .close-btn {{ background: #1e293b; color: #cbd5e1; border: 1px solid #334155; padding: 6px 12px; border-radius: 6px; cursor: pointer; float: right; font-weight: bold; }}
+
+        .tabs-bar {{ display: flex; gap: 8px; margin: 14px 0 18px 0; border-bottom: 1px solid #334155; padding-bottom: 10px; flex-wrap: wrap; }}
+        .tab-btn {{ background: #1e293b; color: #94a3b8; border: 1px solid #334155; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 11.5px; font-weight: bold; }}
+        .tab-btn.active {{ background: #eab308; color: #0f172a; border-color: #facc15; }}
+        .tab-pane {{ display: none; }}
+        .tab-pane.active {{ display: block; }}
+
+        .section-title {{ color: #38bdf8; font-size: 13.5px; border-bottom: 1px solid #334155; padding-bottom: 6px; margin: 16px 0 10px 0; font-weight: bold; text-transform: uppercase; }}
+        .karne-item {{ display: flex; justify-content: space-between; padding: 7px 0; border-bottom: 1px solid #1e293b; font-size: 12px; }}
+        .info-card {{ background: #111827; border: 1px solid #1f2937; border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; }}
+        .info-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }}
+        .big-val {{ font-size: 17px; font-weight: bold; color: #34d399; margin: 4px 0; }}
+        .meal-text {{ font-size: 11.5px; color: #cbd5e1; line-height: 1.45; margin-top: 4px; }}
+        .cikis-kural {{ background: #1c1917; border-left: 3px solid #ef4444; padding: 8px 10px; margin-bottom: 6px; border-radius: 4px; font-size: 11.5px; color: #fecaca; }}
+        .good-box {{ background: #064e3b33; border-left: 3px solid #10b981; padding: 8px 10px; margin-bottom: 6px; border-radius: 4px; font-size: 12px; color: #d1fae5; }}
+        .warn-box {{ background: #78350f44; border-left: 3px solid #f59e0b; padding: 8px 10px; margin-bottom: 6px; border-radius: 4px; font-size: 12px; color: #fef3c7; }}
+
+        .matris-table {{ width: 100%; border-collapse: collapse; font-size: 11.5px; margin: 12px 0 18px 0; background: #0b1120; border: 1px solid #1e293b; border-radius: 6px; }}
+        .matris-table th {{ background: #1e293b; color: #38bdf8; padding: 8px 10px; text-align: left; border-bottom: 2px solid #334155; }}
+        .matris-table td {{ padding: 10px 8px; vertical-align: top; border-bottom: 1px solid #1e293b; border-right: 1px solid #1e293b; line-height: 1.4; }}
+        .matris-table tr:hover {{ background: #111827; }}
+
+        /* 3 Kutulu DNA Rozet Gridi */
+        .dna-ribbon-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-bottom: 12px; }}
+        .dna-card {{ background: rgba(15, 23, 42, 0.85); border-radius: 8px; padding: 10px 12px; border-left: 4px solid #64748b; }}
+        .dna-card.strength {{ border-left-color: #10b981; background: linear-gradient(135deg, rgba(16,185,129,0.12), rgba(15,23,42,0.9)); }}
+        .dna-card.momentum {{ border-left-color: #38bdf8; background: linear-gradient(135deg, rgba(56,189,248,0.12), rgba(15,23,42,0.9)); }}
+        .dna-card.risk     {{ border-left-color: #f43f5e; background: linear-gradient(135deg, rgba(244,63,94,0.14), rgba(15,23,42,0.9)); }}
+        .dna-badge-label {{ font-size: 10.5px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }}
+        .dna-card.strength .dna-badge-label {{ color: #34d399; }}
+        .dna-card.momentum .dna-badge-label {{ color: #38bdf8; }}
+        .dna-card.risk     .dna-badge-label {{ color: #fb7185; }}
+        .dna-title {{ font-size: 12.5px; font-weight: bold; color: #f8fafc; margin-bottom: 3px; }}
+        .dna-desc {{ font-size: 11.2px; color: #cbd5e1; line-height: 1.38; }}
+
+        /* 4 Boyutlu Öz Türkçe Tercüme Şeridi */
+        .oz-turkce-strip {{ display: grid; grid-template-columns: 1fr 1fr; gap: 7px 12px; background: #111827; border: 1px solid #334155; border-radius: 8px; padding: 10px 12px; margin-bottom: 14px; }}
+        .oz-turkce-item {{ font-size: 11.5px; color: #e2e8f0; line-height: 1.42; }}
+        .oz-turkce-item strong {{ color: #facc15; }}
+
+        /* Tab 4 Şarta Bağlı İptal Koşulu Kutusu */
+        .invalidation-box {{ background: linear-gradient(135deg, rgba(127,29,29,0.35), rgba(15,23,42,0.95)); border: 1px solid #ef4444; border-left: 4px solid #ef4444; border-radius: 8px; padding: 12px 14px; margin: 10px 0 16px 0; font-size: 12px; color: #fecaca; line-height: 1.5; }}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 style="color:#38bdf8; margin:0 0 6px 0;">KARTAL — Dinamik BIST Portföy Kalkanı & Serkan Ünal Teftiş Masası</h1>
+        <p style="color:#94a3b8; margin:0; font-size:12px;">Serkan Ünal 11. Bölüm Karar Sistemi: Dinamik Kasa Tamponu, %20 Sektör Üst Sınırı ve 4 Çeyreklik Kurumsal Denetim Matrisi.</p>
+    </div>
+    
+    <div class="strip">
+        <div class="strip-card"><div class="label">Toplam Portföy Büyüklüğü</div><div class="val">{toplam_portfoy:,.0f} TL</div></div>
+        <div class="strip-card"><div class="label">Hisse Yatırımları Değeri</div><div class="val" style="color:#38bdf8;">{hisse_portfoy_tl:,.0f} TL</div></div>
+        <div class="strip-card"><div class="label">Kasa / Nakit Tamponu</div><div class="val" style="color:#facc15;">{nakit_tl:,.0f} TL</div></div>
+        <div class="strip-card"><div class="label">Sektör Kalkanı & Havuz</div><div class="val" style="color:#34d399;">Maks %20 | {hisse_sayisi} Hisse</div></div>
+    </div>
+
+    {sektor_paneli_html}
+
+    <table>
+        <thead>
+            <tr>
+                <th>Kod</th><th>Sektör</th><th>Hendek</th><th>F-Skor</th><th>Mevcut Lot</th><th>Güncel Fiyat</th><th>Mevcut Tutar</th><th>Mevcut %</th><th>Hedef %</th><th>Hedef Tutar</th><th>Hedef Lot</th><th>Pazartesi Fark Lot</th><th>Aksiyon</th>
+            </tr>
+        </thead>
+        <tbody>
+            {satirlar_html}
+        </tbody>
+    </table>
+
+    <div class="modal-overlay" id="modalOverlay" onclick="kapatKarneModal()"></div>
+    <div class="drawer" id="karneDrawer">
+        <button class="close-btn" onclick="kapatKarneModal()">✕ Kapat</button>
+        <h2 id="modalHisseBaslik" style="margin-top:0; color:#38bdf8; font-size:20px;"></h2>
+        <div id="modalUstBant"></div>
+
+        <div class="tabs-bar">
+            <button class="tab-btn active" onclick="sekmeDegistir('tab1', this)">1. ŞİRKETİ TANI & DEĞERLEME</button>
+            <button class="tab-btn" onclick="sekmeDegistir('tab2', this)">2. ŞİRKETİN DNA'SI & GİDİŞAT</button>
+            <button class="tab-btn" onclick="sekmeDegistir('tab3', this)">3. BİLANÇO MEALİ & KAP</button>
+            <button class="tab-btn" onclick="sekmeDegistir('tab4', this)">4. SON SÖZ & ÇIKIŞ RADARI</button>
+            <button class="tab-btn" onclick="sekmeDegistir('tab5', this)" style="border-color:#38bdf8; color:#38bdf8;">5. DİPNOT RÖNTGENİ & FAALİYET MATRİSİ</button>
+        </div>
+
+        <div id="tab1" class="tab-pane active"></div>
+        <div id="tab2" class="tab-pane"></div>
+        <div id="tab3" class="tab-pane"></div>
+        <div id="tab4" class="tab-pane"></div>
+        <div id="tab5" class="tab-pane"></div>
+    </div>
+
+    <script>
+        const KARNELER = {karneler_json_str};
+
+        function sekmeDegistir(tabId, btn) {{
+            document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            btn.classList.add('active');
+        }}
+
+        function uretDinamikDnaVeTercume(k) {{
+            if (k.dna_ozeti && k.oz_turkce_seridi) {{
+                return {{ dna_ozeti: k.dna_ozeti, oz_turkce_seridi: k.oz_turkce_seridi, tahta_derinligi: k.tahta_derinligi }};
+            }}
+            const kod = k.kod || '';
+            const sektor = k.sektor || '';
+            const kategori = k.kategori || 'Hendeksiz';
+            const f_skor = k.f_skor || 6;
+            const dg = k.dna_ve_gidisat || [];
+            const st = k.sirketi_tani || {{}};
+            const db = k.degerleme_bandi || {{ fk: 0, pfk: 0, konum_yuzde: 50 }};
+            const b1 = k.bolum1_elemeler || [];
+
+            const num = (str, rgx, defVal=0) => {{
+                if (!str) return defVal;
+                const m = String(str).replace(',', '.').match(rgx);
+                return m ? parseFloat(m[1]) : defVal;
+            }};
+
+            const ciroBuyume = num(dg[0]?.deger, /([+-]?[0-9.]+)/, 0);
+            const efkMarji = num(dg[1]?.deger, /([+-]?[0-9.]+)/, 0);
+            const marjDegisim = num(dg[1]?.yorum, /([+-]?[0-9.]+)\\s*puan/, 0);
+            const inaNk = num(dg[2]?.deger, /1 TL Kâra\\s*([+-]?[0-9.]+)/, 0);
+            const kvBorc = num(dg[3]?.yorum, /%([0-9.]+)/, 50);
+            const nbOzk = num(dg[3]?.yorum, /rasyosu\\s*([+-]?[0-9.]+)x/, 0);
+            const roe = num(st.roe_deger, /([+-]?[0-9.]+)/, 0);
+            const fdFavok = num(st.carpan_ozet, /FD\\/FAVÖK:\\s*([0-9.]+)x/, 0);
+            const fk = db.fk || 0;
+            const bantYuzde = db.konum_yuzde || 50;
+            const halkaAciklik = num(b1[0]?.deger, /([0-9.]+)/, 35);
+
+            const pdRaw = num(st.piyasa_degeri, /([0-9.]+)/, 0);
+            const pdMilyar = String(st.piyasa_degeri || '').includes('milyar') ? pdRaw : (pdRaw / 1000.0);
+
+            const bdDonemler = k.birikimli_dipnot?.donemler || {{}};
+            const dKeys = Object.keys(bdDonemler).sort();
+            const sonDipnot = dKeys.length ? bdDonemler[dKeys[dKeys.length - 1]] : {{}};
+            const icr = sonDipnot.icr_kati ?? 3.0;
+            const dts = sonDipnot.dts_skor ?? 0;
+            const dso = sonDipnot.dso_gun ?? 0;
+
+            const bankaMi = /banka|sigorta|emeklilik|faktoring/i.test(sektor) || ['AKBNK','GARAN','ISCTR','YKBNK','HALKB','SKBNK','QNBTR','KLNMA','ICBCT','AGESA','ANHYT','ANSGR','TURSG','QUICK','OYYAT','DSTKF'].includes(kod);
+            const ozkOrani = Math.max(20, Math.min(88, Math.round(100 / (1 + Math.max(0.15, nbOzk * 0.75 + 0.35)))));
+
+            const tahtaDerinligi = (pdMilyar >= 15 && halkaAciklik >= 10 && halkaAciklik <= 70)
+                ? {{ sinif: 'Kurumsal / Likit 250 Tahta', rozet_renk: 'badge-ok' }}
+                : (pdMilyar >= 2.5 ? {{ sinif: 'Orta Ölçek / Standart Tahta', rozet_renk: 'badge-ok' }} : {{ sinif: 'Sığ Tahta / Likidite Uyarısı', rozet_renk: 'badge-warn' }});
+
+            let karCumlesi, nakitCumlesi, borcCumlesi;
+            if (bankaMi) {{
+                karCumlesi = `Finans/Sigorta bilançosu: Yıllıklandırılmış özkaynak kârlılığı (ROE) %${{roe.toFixed(1)}} düzeyinde.`;
+                nakitCumlesi = `Son dönem net kârı ${{st.net_kar_12ay || '-'}}; Piotroski F-Skoru ${{f_skor}}/9 ile bilanço kalitesi korunuyor.`;
+                borcCumlesi = `Finansal kuruluş yapısı (Halka açıklık %${{halkaAciklik.toFixed(1)}}); ticari borç yerine sermaye yeterliliği ve ROE izlenir.`;
+            }} else {{
+                karCumlesi = efkMarji > 0
+                    ? `Her 100 TL'lik satıştan kasaya ${{efkMarji.toFixed(1)}} TL esas faaliyet kârı kalıyor (Marj değişimi: ${{marjDegisim >= 0 ? '+' : ''}}${{marjDegisim.toFixed(1)}} puan).`
+                    : `Şirket ana faaliyetinden zarar yazıyor; her 100 TL satışta ${{Math.abs(efkMarji).toFixed(1)}} TL operasyonel erime var.`;
+                nakitCumlesi = inaNk >= 1.0
+                    ? `Kağıt üzerindeki her 1 TL net kâra karşılık kasaya ${{inaNk.toFixed(2)}} TL gerçek işletme nakdi (CFO) giriyor.`
+                    : `Yazılan her 1 TL net kârın ${{inaNk.toFixed(2)}} TL'si nakde dönüyor; alacak tahsil süresi (DSO) ${{dso.toFixed(0)}} gün.`;
+                borcCumlesi = nbOzk <= 0.05
+                    ? `Varlıkların ~%${{ozkOrani}}'i özkaynak; şirket net nakit konumunda (Yükümlülüklerin %${{kvBorc.toFixed(0)}}'i kısa vadeli).`
+                    : `Varlıkların ~%${{ozkOrani}}'i özkaynak, Net Borç/ÖZK ${{nbOzk.toFixed(2)}}x; faaliyet kârı faizi ${{icr.toFixed(2)}}x karşılıyor (%${{kvBorc.toFixed(0)}} kısa vade).`;
+            }}
+            const degerlemeCumlesi = fk > 0
+                ? `Mevcut kâr temposuyla piyasa değerini ${{fk.toFixed(1)}} yılda amorti ediyor${{fdFavok > 0 ? ', FD/FAVÖK ' + fdFavok.toFixed(1) + 'x' : ''}}; tarihsel bandın %${{bantYuzde}} diliminde.`
+                : `${{fdFavok > 0 ? 'FD/FAVÖK ' + fdFavok.toFixed(1) + 'x çarpanında; ' : ''}}Net kâr bazlı F/K hesaplanamıyor; tarihsel bandın %${{bantYuzde}} diliminde.`;
+
+            const enGuclu = bankaMi
+                ? {{ baslik: `Finansal Güç & ROE (%${{roe.toFixed(1)}})`, detay: `${{fk > 0 ? fk.toFixed(1) + 'x F/K çarpanı ve ' : ''}}${{f_skor}}/9 Piotroski skoruyla sektör içinde dengeli konumda.` }}
+                : (inaNk >= 1.5 && efkMarji >= 15)
+                    ? {{ baslik: 'Yüksek Nakit Üretim Makinesi', detay: `%${{efkMarji.toFixed(1)}} faaliyet marjı ve 1 TL kâra ${{inaNk.toFixed(2)}} TL nakit dönüşümüyle kârı doğrudan kasaya indiriyor.` }}
+                    : (nbOzk <= 0.10)
+                        ? {{ baslik: 'Net Nakit & Çelik Bilanço Zırhı', detay: `${{nbOzk.toFixed(2)}}x Net Borç/ÖZK rasyosuyla yüksek faiz ve finansman gideri baskısına karşı korunaklı.` }}
+                        : {{ baslik: `${{kategori}} Hendek & Nakit Akışı (${{f_skor}}/9)`, detay: `1 TL net kâra karşılık ${{inaNk.toFixed(2)}} TL işletme nakdi üreterek operasyonlarını finanse ediyor.` }};
+
+            const ivme = (marjDegisim >= 1.0 && ciroBuyume >= 10)
+                ? {{ baslik: 'Çift Motorlu İvme (Ciro + Marj)', detay: `Satışlar %${{ciroBuyume.toFixed(1)}} büyürken esas faaliyet marjı +${{marjDegisim.toFixed(1)}} puan genişledi.` }}
+                : (ciroBuyume >= 20)
+                    ? {{ baslik: 'Güçlü Satış & Pazar Payı İvmesi', detay: `Satış gelirleri %${{ciroBuyume.toFixed(1)}} artışla üst satır büyümesini sürüklemeye devam ediyor.` }}
+                    : (marjDegisim >= 0.5)
+                        ? {{ baslik: 'Maliyet Kontrolü & Marj İyileşmesi', detay: `Esas faaliyet kâr marjı geçen döneme göre +${{marjDegisim.toFixed(1)}} puan iyileşti.` }}
+                        : {{ baslik: 'Nakit Kalkanı & Dengelenme', detay: `Operasyonel marj dengelenme sürecinde; nakit akışı ve işletme sermayesi disiplini korunuyor.` }};
+
+            let kritikRisk;
+            if (!bankaMi && ((kvBorc >= 75 && nbOzk >= 0.5) || (icr > 0 && icr < 1.5) || nbOzk >= 1.2)) {{
+                kritikRisk = {{
+                    baslik: 'Kısa Vadeli Borç Çevirme & Finansman Yükü',
+                    detay: `Borcun %${{kvBorc.toFixed(0)}}'i kısa vadeli; Net Borç/ÖZK ${{nbOzk.toFixed(2)}}x ve faiz karşılama (ICR) ${{icr.toFixed(2)}}x sınırında.`,
+                    iptal_tetikleyicisi: `ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: Faiz karşılama oranı (ICR) 1.25x'in altına sarkar veya Net Borç/ÖZK rasyosu ${{Math.max(1.5, nbOzk + 0.35).toFixed(2)}}x eşiğini aşarsa temel tez iptal olur ve pozisyondan çıkılır.`
+                }};
+            }} else if (!bankaMi && (dso >= 180 || dts >= 35)) {{
+                kritikRisk = {{
+                    baslik: 'Ticari Alacak Vadesi (DSO) & Tahakkuk Baskısı',
+                    detay: `Alacak tahsil süresi ${{dso.toFixed(0)}} gün (Dipnot Tehlike Skoru: ${{dts}}/100); işletme sermayesi alacakta bekliyor.`,
+                    iptal_tetikleyicisi: `ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: Gelecek bilançoda DSO (${{dso.toFixed(0)}} gün) düşüşe geçmez ve İNA/Net Kâr oranı 1.00x'in altına inerse alacak kalitesi bozulmuş sayılır, pozisyon kapatılır.`
+                }};
+            }} else if (marjDegisim <= -2.0 || efkMarji < 0) {{
+                kritikRisk = {{
+                    baslik: 'Operasyonel Marj Daralması & Maliyet Baskısı',
+                    detay: `Esas faaliyet marjı %${{efkMarji.toFixed(1)}} seviyesinde (Önceki döneme göre ${{marjDegisim.toFixed(1)}} puan değişim).`,
+                    iptal_tetikleyicisi: `ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: Esas faaliyet kâr marjı gelecek çeyrekte toparlanamaz ve %${{Math.max(3.0, efkMarji - 1.5).toFixed(1)}} eşiğinin altında kalırsa büyüme hikayesi bozulmuş sayılır ve çıkılır.`
+                }};
+            }} else if (bantYuzde >= 80 || fk >= 18) {{
+                kritikRisk = {{
+                    baslik: 'Tarihsel Çarpan Doygunluğu (Yüksek Fiyatlama)',
+                    detay: `F/K ${{fk.toFixed(1)}}x ile tarihsel değerleme bandının %${{bantYuzde}} diliminde; güvenlik marjı daralmış durumda.`,
+                    iptal_tetikleyicisi: `ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: Yüksek çarpanı destekleyen satış/FAVÖK büyümesi gelecek çeyrekte yavaşlar veya stok devir hızı düşerse pahalı çarpan taşınmaz, kâr realizasyonu yapılır.`
+                }};
+            }} else {{
+                kritikRisk = {{
+                    baslik: 'Kısa Vadeli Borç Payı & Stok Devir Disiplini',
+                    detay: `Bilançoda majör kırmızı bayrak yok; ancak yükümlülüklerin %${{kvBorc.toFixed(0)}}'lik kısa vadeli kısmı izleniyor.`,
+                    iptal_tetikleyicisi: `ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: Kısa vadeli borç çevirme maliyetleri operasyonel kâr artışını geçer veya stok/alacak devir hızı üst üste 2 çeyrek bozulursa pozisyon ağırlığı azaltılır.`
+                }};
+            }}
+
+            return {{
+                dna_ozeti: {{ en_guclu_yani: enGuclu, iyiye_giden_taraf: ivme, kritik_risk: kritikRisk }},
+                oz_turkce_seridi: [
+                    {{ ikon: '⚙️', etiket: 'Operasyonel Güç', metin: karCumlesi }},
+                    {{ ikon: '💵', etiket: 'Para Var mı?', metin: nakitCumlesi }},
+                    {{ ikon: '🛡️', etiket: 'Bilanço Zırhı', metin: borcCumlesi }},
+                    {{ ikon: '⚖️', etiket: 'Fiyatlama', metin: degerlemeCumlesi }}
+                ],
+                tahta_derinligi: tahtaDerinligi
+            }};
+        }}
+
+        
+        function uretRoeSparkline(donemler, degerler) {{
+            if (!degerler || degerler.length < 2) return '';
+
+            const w = 220;
+            const h = 40;
+            const pad = 6;
+
+            const minVal = Math.min(...degerler);
+            const maxVal = Math.max(...degerler);
+            const range = (maxVal - minVal) === 0 ? 1 : (maxVal - minVal);
+
+            const points = degerler.map((val, idx) => {{
+                const x = pad + (idx / (degerler.length - 1)) * (w - 2 * pad);
+                const y = h - pad - ((val - minVal) / range) * (h - 2 * pad);
+                return {{ x: x.toFixed(1), y: y.toFixed(1), val: val, donem: (donemler && donemler[idx]) ? donemler[idx] : '' }};
+            }});
+
+            const sonVal = degerler[degerler.length - 1];
+            const ilkVal = degerler[0];
+            const artisVar = sonVal >= ilkVal;
+            const anaRenk = artisVar ? '#10b981' : '#ef4444';
+            const gradId = 'roeGrad_' + Math.random().toString(36).substr(2, 7);
+
+            const polylinePts = points.map(p => p.x + ',' + p.y).join(' ');
+            const fillPath = 'M ' + points[0].x + ',' + (h - pad) + ' ' +
+                             points.map(p => 'L ' + p.x + ',' + p.y).join(' ') +
+                             ' L ' + points[points.length - 1].x + ',' + (h - pad) + ' Z';
+
+            let circles = '';
+            points.forEach(p => {{
+                circles += '<circle cx="' + p.x + '" cy="' + p.y + '" r="3" fill="' + anaRenk + '" stroke="#0f172a" stroke-width="1.5" style="cursor:pointer;"><title>' + p.donem + ': %' + p.val.toFixed(1) + '</title></circle>';
+            }});
+
+            return '<div style="margin-top:8px; padding-top:8px; border-top:1px dashed #1e293b;">' +
+                '<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px; font-size:10px; color:#94a3b8;">' +
+                    '<span>📈 Çeyreklik ROE Trendi</span>' +
+                    '<span style="color:' + anaRenk + '; font-weight:bold;">' + (artisVar ? '▲' : '▼') + ' %' + ilkVal.toFixed(1) + ' → %' + sonVal.toFixed(1) + '</span>' +
+                '</div>' +
+                '<svg width="100%" height="' + h + '" viewBox="0 0 ' + w + ' ' + h + '" style="overflow:visible; display:block;">' +
+                    '<defs>' +
+                        '<linearGradient id="' + gradId + '" x1="0" y1="0" x2="0" y2="1">' +
+                            '<stop offset="0%" stop-color="' + anaRenk + '" stop-opacity="0.35"/>' +
+                            '<stop offset="100%" stop-color="' + anaRenk + '" stop-opacity="0.0"/>' +
+                        '</linearGradient>' +
+                    '</defs>' +
+                    '<path d="' + fillPath + '" fill="url(#' + gradId + ')" />' +
+                    '<polyline fill="none" stroke="' + anaRenk + '" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="' + polylinePts + '" />' +
+                    circles +
+                '</svg>' +
+            '</div>';
+        }}
+
+        function acKarneModal(kod) {{
+            const k = KARNELER[kod];
+            if (!k) return;
+
+            const katman = uretDinamikDnaVeTercume(k);
+            const dna = katman.dna_ozeti;
+            const serit = katman.oz_turkce_seridi;
+            const td = katman.tahta_derinligi || {{ sinif: 'Standart Tahta', rozet_renk: 'badge-ok' }};
+
+            const seritHtml = serit.map(item =>
+                '<div class="oz-turkce-item"><span>' + item.ikon + ' <strong>' + item.etiket + ':</strong> ' + item.metin + '</span></div>'
+            ).join('');
+
+            document.getElementById('modalHisseBaslik').innerHTML = 
+                kod + ' — ' + k.sirket_adi + 
+                ' <span class="' + td.rozet_renk + '" style="font-size:11px; margin-left:10px; padding:3px 8px; border-radius:4px; font-weight:bold;">' + td.sinif + '</span>';
+
+            document.getElementById('modalUstBant').innerHTML = 
+                '<div style="background:#1e293b; padding:10px 14px; border-radius:6px; font-size:12px; margin-bottom:12px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">' +
+                    '<div>' +
+                        '<strong>Sektör:</strong> ' + k.sektor + ' &nbsp;|&nbsp; ' +
+                        '<strong>Hendek:</strong> ' + k.kategori + ' &nbsp;|&nbsp; ' +
+                        '<strong>Fiyat:</strong> ' + k.fiyat_tl + ' TL &nbsp;|&nbsp; ' +
+                        '<strong>Piotroski:</strong> ' + k.f_skor + '/9 &nbsp;|&nbsp; ' +
+                        '<strong>Portföy Tavanı:</strong> Maks %' + k.tavan_agirlik + ' (Sektör Limiti: Maks %20)' +
+                    '</div>' +
+                '</div>' +
+                '<div class="dna-ribbon-grid">' +
+                    '<div class="dna-card strength">' +
+                        '<div class="dna-badge-label">🟢 EN GÜÇLÜ YANI</div>' +
+                        '<div class="dna-title">' + dna.en_guclu_yani.baslik + '</div>' +
+                        '<div class="dna-desc">' + dna.en_guclu_yani.detay + '</div>' +
+                    '</div>' +
+                    '<div class="dna-card momentum">' +
+                        '<div class="dna-badge-label">🔵 İYİYE GİDEN TARAF</div>' +
+                        '<div class="dna-title">' + dna.iyiye_giden_taraf.baslik + '</div>' +
+                        '<div class="dna-desc">' + dna.iyiye_giden_taraf.detay + '</div>' +
+                    '</div>' +
+                    '<div class="dna-card risk">' +
+                        '<div class="dna-badge-label">🔴 DİKKAT EDİLECEK TARAF</div>' +
+                        '<div class="dna-title">' + dna.kritik_risk.baslik + '</div>' +
+                        '<div class="dna-desc">' + dna.kritik_risk.detay + '</div>' +
+                    '</div>' +
+                '</div>' +
+                '<div class="oz-turkce-strip">' + seritHtml + '</div>';
+
+            const st = k.sirketi_tani;
+            const db = k.degerleme_bandi || {{fk: 0, pfk: 0, alt_fk: 6, medyan_fk: 11, ust_fk: 16, marj_durum: 'DENGELİ', marj_renk: 'badge-warn', konum_yuzde: 50}};
+
+            let t1 = 
+                '<div class="info-card">' +
+                    '<div style="color:#eab308; font-weight:bold; font-size:12px;">🏢 KİM BUNLAR & NE İŞ YAPIYORLAR?</div>' +
+                    '<div class="meal-text">' + st.ne_is_yapar + '</div>' +
+                    '<div style="color:#94a3b8; font-size:11px; margin-top:6px;"><strong>Ana Ürün & Pazarlar:</strong> ' + st.urun_ve_pazar + '</div>' +
+                '</div>' +
+                '<div class="info-grid">' +
+                    '<div class="info-card">' +
+                        '<div style="font-size:11px; color:#94a3b8;">PİYASA DEĞERİ & ÇARPANLAR</div>' +
+                        '<div class="big-val">' + st.piyasa_degeri + '</div>' +
+                        '<div class="meal-text">' + st.carpan_ozet + '</div>' +
+                    '</div>' +
+                    '<div class="info-card">' +
+                        '<div style="font-size:11px; color:#94a3b8;">SON DÖNEM NET KÂR & ROE</div>' +
+                        '<div class="big-val">' + st.net_kar_12ay + ' (ROE: ' + st.roe_deger + ')</div>' +
+                        '<div class="meal-text">' + st.net_kar_yorum + '</div>' +
+                        uretRoeSparkline(k.roe_serisi?.donemler, k.roe_serisi?.roe_degerleri) +
+                    '</div>' +
+                '</div>' +
+                '<div class="info-card" style="border-left: 3px solid #38bdf8;">' +
+                    '<div style="display:flex; justify-content:space-between; align-items:center;">' +
+                        '<span style="font-size: 11px; color: #94a3b8; font-weight:bold;">📊 TARİHSEL DEĞERLEME BANDI & GÜVENLİK MARJI</span>' +
+                        '<span class="' + db.marj_renk + '">' + db.marj_durum + '</span>' +
+                    '</div>' +
+                    '<div style="margin: 8px 0 4px 0; font-size: 12.5px;">' +
+                        '<strong>Cari F/K:</strong> <span style="color:#38bdf8; font-size:14px; font-weight:bold;">' + (db.fk > 0 ? db.fk + 'x' : 'Hesaplanmadı') + '</span>' +
+                    '</div>' +
+                    '<div style="background: #1e293b; height: 10px; border-radius: 5px; position: relative; margin: 14px 0 6px 0;">' +
+                        '<div style="position: absolute; left: 0%; width: 33%; height: 100%; background: #064e3b; border-radius: 5px 0 0 5px;"></div>' +
+                        '<div style="position: absolute; left: 33%; width: 34%; height: 100%; background: #1e3a8a;"></div>' +
+                        '<div style="position: absolute; left: 67%; width: 33%; height: 100%; background: #7f1d1d; border-radius: 0 5px 5px 0;"></div>' +
+                        '<div style="position: absolute; left: ' + db.konum_yuzde + '%; top: -4px; width: 6px; height: 18px; background: #facc15; border-radius: 3px; transform: translateX(-50%); box-shadow: 0 0 6px #facc15;"></div>' +
+                    '</div>' +
+                    '<div style="display: flex; justify-content: space-between; font-size: 10.5px; color: #64748b;">' +
+                        '<span>🟢 İskontolu (< ' + db.alt_fk + 'x)</span>' +
+                        '<span>🔵 Medyan (~' + db.medyan_fk + 'x)</span>' +
+                        '<span>🔴 Pahalı (> ' + db.ust_fk + 'x)</span>' +
+                    '</div>' +
+                '</div>';
+
+            // P-F/K Grafik Modülü
+            const fkVal = db.fk || 0;
+            const pfkVal = db.pfk || 0;
+            let pfkMetin = 'N/A';
+            let pfkColor = '#64748b';
+            let fkWidth = 0;
+            let pfkWidth = 0;
+            let degerlendirmeMetni = '';
+
+            if (fkVal > 0 && pfkVal > 0) {{
+                pfkMetin = pfkVal.toFixed(1) + 'x';
+                pfkColor = pfkVal < fkVal * 0.9 ? '#10b981' : (pfkVal > fkVal * 1.3 ? '#ef4444' : '#f59e0b');
+                fkWidth = Math.min(100, (fkVal / 40) * 100);
+                pfkWidth = Math.min(100, (pfkVal / 40) * 100);
+                if (pfkVal < fkVal * 0.8) {{
+                    degerlendirmeMetni = '<span style="color:#10b981;">🚀 Yüksek İvme (Gelecekte Ucuzluyor)</span>';
+                }} else if (pfkVal > fkVal * 1.4) {{
+                    degerlendirmeMetni = '<span style="color:#ef4444;">⚠️ Değer Tuzağı / Kâr Erozyonu</span>';
+                }} else {{
+                    degerlendirmeMetni = '<span style="color:#f59e0b;">⚖️ İstikrarlı Fiyatlama</span>';
+                }}
+            }} else if (fkVal > 0) {{
+                fkWidth = Math.min(100, (fkVal / 40) * 100);
+            }}
+
+            let pfkHtml = 
+                '<div style="margin-top: 14px; background: #0f172a; padding: 12px; border-radius: 6px; border: 1px solid #334155;">' +
+                    '<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">' +
+                        '<span style="font-size: 11px; color: #94a3b8; font-weight: bold; text-transform: uppercase; letter-spacing:0.5px;">Cari F/K vs P-F/K Kıyaslaması</span>' +
+                        '<span style="font-size: 10.5px; font-weight: bold;">' + degerlendirmeMetni + '</span>' +
+                    '</div>' +
+                    '<div style="display: flex; flex-direction: column; gap: 8px;">' +
+                        '<div style="display: flex; align-items: center; gap: 10px;">' +
+                            '<span style="width: 55px; font-size: 11.5px; color: #cbd5e1;">Cari F/K</span>' +
+                            '<div style="flex: 1; background: #1e293b; height: 12px; border-radius: 6px; overflow: hidden; border:1px solid #0b0e14;">' +
+                                '<div style="width: ' + fkWidth + '%; background: #64748b; height: 100%; border-radius: 6px; transition: width 0.5s ease-out;"></div>' +
+                            '</div>' +
+                            '<span style="width: 45px; text-align: right; font-size: 12px; font-weight: bold; color: #f8fafc;">' + (fkVal > 0 ? fkVal.toFixed(1) + 'x' : 'N/A') + '</span>' +
+                        '</div>' +
+                        '<div style="display: flex; align-items: center; gap: 10px;">' +
+                            '<span style="width: 55px; font-size: 11.5px; color: #38bdf8; font-weight: bold;">P-F/K</span>' +
+                            '<div style="flex: 1; background: #1e293b; height: 12px; border-radius: 6px; overflow: hidden; border:1px solid #0b0e14;">' +
+                                '<div style="width: ' + pfkWidth + '%; background: ' + pfkColor + '; height: 100%; border-radius: 6px; transition: width 0.5s ease-out;"></div>' +
+                            '</div>' +
+                            '<span style="width: 45px; text-align: right; font-size: 12px; font-weight: bold; color: ' + pfkColor + ';">' + pfkMetin + '</span>' +
+                        '</div>' +
+                    '</div>' +
+                    '<div style="font-size: 10px; color: #475569; margin-top: 10px; font-style: italic; line-height: 1.3;">' +
+                        '- P-F/K (Prospektif F/K): Şirketin son çeyrek net kârı; ciro ivmesi, operasyonel marj değişimi ve alınan sipariş avanslarındaki artışa göre şoklanarak sentetik olarak hesaplanmıştır.' +
+                    '</div>' +
+                '</div>';
+
+            t1 += pfkHtml;
+            document.getElementById('tab1').innerHTML = t1;
+
+            let t2 = '<div class="section-title">🧬 ŞİRKETİN DNA\\'SI, NAKİT DÖNÜŞÜMÜ VE GİDİŞAT RÖNTGENİ</div>';
+            k.dna_ve_gidisat.forEach(d => {{
+                const bClass = (d.durum === 'DİKKAT' || d.durum === 'DARALMA VAR' || d.durum === 'İZLEMEDE') ? 'badge-warn' : 'badge-ok';
+                t2 += '<div class="info-card">' +
+                    '<div style="display:flex; justify-content:space-between; align-items:center;">' +
+                        '<strong style="color:#38bdf8; font-size:13px;">' + d.baslik + '</strong>' +
+                        '<span><strong style="color:#f8fafc; font-size:13px;">' + d.deger + '</strong> &nbsp; <span class="' + bClass + '">' + d.durum + '</span></span>' +
+                    '</div>' +
+                    '<div class="meal-text">' + d.yorum + '</div>' +
+                '</div>';
+            }});
+            document.getElementById('tab2').innerHTML = t2;
+
+            let t3 = '<div class="section-title">📊 BİLANÇODA ÖNE ÇIKAN DEĞİŞİMLER ("NE İFADE EDİYOR?")</div>';
+            k.bilanco_degisimleri.forEach(b => {{
+                t3 += '<div class="info-card">' +
+                    '<div style="display:flex; justify-content:space-between;">' +
+                        '<strong style="color:#34d399; font-size:12.5px;">' + b.kalem + '</strong>' +
+                        '<strong style="color:#f8fafc; font-size:13px;">' + b.guncel_tutar + '</strong>' +
+                    '</div>' +
+                    '<div class="meal-text"><strong>Ne ifade ediyor?</strong> ' + b.ne_ifade_ediyor + '</div>' +
+                '</div>';
+            }});
+            document.getElementById('tab3').innerHTML = t3;
+
+            let t4 = '<div class="section-title">✅ DİKKATİMİ ÇEKENLER (GÜÇLÜ YANLAR)</div>';
+            k.son_soz.dikkat_cekenler.forEach(g => {{ t4 += '<div class="good-box">✔ ' + g + '</div>'; }});
+            t4 += '<div class="section-title" style="color:#fbbf24;">⚠️ SEVMEDİKLERİM / DİKKAT EDİLECEK TARAFLAR</div>';
+            k.son_soz.sevmediklerim.forEach(w => {{ t4 += '<div class="warn-box">! ' + w + '</div>'; }});
+
+            const iptalKosulu = (k.son_soz && k.son_soz.iptal_kosulu) ? k.son_soz.iptal_kosulu : dna.kritik_risk.iptal_tetikleyicisi;
+            t4 += '<div class="section-title" style="color:#fb7185;">🎯 BORSACI GÖZÜYLE ŞARTA BAĞLI TEZ İPTAL KOŞULU (INVALIDATION TRIGGER)</div>' +
+                '<div class="invalidation-box">' +
+                    '<strong>⚡ Dinamik Çıkış Kuralı (' + dna.kritik_risk.baslik + '):</strong><br>' + iptalKosulu +
+                '</div>';
+
+            t4 += '<div class="section-title">👁️ BORSACI GÖZÜYLE (YÖNETİCİ SENTEZİ)</div>' +
+                '<div class="info-card" style="font-size:12.5px; line-height:1.55; color:#e2e8f0;">' + k.son_soz.borsaci_gozuyle + '</div>';
+            t4 += '<div class="section-title" style="color:#f87171;">🚨 SERKAN ÜNAL KESİN ÇIKIŞ TETİKLEYİCİLERİ</div>';
+            k.bolum5_karar_ve_cikis.cikis_tetikleyicileri.forEach(kural => {{ t4 += '<div class="cikis-kural">🚨 ' + kural + '</div>'; }});
+            document.getElementById('tab4').innerHTML = t4;
+
+            const bd = k.birikimli_dipnot || {{ donemler: {{}} }};
+            const tumDonemler = Object.keys(bd.donemler || {{}}).sort();
+            const son4Donem = tumDonemler.slice(-4);
+
+            let enGuncelPdfDonem = null;
+            for (let i = tumDonemler.length - 1; i >= 0; i--) {{
+                const d = tumDonemler[i];
+                const notlar = (bd.donemler[d] && bd.donemler[d].pdf_dipnot_notlari) || {{}};
+                const vals = Object.values(notlar);
+                if (vals.some(v => v && v.length > 5 && v !== '-')) {{
+                    enGuncelPdfDonem = d;
+                    break;
+                }}
+            }}
+            if (!enGuncelPdfDonem && tumDonemler.length > 0) {{
+                enGuncelPdfDonem = tumDonemler[tumDonemler.length - 1];
+            }}
+
+            const aktifVeri = (enGuncelPdfDonem && bd.donemler[enGuncelPdfDonem]) || {{}};
+            const tutarlilikListesi = aktifVeri.tutarlilik_raporu || [];
+
+            let t5 = '<div class="info-card" style="border-left: 4px solid #eab308; background: #17255422;">' +
+                '<div style="display:flex; justify-content:space-between; align-items:center;">' +
+                    '<div>' +
+                        '<span style="background:#eab308; color:#0f172a; font-weight:bold; font-size:11px; padding:2px 8px; border-radius:4px;">🎙️ CFO İCRA KURULU BRİFİNGİ</span>' +
+                        '<span style="color:#38bdf8; font-weight:bold; margin-left:8px; font-size:13px;">' + (enGuncelPdfDonem || '-') + ' Faaliyet Raporu Özeti</span>' +
+                    '</div>' +
+                    '<div style="font-size:11px; color:#94a3b8;">Arşiv: ' + (bd.son_guncelleme || '-') + '</div>' +
+                '</div>' +
+                '<div class="meal-text" style="font-size:12.5px; margin-top:8px; color:#f1f5f9;">' +
+                    'Bu brifing, şirketin KAP\\'a sunduğu kurumsal faaliyet raporunun yönetim kurulu sunum hapıdır.' +
+                '</div>' +
+            '</div>';
+
+            if (tutarlilikListesi.length > 0) {{
+                t5 += '<div class="section-title" style="color:#facc15;">⚖️ YÖNETİM VAATLERİ & TUTARLILIK KARNESİ (' + enGuncelPdfDonem + ')</div>';
+                tutarlilikListesi.forEach(item => {{
+                    const sinif = item.includes('🚨') ? 'cikis-kural' : (item.includes('⚠️') ? 'warn-box' : 'good-box');
+                    t5 += '<div class="' + sinif + '">' + item + '</div>';
+                }});
+            }}
+
+            t5 += '<div class="section-title">🏛️ 4 ÇEYREKLİK KURUMSAL DENETİM MATRİSİ (FAALİYET RAPORU TAKİBİ)</div>' +
+                '<div style="overflow-x:auto;"><table class="matris-table"><thead><tr>' +
+                '<th style="width:22%;">Stratejik Alan</th>';
+            son4Donem.forEach(d => {{
+                const yildiz = (d === enGuncelPdfDonem) ? ' <span style="color:#eab308;">★</span>' : '';
+                t5 += '<th style="width:19%;">' + d + yildiz + '</th>';
+            }});
+            t5 += '</tr></thead><tbody>';
+
+            const alanlar = [
+                {{ id: 'yatirim_ve_kapasite', ad: '1. Devam Eden Yatırımlar & Kapasite', alt: 'Gecikme / Takvim' }},
+                {{ id: 'siparis_ve_backlog', ad: '2. Bakiye Sipariş & Backlog', alt: 'İş Hacmi / Pazar' }},
+                {{ id: 'doviz_ve_turev', ad: '3. Döviz Açığı & Hedge', alt: 'Kur Riski Koruması' }},
+                {{ id: 'tri_rehin_ipotek', ad: '4. Taahhüt, Rehin, İpotek (TRİ)', alt: 'Özkaynağa Oranla Kefalet' }}
+            ];
+
+            alanlar.forEach(al => {{
+                t5 += '<tr>' +
+                    '<td><strong style="color:#38bdf8;">' + al.ad + '</strong><br><small style="color:#64748b;">' + al.alt + '</small></td>';
+                son4Donem.forEach(d => {{
+                    const dVeri = bd.donemler[d] || {{}};
+                    const notlar = dVeri.pdf_dipnot_notlari || {{}};
+                    const metin = notlar[al.id] || '';
+                    if (metin && metin.length > 5 && metin !== '-') {{
+                        t5 += '<td>' + metin + '</td>';
+                    }} else {{
+                        t5 += '<td><span style="color:#475569;">Bu çeyrekte rapor bulunmuyor</span></td>';
+                    }}
+                }});
+                t5 += '</tr>';
+            }});
+            t5 += '</tbody></table></div>';
+
+            t5 += '<div class="section-title">📈 DÖNEMLER ARASI BİRİKİMLİ DİPNOT RASYOLARI (UFRS)</div>' +
+                '<div style="overflow-x:auto;"><table style="width:100%; font-size:11.5px; margin-bottom:14px;"><thead><tr>' +
+                '<th>Metrik</th>';
+            son4Donem.forEach(d => {{ t5 += '<th>' + d + '</th>'; }});
+            t5 += '<th>Eşik Değer</th></tr></thead><tbody>';
+
+            const rasyolar = [
+                {{ ad: '<strong>Dipnot Tehlike Skoru (DTS)</strong>', esik: '&lt; 25 Puan', fn: d => '<strong>' + (bd.donemler[d]?.dts_skor ?? '-') + '/100</strong>' }},
+                {{ ad: 'Tahakkuk Oranı ((Kâr-CFO)/Aktif)', esik: '&le; %5.0 (Negatif = Sağlam)', fn: d => '%' + (bd.donemler[d]?.tahakkuk_orani ?? '-') }},
+                {{ ad: 'Kağıt Üzeri Kâr Payı (Normalleştirilmiş)', esik: '&le; %35.0', fn: d => '%' + (bd.donemler[d]?.ykp_orani ?? '-') }},
+                {{ ad: 'Alacak Tahsilat Süresi (DSO)', esik: 'Düşen Trend', fn: d => (bd.donemler[d]?.dso_gun ?? '-') + ' gün' }},
+                {{ ad: 'Efektif Borç Maliyeti / ICR', esik: 'ICR &ge; 1.5x', fn: d => '%' + (bd.donemler[d]?.efm_yuzde ?? '-') + ' (' + (bd.donemler[d]?.icr_kati ?? '-') + 'x)' }},
+                {{ ad: 'İlişkili Taraf Ticari Olmayan Alacak', esik: '&lt; %3.0', fn: d => '%' + (bd.donemler[d]?.iliskili_orani ?? '-') }}
+            ];
+
+            rasyolar.forEach(r => {{
+                t5 += '<tr><td>' + r.ad + '</td>';
+                son4Donem.forEach(d => {{ t5 += '<td>' + r.fn(d) + '</td>'; }});
+                t5 += '<td>' + r.esik + '</td></tr>';
+            }});
+            t5 += '</tbody></table></div>';
+
+            document.getElementById('tab5').innerHTML = t5;
+
+            document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('tab1').classList.add('active');
+            document.querySelector('.tab-btn').classList.add('active');
+
+            document.getElementById('modalOverlay').style.display = 'block';
+            document.getElementById('karneDrawer').classList.add('active');
+        }}
+
+        function kapatKarneModal() {{
+            document.getElementById('modalOverlay').style.display = 'none';
+            document.getElementById('karneDrawer').classList.remove('active');
+        }}
+    </script>
+</body>
+</html>"""
+
+    pano_yolu = os.path.join(PORTFOY_DIR, "PORTFOY_Kalkani_ve_Radar.html")
+    with open(pano_yolu, "w", encoding="utf-8") as f:
+        f.write(html_icerik)
+
+
+# ==============================================================================
+# 5. ANA AKIŞ MOTORU (GERÇEK KASA, SEKTÖR KALKANI & GOOGLE SHEETS AKTARIMI)
+# ==============================================================================
+if __name__ == "__main__":
+    baslangic = time.time()
+
+    # Google Sheets 'Portfoy_Kalkani' Sayfasını Güncelleyen Canlı Webhook
+    SHEETS_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxT_ytoZ5jeRBVmeqehcWF0ayntLazRwUhwmzKQvYjCKxnlKUkb944qVdrZoN6LAhI5Hw/exec"
+
+    if not YEREL_MALI_VERITABANI:
+        print("HATA: 'hektor_kutuphane/bist_mali_tablolar.json' bulunamadı.")
+        exit(1)
+
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] KARTAL Deterministik Analiz Motoru Başladı...")
+    print(f"  Yerel ambardan {len(YEREL_MALI_VERITABANI)} BIST şirketi RAM'e yüklendi.")
+
+    tum_sonuclar = []
+    for kod in YEREL_MALI_VERITABANI.keys():
+        s = analiz_et_sirket(kod)
+        tum_sonuclar.append(s)
+
+    bist_sozluk = {s["kod"]: s for s in tum_sonuclar}
+    mevcut_pozisyonlar = portfoy_motoru.portfoy_ve_canli_fiyatlari_getir(bist_sozluk)
+
+    firsat_adaylari = [
+        s for s in tum_sonuclar
+        if s["bolum1_gecti_mi"] and s["cfo_buyuk_net_kar"] and s["piotroski_skor"] >= 7
+    ]
+    print(f"  Analiz Tamamlandı: {len(firsat_adaylari)} şirket filtreyi geçerek fırsat adayı oldu.")
+
+    havuz_kodlari = set()
+    for s in firsat_adaylari: havuz_kodlari.add(s["kod"])
+    for k in mevcut_pozisyonlar.keys():
+        if k not in ["NAKIT", "TRY", "KASA", "PPF"]:
+            havuz_kodlari.add(k)
+
+    katsayi_sozluk = {"Korunaklı": 1.8, "Kırılgan Hendekli": 1.4, "Hendeksiz": 1.0}
+    tavan_sozluk = {"Korunaklı": 10.0, "Kırılgan Hendekli": 5.0, "Hendeksiz": 3.0}
+
+    sirket_havuzu = []
+    for kod in sorted(list(havuz_kodlari)):
+        s_veri = bist_sozluk.get(kod, {
+            "kod": kod, "sirket_adi": kod, "sektor": "BIST Şirketi", "kategori": "Hendeksiz",
+            "fiyat_tl": 0.0, "piotroski_skor": 6, "bolum1_gecti_mi": True, "tavan_agirlik": 3.0
+        })
+        fiyat = mevcut_pozisyonlar.get(kod, {}).get("canli_fiyat", s_veri.get("fiyat_tl", 0.0))
+        if fiyat <= 0:
+            fiyat = mevcut_pozisyonlar.get(kod, {}).get("maliyet", 10.0)
+
+        kat = s_veri.get("kategori", "Hendeksiz")
+        sirket_havuzu.append({
+            "kod": kod, "sektor": s_veri.get("sektor", "Sanayi / Hizmet"), "kategori": kat,
+            "f_skor": s_veri.get("piotroski_skor", 6), "katsayi": katsayi_sozluk.get(kat, 1.0),
+            "tavan": tavan_sozluk.get(kat, 3.0), "fiyat": fiyat,
+            "mevcut_lot": mevcut_pozisyonlar.get(kod, {}).get("adet", 0),
+            "ort_maliyet": mevcut_pozisyonlar.get(kod, {}).get("maliyet", fiyat),
+            "ham_veri": s_veri
+        })
+
+    # ==========================================================================
+    # GERÇEK KASA / NAKİT OKUMA
+    # ==========================================================================
+    gercek_nakit_tl = 0.0
+    gercek_kasa_bulundu = False
+
+    if os.path.exists(PORTFOY_CSV_YOLU):
+        try:
+            with open(PORTFOY_CSV_YOLU, "r", encoding="utf-8-sig") as f:
+                reader = csv.DictReader(f, delimiter=";")
+                for r in reader:
+                    k = (r.get("Kod") or "").strip().upper()
+                    if k in ["NAKIT", "TRY", "KASA", "PPF"]:
+                        adet = float(str(r.get("Adet", 1)).replace(".", "").replace(",", "."))
+                        maliyet = float(str(r.get("Birim_Maliyet_TL", 0)).replace(".", "").replace(",", "."))
+                        gercek_nakit_tl = adet * maliyet
+                        gercek_kasa_bulundu = True
+                        break
+        except Exception:
+            pass
+
+    toplam_hisse_mevcut_deger = sum(item["mevcut_lot"] * item["fiyat"] for item in sirket_havuzu)
+
+    if gercek_kasa_bulundu:
+        nakit_tl = round(gercek_nakit_tl, 2)
+        toplam_portfoy_tl = max(toplam_hisse_mevcut_deger + nakit_tl, 1000.0)
+        hisse_portfoy_tl = round(toplam_hisse_mevcut_deger, 2)
+        nakit_orani = round((nakit_tl / toplam_portfoy_tl) * 100.0, 1)
+        hedef_hisse_havuzu_orani = max(50.0, 100.0 - nakit_orani)
+    else:
+        nakit_orani = 10.0
+        hedef_hisse_havuzu_orani = 90.0
+        toplam_portfoy_tl = max(toplam_hisse_mevcut_deger / (hedef_hisse_havuzu_orani / 100.0), 1000.0)
+        hisse_portfoy_tl = round(toplam_portfoy_tl * (hedef_hisse_havuzu_orani / 100.0), 2)
+        nakit_tl = round(toplam_portfoy_tl * (nakit_orani / 100.0), 2)
+
+    SEKTOR_TAVANI = 20.0
+    toplam_katsayi = max(sum(item["katsayi"] for item in sirket_havuzu), 0.1)
+
+    for item in sirket_havuzu:
+        item["hedef_agirlik"] = min((item["katsayi"] / toplam_katsayi) * hedef_hisse_havuzu_orani, item["tavan"])
+
+    sektor_toplamlari = {}
+    for item in sirket_havuzu:
+        sek = item["sektor"]
+        sektor_toplamlari[sek] = sektor_toplamlari.get(sek, 0.0) + item["hedef_agirlik"]
+
+    for sek, toplam_pay in sektor_toplamlari.items():
+        if toplam_pay > SEKTOR_TAVANI:
+            kirpma = SEKTOR_TAVANI / toplam_pay
+            for item in sirket_havuzu:
+                if item["sektor"] == sek:
+                    item["hedef_agirlik"] = round(item["hedef_agirlik"] * kirpma, 2)
+
+    mevcut_sektorler = {}
+    for item in sirket_havuzu:
+        if item["mevcut_lot"] > 0:
+            sek = item["sektor"]
+            pay = (item["mevcut_lot"] * item["fiyat"] / toplam_portfoy_tl) * 100.0
+            mevcut_sektorler[sek] = mevcut_sektorler.get(sek, 0.0) + pay
+
+    tablo_verileri = []
+    karneler = {}
+
+    for item in sirket_havuzu:
+        kod = item["kod"]
+        fiyat = item["fiyat"]
+        m_lot = item["mevcut_lot"]
+        m_tutar = round(m_lot * fiyat, 2)
+        m_pay = round((m_tutar / toplam_portfoy_tl) * 100, 2)
+        h_pay = round(item["hedef_agirlik"], 2)
+        h_tutar = round(toplam_portfoy_tl * (h_pay / 100.0), 2)
+        h_lot = int(h_tutar / fiyat) if fiyat > 0 else 0
+        fark_lot = int(h_lot - m_lot)
+        islem_tutari = round(abs(fark_lot * fiyat), 2)
+
+        aksiyon = "AL / EKLE" if fark_lot > 0 else ("SAT / AZALT" if fark_lot < 0 else "KORU / DENGEDE")
+        kz_yuzde = round(((fiyat / item["ort_maliyet"]) - 1) * 100, 2) if item["ort_maliyet"] > 0 else 0.0
+
+        tablo_verileri.append({
+            "Kod": kod, "Sektör": item["sektor"], "Hendek": item["kategori"], "F_Skor": item["f_skor"],
+            "Mevcut_Lot": m_lot, "Fiyat": fiyat, "Mevcut_Tutar": m_tutar, "Mevcut_Pay": m_pay,
+            "Hedef_Pay": h_pay, "Hedef_Tutar": h_tutar, "Hedef_Lot": h_lot, "Fark_Lot": fark_lot,
+            "Aksiyon": aksiyon, "KZ_Yuzde": kz_yuzde, "Katsayi": item["katsayi"], "Islem_Tutari": islem_tutari,
+            "Ort_Maliyet": item["ort_maliyet"]
+        })
+
+        poz_bilgi = {"agirlik_yuzde": m_pay, "kademe": mevcut_pozisyonlar.get(kod, {}).get("kademe", "1/3 Başlangıç")}
+        karneler[kod] = uret_serkan_unal_karnesi(item["ham_veri"], poz_bilgi)
+
+    # 1. GOOGLE SHEETS İÇİN PROFESYONEL SIRALAMA (Önce Taşınan Hisseler, Sonra Radar)
+    tasinan_hisseler = sorted([x for x in tablo_verileri if x["Mevcut_Lot"] > 0], key=lambda x: x["Mevcut_Tutar"], reverse=True)
+    radar_hisseleri = sorted([x for x in tablo_verileri if x["Mevcut_Lot"] == 0], key=lambda x: (x["F_Skor"], x["Hedef_Pay"]), reverse=True)
+    sirali_liste = tasinan_hisseler + radar_hisseleri
+
+    # 2. 3. SATIRA GELECEK RESMİ SÜTUN BAŞLIKLARI
+    sheets_satir_matrisi = [[
+        "Hisse Kodu", "Sektör", "Hendek", "F-Skor", "Katsayı",
+        "Mevcut Lot", "Maliyet (₺)", "Fiyat (₺)", "Mevcut Tutar (₺)",
+        "K/Z %", "Mevcut Pay %", "Hedef Pay %", "Hedef Tutar (₺)",
+        "Hedef Lot", "Pazartesi Fark Lot", "İşlem Tutarı (₺)", "Aksiyon"
+    ]]
+
+    for x in sirali_liste:
+        sheets_satir_matrisi.append([
+            x["Kod"],
+            x["Sektör"],
+            x["Hendek"],
+            f"{x['F_Skor']}/9",
+            round(x["Katsayi"], 1),
+            x["Mevcut_Lot"],
+            round(x["Ort_Maliyet"], 2),
+            round(x["Fiyat"], 2),
+            round(x["Mevcut_Tutar"], 2),
+            f"%{x['KZ_Yuzde']}",
+            f"%{x['Mevcut_Pay']}",
+            f"%{x['Hedef_Pay']}",
+            round(x["Hedef_Tutar"], 2),
+            x["Hedef_Lot"],
+            x["Fark_Lot"],
+            x["Islem_Tutari"],
+            x["Aksiyon"]
+        ])
+
+    sektor_paneli_html = uret_sektor_paneli_html(mevcut_sektorler, nakit_orani, nakit_tl, gercek_kasa_bulundu)
+    uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy_tl, hisse_portfoy_tl, nakit_tl, len(sirket_havuzu), sektor_paneli_html)
+
+    df_masa = pd.DataFrame(tablo_verileri)
+    df_masa.to_csv(DINAMIK_MASA_CSV_YOLU, sep=";", index=False, encoding="utf-8-sig")
+
+    # GOOGLE SHEETS 'PORTFOY_KALKANI' CANLI SENKRONİZASYONU
+    if SHEETS_APPS_SCRIPT_URL.strip():
+        try:
+            payload = {
+                "ozet": {
+                    "toplam_portfoy_tl": round(toplam_portfoy_tl, 2),
+                    "toplam_hisse_tl": round(hisse_portfoy_tl, 2),
+                    "nakit_tl": round(nakit_tl, 2),
+                    "nakit_agirlik": round(nakit_orani, 1)
+                },
+                "satirlar": sheets_satir_matrisi
+            }
+            res = requests.post(SHEETS_APPS_SCRIPT_URL, json=payload, timeout=25)
+            if res.status_code == 200:
+                print(f"  [Google Sheets] {len(sheets_satir_matrisi)} satır Portfoy_Kalkani sayfasına canlı senkronize edildi!")
+            else:
+                print(f"  [Google Sheets] Yanıt kodu: {res.status_code}")
+        except Exception as e:
+            print(f"  [Bilgi] Google Sheets senkronizasyon uyarısı: {e}")
+
+    sure = round(time.time() - baslangic, 2)
+    print("=" * 68)
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] İŞLEM TAMAMLANDI! (Süre: {sure} saniye)")
+    print(f"  Toplam Portföy: {toplam_portfoy_tl:,.0f} TL")
+    if gercek_kasa_bulundu:
+        print(f"  Gerçek Kasa Bakiyesi (portfoyum.csv): {nakit_tl:,.0f} TL (%{nakit_orani:.1f})")
+    print(f"  Sektör Tavanı Kalkanı: Maksimum %20 devrede")
+    print("=" * 68)

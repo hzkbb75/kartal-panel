@@ -1,0 +1,21 @@
+{
+    "kod": "ATAKP",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Gıda",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 18.8,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 35.0,
+    "aylik_degisim": 3.6,
+    "satis_milyon_tl": 4874.0,
+    "net_kar_milyon_tl": -99.0,
+    "cfo_milyon_tl": 515.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.01,
+    "nakit_dongusu_gun": 159.9,
+    "piotroski_skor": 5,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\ATAKP\\ATAKP_Mikroskop_Raporu.html"
+}

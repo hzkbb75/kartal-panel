@@ -1,0 +1,21 @@
+{
+    "kod": "JANTS",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Otomotiv Parçası",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 16.9,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 10.1,
+    "aylik_degisim": -24.1,
+    "satis_milyon_tl": 7159.0,
+    "net_kar_milyon_tl": -95.0,
+    "cfo_milyon_tl": 1038.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 91.8,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\JANTS\\JANTS_Mikroskop_Raporu.html"
+}

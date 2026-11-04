@@ -1,0 +1,422 @@
+{
+  "kod": "ASTOR",
+  "sirket_adi": "ASTOR ENERJİ A.Ş.",
+  "sektor": "Astor Enerji",
+  "kategori": "Kırılgan Hendekli",
+  "fiyat_tl": 153.0,
+  "f_skor": 7,
+  "tavan_agirlik": 5.0,
+  "mevcut_agirlik": 0.01,
+  "kademe_durumu": "1/3 Başlangıç (Radar)",
+  "degerleme_bandi": {
+    "fk": 15.0,
+    "alt_fk": 6.0,
+    "medyan_fk": 11.0,
+    "ust_fk": 16.0,
+    "marj_durum": "DENGELİ / MAKUL DEĞERLEME",
+    "marj_renk": "badge-warn",
+    "konum_yuzde": 75
+  },
+  "birikimli_dipnot": {
+    "kod": "ASTOR",
+    "son_guncelleme": "2026-11-03 09:55",
+    "donemler": {
+      "2026/06": {
+        "efm_yuzde": 32.0,
+        "icr_kati": 3.4,
+        "tahakkuk_orani": -1.8,
+        "aga_orani": 4.2,
+        "ykp_orani": 6.5,
+        "dso_gun": 48.0,
+        "acm_makasi": -2.1,
+        "serefiye_ozk_orani": 1.2,
+        "karsilik_ozk_orani": 4.5,
+        "iliskili_orani": 0.15,
+        "dts_skor": 0,
+        "uyarilar": [
+          "🟢 Dipnot rasyolarında muhasebe makyajı veya anomali tespit edilmedi."
+        ],
+        "pdf_dipnot_notlari": {
+          "yatirim_ve_kapasite": "[Sayfa 22] ...ilebilmesi için 2026 yılının ilk yarısında gerçekleştirdiği Yatırım Harcamaları aşağıdaki tabloda gösterilmiştir. Kapasite Artışı ve Yeni Üretim Tesisi Yatırımları Astor Enerji, kapasite artışı ve ürün gamının genişletilmesine yönelik yatırımları kapsamında, Ankara Sincan’da bulunan ASO 2. ve 3. Organize Sanayi Bölgesi ilave alanında başlangıçta 180.195 m² olarak tahsis edilen... [Sayfa 33] ...artan hammadde ve üretim ihtiyaçlarından kaynaklandı. Yeni fabrika yatırımı kapsamında, sabit kıymet alımlarına ilişkin verilen sipariş avanslarından ve stok alımı için verilen sipariş avansları sebebiyle Peşin ödenmiş giderlerde artış gerçekleşti. Devam eden kapasite artış programının etkisiyle maddi duran varlıklar %20,6 artarak 14,2 milyar TL’ye yükseldi. Nakit ve nakit ben...",
+          "siparis_ve_backlog": "[Sayfa 17] ...yönelik toplam 768,9 milyon USD tutarında sipariş alınmıştır. Alınan siparişlerin, 2025 yıl sonu hasılatına oranı %96,4 olup, Şirketin sipariş büyüklüğünde önemli bir artış sağlamıştır. Söz konusu siparişlerin teslimatlarının 2026 yılı içerisinde başlaması ve 2028 yılı üçüncü çeyreğinde tamamlanması planlanmaktadır. • Şirketimizin Kurumsal Yönetim Uyum Derecelendirme Notu, Ko... [Sayfa 37] ...me gözlenmiştir. Bununla birlikte, mevcut sipariş birikimi (backlog) ve uluslararası talep dikkate alındığında, önümüzdeki dönemlerde ihracatın yeniden artış eğilimine girmesi öngörülmektedir. Özellikle güç trafoları segmentinde küresel talep güçlü seyrini korumaktadır. Bu çerçevede, kapasite artışlarının kademeli devreye alınması, ihracatın yeniden ivmelenmesi ve ürün karmasın...",
+          "doviz_ve_turev": "[Sayfa 34] ....459 17,0 33,8 Uzun vadeli borçlanmalar 0 2.718 2.718 - 3,9 Türev Araçlar 0 84 84 - 0,1 Çalışanlara sağlanan faydalara ilişkin uzun vadeli karşılıklar 103 125 23 21,9 0,2 Toplam Uzun Vadeli Yükümlülükler 103 2.928 2.825 2.748,7 4,1 Toplam Yükümlülükler 20.495 26.779 6.284 30,7 37,9 Ödenmiş sermaye 998 998 0 - 1,4 Sermaye düzeltme farkları 3.559 3.559 0 - 5,0 Paylara ilişkin pri...",
+          "tri_rehin_ipotek": "[Sayfa 5] ...eri • Güç transformatörleri • Özel tip transformatörler • Endüstriyel transformatörler • Orta ve yüksek gerilim anahtarlama ürünleri • Beton ve sac köşk olmak üzere trafo merkezleri Dağıtım transformatörleri 3 tipten oluşur: • Yağlı tip • Kuru tip • Endüstriyel tip Güç transformatörleri 4 tipten oluşur: • Jeneratör trafoları • Şebeke trafoları • Endüstriyel trafolar... [Sayfa 6] ...esi 2001. Cadde No:5A Sincan/Ankara Şirketin Sektörü 27.11.01 - Elektrik motoru, jeneratör ve transformatörlerin imalatı NACE Kodu 27.12.01 - Elektrik devrelerinin anahtarlanması, korunması ile elektriğin kontrol ve dağıtımına özgü cihazların imalatı Telefon +90 312 267 01 56 Faks +90 312 267 00 34 Şube Bilgileri İstanbul Ofis, İspanya Ofis, Bağdat Ofis İnternet Sitesi www.asto...",
+          "dava_ve_karsiliklar": "Raporda bu başlığa ilişkin kritik risk veya anomali belirtilmemiştir.",
+          "bilanço_sonrasi_olaylar": "Raporda bu başlığa ilişkin kritik risk veya anomali belirtilmemiştir."
+        },
+        "tutarlilik_raporu": [
+          "ℹ️ 2026/06 dönemi ASTOR için birikimli hafızaya eklenen ilk faaliyet raporu oldu. Karşılaştırma bir sonraki çeyrek eklendiğinde başlayacak."
+        ],
+        "dts_delta": 0,
+        "dso_delta": 0.0,
+        "tahakkuk_delta": 0.0
+      },
+      "2025/12": {
+        "efm_yuzde": 28.4,
+        "icr_kati": 4.2,
+        "tahakkuk_orani": -1.8,
+        "aga_orani": 4.2,
+        "ykp_orani": 6.5,
+        "dso_gun": 48.0,
+        "acm_makasi": -2.1,
+        "serefiye_ozk_orani": 1.2,
+        "karsilik_ozk_orani": 4.5,
+        "iliskili_orani": 0.15,
+        "dts_skor": 0,
+        "dts_delta": 0,
+        "uyarilar": [],
+        "pdf_dipnot_notlari": {
+          "yatirim_ve_kapasite": "[Sayfa 21] ...ik üretim kapasitemizi önemli ölçüde artırmayı hedefliyoruz. Devam eden yatırımların tamamlanmasıyla birlikte, ASTOR’un yıllık üretim kapasitesinde kayda değer bir artış sağlayacak; bu kapasite özellikle yurt dışı güçlü talebin karşılanmasında önemli bir rekabet avantajı oluşturacaktır. Büyüme stratejimizin merkezinde; • Yüksek gerilim ve güç transformatörleri kapasite artışı,...",
+          "siparis_ve_backlog": "[Sayfa 26] .... Kuzey Amerika pazarına giriş yaparak, Amerika kıtasındaki ihracat payımız %5,2 olmuştur. 31.12.2025 itibarıyla Astor Enerji’nin toplam varlıkları %20,4 artışla 50,6 milyar TL’ye ulaşmış, güçlü özkaynak yapısı korunmuştur. Dönen varlıklar içinde hammadde ve mamul stoklarındaki artış, kapasite genişlemesi ve yeni iletken üretimi hazırlıklarından kaynaklanmıştır. Yurtdışı satışl...",
+          "doviz_ve_turev": "Raporda bu başlığa ilişkin kritik risk veya anomali belirtilmemiştir.",
+          "tri_rehin_ipotek": "[Sayfa 3] ...İlişkin Genel Değerlendirme 28 Veri Merkezleri Kaynaklı Elektrik Talebi Artışı 29 İşletmenin ISO 500 ve TİM İçerisindeki Yeri 32... [Sayfa 5] ...mlandıracak önemli adımlar atmış bulunmaktayız. Küresel elektrik talebindeki artış, endüstrilerin hızlanan elektrifikasyonu ve yapay zekâyı destekleyen veri merkezlerine yönelik yatırımlar, büyümemizi destekleyen temel unsurlar olmuştur. Küresel ölçekte artan elektrik talebi, enerji iletim ve dağıtım altyapısında kapsamlı bir dönüşümü beraberinde getirmektedir. Özellikle ABD ve...",
+          "dava_ve_karsiliklar": "Raporda bu başlığa ilişkin kritik risk veya anomali belirtilmemiştir.",
+          "bilanço_sonrasi_olaylar": "Raporda bu başlığa ilişkin kritik risk veya anomali belirtilmemiştir."
+        },
+        "tutarlilik_raporu": [
+          "ℹ️ 2025/12 dönemi ASTOR için birikimli hafızaya eklenen ilk faaliyet raporu oldu. Karşılaştırma bir sonraki çeyrek eklendiğinde başlayacak."
+        ],
+        "dso_delta": 0.0,
+        "tahakkuk_delta": 0.0
+      },
+      "2026/03": {
+        "efm_yuzde": 28.4,
+        "icr_kati": 4.2,
+        "tahakkuk_orani": -1.8,
+        "aga_orani": 4.2,
+        "ykp_orani": 6.5,
+        "dso_gun": 48.0,
+        "acm_makasi": -2.1,
+        "serefiye_ozk_orani": 1.2,
+        "karsilik_ozk_orani": 4.5,
+        "iliskili_orani": 0.15,
+        "dts_skor": 0,
+        "dts_delta": 0,
+        "uyarilar": [],
+        "pdf_dipnot_notlari": {
+          "yatirim_ve_kapasite": "[Sayfa 10] ...irler İçindeki Payının Artışı Devam Eden Kapasite Artışı ve Yeni Tesis Yatırımları Global Pazarlarda Konumlanma ve ABD Pazarına Açılım Kurumsal Yönetim ve Organizasyonel Yapının Güçlendirilmesi İletken Fabrikasında Test Üretimlerine Başlanması... [Sayfa 22] ...lebilmesi için 2026 yılının ilk çeyreğinde gerçekleştirdiği Yatırım Harcamaları aşağıdaki tabloda gösterilmiştir. 31.03.2026 itibarıyla devam eden bazı önemli yatırımların mevcut durumu aşağıda özetlenmiştir: Faz 1 Anahtarlama Ürünleri Fabrikası ve Faz 2 İletken Fabrikası Şirket yalnızca dış tedarik yoluyla makine, ekipman ve sistem yatırımları yapmakla kalmayıp, aynı zamanda k...",
+          "siparis_ve_backlog": "[Sayfa 18] ...yönelik toplam 768,9 milyon USD tutarında sipariş alınmıştır. Alınan siparişlerin, 2025 yıl sonu hasılatına oranı %96,4 olup, Şirketin sipariş büyüklüğünde önemli bir artış sağlamıştır. Söz konusu siparişlerin teslimatlarının 2026 yılı içerisinde başlaması ve 2028 yılı üçüncü çeyreğinde tamamlanması planlanmaktadır. • Şirketimizin Kurumsal Yönetim Uyum Derecelendirme Notu, Ko... [Sayfa 38] ...me gözlenmiştir. Bununla birlikte, mevcut sipariş birikimi (backlog) ve uluslararası talep dikkate alındığında, önümüzdeki dönemlerde ihracatın yeniden artış eğilimine girmesi öngörülmektedir. Özellikle güç trafoları segmentinde küresel talep güçlü seyrini korumaktadır. Bu çerçevede, kapasite artışlarının kademeli devreye alınması, ihracatın yeniden ivmelenmesi ve ürün karmasın...",
+          "doviz_ve_turev": "Raporda bu başlığa ilişkin kritik risk veya anomali belirtilmemiştir.",
+          "tri_rehin_ipotek": "[Sayfa 5] ...ada üretim faaliyetlerini sürdürmektedir. Astor Enerji; elektrik enerjisinin üretildiği noktadan nihai kullanıcıya ulaştığı her aşamada kullanılan yağlı ve kuru tip dağıtım transformatörlerinden, güç ve özel tip transformatörlere, endüstriyel transformatörlerden orta ve yüksek gerilim anahtarlama ürünlerine kadar geniş bir ürün yelpazesinde üretim gerçekleştirmektedir. Beton ve... [Sayfa 6] ...esi 2001. Cadde No:5A Sincan/Ankara Şirketin Sektörü 27.11.01 - Elektrik motoru, jeneratör ve transformatörlerin imalatı NACE Kodu 27.12.01 - Elektrik devrelerinin anahtarlanması, korunması ile elektriğin kontrol ve dağıtımına özgü cihazların imalatı Telefon +90 312 267 01 56 Faks +90 312 267 00 34 Şube Bilgileri İstanbul Ofis, İspanya Ofis, Bağdat Ofis, www.astoras.com.tr/ilet...",
+          "dava_ve_karsiliklar": "Raporda bu başlığa ilişkin kritik risk veya anomali belirtilmemiştir.",
+          "bilanço_sonrasi_olaylar": "Raporda bu başlığa ilişkin kritik risk veya anomali belirtilmemiştir."
+        },
+        "tutarlilik_raporu": [
+          "✅ YATIRIM TUTARLILIĞI: Yatırımlar ve kapasite artış projeleri 2025/12 takvimine uygun devam ediyor.",
+          "✅ DÖVİZ VE HEDGE KONTROLÜ: Döviz pozisyonu ve türev korunma stratejisi önceki dönem politikasıyla uyumlu.",
+          "✅ BİLANÇO SONRASI GELİŞMELER: Faaliyetleri sekteye uğratacak negatif bilanço sonrası olay bildirilmedi."
+        ],
+        "dso_delta": 0.0,
+        "tahakkuk_delta": 0.0
+      },
+      "2025/06": {
+        "efm_yuzde": 119.9,
+        "icr_kati": 0.84,
+        "tahakkuk_orani": 4.91,
+        "aga_orani": 0.0,
+        "ykp_orani": 117.1,
+        "dso_gun": 128.6,
+        "acm_makasi": 0.0,
+        "serefiye_ozk_orani": 1.1,
+        "karsilik_ozk_orani": 0.3,
+        "iliskili_orani": 0.0,
+        "dts_skor": 30,
+        "uyarilar": [
+          "🟡 Kağıt üzeri kâr payı yüksek (%117.1): Değerleme ve ertelenmiş vergi geliri net kârı şişiriyor.",
+          "🔴 Faiz karşılama oranı 0.84x ile kritik sınırda (Efektif Borç Maliyeti: %119.9)."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": 0.0,
+        "tahakkuk_delta": 0.0
+      },
+      "2025/09": {
+        "efm_yuzde": 32.0,
+        "icr_kati": 3.4,
+        "tahakkuk_orani": -1.8,
+        "aga_orani": 4.2,
+        "ykp_orani": 6.5,
+        "dso_gun": 48.0,
+        "acm_makasi": -2.1,
+        "serefiye_ozk_orani": 1.2,
+        "karsilik_ozk_orani": 4.5,
+        "iliskili_orani": 0.15,
+        "dts_skor": 0,
+        "uyarilar": [
+          "🟢 Dipnot rasyolarında muhasebe makyajı veya anomali tespit edilmedi."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": -30,
+        "dso_delta": -80.6,
+        "tahakkuk_delta": -6.71
+      },
+      "2026/09": {
+        "efm_yuzde": 32.0,
+        "icr_kati": 3.4,
+        "tahakkuk_orani": -1.8,
+        "aga_orani": 4.2,
+        "ykp_orani": 6.5,
+        "dso_gun": 48.0,
+        "acm_makasi": -2.1,
+        "serefiye_ozk_orani": 1.2,
+        "karsilik_ozk_orani": 4.5,
+        "iliskili_orani": 0.15,
+        "dts_skor": 0,
+        "uyarilar": [
+          "🟢 Dipnot rasyolarında muhasebe makyajı veya anomali tespit edilmedi."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Korunaklı / Doğal Hedge",
+          "tri_rehin_ipotek": "Varlık üzerinde kritik ipotek yok",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": 0.0,
+        "tahakkuk_delta": 0.0
+      }
+    }
+  },
+  "sirketi_tani": {
+    "sirket_adi": "ASTOR ENERJİ A.Ş.",
+    "ne_is_yapar": "ASTOR ENERJİ A.Ş., Astor Enerji sektöründe üretim, satış ve operasyonel faaliyetlerini yürüten Borsa İstanbul şirketidir.",
+    "urun_ve_pazar": "Astor Enerji ana ürün ve hizmet grubu | Yurt içi kurumsal/bireysel müşteriler ve ihracat pazarları",
+    "piyasa_degeri": "158.6 milyar TL",
+    "net_kar_12ay": "4.65 milyar TL",
+    "net_kar_yorum": "Son dönemde 4.65 milyar TL net kâr elde edildi; yıllık değişim %+147.9.",
+    "roe_deger": "%10.6",
+    "roe_yorum": "Özkaynak kârlılığı (ROE) %10.6; Astor Enerji sektöründe sermaye maliyeti ve enflasyon karşısında izlemede.",
+    "carpan_ozet": "F/K: 15.0x | FD/FAVÖK: 11.3x"
+  },
+  "dna_ve_gidisat": [
+    {
+      "baslik": "Büyüme & Satış Hızı (Satışlar Hızlanıyor mu?)",
+      "deger": "%+7.5",
+      "durum": "DENGELİ",
+      "yorum": "Yıllık satış gelirleri 17.88 milyar TL seviyesinden 19.21 milyar TL seviyesine geldi (%+7.5)."
+    },
+    {
+      "baslik": "Operasyonel Kâr & Marjlar (Marjlar Güçleniyor mu?)",
+      "deger": "EFK Marjı %33.1",
+      "durum": "İYİLEŞİYOR",
+      "yorum": "Esas faaliyet kârı 6.36 milyar TL oldu. Operasyonel kâr marjı geçen döneme göre +4.9 puan değişti."
+    },
+    {
+      "baslik": "Parası Var mı? (Kârın Nakde Dönüşüm Gücü)",
+      "deger": "1 TL Kâra 1.24 TL Nakit",
+      "durum": "SAĞLAM",
+      "yorum": "Her 1 liralık net kâra karşılık faaliyetlerden 1.24 lira nakit (CFO: 5.75 milyar TL) üretildi. Nakit kalitesi çok yüksek."
+    },
+    {
+      "baslik": "Bilanço Sağlamlığı & Borç Gidişatı (Borç Azalıyor mu?)",
+      "deger": "%0 Kısa Vadeli | 0.15x",
+      "durum": "GÜVENLİ",
+      "yorum": "Toplam yükümlülüklerin %0.0 kadarı kısa vadeli. Net borç değişimi: 6.08 milyar TL (Güncel Net Borç: 6.36 milyar TL)."
+    }
+  ],
+  "bilanco_degisimleri": [
+    {
+      "kalem": "ANA ORTAKLIK ÖZKAYNAĞI %67.4 YÜKSELDİ",
+      "guncel_tutar": "43.80 milyar TL",
+      "ne_ifade_ediyor": "26.16 milyar TL → 43.80 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %46.2 kadarı. Özkaynak artışı dönem net kârı ile beslendiğinde şirketin içsel değerini ve bilanço tamponunu büyütür."
+    },
+    {
+      "kalem": "MADDİ DURAN VARLIKLAR %101.3 YÜKSELDİ",
+      "guncel_tutar": "14.18 milyar TL",
+      "ne_ifade_ediyor": "7.04 milyar TL → 14.18 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %18.7 kadarı. Üretim tesisi, makine ve kapasite yatırımlarını gösterir; gelecek dönem reel büyümenin öncü göstergesidir."
+    },
+    {
+      "kalem": "ERTELENMİŞ GELİR & SİPARİŞ AVANSLARI %170.7 YÜKSELDİ",
+      "guncel_tutar": "14.98 milyar TL",
+      "ne_ifade_ediyor": "5.53 milyar TL → 14.98 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %24.8 kadarı. Müşterilerden peşin alınan avansları ifade eder; şirketin pazarlık gücünü ve gelecekte yazılacak hazır hasılatı gösterir."
+    },
+    {
+      "kalem": "STOKLAR %268.0 YÜKSELDİ",
+      "guncel_tutar": "16.92 milyar TL",
+      "ne_ifade_ediyor": "4.60 milyar TL → 16.92 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %32.3 kadarı. Stok artışının satış büyümesiyle uyumlu olması sağlıklıdır; satıştan kopuk stok şişmesi nakit döngüsünü yavaşlatır."
+    },
+    {
+      "kalem": "TİCARİ ALACAK BAKİYESİ %74.7 YÜKSELDİ",
+      "guncel_tutar": "11.00 milyar TL",
+      "ne_ifade_ediyor": "6.30 milyar TL → 11.00 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %12.3 kadarı. Ticari alacak büyümesi ciro artışının altında kalıyorsa tahsilat disiplini güçlüdür; aşması durumunda vade açılması izlenmelidir."
+    }
+  ],
+  "kap_haberleri": [
+    {
+      "tarih": "26.10.2026",
+      "kategori": "Yeni İş / Sipariş",
+      "baslik": "Astor Enerji, Amerika'da yerleşik bir firma ile toplam 35 adet transformatörün tedariğine yönelik olarak 33.524.700 USD tutarında bir sözleşme imzaladı",
+      "meal": "Sipariş hemen tek çeyrekte gelir yazılmaz; üretim ve sevkiyat takvimine göre kademeli olarak hasılatlaşır. Gelecek dönem ciro görünürlüğünü artırır."
+    },
+    {
+      "tarih": "26.10.2026",
+      "kategori": "Yeni İş / Sipariş",
+      "baslik": "Astor Enerji, ABD'de yerleşik bir firma ile 35 adet transformatörün tedariğine yönelik $33.5 milyonluk sözleşme imzaladı-KAP",
+      "meal": "Sipariş hemen tek çeyrekte gelir yazılmaz; üretim ve sevkiyat takvimine göre kademeli olarak hasılatlaşır. Gelecek dönem ciro görünürlüğünü artırır."
+    },
+    {
+      "tarih": "26.10.2026",
+      "kategori": "KAP / Şirket Gelişmesi",
+      "baslik": "Astor Enerji, ana hissederları Feridun ve Enver Geçgel hakkında uygulanan tedbir ve dondurma kararının kaldırılmasına karar verildi-KAP",
+      "meal": "Şirketin ana faaliyet görünümüne, nakit akışına ve yatırım tezine olası etkisi faaliyet raporu dipnotlarıyla birlikte izlenmelidir."
+    },
+    {
+      "tarih": "26.10.2026",
+      "kategori": "KAP / Şirket Gelişmesi",
+      "baslik": "Astor Enerji ana hissedarları Feridun Geçgel ve Enver Geçgel hakkında uygulanmakta olan tedbirleri ve dondurma kararı İstanbul Cumhuriyet Başsavcılığı tarafından kaldırıldı",
+      "meal": "Şirketin ana faaliyet görünümüne, nakit akışına ve yatırım tezine olası etkisi faaliyet raporu dipnotlarıyla birlikte izlenmelidir."
+    },
+    {
+      "tarih": "21.10.2026",
+      "kategori": "KAP / Şirket Gelişmesi",
+      "baslik": "Matriks Haber Anketi-ASTOR 2026 yılı 3.çeyrek net dönem karının 622,0 milyon TL olması bekleniyor (2025 3Ç: 3.560,8 milyon TL)",
+      "meal": "Şirketin ana faaliyet görünümüne, nakit akışına ve yatırım tezine olası etkisi faaliyet raporu dipnotlarıyla birlikte izlenmelidir."
+    }
+  ],
+  "son_soz": {
+    "dikkat_cekenler": [
+      "Güçlü nakit üretimi: Her 1 TL net kâra karşılık 1.24 TL işletme nakit akışı (CFO) üretildi.",
+      "Borç yükü çok düşük: Net Borç / Özkaynak rasyosu 0.15x ile finansal kalkan oldukça sağlam.",
+      "Dengeli borç vadesi: Kısa vadeli yükümlülük payı %0.0 ile çevrilebilir sınırda.",
+      "Finansal sağlık skoru yüksek: Piotroski F-Skoru 7/9 ile bilanço ivmesi pozitif."
+    ],
+    "sevmediklerim": [
+      "Temel tabloda kırmızı çizgi ihlali yok; sektörel talep ve çeyreklik marj seyri rutin izlenmeli."
+    ],
+    "borsaci_gozuyle": "ASTOR ENERJİ A.Ş. (ASTOR), Astor Enerji sektöründe 'Kırılgan Hendekli' hendek yapısıyla faaliyet gösteriyor. Son dönemde 19.21 milyar TL satış geliri ve 4.65 milyar TL net kâr üretirken, her 1 TL kâra karşılık 1.24 TL işletme nakit akışı sağlaması işin motorunun nakit ürettiğini gösteriyor. Toplam yükümlülüklerin %0.0 seviyesinin kısa vadeli olması ve Net Borç/Özkaynak rasyosunun 0.15x düzeyinde bulunması nedeniyle Serkan Ünal kuralları çerçevesinde portföyde maksimum %5.0 ağırlık tavanıyla (1/3 Başlangıç (Radar)) takip edilmesi rasyoneldir."
+  },
+  "bolum1_elemeler": [
+    {
+      "kriter": "Halka Açıklık Oranı & Ortaklık Yapısı",
+      "deger": "%31.7",
+      "durum": "GEÇTİ",
+      "not": "Tavan %70 sınırının altında, güvenli ortaklık yapısı"
+    },
+    {
+      "kriter": "Küçük Ortağı Ezen İmtiyaz Kontrolü",
+      "deger": "YOK",
+      "durum": "TEMİZ",
+      "not": "Kâr payı dağıtımında veya oyda küçük ortağı dışlayan imtiyaz yok"
+    },
+    {
+      "kriter": "Hâkim Ortak ve Yönetim Sicili",
+      "deger": "GÜVENİLİR",
+      "durum": "TEMİZ",
+      "not": "Geçmişte azınlık ortaklarını zarara uğratan sistematik karar yok"
+    },
+    {
+      "kriter": "İlişkili Taraflara Kaynak Çıkışı",
+      "deger": "%0.00",
+      "durum": "TEMİZ",
+      "not": "Holding veya grup şirketlerine faizsiz kaynak çıkışı yok (< %5)"
+    },
+    {
+      "kriter": "Finansal Borç ve Gelir Yapısı Uyumu",
+      "deger": "0.15x",
+      "durum": "GÜVENLİ",
+      "not": "Borçlanma döviz ve vade yapısı faaliyet gelirleriyle uyumlu"
+    },
+    {
+      "kriter": "Hâkim Ortak Borsa Hisse Satışı",
+      "deger": "BİLDİRİM YOK",
+      "durum": "TEMİZ",
+      "not": "Hâkim ortakların borsada doğrudan satış baskısı oluşturacak satışı bulunmuyor"
+    }
+  ],
+  "bolum2_is_kalitesi": [
+    {
+      "kriter": "Pazar Payı İstikrarı & Yeni Oyuncu Tehdidi",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Astor Enerji sektöründe faaliyet gösteren ve temel finansal süzgeçleri geçen şirket."
+    },
+    {
+      "kriter": "Kârın Niteliği & Esas Faaliyet Dayanıklılığı",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Kâr doğrudan esas faaliyet ve operasyonel iş modelinden üretiliyor, reel ve sürdürülebilir"
+    },
+    {
+      "kriter": "Ekonomik Hendek Kaynağı & Korunabilirlik",
+      "durum": "KIRILGAN HENDEKLI",
+      "aciklama": "Kırılgan Hendekli sınıfında; ölçek, dağıtım kanalı veya geçiş maliyeti avantajına sahip."
+    },
+    {
+      "kriter": "Kurumsal Yapı & Şahıstan Bağımsız İşleyiş",
+      "durum": "OTURMUŞ",
+      "aciklama": "Kişilerden bağımsız işleyen kurumsal organizasyon ve yönetim kurulu yapısı."
+    },
+    {
+      "kriter": "Yönetim Güvenilirliği & Hedef Tutarlılığı",
+      "durum": "TUTARLI",
+      "aciklama": "Faaliyet raporlarında ve sunumlarda verilen geçmiş dönem hedefleri ile gerçekleşmeler tutarlı"
+    },
+    {
+      "kriter": "Reel Büyüme & Faaliyet Marjı Koruması",
+      "durum": "DENGELİ",
+      "aciklama": "Enflasyon üzeri ciro büyümesi ve operasyonel FAVÖK marjı disiplini korunuyor"
+    }
+  ],
+  "bolum3_tablolar": [
+    {
+      "kriter": "Kâr Nakde Dönüşüyor mu? (CFO > Net Kâr)",
+      "durum": "BAŞARILI",
+      "aciklama": "Her 1 TL net kâra karşılık 1.24 TL işletme nakit akışı üretildi."
+    },
+    {
+      "kriter": "Kârın Tekrarlanabilirliği (Çekirdek Kâr Payı)",
+      "durum": "GÜÇLÜ",
+      "aciklama": "%80+ Ana operasyonel kâr; duran varlık satışı, kur farkı gibi tek seferlik etkiler arındırıldı"
+    },
+    {
+      "kriter": "Dipnot Riskleri (TRİ, Kefalet, Kısa Vade Borç)",
+      "durum": "TEMİZ",
+      "aciklama": "Kısa vadeli borç payı %0.0; TRİ ve kefaletler normal sınırda (< %20)"
+    },
+    {
+      "kriter": "Konsolidasyon Netliği & İştirak Saydamlığı",
+      "durum": "ŞEFFAF",
+      "aciklama": "Konsolide finansallar şirketin çekirdek işini doğrudan yansıtıyor, maskelenmiş zarar yok"
+    }
+  ],
+  "bolum4_fiyat_degerleme": [
+    {
+      "kriter": "Varsayım Tutarlılığı & Büyüme Senaryosu",
+      "durum": "RASYONEL",
+      "aciklama": "Astor Enerji pazar payı istikrarı, ciro büyümesi ve operasyonel marjların korunması varsayımı."
+    },
+    {
+      "kriter": "Çarpan Paydası Sürdürülebilirliği",
+      "durum": "SAĞLAM",
+      "aciklama": "Fiyat/Kazanç ve FD/FAVÖK çarpanlarının paydasındaki operasyonel kâr sürdürülebilir"
+    },
+    {
+      "kriter": "Büyümenin Değeri (ROIC > Sermaye Maliyeti)",
+      "durum": "VERİMLİ",
+      "aciklama": "Yatırılan sermayenin getirisi sermaye maliyetinin üzerinde; büyüme serbest nakit akışı üretiyor"
+    },
+    {
+      "kriter": "Güvenlik Marjı & Yanılma Payı Alanı",
+      "durum": "UYGUN",
+      "aciklama": "Tarihsel değerleme çarpanı bandında alt çeyrek / dengeli bölgede; analitik yanılma payı mevcut"
+    }
+  ],
+  "bolum5_karar_ve_cikis": {
+    "hendek_sinifi": "Kırılgan Hendekli",
+    "portfoy_tavani": "Maksimum %5.0",
+    "mevcut_agirlik": "%0.01",
+    "asamalandirma_kurali": "Min %1.0 ile başla, maks %5.0 tavanını aşma. Durum: 1/3 Başlangıç (Radar)",
+    "cikis_tetikleyicileri": [
+      "(1) Yönetim veya hâkim hissedar değişimi ve kurumsal nitelik kaybı yaşanması",
+      "(2) Hâkim hissedarın borsada doğrudan pay satışı başlatması",
+      "(3) İlişkili taraflara şüpheli/denetimsiz finansal borç veya kaynak aktarımı",
+      "(4) Şirketin iş modelinde veya sektöründe kalıcı yapısal kırılma",
+      "(5) İlk yatırım analizinde sonradan önemli bir analitik hata tespit edilmesi"
+    ]
+  }
+}

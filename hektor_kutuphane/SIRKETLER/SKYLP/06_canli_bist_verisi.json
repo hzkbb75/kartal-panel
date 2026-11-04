@@ -1,0 +1,21 @@
+{
+    "kod": "SKYLP",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Diğer",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 9.5,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 57.25,
+    "aylik_degisim": 15.2,
+    "satis_milyon_tl": 265.0,
+    "net_kar_milyon_tl": -35.0,
+    "cfo_milyon_tl": -5.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.67,
+    "nakit_dongusu_gun": -43.6,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\SKYLP\\SKYLP_Mikroskop_Raporu.html"
+}

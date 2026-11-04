@@ -1,0 +1,21 @@
+{
+    "kod": "ARFYE",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Elektrik Üretim",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 25.7,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 8.4,
+    "aylik_degisim": -39.8,
+    "satis_milyon_tl": 298.0,
+    "net_kar_milyon_tl": -143.0,
+    "cfo_milyon_tl": 748.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 231.3,
+    "piotroski_skor": 5,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\ARFYE\\ARFYE_Mikroskop_Raporu.html"
+}

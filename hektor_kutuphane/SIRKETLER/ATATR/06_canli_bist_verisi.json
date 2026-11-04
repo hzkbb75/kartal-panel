@@ -1,0 +1,21 @@
+{
+    "kod": "ATATR",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Turizm",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 34.8,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 3.83,
+    "aylik_degisim": -41.5,
+    "satis_milyon_tl": 2978.0,
+    "net_kar_milyon_tl": 444.0,
+    "cfo_milyon_tl": 1413.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": -12.0,
+    "piotroski_skor": 5,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\ATATR\\ATATR_Mikroskop_Raporu.html"
+}

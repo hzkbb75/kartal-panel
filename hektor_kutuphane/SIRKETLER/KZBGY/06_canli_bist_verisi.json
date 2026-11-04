@@ -1,0 +1,21 @@
+{
+    "kod": "KZBGY",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Kızılbük GYO",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 34.8,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 1.03,
+    "aylik_degisim": -25.4,
+    "satis_milyon_tl": 2140.0,
+    "net_kar_milyon_tl": 1103.0,
+    "cfo_milyon_tl": 1245.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.26,
+    "nakit_dongusu_gun": 2850.3,
+    "piotroski_skor": 5,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\KZBGY\\KZBGY_Mikroskop_Raporu.html"
+}

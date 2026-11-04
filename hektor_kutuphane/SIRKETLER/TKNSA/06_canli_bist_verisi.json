@@ -1,0 +1,21 @@
+{
+    "kod": "TKNSA",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Perakande - Ticaret",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 50.0,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Aşırı Borç / Negatif EFK (3.44x)",
+    "fiyat_tl": 10.55,
+    "aylik_degisim": -21.0,
+    "satis_milyon_tl": 103829.0,
+    "net_kar_milyon_tl": -2798.0,
+    "cfo_milyon_tl": 1906.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 3.44,
+    "nakit_dongusu_gun": 0.6,
+    "piotroski_skor": 4,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\TKNSA\\TKNSA_Mikroskop_Raporu.html"
+}

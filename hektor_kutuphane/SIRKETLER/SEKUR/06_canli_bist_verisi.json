@@ -1,0 +1,21 @@
+{
+    "kod": "SEKUR",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Kimyasal Ürün",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 71.5,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%71.5), 2 Dönem Negatif Nakit Akışı (CFO < 0)",
+    "fiyat_tl": 2.98,
+    "aylik_degisim": 3.5,
+    "satis_milyon_tl": 1906.0,
+    "net_kar_milyon_tl": -16.0,
+    "cfo_milyon_tl": -170.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 1.42,
+    "nakit_dongusu_gun": 77.5,
+    "piotroski_skor": 5,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\SEKUR\\SEKUR_Mikroskop_Raporu.html"
+}

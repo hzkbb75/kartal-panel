@@ -1,0 +1,245 @@
+{
+  "kod": "AKSEN",
+  "sirket_adi": "AKSA ENERJİ ÜRETİM A.Ş.",
+  "sektor": "Elektrik Üretim",
+  "kategori": "Kırılgan Hendekli",
+  "fiyat_tl": 60.25,
+  "f_skor": 7,
+  "tavan_agirlik": 5.0,
+  "mevcut_agirlik": 0.0,
+  "kademe_durumu": "1/3 Başlangıç",
+  "sirketi_tani": {
+    "sirket_adi": "AKSA ENERJİ ÜRETİM A.Ş.",
+    "ne_is_yapar": "AKSA ENERJİ ÜRETİM A.Ş., Elektrik Üretim sektöründe üretim, satış ve operasyonel faaliyetlerini yürüten Borsa İstanbul şirketidir.",
+    "urun_ve_pazar": "Elektrik Üretim ana ürün ve hizmet grubu | Yurt içi kurumsal/bireysel müşteriler ve ihracat pazarları",
+    "piyasa_degeri": "74.3 milyar TL",
+    "net_kar_12ay": "4.30 milyar TL",
+    "net_kar_yorum": "Son dönemde 4.30 milyar TL net kâr elde edildi; yıllık değişim %+63.7.",
+    "roe_deger": "%6.1",
+    "roe_yorum": "Özkaynak kârlılığı (ROE) %6.1; Elektrik Üretim sektöründe sermaye maliyeti ve enflasyon karşısında izlemede.",
+    "carpan_ozet": "F/K: 22.2x | FD/FAVÖK: 10.3x"
+  },
+  "dna_ve_gidisat": [
+    {
+      "baslik": "Büyüme & Satış Hızı (Satışlar Hızlanıyor mu?)",
+      "deger": "%+20.5",
+      "durum": "DENGELİ",
+      "yorum": "Yıllık satış gelirleri 41.41 milyar TL seviyesinden 49.91 milyar TL seviyesine geldi (%+20.5)."
+    },
+    {
+      "baslik": "Operasyonel Kâr & Marjlar (Marjlar Güçleniyor mu?)",
+      "deger": "EFK Marjı %22.6",
+      "durum": "İYİLEŞİYOR",
+      "yorum": "Esas faaliyet kârı 11.30 milyar TL oldu. Operasyonel kâr marjı geçen döneme göre +5.5 puan değişti."
+    },
+    {
+      "baslik": "Parası Var mı? (Kârın Nakde Dönüşüm Gücü)",
+      "deger": "1 TL Kâra 3.23 TL Nakit",
+      "durum": "SAĞLAM",
+      "yorum": "Her 1 liralık net kâra karşılık faaliyetlerden 3.23 lira nakit (CFO: 13.90 milyar TL) üretildi. Nakit kalitesi çok yüksek."
+    },
+    {
+      "baslik": "Bilanço Sağlamlığı & Borç Gidişatı (Borç Azalıyor mu?)",
+      "deger": "%0 Kısa Vadeli | 1.07x",
+      "durum": "GÜVENLİ",
+      "yorum": "Toplam yükümlülüklerin %0.0 kadarı kısa vadeli. Net borç değişimi: 27.09 milyar TL (Güncel Net Borç: 75.38 milyar TL)."
+    }
+  ],
+  "bilanco_degisimleri": [
+    {
+      "kalem": "ANA ORTAKLIK ÖZKAYNAĞI %31.8 YÜKSELDİ",
+      "guncel_tutar": "70.14 milyar TL",
+      "ne_ifade_ediyor": "53.20 milyar TL → 70.14 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %15.6 kadarı. Özkaynak artışı dönem net kârı ile beslendiğinde şirketin içsel değerini ve bilanço tamponunu büyütür."
+    },
+    {
+      "kalem": "MADDİ DURAN VARLIKLAR %48.8 YÜKSELDİ",
+      "guncel_tutar": "120.32 milyar TL",
+      "ne_ifade_ediyor": "80.88 milyar TL → 120.32 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %36.4 kadarı. Üretim tesisi, makine ve kapasite yatırımlarını gösterir; gelecek dönem reel büyümenin öncü göstergesidir."
+    },
+    {
+      "kalem": "ERTELENMİŞ GELİR & SİPARİŞ AVANSLARI %0.0 YÜKSELDİ",
+      "guncel_tutar": "0 milyon TL",
+      "ne_ifade_ediyor": "0 milyon TL → 0 milyon TL. Değişimin büyüklüğü önceki toplam varlığın %0.0 kadarı. Müşterilerden peşin alınan avansları ifade eder; şirketin pazarlık gücünü ve gelecekte yazılacak hazır hasılatı gösterir."
+    },
+    {
+      "kalem": "STOKLAR %45.2 YÜKSELDİ",
+      "guncel_tutar": "2.62 milyar TL",
+      "ne_ifade_ediyor": "1.80 milyar TL → 2.62 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %0.8 kadarı. Stok artışının satış büyümesiyle uyumlu olması sağlıklıdır; satıştan kopuk stok şişmesi nakit döngüsünü yavaşlatır."
+    },
+    {
+      "kalem": "TİCARİ ALACAK BAKİYESİ %31.1 AZALDI",
+      "guncel_tutar": "9.01 milyar TL",
+      "ne_ifade_ediyor": "13.06 milyar TL → 9.01 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %3.7 kadarı. Ticari alacak büyümesi ciro artışının altında kalıyorsa tahsilat disiplini güçlüdür; aşması durumunda vade açılması izlenmelidir."
+    }
+  ],
+  "kap_haberleri": [
+    {
+      "tarih": "27.10.2026",
+      "kategori": "Finansal Rapor",
+      "baslik": "(Güncelleme) Özel Haber-Borsada 2026 yılı 3. çeyrek bilanço döneminde açıklama tarihleri",
+      "meal": "Açıklanan tablolarda net kârın işletme nakit akışına dönüşüm oranı (CFO > Net Kâr) ve kısa vadeli borç çevrimi teyit edilmelidir."
+    },
+    {
+      "tarih": "27.10.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Aksa Enerji, Kırşehir Alıç Depolamalı GES’te ticari üretim başladı",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    },
+    {
+      "tarih": "26.10.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Ata Yatırım AKSEN için 136.61 TL hedef fiyat belirledi ve TUT tavsiyesini korudu. (Önceki hedef fiyat: 124.14 TL)",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    },
+    {
+      "tarih": "26.10.2026",
+      "kategori": "KAP / Şirket Gelişmesi",
+      "baslik": "Enerji Sektör Raporu(Kuzey Menkul Değerler)",
+      "meal": "Şirketin ana faaliyet görünümüne, nakit akışına ve yatırım tezine olası etkisi faaliyet raporu dipnotlarıyla birlikte izlenmelidir."
+    },
+    {
+      "tarih": "23.10.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Aksa Enerji CEO'su Naci Ağbal, 9. Kazakistan Küresel Yatırım Yuvarlak Masa Toplantısı’nda Kazakistan Başbakanı Bektenov ile bir araya geldi",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    }
+  ],
+  "son_soz": {
+    "dikkat_cekenler": [
+      "Güçlü nakit üretimi: Her 1 TL net kâra karşılık 3.23 TL işletme nakit akışı (CFO) üretildi.",
+      "Dengeli borç vadesi: Kısa vadeli yükümlülük payı %0.0 ile çevrilebilir sınırda.",
+      "Finansal sağlık skoru yüksek: Piotroski F-Skoru 7/9 ile bilanço ivmesi pozitif."
+    ],
+    "sevmediklerim": [
+      "Temel tabloda kırmızı çizgi ihlali yok; sektörel talep ve çeyreklik marj seyri rutin izlenmeli."
+    ],
+    "borsaci_gozuyle": "AKSA ENERJİ ÜRETİM A.Ş. (AKSEN), Elektrik Üretim sektöründe 'Kırılgan Hendekli' hendek yapısıyla faaliyet gösteriyor. Son dönemde 49.91 milyar TL satış geliri ve 4.30 milyar TL net kâr üretirken, her 1 TL kâra karşılık 3.23 TL işletme nakit akışı sağlaması işin motorunun nakit ürettiğini gösteriyor. Toplam yükümlülüklerin %0.0 seviyesinin kısa vadeli olması ve Net Borç/Özkaynak rasyosunun 1.07x düzeyinde bulunması nedeniyle Serkan Ünal kuralları çerçevesinde portföyde maksimum %5.0 ağırlık tavanıyla (1/3 Başlangıç) takip edilmesi rasyoneldir."
+  },
+  "bolum1_elemeler": [
+    {
+      "kriter": "Halka Açıklık Oranı & Ortaklık Yapısı",
+      "deger": "%60.6",
+      "durum": "GEÇTİ",
+      "not": "Tavan %70 sınırının altında, güvenli ortaklık yapısı"
+    },
+    {
+      "kriter": "Küçük Ortağı Ezen İmtiyaz Kontrolü",
+      "deger": "YOK",
+      "durum": "TEMİZ",
+      "not": "Kâr payı dağıtımında veya oyda küçük ortağı dışlayan imtiyaz yok"
+    },
+    {
+      "kriter": "Hâkim Ortak ve Yönetim Sicili",
+      "deger": "GÜVENİLİR",
+      "durum": "TEMİZ",
+      "not": "Geçmişte azınlık ortaklarını zarara uğratan sistematik karar yok"
+    },
+    {
+      "kriter": "İlişkili Taraflara Kaynak Çıkışı",
+      "deger": "%0.00",
+      "durum": "TEMİZ",
+      "not": "Holding veya grup şirketlerine faizsiz kaynak çıkışı yok (< %5)"
+    },
+    {
+      "kriter": "Finansal Borç ve Gelir Yapısı Uyumu",
+      "deger": "1.07x",
+      "durum": "GÜVENLİ",
+      "not": "Borçlanma döviz ve vade yapısı faaliyet gelirleriyle uyumlu"
+    },
+    {
+      "kriter": "Hâkim Ortak Borsa Hisse Satışı",
+      "deger": "BİLDİRİM YOK",
+      "durum": "TEMİZ",
+      "not": "Hâkim ortakların borsada doğrudan satış baskısı oluşturacak satışı bulunmuyor"
+    }
+  ],
+  "bolum2_is_kalitesi": [
+    {
+      "kriter": "Pazar Payı İstikrarı & Yeni Oyuncu Tehdidi",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Elektrik Üretim sektöründe faaliyet gösteren ve temel finansal süzgeçleri geçen şirket."
+    },
+    {
+      "kriter": "Kârın Niteliği & Esas Faaliyet Dayanıklılığı",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Kâr doğrudan esas faaliyet ve operasyonel iş modelinden üretiliyor, reel ve sürdürülebilir"
+    },
+    {
+      "kriter": "Ekonomik Hendek Kaynağı & Korunabilirlik",
+      "durum": "KIRILGAN HENDEKLI",
+      "aciklama": "Kırılgan Hendekli sınıfında; ölçek, dağıtım kanalı veya geçiş maliyeti avantajına sahip."
+    },
+    {
+      "kriter": "Kurumsal Yapı & Şahıstan Bağımsız İşleyiş",
+      "durum": "OTURMUŞ",
+      "aciklama": "Kişilerden bağımsız işleyen kurumsal organizasyon ve yönetim kurulu yapısı."
+    },
+    {
+      "kriter": "Yönetim Güvenilirliği & Hedef Tutarlılığı",
+      "durum": "TUTARLI",
+      "aciklama": "Faaliyet raporlarında ve sunumlarda verilen geçmiş dönem hedefleri ile gerçekleşmeler tutarlı"
+    },
+    {
+      "kriter": "Reel Büyüme & Faaliyet Marjı Koruması",
+      "durum": "DENGELİ",
+      "aciklama": "Enflasyon üzeri ciro büyümesi ve operasyonel FAVÖK marjı disiplini korunuyor"
+    }
+  ],
+  "bolum3_tablolar": [
+    {
+      "kriter": "Kâr Nakde Dönüşüyor mu? (CFO > Net Kâr)",
+      "durum": "BAŞARILI",
+      "aciklama": "Her 1 TL net kâra karşılık 3.23 TL işletme nakit akışı üretildi."
+    },
+    {
+      "kriter": "Kârın Tekrarlanabilirliği (Çekirdek Kâr Payı)",
+      "durum": "GÜÇLÜ",
+      "aciklama": "%80+ Ana operasyonel kâr; duran varlık satışı, kur farkı gibi tek seferlik etkiler arındırıldı"
+    },
+    {
+      "kriter": "Dipnot Riskleri (TRİ, Kefalet, Kısa Vade Borç)",
+      "durum": "TEMİZ",
+      "aciklama": "Kısa vadeli borç payı %0.0; TRİ ve kefaletler normal sınırda (< %20)"
+    },
+    {
+      "kriter": "Konsolidasyon Netliği & İştirak Saydamlığı",
+      "durum": "ŞEFFAF",
+      "aciklama": "Konsolide finansallar şirketin çekirdek işini doğrudan yansıtıyor, maskelenmiş zarar yok"
+    }
+  ],
+  "bolum4_fiyat_degerleme": [
+    {
+      "kriter": "Varsayım Tutarlılığı & Büyüme Senaryosu",
+      "durum": "RASYONEL",
+      "aciklama": "Elektrik Üretim pazar payı istikrarı, ciro büyümesi ve operasyonel marjların korunması varsayımı."
+    },
+    {
+      "kriter": "Çarpan Paydası Sürdürülebilirliği",
+      "durum": "SAĞLAM",
+      "aciklama": "Fiyat/Kazanç ve FD/FAVÖK çarpanlarının paydasındaki operasyonel kâr sürdürülebilir"
+    },
+    {
+      "kriter": "Büyümenin Değeri (ROIC > Sermaye Maliyeti)",
+      "durum": "VERİMLİ",
+      "aciklama": "Yatırılan sermayenin getirisi sermaye maliyetinin üzerinde; büyüme serbest nakit akışı üretiyor"
+    },
+    {
+      "kriter": "Güvenlik Marjı & Yanılma Payı Alanı",
+      "durum": "UYGUN",
+      "aciklama": "Tarihsel değerleme çarpanı bandında alt çeyrek / dengeli bölgede; analitik yanılma payı mevcut"
+    }
+  ],
+  "bolum5_karar_ve_cikis": {
+    "hendek_sinifi": "Kırılgan Hendekli",
+    "portfoy_tavani": "Maksimum %5.0",
+    "mevcut_agirlik": "%0.00",
+    "asamalandirma_kurali": "Min %1.0 ile başla, maks %5.0 tavanını aşma. Durum: 1/3 Başlangıç",
+    "cikis_tetikleyicileri": [
+      "(1) Yönetim veya hâkim hissedar değişimi ve kurumsal nitelik kaybı yaşanması",
+      "(2) Hâkim hissedarın borsada doğrudan pay satışı başlatması",
+      "(3) İlişkili taraflara şüpheli/denetimsiz finansal borç veya kaynak aktarımı",
+      "(4) Şirketin iş modelinde veya sektöründe kalıcı yapısal kırılma",
+      "(5) İlk yatırım analizinde sonradan önemli bir analitik hata tespit edilmesi"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "kod": "KLSER",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Seramik",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 21.3,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 12.06,
+    "aylik_degisim": -36.4,
+    "satis_milyon_tl": 16560.0,
+    "net_kar_milyon_tl": -4194.0,
+    "cfo_milyon_tl": 1406.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 1.12,
+    "nakit_dongusu_gun": 113.3,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\KLSER\\KLSER_Mikroskop_Raporu.html"
+}

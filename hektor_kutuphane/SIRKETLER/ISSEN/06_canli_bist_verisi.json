@@ -1,0 +1,21 @@
+{
+    "kod": "ISSEN",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Tekstil Entegre",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 19.7,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "2 Dönem Negatif Nakit Akışı (CFO < 0)",
+    "fiyat_tl": 4.36,
+    "aylik_degisim": -19.0,
+    "satis_milyon_tl": 5803.0,
+    "net_kar_milyon_tl": -572.0,
+    "cfo_milyon_tl": -350.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.74,
+    "nakit_dongusu_gun": 185.6,
+    "piotroski_skor": 2,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\ISSEN\\ISSEN_Mikroskop_Raporu.html"
+}

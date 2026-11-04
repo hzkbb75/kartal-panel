@@ -1,0 +1,21 @@
+{
+    "kod": "KARTN",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Kağıt Ürünleri",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 75.0,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%75.0), 2 Dönem Negatif Nakit Akışı (CFO < 0)",
+    "fiyat_tl": 108.4,
+    "aylik_degisim": 23.9,
+    "satis_milyon_tl": 4733.0,
+    "net_kar_milyon_tl": -1368.0,
+    "cfo_milyon_tl": -804.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.56,
+    "nakit_dongusu_gun": 43.2,
+    "piotroski_skor": 2,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\KARTN\\KARTN_Mikroskop_Raporu.html"
+}

@@ -1,0 +1,21 @@
+{
+    "kod": "MERKO",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Gıda",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 81.9,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%81.9)",
+    "fiyat_tl": 0.87,
+    "aylik_degisim": -8.4,
+    "satis_milyon_tl": 650.0,
+    "net_kar_milyon_tl": -57.0,
+    "cfo_milyon_tl": -248.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.1,
+    "nakit_dongusu_gun": 119.4,
+    "piotroski_skor": 3,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\MERKO\\MERKO_Mikroskop_Raporu.html"
+}

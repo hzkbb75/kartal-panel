@@ -1,0 +1,21 @@
+{
+    "kod": "EGEPO",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Sağlık ve İlaç",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 21.9,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 3.74,
+    "aylik_degisim": -44.8,
+    "satis_milyon_tl": 1584.0,
+    "net_kar_milyon_tl": 3.0,
+    "cfo_milyon_tl": 8.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 8.3,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\EGEPO\\EGEPO_Mikroskop_Raporu.html"
+}

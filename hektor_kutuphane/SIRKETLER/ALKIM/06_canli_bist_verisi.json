@@ -1,0 +1,21 @@
+{
+    "kod": "ALKIM",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Kimyasal Ürün",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 46.8,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 9.06,
+    "aylik_degisim": -22.6,
+    "satis_milyon_tl": 6005.0,
+    "net_kar_milyon_tl": -481.0,
+    "cfo_milyon_tl": 589.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.02,
+    "nakit_dongusu_gun": 66.2,
+    "piotroski_skor": 3,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\ALKIM\\ALKIM_Mikroskop_Raporu.html"
+}

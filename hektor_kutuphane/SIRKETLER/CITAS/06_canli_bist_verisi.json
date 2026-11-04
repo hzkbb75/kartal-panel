@@ -1,0 +1,21 @@
+{
+    "kod": "CITAS",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Gıda",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 14.9,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 88.5,
+    "aylik_degisim": -24.4,
+    "satis_milyon_tl": 9036.0,
+    "net_kar_milyon_tl": 1082.0,
+    "cfo_milyon_tl": 880.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 22.7,
+    "piotroski_skor": 6,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\CITAS\\CITAS_Mikroskop_Raporu.html"
+}

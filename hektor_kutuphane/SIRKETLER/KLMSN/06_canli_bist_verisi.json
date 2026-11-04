@@ -1,0 +1,21 @@
+{
+    "kod": "KLMSN",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Dayanıklı Tüketim",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 79.2,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%79.2)",
+    "fiyat_tl": 16.04,
+    "aylik_degisim": -23.6,
+    "satis_milyon_tl": 8046.0,
+    "net_kar_milyon_tl": -614.0,
+    "cfo_milyon_tl": 1394.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.59,
+    "nakit_dongusu_gun": 110.1,
+    "piotroski_skor": 5,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\KLMSN\\KLMSN_Mikroskop_Raporu.html"
+}

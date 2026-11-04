@@ -1,0 +1,21 @@
+{
+    "kod": "MERCN",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Kimyasal Ürün",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 36.1,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 8.16,
+    "aylik_degisim": -29.5,
+    "satis_milyon_tl": 3415.0,
+    "net_kar_milyon_tl": 167.0,
+    "cfo_milyon_tl": 72.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.45,
+    "nakit_dongusu_gun": 108.7,
+    "piotroski_skor": 5,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\MERCN\\MERCN_Mikroskop_Raporu.html"
+}

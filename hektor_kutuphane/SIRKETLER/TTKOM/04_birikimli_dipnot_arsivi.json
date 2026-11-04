@@ -1,0 +1,83 @@
+{
+  "kod": "TTKOM",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 4.7,
+      "icr_kati": 4.02,
+      "tahakkuk_orani": -32.36,
+      "aga_orani": 0.0,
+      "ykp_orani": 11.0,
+      "dso_gun": 144.4,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.5,
+      "karsilik_ozk_orani": 5.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 17.5,
+      "icr_kati": 2.82,
+      "tahakkuk_orani": -78.39,
+      "aga_orani": 28.6,
+      "ykp_orani": 5.8,
+      "dso_gun": 72.5,
+      "acm_makasi": -108.9,
+      "serefiye_ozk_orani": 0.5,
+      "karsilik_ozk_orani": 4.9,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -71.9
+    },
+    "2026/03": {
+      "efm_yuzde": 0.8,
+      "icr_kati": 15.78,
+      "tahakkuk_orani": 14.17,
+      "aga_orani": 1468.2,
+      "ykp_orani": 1.1,
+      "dso_gun": 192.0,
+      "acm_makasi": 81.9,
+      "serefiye_ozk_orani": 0.4,
+      "karsilik_ozk_orani": 4.3,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%14.17): Kâr nakde dönüşmüyor.",
+        "🟡 Alacak-Ciro makası +%81.9 açıldı (DSO: 192.0 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 35,
+      "dso_delta": 119.5
+    },
+    "2026/06": {
+      "efm_yuzde": 2.3,
+      "icr_kati": 6.84,
+      "tahakkuk_orani": -10.07,
+      "aga_orani": 85.0,
+      "ykp_orani": 3.7,
+      "dso_gun": 98.9,
+      "acm_makasi": -106.3,
+      "serefiye_ozk_orani": 0.4,
+      "karsilik_ozk_orani": 4.6,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -35,
+      "dso_delta": -93.1
+    }
+  }
+}

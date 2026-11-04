@@ -1,0 +1,21 @@
+{
+    "kod": "HKTM",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Endüstriyel Makine -Teçhizat",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 72.2,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%72.2), 2 Dönem Negatif Nakit Akışı (CFO < 0)",
+    "fiyat_tl": 10.49,
+    "aylik_degisim": 15.0,
+    "satis_milyon_tl": 935.0,
+    "net_kar_milyon_tl": -139.0,
+    "cfo_milyon_tl": -48.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.46,
+    "nakit_dongusu_gun": 409.1,
+    "piotroski_skor": 5,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\HKTM\\HKTM_Mikroskop_Raporu.html"
+}

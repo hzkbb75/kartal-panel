@@ -1,0 +1,44 @@
+{
+  "kod": "YBTAS",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/06": {
+      "efm_yuzde": 0.0,
+      "icr_kati": 1.43,
+      "tahakkuk_orani": -13.51,
+      "aga_orani": 0.0,
+      "ykp_orani": 6.4,
+      "dso_gun": 143.8,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 1.43x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2026/06": {
+      "efm_yuzde": 1019.8,
+      "icr_kati": 12.52,
+      "tahakkuk_orani": -11.23,
+      "aga_orani": 0.0,
+      "ykp_orani": 8.8,
+      "dso_gun": 133.9,
+      "acm_makasi": -7.3,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": -9.9
+    }
+  }
+}

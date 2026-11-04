@@ -1,0 +1,21 @@
+{
+    "kod": "ISGSY",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Yatırım Ortaklıkları",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 36.7,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 10.9,
+    "aylik_degisim": -14.6,
+    "satis_milyon_tl": 7148.0,
+    "net_kar_milyon_tl": 5229.0,
+    "cfo_milyon_tl": 213.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.31,
+    "nakit_dongusu_gun": -299.0,
+    "piotroski_skor": 6,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\ISGSY\\ISGSY_Mikroskop_Raporu.html"
+}

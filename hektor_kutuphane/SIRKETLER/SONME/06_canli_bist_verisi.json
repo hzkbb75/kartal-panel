@@ -1,0 +1,21 @@
+{
+    "kod": "SONME",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Tekstil Entegre",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 74.0,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%74.0)",
+    "fiyat_tl": 91.85,
+    "aylik_degisim": -15.7,
+    "satis_milyon_tl": 71.0,
+    "net_kar_milyon_tl": -265.0,
+    "cfo_milyon_tl": 100.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": -1623.5,
+    "piotroski_skor": 5,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\SONME\\SONME_Mikroskop_Raporu.html"
+}

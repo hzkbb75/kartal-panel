@@ -1,0 +1,21 @@
+{
+    "kod": "TAVHL",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Havayolları ve Hizm.",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 49.1,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 250.0,
+    "aylik_degisim": -6.2,
+    "satis_milyon_tl": 102128.0,
+    "net_kar_milyon_tl": 3501.0,
+    "cfo_milyon_tl": 19308.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.84,
+    "nakit_dongusu_gun": 19.5,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\TAVHL\\TAVHL_Mikroskop_Raporu.html"
+}

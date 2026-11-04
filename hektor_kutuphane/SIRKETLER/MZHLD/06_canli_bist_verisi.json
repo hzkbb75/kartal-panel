@@ -1,0 +1,21 @@
+{
+    "kod": "MZHLD",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "İnşaat Malzemeleri",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 66.4,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Aşırı Borç / Negatif EFK (4.54x)",
+    "fiyat_tl": 3.38,
+    "aylik_degisim": -23.2,
+    "satis_milyon_tl": 2645.0,
+    "net_kar_milyon_tl": -54.0,
+    "cfo_milyon_tl": -159.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 4.54,
+    "nakit_dongusu_gun": 4.9,
+    "piotroski_skor": 4,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\MZHLD\\MZHLD_Mikroskop_Raporu.html"
+}

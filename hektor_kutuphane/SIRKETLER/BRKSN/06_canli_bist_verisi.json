@@ -1,0 +1,21 @@
+{
+    "kod": "BRKSN",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "İnşaat Malzemeleri",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 93.6,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%93.6)",
+    "fiyat_tl": 4.95,
+    "aylik_degisim": -15.4,
+    "satis_milyon_tl": 954.0,
+    "net_kar_milyon_tl": 23.0,
+    "cfo_milyon_tl": 103.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 101.8,
+    "piotroski_skor": 7,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\BRKSN\\BRKSN_Mikroskop_Raporu.html"
+}

@@ -1,0 +1,21 @@
+{
+    "kod": "FMIZP",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Otomotiv Parçası",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 14.3,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 190.0,
+    "aylik_degisim": -28.4,
+    "satis_milyon_tl": 791.0,
+    "net_kar_milyon_tl": 90.0,
+    "cfo_milyon_tl": 119.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 36.6,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\FMIZP\\FMIZP_Mikroskop_Raporu.html"
+}

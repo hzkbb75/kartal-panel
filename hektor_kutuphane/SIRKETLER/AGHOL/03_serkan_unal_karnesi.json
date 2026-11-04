@@ -1,0 +1,338 @@
+{
+  "kod": "AGHOL",
+  "sirket_adi": "AG ANADOLU GRUBU HOLDİNG A.Ş.",
+  "sektor": "Anadolu Grubu Holding",
+  "kategori": "Hendeksiz",
+  "fiyat_tl": 25.22,
+  "f_skor": 7,
+  "tavan_agirlik": 3.0,
+  "mevcut_agirlik": 0.0,
+  "kademe_durumu": "1/3 Başlangıç",
+  "degerleme_bandi": {
+    "fk": 13.8,
+    "alt_fk": 6.0,
+    "medyan_fk": 11.0,
+    "ust_fk": 16.0,
+    "marj_durum": "DENGELİ / MAKUL DEĞERLEME",
+    "marj_renk": "badge-warn",
+    "konum_yuzde": 69
+  },
+  "birikimli_dipnot": {
+    "kod": "AGHOL",
+    "son_guncelleme": "2026-11-03 09:53",
+    "donemler": {
+      "2025/06": {
+        "efm_yuzde": 0.5,
+        "icr_kati": 5.59,
+        "tahakkuk_orani": 0.17,
+        "aga_orani": 0.0,
+        "ykp_orani": 445.2,
+        "dso_gun": 43.5,
+        "acm_makasi": 0.0,
+        "serefiye_ozk_orani": 36.5,
+        "karsilik_ozk_orani": 2.9,
+        "iliskili_orani": 0.0,
+        "dts_skor": 25,
+        "uyarilar": [
+          "🟡 Kağıt üzeri kâr payı yüksek (%445.2): Değerleme ve ertelenmiş vergi geliri net kârı şişiriyor.",
+          "🟡 Şerefiye / Özkaynak oranı %36.5: Değer düşüklüğü (impairment) testi riski yüksek."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": 0.0,
+        "tahakkuk_delta": 0.0
+      },
+      "2025/09": {
+        "efm_yuzde": 1.4,
+        "icr_kati": 7.18,
+        "tahakkuk_orani": 0.7,
+        "aga_orani": 45.6,
+        "ykp_orani": 84.8,
+        "dso_gun": 31.9,
+        "acm_makasi": -34.2,
+        "serefiye_ozk_orani": 35.9,
+        "karsilik_ozk_orani": 2.6,
+        "iliskili_orani": 0.0,
+        "dts_skor": 40,
+        "uyarilar": [
+          "🟡 Kağıt üzeri kâr payı yüksek (%84.8): Değerleme ve ertelenmiş vergi geliri net kârı şişiriyor.",
+          "🟡 Maddi olmayan varlık aktifleştirme ivmesi EFK'nın %45.6'i düzeyinde (Ar-Ge aktifleştirme kontrolü).",
+          "🟡 Şerefiye / Özkaynak oranı %35.9: Değer düşüklüğü (impairment) testi riski yüksek."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 15,
+        "dso_delta": -11.6,
+        "tahakkuk_delta": 0.53
+      },
+      "2026/06": {
+        "efm_yuzde": 4.8,
+        "icr_kati": 0.74,
+        "tahakkuk_orani": 0.39,
+        "aga_orani": 474.0,
+        "ykp_orani": 7.0,
+        "dso_gun": 59.2,
+        "acm_makasi": 69.8,
+        "serefiye_ozk_orani": 35.9,
+        "karsilik_ozk_orani": 2.6,
+        "iliskili_orani": 0.0,
+        "dts_skor": 55,
+        "uyarilar": [
+          "🟡 Alacak-Ciro makası +%69.8 açıldı (DSO: 59.2 gün): Şüpheli alacak ve vade uzaması riski.",
+          "🟡 Maddi olmayan varlık aktifleştirme ivmesi EFK'nın %474.0'i düzeyinde (Ar-Ge aktifleştirme kontrolü).",
+          "🔴 Faiz karşılama oranı 0.74x ile kritik sınırda (Efektif Borç Maliyeti: %4.8).",
+          "🟡 Şerefiye / Özkaynak oranı %35.9: Değer düşüklüğü (impairment) testi riski yüksek."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 15,
+        "dso_delta": 27.3,
+        "tahakkuk_delta": -0.31
+      }
+    }
+  },
+  "sirketi_tani": {
+    "sirket_adi": "AG ANADOLU GRUBU HOLDİNG A.Ş.",
+    "ne_is_yapar": "AG ANADOLU GRUBU HOLDİNG A.Ş., Anadolu Grubu Holding sektöründe üretim, satış ve operasyonel faaliyetlerini yürüten Borsa İstanbul şirketidir.",
+    "urun_ve_pazar": "Anadolu Grubu Holding ana ürün ve hizmet grubu | Yurt içi kurumsal/bireysel müşteriler ve ihracat pazarları",
+    "piyasa_degeri": "60.9 milyar TL",
+    "net_kar_12ay": "3.20 milyar TL",
+    "net_kar_yorum": "Son dönemde 3.20 milyar TL net kâr elde edildi; yıllık değişim %+206.8.",
+    "roe_deger": "%2.4",
+    "roe_yorum": "Özkaynak kârlılığı (ROE) %2.4; Anadolu Grubu Holding sektöründe sermaye maliyeti ve enflasyon karşısında izlemede.",
+    "carpan_ozet": "F/K: 13.8x | FD/FAVÖK: 6.6x"
+  },
+  "dna_ve_gidisat": [
+    {
+      "baslik": "Büyüme & Satış Hızı (Satışlar Hızlanıyor mu?)",
+      "deger": "%+4.1",
+      "durum": "DENGELİ",
+      "yorum": "Yıllık satış gelirleri 408.29 milyar TL seviyesinden 424.93 milyar TL seviyesine geldi (%+4.1)."
+    },
+    {
+      "baslik": "Operasyonel Kâr & Marjlar (Marjlar Güçleniyor mu?)",
+      "deger": "EFK Marjı %1.5",
+      "durum": "İYİLEŞİYOR",
+      "yorum": "Esas faaliyet kârı 6.37 milyar TL oldu. Operasyonel kâr marjı geçen döneme göre +0.3 puan değişti."
+    },
+    {
+      "baslik": "Parası Var mı? (Kârın Nakde Dönüşüm Gücü)",
+      "deger": "1 TL Kâra 7.07 TL Nakit",
+      "durum": "SAĞLAM",
+      "yorum": "Her 1 liralık net kâra karşılık faaliyetlerden 7.07 lira nakit (CFO: 22.60 milyar TL) üretildi. Nakit kalitesi çok yüksek."
+    },
+    {
+      "baslik": "Bilanço Sağlamlığı & Borç Gidişatı (Borç Azalıyor mu?)",
+      "deger": "%0 Kısa Vadeli | 0.85x",
+      "durum": "GÜVENLİ",
+      "yorum": "Toplam yükümlülüklerin %0.0 kadarı kısa vadeli. Net borç değişimi: 2.03 milyar TL (Güncel Net Borç: 112.17 milyar TL)."
+    }
+  ],
+  "bilanco_degisimleri": [
+    {
+      "kalem": "ANA ORTAKLIK ÖZKAYNAĞI %32.2 YÜKSELDİ",
+      "guncel_tutar": "132.66 milyar TL",
+      "ne_ifade_ediyor": "100.36 milyar TL → 132.66 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %5.2 kadarı. Özkaynak artışı dönem net kârı ile beslendiğinde şirketin içsel değerini ve bilanço tamponunu büyütür."
+    },
+    {
+      "kalem": "MADDİ DURAN VARLIKLAR %35.6 YÜKSELDİ",
+      "guncel_tutar": "173.50 milyar TL",
+      "ne_ifade_ediyor": "127.91 milyar TL → 173.50 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %7.3 kadarı. Üretim tesisi, makine ve kapasite yatırımlarını gösterir; gelecek dönem reel büyümenin öncü göstergesidir."
+    },
+    {
+      "kalem": "ERTELENMİŞ GELİR & SİPARİŞ AVANSLARI %99.2 YÜKSELDİ",
+      "guncel_tutar": "8.06 milyar TL",
+      "ne_ifade_ediyor": "4.05 milyar TL → 8.06 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %0.6 kadarı. Müşterilerden peşin alınan avansları ifade eder; şirketin pazarlık gücünü ve gelecekte yazılacak hazır hasılatı gösterir."
+    },
+    {
+      "kalem": "STOKLAR %41.3 YÜKSELDİ",
+      "guncel_tutar": "106.85 milyar TL",
+      "ne_ifade_ediyor": "75.63 milyar TL → 106.85 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %5.0 kadarı. Stok artışının satış büyümesiyle uyumlu olması sağlıklıdır; satıştan kopuk stok şişmesi nakit döngüsünü yavaşlatır."
+    },
+    {
+      "kalem": "TİCARİ ALACAK BAKİYESİ %41.7 YÜKSELDİ",
+      "guncel_tutar": "68.92 milyar TL",
+      "ne_ifade_ediyor": "48.63 milyar TL → 68.92 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %3.3 kadarı. Ticari alacak büyümesi ciro artışının altında kalıyorsa tahsilat disiplini güçlüdür; aşması durumunda vade açılması izlenmelidir."
+    }
+  ],
+  "kap_haberleri": [
+    {
+      "tarih": "03.11.2026",
+      "kategori": "KAP / Şirket Gelişmesi",
+      "baslik": "Günlük Bülten (PhillipCapital)",
+      "meal": "Şirketin ana faaliyet görünümüne, nakit akışına ve yatırım tezine olası etkisi faaliyet raporu dipnotlarıyla birlikte izlenmelidir."
+    },
+    {
+      "tarih": "03.11.2026",
+      "kategori": "Yeni İş / Sipariş",
+      "baslik": "Vestel ve Anadolu Grubu, TOGG'daki paylarını Turkcell ve TVF'ye satmak için anlaşma imzaladı",
+      "meal": "Sipariş hemen tek çeyrekte gelir yazılmaz; üretim ve sevkiyat takvimine göre kademeli olarak hasılatlaşır. Gelecek dönem ciro görünürlüğünü artırır."
+    },
+    {
+      "tarih": "03.11.2026",
+      "kategori": "Yeni İş / Sipariş",
+      "baslik": "Vestel ve Anadolu Grubu, TOGG'daki paylarını Turkcell ve TVF'ye satmak için anlaşma imzaladı-KAP",
+      "meal": "Sipariş hemen tek çeyrekte gelir yazılmaz; üretim ve sevkiyat takvimine göre kademeli olarak hasılatlaşır. Gelecek dönem ciro görünürlüğünü artırır."
+    },
+    {
+      "tarih": "27.10.2026",
+      "kategori": "Finansal Rapor",
+      "baslik": "(Güncelleme) Özel Haber-Borsada 2026 yılı 3. çeyrek bilanço döneminde açıklama tarihleri",
+      "meal": "Açıklanan tablolarda net kârın işletme nakit akışına dönüşüm oranı (CFO > Net Kâr) ve kısa vadeli borç çevrimi teyit edilmelidir."
+    },
+    {
+      "tarih": "21.10.2026",
+      "kategori": "KAP / Şirket Gelişmesi",
+      "baslik": "Matriks Haber Anketi-AGHOL 2026 yılı 3.çeyrek net dönem karının 2.263,2 milyon TL olması bekleniyor (2025 3Ç: 4.469,2 milyon TL)",
+      "meal": "Şirketin ana faaliyet görünümüne, nakit akışına ve yatırım tezine olası etkisi faaliyet raporu dipnotlarıyla birlikte izlenmelidir."
+    }
+  ],
+  "son_soz": {
+    "dikkat_cekenler": [
+      "Güçlü nakit üretimi: Her 1 TL net kâra karşılık 7.07 TL işletme nakit akışı (CFO) üretildi.",
+      "Dengeli borç vadesi: Kısa vadeli yükümlülük payı %0.0 ile çevrilebilir sınırda.",
+      "Finansal sağlık skoru yüksek: Piotroski F-Skoru 7/9 ile bilanço ivmesi pozitif."
+    ],
+    "sevmediklerim": [
+      "Temel tabloda kırmızı çizgi ihlali yok; sektörel talep ve çeyreklik marj seyri rutin izlenmeli."
+    ],
+    "borsaci_gozuyle": "AG ANADOLU GRUBU HOLDİNG A.Ş. (AGHOL), Anadolu Grubu Holding sektöründe 'Hendeksiz' hendek yapısıyla faaliyet gösteriyor. Son dönemde 424.93 milyar TL satış geliri ve 3.20 milyar TL net kâr üretirken, her 1 TL kâra karşılık 7.07 TL işletme nakit akışı sağlaması işin motorunun nakit ürettiğini gösteriyor. Toplam yükümlülüklerin %0.0 seviyesinin kısa vadeli olması ve Net Borç/Özkaynak rasyosunun 0.85x düzeyinde bulunması nedeniyle Serkan Ünal kuralları çerçevesinde portföyde maksimum %3.0 ağırlık tavanıyla (1/3 Başlangıç) takip edilmesi rasyoneldir."
+  },
+  "bolum1_elemeler": [
+    {
+      "kriter": "Halka Açıklık Oranı & Ortaklık Yapısı",
+      "deger": "%51.4",
+      "durum": "GEÇTİ",
+      "not": "Tavan %70 sınırının altında, güvenli ortaklık yapısı"
+    },
+    {
+      "kriter": "Küçük Ortağı Ezen İmtiyaz Kontrolü",
+      "deger": "YOK",
+      "durum": "TEMİZ",
+      "not": "Kâr payı dağıtımında veya oyda küçük ortağı dışlayan imtiyaz yok"
+    },
+    {
+      "kriter": "Hâkim Ortak ve Yönetim Sicili",
+      "deger": "GÜVENİLİR",
+      "durum": "TEMİZ",
+      "not": "Geçmişte azınlık ortaklarını zarara uğratan sistematik karar yok"
+    },
+    {
+      "kriter": "İlişkili Taraflara Kaynak Çıkışı",
+      "deger": "%0.00",
+      "durum": "TEMİZ",
+      "not": "Holding veya grup şirketlerine faizsiz kaynak çıkışı yok (< %5)"
+    },
+    {
+      "kriter": "Finansal Borç ve Gelir Yapısı Uyumu",
+      "deger": "0.85x",
+      "durum": "GÜVENLİ",
+      "not": "Borçlanma döviz ve vade yapısı faaliyet gelirleriyle uyumlu"
+    },
+    {
+      "kriter": "Hâkim Ortak Borsa Hisse Satışı",
+      "deger": "BİLDİRİM YOK",
+      "durum": "TEMİZ",
+      "not": "Hâkim ortakların borsada doğrudan satış baskısı oluşturacak satışı bulunmuyor"
+    }
+  ],
+  "bolum2_is_kalitesi": [
+    {
+      "kriter": "Pazar Payı İstikrarı & Yeni Oyuncu Tehdidi",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Anadolu Grubu Holding sektöründe faaliyet gösteren ve temel finansal süzgeçleri geçen şirket."
+    },
+    {
+      "kriter": "Kârın Niteliği & Esas Faaliyet Dayanıklılığı",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Kâr doğrudan esas faaliyet ve operasyonel iş modelinden üretiliyor, reel ve sürdürülebilir"
+    },
+    {
+      "kriter": "Ekonomik Hendek Kaynağı & Korunabilirlik",
+      "durum": "HENDEKSIZ",
+      "aciklama": "Hendeksiz sınıfında; ölçek, dağıtım kanalı veya geçiş maliyeti avantajına sahip."
+    },
+    {
+      "kriter": "Kurumsal Yapı & Şahıstan Bağımsız İşleyiş",
+      "durum": "OTURMUŞ",
+      "aciklama": "Kişilerden bağımsız işleyen kurumsal organizasyon ve yönetim kurulu yapısı."
+    },
+    {
+      "kriter": "Yönetim Güvenilirliği & Hedef Tutarlılığı",
+      "durum": "TUTARLI",
+      "aciklama": "Faaliyet raporlarında ve sunumlarda verilen geçmiş dönem hedefleri ile gerçekleşmeler tutarlı"
+    },
+    {
+      "kriter": "Reel Büyüme & Faaliyet Marjı Koruması",
+      "durum": "DENGELİ",
+      "aciklama": "Enflasyon üzeri ciro büyümesi ve operasyonel FAVÖK marjı disiplini korunuyor"
+    }
+  ],
+  "bolum3_tablolar": [
+    {
+      "kriter": "Kâr Nakde Dönüşüyor mu? (CFO > Net Kâr)",
+      "durum": "BAŞARILI",
+      "aciklama": "Her 1 TL net kâra karşılık 7.07 TL işletme nakit akışı üretildi."
+    },
+    {
+      "kriter": "Kârın Tekrarlanabilirliği (Çekirdek Kâr Payı)",
+      "durum": "GÜÇLÜ",
+      "aciklama": "%80+ Ana operasyonel kâr; duran varlık satışı, kur farkı gibi tek seferlik etkiler arındırıldı"
+    },
+    {
+      "kriter": "Dipnot Riskleri (TRİ, Kefalet, Kısa Vade Borç)",
+      "durum": "TEMİZ",
+      "aciklama": "Kısa vadeli borç payı %0.0; TRİ ve kefaletler normal sınırda (< %20)"
+    },
+    {
+      "kriter": "Konsolidasyon Netliği & İştirak Saydamlığı",
+      "durum": "ŞEFFAF",
+      "aciklama": "Konsolide finansallar şirketin çekirdek işini doğrudan yansıtıyor, maskelenmiş zarar yok"
+    }
+  ],
+  "bolum4_fiyat_degerleme": [
+    {
+      "kriter": "Varsayım Tutarlılığı & Büyüme Senaryosu",
+      "durum": "RASYONEL",
+      "aciklama": "Anadolu Grubu Holding pazar payı istikrarı, ciro büyümesi ve operasyonel marjların korunması varsayımı."
+    },
+    {
+      "kriter": "Çarpan Paydası Sürdürülebilirliği",
+      "durum": "SAĞLAM",
+      "aciklama": "Fiyat/Kazanç ve FD/FAVÖK çarpanlarının paydasındaki operasyonel kâr sürdürülebilir"
+    },
+    {
+      "kriter": "Büyümenin Değeri (ROIC > Sermaye Maliyeti)",
+      "durum": "VERİMLİ",
+      "aciklama": "Yatırılan sermayenin getirisi sermaye maliyetinin üzerinde; büyüme serbest nakit akışı üretiyor"
+    },
+    {
+      "kriter": "Güvenlik Marjı & Yanılma Payı Alanı",
+      "durum": "UYGUN",
+      "aciklama": "Tarihsel değerleme çarpanı bandında alt çeyrek / dengeli bölgede; analitik yanılma payı mevcut"
+    }
+  ],
+  "bolum5_karar_ve_cikis": {
+    "hendek_sinifi": "Hendeksiz",
+    "portfoy_tavani": "Maksimum %3.0",
+    "mevcut_agirlik": "%0.00",
+    "asamalandirma_kurali": "Min %1.0 ile başla, maks %3.0 tavanını aşma. Durum: 1/3 Başlangıç",
+    "cikis_tetikleyicileri": [
+      "(1) Yönetim veya hâkim hissedar değişimi ve kurumsal nitelik kaybı yaşanması",
+      "(2) Hâkim hissedarın borsada doğrudan pay satışı başlatması",
+      "(3) İlişkili taraflara şüpheli/denetimsiz finansal borç veya kaynak aktarımı",
+      "(4) Şirketin iş modelinde veya sektöründe kalıcı yapısal kırılma",
+      "(5) İlk yatırım analizinde sonradan önemli bir analitik hata tespit edilmesi"
+    ]
+  }
+}

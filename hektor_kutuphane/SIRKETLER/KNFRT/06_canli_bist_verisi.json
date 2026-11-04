@@ -1,0 +1,21 @@
+{
+    "kod": "KNFRT",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Meşrubat / İçecek",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 22.2,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 6.07,
+    "aylik_degisim": -37.4,
+    "satis_milyon_tl": 7270.0,
+    "net_kar_milyon_tl": -350.0,
+    "cfo_milyon_tl": 294.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.08,
+    "nakit_dongusu_gun": 41.4,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\KNFRT\\KNFRT_Mikroskop_Raporu.html"
+}

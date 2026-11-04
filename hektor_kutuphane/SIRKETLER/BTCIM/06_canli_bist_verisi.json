@@ -1,0 +1,21 @@
+{
+    "kod": "BTCIM",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Çimento",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 61.2,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 1.47,
+    "aylik_degisim": -27.6,
+    "satis_milyon_tl": 16827.0,
+    "net_kar_milyon_tl": -269.0,
+    "cfo_milyon_tl": 2342.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.25,
+    "nakit_dongusu_gun": 34.9,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\BTCIM\\BTCIM_Mikroskop_Raporu.html"
+}

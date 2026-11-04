@@ -1,0 +1,21 @@
+{
+    "kod": "ERSU",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Meşrubat / İçecek",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 36.0,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "2 Dönem Negatif Nakit Akışı (CFO < 0)",
+    "fiyat_tl": 16.09,
+    "aylik_degisim": 51.4,
+    "satis_milyon_tl": 191.0,
+    "net_kar_milyon_tl": -145.0,
+    "cfo_milyon_tl": -92.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 65.1,
+    "piotroski_skor": 4,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\ERSU\\ERSU_Mikroskop_Raporu.html"
+}

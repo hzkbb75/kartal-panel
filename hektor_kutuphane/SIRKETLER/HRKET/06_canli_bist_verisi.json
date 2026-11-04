@@ -1,0 +1,21 @@
+{
+    "kod": "HRKET",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Endüstriyel Makine -Teçhizat",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 27.2,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 6.3,
+    "aylik_degisim": -20.4,
+    "satis_milyon_tl": 7004.0,
+    "net_kar_milyon_tl": -1867.0,
+    "cfo_milyon_tl": 372.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 1.32,
+    "nakit_dongusu_gun": 77.6,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\HRKET\\HRKET_Mikroskop_Raporu.html"
+}

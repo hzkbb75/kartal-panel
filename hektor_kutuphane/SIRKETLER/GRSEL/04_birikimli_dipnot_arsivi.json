@@ -1,0 +1,83 @@
+{
+  "kod": "GRSEL",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 21.8,
+      "icr_kati": 8.58,
+      "tahakkuk_orani": -13.26,
+      "aga_orani": 0.0,
+      "ykp_orani": 14.4,
+      "dso_gun": 278.5,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 42.1,
+      "icr_kati": 8.59,
+      "tahakkuk_orani": -28.31,
+      "aga_orani": 16.5,
+      "ykp_orani": 3.2,
+      "dso_gun": 132.5,
+      "acm_makasi": -108.4,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -146.0
+    },
+    "2026/03": {
+      "efm_yuzde": 23.6,
+      "icr_kati": 8.22,
+      "tahakkuk_orani": 11.32,
+      "aga_orani": 58.3,
+      "ykp_orani": 9.6,
+      "dso_gun": 370.4,
+      "acm_makasi": 87.3,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.8,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%11.32): Kâr nakde dönüşmüyor.",
+        "🟡 Alacak-Ciro makası +%87.3 açıldı (DSO: 370.4 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 35,
+      "dso_delta": 237.9
+    },
+    "2026/06": {
+      "efm_yuzde": 64.5,
+      "icr_kati": 8.37,
+      "tahakkuk_orani": 20.56,
+      "aga_orani": 12.9,
+      "ykp_orani": 8.8,
+      "dso_gun": 187.2,
+      "acm_makasi": -102.6,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.8,
+      "iliskili_orani": 0.0,
+      "dts_skor": 20,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%20.56): Kâr nakde dönüşmüyor."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": -183.2
+    }
+  }
+}

@@ -1,0 +1,358 @@
+{
+  "kod": "ARASE",
+  "sirket_adi": "DOĞU ARAS ENERJİ YATIRIMLARI A.Ş.",
+  "sektor": "Doğu Aras Enerji",
+  "kategori": "Korunaklı",
+  "fiyat_tl": 72.0,
+  "f_skor": 7,
+  "tavan_agirlik": 10.0,
+  "mevcut_agirlik": 0.0,
+  "kademe_durumu": "1/3 Başlangıç",
+  "degerleme_bandi": {
+    "fk": 6.6,
+    "alt_fk": 6.0,
+    "medyan_fk": 11.0,
+    "ust_fk": 16.0,
+    "marj_durum": "DENGELİ / MAKUL DEĞERLEME",
+    "marj_renk": "badge-warn",
+    "konum_yuzde": 32
+  },
+  "birikimli_dipnot": {
+    "kod": "ARASE",
+    "son_guncelleme": "2026-11-03 09:54",
+    "donemler": {
+      "2025/06": {
+        "efm_yuzde": 125.8,
+        "icr_kati": 1.38,
+        "tahakkuk_orani": 3.73,
+        "aga_orani": 0.0,
+        "ykp_orani": 0.0,
+        "dso_gun": 76.9,
+        "acm_makasi": 0.0,
+        "serefiye_ozk_orani": 0.0,
+        "karsilik_ozk_orani": 0.2,
+        "iliskili_orani": 0.0,
+        "dts_skor": 15,
+        "uyarilar": [
+          "🔴 Faiz karşılama oranı 1.38x ile kritik sınırda (Efektif Borç Maliyeti: %125.8)."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": 0.0,
+        "tahakkuk_delta": 0.0
+      },
+      "2025/09": {
+        "efm_yuzde": 32.0,
+        "icr_kati": 3.4,
+        "tahakkuk_orani": -1.8,
+        "aga_orani": 4.2,
+        "ykp_orani": 6.5,
+        "dso_gun": 48.0,
+        "acm_makasi": -2.1,
+        "serefiye_ozk_orani": 1.2,
+        "karsilik_ozk_orani": 4.5,
+        "iliskili_orani": 0.15,
+        "dts_skor": 0,
+        "uyarilar": [
+          "🟢 Dipnot rasyolarında muhasebe makyajı veya anomali tespit edilmedi."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": -15,
+        "dso_delta": -28.9,
+        "tahakkuk_delta": -5.53
+      },
+      "2026/06": {
+        "efm_yuzde": 32.0,
+        "icr_kati": 3.4,
+        "tahakkuk_orani": -1.8,
+        "aga_orani": 4.2,
+        "ykp_orani": 6.5,
+        "dso_gun": 48.0,
+        "acm_makasi": -2.1,
+        "serefiye_ozk_orani": 1.2,
+        "karsilik_ozk_orani": 4.5,
+        "iliskili_orani": 0.15,
+        "dts_skor": 0,
+        "uyarilar": [
+          "🟢 Dipnot rasyolarında muhasebe makyajı veya anomali tespit edilmedi."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": 0.0,
+        "tahakkuk_delta": 0.0
+      },
+      "2026/09": {
+        "efm_yuzde": 32.0,
+        "icr_kati": 3.4,
+        "tahakkuk_orani": -1.8,
+        "aga_orani": 4.2,
+        "ykp_orani": 6.5,
+        "dso_gun": 48.0,
+        "acm_makasi": -2.1,
+        "serefiye_ozk_orani": 1.2,
+        "karsilik_ozk_orani": 4.5,
+        "iliskili_orani": 0.15,
+        "dts_skor": 0,
+        "uyarilar": [
+          "🟢 Dipnot rasyolarında muhasebe makyajı veya anomali tespit edilmedi."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Korunaklı / Doğal Hedge",
+          "tri_rehin_ipotek": "Varlık üzerinde kritik ipotek yok",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": 0.0,
+        "tahakkuk_delta": 0.0
+      }
+    }
+  },
+  "sirketi_tani": {
+    "sirket_adi": "DOĞU ARAS ENERJİ YATIRIMLARI A.Ş.",
+    "ne_is_yapar": "DOĞU ARAS ENERJİ YATIRIMLARI A.Ş., Doğu Aras Enerji sektöründe üretim, satış ve operasyonel faaliyetlerini yürüten Borsa İstanbul şirketidir.",
+    "urun_ve_pazar": "Doğu Aras Enerji ana ürün ve hizmet grubu | Yurt içi kurumsal/bireysel müşteriler ve ihracat pazarları",
+    "piyasa_degeri": "17.5 milyar TL",
+    "net_kar_12ay": "1.59 milyar TL",
+    "net_kar_yorum": "Son dönemde 1.59 milyar TL net kâr elde edildi; yıllık değişim %+61.7.",
+    "roe_deger": "%6.5",
+    "roe_yorum": "Özkaynak kârlılığı (ROE) %6.5; Doğu Aras Enerji sektöründe sermaye maliyeti ve enflasyon karşısında izlemede.",
+    "carpan_ozet": "F/K: 6.6x | FD/FAVÖK: 1.8x"
+  },
+  "dna_ve_gidisat": [
+    {
+      "baslik": "Büyüme & Satış Hızı (Satışlar Hızlanıyor mu?)",
+      "deger": "%+11.1",
+      "durum": "DENGELİ",
+      "yorum": "Yıllık satış gelirleri 17.85 milyar TL seviyesinden 19.84 milyar TL seviyesine geldi (%+11.1)."
+    },
+    {
+      "baslik": "Operasyonel Kâr & Marjlar (Marjlar Güçleniyor mu?)",
+      "deger": "EFK Marjı %28.5",
+      "durum": "İYİLEŞİYOR",
+      "yorum": "Esas faaliyet kârı 5.66 milyar TL oldu. Operasyonel kâr marjı geçen döneme göre +3.2 puan değişti."
+    },
+    {
+      "baslik": "Parası Var mı? (Kârın Nakde Dönüşüm Gücü)",
+      "deger": "1 TL Kâra 2.53 TL Nakit",
+      "durum": "SAĞLAM",
+      "yorum": "Her 1 liralık net kâra karşılık faaliyetlerden 2.53 lira nakit (CFO: 4.02 milyar TL) üretildi. Nakit kalitesi çok yüksek."
+    },
+    {
+      "baslik": "Bilanço Sağlamlığı & Borç Gidişatı (Borç Azalıyor mu?)",
+      "deger": "%0 Kısa Vadeli | 0.01x",
+      "durum": "GÜVENLİ",
+      "yorum": "Toplam yükümlülüklerin %0.0 kadarı kısa vadeli. Net borç değişimi: -827 milyon TL (Güncel Net Borç: 127 milyon TL)."
+    }
+  ],
+  "bilanco_degisimleri": [
+    {
+      "kalem": "ANA ORTAKLIK ÖZKAYNAĞI %42.0 YÜKSELDİ",
+      "guncel_tutar": "24.58 milyar TL",
+      "ne_ifade_ediyor": "17.31 milyar TL → 24.58 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %27.6 kadarı. Özkaynak artışı dönem net kârı ile beslendiğinde şirketin içsel değerini ve bilanço tamponunu büyütür."
+    },
+    {
+      "kalem": "MADDİ DURAN VARLIKLAR %13.1 YÜKSELDİ",
+      "guncel_tutar": "72 milyon TL",
+      "ne_ifade_ediyor": "64 milyon TL → 72 milyon TL. Değişimin büyüklüğü önceki toplam varlığın %0.0 kadarı. Üretim tesisi, makine ve kapasite yatırımlarını gösterir; gelecek dönem reel büyümenin öncü göstergesidir."
+    },
+    {
+      "kalem": "ERTELENMİŞ GELİR & SİPARİŞ AVANSLARI %80.0 YÜKSELDİ",
+      "guncel_tutar": "27 milyon TL",
+      "ne_ifade_ediyor": "15 milyon TL → 27 milyon TL. Değişimin büyüklüğü önceki toplam varlığın %0.0 kadarı. Müşterilerden peşin alınan avansları ifade eder; şirketin pazarlık gücünü ve gelecekte yazılacak hazır hasılatı gösterir."
+    },
+    {
+      "kalem": "STOKLAR %14.2 YÜKSELDİ",
+      "guncel_tutar": "304 milyon TL",
+      "ne_ifade_ediyor": "266 milyon TL → 304 milyon TL. Değişimin büyüklüğü önceki toplam varlığın %0.1 kadarı. Stok artışının satış büyümesiyle uyumlu olması sağlıklıdır; satıştan kopuk stok şişmesi nakit döngüsünü yavaşlatır."
+    },
+    {
+      "kalem": "TİCARİ ALACAK BAKİYESİ %42.7 YÜKSELDİ",
+      "guncel_tutar": "5.37 milyar TL",
+      "ne_ifade_ediyor": "3.76 milyar TL → 5.37 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %6.1 kadarı. Ticari alacak büyümesi ciro artışının altında kalıyorsa tahsilat disiplini güçlüdür; aşması durumunda vade açılması izlenmelidir."
+    }
+  ],
+  "kap_haberleri": [
+    {
+      "tarih": "06.10.2026",
+      "kategori": "KAP / Şirket Gelişmesi",
+      "baslik": "Doğu Aras Enerji bağlı ortaklığı Aras Elektrik Perakende, Eylül 2026 döneminde 395.946,30 MWh enerji satışı yaptı",
+      "meal": "Şirketin ana faaliyet görünümüne, nakit akışına ve yatırım tezine olası etkisi faaliyet raporu dipnotlarıyla birlikte izlenmelidir."
+    },
+    {
+      "tarih": "14.08.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Bilanço analizi - ARASE (Ahlatcı Yatırım)",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    },
+    {
+      "tarih": "14.08.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Pusula Yatırım ARASE için 214.7 TL hedef fiyat belirledi ve AL tavsiyesini korudu. (Önceki hedef fiyat: 214.7 TL)",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    },
+    {
+      "tarih": "13.08.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "ARASE Doğu Aras Enerji Yatırımları konsolide bilanço 2026 6 aylık net karı 1,589,224,929 TL (Önceki: 1,298,096,619 TL net kar)",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    },
+    {
+      "tarih": "31.03.2026",
+      "kategori": "KAP / Şirket Gelişmesi",
+      "baslik": "Doğu Aras Enerji: Şirketimizin Bağlı Ortaklığı Aras Elektrik Dağıtım A.Ş firmasının paylarının ilk halka arzı amacıyla hazırlanan izahname onayı için Sermaye Piyasası Kuruluna başvuruda bulunulmuştur",
+      "meal": "Şirketin ana faaliyet görünümüne, nakit akışına ve yatırım tezine olası etkisi faaliyet raporu dipnotlarıyla birlikte izlenmelidir."
+    }
+  ],
+  "son_soz": {
+    "dikkat_cekenler": [
+      "Güçlü nakit üretimi: Her 1 TL net kâra karşılık 2.53 TL işletme nakit akışı (CFO) üretildi.",
+      "Borç yükü çok düşük: Net Borç / Özkaynak rasyosu 0.01x ile finansal kalkan oldukça sağlam.",
+      "Dengeli borç vadesi: Kısa vadeli yükümlülük payı %0.0 ile çevrilebilir sınırda.",
+      "Finansal sağlık skoru yüksek: Piotroski F-Skoru 7/9 ile bilanço ivmesi pozitif.",
+      "Makul çarpan: F/K 6.6x ile tarihsel ve sektörel ortalamalara göre güvenlik marjı sunuyor."
+    ],
+    "sevmediklerim": [
+      "Temel tabloda kırmızı çizgi ihlali yok; sektörel talep ve çeyreklik marj seyri rutin izlenmeli."
+    ],
+    "borsaci_gozuyle": "DOĞU ARAS ENERJİ YATIRIMLARI A.Ş. (ARASE), Doğu Aras Enerji sektöründe 'Korunaklı' hendek yapısıyla faaliyet gösteriyor. Son dönemde 19.84 milyar TL satış geliri ve 1.59 milyar TL net kâr üretirken, her 1 TL kâra karşılık 2.53 TL işletme nakit akışı sağlaması işin motorunun nakit ürettiğini gösteriyor. Toplam yükümlülüklerin %0.0 seviyesinin kısa vadeli olması ve Net Borç/Özkaynak rasyosunun 0.01x düzeyinde bulunması nedeniyle Serkan Ünal kuralları çerçevesinde portföyde maksimum %10.0 ağırlık tavanıyla (1/3 Başlangıç) takip edilmesi rasyoneldir."
+  },
+  "bolum1_elemeler": [
+    {
+      "kriter": "Halka Açıklık Oranı & Ortaklık Yapısı",
+      "deger": "%20.0",
+      "durum": "GEÇTİ",
+      "not": "Tavan %70 sınırının altında, güvenli ortaklık yapısı"
+    },
+    {
+      "kriter": "Küçük Ortağı Ezen İmtiyaz Kontrolü",
+      "deger": "YOK",
+      "durum": "TEMİZ",
+      "not": "Kâr payı dağıtımında veya oyda küçük ortağı dışlayan imtiyaz yok"
+    },
+    {
+      "kriter": "Hâkim Ortak ve Yönetim Sicili",
+      "deger": "GÜVENİLİR",
+      "durum": "TEMİZ",
+      "not": "Geçmişte azınlık ortaklarını zarara uğratan sistematik karar yok"
+    },
+    {
+      "kriter": "İlişkili Taraflara Kaynak Çıkışı",
+      "deger": "%0.00",
+      "durum": "TEMİZ",
+      "not": "Holding veya grup şirketlerine faizsiz kaynak çıkışı yok (< %5)"
+    },
+    {
+      "kriter": "Finansal Borç ve Gelir Yapısı Uyumu",
+      "deger": "0.01x",
+      "durum": "GÜVENLİ",
+      "not": "Borçlanma döviz ve vade yapısı faaliyet gelirleriyle uyumlu"
+    },
+    {
+      "kriter": "Hâkim Ortak Borsa Hisse Satışı",
+      "deger": "BİLDİRİM YOK",
+      "durum": "TEMİZ",
+      "not": "Hâkim ortakların borsada doğrudan satış baskısı oluşturacak satışı bulunmuyor"
+    }
+  ],
+  "bolum2_is_kalitesi": [
+    {
+      "kriter": "Pazar Payı İstikrarı & Yeni Oyuncu Tehdidi",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Doğu Aras Enerji sektöründe faaliyet gösteren ve temel finansal süzgeçleri geçen şirket."
+    },
+    {
+      "kriter": "Kârın Niteliği & Esas Faaliyet Dayanıklılığı",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Kâr doğrudan esas faaliyet ve operasyonel iş modelinden üretiliyor, reel ve sürdürülebilir"
+    },
+    {
+      "kriter": "Ekonomik Hendek Kaynağı & Korunabilirlik",
+      "durum": "KORUNAKLI",
+      "aciklama": "Korunaklı sınıfında; ölçek, dağıtım kanalı veya geçiş maliyeti avantajına sahip."
+    },
+    {
+      "kriter": "Kurumsal Yapı & Şahıstan Bağımsız İşleyiş",
+      "durum": "OTURMUŞ",
+      "aciklama": "Kişilerden bağımsız işleyen kurumsal organizasyon ve yönetim kurulu yapısı."
+    },
+    {
+      "kriter": "Yönetim Güvenilirliği & Hedef Tutarlılığı",
+      "durum": "TUTARLI",
+      "aciklama": "Faaliyet raporlarında ve sunumlarda verilen geçmiş dönem hedefleri ile gerçekleşmeler tutarlı"
+    },
+    {
+      "kriter": "Reel Büyüme & Faaliyet Marjı Koruması",
+      "durum": "DENGELİ",
+      "aciklama": "Enflasyon üzeri ciro büyümesi ve operasyonel FAVÖK marjı disiplini korunuyor"
+    }
+  ],
+  "bolum3_tablolar": [
+    {
+      "kriter": "Kâr Nakde Dönüşüyor mu? (CFO > Net Kâr)",
+      "durum": "BAŞARILI",
+      "aciklama": "Her 1 TL net kâra karşılık 2.53 TL işletme nakit akışı üretildi."
+    },
+    {
+      "kriter": "Kârın Tekrarlanabilirliği (Çekirdek Kâr Payı)",
+      "durum": "GÜÇLÜ",
+      "aciklama": "%80+ Ana operasyonel kâr; duran varlık satışı, kur farkı gibi tek seferlik etkiler arındırıldı"
+    },
+    {
+      "kriter": "Dipnot Riskleri (TRİ, Kefalet, Kısa Vade Borç)",
+      "durum": "TEMİZ",
+      "aciklama": "Kısa vadeli borç payı %0.0; TRİ ve kefaletler normal sınırda (< %20)"
+    },
+    {
+      "kriter": "Konsolidasyon Netliği & İştirak Saydamlığı",
+      "durum": "ŞEFFAF",
+      "aciklama": "Konsolide finansallar şirketin çekirdek işini doğrudan yansıtıyor, maskelenmiş zarar yok"
+    }
+  ],
+  "bolum4_fiyat_degerleme": [
+    {
+      "kriter": "Varsayım Tutarlılığı & Büyüme Senaryosu",
+      "durum": "RASYONEL",
+      "aciklama": "Doğu Aras Enerji pazar payı istikrarı, ciro büyümesi ve operasyonel marjların korunması varsayımı."
+    },
+    {
+      "kriter": "Çarpan Paydası Sürdürülebilirliği",
+      "durum": "SAĞLAM",
+      "aciklama": "Fiyat/Kazanç ve FD/FAVÖK çarpanlarının paydasındaki operasyonel kâr sürdürülebilir"
+    },
+    {
+      "kriter": "Büyümenin Değeri (ROIC > Sermaye Maliyeti)",
+      "durum": "VERİMLİ",
+      "aciklama": "Yatırılan sermayenin getirisi sermaye maliyetinin üzerinde; büyüme serbest nakit akışı üretiyor"
+    },
+    {
+      "kriter": "Güvenlik Marjı & Yanılma Payı Alanı",
+      "durum": "UYGUN",
+      "aciklama": "Tarihsel değerleme çarpanı bandında alt çeyrek / dengeli bölgede; analitik yanılma payı mevcut"
+    }
+  ],
+  "bolum5_karar_ve_cikis": {
+    "hendek_sinifi": "Korunaklı",
+    "portfoy_tavani": "Maksimum %10.0",
+    "mevcut_agirlik": "%0.00",
+    "asamalandirma_kurali": "Min %1.0 ile başla, maks %10.0 tavanını aşma. Durum: 1/3 Başlangıç",
+    "cikis_tetikleyicileri": [
+      "(1) Yönetim veya hâkim hissedar değişimi ve kurumsal nitelik kaybı yaşanması",
+      "(2) Hâkim hissedarın borsada doğrudan pay satışı başlatması",
+      "(3) İlişkili taraflara şüpheli/denetimsiz finansal borç veya kaynak aktarımı",
+      "(4) Şirketin iş modelinde veya sektöründe kalıcı yapısal kırılma",
+      "(5) İlk yatırım analizinde sonradan önemli bir analitik hata tespit edilmesi"
+    ]
+  }
+}

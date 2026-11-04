@@ -1,0 +1,21 @@
+{
+    "kod": "EKDMR",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Demir-Çelik Temel",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 13.7,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 20.3,
+    "aylik_degisim": -32.3,
+    "satis_milyon_tl": 24535.0,
+    "net_kar_milyon_tl": 526.0,
+    "cfo_milyon_tl": 744.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.22,
+    "nakit_dongusu_gun": 9.8,
+    "piotroski_skor": 5,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\EKDMR\\EKDMR_Mikroskop_Raporu.html"
+}

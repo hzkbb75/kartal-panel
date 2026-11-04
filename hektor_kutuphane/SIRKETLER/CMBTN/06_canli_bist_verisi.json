@@ -1,0 +1,21 @@
+{
+    "kod": "CMBTN",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Çimento",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 1.8,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 1022.0,
+    "aylik_degisim": -16.9,
+    "satis_milyon_tl": 5931.0,
+    "net_kar_milyon_tl": -354.0,
+    "cfo_milyon_tl": 727.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.12,
+    "nakit_dongusu_gun": -36.0,
+    "piotroski_skor": 3,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\CMBTN\\CMBTN_Mikroskop_Raporu.html"
+}

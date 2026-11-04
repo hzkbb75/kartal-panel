@@ -1,0 +1,246 @@
+{
+  "kod": "PETUN",
+  "sirket_adi": "PINAR ENTEGRE ET VE UN SANAYİİ A.Ş.",
+  "sektor": "Gıda",
+  "kategori": "Kırılgan Hendekli",
+  "fiyat_tl": 8.48,
+  "f_skor": 7,
+  "tavan_agirlik": 5.0,
+  "mevcut_agirlik": 0.0,
+  "kademe_durumu": "1/3 Başlangıç",
+  "sirketi_tani": {
+    "sirket_adi": "PINAR ENTEGRE ET VE UN SANAYİİ A.Ş.",
+    "ne_is_yapar": "PINAR ENTEGRE ET VE UN SANAYİİ A.Ş., Gıda sektöründe üretim, satış ve operasyonel faaliyetlerini yürüten Borsa İstanbul şirketidir.",
+    "urun_ve_pazar": "Gıda ana ürün ve hizmet grubu | Yurt içi kurumsal/bireysel müşteriler ve ihracat pazarları",
+    "piyasa_degeri": "2.6 milyar TL",
+    "net_kar_12ay": "234 milyon TL",
+    "net_kar_yorum": "Son dönemde 234 milyon TL net kâr elde edildi; yıllık değişim %+7683.3.",
+    "roe_deger": "%1.9",
+    "roe_yorum": "Özkaynak kârlılığı (ROE) %1.9; Gıda sektöründe sermaye maliyeti ve enflasyon karşısında izlemede.",
+    "carpan_ozet": "F/K: 7.9x | FD/FAVÖK: 4.2x"
+  },
+  "dna_ve_gidisat": [
+    {
+      "baslik": "Büyüme & Satış Hızı (Satışlar Hızlanıyor mu?)",
+      "deger": "%+23.0",
+      "durum": "DENGELİ",
+      "yorum": "Yıllık satış gelirleri 10.59 milyar TL seviyesinden 13.02 milyar TL seviyesine geldi (%+23.0)."
+    },
+    {
+      "baslik": "Operasyonel Kâr & Marjlar (Marjlar Güçleniyor mu?)",
+      "deger": "EFK Marjı %9.4",
+      "durum": "İYİLEŞİYOR",
+      "yorum": "Esas faaliyet kârı 1.23 milyar TL oldu. Operasyonel kâr marjı geçen döneme göre +1.1 puan değişti."
+    },
+    {
+      "baslik": "Parası Var mı? (Kârın Nakde Dönüşüm Gücü)",
+      "deger": "1 TL Kâra 1.77 TL Nakit",
+      "durum": "SAĞLAM",
+      "yorum": "Her 1 liralık net kâra karşılık faaliyetlerden 1.77 lira nakit (CFO: 414 milyon TL) üretildi. Nakit kalitesi çok yüksek."
+    },
+    {
+      "baslik": "Bilanço Sağlamlığı & Borç Gidişatı (Borç Azalıyor mu?)",
+      "deger": "%0 Kısa Vadeli | 0.58x",
+      "durum": "GÜVENLİ",
+      "yorum": "Toplam yükümlülüklerin %0.0 kadarı kısa vadeli. Net borç değişimi: 4.01 milyar TL (Güncel Net Borç: 7.10 milyar TL)."
+    }
+  ],
+  "bilanco_degisimleri": [
+    {
+      "kalem": "ANA ORTAKLIK ÖZKAYNAĞI %39.7 YÜKSELDİ",
+      "guncel_tutar": "12.26 milyar TL",
+      "ne_ifade_ediyor": "8.78 milyar TL → 12.26 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %25.2 kadarı. Özkaynak artışı dönem net kârı ile beslendiğinde şirketin içsel değerini ve bilanço tamponunu büyütür."
+    },
+    {
+      "kalem": "MADDİ DURAN VARLIKLAR %21.6 YÜKSELDİ",
+      "guncel_tutar": "8.89 milyar TL",
+      "ne_ifade_ediyor": "7.32 milyar TL → 8.89 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %11.4 kadarı. Üretim tesisi, makine ve kapasite yatırımlarını gösterir; gelecek dönem reel büyümenin öncü göstergesidir."
+    },
+    {
+      "kalem": "ERTELENMİŞ GELİR & SİPARİŞ AVANSLARI %676.7 YÜKSELDİ",
+      "guncel_tutar": "23 milyon TL",
+      "ne_ifade_ediyor": "3 milyon TL → 23 milyon TL. Değişimin büyüklüğü önceki toplam varlığın %0.1 kadarı. Müşterilerden peşin alınan avansları ifade eder; şirketin pazarlık gücünü ve gelecekte yazılacak hazır hasılatı gösterir."
+    },
+    {
+      "kalem": "STOKLAR %52.2 YÜKSELDİ",
+      "guncel_tutar": "1.34 milyar TL",
+      "ne_ifade_ediyor": "882 milyon TL → 1.34 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %3.3 kadarı. Stok artışının satış büyümesiyle uyumlu olması sağlıklıdır; satıştan kopuk stok şişmesi nakit döngüsünü yavaşlatır."
+    },
+    {
+      "kalem": "TİCARİ ALACAK BAKİYESİ %43.7 YÜKSELDİ",
+      "guncel_tutar": "2.34 milyar TL",
+      "ne_ifade_ediyor": "1.63 milyar TL → 2.34 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %5.2 kadarı. Ticari alacak büyümesi ciro artışının altında kalıyorsa tahsilat disiplini güçlüdür; aşması durumunda vade açılması izlenmelidir."
+    }
+  ],
+  "kap_haberleri": [
+    {
+      "tarih": "27.10.2026",
+      "kategori": "Finansal Rapor",
+      "baslik": "PETUN Pınar Entegre Et ve Un Sanayii solo bilanço 2026 9 aylık net karı 455,929,308 TL (Önceki: 380,985,393 TL net kar)",
+      "meal": "Açıklanan tablolarda net kârın işletme nakit akışına dönüşüm oranı (CFO > Net Kâr) ve kısa vadeli borç çevrimi teyit edilmelidir."
+    },
+    {
+      "tarih": "19.10.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Pınar Et, Turgutlu Unlu Mamuller Tesisi'nde yürüttüğü ikinci faz yatırımın tamamlandığını ve tesisin üretime başladığını duyurdu.",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    },
+    {
+      "tarih": "08.09.2026",
+      "kategori": "KAP / Şirket Gelişmesi",
+      "baslik": "Pınar Et, 1 milyar TL'lik kira sertifikası ihracı için karar aldı",
+      "meal": "Şirketin ana faaliyet görünümüne, nakit akışına ve yatırım tezine olası etkisi faaliyet raporu dipnotlarıyla birlikte izlenmelidir."
+    },
+    {
+      "tarih": "07.08.2026",
+      "kategori": "Finansal Rapor",
+      "baslik": "PETUN Pınar Entegre Et ve Un Sanayii solo bilanço 2026 6 aylık net karı 226,166,721 TL (Önceki: 184,624,671 TL net kar)",
+      "meal": "Açıklanan tablolarda net kârın işletme nakit akışına dönüşüm oranı (CFO > Net Kâr) ve kısa vadeli borç çevrimi teyit edilmelidir."
+    },
+    {
+      "tarih": "30.04.2026",
+      "kategori": "Finansal Rapor",
+      "baslik": "PETUN Pınar Entegre Et ve Un Sanayii solo bilanço 2026 3 aylık net karı 128,453,668 TL (Önceki: 106,011,670 TL net kar)",
+      "meal": "Açıklanan tablolarda net kârın işletme nakit akışına dönüşüm oranı (CFO > Net Kâr) ve kısa vadeli borç çevrimi teyit edilmelidir."
+    }
+  ],
+  "son_soz": {
+    "dikkat_cekenler": [
+      "Güçlü nakit üretimi: Her 1 TL net kâra karşılık 1.77 TL işletme nakit akışı (CFO) üretildi.",
+      "Dengeli borç vadesi: Kısa vadeli yükümlülük payı %0.0 ile çevrilebilir sınırda.",
+      "Finansal sağlık skoru yüksek: Piotroski F-Skoru 7/9 ile bilanço ivmesi pozitif.",
+      "Makul çarpan: F/K 7.9x ile tarihsel ve sektörel ortalamalara göre güvenlik marjı sunuyor."
+    ],
+    "sevmediklerim": [
+      "Temel tabloda kırmızı çizgi ihlali yok; sektörel talep ve çeyreklik marj seyri rutin izlenmeli."
+    ],
+    "borsaci_gozuyle": "PINAR ENTEGRE ET VE UN SANAYİİ A.Ş. (PETUN), Gıda sektöründe 'Kırılgan Hendekli' hendek yapısıyla faaliyet gösteriyor. Son dönemde 13.02 milyar TL satış geliri ve 234 milyon TL net kâr üretirken, her 1 TL kâra karşılık 1.77 TL işletme nakit akışı sağlaması işin motorunun nakit ürettiğini gösteriyor. Toplam yükümlülüklerin %0.0 seviyesinin kısa vadeli olması ve Net Borç/Özkaynak rasyosunun 0.58x düzeyinde bulunması nedeniyle Serkan Ünal kuralları çerçevesinde portföyde maksimum %5.0 ağırlık tavanıyla (1/3 Başlangıç) takip edilmesi rasyoneldir."
+  },
+  "bolum1_elemeler": [
+    {
+      "kriter": "Halka Açıklık Oranı & Ortaklık Yapısı",
+      "deger": "%2.5",
+      "durum": "GEÇTİ",
+      "not": "Tavan %70 sınırının altında, güvenli ortaklık yapısı"
+    },
+    {
+      "kriter": "Küçük Ortağı Ezen İmtiyaz Kontrolü",
+      "deger": "YOK",
+      "durum": "TEMİZ",
+      "not": "Kâr payı dağıtımında veya oyda küçük ortağı dışlayan imtiyaz yok"
+    },
+    {
+      "kriter": "Hâkim Ortak ve Yönetim Sicili",
+      "deger": "GÜVENİLİR",
+      "durum": "TEMİZ",
+      "not": "Geçmişte azınlık ortaklarını zarara uğratan sistematik karar yok"
+    },
+    {
+      "kriter": "İlişkili Taraflara Kaynak Çıkışı",
+      "deger": "%0.00",
+      "durum": "TEMİZ",
+      "not": "Holding veya grup şirketlerine faizsiz kaynak çıkışı yok (< %5)"
+    },
+    {
+      "kriter": "Finansal Borç ve Gelir Yapısı Uyumu",
+      "deger": "0.58x",
+      "durum": "GÜVENLİ",
+      "not": "Borçlanma döviz ve vade yapısı faaliyet gelirleriyle uyumlu"
+    },
+    {
+      "kriter": "Hâkim Ortak Borsa Hisse Satışı",
+      "deger": "BİLDİRİM YOK",
+      "durum": "TEMİZ",
+      "not": "Hâkim ortakların borsada doğrudan satış baskısı oluşturacak satışı bulunmuyor"
+    }
+  ],
+  "bolum2_is_kalitesi": [
+    {
+      "kriter": "Pazar Payı İstikrarı & Yeni Oyuncu Tehdidi",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Gıda sektöründe faaliyet gösteren ve temel finansal süzgeçleri geçen şirket."
+    },
+    {
+      "kriter": "Kârın Niteliği & Esas Faaliyet Dayanıklılığı",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Kâr doğrudan esas faaliyet ve operasyonel iş modelinden üretiliyor, reel ve sürdürülebilir"
+    },
+    {
+      "kriter": "Ekonomik Hendek Kaynağı & Korunabilirlik",
+      "durum": "KIRILGAN HENDEKLI",
+      "aciklama": "Kırılgan Hendekli sınıfında; ölçek, dağıtım kanalı veya geçiş maliyeti avantajına sahip."
+    },
+    {
+      "kriter": "Kurumsal Yapı & Şahıstan Bağımsız İşleyiş",
+      "durum": "OTURMUŞ",
+      "aciklama": "Kişilerden bağımsız işleyen kurumsal organizasyon ve yönetim kurulu yapısı."
+    },
+    {
+      "kriter": "Yönetim Güvenilirliği & Hedef Tutarlılığı",
+      "durum": "TUTARLI",
+      "aciklama": "Faaliyet raporlarında ve sunumlarda verilen geçmiş dönem hedefleri ile gerçekleşmeler tutarlı"
+    },
+    {
+      "kriter": "Reel Büyüme & Faaliyet Marjı Koruması",
+      "durum": "DENGELİ",
+      "aciklama": "Enflasyon üzeri ciro büyümesi ve operasyonel FAVÖK marjı disiplini korunuyor"
+    }
+  ],
+  "bolum3_tablolar": [
+    {
+      "kriter": "Kâr Nakde Dönüşüyor mu? (CFO > Net Kâr)",
+      "durum": "BAŞARILI",
+      "aciklama": "Her 1 TL net kâra karşılık 1.77 TL işletme nakit akışı üretildi."
+    },
+    {
+      "kriter": "Kârın Tekrarlanabilirliği (Çekirdek Kâr Payı)",
+      "durum": "GÜÇLÜ",
+      "aciklama": "%80+ Ana operasyonel kâr; duran varlık satışı, kur farkı gibi tek seferlik etkiler arındırıldı"
+    },
+    {
+      "kriter": "Dipnot Riskleri (TRİ, Kefalet, Kısa Vade Borç)",
+      "durum": "TEMİZ",
+      "aciklama": "Kısa vadeli borç payı %0.0; TRİ ve kefaletler normal sınırda (< %20)"
+    },
+    {
+      "kriter": "Konsolidasyon Netliği & İştirak Saydamlığı",
+      "durum": "ŞEFFAF",
+      "aciklama": "Konsolide finansallar şirketin çekirdek işini doğrudan yansıtıyor, maskelenmiş zarar yok"
+    }
+  ],
+  "bolum4_fiyat_degerleme": [
+    {
+      "kriter": "Varsayım Tutarlılığı & Büyüme Senaryosu",
+      "durum": "RASYONEL",
+      "aciklama": "Gıda pazar payı istikrarı, ciro büyümesi ve operasyonel marjların korunması varsayımı."
+    },
+    {
+      "kriter": "Çarpan Paydası Sürdürülebilirliği",
+      "durum": "SAĞLAM",
+      "aciklama": "Fiyat/Kazanç ve FD/FAVÖK çarpanlarının paydasındaki operasyonel kâr sürdürülebilir"
+    },
+    {
+      "kriter": "Büyümenin Değeri (ROIC > Sermaye Maliyeti)",
+      "durum": "VERİMLİ",
+      "aciklama": "Yatırılan sermayenin getirisi sermaye maliyetinin üzerinde; büyüme serbest nakit akışı üretiyor"
+    },
+    {
+      "kriter": "Güvenlik Marjı & Yanılma Payı Alanı",
+      "durum": "UYGUN",
+      "aciklama": "Tarihsel değerleme çarpanı bandında alt çeyrek / dengeli bölgede; analitik yanılma payı mevcut"
+    }
+  ],
+  "bolum5_karar_ve_cikis": {
+    "hendek_sinifi": "Kırılgan Hendekli",
+    "portfoy_tavani": "Maksimum %5.0",
+    "mevcut_agirlik": "%0.00",
+    "asamalandirma_kurali": "Min %1.0 ile başla, maks %5.0 tavanını aşma. Durum: 1/3 Başlangıç",
+    "cikis_tetikleyicileri": [
+      "(1) Yönetim veya hâkim hissedar değişimi ve kurumsal nitelik kaybı yaşanması",
+      "(2) Hâkim hissedarın borsada doğrudan pay satışı başlatması",
+      "(3) İlişkili taraflara şüpheli/denetimsiz finansal borç veya kaynak aktarımı",
+      "(4) Şirketin iş modelinde veya sektöründe kalıcı yapısal kırılma",
+      "(5) İlk yatırım analizinde sonradan önemli bir analitik hata tespit edilmesi"
+    ]
+  }
+}

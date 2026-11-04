@@ -1,0 +1,83 @@
+{
+  "kod": "AKHAN",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 66.7,
+      "icr_kati": 2.38,
+      "tahakkuk_orani": -69282.21,
+      "aga_orani": 0.0,
+      "ykp_orani": 1.0,
+      "dso_gun": 0.0,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 80.9,
+      "icr_kati": 1.33,
+      "tahakkuk_orani": -43863.44,
+      "aga_orani": 0.0,
+      "ykp_orani": 1.0,
+      "dso_gun": 0.0,
+      "acm_makasi": -83.4,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 1.33x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": 0.0
+    },
+    "2026/03": {
+      "efm_yuzde": 7.1,
+      "icr_kati": 1.56,
+      "tahakkuk_orani": 20.41,
+      "aga_orani": 3.3,
+      "ykp_orani": 5.5,
+      "dso_gun": 174.2,
+      "acm_makasi": 34.5,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.5,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%20.41): Kâr nakde dönüşmüyor.",
+        "🟡 Alacak-Ciro makası +%34.5 açıldı (DSO: 174.2 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 20,
+      "dso_delta": 174.2
+    },
+    "2026/06": {
+      "efm_yuzde": 10.6,
+      "icr_kati": 1.52,
+      "tahakkuk_orani": -5.05,
+      "aga_orani": 0.0,
+      "ykp_orani": 7.0,
+      "dso_gun": 61.8,
+      "acm_makasi": -164.5,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.5,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -35,
+      "dso_delta": -112.4
+    }
+  }
+}

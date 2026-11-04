@@ -1,0 +1,83 @@
+{
+  "kod": "AGYO",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 1026.5,
+      "icr_kati": 2.35,
+      "tahakkuk_orani": -84.26,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 86.6,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 0.0,
+      "icr_kati": 3.45,
+      "tahakkuk_orani": -108.92,
+      "aga_orani": 0.0,
+      "ykp_orani": 14.5,
+      "dso_gun": 47.1,
+      "acm_makasi": -95.8,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -39.5
+    },
+    "2026/03": {
+      "efm_yuzde": 1542.4,
+      "icr_kati": 1.61,
+      "tahakkuk_orani": -39.29,
+      "aga_orani": 0.5,
+      "ykp_orani": 74.5,
+      "dso_gun": 107.8,
+      "acm_makasi": 60.1,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Kağıt üzeri kâr payı yüksek (%74.5).",
+        "🟡 Alacak-Ciro makası +%60.1 açıldı (DSO: 107.8 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 30,
+      "dso_delta": 60.7
+    },
+    "2026/06": {
+      "efm_yuzde": 0.0,
+      "icr_kati": 1.75,
+      "tahakkuk_orani": -61.51,
+      "aga_orani": 0.0,
+      "ykp_orani": 100.0,
+      "dso_gun": 63.5,
+      "acm_makasi": -88.2,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🟡 Kağıt üzeri kâr payı yüksek (%100.0)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": -44.3
+    }
+  }
+}

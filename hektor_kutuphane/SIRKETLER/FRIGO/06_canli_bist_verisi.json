@@ -1,0 +1,21 @@
+{
+    "kod": "FRIGO",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Gıda",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 82.8,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%82.8)",
+    "fiyat_tl": 1.92,
+    "aylik_degisim": 35.2,
+    "satis_milyon_tl": 1445.0,
+    "net_kar_milyon_tl": -349.0,
+    "cfo_milyon_tl": 309.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.23,
+    "nakit_dongusu_gun": 112.9,
+    "piotroski_skor": 4,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\FRIGO\\FRIGO_Mikroskop_Raporu.html"
+}

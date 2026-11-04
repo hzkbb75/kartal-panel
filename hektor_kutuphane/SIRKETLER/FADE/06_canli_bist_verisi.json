@@ -1,0 +1,21 @@
+{
+    "kod": "FADE",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Gıda",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 83.9,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%83.9)",
+    "fiyat_tl": 9.39,
+    "aylik_degisim": -17.9,
+    "satis_milyon_tl": 1217.0,
+    "net_kar_milyon_tl": 37.0,
+    "cfo_milyon_tl": -42.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.11,
+    "nakit_dongusu_gun": 138.2,
+    "piotroski_skor": 4,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\FADE\\FADE_Mikroskop_Raporu.html"
+}

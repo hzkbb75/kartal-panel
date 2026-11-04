@@ -1,0 +1,21 @@
+{
+    "kod": "GATEG",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Medya",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 11.3,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 108.1,
+    "aylik_degisim": -31.5,
+    "satis_milyon_tl": 472.0,
+    "net_kar_milyon_tl": 37.0,
+    "cfo_milyon_tl": 37.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.5,
+    "nakit_dongusu_gun": 335.9,
+    "piotroski_skor": 6,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\GATEG\\GATEG_Mikroskop_Raporu.html"
+}

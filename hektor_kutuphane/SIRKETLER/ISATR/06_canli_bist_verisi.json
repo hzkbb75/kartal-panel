@@ -1,0 +1,21 @@
+{
+    "kod": "ISATR",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Bankacılık",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 23.5,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Aşırı Borç / Negatif EFK (99.0x)",
+    "fiyat_tl": 4950000.0,
+    "aylik_degisim": 0.0,
+    "satis_milyon_tl": 0.0,
+    "net_kar_milyon_tl": 0.0,
+    "cfo_milyon_tl": 0.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 99.0,
+    "nakit_dongusu_gun": 0.0,
+    "piotroski_skor": 4,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\ISATR\\ISATR_Mikroskop_Raporu.html"
+}

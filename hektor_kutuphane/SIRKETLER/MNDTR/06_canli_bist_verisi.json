@@ -1,0 +1,21 @@
+{
+    "kod": "MNDTR",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Kağıt Ürünleri",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 15.3,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 3.33,
+    "aylik_degisim": -18.0,
+    "satis_milyon_tl": 18599.0,
+    "net_kar_milyon_tl": -1810.0,
+    "cfo_milyon_tl": 484.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.07,
+    "nakit_dongusu_gun": 58.5,
+    "piotroski_skor": 5,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\MNDTR\\MNDTR_Mikroskop_Raporu.html"
+}

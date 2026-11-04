@@ -1,0 +1,46 @@
+{
+  "kod": "INTEK",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/06": {
+      "efm_yuzde": 121.4,
+      "icr_kati": 11.65,
+      "tahakkuk_orani": -22.68,
+      "aga_orani": 0.0,
+      "ykp_orani": 41.7,
+      "dso_gun": 155.1,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 2.2,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🟡 Kağıt üzeri kâr payı yüksek (%41.7)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2026/06": {
+      "efm_yuzde": 831.9,
+      "icr_kati": 0.09,
+      "tahakkuk_orani": -70.03,
+      "aga_orani": 5656.3,
+      "ykp_orani": 77.0,
+      "dso_gun": 223.4,
+      "acm_makasi": 39.7,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 2.8,
+      "iliskili_orani": 0.0,
+      "dts_skor": 45,
+      "uyarilar": [
+        "🟡 Kağıt üzeri kâr payı yüksek (%77.0).",
+        "🟡 Alacak-Ciro makası +%39.7 açıldı (DSO: 223.4 gün).",
+        "🔴 Faiz karşılama oranı 0.09x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 30,
+      "dso_delta": 68.3
+    }
+  }
+}

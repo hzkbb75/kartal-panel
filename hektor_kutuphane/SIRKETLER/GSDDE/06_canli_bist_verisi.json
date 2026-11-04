@@ -1,0 +1,21 @@
+{
+    "kod": "GSDDE",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Ulaştırma-Lojistik",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 28.8,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 9.74,
+    "aylik_degisim": -12.8,
+    "satis_milyon_tl": 689.0,
+    "net_kar_milyon_tl": 220.0,
+    "cfo_milyon_tl": 462.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.15,
+    "nakit_dongusu_gun": 21.2,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\GSDDE\\GSDDE_Mikroskop_Raporu.html"
+}

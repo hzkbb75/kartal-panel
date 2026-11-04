@@ -1,0 +1,21 @@
+{
+    "kod": "KZGYO",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Kuzugrup GYO",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 23.1,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 14.99,
+    "aylik_degisim": 11.0,
+    "satis_milyon_tl": 1204.0,
+    "net_kar_milyon_tl": 5.0,
+    "cfo_milyon_tl": 272.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": -45.2,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\KZGYO\\KZGYO_Mikroskop_Raporu.html"
+}

@@ -1,0 +1,82 @@
+{
+  "kod": "CLEBI",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 1.6,
+      "icr_kati": 2.65,
+      "tahakkuk_orani": -2.33,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.1,
+      "dso_gun": 252.3,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 3.7,
+      "karsilik_ozk_orani": 5.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 3.5,
+      "icr_kati": 2.95,
+      "tahakkuk_orani": -17.58,
+      "aga_orani": 0.0,
+      "ykp_orani": 22.0,
+      "dso_gun": 99.2,
+      "acm_makasi": -141.2,
+      "serefiye_ozk_orani": 6.4,
+      "karsilik_ozk_orani": 5.6,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -153.1
+    },
+    "2026/03": {
+      "efm_yuzde": 1.7,
+      "icr_kati": 1.98,
+      "tahakkuk_orani": 1.12,
+      "aga_orani": 0.0,
+      "ykp_orani": 4.8,
+      "dso_gun": 144.2,
+      "acm_makasi": 26.9,
+      "serefiye_ozk_orani": 16.0,
+      "karsilik_ozk_orani": 4.8,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🟡 Alacak-Ciro makası +%26.9 açıldı (DSO: 144.2 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": 45.0
+    },
+    "2026/06": {
+      "efm_yuzde": 6.1,
+      "icr_kati": 2.55,
+      "tahakkuk_orani": -31.72,
+      "aga_orani": 4.3,
+      "ykp_orani": 1.3,
+      "dso_gun": 75.2,
+      "acm_makasi": -108.9,
+      "serefiye_ozk_orani": 16.3,
+      "karsilik_ozk_orani": 5.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": -69.0
+    }
+  }
+}

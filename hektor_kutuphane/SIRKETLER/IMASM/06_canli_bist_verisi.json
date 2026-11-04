@@ -1,0 +1,21 @@
+{
+    "kod": "IMASM",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Endüstriyel Makine -Teçhizat",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 70.2,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%70.2)",
+    "fiyat_tl": 1.25,
+    "aylik_degisim": -18.8,
+    "satis_milyon_tl": 2830.0,
+    "net_kar_milyon_tl": -788.0,
+    "cfo_milyon_tl": 60.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.21,
+    "nakit_dongusu_gun": 93.5,
+    "piotroski_skor": 3,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\IMASM\\IMASM_Mikroskop_Raporu.html"
+}

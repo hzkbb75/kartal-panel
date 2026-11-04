@@ -1,0 +1,83 @@
+{
+  "kod": "DOKTA",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 3.3,
+      "icr_kati": 0.07,
+      "tahakkuk_orani": -12.79,
+      "aga_orani": 0.0,
+      "ykp_orani": 7.1,
+      "dso_gun": 192.1,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.8,
+      "karsilik_ozk_orani": 5.5,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 0.07x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 7.2,
+      "icr_kati": -0.07,
+      "tahakkuk_orani": -44.33,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.5,
+      "dso_gun": 86.6,
+      "acm_makasi": -118.8,
+      "serefiye_ozk_orani": 0.8,
+      "karsilik_ozk_orani": 6.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -0.07x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -105.5
+    },
+    "2026/03": {
+      "efm_yuzde": 3.6,
+      "icr_kati": 0.76,
+      "tahakkuk_orani": -16.93,
+      "aga_orani": 49.2,
+      "ykp_orani": 4.2,
+      "dso_gun": 105.0,
+      "acm_makasi": 13.3,
+      "serefiye_ozk_orani": 0.8,
+      "karsilik_ozk_orani": 7.2,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 0.76x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 18.4
+    },
+    "2026/06": {
+      "efm_yuzde": 7.2,
+      "icr_kati": 0.45,
+      "tahakkuk_orani": -21.19,
+      "aga_orani": 9.7,
+      "ykp_orani": 100.0,
+      "dso_gun": 55.3,
+      "acm_makasi": -101.5,
+      "serefiye_ozk_orani": 0.8,
+      "karsilik_ozk_orani": 7.3,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
+        "🔴 Faiz karşılama oranı 0.45x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": -49.7
+    }
+  }
+}

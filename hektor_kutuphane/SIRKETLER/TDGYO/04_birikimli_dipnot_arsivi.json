@@ -1,0 +1,86 @@
+{
+  "kod": "TDGYO",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 1052.9,
+      "icr_kati": 1.19,
+      "tahakkuk_orani": -10.31,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 0.0,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 1.19x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 2151.6,
+      "icr_kati": 0.76,
+      "tahakkuk_orani": -37.86,
+      "aga_orani": 0.1,
+      "ykp_orani": 0.0,
+      "dso_gun": 0.0,
+      "acm_makasi": -20.7,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 0.76x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2026/03": {
+      "efm_yuzde": 1564.6,
+      "icr_kati": -0.19,
+      "tahakkuk_orani": 14.14,
+      "aga_orani": 0.0,
+      "ykp_orani": 33.5,
+      "dso_gun": 0.0,
+      "acm_makasi": 91.2,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 50,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%14.14): Kâr nakde dönüşmüyor.",
+        "🟡 Alacak-Ciro makası +%91.2 açıldı (DSO: 0.0 gün).",
+        "🔴 Faiz karşılama oranı -0.19x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 35,
+      "dso_delta": 0.0
+    },
+    "2026/06": {
+      "efm_yuzde": 2602.0,
+      "icr_kati": -0.54,
+      "tahakkuk_orani": 30.57,
+      "aga_orani": 0.0,
+      "ykp_orani": 58.1,
+      "dso_gun": 0.0,
+      "acm_makasi": -7.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 50,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%30.57): Kâr nakde dönüşmüyor.",
+        "🟡 Kağıt üzeri kâr payı yüksek (%58.1).",
+        "🔴 Faiz karşılama oranı -0.54x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    }
+  }
+}

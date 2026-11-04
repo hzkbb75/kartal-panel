@@ -1,0 +1,21 @@
+{
+    "kod": "TKNKA",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Petrol",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 19.5,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 22.72,
+    "aylik_degisim": -69.1,
+    "satis_milyon_tl": 5765.0,
+    "net_kar_milyon_tl": 150.0,
+    "cfo_milyon_tl": 713.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 1.24,
+    "nakit_dongusu_gun": 78.7,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\TKNKA\\TKNKA_Mikroskop_Raporu.html"
+}

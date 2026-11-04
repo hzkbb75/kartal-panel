@@ -1,0 +1,21 @@
+{
+    "kod": "OZATD",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Endüstriyel Makine -Teçhizat",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 71.4,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%71.4)",
+    "fiyat_tl": 172.7,
+    "aylik_degisim": -89.0,
+    "satis_milyon_tl": 2894.0,
+    "net_kar_milyon_tl": -150.0,
+    "cfo_milyon_tl": 504.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.56,
+    "nakit_dongusu_gun": 30.2,
+    "piotroski_skor": 3,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\OZATD\\OZATD_Mikroskop_Raporu.html"
+}

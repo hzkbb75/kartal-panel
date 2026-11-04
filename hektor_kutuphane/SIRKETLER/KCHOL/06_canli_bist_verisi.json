@@ -1,0 +1,21 @@
+{
+    "kod": "KCHOL",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Holding",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 26.4,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 192.8,
+    "aylik_degisim": -10.0,
+    "satis_milyon_tl": 2165128.0,
+    "net_kar_milyon_tl": 25908.0,
+    "cfo_milyon_tl": -120062.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 2.0,
+    "nakit_dongusu_gun": 0.0,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\KCHOL\\KCHOL_Mikroskop_Raporu.html"
+}

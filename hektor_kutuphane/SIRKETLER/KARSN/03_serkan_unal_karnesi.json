@@ -1,0 +1,245 @@
+{
+  "kod": "KARSN",
+  "sirket_adi": "KARSAN OTOMOTİV SANAYİİ VE TİCARET A.Ş.",
+  "sektor": "Otomotiv",
+  "kategori": "Korunaklı",
+  "fiyat_tl": 6.25,
+  "f_skor": 8,
+  "tavan_agirlik": 10.0,
+  "mevcut_agirlik": 0.0,
+  "kademe_durumu": "1/3 Başlangıç",
+  "sirketi_tani": {
+    "sirket_adi": "KARSAN OTOMOTİV SANAYİİ VE TİCARET A.Ş.",
+    "ne_is_yapar": "KARSAN OTOMOTİV SANAYİİ VE TİCARET A.Ş., Otomotiv sektöründe üretim, satış ve operasyonel faaliyetlerini yürüten Borsa İstanbul şirketidir.",
+    "urun_ve_pazar": "Otomotiv ana ürün ve hizmet grubu | Yurt içi kurumsal/bireysel müşteriler ve ihracat pazarları",
+    "piyasa_degeri": "5.8 milyar TL",
+    "net_kar_12ay": "211 milyon TL",
+    "net_kar_yorum": "Son dönemde 211 milyon TL net kâr elde edildi; yıllık değişim %+190.5.",
+    "roe_deger": "%2.5",
+    "roe_yorum": "Özkaynak kârlılığı (ROE) %2.5; Otomotiv sektöründe sermaye maliyeti ve enflasyon karşısında izlemede.",
+    "carpan_ozet": "F/K: 23.3x | FD/FAVÖK: 4.8x"
+  },
+  "dna_ve_gidisat": [
+    {
+      "baslik": "Büyüme & Satış Hızı (Satışlar Hızlanıyor mu?)",
+      "deger": "%+37.4",
+      "durum": "GÜÇLÜ",
+      "yorum": "Yıllık satış gelirleri 14.22 milyar TL seviyesinden 19.55 milyar TL seviyesine geldi (%+37.4)."
+    },
+    {
+      "baslik": "Operasyonel Kâr & Marjlar (Marjlar Güçleniyor mu?)",
+      "deger": "EFK Marjı %16.1",
+      "durum": "İYİLEŞİYOR",
+      "yorum": "Esas faaliyet kârı 3.15 milyar TL oldu. Operasyonel kâr marjı geçen döneme göre +6.8 puan değişti."
+    },
+    {
+      "baslik": "Parası Var mı? (Kârın Nakde Dönüşüm Gücü)",
+      "deger": "1 TL Kâra 9.42 TL Nakit",
+      "durum": "SAĞLAM",
+      "yorum": "Her 1 liralık net kâra karşılık faaliyetlerden 9.42 lira nakit (CFO: 1.99 milyar TL) üretildi. Nakit kalitesi çok yüksek."
+    },
+    {
+      "baslik": "Bilanço Sağlamlığı & Borç Gidişatı (Borç Azalıyor mu?)",
+      "deger": "%0 Kısa Vadeli | 1.28x",
+      "durum": "GÜVENLİ",
+      "yorum": "Toplam yükümlülüklerin %0.0 kadarı kısa vadeli. Net borç değişimi: 2.81 milyar TL (Güncel Net Borç: 10.88 milyar TL)."
+    }
+  ],
+  "bilanco_degisimleri": [
+    {
+      "kalem": "ANA ORTAKLIK ÖZKAYNAĞI %18.5 YÜKSELDİ",
+      "guncel_tutar": "8.52 milyar TL",
+      "ne_ifade_ediyor": "7.19 milyar TL → 8.52 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %6.7 kadarı. Özkaynak artışı dönem net kârı ile beslendiğinde şirketin içsel değerini ve bilanço tamponunu büyütür."
+    },
+    {
+      "kalem": "MADDİ DURAN VARLIKLAR %15.9 YÜKSELDİ",
+      "guncel_tutar": "6.22 milyar TL",
+      "ne_ifade_ediyor": "5.37 milyar TL → 6.22 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %4.3 kadarı. Üretim tesisi, makine ve kapasite yatırımlarını gösterir; gelecek dönem reel büyümenin öncü göstergesidir."
+    },
+    {
+      "kalem": "ERTELENMİŞ GELİR & SİPARİŞ AVANSLARI %47.6 AZALDI",
+      "guncel_tutar": "393 milyon TL",
+      "ne_ifade_ediyor": "751 milyon TL → 393 milyon TL. Değişimin büyüklüğü önceki toplam varlığın %1.8 kadarı. Müşterilerden peşin alınan avansları ifade eder; şirketin pazarlık gücünü ve gelecekte yazılacak hazır hasılatı gösterir."
+    },
+    {
+      "kalem": "STOKLAR %84.6 YÜKSELDİ",
+      "guncel_tutar": "3.48 milyar TL",
+      "ne_ifade_ediyor": "1.89 milyar TL → 3.48 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %8.1 kadarı. Stok artışının satış büyümesiyle uyumlu olması sağlıklıdır; satıştan kopuk stok şişmesi nakit döngüsünü yavaşlatır."
+    },
+    {
+      "kalem": "TİCARİ ALACAK BAKİYESİ %6.4 YÜKSELDİ",
+      "guncel_tutar": "6.37 milyar TL",
+      "ne_ifade_ediyor": "5.98 milyar TL → 6.37 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %1.9 kadarı. Ticari alacak büyümesi ciro artışının altında kalıyorsa tahsilat disiplini güçlüdür; aşması durumunda vade açılması izlenmelidir."
+    }
+  ],
+  "kap_haberleri": [
+    {
+      "tarih": "26.10.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Eylül ayında Dahilde İşleme İzin Belgesi alan BİST firmaları",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    },
+    {
+      "tarih": "12.10.2026",
+      "kategori": "KAP / Şirket Gelişmesi",
+      "baslik": "Toplantı Notu-KARSN (PhillipCapital)",
+      "meal": "Şirketin ana faaliyet görünümüne, nakit akışına ve yatırım tezine olası etkisi faaliyet raporu dipnotlarıyla birlikte izlenmelidir."
+    },
+    {
+      "tarih": "23.09.2026",
+      "kategori": "KAP / Şirket Gelişmesi",
+      "baslik": "Karsan, Elektrikliden Otonoma Gerçek Yol Deneyimini FIAA Madrid'e Taşıdı",
+      "meal": "Şirketin ana faaliyet görünümüne, nakit akışına ve yatırım tezine olası etkisi faaliyet raporu dipnotlarıyla birlikte izlenmelidir."
+    },
+    {
+      "tarih": "17.08.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Alnus Yatırım KARSN için 18.53 TL hedef fiyat belirledi ve AL tavsiyesini korudu. (Önceki hedef fiyat: 18.53 TL)",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    },
+    {
+      "tarih": "17.08.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Bilanço analizi - KARSN (Alnus Yatırım)",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    }
+  ],
+  "son_soz": {
+    "dikkat_cekenler": [
+      "Güçlü nakit üretimi: Her 1 TL net kâra karşılık 9.42 TL işletme nakit akışı (CFO) üretildi.",
+      "Dengeli borç vadesi: Kısa vadeli yükümlülük payı %0.0 ile çevrilebilir sınırda.",
+      "Finansal sağlık skoru yüksek: Piotroski F-Skoru 8/9 ile bilanço ivmesi pozitif."
+    ],
+    "sevmediklerim": [
+      "Temel tabloda kırmızı çizgi ihlali yok; sektörel talep ve çeyreklik marj seyri rutin izlenmeli."
+    ],
+    "borsaci_gozuyle": "KARSAN OTOMOTİV SANAYİİ VE TİCARET A.Ş. (KARSN), Otomotiv sektöründe 'Korunaklı' hendek yapısıyla faaliyet gösteriyor. Son dönemde 19.55 milyar TL satış geliri ve 211 milyon TL net kâr üretirken, her 1 TL kâra karşılık 9.42 TL işletme nakit akışı sağlaması işin motorunun nakit ürettiğini gösteriyor. Toplam yükümlülüklerin %0.0 seviyesinin kısa vadeli olması ve Net Borç/Özkaynak rasyosunun 1.28x düzeyinde bulunması nedeniyle Serkan Ünal kuralları çerçevesinde portföyde maksimum %10.0 ağırlık tavanıyla (1/3 Başlangıç) takip edilmesi rasyoneldir."
+  },
+  "bolum1_elemeler": [
+    {
+      "kriter": "Halka Açıklık Oranı & Ortaklık Yapısı",
+      "deger": "%6.4",
+      "durum": "GEÇTİ",
+      "not": "Tavan %70 sınırının altında, güvenli ortaklık yapısı"
+    },
+    {
+      "kriter": "Küçük Ortağı Ezen İmtiyaz Kontrolü",
+      "deger": "YOK",
+      "durum": "TEMİZ",
+      "not": "Kâr payı dağıtımında veya oyda küçük ortağı dışlayan imtiyaz yok"
+    },
+    {
+      "kriter": "Hâkim Ortak ve Yönetim Sicili",
+      "deger": "GÜVENİLİR",
+      "durum": "TEMİZ",
+      "not": "Geçmişte azınlık ortaklarını zarara uğratan sistematik karar yok"
+    },
+    {
+      "kriter": "İlişkili Taraflara Kaynak Çıkışı",
+      "deger": "%0.00",
+      "durum": "TEMİZ",
+      "not": "Holding veya grup şirketlerine faizsiz kaynak çıkışı yok (< %5)"
+    },
+    {
+      "kriter": "Finansal Borç ve Gelir Yapısı Uyumu",
+      "deger": "1.28x",
+      "durum": "GÜVENLİ",
+      "not": "Borçlanma döviz ve vade yapısı faaliyet gelirleriyle uyumlu"
+    },
+    {
+      "kriter": "Hâkim Ortak Borsa Hisse Satışı",
+      "deger": "BİLDİRİM YOK",
+      "durum": "TEMİZ",
+      "not": "Hâkim ortakların borsada doğrudan satış baskısı oluşturacak satışı bulunmuyor"
+    }
+  ],
+  "bolum2_is_kalitesi": [
+    {
+      "kriter": "Pazar Payı İstikrarı & Yeni Oyuncu Tehdidi",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Otomotiv sektöründe faaliyet gösteren ve temel finansal süzgeçleri geçen şirket."
+    },
+    {
+      "kriter": "Kârın Niteliği & Esas Faaliyet Dayanıklılığı",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Kâr doğrudan esas faaliyet ve operasyonel iş modelinden üretiliyor, reel ve sürdürülebilir"
+    },
+    {
+      "kriter": "Ekonomik Hendek Kaynağı & Korunabilirlik",
+      "durum": "KORUNAKLI",
+      "aciklama": "Korunaklı sınıfında; ölçek, dağıtım kanalı veya geçiş maliyeti avantajına sahip."
+    },
+    {
+      "kriter": "Kurumsal Yapı & Şahıstan Bağımsız İşleyiş",
+      "durum": "OTURMUŞ",
+      "aciklama": "Kişilerden bağımsız işleyen kurumsal organizasyon ve yönetim kurulu yapısı."
+    },
+    {
+      "kriter": "Yönetim Güvenilirliği & Hedef Tutarlılığı",
+      "durum": "TUTARLI",
+      "aciklama": "Faaliyet raporlarında ve sunumlarda verilen geçmiş dönem hedefleri ile gerçekleşmeler tutarlı"
+    },
+    {
+      "kriter": "Reel Büyüme & Faaliyet Marjı Koruması",
+      "durum": "DENGELİ",
+      "aciklama": "Enflasyon üzeri ciro büyümesi ve operasyonel FAVÖK marjı disiplini korunuyor"
+    }
+  ],
+  "bolum3_tablolar": [
+    {
+      "kriter": "Kâr Nakde Dönüşüyor mu? (CFO > Net Kâr)",
+      "durum": "BAŞARILI",
+      "aciklama": "Her 1 TL net kâra karşılık 9.42 TL işletme nakit akışı üretildi."
+    },
+    {
+      "kriter": "Kârın Tekrarlanabilirliği (Çekirdek Kâr Payı)",
+      "durum": "GÜÇLÜ",
+      "aciklama": "%80+ Ana operasyonel kâr; duran varlık satışı, kur farkı gibi tek seferlik etkiler arındırıldı"
+    },
+    {
+      "kriter": "Dipnot Riskleri (TRİ, Kefalet, Kısa Vade Borç)",
+      "durum": "TEMİZ",
+      "aciklama": "Kısa vadeli borç payı %0.0; TRİ ve kefaletler normal sınırda (< %20)"
+    },
+    {
+      "kriter": "Konsolidasyon Netliği & İştirak Saydamlığı",
+      "durum": "ŞEFFAF",
+      "aciklama": "Konsolide finansallar şirketin çekirdek işini doğrudan yansıtıyor, maskelenmiş zarar yok"
+    }
+  ],
+  "bolum4_fiyat_degerleme": [
+    {
+      "kriter": "Varsayım Tutarlılığı & Büyüme Senaryosu",
+      "durum": "RASYONEL",
+      "aciklama": "Otomotiv pazar payı istikrarı, ciro büyümesi ve operasyonel marjların korunması varsayımı."
+    },
+    {
+      "kriter": "Çarpan Paydası Sürdürülebilirliği",
+      "durum": "SAĞLAM",
+      "aciklama": "Fiyat/Kazanç ve FD/FAVÖK çarpanlarının paydasındaki operasyonel kâr sürdürülebilir"
+    },
+    {
+      "kriter": "Büyümenin Değeri (ROIC > Sermaye Maliyeti)",
+      "durum": "VERİMLİ",
+      "aciklama": "Yatırılan sermayenin getirisi sermaye maliyetinin üzerinde; büyüme serbest nakit akışı üretiyor"
+    },
+    {
+      "kriter": "Güvenlik Marjı & Yanılma Payı Alanı",
+      "durum": "UYGUN",
+      "aciklama": "Tarihsel değerleme çarpanı bandında alt çeyrek / dengeli bölgede; analitik yanılma payı mevcut"
+    }
+  ],
+  "bolum5_karar_ve_cikis": {
+    "hendek_sinifi": "Korunaklı",
+    "portfoy_tavani": "Maksimum %10.0",
+    "mevcut_agirlik": "%0.00",
+    "asamalandirma_kurali": "Min %1.0 ile başla, maks %10.0 tavanını aşma. Durum: 1/3 Başlangıç",
+    "cikis_tetikleyicileri": [
+      "(1) Yönetim veya hâkim hissedar değişimi ve kurumsal nitelik kaybı yaşanması",
+      "(2) Hâkim hissedarın borsada doğrudan pay satışı başlatması",
+      "(3) İlişkili taraflara şüpheli/denetimsiz finansal borç veya kaynak aktarımı",
+      "(4) Şirketin iş modelinde veya sektöründe kalıcı yapısal kırılma",
+      "(5) İlk yatırım analizinde sonradan önemli bir analitik hata tespit edilmesi"
+    ]
+  }
+}

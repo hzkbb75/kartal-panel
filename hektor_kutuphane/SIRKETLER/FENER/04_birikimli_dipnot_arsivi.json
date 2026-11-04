@@ -1,0 +1,64 @@
+{
+  "kod": "FENER",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 2.6,
+      "icr_kati": -2.02,
+      "tahakkuk_orani": -11.32,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 280.1,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 4109.2,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -2.02x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 2.2,
+      "icr_kati": -25.33,
+      "tahakkuk_orani": -34.95,
+      "aga_orani": 0.0,
+      "ykp_orani": 12.8,
+      "dso_gun": 130.6,
+      "acm_makasi": -90.6,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 4450.7,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -25.33x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -149.5
+    },
+    "2026/03": {
+      "efm_yuzde": 8.1,
+      "icr_kati": 2.27,
+      "tahakkuk_orani": -48.21,
+      "aga_orani": 278.4,
+      "ykp_orani": 100.0,
+      "dso_gun": 399.6,
+      "acm_makasi": 162.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.7,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
+        "🟡 Alacak-Ciro makası +%162.0 açıldı (DSO: 399.6 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": 269.0
+    }
+  }
+}

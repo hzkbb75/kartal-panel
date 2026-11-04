@@ -1,0 +1,21 @@
+{
+    "kod": "AYCES",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Turizm",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 25.0,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 282.25,
+    "aylik_degisim": -19.0,
+    "satis_milyon_tl": 472.0,
+    "net_kar_milyon_tl": -85.0,
+    "cfo_milyon_tl": 57.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.02,
+    "nakit_dongusu_gun": -38.9,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\AYCES\\AYCES_Mikroskop_Raporu.html"
+}

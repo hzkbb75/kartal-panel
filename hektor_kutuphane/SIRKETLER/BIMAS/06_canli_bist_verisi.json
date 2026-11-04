@@ -1,0 +1,21 @@
+{
+    "kod": "BIMAS",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Perakende",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 60.1,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 347.5,
+    "aylik_degisim": -17.6,
+    "satis_milyon_tl": 849112.0,
+    "net_kar_milyon_tl": 21941.0,
+    "cfo_milyon_tl": 48167.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.3,
+    "nakit_dongusu_gun": -2.5,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\BIMAS\\BIMAS_Mikroskop_Raporu.html"
+}

@@ -1,0 +1,21 @@
+{
+    "kod": "KLYPV",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Elektrik Enerji Ürt.Teçh/Tes",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 8.9,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 47.94,
+    "aylik_degisim": -12.0,
+    "satis_milyon_tl": 9564.0,
+    "net_kar_milyon_tl": -814.0,
+    "cfo_milyon_tl": 2697.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 1.41,
+    "nakit_dongusu_gun": 160.2,
+    "piotroski_skor": 5,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\KLYPV\\KLYPV_Mikroskop_Raporu.html"
+}

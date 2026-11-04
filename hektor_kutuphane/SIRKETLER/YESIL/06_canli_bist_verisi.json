@@ -1,0 +1,21 @@
+{
+    "kod": "YESIL",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Holdingler",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 91.8,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%91.8)",
+    "fiyat_tl": 0.68,
+    "aylik_degisim": -18.1,
+    "satis_milyon_tl": 0.0,
+    "net_kar_milyon_tl": -84.0,
+    "cfo_milyon_tl": 51.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 0.0,
+    "piotroski_skor": 6,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\YESIL\\YESIL_Mikroskop_Raporu.html"
+}

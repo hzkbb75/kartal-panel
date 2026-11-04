@@ -1,0 +1,21 @@
+{
+    "kod": "ZOREN",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Elektrik Üretim",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 37.3,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 1.13,
+    "aylik_degisim": -42.1,
+    "satis_milyon_tl": 42626.0,
+    "net_kar_milyon_tl": -17319.0,
+    "cfo_milyon_tl": 980.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.94,
+    "nakit_dongusu_gun": 19.5,
+    "piotroski_skor": 5,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\ZOREN\\ZOREN_Mikroskop_Raporu.html"
+}

@@ -1,0 +1,21 @@
+{
+    "kod": "FORTE",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Teknoloji",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 67.0,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 73.0,
+    "aylik_degisim": -18.6,
+    "satis_milyon_tl": 2871.0,
+    "net_kar_milyon_tl": 2743.0,
+    "cfo_milyon_tl": 3384.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 1.01,
+    "nakit_dongusu_gun": 177.1,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\FORTE\\FORTE_Mikroskop_Raporu.html"
+}

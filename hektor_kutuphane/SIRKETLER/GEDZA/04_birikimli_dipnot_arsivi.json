@@ -1,0 +1,83 @@
+{
+  "kod": "GEDZA",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 65.4,
+      "icr_kati": 1.51,
+      "tahakkuk_orani": -3.39,
+      "aga_orani": 0.0,
+      "ykp_orani": 2.5,
+      "dso_gun": 332.5,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 1.9,
+      "karsilik_ozk_orani": 1.3,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 168.8,
+      "icr_kati": 1.74,
+      "tahakkuk_orani": -5.46,
+      "aga_orani": 0.0,
+      "ykp_orani": 1.5,
+      "dso_gun": 174.3,
+      "acm_makasi": -112.4,
+      "serefiye_ozk_orani": 1.8,
+      "karsilik_ozk_orani": 1.2,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -158.2
+    },
+    "2026/03": {
+      "efm_yuzde": 29.4,
+      "icr_kati": 4.46,
+      "tahakkuk_orani": 8.1,
+      "aga_orani": 0.7,
+      "ykp_orani": 7.5,
+      "dso_gun": 430.4,
+      "acm_makasi": 69.9,
+      "serefiye_ozk_orani": 1.9,
+      "karsilik_ozk_orani": 1.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%8.1): Kâr nakde dönüşmüyor.",
+        "🟡 Alacak-Ciro makası +%69.9 açıldı (DSO: 430.4 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 35,
+      "dso_delta": 256.1
+    },
+    "2026/06": {
+      "efm_yuzde": 284.5,
+      "icr_kati": 3.31,
+      "tahakkuk_orani": 10.55,
+      "aga_orani": 1.0,
+      "ykp_orani": 7.7,
+      "dso_gun": 228.2,
+      "acm_makasi": -102.5,
+      "serefiye_ozk_orani": 1.8,
+      "karsilik_ozk_orani": 1.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 20,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%10.55): Kâr nakde dönüşmüyor."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": -202.2
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "kod": "TOASO",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Otomotiv",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 24.1,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 211.2,
+    "aylik_degisim": -23.8,
+    "satis_milyon_tl": 376136.0,
+    "net_kar_milyon_tl": 9837.0,
+    "cfo_milyon_tl": 3127.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.79,
+    "nakit_dongusu_gun": 25.7,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\TOASO\\TOASO_Mikroskop_Raporu.html"
+}

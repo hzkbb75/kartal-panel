@@ -1,0 +1,21 @@
+{
+    "kod": "KLRHO",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Holdingler",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 12.0,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 8.68,
+    "aylik_degisim": -15.8,
+    "satis_milyon_tl": 8093.0,
+    "net_kar_milyon_tl": 3198.0,
+    "cfo_milyon_tl": -1086.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.07,
+    "nakit_dongusu_gun": 0.0,
+    "piotroski_skor": 3,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\KLRHO\\KLRHO_Mikroskop_Raporu.html"
+}

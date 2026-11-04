@@ -1,0 +1,21 @@
+{
+    "kod": "MOGAN",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Elektrik Enerji Ürt.Teçh/Tes",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 10.5,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 7.38,
+    "aylik_degisim": -19.1,
+    "satis_milyon_tl": 15432.0,
+    "net_kar_milyon_tl": -10797.0,
+    "cfo_milyon_tl": 7871.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.3,
+    "nakit_dongusu_gun": -8.3,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\MOGAN\\MOGAN_Mikroskop_Raporu.html"
+}

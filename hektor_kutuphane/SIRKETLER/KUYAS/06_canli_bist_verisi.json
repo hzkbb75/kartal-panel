@@ -1,0 +1,21 @@
+{
+    "kod": "KUYAS",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "İnşaat- Taahhüt",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 78.7,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%78.7), Aşırı Borç / Negatif EFK (2.99x), 2 Dönem Negatif Nakit Akışı (CFO < 0)",
+    "fiyat_tl": 9.1,
+    "aylik_degisim": -66.1,
+    "satis_milyon_tl": 1401.0,
+    "net_kar_milyon_tl": -1545.0,
+    "cfo_milyon_tl": -1283.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 2.99,
+    "nakit_dongusu_gun": -7.6,
+    "piotroski_skor": 3,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\KUYAS\\KUYAS_Mikroskop_Raporu.html"
+}

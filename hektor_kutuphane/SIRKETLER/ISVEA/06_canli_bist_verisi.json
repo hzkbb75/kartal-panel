@@ -1,0 +1,21 @@
+{
+    "kod": "ISVEA",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Seramik",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 22.7,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 13.62,
+    "aylik_degisim": -55.5,
+    "satis_milyon_tl": 2387.0,
+    "net_kar_milyon_tl": 85.0,
+    "cfo_milyon_tl": 417.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 1.54,
+    "nakit_dongusu_gun": 373.9,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\ISVEA\\ISVEA_Mikroskop_Raporu.html"
+}

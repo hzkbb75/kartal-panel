@@ -1,0 +1,21 @@
+{
+    "kod": "EUPWR",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Elektrik Enerji Ürt.Teçh/Tes",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 38.0,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 39.44,
+    "aylik_degisim": -28.2,
+    "satis_milyon_tl": 15308.0,
+    "net_kar_milyon_tl": 707.0,
+    "cfo_milyon_tl": -944.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.42,
+    "nakit_dongusu_gun": 131.8,
+    "piotroski_skor": 3,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\EUPWR\\EUPWR_Mikroskop_Raporu.html"
+}

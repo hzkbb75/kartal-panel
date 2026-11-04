@@ -1,0 +1,64 @@
+{
+  "kod": "BJKAS",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 2.5,
+      "icr_kati": -15.34,
+      "tahakkuk_orani": -65.63,
+      "aga_orani": 0.0,
+      "ykp_orani": 30.2,
+      "dso_gun": 111.9,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.9,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -15.34x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 5.7,
+      "icr_kati": -12.22,
+      "tahakkuk_orani": -37.14,
+      "aga_orani": 0.0,
+      "ykp_orani": 32.3,
+      "dso_gun": 105.3,
+      "acm_makasi": -10.3,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.7,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -12.22x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -6.6
+    },
+    "2026/03": {
+      "efm_yuzde": 3.1,
+      "icr_kati": -9.66,
+      "tahakkuk_orani": -1.94,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.9,
+      "dso_gun": 363.2,
+      "acm_makasi": 183.9,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 3.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Alacak-Ciro makası +%183.9 açıldı (DSO: 363.2 gün).",
+        "🔴 Faiz karşılama oranı -9.66x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": 257.9
+    }
+  }
+}

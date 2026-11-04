@@ -1,0 +1,21 @@
+{
+    "kod": "ADESE",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Adese AVM",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 92.8,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%92.8)",
+    "fiyat_tl": 0.44,
+    "aylik_degisim": -31.2,
+    "satis_milyon_tl": 1494.0,
+    "net_kar_milyon_tl": 185.0,
+    "cfo_milyon_tl": 870.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 2449.5,
+    "piotroski_skor": 6,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\ADESE\\ADESE_Mikroskop_Raporu.html"
+}

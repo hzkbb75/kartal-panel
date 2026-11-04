@@ -1,0 +1,21 @@
+{
+    "kod": "MIATK",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Teknoloji",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 60.2,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 24.04,
+    "aylik_degisim": 2.4,
+    "satis_milyon_tl": 3247.0,
+    "net_kar_milyon_tl": -860.0,
+    "cfo_milyon_tl": 1020.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.1,
+    "nakit_dongusu_gun": 119.0,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\MIATK\\MIATK_Mikroskop_Raporu.html"
+}

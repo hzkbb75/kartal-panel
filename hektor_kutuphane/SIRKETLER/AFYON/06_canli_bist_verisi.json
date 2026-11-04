@@ -1,0 +1,21 @@
+{
+    "kod": "AFYON",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Çimento",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 48.6,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 10.59,
+    "aylik_degisim": -2.8,
+    "satis_milyon_tl": 4809.0,
+    "net_kar_milyon_tl": 300.0,
+    "cfo_milyon_tl": 763.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 28.1,
+    "piotroski_skor": 5,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\AFYON\\AFYON_Mikroskop_Raporu.html"
+}

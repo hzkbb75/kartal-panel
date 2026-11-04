@@ -1,0 +1,82 @@
+{
+  "kod": "TCELL",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 7.9,
+      "icr_kati": 1.4,
+      "tahakkuk_orani": -12.23,
+      "aga_orani": 0.0,
+      "ykp_orani": 15.1,
+      "dso_gun": 123.9,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.3,
+      "karsilik_ozk_orani": 2.7,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 1.4x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 16.6,
+      "icr_kati": 1.39,
+      "tahakkuk_orani": -31.15,
+      "aga_orani": 8.0,
+      "ykp_orani": 13.6,
+      "dso_gun": 61.1,
+      "acm_makasi": -110.9,
+      "serefiye_ozk_orani": 0.3,
+      "karsilik_ozk_orani": 2.7,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 1.39x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -62.8
+    },
+    "2026/03": {
+      "efm_yuzde": 1.4,
+      "icr_kati": 3.69,
+      "tahakkuk_orani": -6.46,
+      "aga_orani": 609.0,
+      "ykp_orani": 20.6,
+      "dso_gun": 157.0,
+      "acm_makasi": 78.4,
+      "serefiye_ozk_orani": 0.3,
+      "karsilik_ozk_orani": 2.2,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🟡 Alacak-Ciro makası +%78.4 açıldı (DSO: 157.0 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 95.9
+    },
+    "2026/06": {
+      "efm_yuzde": 5.5,
+      "icr_kati": 1.89,
+      "tahakkuk_orani": -23.71,
+      "aga_orani": 29.7,
+      "ykp_orani": 28.4,
+      "dso_gun": 78.0,
+      "acm_makasi": -106.5,
+      "serefiye_ozk_orani": 0.3,
+      "karsilik_ozk_orani": 2.2,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": -79.0
+    }
+  }
+}

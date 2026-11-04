@@ -1,0 +1,21 @@
+{
+    "kod": "ALCAR",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Dayanıklı Tüketim",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 10.8,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 541.0,
+    "aylik_degisim": -10.4,
+    "satis_milyon_tl": 9329.0,
+    "net_kar_milyon_tl": -853.0,
+    "cfo_milyon_tl": 407.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.77,
+    "nakit_dongusu_gun": 102.9,
+    "piotroski_skor": 5,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\ALCAR\\ALCAR_Mikroskop_Raporu.html"
+}

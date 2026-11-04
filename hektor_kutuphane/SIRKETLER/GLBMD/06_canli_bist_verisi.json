@@ -1,0 +1,21 @@
+{
+    "kod": "GLBMD",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Aracı Kurumlar",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 24.3,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 6.58,
+    "aylik_degisim": -34.9,
+    "satis_milyon_tl": 32437.0,
+    "net_kar_milyon_tl": -84.0,
+    "cfo_milyon_tl": -621.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 1.03,
+    "nakit_dongusu_gun": 3.0,
+    "piotroski_skor": 2,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\GLBMD\\GLBMD_Mikroskop_Raporu.html"
+}

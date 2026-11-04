@@ -1,0 +1,21 @@
+{
+    "kod": "KLGYO",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Kiler GYO",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 40.8,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 3.42,
+    "aylik_degisim": -11.4,
+    "satis_milyon_tl": 882.0,
+    "net_kar_milyon_tl": -821.0,
+    "cfo_milyon_tl": -703.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.08,
+    "nakit_dongusu_gun": 23338.0,
+    "piotroski_skor": 3,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\KLGYO\\KLGYO_Mikroskop_Raporu.html"
+}

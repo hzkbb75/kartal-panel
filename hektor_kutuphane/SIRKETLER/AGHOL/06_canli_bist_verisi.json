@@ -1,0 +1,21 @@
+{
+    "kod": "AGHOL",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Holdingler",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 29.5,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 25.02,
+    "aylik_degisim": -22.8,
+    "satis_milyon_tl": 832791.0,
+    "net_kar_milyon_tl": 2951.0,
+    "cfo_milyon_tl": 73631.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.76,
+    "nakit_dongusu_gun": 0.0,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\AGHOL\\AGHOL_Mikroskop_Raporu.html"
+}

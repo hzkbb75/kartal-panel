@@ -1,0 +1,83 @@
+{
+  "kod": "GWIND",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 4.1,
+      "icr_kati": 8.73,
+      "tahakkuk_orani": -41.44,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 111.8,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 1.8,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 5.9,
+      "icr_kati": 11.03,
+      "tahakkuk_orani": -82.96,
+      "aga_orani": 43.4,
+      "ykp_orani": 0.0,
+      "dso_gun": 72.8,
+      "acm_makasi": -75.8,
+      "serefiye_ozk_orani": 1.8,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -39.0
+    },
+    "2026/03": {
+      "efm_yuzde": 3.0,
+      "icr_kati": 5.79,
+      "tahakkuk_orani": -21.04,
+      "aga_orani": 532.2,
+      "ykp_orani": 0.0,
+      "dso_gun": 110.3,
+      "acm_makasi": 22.6,
+      "serefiye_ozk_orani": 1.7,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🟡 Alacak-Ciro makası +%22.6 açıldı (DSO: 110.3 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": 37.5
+    },
+    "2026/06": {
+      "efm_yuzde": 3.7,
+      "icr_kati": 4.99,
+      "tahakkuk_orani": 83.93,
+      "aga_orani": 99.7,
+      "ykp_orani": 100.0,
+      "dso_gun": 80.3,
+      "acm_makasi": -43.6,
+      "serefiye_ozk_orani": 1.6,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%83.93): Kâr nakde dönüşmüyor.",
+        "🟡 Kağıt üzeri kâr payı yüksek (%100.0)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 20,
+      "dso_delta": -30.0
+    }
+  }
+}

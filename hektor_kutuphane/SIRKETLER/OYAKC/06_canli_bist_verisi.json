@@ -1,0 +1,21 @@
+{
+    "kod": "OYAKC",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Çimento",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 19.3,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 17.88,
+    "aylik_degisim": -13.7,
+    "satis_milyon_tl": 66537.0,
+    "net_kar_milyon_tl": 10319.0,
+    "cfo_milyon_tl": 12024.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 63.9,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\OYAKC\\OYAKC_Mikroskop_Raporu.html"
+}

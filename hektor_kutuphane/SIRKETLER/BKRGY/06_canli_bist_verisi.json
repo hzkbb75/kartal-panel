@@ -1,0 +1,21 @@
+{
+    "kod": "BKRGY",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Bakırcı GYO",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 21.1,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 3.76,
+    "aylik_degisim": -28.4,
+    "satis_milyon_tl": 247.0,
+    "net_kar_milyon_tl": -167.0,
+    "cfo_milyon_tl": 52.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.01,
+    "nakit_dongusu_gun": -225.0,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\BKRGY\\BKRGY_Mikroskop_Raporu.html"
+}

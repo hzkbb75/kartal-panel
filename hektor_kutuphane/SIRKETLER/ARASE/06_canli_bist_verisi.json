@@ -1,0 +1,21 @@
+{
+    "kod": "ARASE",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Elektrik - Doğalgaz Dağıtım",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 17.2,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 70.0,
+    "aylik_degisim": -27.8,
+    "satis_milyon_tl": 38530.0,
+    "net_kar_milyon_tl": 2638.0,
+    "cfo_milyon_tl": 7016.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.13,
+    "nakit_dongusu_gun": 27.2,
+    "piotroski_skor": 8,
+    "sinyal": "FIRSAT ADAYI",
+    "rapor_linki": "SIRKETLER\\ARASE\\ARASE_Mikroskop_Raporu.html"
+}

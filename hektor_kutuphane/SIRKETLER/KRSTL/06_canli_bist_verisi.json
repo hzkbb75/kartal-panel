@@ -1,0 +1,21 @@
+{
+    "kod": "KRSTL",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Meşrubat / İçecek",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 84.2,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%84.2)",
+    "fiyat_tl": 6.29,
+    "aylik_degisim": -19.3,
+    "satis_milyon_tl": 3804.0,
+    "net_kar_milyon_tl": 296.0,
+    "cfo_milyon_tl": 874.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.1,
+    "nakit_dongusu_gun": 3.7,
+    "piotroski_skor": 7,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\KRSTL\\KRSTL_Mikroskop_Raporu.html"
+}

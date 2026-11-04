@@ -1,0 +1,37 @@
+{
+    "sirket": "PETKM",
+    "kategori": "Hendeksiz",
+    "tez_tarihi": "2026-10-31",
+    "yatirim_tezi": "STAR Rafineri dolaylı payı düşüldüğünde ana petrokimya işi negatif zımni FD ile fiyatlanıyor; döngü dibinden ortalamaya dönüş yatırımı.",
+    "hedef_guvenlik_marji_yuzde": 50.0,
+    "portfoy_kurallari": {
+        "baslangic_agirligi_yuzde": 1.0,
+        "mevcut_agirlik_yuzde": 1.5,
+        "maksimum_tavan_yuzde": 3.0,
+        "asama_durumu": "1. Kademe Tamamlandı (Zamana Yayılı Toplama)"
+    },
+    "genel_cikis_tetikleyicileri": {
+        "1_yonetim_veya_hakim_ortak_bozulmasi": false,
+        "2_hakim_ortak_hisse_satisi": false,
+        "3_iliskili_taraf_supheli_kaynak_aktarimi": false,
+        "4_yapisal_veya_teknolojik_kirilma": false,
+        "5_ilk_analizde_kritik_hata_tespiti": false
+    },
+    "sirkete_ozel_tetikler": [
+        {
+            "kriter": "Etilen-Nafta makası > 450 USD/ton ve Ana FD/STAR katı > 1.62x",
+            "durum": "SAKİN",
+            "son_deger": "160 USD / 0.97x"
+        },
+        {
+            "kriter": "SOCAR ilişkili taraf ticari olmayan alacak / varlık > %5",
+            "durum": "SAKİN",
+            "son_deger": "%0.39"
+        },
+        {
+            "kriter": "Kısa vadeli borç / FAVÖK rasyosunda temerrüt riski",
+            "durum": "İZLEMEDE",
+            "son_deger": "%57 Kısa Vade Payı"
+        }
+    ]
+}

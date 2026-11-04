@@ -1,0 +1,21 @@
+{
+    "kod": "GOKNR",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Gıda",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 46.5,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 12.04,
+    "aylik_degisim": -17.6,
+    "satis_milyon_tl": 17817.0,
+    "net_kar_milyon_tl": 551.0,
+    "cfo_milyon_tl": 2406.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.26,
+    "nakit_dongusu_gun": 205.6,
+    "piotroski_skor": 5,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\GOKNR\\GOKNR_Mikroskop_Raporu.html"
+}

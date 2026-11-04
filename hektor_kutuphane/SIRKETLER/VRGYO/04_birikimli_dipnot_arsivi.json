@@ -1,0 +1,84 @@
+{
+  "kod": "VRGYO",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 100.8,
+      "icr_kati": -0.09,
+      "tahakkuk_orani": 0.05,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 225.6,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -0.09x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 110.5,
+      "icr_kati": 0.32,
+      "tahakkuk_orani": -3.48,
+      "aga_orani": 0.0,
+      "ykp_orani": 9.5,
+      "dso_gun": 119.0,
+      "acm_makasi": -338.4,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 0.32x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -106.6
+    },
+    "2026/03": {
+      "efm_yuzde": 142.5,
+      "icr_kati": -0.0,
+      "tahakkuk_orani": -140.77,
+      "aga_orani": 0.0,
+      "ykp_orani": 1.2,
+      "dso_gun": 743.9,
+      "acm_makasi": 33.3,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Alacak-Ciro makası +%33.3 açıldı (DSO: 743.9 gün).",
+        "🔴 Faiz karşılama oranı -0.0x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": 624.9
+    },
+    "2026/06": {
+      "efm_yuzde": 47.3,
+      "icr_kati": -0.0,
+      "tahakkuk_orani": -103.86,
+      "aga_orani": 0.0,
+      "ykp_orani": 4.7,
+      "dso_gun": 6972.3,
+      "acm_makasi": 2455.1,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Alacak-Ciro makası +%2455.1 açıldı (DSO: 6972.3 gün).",
+        "🔴 Faiz karşılama oranı -0.0x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 6228.4
+    }
+  }
+}

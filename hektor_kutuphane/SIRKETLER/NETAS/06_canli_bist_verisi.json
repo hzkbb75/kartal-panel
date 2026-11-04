@@ -1,0 +1,21 @@
+{
+    "kod": "NETAS",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "İletişim Cihazları",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 64.9,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Aşırı Borç / Negatif EFK (99.0x)",
+    "fiyat_tl": 60.35,
+    "aylik_degisim": -18.3,
+    "satis_milyon_tl": 14167.0,
+    "net_kar_milyon_tl": -412.0,
+    "cfo_milyon_tl": -99.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 99.0,
+    "nakit_dongusu_gun": -11.6,
+    "piotroski_skor": 4,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\NETAS\\NETAS_Mikroskop_Raporu.html"
+}

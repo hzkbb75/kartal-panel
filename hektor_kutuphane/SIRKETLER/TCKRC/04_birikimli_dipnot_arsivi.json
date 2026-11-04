@@ -1,0 +1,83 @@
+{
+  "kod": "TCKRC",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 1.9,
+      "icr_kati": 32.65,
+      "tahakkuk_orani": 15.05,
+      "aga_orani": 0.0,
+      "ykp_orani": 3.8,
+      "dso_gun": 58.2,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 20,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%15.05): Kâr nakde dönüşmüyor."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 27.1,
+      "icr_kati": 2.07,
+      "tahakkuk_orani": 9.32,
+      "aga_orani": 0.2,
+      "ykp_orani": 0.8,
+      "dso_gun": 46.0,
+      "acm_makasi": -30.2,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 20,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%9.32): Kâr nakde dönüşmüyor."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -12.2
+    },
+    "2026/03": {
+      "efm_yuzde": 16.9,
+      "icr_kati": 3.04,
+      "tahakkuk_orani": 9.36,
+      "aga_orani": 1.5,
+      "ykp_orani": 25.1,
+      "dso_gun": 82.1,
+      "acm_makasi": 78.4,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%9.36): Kâr nakde dönüşmüyor.",
+        "🟡 Alacak-Ciro makası +%78.4 açıldı (DSO: 82.1 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": 36.1
+    },
+    "2026/06": {
+      "efm_yuzde": 52.3,
+      "icr_kati": 2.6,
+      "tahakkuk_orani": 15.52,
+      "aga_orani": 0.1,
+      "ykp_orani": 28.7,
+      "dso_gun": 49.1,
+      "acm_makasi": -104.4,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 20,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%15.52): Kâr nakde dönüşmüyor."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": -33.0
+    }
+  }
+}

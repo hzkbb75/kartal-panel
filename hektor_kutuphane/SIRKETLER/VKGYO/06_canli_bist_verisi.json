@@ -1,0 +1,21 @@
+{
+    "kod": "VKGYO",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Vakıf GYO",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 26.3,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 1.38,
+    "aylik_degisim": -15.3,
+    "satis_milyon_tl": 3149.0,
+    "net_kar_milyon_tl": 919.0,
+    "cfo_milyon_tl": 2462.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 476.5,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\VKGYO\\VKGYO_Mikroskop_Raporu.html"
+}

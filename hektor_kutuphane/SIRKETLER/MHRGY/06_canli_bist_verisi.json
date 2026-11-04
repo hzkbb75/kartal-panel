@@ -1,0 +1,21 @@
+{
+    "kod": "MHRGY",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Mhr GYO",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 16.6,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 1.66,
+    "aylik_degisim": -6.2,
+    "satis_milyon_tl": 472.0,
+    "net_kar_milyon_tl": 608.0,
+    "cfo_milyon_tl": 298.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 12515.5,
+    "piotroski_skor": 6,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\MHRGY\\MHRGY_Mikroskop_Raporu.html"
+}

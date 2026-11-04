@@ -1,0 +1,21 @@
+{
+    "kod": "KAPLM",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Kağıt Ürünleri",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 20.0,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "2 Dönem Negatif Nakit Akışı (CFO < 0)",
+    "fiyat_tl": 94.8,
+    "aylik_degisim": -26.3,
+    "satis_milyon_tl": 2766.0,
+    "net_kar_milyon_tl": -487.0,
+    "cfo_milyon_tl": -298.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.59,
+    "nakit_dongusu_gun": 90.2,
+    "piotroski_skor": 5,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\KAPLM\\KAPLM_Mikroskop_Raporu.html"
+}

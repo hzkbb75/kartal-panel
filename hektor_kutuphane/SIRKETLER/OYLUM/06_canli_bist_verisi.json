@@ -1,0 +1,21 @@
+{
+    "kod": "OYLUM",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Gıda",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 85.0,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%85.0)",
+    "fiyat_tl": 5.24,
+    "aylik_degisim": -15.3,
+    "satis_milyon_tl": 906.0,
+    "net_kar_milyon_tl": -121.0,
+    "cfo_milyon_tl": -22.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 91.1,
+    "piotroski_skor": 3,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\OYLUM\\OYLUM_Mikroskop_Raporu.html"
+}

@@ -1,0 +1,21 @@
+{
+    "kod": "GEDZA",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Kimyasal Ürün",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 46.7,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "2 Dönem Negatif Nakit Akışı (CFO < 0)",
+    "fiyat_tl": 16.87,
+    "aylik_degisim": -22.6,
+    "satis_milyon_tl": 1256.0,
+    "net_kar_milyon_tl": 19.0,
+    "cfo_milyon_tl": -28.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 143.4,
+    "piotroski_skor": 6,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\GEDZA\\GEDZA_Mikroskop_Raporu.html"
+}

@@ -1,0 +1,125 @@
+﻿Kod;Sektör;Hendek;F_Skor;Mevcut_Lot;Fiyat;Mevcut_Tutar;Mevcut_Pay;Hedef_Pay;Hedef_Tutar;Hedef_Lot;Fark_Lot;Aksiyon;KZ_Yuzde;Katsayi;Islem_Tutari;Ort_Maliyet
+AAGYO;Ağaoğlu GYO;Kırılgan Hendekli;7;0;6.96;0.0;0.0;0.84;11194.33;1608;1608;AL / EKLE;0.0;1.4;11191.68;6.96
+ACSEL;Acıselsan Acıpayam Selüloz;Kırılgan Hendekli;7;0;77.05;0.0;0.0;0.84;11194.33;145;145;AL / EKLE;0.0;1.4;11172.25;77.05
+AEFES;Anadolu Efes;Kırılgan Hendekli;8;0;16.24;0.0;0.0;0.84;11194.33;689;689;AL / EKLE;0.0;1.4;11189.36;16.24
+AGESA;Sigorta ve Emeklilik;Korunaklı;7;0;199.8;0.0;0.0;1.08;14392.71;72;72;AL / EKLE;0.0;1.8;14385.6;199.8
+AGHOL;Anadolu Grubu Holding;Hendeksiz;7;0;25.22;0.0;0.0;0.6;7995.95;317;317;AL / EKLE;0.0;1.0;7994.74;25.22
+AHGAZ;Ahlatçı Doğalgaz;Kırılgan Hendekli;7;0;46.52;0.0;0.0;0.84;11194.33;240;240;AL / EKLE;0.0;1.4;11164.8;46.52
+AKBNK;Bankacılık;Hendeksiz;7;1000;63.3;63300.0;4.75;0.6;7995.95;126;-874;SAT / AZALT;-2.66;1.0;55324.2;65.03
+AKFIS;Akfen İnşaat;Kırılgan Hendekli;7;0;13.06;0.0;0.0;0.84;11194.33;857;857;AL / EKLE;0.0;1.4;11192.42;13.06
+ALARK;Alarko Holding;Hendeksiz;8;0;94.75;0.0;0.0;0.6;7995.95;84;84;AL / EKLE;0.0;1.0;7959.0;94.75
+ALBTN;Albayrak Hazır Beton;Hendeksiz;7;0;19.69;0.0;0.0;0.6;7995.95;406;406;AL / EKLE;0.0;1.0;7994.14;19.69
+ALFAS;Alfa Solar;Hendeksiz;7;0;22.56;0.0;0.0;0.6;7995.95;354;354;AL / EKLE;0.0;1.0;7986.24;22.56
+ANHYT;Anadolu Hayat Emeklilik A.Ş.;Hendeksiz;7;0;89.35;0.0;0.0;0.6;7995.95;89;89;AL / EKLE;0.0;1.0;7952.15;89.35
+ANSGR;Sigorta ve Emeklilik;Hendeksiz;7;1000;22.22;22220.0;1.67;0.6;7995.95;359;-641;SAT / AZALT;2.16;1.0;14243.02;21.75
+ARASE;Doğu Aras Enerji;Korunaklı;8;0;72.0;0.0;0.0;1.08;14392.71;199;199;AL / EKLE;0.0;1.8;14328.0;72.0
+ASELS;Savunma ve Teknoloji;Korunaklı;6;275;342.25;94118.75;7.06;1.08;14392.71;42;-233;SAT / AZALT;-8.77;1.8;79744.25;375.15
+AVPGY;Avrupakent GYO;Kırılgan Hendekli;7;0;44.88;0.0;0.0;0.84;11194.33;249;249;AL / EKLE;0.0;1.4;11175.12;44.88
+BAGFS;Bandırma Gübre Fabrikaları A;Hendeksiz;7;0;16.55;0.0;0.0;0.6;7995.95;483;483;AL / EKLE;0.0;1.0;7993.65;16.55
+BAKAB;Bak Ambalaj;Hendeksiz;8;0;22.06;0.0;0.0;0.6;7995.95;362;362;AL / EKLE;0.0;1.0;7985.72;22.06
+BFREN;Bosch Fren;Kırılgan Hendekli;7;0;89.0;0.0;0.0;0.84;11194.33;125;125;AL / EKLE;0.0;1.4;11125.0;89.0
+BIGCH;BigChefs;Hendeksiz;7;0;2.51;0.0;0.0;0.6;7995.95;3185;3185;AL / EKLE;0.0;1.0;7994.35;2.51
+BIMAS;Perakende ve Gıda;Korunaklı;8;100;356.0;35600.0;2.67;1.08;14392.71;40;-60;SAT / AZALT;-3.82;1.8;21360.0;370.15
+BJKAS;Beşiktaş;Hendeksiz;7;0;1.12;0.0;0.0;0.6;7995.95;7139;7139;AL / EKLE;0.0;1.0;7995.68;1.12
+BLUME;Blume Metal Kimya;Hendeksiz;7;0;25.4;0.0;0.0;0.6;7995.95;314;314;AL / EKLE;0.0;1.0;7975.6;25.4
+BRLSM;Birlesim Mühendislik;Kırılgan Hendekli;7;0;7.24;0.0;0.0;0.84;11194.33;1546;1546;AL / EKLE;0.0;1.4;11193.04;7.24
+BRSAN;Borusan Birleşik Boru Fab.;Hendeksiz;8;0;663.5;0.0;0.0;0.6;7995.95;12;12;AL / EKLE;0.0;1.0;7962.0;663.5
+CCOLA;Coca-Cola İçecek A.Ş;Korunaklı;8;0;75.35;0.0;0.0;1.08;14392.71;191;191;AL / EKLE;0.0;1.8;14391.85;75.35
+CLEBI;Çelebi;Kırılgan Hendekli;7;0;1178.0;0.0;0.0;0.84;11194.33;9;9;AL / EKLE;0.0;1.4;10602.0;1178.0
+CWENE;Cw Enerji;Kırılgan Hendekli;7;0;14.51;0.0;0.0;0.84;11194.33;771;771;AL / EKLE;0.0;1.4;11187.21;14.51
+DEVA;Deva Holding;Kırılgan Hendekli;7;0;70.7;0.0;0.0;0.84;11194.33;158;158;AL / EKLE;0.0;1.4;11170.6;70.7
+DMRGD;DMR Unlu Mamüller;Kırılgan Hendekli;8;0;7.21;0.0;0.0;0.84;11194.33;1552;1552;AL / EKLE;0.0;1.4;11189.92;7.21
+DOHOL;Doğan Holding;Kırılgan Hendekli;7;0;16.37;0.0;0.0;0.84;11194.33;683;683;AL / EKLE;0.0;1.4;11180.71;16.37
+DOKTA;Döktaş Dökümcülük;Hendeksiz;8;0;13.16;0.0;0.0;0.6;7995.95;607;607;AL / EKLE;0.0;1.0;7988.12;13.16
+DSTKF;Destek Finans Faktoring;Hendeksiz;0;4;84.95;339.8;0.03;0.6;7995.95;94;90;AL / EKLE;-96.4;1.0;7645.5;2360.93
+ECILC;Eczacıbaşı İlaç;Hendeksiz;7;0;44.78;0.0;0.0;0.6;7995.95;178;178;AL / EKLE;0.0;1.0;7970.84;44.78
+EGEPO;Egepol Hastanesi;Hendeksiz;7;0;3.74;0.0;0.0;0.6;7995.95;2137;2137;AL / EKLE;0.0;1.0;7992.38;3.74
+EGPRO;Ege Profil;Kırılgan Hendekli;8;0;27.4;0.0;0.0;0.84;11194.33;408;408;AL / EKLE;0.0;1.4;11179.2;27.4
+EKIM;Ekim Turizm;Kırılgan Hendekli;7;0;14.02;0.0;0.0;0.84;11194.33;798;798;AL / EKLE;0.0;1.4;11187.96;14.02
+ENDAE;Enda Enerji;Kırılgan Hendekli;7;0;9.16;0.0;0.0;0.84;11194.33;1222;1222;AL / EKLE;0.0;1.4;11193.52;9.16
+ENERY;Enerya Enerji;Kırılgan Hendekli;7;0;13.65;0.0;0.0;0.84;11194.33;820;820;AL / EKLE;0.0;1.4;11193.0;13.65
+ENKAI;Enka İnşaat;Korunaklı;7;0;80.05;0.0;0.0;1.08;14392.71;179;179;AL / EKLE;0.0;1.8;14328.95;80.05
+EREGL;Demir Çelik ve Maden;Hendeksiz;7;2701;30.02;81084.02;6.08;0.6;7995.95;266;-2435;SAT / AZALT;-20.18;1.0;73098.7;37.61
+ESCAR;Escar Filo;Hendeksiz;7;0;6.83;0.0;0.0;0.6;7995.95;1170;1170;AL / EKLE;0.0;1.0;7991.1;6.83
+ETILR;Etiler Gıda;Hendeksiz;7;0;6.16;0.0;0.0;0.6;7995.95;1298;1298;AL / EKLE;0.0;1.0;7995.68;6.16
+FADE;Fade Gıda Yatırım;Kırılgan Hendekli;7;0;9.35;0.0;0.0;0.84;11194.33;1197;1197;AL / EKLE;0.0;1.4;11191.95;9.35
+FENER;Fenerbahce Futbol A.Ş.;Kırılgan Hendekli;8;0;1.93;0.0;0.0;0.84;11194.33;5800;5800;AL / EKLE;0.0;1.4;11194.0;1.93
+FONET;Fonet Bilgi Teknolojileri;Kırılgan Hendekli;8;0;3.47;0.0;0.0;0.84;11194.33;3226;3226;AL / EKLE;0.0;1.4;11194.22;3.47
+FORTE;Forte Bilgi İletişim;Kırılgan Hendekli;7;0;71.25;0.0;0.0;0.84;11194.33;157;157;AL / EKLE;0.0;1.4;11186.25;71.25
+FRIGO;Frigo Pak Gıda;Hendeksiz;7;0;1.86;0.0;0.0;0.6;7995.95;4298;4298;AL / EKLE;0.0;1.0;7994.28;1.86
+FRMPL;Formül Plastik;Kırılgan Hendekli;7;0;16.86;0.0;0.0;0.84;11194.33;663;663;AL / EKLE;0.0;1.4;11178.18;16.86
+FZLGY;Fuzul Gayrimenkul;Hendeksiz;7;0;4.45;0.0;0.0;0.6;7995.95;1796;1796;AL / EKLE;0.0;1.0;7992.2;4.45
+GARAN;Bankacılık;Hendeksiz;7;0;129.3;0.0;0.0;0.6;7995.95;61;61;AL / EKLE;0.0;1.0;7887.3;129.3
+GENKM;Gentaş Kimya;Kırılgan Hendekli;7;0;5.76;0.0;0.0;0.84;11194.33;1943;1943;AL / EKLE;0.0;1.4;11191.68;5.76
+GOKNR;Göknur Gıda;Kırılgan Hendekli;7;0;12.36;0.0;0.0;0.84;11194.33;905;905;AL / EKLE;0.0;1.4;11185.8;12.36
+GUBRF;Gübre Fabrikaları;Korunaklı;7;0;275.25;0.0;0.0;1.08;14392.71;52;52;AL / EKLE;0.0;1.8;14313.0;275.25
+HALKB;Bankacılık;Hendeksiz;7;0;40.56;0.0;0.0;0.6;7995.95;197;197;AL / EKLE;0.0;1.0;7990.32;40.56
+HRKET;Hareket Proje;Hendeksiz;7;0;6.93;0.0;0.0;0.6;7995.95;1153;1153;AL / EKLE;0.0;1.0;7990.29;6.93
+ICBCT;ICBC Turkey Bank;Hendeksiz;7;0;12.45;0.0;0.0;0.6;7995.95;642;642;AL / EKLE;0.0;1.0;7992.9;12.45
+IHEVA;İhlas Ev Aletleri;Hendeksiz;7;0;1.36;0.0;0.0;0.6;7995.95;5879;5879;AL / EKLE;0.0;1.0;7995.44;1.36
+INTEM;İntema;Korunaklı;8;0;156.0;0.0;0.0;1.08;14392.71;92;92;AL / EKLE;0.0;1.8;14352.0;156.0
+ISATR;İş Bankası (A);Hendeksiz;7;0;10.0;0.0;0.0;0.6;7995.95;799;799;AL / EKLE;0.0;1.0;7990.0;10.0
+ISCTR;Bankacılık;Hendeksiz;7;0;12.32;0.0;0.0;0.6;7995.95;649;649;AL / EKLE;0.0;1.0;7995.68;12.32
+ISDMR;İskenderun Demir Çelik;Hendeksiz;7;0;49.5;0.0;0.0;0.6;7995.95;161;161;AL / EKLE;0.0;1.0;7969.5;49.5
+ISGYO;İş GYO;Kırılgan Hendekli;8;0;17.7;0.0;0.0;0.84;11194.33;632;632;AL / EKLE;0.0;1.4;11186.4;17.7
+KAPLM;Kaplamin;Hendeksiz;8;0;92.5;0.0;0.0;0.6;7995.95;86;86;AL / EKLE;0.0;1.0;7955.0;92.5
+KLNMA;T. Kalkınma Bankası;Hendeksiz;7;0;6.46;0.0;0.0;0.6;7995.95;1237;1237;AL / EKLE;0.0;1.0;7991.02;6.46
+KNFRT;Konfrut Gıda;Hendeksiz;7;0;6.25;0.0;0.0;0.6;7995.95;1279;1279;AL / EKLE;0.0;1.0;7993.75;6.25
+KOPOL;Koza Polyester;Kırılgan Hendekli;7;0;2.55;0.0;0.0;0.84;11194.33;4389;4389;AL / EKLE;0.0;1.4;11191.95;2.55
+KORDS;Kordsa Teknik Tekstil;Kırılgan Hendekli;7;0;2.37;0.0;0.0;0.84;11194.33;4723;4723;AL / EKLE;0.0;1.4;11193.51;2.37
+KRDMB;Kardemir (B);Hendeksiz;7;0;50.2;0.0;0.0;0.6;7995.95;159;159;AL / EKLE;0.0;1.0;7981.8;50.2
+KRPLS;Koroplast Temizlik Ambalaj;Kırılgan Hendekli;8;0;7.76;0.0;0.0;0.84;11194.33;1442;1442;AL / EKLE;0.0;1.4;11189.92;7.76
+KRVGD;Kervan Gıda;Kırılgan Hendekli;7;0;2.05;0.0;0.0;0.84;11194.33;5460;5460;AL / EKLE;0.0;1.4;11193.0;2.05
+LOGO;Logo Yazılım;Korunaklı;7;0;114.0;0.0;0.0;1.08;14392.71;126;126;AL / EKLE;0.0;1.8;14364.0;114.0
+LUKSK;Lüks Kadife;Hendeksiz;7;0;43.62;0.0;0.0;0.6;7995.95;183;183;AL / EKLE;0.0;1.0;7982.46;43.62
+MEDTR;Meditera Tıbbi Malzeme;Hendeksiz;8;0;17.86;0.0;0.0;0.6;7995.95;447;447;AL / EKLE;0.0;1.0;7983.42;17.86
+METEN;Metgün Enerji;Kırılgan Hendekli;7;0;20.5;0.0;0.0;0.84;11194.33;546;546;AL / EKLE;0.0;1.4;11193.0;20.5
+MNDRS;Menderes Tekstil;Hendeksiz;7;0;9.13;0.0;0.0;0.6;7995.95;875;875;AL / EKLE;0.0;1.0;7988.75;9.13
+MPARK;Sağlık ve İlaç;Kırılgan Hendekli;6;100;379.5;37950.0;2.85;0.84;11194.33;29;-71;SAT / AZALT;-2.48;1.4;26944.5;389.14
+MRSHL;Marshall;Korunaklı;7;0;1028.0;0.0;0.0;1.08;14392.71;14;14;AL / EKLE;0.0;1.8;14392.0;1028.0
+NATEN;Naturel Yenilenebilir Enerji;Hendeksiz;7;0;2.62;0.0;0.0;0.6;7995.95;3051;3051;AL / EKLE;0.0;1.0;7993.62;2.62
+NETCD;Netcad Yazılım;Kırılgan Hendekli;7;0;86.4;0.0;0.0;0.84;11194.33;129;129;AL / EKLE;0.0;1.4;11145.6;86.4
+NTGAZ;Naturel Gaz;Korunaklı;7;0;9.5;0.0;0.0;1.08;14392.71;1515;1515;AL / EKLE;0.0;1.8;14392.5;9.5
+ORZAX;Orzaks İlaç;Kırılgan Hendekli;7;0;56.7;0.0;0.0;0.84;11194.33;197;197;AL / EKLE;0.0;1.4;11169.9;56.7
+OYAKC;Oyak Çimento;Kırılgan Hendekli;7;0;18.52;0.0;0.0;0.84;11194.33;604;604;AL / EKLE;0.0;1.4;11186.08;18.52
+OYYAT;Oyak Yatırım;Korunaklı;7;0;20.44;0.0;0.0;1.08;14392.71;704;704;AL / EKLE;0.0;1.8;14389.76;20.44
+PCILT;PC İletişim ve Medya;Kırılgan Hendekli;7;0;28.92;0.0;0.0;0.84;11194.33;387;387;AL / EKLE;0.0;1.4;11192.04;28.92
+PETKM;Kimya ve Petrokimya;Hendeksiz;5;50000;16.51;825500.0;61.94;0.6;7995.95;484;-49516;SAT / AZALT;-17.41;1.0;817509.16;19.99
+PETUN;Pınar Et ve Un;Hendeksiz;7;0;8.75;0.0;0.0;0.6;7995.95;913;913;AL / EKLE;0.0;1.0;7988.75;8.75
+PINSU;Pınar Su;Hendeksiz;7;0;6.92;0.0;0.0;0.6;7995.95;1155;1155;AL / EKLE;0.0;1.0;7992.6;6.92
+PRZMA;Prizma Pres Matbaacılık;Hendeksiz;7;0;7.01;0.0;0.0;0.6;7995.95;1140;1140;AL / EKLE;0.0;1.0;7991.4;7.01
+QNBTR;Bankacılık;Hendeksiz;7;0;139.1;0.0;0.0;0.6;7995.95;57;57;AL / EKLE;0.0;1.0;7928.7;139.1
+QUICK;Quick Sigorta;Hendeksiz;7;0;39.32;0.0;0.0;0.6;7995.95;203;203;AL / EKLE;0.0;1.0;7981.96;39.32
+RGYAS;Rönesans Gayrimenkul;Kırılgan Hendekli;7;0;167.7;0.0;0.0;0.84;11194.33;66;66;AL / EKLE;0.0;1.4;11068.2;167.7
+SANEL;San-El Muhendislik;Korunaklı;8;0;29.62;0.0;0.0;1.08;14392.71;485;485;AL / EKLE;0.0;1.8;14365.7;29.62
+SAYAS;Say Yenilenebilir Enerji;Korunaklı;8;0;29.46;0.0;0.0;1.08;14392.71;488;488;AL / EKLE;0.0;1.8;14376.48;29.46
+SEKUR;Sekuro Plastik;Kırılgan Hendekli;9;0;2.83;0.0;0.0;0.84;11194.33;3955;3955;AL / EKLE;0.0;1.4;11192.65;2.83
+SEYKM;Seyitler Kimya;Hendeksiz;8;0;2.37;0.0;0.0;0.6;7995.95;3373;3373;AL / EKLE;0.0;1.0;7994.01;2.37
+SILVR;Silverline;Hendeksiz;7;0;1.31;0.0;0.0;0.6;7995.95;6103;6103;AL / EKLE;0.0;1.0;7994.93;1.31
+SKBNK;Şekerbank;Hendeksiz;7;0;3.11;0.0;0.0;0.6;7995.95;2571;2571;AL / EKLE;0.0;1.0;7995.81;3.11
+SKTAS;Söktaş;Hendeksiz;8;0;1.04;0.0;0.0;0.6;7995.95;7688;7688;AL / EKLE;0.0;1.0;7995.52;1.04
+SKYLP;Skyalp Fin. Tek.ve Danışmanl;Hendeksiz;8;0;51.55;0.0;0.0;0.6;7995.95;155;155;AL / EKLE;0.0;1.0;7990.25;51.55
+SNGYO;Sinpas GYO;Kırılgan Hendekli;7;0;2.18;0.0;0.0;0.84;11194.33;5135;5135;AL / EKLE;0.0;1.4;11194.3;2.18
+SOHOE;Soho Giyim;Kırılgan Hendekli;7;0;6.74;0.0;0.0;0.84;11194.33;1660;1660;AL / EKLE;0.0;1.4;11188.4;6.74
+SRVGY;Servet GYO;Kırılgan Hendekli;7;0;1.7;0.0;0.0;0.84;11194.33;6584;6584;AL / EKLE;0.0;1.4;11192.8;1.7
+SSAAT;Saat ve Saat;Korunaklı;7;0;22.24;0.0;0.0;1.08;14392.71;647;647;AL / EKLE;0.0;1.8;14389.28;22.24
+SURGY;Sur GYO;Hendeksiz;7;0;14.07;0.0;0.0;0.6;7995.95;568;568;AL / EKLE;0.0;1.0;7991.76;14.07
+TABGD;Perakende ve Gıda;Hendeksiz;5;438;178.5;78183.0;5.87;0.6;7995.95;44;-394;SAT / AZALT;-21.71;1.0;70329.0;227.99
+TATGD;Tat Gıda;Hendeksiz;7;0;14.7;0.0;0.0;0.6;7995.95;543;543;AL / EKLE;0.0;1.0;7982.1;14.7
+TAVHL;TAV Holding;Kırılgan Hendekli;7;0;262.0;0.0;0.0;0.84;11194.33;42;42;AL / EKLE;0.0;1.4;11004.0;262.0
+TEZOL;Europap Tezol;Hendeksiz;7;0;6.3;0.0;0.0;0.6;7995.95;1269;1269;AL / EKLE;0.0;1.0;7994.7;6.3
+TKNKA;Teknika Plastik;Kırılgan Hendekli;7;0;22.46;0.0;0.0;0.84;11194.33;498;498;AL / EKLE;0.0;1.4;11185.08;22.46
+TRALT;Türk Altın;Kırılgan Hendekli;7;0;34.14;0.0;0.0;0.84;11194.33;327;327;AL / EKLE;0.0;1.4;11163.78;34.14
+TRENJ;TR Doğal Enerji Kaynakları;Kırılgan Hendekli;7;0;69.6;0.0;0.0;0.84;11194.33;160;160;AL / EKLE;0.0;1.4;11136.0;69.6
+TRGYO;Torunlar GYO;Kırılgan Hendekli;7;0;85.95;0.0;0.0;0.84;11194.33;130;130;AL / EKLE;0.0;1.4;11173.5;85.95
+TRILC;Turk İlaç ve Serum Sanayi;Kırılgan Hendekli;7;0;0.69;0.0;0.0;0.84;11194.33;16223;16223;AL / EKLE;0.0;1.4;11193.87;0.69
+TRMET;TR Anadolu Metal;Kırılgan Hendekli;7;0;98.9;0.0;0.0;0.84;11194.33;113;113;AL / EKLE;0.0;1.4;11175.7;98.9
+TTKOM;Telekomünikasyon;Kırılgan Hendekli;4;500;47.22;23610.0;1.77;0.84;11194.33;237;-263;SAT / AZALT;0.94;1.4;12418.86;46.78
+TUPRS;Tüpraş;Korunaklı;8;0;337.0;0.0;0.0;1.08;14392.71;42;42;AL / EKLE;0.0;1.8;14154.0;337.0
+TUREX;Tureks Tur.Taşımacılık;Kırılgan Hendekli;8;0;5.21;0.0;0.0;0.84;11194.33;2148;2148;AL / EKLE;0.0;1.4;11191.08;5.21
+TURSG;Sigorta ve Emeklilik;Hendeksiz;7;0;3.31;0.0;0.0;0.6;7995.95;2415;2415;AL / EKLE;0.0;1.0;7993.65;3.31
+VANGD;Vanet Gıda Sanayi;Hendeksiz;7;0;51.5;0.0;0.0;0.6;7995.95;155;155;AL / EKLE;0.0;1.0;7982.5;51.5
+VERUS;Verusa Holding;Kırılgan Hendekli;8;0;480.0;0.0;0.0;0.84;11194.33;23;23;AL / EKLE;0.0;1.4;11040.0;480.0
+YBTAS;Yibitaş İnş. Malzemeleri;Kırılgan Hendekli;7;0;9.39;0.0;0.0;0.84;11194.33;1192;1192;AL / EKLE;0.0;1.4;11192.88;9.39
+YKBNK;Bankacılık;Hendeksiz;7;0;35.64;0.0;0.0;0.6;7995.95;224;224;AL / EKLE;0.0;1.0;7983.36;35.64
+YKSLN;Yükselen Çelik;Kırılgan Hendekli;9;0;1.79;0.0;0.0;0.84;11194.33;6253;6253;AL / EKLE;0.0;1.4;11192.87;1.79

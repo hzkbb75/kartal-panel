@@ -1,0 +1,84 @@
+{
+  "kod": "DZGYO",
+  "son_guncelleme": "2026-11-03 17:53",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 448.6,
+      "icr_kati": -0.97,
+      "tahakkuk_orani": -1.88,
+      "aga_orani": 0.0,
+      "ykp_orani": 6.3,
+      "dso_gun": 52.3,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -0.97x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 884.1,
+      "icr_kati": -1.12,
+      "tahakkuk_orani": -2.82,
+      "aga_orani": 0.0,
+      "ykp_orani": 13.8,
+      "dso_gun": 11.5,
+      "acm_makasi": -134.7,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -1.12x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -40.8
+    },
+    "2026/03": {
+      "efm_yuzde": 387.7,
+      "icr_kati": -0.66,
+      "tahakkuk_orani": 2.23,
+      "aga_orani": 0.0,
+      "ykp_orani": 6.4,
+      "dso_gun": 199.0,
+      "acm_makasi": 1043.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Alacak-Ciro makası +%1043.0 açıldı (DSO: 199.0 gün).",
+        "🔴 Faiz karşılama oranı -0.66x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": 187.5
+    },
+    "2026/06": {
+      "efm_yuzde": 68.7,
+      "icr_kati": -1.46,
+      "tahakkuk_orani": 9.56,
+      "aga_orani": 0.0,
+      "ykp_orani": 32.8,
+      "dso_gun": 87.7,
+      "acm_makasi": -135.8,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%9.56): Kâr nakde dönüşmüyor.",
+        "🔴 Faiz karşılama oranı -1.46x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 5,
+      "dso_delta": -111.3
+    }
+  }
+}

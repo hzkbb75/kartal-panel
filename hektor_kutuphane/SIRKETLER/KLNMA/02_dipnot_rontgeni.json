@@ -1,0 +1,34 @@
+{
+  "dipnot_kontrolleri": {
+    "İlişkili Taraf Ticari Olmayan Alacak / Varlık": {
+      "deger": "%0.35",
+      "durum": "TEMİZ"
+    },
+    "Bölüm Raporlama (Ana Faaliyet Marjı)": {
+      "deger": "EFK: 10,200 Mn TL",
+      "durum": "GÜÇLÜ"
+    },
+    "Finansal Borç Vade Yapısı (Kısa Vade Payı)": {
+      "deger": "%52 Kısa Vadeli",
+      "durum": "GÜVENLİ"
+    },
+    "Yabancı Para Pozisyonu & Doğal Hedge": {
+      "deger": "Net Borç/Özk: 0.0x",
+      "durum": "DENGELİ"
+    },
+    "Teminat, Rehin, İpotek (TRİ) & Karşılıklar": {
+      "deger": "Normal Sınırda (<%20)",
+      "durum": "GÜVENLİ"
+    },
+    "Bağımsız Denetim & Vekâlet Notu": {
+      "deger": "Halka Açıklık %0.9",
+      "durum": "GEÇTİ"
+    }
+  },
+  "komite_raporu": {
+    "Kıdemli Analist (İş Modeli, Hendek & Yönetim)": "KLNMA, Bankacılık sektöründe 'Kırılgan Hendekli' ekonomik hendek sınıfında yer alıyor. Halka açıklık oranı %0.9 seviyesinde olup kâr dağıtımında küçük ortağı ezen bir imtiyaz veya ilişkili taraflara sistematik kaynak çıkışı (%0.35) tespit edilmemiştir. İzleme odağı: Bankacılık sektörü pazar payı istikrarı, ROIC gelişimi ve işletme sermayesi disiplini.",
+    "Asistan (Bilanço, Nakit Akışı & Tek Seferlik Ayıklama)": "Cari dönem satış gelirleri 85,000 Mn TL, raporlanan net kâr 22,000 Mn TL ve işletme nakit akışı (CFO) 28,000 Mn TL olarak gerçekleşti. Kârın nakde dönüşüm testi: BAŞARILI (CFO > Net Kâr). Piotroski finansal güç skoru 6/9 puandır.",
+    "Stratejist (Makro, Sektör Döngüsü & Borç Vadesi)": "Şirketin Net Finansal Borç / Özkaynak rasyosu 0.0x ve kısa vadeli yükümlülük ağırlığı %52 seviyesindedir. Tarihsel çarpan bandında güncel değer (1.05x), şirketin kendi ortalaması (1.37x) ve alt çeyrek ucuzluk bandı (1.25x) ile birlikte takip edilmelidir.",
+    "Denetçi (Karşı Görüş / Anti-Tez & Çıkış Kuralı)": "Serkan Ünal kuralları gereği 'Kırılgan Hendekli' kategorisindeki bu hissede portföy ağırlığı maksimum %5.0 tavanını aşmamalıdır. Çıkış tetikleyicileri: (1) Hâkim ortak hisse satışı, (2) İlişkili tarafa kaynak çıkışı, (3) Çarpanın üst çeyrek (%75) bandını aşması."
+  }
+}

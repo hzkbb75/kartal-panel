@@ -1,0 +1,21 @@
+{
+    "kod": "MANAS",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Teknoloji",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 63.8,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 1.88,
+    "aylik_degisim": -82.1,
+    "satis_milyon_tl": 608.0,
+    "net_kar_milyon_tl": -484.0,
+    "cfo_milyon_tl": 347.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 1.18,
+    "nakit_dongusu_gun": 459.4,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\MANAS\\MANAS_Mikroskop_Raporu.html"
+}

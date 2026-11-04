@@ -1,0 +1,21 @@
+{
+    "kod": "ALVES",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Kablo",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 84.9,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%84.9), 2 Dönem Negatif Nakit Akışı (CFO < 0)",
+    "fiyat_tl": 0.48,
+    "aylik_degisim": -17.2,
+    "satis_milyon_tl": 11382.0,
+    "net_kar_milyon_tl": 121.0,
+    "cfo_milyon_tl": -907.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 1.98,
+    "nakit_dongusu_gun": 164.6,
+    "piotroski_skor": 4,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\ALVES\\ALVES_Mikroskop_Raporu.html"
+}

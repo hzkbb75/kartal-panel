@@ -1,0 +1,21 @@
+{
+    "kod": "SOKE",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Gıda",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 22.1,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 6.83,
+    "aylik_degisim": 11.1,
+    "satis_milyon_tl": 8875.0,
+    "net_kar_milyon_tl": -400.0,
+    "cfo_milyon_tl": 80.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 4.0,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\SOKE\\SOKE_Mikroskop_Raporu.html"
+}

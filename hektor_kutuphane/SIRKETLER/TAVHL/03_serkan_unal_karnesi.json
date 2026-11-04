@@ -1,0 +1,358 @@
+{
+  "kod": "TAVHL",
+  "sirket_adi": "TAV HAVALİMANLARI HOLDİNG A.Ş.",
+  "sektor": "TAV Holding",
+  "kategori": "Kırılgan Hendekli",
+  "fiyat_tl": 260.0,
+  "f_skor": 7,
+  "tavan_agirlik": 5.0,
+  "mevcut_agirlik": 0.0,
+  "kademe_durumu": "1/3 Başlangıç",
+  "degerleme_bandi": {
+    "fk": 11.2,
+    "alt_fk": 7.3,
+    "medyan_fk": 10.6,
+    "ust_fk": 15.1,
+    "marj_durum": "DENGELİ / MAKUL DEĞERLEME",
+    "marj_renk": "badge-warn",
+    "konum_yuzde": 50
+  },
+  "birikimli_dipnot": {
+    "kod": "TAVHL",
+    "son_guncelleme": "2026-11-02 17:02",
+    "donemler": {
+      "2025/06": {
+        "efm_yuzde": 6.1,
+        "icr_kati": 1.26,
+        "tahakkuk_orani": -0.84,
+        "aga_orani": 0.0,
+        "ykp_orani": 0.0,
+        "dso_gun": 96.4,
+        "acm_makasi": 0.0,
+        "serefiye_ozk_orani": 14.1,
+        "karsilik_ozk_orani": 1.9,
+        "iliskili_orani": 0.0,
+        "dts_skor": 15,
+        "uyarilar": [
+          "🔴 Faiz karşılama oranı 1.26x ile kritik sınırda (Efektif Borç Maliyeti: %6.1)."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": 0.0,
+        "tahakkuk_delta": 0.0
+      },
+      "2025/09": {
+        "efm_yuzde": 9.0,
+        "icr_kati": 1.83,
+        "tahakkuk_orani": 1.62,
+        "aga_orani": 24.1,
+        "ykp_orani": 43.4,
+        "dso_gun": 58.3,
+        "acm_makasi": -71.0,
+        "serefiye_ozk_orani": 13.0,
+        "karsilik_ozk_orani": 1.8,
+        "iliskili_orani": 0.0,
+        "dts_skor": 15,
+        "uyarilar": [
+          "🟡 Kağıt üzeri kâr payı yüksek (%43.4): Değerleme ve ertelenmiş vergi geliri net kârı şişiriyor."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": -38.1,
+        "tahakkuk_delta": 2.46
+      },
+      "2026/06": {
+        "efm_yuzde": 4.9,
+        "icr_kati": 1.52,
+        "tahakkuk_orani": 0.2,
+        "aga_orani": 84.5,
+        "ykp_orani": 452.1,
+        "dso_gun": 85.0,
+        "acm_makasi": 34.0,
+        "serefiye_ozk_orani": 14.0,
+        "karsilik_ozk_orani": 3.0,
+        "iliskili_orani": 0.0,
+        "dts_skor": 45,
+        "uyarilar": [
+          "🟡 Kağıt üzeri kâr payı yüksek (%452.1): Değerleme ve ertelenmiş vergi geliri net kârı şişiriyor.",
+          "🟡 Alacak-Ciro makası +%34.0 açıldı (DSO: 85.0 gün): Şüpheli alacak ve vade uzaması riski.",
+          "🟡 Maddi olmayan varlık aktifleştirme ivmesi EFK'nın %84.5'i düzeyinde (Ar-Ge aktifleştirme kontrolü)."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 30,
+        "dso_delta": 26.7,
+        "tahakkuk_delta": -1.42
+      },
+      "2026/09": {
+        "efm_yuzde": 6.8,
+        "icr_kati": 1.97,
+        "tahakkuk_orani": 3.21,
+        "aga_orani": 11.3,
+        "ykp_orani": 29.8,
+        "dso_gun": 55.9,
+        "acm_makasi": -59.1,
+        "serefiye_ozk_orani": 12.5,
+        "karsilik_ozk_orani": 2.7,
+        "iliskili_orani": 0.0,
+        "dts_skor": 0,
+        "uyarilar": [
+          "🟢 Dipnot rasyolarında muhasebe makyajı veya tahsilat/borç anomalisi tespit edilmedi."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": -45,
+        "dso_delta": -29.1,
+        "tahakkuk_delta": 3.01
+      }
+    }
+  },
+  "sirketi_tani": {
+    "sirket_adi": "TAV HAVALİMANLARI HOLDİNG A.Ş.",
+    "ne_is_yapar": "TAV HAVALİMANLARI HOLDİNG A.Ş., TAV Holding sektöründe üretim, satış ve operasyonel faaliyetlerini yürüten Borsa İstanbul şirketidir.",
+    "urun_ve_pazar": "TAV Holding ana ürün ve hizmet grubu | Yurt içi kurumsal/bireysel müşteriler ve ihracat pazarları",
+    "piyasa_degeri": "90.3 milyar TL",
+    "net_kar_12ay": "9.62 milyar TL",
+    "net_kar_yorum": "Son dönemde 9.62 milyar TL net kâr elde edildi; yıllık değişim %+138.9.",
+    "roe_deger": "%10.0",
+    "roe_yorum": "Özkaynak kârlılığı (ROE) %10.0; TAV Holding sektöründe sermaye maliyeti ve enflasyon karşısında izlemede.",
+    "carpan_ozet": "F/K: 11.2x | FD/FAVÖK: 5.7x"
+  },
+  "dna_ve_gidisat": [
+    {
+      "baslik": "Büyüme & Satış Hızı (Satışlar Hızlanıyor mu?)",
+      "deger": "%+27.8",
+      "durum": "GÜÇLÜ",
+      "yorum": "Yıllık satış gelirleri 60.87 milyar TL seviyesinden 77.78 milyar TL seviyesine geldi (%+27.8)."
+    },
+    {
+      "baslik": "Operasyonel Kâr & Marjlar (Marjlar Güçleniyor mu?)",
+      "deger": "EFK Marjı %23.5",
+      "durum": "DARALMA VAR",
+      "yorum": "Esas faaliyet kârı 18.30 milyar TL oldu. Operasyonel kâr marjı geçen döneme göre -0.1 puan değişti."
+    },
+    {
+      "baslik": "Parası Var mı? (Kârın Nakde Dönüşüm Gücü)",
+      "deger": "1 TL Kâra 1.69 TL Nakit",
+      "durum": "SAĞLAM",
+      "yorum": "Her 1 liralık net kâra karşılık faaliyetlerden 1.69 lira nakit (CFO: 16.23 milyar TL) üretildi. Nakit kalitesi çok yüksek."
+    },
+    {
+      "baslik": "Bilanço Sağlamlığı & Borç Gidişatı (Borç Azalıyor mu?)",
+      "deger": "%0 Kısa Vadeli | 1.17x",
+      "durum": "GÜVENLİ",
+      "yorum": "Toplam yükümlülüklerin %0.0 kadarı kısa vadeli. Net borç değişimi: 43.67 milyar TL (Güncel Net Borç: 112.97 milyar TL)."
+    }
+  ],
+  "bilanco_degisimleri": [
+    {
+      "kalem": "ANA ORTAKLIK ÖZKAYNAĞI %20.2 YÜKSELDİ",
+      "guncel_tutar": "96.21 milyar TL",
+      "ne_ifade_ediyor": "80.04 milyar TL → 96.21 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %6.5 kadarı. Özkaynak artışı dönem net kârı ile beslendiğinde şirketin içsel değerini ve bilanço tamponunu büyütür."
+    },
+    {
+      "kalem": "MADDİ DURAN VARLIKLAR %33.7 YÜKSELDİ",
+      "guncel_tutar": "45.84 milyar TL",
+      "ne_ifade_ediyor": "34.29 milyar TL → 45.84 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %4.7 kadarı. Üretim tesisi, makine ve kapasite yatırımlarını gösterir; gelecek dönem reel büyümenin öncü göstergesidir."
+    },
+    {
+      "kalem": "ERTELENMİŞ GELİR & SİPARİŞ AVANSLARI %25.1 YÜKSELDİ",
+      "guncel_tutar": "1.49 milyar TL",
+      "ne_ifade_ediyor": "1.19 milyar TL → 1.49 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %0.1 kadarı. Müşterilerden peşin alınan avansları ifade eder; şirketin pazarlık gücünü ve gelecekte yazılacak hazır hasılatı gösterir."
+    },
+    {
+      "kalem": "STOKLAR %115.5 YÜKSELDİ",
+      "guncel_tutar": "4.12 milyar TL",
+      "ne_ifade_ediyor": "1.91 milyar TL → 4.12 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %0.9 kadarı. Stok artışının satış büyümesiyle uyumlu olması sağlıklıdır; satıştan kopuk stok şişmesi nakit döngüsünü yavaşlatır."
+    },
+    {
+      "kalem": "TİCARİ ALACAK BAKİYESİ %22.5 YÜKSELDİ",
+      "guncel_tutar": "11.90 milyar TL",
+      "ne_ifade_ediyor": "9.72 milyar TL → 11.90 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %0.9 kadarı. Ticari alacak büyümesi ciro artışının altında kalıyorsa tahsilat disiplini güçlüdür; aşması durumunda vade açılması izlenmelidir."
+    }
+  ],
+  "kap_haberleri": [
+    {
+      "tarih": "27.10.2026",
+      "kategori": "Finansal Rapor",
+      "baslik": "(Güncelleme) Özel Haber-Borsada 2026 yılı 3. çeyrek bilanço döneminde açıklama tarihleri",
+      "meal": "Açıklanan tablolarda net kârın işletme nakit akışına dönüşüm oranı (CFO > Net Kâr) ve kısa vadeli borç çevrimi teyit edilmelidir."
+    },
+    {
+      "tarih": "26.10.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Ata Yatırım TAVHL için 372.12 TL hedef fiyat belirledi ve AL tavsiyesini korudu. (Önceki hedef fiyat: 341.03 TL)",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    },
+    {
+      "tarih": "23.10.2026",
+      "kategori": "Finansal Rapor",
+      "baslik": "Özel Haber-Bilanço dönemi başladı, Matriks Haber anketinde beklentisi bulunan dört şirketin net kârı tahminleri aştı",
+      "meal": "Açıklanan tablolarda net kârın işletme nakit akışına dönüşüm oranı (CFO > Net Kâr) ve kısa vadeli borç çevrimi teyit edilmelidir."
+    },
+    {
+      "tarih": "23.10.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Gedik Yatırım TAVHL için 464 TL hedef fiyat belirledi ve Endeks Üstü Getiri tavsiyesini korudu. (Önceki hedef fiyat: 464 TL)",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    },
+    {
+      "tarih": "23.10.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Toplantı notları  -TAVHL (Gedik Yatırım)",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    }
+  ],
+  "son_soz": {
+    "dikkat_cekenler": [
+      "Güçlü nakit üretimi: Her 1 TL net kâra karşılık 1.69 TL işletme nakit akışı (CFO) üretildi.",
+      "Dengeli borç vadesi: Kısa vadeli yükümlülük payı %0.0 ile çevrilebilir sınırda.",
+      "Finansal sağlık skoru yüksek: Piotroski F-Skoru 7/9 ile bilanço ivmesi pozitif."
+    ],
+    "sevmediklerim": [
+      "Temel tabloda kırmızı çizgi ihlali yok; sektörel talep ve çeyreklik marj seyri rutin izlenmeli."
+    ],
+    "borsaci_gozuyle": "TAV HAVALİMANLARI HOLDİNG A.Ş. (TAVHL), TAV Holding sektöründe 'Kırılgan Hendekli' hendek yapısıyla faaliyet gösteriyor. Son dönemde 77.78 milyar TL satış geliri ve 9.62 milyar TL net kâr üretirken, her 1 TL kâra karşılık 1.69 TL işletme nakit akışı sağlaması işin motorunun nakit ürettiğini gösteriyor. Toplam yükümlülüklerin %0.0 seviyesinin kısa vadeli olması ve Net Borç/Özkaynak rasyosunun 1.17x düzeyinde bulunması nedeniyle Serkan Ünal kuralları çerçevesinde portföyde maksimum %5.0 ağırlık tavanıyla (1/3 Başlangıç) takip edilmesi rasyoneldir."
+  },
+  "bolum1_elemeler": [
+    {
+      "kriter": "Halka Açıklık Oranı & Ortaklık Yapısı",
+      "deger": "%49.8",
+      "durum": "GEÇTİ",
+      "not": "Tavan %70 sınırının altında, güvenli ortaklık yapısı"
+    },
+    {
+      "kriter": "Küçük Ortağı Ezen İmtiyaz Kontrolü",
+      "deger": "YOK",
+      "durum": "TEMİZ",
+      "not": "Kâr payı dağıtımında veya oyda küçük ortağı dışlayan imtiyaz yok"
+    },
+    {
+      "kriter": "Hâkim Ortak ve Yönetim Sicili",
+      "deger": "GÜVENİLİR",
+      "durum": "TEMİZ",
+      "not": "Geçmişte azınlık ortaklarını zarara uğratan sistematik karar yok"
+    },
+    {
+      "kriter": "İlişkili Taraflara Kaynak Çıkışı",
+      "deger": "%0.00",
+      "durum": "TEMİZ",
+      "not": "Holding veya grup şirketlerine faizsiz kaynak çıkışı yok (< %5)"
+    },
+    {
+      "kriter": "Finansal Borç ve Gelir Yapısı Uyumu",
+      "deger": "1.17x",
+      "durum": "GÜVENLİ",
+      "not": "Borçlanma döviz ve vade yapısı faaliyet gelirleriyle uyumlu"
+    },
+    {
+      "kriter": "Hâkim Ortak Borsa Hisse Satışı",
+      "deger": "BİLDİRİM YOK",
+      "durum": "TEMİZ",
+      "not": "Hâkim ortakların borsada doğrudan satış baskısı oluşturacak satışı bulunmuyor"
+    }
+  ],
+  "bolum2_is_kalitesi": [
+    {
+      "kriter": "Pazar Payı İstikrarı & Yeni Oyuncu Tehdidi",
+      "durum": "GÜÇLÜ",
+      "aciklama": "TAV Holding sektöründe faaliyet gösteren ve temel finansal süzgeçleri geçen şirket."
+    },
+    {
+      "kriter": "Kârın Niteliği & Esas Faaliyet Dayanıklılığı",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Kâr doğrudan esas faaliyet ve operasyonel iş modelinden üretiliyor, reel ve sürdürülebilir"
+    },
+    {
+      "kriter": "Ekonomik Hendek Kaynağı & Korunabilirlik",
+      "durum": "KIRILGAN HENDEKLI",
+      "aciklama": "Kırılgan Hendekli sınıfında; ölçek, dağıtım kanalı veya geçiş maliyeti avantajına sahip."
+    },
+    {
+      "kriter": "Kurumsal Yapı & Şahıstan Bağımsız İşleyiş",
+      "durum": "OTURMUŞ",
+      "aciklama": "Kişilerden bağımsız işleyen kurumsal organizasyon ve yönetim kurulu yapısı."
+    },
+    {
+      "kriter": "Yönetim Güvenilirliği & Hedef Tutarlılığı",
+      "durum": "TUTARLI",
+      "aciklama": "Faaliyet raporlarında ve sunumlarda verilen geçmiş dönem hedefleri ile gerçekleşmeler tutarlı"
+    },
+    {
+      "kriter": "Reel Büyüme & Faaliyet Marjı Koruması",
+      "durum": "DENGELİ",
+      "aciklama": "Enflasyon üzeri ciro büyümesi ve operasyonel FAVÖK marjı disiplini korunuyor"
+    }
+  ],
+  "bolum3_tablolar": [
+    {
+      "kriter": "Kâr Nakde Dönüşüyor mu? (CFO > Net Kâr)",
+      "durum": "BAŞARILI",
+      "aciklama": "Her 1 TL net kâra karşılık 1.69 TL işletme nakit akışı üretildi."
+    },
+    {
+      "kriter": "Kârın Tekrarlanabilirliği (Çekirdek Kâr Payı)",
+      "durum": "GÜÇLÜ",
+      "aciklama": "%80+ Ana operasyonel kâr; duran varlık satışı, kur farkı gibi tek seferlik etkiler arındırıldı"
+    },
+    {
+      "kriter": "Dipnot Riskleri (TRİ, Kefalet, Kısa Vade Borç)",
+      "durum": "TEMİZ",
+      "aciklama": "Kısa vadeli borç payı %0.0; TRİ ve kefaletler normal sınırda (< %20)"
+    },
+    {
+      "kriter": "Konsolidasyon Netliği & İştirak Saydamlığı",
+      "durum": "ŞEFFAF",
+      "aciklama": "Konsolide finansallar şirketin çekirdek işini doğrudan yansıtıyor, maskelenmiş zarar yok"
+    }
+  ],
+  "bolum4_fiyat_degerleme": [
+    {
+      "kriter": "Varsayım Tutarlılığı & Büyüme Senaryosu",
+      "durum": "RASYONEL",
+      "aciklama": "TAV Holding pazar payı istikrarı, ciro büyümesi ve operasyonel marjların korunması varsayımı."
+    },
+    {
+      "kriter": "Çarpan Paydası Sürdürülebilirliği",
+      "durum": "SAĞLAM",
+      "aciklama": "Fiyat/Kazanç ve FD/FAVÖK çarpanlarının paydasındaki operasyonel kâr sürdürülebilir"
+    },
+    {
+      "kriter": "Büyümenin Değeri (ROIC > Sermaye Maliyeti)",
+      "durum": "VERİMLİ",
+      "aciklama": "Yatırılan sermayenin getirisi sermaye maliyetinin üzerinde; büyüme serbest nakit akışı üretiyor"
+    },
+    {
+      "kriter": "Güvenlik Marjı & Yanılma Payı Alanı",
+      "durum": "UYGUN",
+      "aciklama": "Tarihsel değerleme çarpanı bandında alt çeyrek / dengeli bölgede; analitik yanılma payı mevcut"
+    }
+  ],
+  "bolum5_karar_ve_cikis": {
+    "hendek_sinifi": "Kırılgan Hendekli",
+    "portfoy_tavani": "Maksimum %5.0",
+    "mevcut_agirlik": "%0.00",
+    "asamalandirma_kurali": "Min %1.0 ile başla, maks %5.0 tavanını aşma. Durum: 1/3 Başlangıç",
+    "cikis_tetikleyicileri": [
+      "(1) Yönetim veya hâkim hissedar değişimi ve kurumsal nitelik kaybı yaşanması",
+      "(2) Hâkim hissedarın borsada doğrudan pay satışı başlatması",
+      "(3) İlişkili taraflara şüpheli/denetimsiz finansal borç veya kaynak aktarımı",
+      "(4) Şirketin iş modelinde veya sektöründe kalıcı yapısal kırılma",
+      "(5) İlk yatırım analizinde sonradan önemli bir analitik hata tespit edilmesi"
+    ]
+  }
+}

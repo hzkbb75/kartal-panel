@@ -1,0 +1,21 @@
+{
+    "kod": "ESEN",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Elektrik Üretim",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 44.9,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 1.82,
+    "aylik_degisim": -28.1,
+    "satis_milyon_tl": 1756.0,
+    "net_kar_milyon_tl": -1364.0,
+    "cfo_milyon_tl": 931.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.36,
+    "nakit_dongusu_gun": 20.6,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\ESEN\\ESEN_Mikroskop_Raporu.html"
+}

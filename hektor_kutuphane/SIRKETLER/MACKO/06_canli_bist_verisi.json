@@ -1,0 +1,21 @@
+{
+    "kod": "MACKO",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Eğlence Hizmetleri",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 100.0,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "Halka Açıklık > %70 (%100.0)",
+    "fiyat_tl": 24.24,
+    "aylik_degisim": -4.3,
+    "satis_milyon_tl": 1295.0,
+    "net_kar_milyon_tl": 379.0,
+    "cfo_milyon_tl": 300.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.08,
+    "nakit_dongusu_gun": 67.1,
+    "piotroski_skor": 3,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\MACKO\\MACKO_Mikroskop_Raporu.html"
+}

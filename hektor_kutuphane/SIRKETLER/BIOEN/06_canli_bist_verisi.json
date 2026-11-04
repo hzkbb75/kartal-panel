@@ -1,0 +1,21 @@
+{
+    "kod": "BIOEN",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Elektrik Üretim",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 50.4,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 10.4,
+    "aylik_degisim": -8.4,
+    "satis_milyon_tl": 3466.0,
+    "net_kar_milyon_tl": -1628.0,
+    "cfo_milyon_tl": 863.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 1.94,
+    "nakit_dongusu_gun": -32.8,
+    "piotroski_skor": 3,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\BIOEN\\BIOEN_Mikroskop_Raporu.html"
+}

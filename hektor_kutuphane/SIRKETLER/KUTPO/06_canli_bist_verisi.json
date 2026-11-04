@@ -1,0 +1,21 @@
+{
+    "kod": "KUTPO",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Seramik",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 39.9,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 56.25,
+    "aylik_degisim": -14.8,
+    "satis_milyon_tl": 4974.0,
+    "net_kar_milyon_tl": 275.0,
+    "cfo_milyon_tl": 240.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 202.0,
+    "piotroski_skor": 5,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\KUTPO\\KUTPO_Mikroskop_Raporu.html"
+}

@@ -1,0 +1,21 @@
+{
+    "kod": "AGYO",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Atakule GYO",
+    "kategori": "Kırılgan Hendekli",
+    "tavan_agirlik": 5.0,
+    "halka_aciklik": 18.3,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 5.6,
+    "aylik_degisim": -16.4,
+    "satis_milyon_tl": 493.0,
+    "net_kar_milyon_tl": -283.0,
+    "cfo_milyon_tl": 62.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 8.4,
+    "piotroski_skor": 7,
+    "sinyal": "FIRSAT ADAYI",
+    "rapor_linki": "SIRKETLER\\AGYO\\AGYO_Mikroskop_Raporu.html"
+}

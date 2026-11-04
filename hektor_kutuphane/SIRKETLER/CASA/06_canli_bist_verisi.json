@@ -1,0 +1,21 @@
+{
+    "kod": "CASA",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Perakande - Ticaret",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 4.9,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "2 Dönem Negatif Nakit Akışı (CFO < 0)",
+    "fiyat_tl": 32.98,
+    "aylik_degisim": -19.6,
+    "satis_milyon_tl": 1344.0,
+    "net_kar_milyon_tl": -154.0,
+    "cfo_milyon_tl": -73.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 7.0,
+    "piotroski_skor": 5,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\CASA\\CASA_Mikroskop_Raporu.html"
+}

@@ -1,0 +1,336 @@
+{
+  "kod": "BAGFS",
+  "sirket_adi": "BAGFAŞ BANDIRMA GÜBRE FABRİKALARI A.Ş.",
+  "sektor": "Bandırma Gübre Fabrikaları A",
+  "kategori": "Hendeksiz",
+  "fiyat_tl": 16.61,
+  "f_skor": 7,
+  "tavan_agirlik": 3.0,
+  "mevcut_agirlik": 0.0,
+  "kademe_durumu": "1/3 Başlangıç",
+  "degerleme_bandi": {
+    "fk": 10.0,
+    "alt_fk": 6.0,
+    "medyan_fk": 11.0,
+    "ust_fk": 16.0,
+    "marj_durum": "DENGELİ / MAKUL DEĞERLEME",
+    "marj_renk": "badge-warn",
+    "konum_yuzde": 50
+  },
+  "birikimli_dipnot": {
+    "kod": "BAGFS",
+    "son_guncelleme": "2026-11-02 17:24",
+    "donemler": {
+      "2025/06": {
+        "efm_yuzde": 19.8,
+        "icr_kati": 0.33,
+        "tahakkuk_orani": 1.74,
+        "aga_orani": 0.0,
+        "ykp_orani": 358.4,
+        "dso_gun": 41.2,
+        "acm_makasi": 0.0,
+        "serefiye_ozk_orani": 0.0,
+        "karsilik_ozk_orani": 0.4,
+        "iliskili_orani": 0.0,
+        "dts_skor": 30,
+        "uyarilar": [
+          "🟡 Kağıt üzeri kâr payı yüksek (%358.4): Değerleme ve ertelenmiş vergi geliri net kârı şişiriyor.",
+          "🔴 Faiz karşılama oranı 0.33x ile kritik sınırda (Efektif Borç Maliyeti: %19.8)."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": 0.0,
+        "tahakkuk_delta": 0.0
+      },
+      "2025/09": {
+        "efm_yuzde": 17.7,
+        "icr_kati": 0.28,
+        "tahakkuk_orani": 0.2,
+        "aga_orani": 0.0,
+        "ykp_orani": 1903.2,
+        "dso_gun": 27.9,
+        "acm_makasi": -33.9,
+        "serefiye_ozk_orani": 0.0,
+        "karsilik_ozk_orani": 0.4,
+        "iliskili_orani": 0.0,
+        "dts_skor": 30,
+        "uyarilar": [
+          "🟡 Kağıt üzeri kâr payı yüksek (%1903.2): Değerleme ve ertelenmiş vergi geliri net kârı şişiriyor.",
+          "🔴 Faiz karşılama oranı 0.28x ile kritik sınırda (Efektif Borç Maliyeti: %17.7)."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": -13.3,
+        "tahakkuk_delta": -1.54
+      },
+      "2026/06": {
+        "efm_yuzde": 0.9,
+        "icr_kati": 2.01,
+        "tahakkuk_orani": 2.01,
+        "aga_orani": 0.8,
+        "ykp_orani": 38.4,
+        "dso_gun": 71.6,
+        "acm_makasi": 130.2,
+        "serefiye_ozk_orani": 0.0,
+        "karsilik_ozk_orani": 0.4,
+        "iliskili_orani": 0.0,
+        "dts_skor": 30,
+        "uyarilar": [
+          "🟡 Kağıt üzeri kâr payı yüksek (%38.4): Değerleme ve ertelenmiş vergi geliri net kârı şişiriyor.",
+          "🟡 Alacak-Ciro makası +%130.2 açıldı (DSO: 71.6 gün): Şüpheli alacak ve vade uzaması riski."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": 43.7,
+        "tahakkuk_delta": 1.81
+      }
+    }
+  },
+  "sirketi_tani": {
+    "sirket_adi": "BAGFAŞ BANDIRMA GÜBRE FABRİKALARI A.Ş.",
+    "ne_is_yapar": "BAGFAŞ BANDIRMA GÜBRE FABRİKALARI A.Ş., Bandırma Gübre Fabrikaları A sektöründe üretim, satış ve operasyonel faaliyetlerini yürüten Borsa İstanbul şirketidir.",
+    "urun_ve_pazar": "Bandırma Gübre Fabrikaları A ana ürün ve hizmet grubu | Yurt içi kurumsal/bireysel müşteriler ve ihracat pazarları",
+    "piyasa_degeri": "2.2 milyar TL",
+    "net_kar_12ay": "331 milyon TL",
+    "net_kar_yorum": "Son dönemde 331 milyon TL net kâr elde edildi; yıllık değişim %+53.8.",
+    "roe_deger": "%3.7",
+    "roe_yorum": "Özkaynak kârlılığı (ROE) %3.7; Bandırma Gübre Fabrikaları A sektöründe sermaye maliyeti ve enflasyon karşısında izlemede.",
+    "carpan_ozet": "F/K: 10.0x | FD/FAVÖK: 7.7x"
+  },
+  "dna_ve_gidisat": [
+    {
+      "baslik": "Büyüme & Satış Hızı (Satışlar Hızlanıyor mu?)",
+      "deger": "%-12.5",
+      "durum": "DENGELİ",
+      "yorum": "Yıllık satış gelirleri 3.87 milyar TL seviyesinden 3.39 milyar TL seviyesine geldi (%-12.5)."
+    },
+    {
+      "baslik": "Operasyonel Kâr & Marjlar (Marjlar Güçleniyor mu?)",
+      "deger": "EFK Marjı %2.4",
+      "durum": "DARALMA VAR",
+      "yorum": "Esas faaliyet kârı 81 milyon TL oldu. Operasyonel kâr marjı geçen döneme göre -4.4 puan değişti."
+    },
+    {
+      "baslik": "Parası Var mı? (Kârın Nakde Dönüşüm Gücü)",
+      "deger": "1 TL Kâra 3.84 TL Nakit",
+      "durum": "SAĞLAM",
+      "yorum": "Her 1 liralık net kâra karşılık faaliyetlerden 3.84 lira nakit (CFO: 1.27 milyar TL) üretildi. Nakit kalitesi çok yüksek."
+    },
+    {
+      "baslik": "Bilanço Sağlamlığı & Borç Gidişatı (Borç Azalıyor mu?)",
+      "deger": "%0 Kısa Vadeli | 0.55x",
+      "durum": "GÜVENLİ",
+      "yorum": "Toplam yükümlülüklerin %0.0 kadarı kısa vadeli. Net borç değişimi: 1.39 milyar TL (Güncel Net Borç: 4.94 milyar TL)."
+    }
+  ],
+  "bilanco_degisimleri": [
+    {
+      "kalem": "ANA ORTAKLIK ÖZKAYNAĞI %35.2 YÜKSELDİ",
+      "guncel_tutar": "8.94 milyar TL",
+      "ne_ifade_ediyor": "6.61 milyar TL → 8.94 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %18.8 kadarı. Özkaynak artışı dönem net kârı ile beslendiğinde şirketin içsel değerini ve bilanço tamponunu büyütür."
+    },
+    {
+      "kalem": "MADDİ DURAN VARLIKLAR %21.2 YÜKSELDİ",
+      "guncel_tutar": "9.86 milyar TL",
+      "ne_ifade_ediyor": "8.13 milyar TL → 9.86 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %14.0 kadarı. Üretim tesisi, makine ve kapasite yatırımlarını gösterir; gelecek dönem reel büyümenin öncü göstergesidir."
+    },
+    {
+      "kalem": "ERTELENMİŞ GELİR & SİPARİŞ AVANSLARI %44.5 YÜKSELDİ",
+      "guncel_tutar": "678 milyon TL",
+      "ne_ifade_ediyor": "469 milyon TL → 678 milyon TL. Değişimin büyüklüğü önceki toplam varlığın %1.7 kadarı. Müşterilerden peşin alınan avansları ifade eder; şirketin pazarlık gücünü ve gelecekte yazılacak hazır hasılatı gösterir."
+    },
+    {
+      "kalem": "STOKLAR %134.4 YÜKSELDİ",
+      "guncel_tutar": "1.60 milyar TL",
+      "ne_ifade_ediyor": "681 milyon TL → 1.60 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %7.4 kadarı. Stok artışının satış büyümesiyle uyumlu olması sağlıklıdır; satıştan kopuk stok şişmesi nakit döngüsünü yavaşlatır."
+    },
+    {
+      "kalem": "TİCARİ ALACAK BAKİYESİ %52.0 YÜKSELDİ",
+      "guncel_tutar": "664 milyon TL",
+      "ne_ifade_ediyor": "437 milyon TL → 664 milyon TL. Değişimin büyüklüğü önceki toplam varlığın %1.8 kadarı. Ticari alacak büyümesi ciro artışının altında kalıyorsa tahsilat disiplini güçlüdür; aşması durumunda vade açılması izlenmelidir."
+    }
+  ],
+  "kap_haberleri": [
+    {
+      "tarih": "17.08.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "BAGFS Bagfaş Bandırma Gübre Fabrikaları konsolide bilanço 2026 6 aylık net karı 330,567,193 TL (Önceki: 284,001,385 TL net kar)",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    },
+    {
+      "tarih": "22.07.2026",
+      "kategori": "KAP / Şirket Gelişmesi",
+      "baslik": "Bagfaş , İSO İkinci 500 Listesinde 105. Sırada Yer Aldı",
+      "meal": "Şirketin ana faaliyet görünümüne, nakit akışına ve yatırım tezine olası etkisi faaliyet raporu dipnotlarıyla birlikte izlenmelidir."
+    },
+    {
+      "tarih": "12.05.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "BAGFS  Bagfaş Bandırma Gübre Fabrikaları konsolide bilanço 2026 3 aylık net zararı 3.113.021 TL (Önceki: 500.599.159 TL net kar)",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    },
+    {
+      "tarih": "11.03.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "BAGFS Bagfaş Bandırma Gübre Fabrikaları konsolide bilanço 2025 Yıllık net karı 123,493,065 TL (Önceki: 1,716,561,339 TL net zarar)",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    },
+    {
+      "tarih": "05.03.2026",
+      "kategori": "KAP / Şirket Gelişmesi",
+      "baslik": "VBTS kapsamında BAGFS.E, ISGSY.E ve MEKAG.E payları seans başından 3 Nisan seans sonuna kadar açığa satışa ve kredili işlemlere konu edilemeyecek",
+      "meal": "Şirketin ana faaliyet görünümüne, nakit akışına ve yatırım tezine olası etkisi faaliyet raporu dipnotlarıyla birlikte izlenmelidir."
+    }
+  ],
+  "son_soz": {
+    "dikkat_cekenler": [
+      "Güçlü nakit üretimi: Her 1 TL net kâra karşılık 3.84 TL işletme nakit akışı (CFO) üretildi.",
+      "Dengeli borç vadesi: Kısa vadeli yükümlülük payı %0.0 ile çevrilebilir sınırda.",
+      "Finansal sağlık skoru yüksek: Piotroski F-Skoru 7/9 ile bilanço ivmesi pozitif.",
+      "Makul çarpan: F/K 10.0x ile tarihsel ve sektörel ortalamalara göre güvenlik marjı sunuyor."
+    ],
+    "sevmediklerim": [
+      "Temel tabloda kırmızı çizgi ihlali yok; sektörel talep ve çeyreklik marj seyri rutin izlenmeli."
+    ],
+    "borsaci_gozuyle": "BAGFAŞ BANDIRMA GÜBRE FABRİKALARI A.Ş. (BAGFS), Bandırma Gübre Fabrikaları A sektöründe 'Hendeksiz' hendek yapısıyla faaliyet gösteriyor. Son dönemde 3.39 milyar TL satış geliri ve 331 milyon TL net kâr üretirken, her 1 TL kâra karşılık 3.84 TL işletme nakit akışı sağlaması işin motorunun nakit ürettiğini gösteriyor. Toplam yükümlülüklerin %0.0 seviyesinin kısa vadeli olması ve Net Borç/Özkaynak rasyosunun 0.55x düzeyinde bulunması nedeniyle Serkan Ünal kuralları çerçevesinde portföyde maksimum %3.0 ağırlık tavanıyla (1/3 Başlangıç) takip edilmesi rasyoneldir."
+  },
+  "bolum1_elemeler": [
+    {
+      "kriter": "Halka Açıklık Oranı & Ortaklık Yapısı",
+      "deger": "%56.1",
+      "durum": "GEÇTİ",
+      "not": "Tavan %70 sınırının altında, güvenli ortaklık yapısı"
+    },
+    {
+      "kriter": "Küçük Ortağı Ezen İmtiyaz Kontrolü",
+      "deger": "YOK",
+      "durum": "TEMİZ",
+      "not": "Kâr payı dağıtımında veya oyda küçük ortağı dışlayan imtiyaz yok"
+    },
+    {
+      "kriter": "Hâkim Ortak ve Yönetim Sicili",
+      "deger": "GÜVENİLİR",
+      "durum": "TEMİZ",
+      "not": "Geçmişte azınlık ortaklarını zarara uğratan sistematik karar yok"
+    },
+    {
+      "kriter": "İlişkili Taraflara Kaynak Çıkışı",
+      "deger": "%0.00",
+      "durum": "TEMİZ",
+      "not": "Holding veya grup şirketlerine faizsiz kaynak çıkışı yok (< %5)"
+    },
+    {
+      "kriter": "Finansal Borç ve Gelir Yapısı Uyumu",
+      "deger": "0.55x",
+      "durum": "GÜVENLİ",
+      "not": "Borçlanma döviz ve vade yapısı faaliyet gelirleriyle uyumlu"
+    },
+    {
+      "kriter": "Hâkim Ortak Borsa Hisse Satışı",
+      "deger": "BİLDİRİM YOK",
+      "durum": "TEMİZ",
+      "not": "Hâkim ortakların borsada doğrudan satış baskısı oluşturacak satışı bulunmuyor"
+    }
+  ],
+  "bolum2_is_kalitesi": [
+    {
+      "kriter": "Pazar Payı İstikrarı & Yeni Oyuncu Tehdidi",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Bandırma Gübre Fabrikaları A sektöründe faaliyet gösteren ve temel finansal süzgeçleri geçen şirket."
+    },
+    {
+      "kriter": "Kârın Niteliği & Esas Faaliyet Dayanıklılığı",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Kâr doğrudan esas faaliyet ve operasyonel iş modelinden üretiliyor, reel ve sürdürülebilir"
+    },
+    {
+      "kriter": "Ekonomik Hendek Kaynağı & Korunabilirlik",
+      "durum": "HENDEKSIZ",
+      "aciklama": "Hendeksiz sınıfında; ölçek, dağıtım kanalı veya geçiş maliyeti avantajına sahip."
+    },
+    {
+      "kriter": "Kurumsal Yapı & Şahıstan Bağımsız İşleyiş",
+      "durum": "OTURMUŞ",
+      "aciklama": "Kişilerden bağımsız işleyen kurumsal organizasyon ve yönetim kurulu yapısı."
+    },
+    {
+      "kriter": "Yönetim Güvenilirliği & Hedef Tutarlılığı",
+      "durum": "TUTARLI",
+      "aciklama": "Faaliyet raporlarında ve sunumlarda verilen geçmiş dönem hedefleri ile gerçekleşmeler tutarlı"
+    },
+    {
+      "kriter": "Reel Büyüme & Faaliyet Marjı Koruması",
+      "durum": "DENGELİ",
+      "aciklama": "Enflasyon üzeri ciro büyümesi ve operasyonel FAVÖK marjı disiplini korunuyor"
+    }
+  ],
+  "bolum3_tablolar": [
+    {
+      "kriter": "Kâr Nakde Dönüşüyor mu? (CFO > Net Kâr)",
+      "durum": "BAŞARILI",
+      "aciklama": "Her 1 TL net kâra karşılık 3.84 TL işletme nakit akışı üretildi."
+    },
+    {
+      "kriter": "Kârın Tekrarlanabilirliği (Çekirdek Kâr Payı)",
+      "durum": "GÜÇLÜ",
+      "aciklama": "%80+ Ana operasyonel kâr; duran varlık satışı, kur farkı gibi tek seferlik etkiler arındırıldı"
+    },
+    {
+      "kriter": "Dipnot Riskleri (TRİ, Kefalet, Kısa Vade Borç)",
+      "durum": "TEMİZ",
+      "aciklama": "Kısa vadeli borç payı %0.0; TRİ ve kefaletler normal sınırda (< %20)"
+    },
+    {
+      "kriter": "Konsolidasyon Netliği & İştirak Saydamlığı",
+      "durum": "ŞEFFAF",
+      "aciklama": "Konsolide finansallar şirketin çekirdek işini doğrudan yansıtıyor, maskelenmiş zarar yok"
+    }
+  ],
+  "bolum4_fiyat_degerleme": [
+    {
+      "kriter": "Varsayım Tutarlılığı & Büyüme Senaryosu",
+      "durum": "RASYONEL",
+      "aciklama": "Bandırma Gübre Fabrikaları A pazar payı istikrarı, ciro büyümesi ve operasyonel marjların korunması varsayımı."
+    },
+    {
+      "kriter": "Çarpan Paydası Sürdürülebilirliği",
+      "durum": "SAĞLAM",
+      "aciklama": "Fiyat/Kazanç ve FD/FAVÖK çarpanlarının paydasındaki operasyonel kâr sürdürülebilir"
+    },
+    {
+      "kriter": "Büyümenin Değeri (ROIC > Sermaye Maliyeti)",
+      "durum": "VERİMLİ",
+      "aciklama": "Yatırılan sermayenin getirisi sermaye maliyetinin üzerinde; büyüme serbest nakit akışı üretiyor"
+    },
+    {
+      "kriter": "Güvenlik Marjı & Yanılma Payı Alanı",
+      "durum": "UYGUN",
+      "aciklama": "Tarihsel değerleme çarpanı bandında alt çeyrek / dengeli bölgede; analitik yanılma payı mevcut"
+    }
+  ],
+  "bolum5_karar_ve_cikis": {
+    "hendek_sinifi": "Hendeksiz",
+    "portfoy_tavani": "Maksimum %3.0",
+    "mevcut_agirlik": "%0.00",
+    "asamalandirma_kurali": "Min %1.0 ile başla, maks %3.0 tavanını aşma. Durum: 1/3 Başlangıç",
+    "cikis_tetikleyicileri": [
+      "(1) Yönetim veya hâkim hissedar değişimi ve kurumsal nitelik kaybı yaşanması",
+      "(2) Hâkim hissedarın borsada doğrudan pay satışı başlatması",
+      "(3) İlişkili taraflara şüpheli/denetimsiz finansal borç veya kaynak aktarımı",
+      "(4) Şirketin iş modelinde veya sektöründe kalıcı yapısal kırılma",
+      "(5) İlk yatırım analizinde sonradan önemli bir analitik hata tespit edilmesi"
+    ]
+  }
+}

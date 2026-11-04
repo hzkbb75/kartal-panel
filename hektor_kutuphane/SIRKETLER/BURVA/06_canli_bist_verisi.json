@@ -1,0 +1,21 @@
+{
+    "kod": "BURVA",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "İnşaat Malzemeleri",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 7.3,
+    "bolum1_gecti_mi": false,
+    "elenme_nedenleri": "2 Dönem Negatif Nakit Akışı (CFO < 0)",
+    "fiyat_tl": 205.7,
+    "aylik_degisim": -41.2,
+    "satis_milyon_tl": 166.0,
+    "net_kar_milyon_tl": -53.0,
+    "cfo_milyon_tl": -17.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 180.9,
+    "piotroski_skor": 3,
+    "sinyal": "KIRMIZI ÇİZGİ",
+    "rapor_linki": "SIRKETLER\\BURVA\\BURVA_Mikroskop_Raporu.html"
+}

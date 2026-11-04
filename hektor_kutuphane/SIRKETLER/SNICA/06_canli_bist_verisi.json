@@ -1,0 +1,21 @@
+{
+    "kod": "SNICA",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Dayanıklı Tüketim",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 53.6,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 1.77,
+    "aylik_degisim": -22.4,
+    "satis_milyon_tl": 3940.0,
+    "net_kar_milyon_tl": -1013.0,
+    "cfo_milyon_tl": 197.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.26,
+    "nakit_dongusu_gun": 322.2,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\SNICA\\SNICA_Mikroskop_Raporu.html"
+}

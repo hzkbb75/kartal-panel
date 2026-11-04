@@ -1,0 +1,21 @@
+{
+    "kod": "PKART",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Teknoloji",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 22.8,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 65.15,
+    "aylik_degisim": -20.6,
+    "satis_milyon_tl": 2691.0,
+    "net_kar_milyon_tl": 81.0,
+    "cfo_milyon_tl": 54.0,
+    "cfo_buyuk_net_kar": false,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": 37.0,
+    "piotroski_skor": 5,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\PKART\\PKART_Mikroskop_Raporu.html"
+}

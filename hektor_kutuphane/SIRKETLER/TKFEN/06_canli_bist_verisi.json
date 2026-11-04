@@ -1,0 +1,21 @@
+{
+    "kod": "TKFEN",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "İnşaat- Taahhüt",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 19.7,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 191.4,
+    "aylik_degisim": -16.5,
+    "satis_milyon_tl": 63483.0,
+    "net_kar_milyon_tl": -6738.0,
+    "cfo_milyon_tl": 5404.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.14,
+    "nakit_dongusu_gun": -2.5,
+    "piotroski_skor": 4,
+    "sinyal": "TABLO İZLEMEDE",
+    "rapor_linki": "SIRKETLER\\TKFEN\\TKFEN_Mikroskop_Raporu.html"
+}

@@ -1,0 +1,21 @@
+{
+    "kod": "BAGFS",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Tarım Kimyasalları",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 61.2,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 16.38,
+    "aylik_degisim": -23.5,
+    "satis_milyon_tl": 5856.0,
+    "net_kar_milyon_tl": 145.0,
+    "cfo_milyon_tl": 898.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.64,
+    "nakit_dongusu_gun": 104.1,
+    "piotroski_skor": 7,
+    "sinyal": "FIRSAT ADAYI",
+    "rapor_linki": "SIRKETLER\\BAGFS\\BAGFS_Mikroskop_Raporu.html"
+}

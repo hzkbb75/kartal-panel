@@ -1,0 +1,21 @@
+{
+    "kod": "EKIM",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Ulaştırma-Lojistik",
+    "kategori": "Hendeksiz",
+    "tavan_agirlik": 3.0,
+    "halka_aciklik": 13.4,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 13.68,
+    "aylik_degisim": 15.4,
+    "satis_milyon_tl": 15362.0,
+    "net_kar_milyon_tl": -2330.0,
+    "cfo_milyon_tl": 1441.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.74,
+    "nakit_dongusu_gun": 16.2,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\EKIM\\EKIM_Mikroskop_Raporu.html"
+}

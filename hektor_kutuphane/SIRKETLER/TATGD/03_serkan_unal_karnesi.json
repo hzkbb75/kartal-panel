@@ -1,0 +1,359 @@
+{
+  "kod": "TATGD",
+  "sirket_adi": "TAT GIDA SANAYİ A.Ş.",
+  "sektor": "Tat Gıda",
+  "kategori": "Kırılgan Hendekli",
+  "fiyat_tl": 14.53,
+  "f_skor": 7,
+  "tavan_agirlik": 5.0,
+  "mevcut_agirlik": 0.0,
+  "kademe_durumu": "1/3 Başlangıç",
+  "degerleme_bandi": {
+    "fk": 5.9,
+    "alt_fk": 6.0,
+    "medyan_fk": 11.0,
+    "ust_fk": 16.0,
+    "marj_durum": "GÜÇLÜ GÜVENLİK MARJI (İSKONTOLU)",
+    "marj_renk": "badge-ok",
+    "konum_yuzde": 29
+  },
+  "birikimli_dipnot": {
+    "kod": "TATGD",
+    "son_guncelleme": "2026-11-02 17:26",
+    "donemler": {
+      "2025/06": {
+        "efm_yuzde": 12.2,
+        "icr_kati": 0.26,
+        "tahakkuk_orani": -1.11,
+        "aga_orani": 0.0,
+        "ykp_orani": 0.0,
+        "dso_gun": 111.3,
+        "acm_makasi": 0.0,
+        "serefiye_ozk_orani": 0.0,
+        "karsilik_ozk_orani": 1.7,
+        "iliskili_orani": 0.0,
+        "dts_skor": 15,
+        "uyarilar": [
+          "🔴 Faiz karşılama oranı 0.26x ile kritik sınırda (Efektif Borç Maliyeti: %12.2)."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": 0.0,
+        "tahakkuk_delta": 0.0
+      },
+      "2025/09": {
+        "efm_yuzde": 18.2,
+        "icr_kati": 0.41,
+        "tahakkuk_orani": -0.49,
+        "aga_orani": 2.5,
+        "ykp_orani": 0.0,
+        "dso_gun": 73.7,
+        "acm_makasi": -56.0,
+        "serefiye_ozk_orani": 0.0,
+        "karsilik_ozk_orani": 1.8,
+        "iliskili_orani": 0.0,
+        "dts_skor": 15,
+        "uyarilar": [
+          "🔴 Faiz karşılama oranı 0.41x ile kritik sınırda (Efektif Borç Maliyeti: %18.2)."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 0,
+        "dso_delta": -37.6,
+        "tahakkuk_delta": 0.62
+      },
+      "2026/06": {
+        "efm_yuzde": 5.7,
+        "icr_kati": 1.26,
+        "tahakkuk_orani": 2.45,
+        "aga_orani": 24.1,
+        "ykp_orani": 31.4,
+        "dso_gun": 128.6,
+        "acm_makasi": 46.8,
+        "serefiye_ozk_orani": 0.0,
+        "karsilik_ozk_orani": 1.0,
+        "iliskili_orani": 0.0,
+        "dts_skor": 30,
+        "uyarilar": [
+          "🟡 Alacak-Ciro makası +%46.8 açıldı (DSO: 128.6 gün): Şüpheli alacak ve vade uzaması riski.",
+          "🔴 Faiz karşılama oranı 1.26x ile kritik sınırda (Efektif Borç Maliyeti: %5.7)."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": 15,
+        "dso_delta": 54.9,
+        "tahakkuk_delta": 2.94
+      },
+      "2026/09": {
+        "efm_yuzde": 13.1,
+        "icr_kati": 1.39,
+        "tahakkuk_orani": 2.9,
+        "aga_orani": 4.2,
+        "ykp_orani": 9.4,
+        "dso_gun": 85.2,
+        "acm_makasi": -52.7,
+        "serefiye_ozk_orani": 0.0,
+        "karsilik_ozk_orani": 1.0,
+        "iliskili_orani": 0.0,
+        "dts_skor": 15,
+        "uyarilar": [
+          "🔴 Faiz karşılama oranı 1.39x ile kritik sınırda (Efektif Borç Maliyeti: %13.1)."
+        ],
+        "pdf_dipnot_notlari": {
+          "doviz_ve_turev": "Bilanço tabanlı izlemede (Doğal Hedge / Vadeli Kontrat)",
+          "tri_rehin_ipotek": "Normal sınırda (<%20)",
+          "bilanço_sonrasi_olaylar": "Rutin faaliyet akışı devam ediyor"
+        },
+        "dts_delta": -15,
+        "dso_delta": -43.4,
+        "tahakkuk_delta": 0.45
+      }
+    }
+  },
+  "sirketi_tani": {
+    "sirket_adi": "TAT GIDA SANAYİ A.Ş.",
+    "ne_is_yapar": "TAT GIDA SANAYİ A.Ş., Tat Gıda sektöründe üretim, satış ve operasyonel faaliyetlerini yürüten Borsa İstanbul şirketidir.",
+    "urun_ve_pazar": "Tat Gıda ana ürün ve hizmet grubu | Yurt içi kurumsal/bireysel müşteriler ve ihracat pazarları",
+    "piyasa_degeri": "3.4 milyar TL",
+    "net_kar_12ay": "483 milyon TL",
+    "net_kar_yorum": "Son dönemde 483 milyon TL net kâr elde edildi; yıllık değişim %+0.0.",
+    "roe_deger": "%5.3",
+    "roe_yorum": "Özkaynak kârlılığı (ROE) %5.3; Tat Gıda sektöründe sermaye maliyeti ve enflasyon karşısında izlemede.",
+    "carpan_ozet": "F/K: 5.9x | FD/FAVÖK: 5.3x"
+  },
+  "dna_ve_gidisat": [
+    {
+      "baslik": "Büyüme & Satış Hızı (Satışlar Hızlanıyor mu?)",
+      "deger": "%-2.0",
+      "durum": "DENGELİ",
+      "yorum": "Yıllık satış gelirleri 7.71 milyar TL seviyesinden 7.56 milyar TL seviyesine geldi (%-2.0)."
+    },
+    {
+      "baslik": "Operasyonel Kâr & Marjlar (Marjlar Güçleniyor mu?)",
+      "deger": "EFK Marjı %8.0",
+      "durum": "İYİLEŞİYOR",
+      "yorum": "Esas faaliyet kârı 608 milyon TL oldu. Operasyonel kâr marjı geçen döneme göre +3.8 puan değişti."
+    },
+    {
+      "baslik": "Parası Var mı? (Kârın Nakde Dönüşüm Gücü)",
+      "deger": "1 TL Kâra 2.64 TL Nakit",
+      "durum": "SAĞLAM",
+      "yorum": "Her 1 liralık net kâra karşılık faaliyetlerden 2.64 lira nakit (CFO: 1.28 milyar TL) üretildi. Nakit kalitesi çok yüksek."
+    },
+    {
+      "baslik": "Bilanço Sağlamlığı & Borç Gidişatı (Borç Azalıyor mu?)",
+      "deger": "%0 Kısa Vadeli | 0.27x",
+      "durum": "GÜVENLİ",
+      "yorum": "Toplam yükümlülüklerin %0.0 kadarı kısa vadeli. Net borç değişimi: -1.36 milyar TL (Güncel Net Borç: 2.49 milyar TL)."
+    }
+  ],
+  "bilanco_degisimleri": [
+    {
+      "kalem": "ANA ORTAKLIK ÖZKAYNAĞI %131.5 YÜKSELDİ",
+      "guncel_tutar": "9.13 milyar TL",
+      "ne_ifade_ediyor": "3.95 milyar TL → 9.13 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %48.3 kadarı. Özkaynak artışı dönem net kârı ile beslendiğinde şirketin içsel değerini ve bilanço tamponunu büyütür."
+    },
+    {
+      "kalem": "MADDİ DURAN VARLIKLAR %156.7 YÜKSELDİ",
+      "guncel_tutar": "7.02 milyar TL",
+      "ne_ifade_ediyor": "2.74 milyar TL → 7.02 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %39.9 kadarı. Üretim tesisi, makine ve kapasite yatırımlarını gösterir; gelecek dönem reel büyümenin öncü göstergesidir."
+    },
+    {
+      "kalem": "ERTELENMİŞ GELİR & SİPARİŞ AVANSLARI %47.4 AZALDI",
+      "guncel_tutar": "86 milyon TL",
+      "ne_ifade_ediyor": "163 milyon TL → 86 milyon TL. Değişimin büyüklüğü önceki toplam varlığın %0.7 kadarı. Müşterilerden peşin alınan avansları ifade eder; şirketin pazarlık gücünü ve gelecekte yazılacak hazır hasılatı gösterir."
+    },
+    {
+      "kalem": "STOKLAR %21.5 YÜKSELDİ",
+      "guncel_tutar": "5.68 milyar TL",
+      "ne_ifade_ediyor": "4.68 milyar TL → 5.68 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %9.4 kadarı. Stok artışının satış büyümesiyle uyumlu olması sağlıklıdır; satıştan kopuk stok şişmesi nakit döngüsünü yavaşlatır."
+    },
+    {
+      "kalem": "TİCARİ ALACAK BAKİYESİ %13.3 YÜKSELDİ",
+      "guncel_tutar": "1.76 milyar TL",
+      "ne_ifade_ediyor": "1.56 milyar TL → 1.76 milyar TL. Değişimin büyüklüğü önceki toplam varlığın %1.9 kadarı. Ticari alacak büyümesi ciro artışının altında kalıyorsa tahsilat disiplini güçlüdür; aşması durumunda vade açılması izlenmelidir."
+    }
+  ],
+  "kap_haberleri": [
+    {
+      "tarih": "02.11.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Toplantı notları - TATGD (İnfo Yatırım)",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    },
+    {
+      "tarih": "27.10.2026",
+      "kategori": "Finansal Rapor",
+      "baslik": "Bilanço analizi - TATGD (PhillipCapital)",
+      "meal": "Açıklanan tablolarda net kârın işletme nakit akışına dönüşüm oranı (CFO > Net Kâr) ve kısa vadeli borç çevrimi teyit edilmelidir."
+    },
+    {
+      "tarih": "26.10.2026",
+      "kategori": "Finansal Rapor",
+      "baslik": "TATGD Tat Gıda Sanayi konsolide bilanço 2026 9 aylık net karı 482,793,927 TL (Önceki: 67,924,794 TL net zarar)",
+      "meal": "Açıklanan tablolarda net kârın işletme nakit akışına dönüşüm oranı (CFO > Net Kâr) ve kısa vadeli borç çevrimi teyit edilmelidir."
+    },
+    {
+      "tarih": "10.09.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Görüşme Notu-TATGD(OYAK Yatırım)",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    },
+    {
+      "tarih": "27.08.2026",
+      "kategori": "Yatırım / Kapasite",
+      "baslik": "Pusula Yatırım TATGD için 40 TL hedef fiyat belirledi ve AL tavsiyesini korudu. (Önceki hedef fiyat: 35 TL)",
+      "meal": "Maddi duran varlık ve kapasite yatırımı uzun vadeli üretim gücünü büyütür; devreye alınma tarihi ve yatırımın borçluluk üzerindeki etkisi izlenmelidir."
+    }
+  ],
+  "son_soz": {
+    "dikkat_cekenler": [
+      "Güçlü nakit üretimi: Her 1 TL net kâra karşılık 2.64 TL işletme nakit akışı (CFO) üretildi.",
+      "Borç yükü çok düşük: Net Borç / Özkaynak rasyosu 0.27x ile finansal kalkan oldukça sağlam.",
+      "Dengeli borç vadesi: Kısa vadeli yükümlülük payı %0.0 ile çevrilebilir sınırda.",
+      "Finansal sağlık skoru yüksek: Piotroski F-Skoru 7/9 ile bilanço ivmesi pozitif.",
+      "Makul çarpan: F/K 5.9x ile tarihsel ve sektörel ortalamalara göre güvenlik marjı sunuyor."
+    ],
+    "sevmediklerim": [
+      "Temel tabloda kırmızı çizgi ihlali yok; sektörel talep ve çeyreklik marj seyri rutin izlenmeli."
+    ],
+    "borsaci_gozuyle": "TAT GIDA SANAYİ A.Ş. (TATGD), Tat Gıda sektöründe 'Kırılgan Hendekli' hendek yapısıyla faaliyet gösteriyor. Son dönemde 7.56 milyar TL satış geliri ve 483 milyon TL net kâr üretirken, her 1 TL kâra karşılık 2.64 TL işletme nakit akışı sağlaması işin motorunun nakit ürettiğini gösteriyor. Toplam yükümlülüklerin %0.0 seviyesinin kısa vadeli olması ve Net Borç/Özkaynak rasyosunun 0.27x düzeyinde bulunması nedeniyle Serkan Ünal kuralları çerçevesinde portföyde maksimum %5.0 ağırlık tavanıyla (1/3 Başlangıç) takip edilmesi rasyoneldir."
+  },
+  "bolum1_elemeler": [
+    {
+      "kriter": "Halka Açıklık Oranı & Ortaklık Yapısı",
+      "deger": "%38.9",
+      "durum": "GEÇTİ",
+      "not": "Tavan %70 sınırının altında, güvenli ortaklık yapısı"
+    },
+    {
+      "kriter": "Küçük Ortağı Ezen İmtiyaz Kontrolü",
+      "deger": "YOK",
+      "durum": "TEMİZ",
+      "not": "Kâr payı dağıtımında veya oyda küçük ortağı dışlayan imtiyaz yok"
+    },
+    {
+      "kriter": "Hâkim Ortak ve Yönetim Sicili",
+      "deger": "GÜVENİLİR",
+      "durum": "TEMİZ",
+      "not": "Geçmişte azınlık ortaklarını zarara uğratan sistematik karar yok"
+    },
+    {
+      "kriter": "İlişkili Taraflara Kaynak Çıkışı",
+      "deger": "%0.00",
+      "durum": "TEMİZ",
+      "not": "Holding veya grup şirketlerine faizsiz kaynak çıkışı yok (< %5)"
+    },
+    {
+      "kriter": "Finansal Borç ve Gelir Yapısı Uyumu",
+      "deger": "0.27x",
+      "durum": "GÜVENLİ",
+      "not": "Borçlanma döviz ve vade yapısı faaliyet gelirleriyle uyumlu"
+    },
+    {
+      "kriter": "Hâkim Ortak Borsa Hisse Satışı",
+      "deger": "BİLDİRİM YOK",
+      "durum": "TEMİZ",
+      "not": "Hâkim ortakların borsada doğrudan satış baskısı oluşturacak satışı bulunmuyor"
+    }
+  ],
+  "bolum2_is_kalitesi": [
+    {
+      "kriter": "Pazar Payı İstikrarı & Yeni Oyuncu Tehdidi",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Tat Gıda sektöründe faaliyet gösteren ve temel finansal süzgeçleri geçen şirket."
+    },
+    {
+      "kriter": "Kârın Niteliği & Esas Faaliyet Dayanıklılığı",
+      "durum": "GÜÇLÜ",
+      "aciklama": "Kâr doğrudan esas faaliyet ve operasyonel iş modelinden üretiliyor, reel ve sürdürülebilir"
+    },
+    {
+      "kriter": "Ekonomik Hendek Kaynağı & Korunabilirlik",
+      "durum": "KIRILGAN HENDEKLI",
+      "aciklama": "Kırılgan Hendekli sınıfında; ölçek, dağıtım kanalı veya geçiş maliyeti avantajına sahip."
+    },
+    {
+      "kriter": "Kurumsal Yapı & Şahıstan Bağımsız İşleyiş",
+      "durum": "OTURMUŞ",
+      "aciklama": "Kişilerden bağımsız işleyen kurumsal organizasyon ve yönetim kurulu yapısı."
+    },
+    {
+      "kriter": "Yönetim Güvenilirliği & Hedef Tutarlılığı",
+      "durum": "TUTARLI",
+      "aciklama": "Faaliyet raporlarında ve sunumlarda verilen geçmiş dönem hedefleri ile gerçekleşmeler tutarlı"
+    },
+    {
+      "kriter": "Reel Büyüme & Faaliyet Marjı Koruması",
+      "durum": "DENGELİ",
+      "aciklama": "Enflasyon üzeri ciro büyümesi ve operasyonel FAVÖK marjı disiplini korunuyor"
+    }
+  ],
+  "bolum3_tablolar": [
+    {
+      "kriter": "Kâr Nakde Dönüşüyor mu? (CFO > Net Kâr)",
+      "durum": "BAŞARILI",
+      "aciklama": "Her 1 TL net kâra karşılık 2.64 TL işletme nakit akışı üretildi."
+    },
+    {
+      "kriter": "Kârın Tekrarlanabilirliği (Çekirdek Kâr Payı)",
+      "durum": "GÜÇLÜ",
+      "aciklama": "%80+ Ana operasyonel kâr; duran varlık satışı, kur farkı gibi tek seferlik etkiler arındırıldı"
+    },
+    {
+      "kriter": "Dipnot Riskleri (TRİ, Kefalet, Kısa Vade Borç)",
+      "durum": "TEMİZ",
+      "aciklama": "Kısa vadeli borç payı %0.0; TRİ ve kefaletler normal sınırda (< %20)"
+    },
+    {
+      "kriter": "Konsolidasyon Netliği & İştirak Saydamlığı",
+      "durum": "ŞEFFAF",
+      "aciklama": "Konsolide finansallar şirketin çekirdek işini doğrudan yansıtıyor, maskelenmiş zarar yok"
+    }
+  ],
+  "bolum4_fiyat_degerleme": [
+    {
+      "kriter": "Varsayım Tutarlılığı & Büyüme Senaryosu",
+      "durum": "RASYONEL",
+      "aciklama": "Tat Gıda pazar payı istikrarı, ciro büyümesi ve operasyonel marjların korunması varsayımı."
+    },
+    {
+      "kriter": "Çarpan Paydası Sürdürülebilirliği",
+      "durum": "SAĞLAM",
+      "aciklama": "Fiyat/Kazanç ve FD/FAVÖK çarpanlarının paydasındaki operasyonel kâr sürdürülebilir"
+    },
+    {
+      "kriter": "Büyümenin Değeri (ROIC > Sermaye Maliyeti)",
+      "durum": "VERİMLİ",
+      "aciklama": "Yatırılan sermayenin getirisi sermaye maliyetinin üzerinde; büyüme serbest nakit akışı üretiyor"
+    },
+    {
+      "kriter": "Güvenlik Marjı & Yanılma Payı Alanı",
+      "durum": "UYGUN",
+      "aciklama": "Tarihsel değerleme çarpanı bandında alt çeyrek / dengeli bölgede; analitik yanılma payı mevcut"
+    }
+  ],
+  "bolum5_karar_ve_cikis": {
+    "hendek_sinifi": "Kırılgan Hendekli",
+    "portfoy_tavani": "Maksimum %5.0",
+    "mevcut_agirlik": "%0.00",
+    "asamalandirma_kurali": "Min %1.0 ile başla, maks %5.0 tavanını aşma. Durum: 1/3 Başlangıç",
+    "cikis_tetikleyicileri": [
+      "(1) Yönetim veya hâkim hissedar değişimi ve kurumsal nitelik kaybı yaşanması",
+      "(2) Hâkim hissedarın borsada doğrudan pay satışı başlatması",
+      "(3) İlişkili taraflara şüpheli/denetimsiz finansal borç veya kaynak aktarımı",
+      "(4) Şirketin iş modelinde veya sektöründe kalıcı yapısal kırılma",
+      "(5) İlk yatırım analizinde sonradan önemli bir analitik hata tespit edilmesi"
+    ]
+  }
+}

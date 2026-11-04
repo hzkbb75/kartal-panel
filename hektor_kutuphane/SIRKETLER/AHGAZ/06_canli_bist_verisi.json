@@ -1,0 +1,21 @@
+{
+    "kod": "AHGAZ",
+    "tarama_gunu": "2026-10-31",
+    "sektor": "Elektrik - Doğalgaz Dağıtım",
+    "kategori": "Korunaklı",
+    "tavan_agirlik": 10.0,
+    "halka_aciklik": 12.3,
+    "bolum1_gecti_mi": true,
+    "elenme_nedenleri": "Temiz",
+    "fiyat_tl": 46.06,
+    "aylik_degisim": 9.0,
+    "satis_milyon_tl": 46446.0,
+    "net_kar_milyon_tl": 3402.0,
+    "cfo_milyon_tl": 18839.0,
+    "cfo_buyuk_net_kar": true,
+    "net_borc_ozkaynak": 0.0,
+    "nakit_dongusu_gun": -4.3,
+    "piotroski_skor": 6,
+    "sinyal": "KALİTELİ İZLEME",
+    "rapor_linki": "SIRKETLER\\AHGAZ\\AHGAZ_Mikroskop_Raporu.html"
+}
