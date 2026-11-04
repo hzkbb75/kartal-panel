@@ -1809,7 +1809,11 @@ def uret_portfoy_kalkani_html(tablo_verileri: list, karneler: dict, toplam_portf
 </html>"""
 
     PANO_YOLU = "portfoy.html"
-    with open(PANO_YOLU, "w", encoding="utf-8") as f:
+    # 6 Sekmeli Tam HTML'i iki dosyaya birden yaz
+    with open("index.html", "w", encoding="utf-8") as f:
+        f.write(html_icerik)
+
+    with open("portfoy.html", "w", encoding="utf-8") as f:
         f.write(html_icerik)
 
 
