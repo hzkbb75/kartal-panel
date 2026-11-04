@@ -1,6 +1,7 @@
 import os
 import re
 import csv
+import subprocess
 import time
 import json
 import hashlib
@@ -1714,3 +1715,21 @@ if __name__ == "__main__":
         print(f"  Gerçek Kasa Bakiyesi (portfoyum.csv): {nakit_tl:,.0f} TL (%{nakit_orani:.1f})")
     print(f"  Sektör Tavanı Kalkanı: Maksimum %20 devrede")
     print("=" * 68)
+def github_guncelle():
+    print("\n🚀 Güncel panolar GitHub Pages'e aktarılıyor...")
+    try:
+        # En güncel Portföy Kalkanı dosyasını ana dizine kopyala
+        kaynak_portfoy = os.path.join(BASE_DIR, "hektor_kutuphane", "PORTFOY", "PORTFOY_Kalkani_ve_Radar.html")
+        hedef_portfoy = os.path.join(BASE_DIR, "portfoy.html")
+        if os.path.exists(kaynak_portfoy):
+            shutil.copy2(kaynak_portfoy, hedef_portfoy)
+            print("📋 Portföy Kalkanı yayına hazırlandı.")
+
+        subprocess.run(["git", "add", "."], check=True)
+        subprocess.run(["git", "commit", "-m", "Oto-guncelleme: Portfoy ve Panolar"], check=True)
+        subprocess.run(["git", "push", "origin", "main"], check=True)
+        print("✅ GitHub Pages başarıyla güncellendi!")
+    except Exception as e:
+        print(f"⚠️ Git güncelleme atlandı: {e}")
+
+github_guncelle()

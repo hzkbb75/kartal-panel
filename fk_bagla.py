@@ -49,4 +49,4 @@ html = re.sub(r'<tr[^>]*>[\s\S]*?</tr>', satir_donustur, html)
 with open(HTML_YOLU, "w", encoding="utf-8") as f:
     f.write(html)
 
-print("ANA_KAPSAM_DEFTERI.html içinde 630 hissenin Cari F/K ve dataset değerleri başarıyla güncellendi!")
+print("piyasa.html içinde 630 hissenin Cari F/K ve dataset değerleri başarıyla güncellendi!")
