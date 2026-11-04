@@ -2,7 +2,7 @@ import os
 import re
 import json
 
-HTML_YOLU = "ANA_KAPSAM_DEFTERI.html"
+HTML_YOLU = "piyasa.html"
 JSON_YOLU = os.path.join("hektor_kutuphane", "bist_mali_tablolar.json")
 
 with open(JSON_YOLU, "r", encoding="utf-8") as f:
