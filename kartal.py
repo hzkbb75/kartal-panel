@@ -1808,13 +1808,8 @@ def uret_portfoy_kalkani_html(tablo_verileri: list, karneler: dict, toplam_portf
 </body>
 </html>"""
 
-    PANO_YOLU = "index.html"
-    # 1. GitHub Pages ana sayfası için index.html
-    with open("index.html", "w", encoding="utf-8") as f:
-        f.write(html_icerik)
-
-    # 2. Yedek/eski linkleriniz için portfoy.html
-    with open("portfoy.html", "w", encoding="utf-8") as f:
+    PANO_YOLU = "portfoy.html"
+    with open(PANO_YOLU, "w", encoding="utf-8") as f:
         f.write(html_icerik)
 
 
