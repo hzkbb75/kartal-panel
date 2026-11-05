@@ -10,9 +10,25 @@ BIST_MALI_TABLOLAR_YOLU = os.path.join(ROOT_DIR, "bist_mali_tablolar.json")
 CIKTI_KAP_YOLU = os.path.join(ROOT_DIR, "tum_kap_haberleri.json")
 
 ONEMLI_KELIMELER = [
-    "yeni iş", "sözleşme", "ihale", "sipariş", "temettü", 
-    "kâr payı", "bedelli", "bedelsiz", "pay alım", "geri alım", 
-    "özel durum", "yatırım", "birleşme", "devralma", "kap", "faaliyet"
+    # Büyüme & Operasyonel İvme
+    "yeni iş ilişkisi", "ihale", "sipariş", "sözleşme", 
+    "kapasite", "teşvik", "yeni yatırım", "yatırım kararı", "yatırım teşvik", 
+    # Şirket Yapısı & Varlıklar
+    "birleşme", "devralma", "satın alma", "ortaklık",
+    "maddi duran varlık", "fabrika", "arsa", "gayrimenkul",
+    # Finansal Aksiyonlar
+    "geri alım", "temettü", "kâr payı", "bedelsiz", "bedelli",
+    # Sadece okumak isteyeceğin temel rapor
+    "faaliyet raporu"
+]
+
+YASAKLI_KELIMELER = [
+    "devre kesici", "volatilite", "likidite sağlayıcı", "olağandışı fiyat", 
+    "fiyat hareketleri", "işlem gören tipe dönüşüm", "kredi derecelendirme", 
+    "kayıtlı sermaye tavanı", "esas sözleşme", "fon sürekli bilgilendirme",
+    "sorumluluk beyanı", "özel durum açıklaması (genel)", 
+    "görev dağılımı", "imza sirküleri", "genel kurul çağrısı", "toplantı tutanağı",
+    "pay alım satım bildirimi", "hedef fiyat", "tavsiyesi", "tavsiye", "aracı kurum", "piyasa yorumu"
 ]
 
 HEADERS = {
@@ -44,8 +60,8 @@ def tek_hisse_tradingview_cek(session, hisse: str) -> tuple:
                 ozet = str(it.get("shortDescription") or baslik)
                 birlesik = f"{baslik} {ozet}".lower()
                 
-                # Önemli haber / KAP filtresi
-                if any(k in birlesik for k in ONEMLI_KELIMELER):
+                # Önemli haber / KAP filtresi (Hem Altın Kelime olacak Hem Yasaklı OLMAYACAK)
+                if any(k in birlesik for k in ONEMLI_KELIMELER) and not any(yk in birlesik for yk in YASAKLI_KELIMELER):
                     b_id = str(it.get("id") or "")
                     pub_ts = it.get("published")
                     pub_str = datetime.fromtimestamp(pub_ts).strftime("%d.%m.%Y") if pub_ts else datetime.now().strftime("%d.%m.%Y")
@@ -61,18 +77,6 @@ def tek_hisse_tradingview_cek(session, hisse: str) -> tuple:
                 if len(secilenler) >= 4:
                     break
             
-            # Eğer filtreye takılan çıkmazsa son 2 güncel haberi yedek olarak al
-            if not secilenler and items:
-                for it in items[:2]:
-                    pub_ts = it.get("published")
-                    pub_str = datetime.fromtimestamp(pub_ts).strftime("%d.%m.%Y") if pub_ts else datetime.now().strftime("%d.%m.%Y")
-                    story_path = it.get("storyPath", "")
-                    secilenler.append({
-                        "id": str(it.get("id") or ""),
-                        "baslik": str(it.get("title") or "")[:95],
-                        "tarih": pub_str,
-                        "link": f"https://www.tradingview.com{story_path}" if story_path else "https://www.kap.org.tr"
-                    })
 
             return hisse, secilenler
     except Exception:

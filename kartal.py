@@ -43,6 +43,16 @@ if os.path.exists(BIST_MALI_TABLOLAR_YOLU):
             YEREL_MALI_VERITABANI = ham_vt.get("sirketler", {})
     except Exception as e:
         print(f"  [Uyarı] Yerel mali veri tabanı okunamadı: {e}")
+# 1.1 Ziraat Resmi Analiz Tabanını Yükle (Ground Truth)
+BIST_ANALIZ_TABANI = {}
+ANALIZ_TABANI_YOLU = "bist_analiz_tabani.json"
+if os.path.exists(ANALIZ_TABANI_YOLU):
+    try:
+        with open(ANALIZ_TABANI_YOLU, "r", encoding="utf-8") as f:
+            BIST_ANALIZ_TABANI = json.load(f)
+            print(f"  [Bilgi] 'bist_analiz_tabani.json' başarıyla yüklendi ({len(BIST_ANALIZ_TABANI)} şirket).")
+    except Exception as e:
+        print(f"  [Uyarı] bist_analiz_tabani.json okunamadı: {e}")
 
 # 2. kap_indirici.py Tarafından Üretilen KAP & Teknik Veri Ambarını Yükle
 KAP_VE_TEKNIK_YOLLARI = [
@@ -494,6 +504,17 @@ def analiz_et_sirket(kod: str) -> dict:
 
     roe_hesap = round((net_c / max(ozk_c, 1.0)) * 100, 1) if ozk_c > 0 else float(sirket_kaydi.get("roe_tv", 0.0))
 
+    # ZİRAAT RESMİ VERİLERİNİ DEVREYE AL
+    ziraat = BIST_ANALIZ_TABANI.get(kod, {})
+    if ziraat:
+        sektor = ziraat.get("sektor", sirket_kaydi.get("sektor", "Sanayi"))
+        sirket_adi = ziraat.get("sirket_adi", sirket_kaydi.get("sirket_adi", kod))
+        if ziraat.get("fiyat", 0) > 0: fiyat = ziraat["fiyat"]
+        if ziraat.get("fk", 0) > 0: fk = ziraat["fk"]
+        if ziraat.get("fd_favok", 0) > 0: fd_favok = ziraat["fd_favok"]
+        if ziraat.get("roe", 0) != 0: roe_hesap = ziraat["roe"]
+        if ziraat.get("net_kar_son4c_mn", 0) != 0: net_c = ziraat["net_kar_son4c_mn"]
+
     return {
         "kod": kod, "sirket_adi": sirket_kaydi.get("sirket_adi", kod), "sektor": sirket_kaydi.get("sektor", "Sanayi"),
         "kategori": kategori, "tavan_agirlik": tavan, "halka_aciklik": halka_aciklik, "net_borc_ozkaynak": net_borc_ozkaynak,
@@ -911,10 +932,20 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
         "marj_durum": marj_durum, "marj_renk": marj_renk, "konum_yuzde": konum_yuzde
     }
     
-    # HİBRİT DEĞERLEME MODÜLÜ
-    sirket_hbk = net_c / max((pd_milyar * 1000) / max(fiyat, 1.0), 1.0) if pd_milyar > 0 else 0.0
-    sirket_dd = ozk_c / max((pd_milyar * 1000) / max(fiyat, 1.0), 1.0) if pd_milyar > 0 else 0.0
-    
+    # HİBRİT DEĞERLEME MODÜLÜ (ZİRAAT GÜVENCELİ)
+    ziraat = BIST_ANALIZ_TABANI.get(kod, {})
+    if ziraat:
+        sektor = ziraat.get("sektor", sektor)
+        if ziraat.get("fk", 0) > 0: fk = ziraat["fk"]
+        if ziraat.get("fd_favok", 0) > 0: fd_favok = ziraat["fd_favok"]
+        if ziraat.get("roe", 0) != 0: roe = ziraat["roe"]
+        if ziraat.get("net_kar_son4c_mn", 0) != 0: net_c = ziraat["net_kar_son4c_mn"]
+
+    # Hatasız Hisse Başına Kâr (HBK) ve Defter Değeri (DD) Türetimi
+    sirket_hbk = round(fiyat / fk, 2) if fk > 0 else 0.0
+    pddd = ziraat.get("pddd", 0.0) if ziraat else 0.0
+    sirket_dd = round(fiyat / pddd, 2) if pddd > 0 else (ozk_c / max((pd_milyar * 1000) / max(fiyat, 1.0), 1.0) if pd_milyar > 0 else 0.0)
+
     adil_deger_tl, iskonto_yuzde, degerleme_durumu = rasyonel_degerleme_hesapla(
         fiyat=fiyat, 
         hbk=sirket_hbk, 

@@ -1,94 +1,57 @@
 import os
 import sys
-import shutil
-import requests
 import subprocess
 from datetime import datetime
 
 PROJE_DIZINI = os.path.dirname(os.path.abspath(__file__))
 GELEN_RAPOR_HEDEF = os.path.join(PROJE_DIZINI, "hektor_kutuphane", "PORTFOY", "gelen_raporlar")
-GITHUB_API_URL = "https://api.github.com/repos/hzkbb75/kartal-kap-bot/contents/raporlar"
-
 os.makedirs(GELEN_RAPOR_HEDEF, exist_ok=True)
 
 def log(mesaj):
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {mesaj}")
 
 def main():
-    log("KARTAL Tam Otomasyon Çarkı Çalışıyor...")
+    log("KARTAL Tam Otomasyon Çarkı Çalışıyor (YÜZDE 100 YEREL MOD)...")
 
-    # 0. GitHub'dan en güncel teknik analizi (kap_ve_teknik.json) yerel ambarla eşitle
-    try:
-        log("🔄 GitHub'dan güncel teknik veriler çekiliyor (git pull)...")
-        subprocess.run(["git", "pull", "origin", "main"], cwd=PROJE_DIZINI, check=False)
-    except Exception as e:
-        log(f"⚠️ Git pull atlandı: {e}")
+    # 1. KAP'tan Yeni PDF'leri Otomatik İndir (YENİ EKLENEN KISIM)
+    pdf_indirici_py = os.path.join(PROJE_DIZINI, "kap_pdf_indirici.py")
+    if os.path.exists(pdf_indirici_py):
+        log("📥 KAP'tan yeni Faaliyet Raporları taranıyor ve indiriliyor...")
+        subprocess.run([sys.executable, pdf_indirici_py], cwd=PROJE_DIZINI)
 
-    yeni_pdf_geldi = False
-    
-    # 1. GitHub API üzerinden repodaki 'raporlar' klasörünü kontrol et
-    try:
-        headers = {"User-Agent": "KARTAL-Automation"}
-        res = requests.get(GITHUB_API_URL, headers=headers, timeout=20)
-        
-        if res.status_code == 200:
-            dosyalar = res.json()
-            if isinstance(dosyalar, list):
-                for dosya_obj in dosyalar:
-                    ad = dosya_obj.get("name", "")
-                    indir_link = dosya_obj.get("download_url", "")
-                    
-                    if ad.lower().endswith(".pdf") and indir_link:
-                        hedef_yol = os.path.join(GELEN_RAPOR_HEDEF, ad)
-                        
-                        # Yerelde henüz yoksa doğrudan indir
-                        if not os.path.exists(hedef_yol):
-                            log(f"  📥 Yeni faaliyet raporu GitHub'dan indiriliyor: {ad}")
-                            pdf_data = requests.get(indir_link, timeout=60).content
-                            with open(hedef_yol, "wb") as f:
-                                f.write(pdf_data)
-                            yeni_pdf_geldi = True
-            else:
-                log("GitHub'da henüz 'raporlar' klasörü oluşmamış.")
-        elif res.status_code == 404:
-            log("GitHub'da henüz rapor yüklenmemiş (raporlar klasörü henüz boş).")
-        else:
-            log(f"GitHub bağlantı durumu: {res.status_code}")
-    except Exception as e:
-        log(f"GitHub sorgulama hatası: {e}")
-
-    # 2. Yeni bir rapor indiyse dipnot ayrıştırıcıyı otomatik tetikle
-    if yeni_pdf_geldi:
-        log("Yeni faaliyet raporu bulundu! Dipnot ayrıştırıcı devreye giriyor...")
+    # 2. Yerel klasörü kontrol et ve varsa ayrıştırıcıyı tetikle
+    pdf_dosyalar = [f for f in os.listdir(GELEN_RAPOR_HEDEF) if f.lower().endswith(".pdf")]
+    if pdf_dosyalar:
+        log(f"Yerel klasörde {len(pdf_dosyalar)} adet PDF bulundu. Dipnot ayrıştırıcı devreye giriyor...")
         ayristirici_py = os.path.join(PROJE_DIZINI, "pdf_dipnot_ayristirici.py")
         if os.path.exists(ayristirici_py):
             subprocess.run([sys.executable, ayristirici_py], cwd=PROJE_DIZINI)
+    else:
+        log("İşlenecek yeni PDF bulunamadı. Ayrıştırma atlandı.")
 
-    # 3. Google Sheets üzerinden hisseleri ve kasayı senkronize et
+    # 3. Google Sheets Senkronizasyonu
     portfoy_motoru_py = os.path.join(PROJE_DIZINI, "portfoy_motoru.py")
     if os.path.exists(portfoy_motoru_py):
         subprocess.run([sys.executable, portfoy_motoru_py], cwd=PROJE_DIZINI)
 
-    # 4. Yerel BIST KAP ve Haber Motorunu çalıştır (628 hisse / 7 saniye)
+    # 4. Yerel BIST KAP ve Haber Motoru
     kap_motoru_py = os.path.join(PROJE_DIZINI, "yerel_kap_motoru.py")
     if os.path.exists(kap_motoru_py):
         log("📰 Yerel KAP & Haber Motoru güncelleniyor...")
         subprocess.run([sys.executable, kap_motoru_py], cwd=PROJE_DIZINI)
 
-    # --- YENİ EKLENEN ADIM: LLM ve Telegram KAP Bildirimi ---
-    # Not: Dosyanın adını portfoy_kap_takip.py yaptığınızı belirttiniz
+    # 5. Make.com (LLM) Bildirimleri
     kap_takip_py = os.path.join(PROJE_DIZINI, "portfoy_kap_takip.py")
     if os.path.exists(kap_takip_py):
-        log("🤖 Make.com (Okan Hoca LLM) KAP taraması başlatılıyor...")
+        log("🤖 Make.com KAP taraması başlatılıyor...")
         subprocess.run([sys.executable, kap_takip_py], cwd=PROJE_DIZINI)
-    # --------------------------------------------------------
 
-    # 5. KARTAL analiz motorunu çalıştır ve panoları üret
+    # 6. KARTAL Panolarını Üret (HTML)
     kartal_py = os.path.join(PROJE_DIZINI, "kartal.py")
     if os.path.exists(kartal_py):
-        log("🚀 KARTAL Analiz Motoru çalıştırılıyor...")
+        log("🚀 KARTAL Analiz Motoru HTML üretiyor...")
         subprocess.run([sys.executable, kartal_py], cwd=PROJE_DIZINI)
-        log("✅ KARTAL Portföy Kalkanı ve HTML Teftiş Masası güncellendi!")
+        log("✅ Otomasyon Tamamlandı! index.html güncellendi.")
 
 if __name__ == "__main__":
     main()

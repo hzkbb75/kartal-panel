@@ -12,19 +12,34 @@ ROOT_DIR = "hektor_kutuphane"
 CIKTI_KAP_YOLU = os.path.join(ROOT_DIR, "tum_kap_haberleri.json")
 STATE_FILE = "son_bildirimler.json"
 
+# === 1. ALTIN KELİMELER (SADECE HİKAYEYİ DEĞİŞTİRECEK HABERLER) ===
 FILTRE_KELIMELER = [
-    "yeni iş ilişkisi", "sözleşme", "ihale", "sipariş", 
-    "finansal rapor", "faaliyet raporu", "sorumluluk beyanı", 
-    "sermaye artırımı", "bedelli", "bedelsiz", "kâr payı", 
-    "temettü", "geri alım", "pay alım satım", "satış", 
-    "özel durum", "yatırım", "birleşme", "devralma", "kapasite"
+    # Büyüme & Operasyonel İvme
+    "yeni iş ilişkisi", "ihale", "sipariş", "sözleşme", 
+    "kapasite", "teşvik", "yeni yatırım", "yatırım kararı", "yatırım teşvik", 
+    # Şirket Yapısı & Varlıklar
+    "birleşme", "devralma", "satın alma", "ortaklık",
+    "maddi duran varlık", "fabrika", "arsa", "gayrimenkul",
+    # Finansal Aksiyonlar
+    "geri alım", "temettü", "kâr payı", "bedelsiz", "bedelli",
+    # Sadece okumak isteyeceğin temel rapor
+    "faaliyet raporu"
 ]
 
+# === 2. GİYOTİN FİLTRESİ (ÇÖPE ATILACAK RUTİN KAP KİRLİLİĞİ) ===
 YASAKLI_KELIMELER = [
-    "hedef fiyat", "tavsiyesi", "tavsiye", "aracı kurum", "beklentileri", 
-    "raporu-", "toplantı notu", "teknik analiz", "piyasa yorumu"
+    # Borsa & SPK Otomatik Rutinleri
+    "devre kesici", "volatilite", "likidite sağlayıcı", "olağandışı fiyat", 
+    "fiyat hareketleri", "işlem gören tipe dönüşüm", "kredi derecelendirme", 
+    "kayıtlı sermaye tavanı", "esas sözleşme", "fon sürekli bilgilendirme",
+    # Bilanço Gönderim Çöpleri (Sayıları zaten KARTAL hesaplıyor)
+    "sorumluluk beyanı", "özel durum açıklaması (genel)", 
+    # Günlük / Yönetimsel Rutinler
+    "görev dağılımı", "imza sirküleri", "genel kurul çağrısı", "toplantı tutanağı",
+    "pay alım satım bildirimi", # Patronun/yöneticinin ufak şahsi alım satımlarını eler (Şirketin kendi "geri alım"ı filtreye takılmaz)
+    # Haber/Medya Çöpleri
+    "hedef fiyat", "tavsiyesi", "tavsiye", "aracı kurum", "piyasa yorumu"
 ]
-
 def load_seen_ids():
     """Daha önce işlenmiş bildirim ID'lerini yükler."""
     if os.path.exists(STATE_FILE):
