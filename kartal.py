@@ -860,10 +860,11 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
     else:
         pfk = 0.0
 
-    # ÇEYREKLİK ROE TRENDİ
+    # 12 ÇEYREKLİK (3 YILLIK) ROE TRENDİ VE SEKTÖREL VERİLER
     sirket_kaydi = YEREL_MALI_VERITABANI.get(kod, {})
     cok_donem = sirket_kaydi.get("donemler", {})
-    sirali_donemler = sorted(cok_donem.keys())[-5:]
+    # Son 12 çeyreği (3 yıl) çek
+    sirali_donemler = sorted(cok_donem.keys())[-12:]
 
     roe_donemler = []
     roe_degerleri = []
@@ -1195,6 +1196,7 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
             <td>{r['Sektör']}</td>
             <td>{r['Hendek']}</td>
             <td><strong>{r['F_Skor']}/9</strong></td>
+	    <td>{r.get('ROE_Rozet', '-')}</td>
             <td>{r['Mevcut_Lot']:,}</td>
             <td>{r['Fiyat']:.2f} TL{kz_gosterim}</td>
             <td><strong>{r['Mevcut_Tutar']:,.0f} TL</strong></td>
@@ -1310,7 +1312,7 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
     <table id="portfoy-tablosu">
         <thead>
             <tr>
-                <th>Kod</th><th>Sektör</th><th>Hendek</th><th>F-Skor</th><th>Mevcut Lot</th><th>Güncel Fiyat</th><th>Mevcut Tutar</th><th>Mevcut %</th><th>Hedef %</th><th>Hedef Tutar</th><th>Hedef Lot</th><th>Pazartesi Fark Lot</th><th>Aksiyon</th>
+                <th>Kod</th><th>Sektör</th><th>Hendek</th><th>F-Skor</th><th>ROE</th><th>Mevcut Lot</th><th>Güncel Fiyat</th><th>Mevcut Tutar</th><th>Mevcut %</th><th>Hedef %</th><th>Hedef Tutar</th><th>Hedef Lot</th><th>Pazartesi Fark Lot</th><th>Aksiyon</th>
             </tr>
         </thead>
         <tbody>
@@ -1539,52 +1541,56 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
             }};
         }}
 
-        function uretRoeSparkline(donemler, degerler) {{
-            if (!degerler || degerler.length < 2) return '';
-            const w = 220; const h = 40; const pad = 6;
-            const minVal = Math.min(...degerler);
-            const maxVal = Math.max(...degerler);
-            const range = (maxVal - minVal) === 0 ? 1 : (maxVal - minVal);
+        // 6 KÜMELİ DİNAMİK SEKTÖR ROE MOTORU
+        function uretRoeAnalizYorumu(roeDeger, sektorAdi) {{
+            const roe = parseFloat(roeDeger) || 0;
+            const s = (sektorAdi || '').toLowerCase();
+            
+            let kume = 'Ağır Sanayi & Üretim';
+            let minNorm = 15;
+            let ustNorm = 30;
+            let motor = 'Kapasite Kullanımı & Emtia/Spread Dengesi';
 
-            const points = degerler.map((val, idx) => {{
-                const x = pad + (idx / (degerler.length - 1)) * (w - 2 * pad);
-                const y = h - pad - ((val - minVal) / range) * (h - 2 * pad);
-                return {{ x: x.toFixed(1), y: y.toFixed(1), val: val, donem: (donemler && donemler[idx]) ? donemler[idx] : '' }};
-            }});
+            if (/perakende|mağaza|gıda|içecek/i.test(s)) {{
+                kume = 'Organize Perakende & Tüketim'; minNorm = 35; ustNorm = 60;
+                motor = 'Yüksek Aktif Devir Hızı (Stok Sirkülasyonu)';
+            }} else if (/yazılım|bilişim|teknoloji|savunma|telekom/i.test(s)) {{
+                kume = 'Hafif Varlık & Teknoloji'; minNorm = 30; ustNorm = 50;
+                motor = 'Yüksek Net Faaliyet Marjı';
+            }} else if (/banka|sigorta|faktoring|finans|menkul/i.test(s)) {{
+                kume = 'Banka & Finans'; minNorm = 22; ustNorm = 38;
+                motor = 'Finansal Kaldıraç & Net Faiz Marjı';
+            }} else if (/demir|çelik|petrol|kimya|çimento|otomotiv|maden/i.test(s)) {{
+                kume = 'Ağır Sanayi & Döngüsel'; minNorm = 15; ustNorm = 30;
+                motor = 'Emtia Döngüsü & Operasyonel Verimlilik';
+            }} else if (/gyo|gayrimenkul|inşaat|turizm|enerji|otel|tarım/i.test(s)) {{
+                kume = 'Varlık Yoğun & Düşük Devir'; minNorm = 8; ustNorm = 20;
+                motor = 'Varlık Değeri & Nakit Akış Verimi';
+            }} else if (/holding/i.test(s)) {{
+                kume = 'Holding & İştirak Grubu'; minNorm = 18; ustNorm = 32;
+                motor = 'Konsolide İştirak Portföy Getirisi';
+            }}
 
-            const sonVal = degerler[degerler.length - 1];
-            const ilkVal = degerler[0];
-            const artisVar = sonVal >= ilkVal;
-            const anaRenk = artisVar ? '#10b981' : '#ef4444';
-            const gradId = 'roeGrad_' + Math.random().toString(36).substr(2, 7);
+            let rozet, metin, stil;
+            if (roe < 5.0) {{
+                rozet = '<span style="background:#7f1d1d; color:#fca5a5; font-size:10px; font-weight:bold; padding:2px 6px; border-radius:4px;">🚨 REEL SERMAYE ERİMESİ</span>';
+                metin = 'Nominal net kâr açıklansa da <strong>%' + roe.toFixed(1) + ' ROE</strong> sermaye maliyetinin ve enflasyonun fersah fersah altındadır. Şirketin devasa özkaynak tabanına oranla kârı yetersiz kalmakta, hissedar getirisi reel olarak erimektedir.';
+                stil = 'border-left: 3px solid #ef4444; background: #450a0a22;';
+            }} else if (roe < minNorm) {{
+                rozet = '<span style="background:#854d0e; color:#fde047; font-size:10px; font-weight:bold; padding:2px 6px; border-radius:4px;">⚠️ SEKTÖR ALTI KÂRLILIK</span>';
+                metin = 'Şirketin <strong>%' + roe.toFixed(1) + '</strong> seviyesindeki ROE\\'si, <em>' + kume + '</em> standartlarının (%' + minNorm + ' - %' + ustNorm + ') altında seyrediyor. DuPont motoru (' + motor + ') yeterli ivmeyi üretemiyor.';
+                stil = 'border-left: 3px solid #f59e0b; background: #78350f22;';
+            }} else if (roe <= ustNorm) {{
+                rozet = '<span style="background:#065f46; color:#6ee7b7; font-size:10px; font-weight:bold; padding:2px 6px; border-radius:4px;">🟢 SEKTÖRLE UYUMLU / SAĞLIKLI</span>';
+                metin = '<strong>%' + roe.toFixed(1) + ' ROE</strong> ile şirket, <em>' + kume + '</em> normlarına (%' + minNorm + ' - %' + ustNorm + ') tam uyumlu sermaye getirisi sağlıyor. Kârlılık hissedar için reel değer üretiyor.';
+                stil = 'border-left: 3px solid #10b981; background: #064e3b22;';
+            }} else {{
+                rozet = '<span style="background:#1e3a8a; color:#93c5fd; font-size:10px; font-weight:bold; padding:2px 6px; border-radius:4px;">🚀 ÜSTÜN SERMAYE VERİMİ</span>';
+                metin = '<strong>%' + roe.toFixed(1) + ' ROE</strong> sektör normunun (%' + ustNorm + ') belirgin üzerinde. Bu kârlılığın borç kaldıracından değil, operasyonel marjdan geldiği dipnotlardan teyit edilmelidir.';
+                stil = 'border-left: 3px solid #38bdf8; background: #0c4a6e22;';
+            }}
 
-            const polylinePts = points.map(p => p.x + ',' + p.y).join(' ');
-            const fillPath = 'M ' + points[0].x + ',' + (h - pad) + ' ' +
-                             points.map(p => 'L ' + p.x + ',' + p.y).join(' ') +
-                             ' L ' + points[points.length - 1].x + ',' + (h - pad) + ' Z';
-
-            let circles = '';
-            points.forEach(p => {{
-                circles += '<circle cx="' + p.x + '" cy="' + p.y + '" r="3" fill="' + anaRenk + '" stroke="#0f172a" stroke-width="1.5"><title>' + p.donem + ': %' + p.val.toFixed(1) + '</title></circle>';
-            }});
-
-            return '<div style="margin-top:8px; padding-top:8px; border-top:1px dashed #1e293b;">' +
-                '<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px; font-size:10px; color:#94a3b8;">' +
-                    '<span>📈 Çeyreklik ROE Trendi</span>' +
-                    '<span style="color:' + anaRenk + '; font-weight:bold;">' + (artisVar ? '▲' : '▼') + ' %' + ilkVal.toFixed(1) + ' → %' + sonVal.toFixed(1) + '</span>' +
-                '</div>' +
-                '<svg width="100%" height="' + h + '" viewBox="0 0 ' + w + ' ' + h + '" style="overflow:visible; display:block;">' +
-                    '<defs>' +
-                        '<linearGradient id="' + gradId + '" x1="0" y1="0" x2="0" y2="1">' +
-                            '<stop offset="0%" stop-color="' + anaRenk + '" stop-opacity="0.35"/>' +
-                            '<stop offset="100%" stop-color="' + anaRenk + '" stop-opacity="0.0"/>' +
-                        '</linearGradient>' +
-                    '</defs>' +
-                    '<path d="' + fillPath + '" fill="url(#' + gradId + ')" />' +
-                    '<polyline fill="none" stroke="' + anaRenk + '" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="' + polylinePts + '" />' +
-                    circles +
-                '</svg>' +
-            '</div>';
+            return {{ rozet: rozet, metin: metin, stil: stil, kume: kume, minNorm: minNorm, ustNorm: ustNorm, motor: motor }};
         }}
 
         function acKarneModal(kod) {{
@@ -1595,7 +1601,7 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
             const dna = katman.dna_ozeti;
             const serit = katman.oz_turkce_seridi;
             const td = katman.tahta_derinligi || {{ sinif: 'Standart Tahta', rozet_renk: 'badge-ok' }};
-
+	    
             const seritHtml = serit.map(item =>
                 '<div class="oz-turkce-item"><span>' + item.ikon + ' <strong>' + item.etiket + ':</strong> ' + item.metin + '</span></div>'
             ).join('');
@@ -1640,6 +1646,10 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
             const st = k.sirketi_tani;
             const db = k.degerleme_bandi || {{fk: 0, pfk: 0, alt_fk: 6, medyan_fk: 11, ust_fk: 16, marj_durum: 'DENGELİ', marj_renk: 'badge-warn', konum_yuzde: 50}};
 
+	    // ROE Analiz Motorunu Çalıştır (st tanımlandıktan sonra)
+	    const safRoe = parseFloat(String(st.roe_deger).replace('%', '').replace(',', '.')) || 0;
+            const roeAnaliz = uretRoeAnalizYorumu(safRoe, k.sektor);
+
             // === 1. TAB: ŞİRKETİ TANI & DEĞERLEME ===
             let t1 = 
                 '<div class="info-card">' +
@@ -1654,12 +1664,20 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
                         '<div class="meal-text">' + st.carpan_ozet + '</div>' +
                     '</div>' +
                     '<div class="info-card">' +
-                        '<div style="font-size:11px; color:#94a3b8;">SON DÖNEM NET KÂR & ROE</div>' +
-                        '<div class="big-val">' + st.net_kar_12ay + ' (ROE: ' + st.roe_deger + ')</div>' +
+                        '<div style="display:flex; justify-content:space-between; align-items:center;">' +
+                            '<span style="font-size:11px; color:#94a3b8; font-weight:bold;">SON DÖNEM NET KÂR & ROE</span>' +
+                            roeAnaliz.rozet +
+                        '</div>' +
+                        '<div class="big-val" style="margin-top:6px;">' + st.net_kar_12ay + ' <span style="font-size:15px; color:#94a3b8; font-weight:normal;">(ROE: ' + st.roe_deger + ')</span></div>' +
                         '<div class="meal-text">' + st.net_kar_yorum + '</div>' +
                         uretRoeSparkline(k.roe_serisi?.donemler, k.roe_serisi?.roe_degerleri) +
-                        '<div style="font-size:10.5px; color:#94a3b8; background:#0f172a; padding:8px 10px; border-radius:6px; margin-top:12px; border-left:3px solid #facc15;">' +
-                            '💡 <b>ROE (Özkaynak Kârlılığı):</b> Öz sermayenin reel getirisini ölçer. Enflasyonun üzerinde seyretmesi beklenir.' +
+                        
+                        '<div style="margin-top:10px; padding:6px 10px; background:#0f172a; border-radius:5px; border:1px solid #1e293b; font-size:11px; display:flex; justify-content:space-between; color:#94a3b8;">' +
+                            '<span>🎯 <strong>' + roeAnaliz.kume + ' Normu:</strong> %' + roeAnaliz.minNorm + ' - %' + roeAnaliz.ustNorm + '</span>' +
+                            '<span style="color:#38bdf8;">⚙️ ' + roeAnaliz.motor + '</span>' +
+                        '</div>' +
+                        '<div style="font-size:11px; padding:9px 12px; border-radius:6px; margin-top:8px; ' + roeAnaliz.stil + '">' +
+                            '<div style="color:#cbd5e1; line-height:1.45;">' + roeAnaliz.metin + '</div>' +
                         '</div>' +
                     '</div>' +
                 '</div>' +
@@ -2244,6 +2262,31 @@ if __name__ == "__main__":
         aksiyon = "AL / EKLE" if fark_lot > 0 else ("SAT / AZALT" if fark_lot < 0 else "KORU / DENGEDE")
         kz_yuzde = round(((fiyat / item["ort_maliyet"]) - 1) * 100, 2) if item["ort_maliyet"] > 0 else 0.0
 
+	# TABLO İÇİN HIZLI ROE ROZETİ
+        sek_l = str(item["sektor"]).lower()
+        r_val = float(item["ham_veri"].get("roe", 0.0))
+        
+        # Sektör alt tabanı
+        if any(x in sek_l for x in ["perakende", "gıda", "içecek"]):
+            taban = 35.0
+        elif any(x in sek_l for x in ["yazılım", "teknoloji", "savunma", "telekom"]):
+            taban = 30.0
+        elif any(x in sek_l for x in ["banka", "sigorta", "faktoring", "finans"]):
+            taban = 22.0
+        elif any(x in sek_l for x in ["demir", "çelik", "petrol", "kimya", "çimento", "otomotiv"]):
+            taban = 15.0
+        else:
+            taban = 10.0
+
+        if r_val < 5.0:
+            roe_rozet = f"<span class='badge-fail'>%{r_val:.1f} 🚨</span>"
+        elif r_val < taban:
+            roe_rozet = f"<span class='badge-warn'>%{r_val:.1f} ⚠️</span>"
+        else:
+            roe_rozet = f"<span class='badge-ok'>%{r_val:.1f} 🟢</span>"
+
+        item["roe_rozet"] = roe_rozet
+
         tablo_verileri.append({
             "Kod": kod, "Sektör": item["sektor"], "Hendek": item["kategori"], "F_Skor": item["f_skor"],
             "Mevcut_Lot": m_lot, "Fiyat": fiyat, "Mevcut_Tutar": m_tutar, "Mevcut_Pay": m_pay,
@@ -2251,7 +2294,8 @@ if __name__ == "__main__":
             "Aksiyon": aksiyon, "KZ_Yuzde": kz_yuzde, "Katsayi": item["katsayi"], "Islem_Tutari": islem_tutari,
             "Ort_Maliyet": item["ort_maliyet"],
 	    "kadroda": item["kadroda"], # YENİ EKLENDİ
-	    "is_radar": item["is_radar"] # YENİ EKLENDİ
+	    "is_radar": item["is_radar"], # YENİ EKLENDİ
+	    "ROE_Rozet": item["roe_rozet"] # YENİ EKLENDİ
         })
 
         poz_bilgi = {"agirlik_yuzde": m_pay, "kademe": mevcut_pozisyonlar.get(kod, {}).get("kademe", "1/3 Başlangıç")}
