@@ -82,6 +82,12 @@ def filtreye_uyuyor_mu(baslik, ozet):
 def main():
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Yerel JSON üzerinden KAP Taraması başlatıldı.")
 
+    # ... (dosya okuma kısımları aynı kalacak) ...
+
+    seen_ids = load_seen_ids()
+    yeni_sayac = 0
+    MAX_MESAJ = 5 # EMNİYET KEMERİ: Tek çalışmada maksimum 5 bildirim atabilir
+
     if not os.path.exists(CIKTI_KAP_YOLU):
         print(f"HATA: {CIKTI_KAP_YOLU} bulunamadı. Lütfen önce yerel_kap_motoru.py'yi çalıştırın.")
         return
@@ -99,6 +105,11 @@ def main():
 
     for hisse, bildirimler in haber_ambari.items():
         for item in bildirimler:
+    	    # SPAM KORUMASI: Sınır aşıldıysa döngüyü kır
+            if yeni_sayac >= MAX_MESAJ:
+                print("🛑 Spam koruması devrede: Kalan bildirimler bir sonraki taramaya bırakıldı.")
+                break
+
             bildirim_id = str(item.get("id") or "")
             baslik = item.get("baslik") or item.get("title") or "KAP Bildirimi"
             zaman = item.get("tarih") or item.get("date") or datetime.now().strftime("%d.%m.%Y")
@@ -125,6 +136,9 @@ def main():
             else:
                 # Filtreye uymasa da tekrar kontrol etmemek için ID'yi kaydet
                 seen_ids.add(bildirim_id)
+
+	if yeni_sayac >= MAX_MESAJ:
+            break # Dış döngüyü de kır
 
     save_seen_ids(seen_ids)
     print(f"Tarama tamamlandı. {yeni_sayac} adet kritik bildirim Make.com'a aktarıldı.")
