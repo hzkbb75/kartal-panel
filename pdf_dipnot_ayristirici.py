@@ -63,44 +63,72 @@ OZEL_KOKLER = {
 
 def dinamik_temiz_havuz_yukle() -> dict:
     """
-    bist_mali_tablolar.json dosyasından Bölüm 1 süzgecini geçen tüm şirketleri
-    dinamik olarak yükler ve unvan kökleriyle eşleştirir.
+    bist_mali_tablolar.json ve bist_analiz_tabani.json üzerinden
+    şirketleri dinamik olarak yükler ve unvan kökleriyle eşleştirir.
     """
     havuz = {}
-    if not os.path.exists(BIST_MALI_TABLOLAR_YOLU):
-        print(f"  [Uyarı] '{BIST_MALI_TABLOLAR_YOLU}' bulunamadı, varsayılan liste kullanılıyor.")
-        return OZEL_KOKLER
 
+    # 1. Ziraat Analiz Tabanından Şirket Listesini ve Unvanlarını Yükle
+    taban_yolu = "bist_analiz_tabani.json"
+    if os.path.exists(taban_yolu):
+        try:
+            with open(taban_yolu, "r", encoding="utf-8") as f:
+                z_taban = json.load(f)
+                for kod, veri in z_taban.items():
+                    sirket_adi = veri.get("sirket_adi", kod)
+                    kokler = [kod, sirket_adi]
+                    if kod in OZEL_KOKLER:
+                        kokler.extend(OZEL_KOKLER[kod])
+
+                    temiz_unvan = re.sub(r"\b(a\.s\.|as|sanayi|ve|ticaret|holding|pazarlama|isletmeleri)\b", "", tr_norm(sirket_adi)).strip()
+                    if len(temiz_unvan) >= 4:
+                        kokler.append(temiz_unvan)
+
+                    havuz[kod] = list(set(kokler))
+        except Exception as e:
+            print(f"  [Uyarı] bist_analiz_tabani.json okunurken hata: {e}")
+
+    # 2. BIST Mali Tablolar Ambarından Halka Açıklık ve Ek Kökleri Birleştir
+    if os.path.exists(BIST_MALI_TABLOLAR_YOLU):
+        try:
+            with open(BIST_MALI_TABLOLAR_YOLU, "r", encoding="utf-8") as f:
+                vt = json.load(f).get("sirketler", {})
+
+            for kod, veri in vt.items():
+                halka_aciklik = float(veri.get("halka_aciklik", 35.0))
+                if halka_aciklik > 70.0:
+                    continue
+
+                sirket_adi = veri.get("sirket_adi", kod)
+                kokler = [kod, sirket_adi]
+                if kod in OZEL_KOKLER:
+                    kokler.extend(OZEL_KOKLER[kod])
+
+                temiz_unvan = re.sub(r"\b(a\.s\.|as|sanayi|ve|ticaret|holding|pazarlama|isletmeleri)\b", "", tr_norm(sirket_adi)).strip()
+                if len(temiz_unvan) >= 4:
+                    kokler.append(temiz_unvan)
+
+                if kod in havuz:
+                    havuz[kod] = list(set(havuz[kod] + kokler))
+                else:
+                    havuz[kod] = list(set(kokler))
+        except Exception as e:
+            print(f"  [Uyarı] Dinamik havuz mali tablolardan yüklenirken sorun oluştu: {e}")
+
+    # Dosyaların hiçbiri yoksa varsayılan köklere dön
+    if not havuz:
+        print("  [Uyarı] Mali veri tabanı bulunamadı, varsayılan liste kullanılıyor.")
+        havuz = {k: list(set([k] + v)) for k, v in OZEL_KOKLER.items()}
+
+    # KAP botu için temiz havuz kod listesini dışa aktar
     try:
-        with open(BIST_MALI_TABLOLAR_YOLU, "r", encoding="utf-8") as f:
-            vt = json.load(f).get("sirketler", {})
-
-        for kod, veri in vt.items():
-            halka_aciklik = float(veri.get("halka_aciklik", 35.0))
-            if halka_aciklik > 70.0:
-                continue
-
-            sirket_adi = veri.get("sirket_adi", kod)
-            kokler = [kod, sirket_adi]
-            if kod in OZEL_KOKLER:
-                kokler.extend(OZEL_KOKLER[kod])
-            
-            temiz_unvan = re.sub(r"\b(a\.s\.|as|sanayi|ve|ticaret|holding|pazarlama|isletmeleri)\b", "", tr_norm(sirket_adi)).strip()
-            if len(temiz_unvan) >= 4:
-                kokler.append(temiz_unvan)
-
-            havuz[kod] = list(set(kokler))
-
-        # KAP botu için temiz havuz kod listesini dışa aktar
         kod_listesi = sorted(list(havuz.keys()))
         with open(TEMIZ_HAVUZ_TXT_YOLU, "w", encoding="utf-8") as f:
             f.write("\n".join(kod_listesi))
         with open(TEMIZ_HAVUZ_JSON_YOLU, "w", encoding="utf-8") as f:
             json.dump(kod_listesi, f, indent=2)
-
     except Exception as e:
-        print(f"  [Hata] Dinamik havuz yüklenirken sorun oluştu: {e}")
-        return OZEL_KOKLER
+        print(f"  [Hata] Temiz havuz dosyaları dışa aktarılamadı: {e}")
 
     return havuz
 
@@ -247,7 +275,7 @@ def main():
         return
 
     print("=" * 68)
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] KARTAL GENİŞLETİLMİŞ FAALİYET RAPORU MOTORU (TEMİZ HAVUZ 408+)")
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] KARTAL GENİŞLETİLMİŞ FAALİYET RAPORU MOTORU (TEMİZ HAVUZ)")
     print(f"  Tanımlı Temiz Havuz Kapsamı: {len(TEMIZ_HAVUZ_SIRKETLERI)} BIST Şirketi")
     print("=" * 68)
 
