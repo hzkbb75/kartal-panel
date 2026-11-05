@@ -15,8 +15,8 @@ os.makedirs(GELEN_RAPOR_DIR, exist_ok=True)
 ONEMLI_KELIMELER = [
     "yeni iş ilişkisi", "ihale", "sipariş", "sözleşme", 
     "kapasite", "teşvik", "yeni yatırım", "yatırım kararı", "yatırım teşvik", 
-    "birleşme", "devralma", "satın alma", "ortaklık",
-    "maddi duran varlık", "fabrika", "arsa", "gayrimenkul",
+    "birleşme", "devralma", "satın alma", "stratejik ortaklık", "yeni ortaklık",
+    "maddi duran varlık", "fabrika", "arsa alımı", "arsa satışı", "gayrimenkul alımı", "gayrimenkul satışı",
     "geri alım", "temettü", "kâr payı", "bedelsiz", "bedelli",
     "faaliyet raporu"
 ]
