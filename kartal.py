@@ -1685,11 +1685,24 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
             t3 += '</div>';
             document.getElementById('tab3').innerHTML = t3;
 
-            // === 4. TAB: DESTEK / DİRENÇ & ASİMETRİK R:R PLANI ===
+            // === 4. TAB: DESTEK / DİRENÇ & ASİMETRİK R:R PLANI + CANLI TRADINGVIEW (FAZ 4) ===
             const tv = k.teknik_veri;
             let t4 = '';
+            
+            // 1. Dinamik Koyu Tema TradingView Canlı Mum Grafiği (Sıfır Dosya Boyutu Yükü)
+            const tvIframeHtml = 
+                '<div style="margin-bottom:16px; border-radius:8px; overflow:hidden; border:1px solid #1f2937; height:460px; background:#0b0e14;">' +
+                    '<iframe ' +
+                        'src="https://s.tradingview.com/widgetembed/?symbol=BIST%3A' + kod + '&interval=D&theme=dark&style=1&timezone=Europe%2FIstanbul&locale=tr&toolbarbg=111827&enable_publishing=false&hide_side_toolbar=0&allow_symbol_change=1" ' +
+                        'style="width: 100%; height: 100%; border: none;" ' +
+                        'frameborder="0" allowtransparency="true" scrolling="no">' +
+                    '</iframe>' +
+                '</div>';
+
+            // 2. 60 Günlük Yerel Kanal ve R:R Matrisi
             if (tv) {{
-                t4 = '<div class="info-card" style="background:#111827; border:1px solid #1f2937; padding:20px;">' +
+                t4 = tvIframeHtml + 
+                    '<div class="info-card" style="background:#111827; border:1px solid #1f2937; padding:20px;">' +
                     '<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">' +
                         '<div>' +
                             '<span style="font-size:16px; font-weight:bold; color:#38bdf8;">🎯 60 GÜNLÜK YEREL KANAL & ASİMETRİK R:R PLANI</span>' +
@@ -1743,7 +1756,8 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
                     '</div>' +
                 '</div>';
             }} else {{
-                t4 = '<div class="info-card meal-text" style="color:#94a3b8;">Bu hisse için 60 günlük teknik kanal henüz hesaplanmadı. Lütfen <code>kap_indirici.py</code> çalıştırıldığından emin olun.</div>';
+                t4 = tvIframeHtml + 
+                    '<div class="info-card meal-text" style="color:#94a3b8;">Bu hisse için 60 günlük teknik kanal henüz hesaplanmadı. Canlı TradingView grafiği yukarıda aktiftir.</div>';
             }}
             document.getElementById('tab4').innerHTML = t4;
 
