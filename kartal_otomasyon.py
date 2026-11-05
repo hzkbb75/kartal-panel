@@ -75,6 +75,14 @@ def main():
         log("📰 Yerel KAP & Haber Motoru güncelleniyor...")
         subprocess.run([sys.executable, kap_motoru_py], cwd=PROJE_DIZINI)
 
+    # --- YENİ EKLENEN ADIM: LLM ve Telegram KAP Bildirimi ---
+    # Not: Dosyanın adını portfoy_kap_takip.py yaptığınızı belirttiniz
+    kap_takip_py = os.path.join(PROJE_DIZINI, "portfoy_kap_takip.py")
+    if os.path.exists(kap_takip_py):
+        log("🤖 Make.com (Okan Hoca LLM) KAP taraması başlatılıyor...")
+        subprocess.run([sys.executable, kap_takip_py], cwd=PROJE_DIZINI)
+    # --------------------------------------------------------
+
     # 5. KARTAL analiz motorunu çalıştır ve panoları üret
     kartal_py = os.path.join(PROJE_DIZINI, "kartal.py")
     if os.path.exists(kartal_py):
