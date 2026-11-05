@@ -26,7 +26,7 @@ YASAKLI_KELIMELER = [
     "sorumluluk beyanı", "özel durum açıklaması (genel)", 
     "görev dağılımı", "imza sirküleri", "genel kurul çağrısı", "toplantı tutanağı",
     "pay alım satım bildirimi", "yatırımcı ilişkileri",
-    "hedef fiyat", "tavsiyesi", "tavsiye", "aracı kurum", "piyasa yorumu"
+    "hedef fiyat", "tavsiyesi", "tavsiye", "geri alım endeksi", "endeks değişiklikleri", "aracı kurum", "piyasa yorumu"
 ]
 
 def load_seen_ids():

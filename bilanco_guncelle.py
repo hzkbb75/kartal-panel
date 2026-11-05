@@ -12,7 +12,7 @@ import pandas as pd
 # ==============================================================================
 ROOT_DIR = "hektor_kutuphane"
 CIKTI_YOLU = os.path.join(ROOT_DIR, "bist_mali_tablolar.json")
-SOZLUK_YOLU = os.path.join(ROOT_DIR, "bist_sozluk.json") # Yeni Sözlük Yolumuz
+SOZLUK_YOLU = "bist_sozluk.json" if os.path.exists("bist_sozluk.json") else os.path.join(ROOT_DIR, "bist_sozluk.json")
 os.makedirs(ROOT_DIR, exist_ok=True)
 
 HEADERS = {
