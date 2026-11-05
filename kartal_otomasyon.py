@@ -17,9 +17,16 @@ def log(mesaj):
 def main():
     log("KARTAL Tam Otomasyon Çarkı Çalışıyor...")
 
+    # 0. GitHub'dan en güncel teknik analizi (kap_ve_teknik.json) yerel ambarla eşitle
+    try:
+        log("🔄 GitHub'dan güncel teknik veriler çekiliyor (git pull)...")
+        subprocess.run(["git", "pull", "origin", "main"], cwd=PROJE_DIZINI, check=False)
+    except Exception as e:
+        log(f"⚠️ Git pull atlandı: {e}")
+
     yeni_pdf_geldi = False
     
-    # 1. GitHub API üzerinden repodaki 'raporlar' klasörünü kontrol et (Git programı gerektirmez)
+    # 1. GitHub API üzerinden repodaki 'raporlar' klasörünü kontrol et
     try:
         headers = {"User-Agent": "KARTAL-Automation"}
         res = requests.get(GITHUB_API_URL, headers=headers, timeout=20)
@@ -57,15 +64,21 @@ def main():
         if os.path.exists(ayristirici_py):
             subprocess.run([sys.executable, ayristirici_py], cwd=PROJE_DIZINI)
 
-	# 2.5. Google Sheets üzerinden hisseleri ve kasayı senkronize et
+    # 3. Google Sheets üzerinden hisseleri ve kasayı senkronize et
     portfoy_motoru_py = os.path.join(PROJE_DIZINI, "portfoy_motoru.py")
     if os.path.exists(portfoy_motoru_py):
         subprocess.run([sys.executable, portfoy_motoru_py], cwd=PROJE_DIZINI)
 
-    # 3. KARTAL analiz motorunu çalıştır ve panoyu güncelle
+    # 4. Yerel BIST KAP ve Haber Motorunu çalıştır (628 hisse / 7 saniye)
+    kap_motoru_py = os.path.join(PROJE_DIZINI, "yerel_kap_motoru.py")
+    if os.path.exists(kap_motoru_py):
+        log("📰 Yerel KAP & Haber Motoru güncelleniyor...")
+        subprocess.run([sys.executable, kap_motoru_py], cwd=PROJE_DIZINI)
+
+    # 5. KARTAL analiz motorunu çalıştır ve panoları üret
     kartal_py = os.path.join(PROJE_DIZINI, "kartal.py")
     if os.path.exists(kartal_py):
-        log("KARTAL Analiz Motoru çalıştırılıyor...")
+        log("🚀 KARTAL Analiz Motoru çalıştırılıyor...")
         subprocess.run([sys.executable, kartal_py], cwd=PROJE_DIZINI)
         log("✅ KARTAL Portföy Kalkanı ve HTML Teftiş Masası güncellendi!")
 

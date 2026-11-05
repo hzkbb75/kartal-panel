@@ -1809,7 +1809,11 @@ def uret_portfoy_kalkani_html(tablo_verileri: list, karneler: dict, toplam_portf
 </html>"""
 
     PANO_YOLU = "portfoy.html"
-    with open(PANO_YOLU, "w", encoding="utf-8") as f:
+    # Hem portfoy.html hem de index.html aynı güncel 6 sekmeli panoya kavuşsun:
+    with open("portfoy.html", "w", encoding="utf-8") as f:
+        f.write(html_icerik)
+
+    with open("index.html", "w", encoding="utf-8") as f:
         f.write(html_icerik)
 
 
