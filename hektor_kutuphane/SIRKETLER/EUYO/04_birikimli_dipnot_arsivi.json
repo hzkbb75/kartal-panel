@@ -1,0 +1,82 @@
+{
+  "kod": "EUYO",
+  "son_guncelleme": "2026-11-05 11:00",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 377.1,
+      "icr_kati": 0.89,
+      "tahakkuk_orani": -2.62,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 3.4,
+      "acm_makasi": -82.2,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 0.89x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 545.2,
+      "icr_kati": 0.07,
+      "tahakkuk_orani": -0.27,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 11.0,
+      "acm_makasi": -69.8,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 0.07x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 7.6
+    },
+    "2026/03": {
+      "efm_yuzde": 206.0,
+      "icr_kati": -0.26,
+      "tahakkuk_orani": -3.92,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 0.0,
+      "acm_makasi": -38.5,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -0.26x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -11.0
+    },
+    "2026/06": {
+      "efm_yuzde": 648.3,
+      "icr_kati": 0.23,
+      "tahakkuk_orani": -6.9,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 0.0,
+      "acm_makasi": -167.7,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 0.23x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "kod": "CELHA",
+  "son_guncelleme": "2026-11-05 11:00",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 25.6,
+      "icr_kati": -2.12,
+      "tahakkuk_orani": -29.89,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.5,
+      "dso_gun": 223.9,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.5,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -2.12x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 52.8,
+      "icr_kati": -0.69,
+      "tahakkuk_orani": -20.73,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 102.0,
+      "acm_makasi": -132.4,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.5,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -0.69x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -121.9
+    },
+    "2026/03": {
+      "efm_yuzde": 43.6,
+      "icr_kati": -0.57,
+      "tahakkuk_orani": -18.53,
+      "aga_orani": 0.0,
+      "ykp_orani": 2.5,
+      "dso_gun": 236.0,
+      "acm_makasi": 54.4,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Alacak-Ciro makası +%54.4 açıldı (DSO: 236.0 gün).",
+        "🔴 Faiz karşılama oranı -0.57x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": 134.0
+    },
+    "2026/06": {
+      "efm_yuzde": 64.2,
+      "icr_kati": -0.76,
+      "tahakkuk_orani": -25.65,
+      "aga_orani": 0.0,
+      "ykp_orani": 2.2,
+      "dso_gun": 117.9,
+      "acm_makasi": -108.7,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.7,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -0.76x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": -118.1
+    }
+  }
+}

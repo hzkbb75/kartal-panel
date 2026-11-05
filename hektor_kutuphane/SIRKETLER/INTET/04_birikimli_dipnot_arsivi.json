@@ -1,0 +1,64 @@
+{
+  "kod": "INTET",
+  "son_guncelleme": "2026-11-05 11:00",
+  "donemler": {
+    "2025/06": {
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.61,
+      "tahakkuk_orani": -34503.12,
+      "aga_orani": 0.0,
+      "ykp_orani": 60.0,
+      "dso_gun": 0.0,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Kağıt üzeri kâr payı yüksek (%60.0).",
+        "🔴 Faiz karşılama oranı 0.61x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2026/03": {
+      "efm_yuzde": 28.0,
+      "icr_kati": 1.63,
+      "tahakkuk_orani": -18.9,
+      "aga_orani": 284.0,
+      "ykp_orani": 3.7,
+      "dso_gun": 321.3,
+      "acm_makasi": 39.9,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.7,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🟡 Alacak-Ciro makası +%39.9 açıldı (DSO: 321.3 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": 321.3
+    },
+    "2026/06": {
+      "efm_yuzde": 38.7,
+      "icr_kati": 1.32,
+      "tahakkuk_orani": -23.87,
+      "aga_orani": 14.0,
+      "ykp_orani": 1.9,
+      "dso_gun": 141.0,
+      "acm_makasi": -131.7,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.7,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı 1.32x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -180.3
+    }
+  }
+}

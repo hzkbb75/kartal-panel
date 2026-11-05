@@ -1,0 +1,87 @@
+{
+  "kod": "EDATA",
+  "son_guncelleme": "2026-11-05 11:00",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 841.8,
+      "icr_kati": 1.01,
+      "tahakkuk_orani": 6.76,
+      "aga_orani": 0.0,
+      "ykp_orani": 31.7,
+      "dso_gun": 320.1,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%6.76): Kâr nakde dönüşmüyor.",
+        "🔴 Faiz karşılama oranı 1.01x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 2514.4,
+      "icr_kati": 0.98,
+      "tahakkuk_orani": 8.34,
+      "aga_orani": 0.0,
+      "ykp_orani": 19.8,
+      "dso_gun": 177.8,
+      "acm_makasi": -115.7,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%8.34): Kâr nakde dönüşmüyor.",
+        "🔴 Faiz karşılama oranı 0.98x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -142.3
+    },
+    "2026/03": {
+      "efm_yuzde": 1108.9,
+      "icr_kati": 0.04,
+      "tahakkuk_orani": -10.22,
+      "aga_orani": 8.5,
+      "ykp_orani": 99.8,
+      "dso_gun": 391.2,
+      "acm_makasi": 40.6,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.7,
+      "iliskili_orani": 0.0,
+      "dts_skor": 45,
+      "uyarilar": [
+        "🟡 Kağıt üzeri kâr payı yüksek (%99.8).",
+        "🟡 Alacak-Ciro makası +%40.6 açıldı (DSO: 391.2 gün).",
+        "🔴 Faiz karşılama oranı 0.04x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 10,
+      "dso_delta": 213.4
+    },
+    "2026/06": {
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.19,
+      "tahakkuk_orani": 14.24,
+      "aga_orani": 0.0,
+      "ykp_orani": 26.9,
+      "dso_gun": 207.4,
+      "acm_makasi": -106.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%14.24): Kâr nakde dönüşmüyor.",
+        "🔴 Faiz karşılama oranı 0.19x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -10,
+      "dso_delta": -183.8
+    }
+  }
+}

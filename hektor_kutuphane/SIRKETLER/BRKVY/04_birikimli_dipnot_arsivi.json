@@ -1,0 +1,83 @@
+{
+  "kod": "BRKVY",
+  "son_guncelleme": "2026-11-05 11:00",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 0.0,
+      "icr_kati": 99.0,
+      "tahakkuk_orani": 24.81,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 0.0,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 20,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%24.81): Kâr nakde dönüşmüyor."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 0.0,
+      "icr_kati": 99.0,
+      "tahakkuk_orani": 56.14,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 0.0,
+      "acm_makasi": -125.1,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 20,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%56.14): Kâr nakde dönüşmüyor."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2026/03": {
+      "efm_yuzde": 0.0,
+      "icr_kati": 99.0,
+      "tahakkuk_orani": 30.64,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 0.0,
+      "acm_makasi": 18.3,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%30.64): Kâr nakde dönüşmüyor.",
+        "🟡 Alacak-Ciro makası +%18.3 açıldı (DSO: 0.0 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": 0.0
+    },
+    "2026/06": {
+      "efm_yuzde": 0.0,
+      "icr_kati": 99.0,
+      "tahakkuk_orani": 42.38,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 0.0,
+      "acm_makasi": -75.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 20,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%42.38): Kâr nakde dönüşmüyor."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": 0.0
+    }
+  }
+}

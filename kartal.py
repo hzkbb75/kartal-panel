@@ -1070,21 +1070,36 @@ def uret_sektor_paneli_html(mevcut_sektorler: dict, nakit_orani: float, nakit_tl
     '''
 
 
-def uret_portfoy_kalkani_html(tablo_verileri: list, karneler: dict, toplam_portfoy: float, hisse_portfoy_tl: float, nakit_tl: float, hisse_sayisi: int, sektor_paneli_html: str):
+def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_portfoy_tl, nakit_tl, hisse_sayisi, sektor_paneli_html):
+    # YENİ EKLENEN DİNAMİK BUTON SAYAÇLARI
+    sayi_portfoy = sum(1 for r in tablo_verileri if r['Mevcut_Lot'] > 0)
+    sayi_radar = sum(1 for r in tablo_verileri if r['Mevcut_Lot'] == 0 and r.get('is_radar', False))
+    sayi_tum = len(tablo_verileri)
+
     satirlar_html = ""
     for r in tablo_verileri:
         kod = r["Kod"]
-        aksiyon = r["Aksiyon"]
-        renk = "badge-ok" if "AL" in aksiyon else ("badge-fail" if "SAT" in aksiyon else "badge-warn")
         kz_renk = "#34d399" if r["KZ_Yuzde"] >= 0 else "#f87171"
         fark_metin = f"+{r['Fark_Lot']:,}" if r['Fark_Lot'] > 0 else f"{r['Fark_Lot']:,}"
 
-        # --- 4. MADDE: FİLTRE İÇİN CLASS ATAMASI BURAYA GELDİ ---
+        # --- YENİ EKLENEN ÜÇLÜ GRUP MANTIĞI ---
         if r['Mevcut_Lot'] > 0:
+            aksiyon = r["Aksiyon"]
+            renk = "badge-ok" if "AL" in aksiyon else ("badge-fail" if "SAT" in aksiyon else "badge-warn")
             satir_class = "hisse-satiri satir-portfoy"
-        else:
+            kz_gosterim = f" (<span style='color:{kz_renk}; font-weight:bold;'>%{r['KZ_Yuzde']}</span>)"
+        elif r.get('is_radar', False):
+            aksiyon = r["Aksiyon"]
+            renk = "badge-ok" if "AL" in aksiyon else ("badge-fail" if "SAT" in aksiyon else "badge-warn")
             satir_class = "hisse-satiri satir-radar"
-        # --------------------------------------------------------
+            kz_gosterim = ""
+        else:
+            aksiyon = "ELENDİ"
+            renk = "badge-fail"
+            satir_class = "hisse-satiri satir-diger"
+            kz_gosterim = ""
+            fark_metin = "-"
+        # --------------------------------------
 
         satirlar_html += f"""
         <tr class="{satir_class}" onclick="acKarneModal('{kod}')" style="cursor:pointer;">
@@ -1093,7 +1108,7 @@ def uret_portfoy_kalkani_html(tablo_verileri: list, karneler: dict, toplam_portf
             <td>{r['Hendek']}</td>
             <td><strong>{r['F_Skor']}/9</strong></td>
             <td>{r['Mevcut_Lot']:,}</td>
-            <td>{r['Fiyat']:.2f} TL (<span style="color:{kz_renk};">%{r['KZ_Yuzde']}</span>)</td>
+            <td>{r['Fiyat']:.2f} TL{kz_gosterim}</td>
             <td><strong>{r['Mevcut_Tutar']:,.0f} TL</strong></td>
             <td>%{r['Mevcut_Pay']}</td>
             <td><strong>%{r['Hedef_Pay']}</strong></td>
@@ -1122,6 +1137,11 @@ def uret_portfoy_kalkani_html(tablo_verileri: list, karneler: dict, toplam_portf
         th, td {{ text-align: left; padding: 9px 8px; border-bottom: 1px solid #1e293b; }}
         th {{ color: #94a3b8; font-size: 11px; text-transform: uppercase; }}
         tr:hover {{ background-color: #1e293b; }}
+	.satir-portfoy td {{ background-color: rgba(56, 189, 248, 0.05); border-top: 1px solid #0369a1; border-bottom: 1px solid #0369a1; }}
+        .satir-portfoy td:first-child {{ border-left: 4px solid #38bdf8; }}
+        
+        .btn-filtre {{ padding: 10px 20px; font-weight: bold; cursor: pointer; background: #1e293b; color:#94a3b8; border:1px solid #334155; border-radius:6px; transition: all 0.2s; }}
+        .btn-filtre.aktif {{ background: #eab308; color: #0f172a; border-color: #facc15; }}
         .badge-ok {{ background: #064e3b; color: #34d399; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; }}
         .badge-warn {{ background: #78350f; color: #fbbf24; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; }}
         .badge-fail {{ background: #7f1d1d; color: #f87171; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; }}
@@ -1186,9 +1206,9 @@ def uret_portfoy_kalkani_html(tablo_verileri: list, karneler: dict, toplam_portf
     {sektor_paneli_html}
 
     <div style="text-align: center; margin-bottom: 20px;">
-        <button onclick="hisseFiltrele('portfoy')" id="btn-portfoy" style="padding: 10px 20px; font-weight: bold; cursor: pointer; background: #1e293b; color:#38bdf8; border:1px solid #38bdf8; border-radius:6px; margin-right:8px;">🛡️ Portföy (Taşınanlar)</button>
-        <button onclick="hisseFiltrele('radar')" id="btn-radar" style="padding: 10px 20px; font-weight: bold; cursor: pointer; background: #1e293b; color:#38bdf8; border:1px solid #38bdf8; border-radius:6px; margin-right:8px;">🎯 Radar (Adaylar)</button>
-        <button onclick="hisseFiltrele('tum')" id="btn-tum" style="padding: 10px 20px; font-weight: bold; cursor: pointer; background: #1e293b; color:#38bdf8; border:1px solid #38bdf8; border-radius:6px;">🌐 Tümü (Havuz)</button>
+        <button onclick="hisseFiltrele('portfoy')" id="btn-portfoy" class="btn-filtre aktif">🛡️ Portföy ({sayi_portfoy})</button>
+        <button onclick="hisseFiltrele('radar')" id="btn-radar" class="btn-filtre">🎯 Radar ({sayi_radar})</button>
+        <button onclick="hisseFiltrele('tum')" id="btn-tum" class="btn-filtre">🌐 Tümü ({sayi_tum})</button>
     </div>
 
     <table>
@@ -1232,21 +1252,14 @@ def uret_portfoy_kalkani_html(tablo_verileri: list, karneler: dict, toplam_portf
         // --- YENİ EKLENEN FİLTRE MOTORU ---
         function hisseFiltrele(tur) {{
             const satirlar = document.querySelectorAll('.hisse-satiri');
-            
             satirlar.forEach(satir => {{
-                if (tur === 'tum') {{
-                    satir.style.display = '';
-                }} else if (tur === 'portfoy') {{
-                    satir.style.display = satir.classList.contains('satir-portfoy') ? '' : 'none';
-                }} else if (tur === 'radar') {{
-                    satir.style.display = satir.classList.contains('satir-radar') ? '' : 'none';
-                }}
+                if (tur === 'tum') {{ satir.style.display = ''; }} 
+                else if (tur === 'portfoy') {{ satir.style.display = satir.classList.contains('satir-portfoy') ? '' : 'none'; }} 
+                else if (tur === 'radar') {{ satir.style.display = satir.classList.contains('satir-radar') ? '' : 'none'; }}
             }});
 
-            // Buton renklerini aktif duruma göre güncelle
-            document.getElementById('btn-portfoy').style.opacity = tur === 'portfoy' ? '1' : '0.5';
-            document.getElementById('btn-radar').style.opacity = tur === 'radar' ? '1' : '0.5';
-            document.getElementById('btn-tum').style.opacity = tur === 'tum' ? '1' : '0.5';
+            document.querySelectorAll('.btn-filtre').forEach(b => b.classList.remove('aktif'));
+            document.getElementById('btn-' + tur).classList.add('aktif');
         }}
 
         window.onload = function() {{
@@ -1891,25 +1904,37 @@ if __name__ == "__main__":
     katsayi_sozluk = {"Korunaklı": 1.8, "Kırılgan Hendekli": 1.4, "Hendeksiz": 1.0}
     tavan_sozluk = {"Korunaklı": 10.0, "Kırılgan Hendekli": 5.0, "Hendeksiz": 3.0}
 
+    # --- YENİ SİRKET HAVUZU DÖNGÜSÜ (630 HİSSE) ---
     sirket_havuzu = []
-    for kod in sorted(list(havuz_kodlari)):
-        s_veri = bist_sozluk.get(kod, {
-            "kod": kod, "sirket_adi": kod, "sektor": "BIST Şirketi", "kategori": "Hendeksiz",
-            "fiyat_tl": 0.0, "piotroski_skor": 6, "bolum1_gecti_mi": True, "tavan_agirlik": 3.0
-        })
+    for s_veri in tum_sonuclar:
+        kod = s_veri["kod"]
         fiyat = mevcut_pozisyonlar.get(kod, {}).get("canli_fiyat", s_veri.get("fiyat_tl", 0.0))
         if fiyat <= 0:
             fiyat = mevcut_pozisyonlar.get(kod, {}).get("maliyet", 10.0)
 
-        kat = s_veri.get("kategori", "Hendeksiz")
+        # Eğer radar süzgecinden geçmişse veya portföydeyse para tahsis et:
+        if kod in havuz_kodlari:
+            kat = s_veri.get("kategori", "Hendeksiz")
+            katsayi = katsayi_sozluk.get(kat, 1.0)
+            tavan = tavan_sozluk.get(kat, 3.0)
+            is_radar = True
+        else:
+            # 500+ elenen hisse (Para tahsis edilmez)
+            kat = s_veri.get("kategori", "Elendi")
+            katsayi = 0.0
+            tavan = 0.0
+            is_radar = False
+
         sirket_havuzu.append({
             "kod": kod, "sektor": s_veri.get("sektor", "Sanayi / Hizmet"), "kategori": kat,
-            "f_skor": s_veri.get("piotroski_skor", 6), "katsayi": katsayi_sozluk.get(kat, 1.0),
-            "tavan": tavan_sozluk.get(kat, 3.0), "fiyat": fiyat,
+            "f_skor": s_veri.get("piotroski_skor", 6), "katsayi": katsayi,
+            "tavan": tavan, "fiyat": fiyat,
             "mevcut_lot": mevcut_pozisyonlar.get(kod, {}).get("adet", 0),
             "ort_maliyet": mevcut_pozisyonlar.get(kod, {}).get("maliyet", fiyat),
-            "ham_veri": s_veri
+            "ham_veri": s_veri,
+            "is_radar": is_radar
         })
+    # -----------------------------------------------
 
     gercek_nakit_tl = 0.0
     gercek_kasa_bulundu = False
@@ -1992,15 +2017,19 @@ if __name__ == "__main__":
             "Mevcut_Lot": m_lot, "Fiyat": fiyat, "Mevcut_Tutar": m_tutar, "Mevcut_Pay": m_pay,
             "Hedef_Pay": h_pay, "Hedef_Tutar": h_tutar, "Hedef_Lot": h_lot, "Fark_Lot": fark_lot,
             "Aksiyon": aksiyon, "KZ_Yuzde": kz_yuzde, "Katsayi": item["katsayi"], "Islem_Tutari": islem_tutari,
-            "Ort_Maliyet": item["ort_maliyet"]
+            "Ort_Maliyet": item["ort_maliyet"],
+	    "is_radar": item["is_radar"] # YENİ EKLENDİ
         })
 
         poz_bilgi = {"agirlik_yuzde": m_pay, "kademe": mevcut_pozisyonlar.get(kod, {}).get("kademe", "1/3 Başlangıç")}
         karneler[kod] = uret_serkan_unal_karnesi(item["ham_veri"], poz_bilgi)
 
+    # --- HTML İÇİN 3 KATMANLI SIRALAMA MANTIĞI ---
     tasinan_hisseler = sorted([x for x in tablo_verileri if x["Mevcut_Lot"] > 0], key=lambda x: x["Mevcut_Tutar"], reverse=True)
-    radar_hisseleri = sorted([x for x in tablo_verileri if x["Mevcut_Lot"] == 0], key=lambda x: (x["F_Skor"], x["Hedef_Pay"]), reverse=True)
-    sirali_liste = tasinan_hisseler + radar_hisseleri
+    radar_hisseleri = sorted([x for x in tablo_verileri if x["Mevcut_Lot"] == 0 and x["is_radar"]], key=lambda x: (x["F_Skor"], x["Hedef_Pay"]), reverse=True)
+    diger_hisseler = sorted([x for x in tablo_verileri if x["Mevcut_Lot"] == 0 and not x["is_radar"]], key=lambda x: x["F_Skor"], reverse=True)
+    sirali_liste = tasinan_hisseler + radar_hisseleri + diger_hisseler
+    # ---------------------------------------------
 
     sheets_satir_matrisi = [[
         "Hisse Kodu", "Sektör", "Hendek", "F-Skor", "Katsayı",
@@ -2031,7 +2060,7 @@ if __name__ == "__main__":
         ])
 
     sektor_paneli_html = uret_sektor_paneli_html(mevcut_sektorler, nakit_orani, nakit_tl, gercek_kasa_bulundu)
-    uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy_tl, hisse_portfoy_tl, nakit_tl, len(sirket_havuzu), sektor_paneli_html)
+    uret_portfoy_kalkani_html(sirali_liste, karneler, toplam_portfoy_tl, hisse_portfoy_tl, nakit_tl, len(sirket_havuzu), sektor_paneli_html)
 
     df_masa = pd.DataFrame(tablo_verileri)
     df_masa.to_csv(DINAMIK_MASA_CSV_YOLU, sep=";", index=False, encoding="utf-8-sig")

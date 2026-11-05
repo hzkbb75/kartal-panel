@@ -1,0 +1,68 @@
+{
+  "kod": "TSPOR",
+  "son_guncelleme": "2026-11-05 11:00",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 635.6,
+      "icr_kati": -4.91,
+      "tahakkuk_orani": 223.64,
+      "aga_orani": 0.0,
+      "ykp_orani": 7.9,
+      "dso_gun": 276.7,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.3,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%223.64): Kâr nakde dönüşmüyor.",
+        "🔴 Faiz karşılama oranı -4.91x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 2238.2,
+      "icr_kati": -2.05,
+      "tahakkuk_orani": 282.63,
+      "aga_orani": 0.0,
+      "ykp_orani": 70.4,
+      "dso_gun": 238.8,
+      "acm_makasi": -19.5,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.2,
+      "iliskili_orani": 0.0,
+      "dts_skor": 50,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%282.63): Kâr nakde dönüşmüyor.",
+        "🟡 Kağıt üzeri kâr payı yüksek (%70.4).",
+        "🔴 Faiz karşılama oranı -2.05x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": -37.9
+    },
+    "2026/03": {
+      "efm_yuzde": 393.5,
+      "icr_kati": -3.04,
+      "tahakkuk_orani": 31.49,
+      "aga_orani": 0.0,
+      "ykp_orani": 28.5,
+      "dso_gun": 320.5,
+      "acm_makasi": 31.6,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.2,
+      "iliskili_orani": 0.0,
+      "dts_skor": 50,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%31.49): Kâr nakde dönüşmüyor.",
+        "🟡 Alacak-Ciro makası +%31.6 açıldı (DSO: 320.5 gün).",
+        "🔴 Faiz karşılama oranı -3.04x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 81.7
+    }
+  }
+}

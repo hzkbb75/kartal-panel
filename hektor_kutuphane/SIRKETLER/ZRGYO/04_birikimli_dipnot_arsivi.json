@@ -1,0 +1,82 @@
+{
+  "kod": "ZRGYO",
+  "son_guncelleme": "2026-11-05 11:00",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 0.3,
+      "icr_kati": 25.67,
+      "tahakkuk_orani": 1.35,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 131.2,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 6.2,
+      "icr_kati": 3.08,
+      "tahakkuk_orani": -77.89,
+      "aga_orani": 0.0,
+      "ykp_orani": 100.0,
+      "dso_gun": 52.0,
+      "acm_makasi": -128.3,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🟡 Kağıt üzeri kâr payı yüksek (%100.0)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": -79.2
+    },
+    "2026/03": {
+      "efm_yuzde": 0.3,
+      "icr_kati": 27.1,
+      "tahakkuk_orani": -1.33,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 47.2,
+      "acm_makasi": -5.2,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": -4.8
+    },
+    "2026/06": {
+      "efm_yuzde": 1.2,
+      "icr_kati": 10.03,
+      "tahakkuk_orani": -18.08,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 7.8,
+      "acm_makasi": -213.9,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -39.4
+    }
+  }
+}

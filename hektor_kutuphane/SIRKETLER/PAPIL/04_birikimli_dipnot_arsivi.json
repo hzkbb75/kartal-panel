@@ -1,0 +1,84 @@
+{
+  "kod": "PAPIL",
+  "son_guncelleme": "2026-11-05 11:00",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 1789.1,
+      "icr_kati": 0.25,
+      "tahakkuk_orani": -111.77,
+      "aga_orani": 0.0,
+      "ykp_orani": 100.0,
+      "dso_gun": 627.3,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.8,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
+        "🔴 Faiz karşılama oranı 0.25x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 493.2,
+      "icr_kati": 1.01,
+      "tahakkuk_orani": -63.91,
+      "aga_orani": 0.0,
+      "ykp_orani": 100.0,
+      "dso_gun": 271.8,
+      "acm_makasi": -127.7,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.8,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
+        "🔴 Faiz karşılama oranı 1.01x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -355.5
+    },
+    "2026/03": {
+      "efm_yuzde": 35.4,
+      "icr_kati": -0.51,
+      "tahakkuk_orani": -22.51,
+      "aga_orani": 0.0,
+      "ykp_orani": 21.0,
+      "dso_gun": 191.4,
+      "acm_makasi": -1.1,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.7,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -0.51x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": -80.4
+    },
+    "2026/06": {
+      "efm_yuzde": 44.3,
+      "icr_kati": -0.71,
+      "tahakkuk_orani": -109.71,
+      "aga_orani": 0.0,
+      "ykp_orani": 18.6,
+      "dso_gun": 110.0,
+      "acm_makasi": -137.4,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.8,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -0.71x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -81.4
+    }
+  }
+}

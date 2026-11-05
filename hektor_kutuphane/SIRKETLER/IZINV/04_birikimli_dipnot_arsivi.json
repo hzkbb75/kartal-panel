@@ -1,0 +1,84 @@
+{
+  "kod": "IZINV",
+  "son_guncelleme": "2026-11-05 11:00",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 75.7,
+      "icr_kati": -1.6,
+      "tahakkuk_orani": 9.96,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 898.1,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%9.96): Kâr nakde dönüşmüyor.",
+        "🔴 Faiz karşılama oranı -1.6x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 153.4,
+      "icr_kati": -0.86,
+      "tahakkuk_orani": 0.84,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 662.2,
+      "acm_makasi": -76.1,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -0.86x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -20,
+      "dso_delta": -235.9
+    },
+    "2026/03": {
+      "efm_yuzde": 43.6,
+      "icr_kati": -0.25,
+      "tahakkuk_orani": 3.83,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 1452.5,
+      "acm_makasi": 104.9,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Alacak-Ciro makası +%104.9 açıldı (DSO: 1452.5 gün).",
+        "🔴 Faiz karşılama oranı -0.25x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": 790.3
+    },
+    "2026/06": {
+      "efm_yuzde": 43.4,
+      "icr_kati": -0.33,
+      "tahakkuk_orani": 4.73,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 1304.4,
+      "acm_makasi": -16.3,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -0.33x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": -148.1
+    }
+  }
+}

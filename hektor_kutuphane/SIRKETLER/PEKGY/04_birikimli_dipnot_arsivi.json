@@ -1,0 +1,83 @@
+{
+  "kod": "PEKGY",
+  "son_guncelleme": "2026-11-05 11:00",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 5.1,
+      "icr_kati": 2.45,
+      "tahakkuk_orani": 12.09,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.3,
+      "dso_gun": 997.6,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 20,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%12.09): Kâr nakde dönüşmüyor."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 8.2,
+      "icr_kati": 3.19,
+      "tahakkuk_orani": 40.5,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.3,
+      "dso_gun": 310.8,
+      "acm_makasi": -496.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 20,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%40.5): Kâr nakde dönüşmüyor."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -686.8
+    },
+    "2026/03": {
+      "efm_yuzde": 6.5,
+      "icr_kati": 7.0,
+      "tahakkuk_orani": 96.46,
+      "aga_orani": 0.0,
+      "ykp_orani": 29.1,
+      "dso_gun": 6958.6,
+      "acm_makasi": 108.2,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 35,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%96.46): Kâr nakde dönüşmüyor.",
+        "🟡 Alacak-Ciro makası +%108.2 açıldı (DSO: 6958.6 gün)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": 6647.8
+    },
+    "2026/06": {
+      "efm_yuzde": 7.7,
+      "icr_kati": 2.7,
+      "tahakkuk_orani": 122.75,
+      "aga_orani": 0.0,
+      "ykp_orani": 14.2,
+      "dso_gun": 1806.4,
+      "acm_makasi": -164.8,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.0,
+      "iliskili_orani": 0.0,
+      "dts_skor": 20,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%122.75): Kâr nakde dönüşmüyor."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": -5152.2
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "kod": "AYES",
+  "son_guncelleme": "2026-11-05 11:00",
+  "donemler": {
+    "2025/06": {
+      "efm_yuzde": 27.1,
+      "icr_kati": 0.09,
+      "tahakkuk_orani": 13.84,
+      "aga_orani": 0.0,
+      "ykp_orani": 100.0,
+      "dso_gun": 47.9,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 1.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 50,
+      "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%13.84): Kâr nakde dönüşmüyor.",
+        "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
+        "🔴 Faiz karşılama oranı 0.09x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2026/06": {
+      "efm_yuzde": 24.3,
+      "icr_kati": 0.12,
+      "tahakkuk_orani": -4.31,
+      "aga_orani": 0.0,
+      "ykp_orani": 100.0,
+      "dso_gun": 115.8,
+      "acm_makasi": 118.8,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.3,
+      "iliskili_orani": 0.0,
+      "dts_skor": 45,
+      "uyarilar": [
+        "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
+        "🟡 Alacak-Ciro makası +%118.8 açıldı (DSO: 115.8 gün).",
+        "🔴 Faiz karşılama oranı 0.12x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -5,
+      "dso_delta": 67.9
+    }
+  }
+}

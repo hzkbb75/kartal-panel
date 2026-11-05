@@ -1,0 +1,83 @@
+{
+  "kod": "CRFSA",
+  "son_guncelleme": "2026-11-05 11:00",
+  "donemler": {
+    "2025/03": {
+      "efm_yuzde": 3.8,
+      "icr_kati": -3.36,
+      "tahakkuk_orani": 2.67,
+      "aga_orani": 0.0,
+      "ykp_orani": 1.6,
+      "dso_gun": 30.8,
+      "acm_makasi": 0.0,
+      "serefiye_ozk_orani": 134.0,
+      "karsilik_ozk_orani": 27.8,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -3.36x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": 0.0
+    },
+    "2025/06": {
+      "efm_yuzde": 0.8,
+      "icr_kati": -31.54,
+      "tahakkuk_orani": -11.8,
+      "aga_orani": 0.0,
+      "ykp_orani": 6.2,
+      "dso_gun": 17.0,
+      "acm_makasi": -99.3,
+      "serefiye_ozk_orani": 302.9,
+      "karsilik_ozk_orani": 63.9,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -31.54x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 0,
+      "dso_delta": -13.8
+    },
+    "2026/03": {
+      "efm_yuzde": 3.2,
+      "icr_kati": -3.78,
+      "tahakkuk_orani": -2.2,
+      "aga_orani": 0.0,
+      "ykp_orani": 3.1,
+      "dso_gun": 38.3,
+      "acm_makasi": 52.1,
+      "serefiye_ozk_orani": 626788.5,
+      "karsilik_ozk_orani": 122184.2,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Alacak-Ciro makası +%52.1 açıldı (DSO: 38.3 gün).",
+        "🔴 Faiz karşılama oranı -3.78x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": 15,
+      "dso_delta": 21.3
+    },
+    "2026/06": {
+      "efm_yuzde": 0.9,
+      "icr_kati": -17.84,
+      "tahakkuk_orani": -14.65,
+      "aga_orani": 0.0,
+      "ykp_orani": 5.2,
+      "dso_gun": 20.8,
+      "acm_makasi": -98.4,
+      "serefiye_ozk_orani": 670750.3,
+      "karsilik_ozk_orani": 133760.2,
+      "iliskili_orani": 0.0,
+      "dts_skor": 15,
+      "uyarilar": [
+        "🔴 Faiz karşılama oranı -17.84x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {},
+      "dts_delta": -15,
+      "dso_delta": -17.5
+    }
+  }
+}
