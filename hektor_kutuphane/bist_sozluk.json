@@ -1,0 +1,52 @@
+{
+  "AGHOL": {
+    "kod": "AGHOL",
+    "isim": "Anadolu Grubu Holding",
+    "sektor": "FİNANS-DIŞI"
+  },
+  "ALARK": {
+    "kod": "ALARK",
+    "isim": "Alarko Holding",
+    "sektor": "FİNANS-DIŞI"
+  },
+  "AVHOL": {
+    "kod": "AVHOL",
+    "isim": "Avrupa Yatırım Holding",
+    "sektor": "FİNANS-DIŞI"
+  },
+  "BERA": {
+    "kod": "BERA",
+    "isim": "Bera Holding",
+    "sektor": "FİNANS-DIŞI"
+  },
+  "BINHO": {
+    "kod": "BINHO",
+    "isim": "Yatırımlar Hol.",
+    "sektor": "FİNANS-DIŞI"
+  },
+  "DENGE": {
+    "kod": "DENGE",
+    "isim": "Denge Holding",
+    "sektor": "FİNANS-DIŞI"
+  },
+  "DERHL": {
+    "kod": "DERHL",
+    "isim": "Derlüks Yatırım Holding",
+    "sektor": "FİNANS-DIŞI"
+  },
+  "DOHOL": {
+    "kod": "DOHOL",
+    "isim": "Doğan Holding",
+    "sektor": "FİNANS-DIŞI"
+  },
+  "DUNYH": {
+    "kod": "DUNYH",
+    "isim": "Dünya Holding",
+    "sektor": "FİNANS-DIŞI"
+  },
+  "ENKAI": {
+    "kod": "ENKAI",
+    "isim": "Enka İnşaat",
+    "sektor": "FİNANS-DIŞI"
+  }
+}
