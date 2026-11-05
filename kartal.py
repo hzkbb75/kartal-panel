@@ -1135,9 +1135,10 @@ def uret_sektor_paneli_html(mevcut_sektorler: dict, nakit_orani: float, nakit_tl
 
 
 def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_portfoy_tl, nakit_tl, hisse_sayisi, sektor_paneli_html):
-    # YENİ EKLENEN DİNAMİK BUTON SAYAÇLARI
-    sayi_portfoy = sum(1 for r in tablo_verileri if r['Mevcut_Lot'] > 0)
-    sayi_radar = sum(1 for r in tablo_verileri if r['Mevcut_Lot'] == 0 and r.get('is_radar', False))
+    # 4'LÜ DİNAMİK BUTON SAYAÇLARI
+    sayi_hedef60 = sum(1 for r in tablo_verileri if r.get('kadroda', False))
+    sayi_mevcut = sum(1 for r in tablo_verileri if r['Mevcut_Lot'] > 0)
+    sayi_radar = sum(1 for r in tablo_verileri if r.get('is_radar', False))
     sayi_tum = len(tablo_verileri)
 
     satirlar_html = ""
@@ -1146,26 +1147,34 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
         kz_renk = "#34d399" if r["KZ_Yuzde"] >= 0 else "#f87171"
         fark_metin = f"+{r['Fark_Lot']:,}" if r['Fark_Lot'] > 0 else f"{r['Fark_Lot']:,}"
 
-        # --- YENİ EKLENEN ÜÇLÜ GRUP MANTIĞI ---
+        # 4'LÜ SINIFLANDIRMA VE CSS ETİKETLERİ
+        classes = ["hisse-satiri"]
+        if r.get('kadroda', False):
+            classes.append("satir-hedef60")
         if r['Mevcut_Lot'] > 0:
-            aksiyon = r["Aksiyon"]
-            renk = "badge-ok" if "AL" in aksiyon else ("badge-fail" if "SAT" in aksiyon else "badge-warn")
-            satir_class = "hisse-satiri satir-portfoy"
+            classes.append("satir-mevcut")
+        if r.get('is_radar', False):
+            classes.append("satir-radar")
+        if not r.get('kadroda', False) and r['Mevcut_Lot'] == 0:
+            classes.append("satir-diger")
+
+        satir_class = " ".join(classes)
+
+        aksiyon = r["Aksiyon"]
+        if r['Mevcut_Lot'] > 0:
             kz_gosterim = f" (<span style='color:{kz_renk}; font-weight:bold;'>%{r['KZ_Yuzde']}</span>)"
-        elif r.get('is_radar', False):
-            aksiyon = r["Aksiyon"]
-            renk = "badge-ok" if "AL" in aksiyon else ("badge-fail" if "SAT" in aksiyon else "badge-warn")
-            satir_class = "hisse-satiri satir-radar"
-            kz_gosterim = ""
         else:
-            aksiyon = "ELENDİ"
-            renk = "badge-fail"
-            satir_class = "hisse-satiri satir-diger"
             kz_gosterim = ""
+
+        if not r.get('kadroda', False) and r['Mevcut_Lot'] == 0 and not r.get('is_radar', False):
+            aksiyon = "ELENDİ"
             fark_metin = "-"
-        # --------------------------------------
-	# Mevcut % ve Hedef % için görsel bar üretimi
-        mevcut_bar_w = min(100, int(r['Mevcut_Pay'] * 5))  # %20 tavan = %100 genişlik
+            renk = "badge-fail"
+        else:
+            renk = "badge-ok" if "AL" in aksiyon else ("badge-fail" if "SAT" in aksiyon else "badge-warn")
+
+        # Mevcut % ve Hedef % için görsel barlar
+        mevcut_bar_w = min(100, int(r['Mevcut_Pay'] * 5))
         hedef_bar_w = min(100, int(r['Hedef_Pay'] * 5))
 
         bar_mevcut_html = f"""
@@ -1216,8 +1225,9 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
         th, td {{ text-align: left; padding: 9px 8px; border-bottom: 1px solid #1e293b; }}
         th {{ color: #94a3b8; font-size: 11px; text-transform: uppercase; }}
         tr:hover {{ background-color: #1e293b; }}
-	.satir-portfoy td {{ background-color: rgba(56, 189, 248, 0.05); border-top: 1px solid #0369a1; border-bottom: 1px solid #0369a1; }}
-        .satir-portfoy td:first-child {{ border-left: 4px solid #38bdf8; }}
+	.satir-mevcut td {{ background-color: rgba(56, 189, 248, 0.05); border-top: 1px solid #0369a1; border-bottom: 1px solid #0369a1; }}
+        .satir-mevcut td:first-child {{ border-left: 4px solid #38bdf8; }}
+        .satir-hedef60 td {{ border-bottom: 1px solid #1e293b; }}
         
         .btn-filtre {{ padding: 10px 20px; font-weight: bold; cursor: pointer; background: #1e293b; color:#94a3b8; border:1px solid #334155; border-radius:6px; transition: all 0.2s; }}
         .btn-filtre.aktif {{ background: #eab308; color: #0f172a; border-color: #facc15; }}
@@ -1284,10 +1294,11 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
 
     {sektor_paneli_html}
 
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-        <div>
-            <button onclick="hisseFiltrele('portfoy')" id="btn-portfoy" class="btn-filtre aktif">🛡️ Portföy ({sayi_portfoy})</button>
-            <button onclick="hisseFiltrele('radar')" id="btn-radar" class="btn-filtre">🎯 Radar ({sayi_radar})</button>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <button onclick="hisseFiltrele('hedef60')" id="btn-hedef60" class="btn-filtre aktif">🎯 Hedef 60 Portföy ({sayi_hedef60})</button>
+            <button onclick="hisseFiltrele('mevcut')" id="btn-mevcut" class="btn-filtre">🛡️ Mevcut Lotlar ({sayi_mevcut})</button>
+            <button onclick="hisseFiltrele('radar')" id="btn-radar" class="btn-filtre">🔭 Geniş Radar ({sayi_radar})</button>
             <button onclick="hisseFiltrele('tum')" id="btn-tum" class="btn-filtre">🌐 Tümü ({sayi_tum})</button>
         </div>
         <div>
@@ -1334,23 +1345,22 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
         
     const KARNELER = {karneler_json_str};
 
-        // --- YENİ EKLENEN ARAMA (SEARCH) MOTORU ---
+        // --- ARAMA KUTUSU (SEARCH) MOTORU ---
         function tablodaAra() {{
             const input = document.getElementById("hisseArama").value.toUpperCase();
             const table = document.getElementById("portfoy-tablosu");
             const tr = table.getElementsByTagName("tr");
             
-            // Eğer arama kutusu doluysa butonları devre dışı bırakıp hepsini gösterelim
-            if(input.length > 0) {{
+            if (input.length > 0) {{
                 document.querySelectorAll('.btn-filtre').forEach(b => b.classList.remove('aktif'));
             }} else {{
-                hisseFiltrele('portfoy'); // Kutu boşalırsa tekrar portföye dön
+                hisseFiltrele('hedef60');
                 return;
             }}
 
             for (let i = 1; i < tr.length; i++) {{
                 const tdKod = tr[i].getElementsByTagName("td")[0];
-                const tdAd = tr[i].getElementsByTagName("td")[1]; // Sektör/Ad kısmı
+                const tdAd = tr[i].getElementsByTagName("td")[1];
                 if (tdKod || tdAd) {{
                     const txtKod = tdKod.textContent || tdKod.innerText;
                     const txtAd = tdAd.textContent || tdAd.innerText;
@@ -1362,19 +1372,30 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
                 }}
             }}
         }}
+
+        window.onload = function() {{
+            hisseFiltrele('hedef60'); // Sayfa ilk açılışta doğrudan Hedef 60'ı gösterir
+        }};
         // ------------------------------------------
 
-        // --- YENİ EKLENEN FİLTRE MOTORU ---
+        // --- 4'LÜ DİNAMİK FİLTRE MOTORU ---
         function hisseFiltrele(tur) {{
             const satirlar = document.querySelectorAll('.hisse-satiri');
             satirlar.forEach(satir => {{
-                if (tur === 'tum') {{ satir.style.display = ''; }} 
-                else if (tur === 'portfoy') {{ satir.style.display = satir.classList.contains('satir-portfoy') ? '' : 'none'; }} 
-                else if (tur === 'radar') {{ satir.style.display = satir.classList.contains('satir-radar') ? '' : 'none'; }}
+                if (tur === 'tum') {{
+                    satir.style.display = '';
+                }} else if (tur === 'hedef60') {{
+                    satir.style.display = satir.classList.contains('satir-hedef60') ? '' : 'none';
+                }} else if (tur === 'mevcut') {{
+                    satir.style.display = satir.classList.contains('satir-mevcut') ? '' : 'none';
+                }} else if (tur === 'radar') {{
+                    satir.style.display = satir.classList.contains('satir-radar') ? '' : 'none';
+                }}
             }});
 
             document.querySelectorAll('.btn-filtre').forEach(b => b.classList.remove('aktif'));
-            document.getElementById('btn-' + tur).classList.add('aktif');
+            const secilenBtn = document.getElementById('btn-' + tur);
+            if (secilenBtn) secilenBtn.classList.add('aktif');
         }}
 
         window.onload = function() {{
@@ -2229,6 +2250,7 @@ if __name__ == "__main__":
             "Hedef_Pay": h_pay, "Hedef_Tutar": h_tutar, "Hedef_Lot": h_lot, "Fark_Lot": fark_lot,
             "Aksiyon": aksiyon, "KZ_Yuzde": kz_yuzde, "Katsayi": item["katsayi"], "Islem_Tutari": islem_tutari,
             "Ort_Maliyet": item["ort_maliyet"],
+	    "kadroda": item["kadroda"], # YENİ EKLENDİ
 	    "is_radar": item["is_radar"] # YENİ EKLENDİ
         })
 
