@@ -11,13 +11,13 @@ def log(mesaj):
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {mesaj}")
 
 def main():
-    log("KARTAL Tam Otomasyon Çarkı Çalışıyor (YÜZDE 100 YEREL MOD)...")
+    log("KARTAL Tam Otomasyon Çarkı Çalışıyor (YÜZDE 100 YEREL MOD - PDF ARKA KAPISI)...")
 
-    # 1. KAP'tan Yeni PDF'leri Otomatik İndir (YENİ EKLENEN KISIM)
-    pdf_indirici_py = os.path.join(PROJE_DIZINI, "kap_pdf_indirici.py")
-    if os.path.exists(pdf_indirici_py):
-        log("📥 KAP'tan yeni Faaliyet Raporları taranıyor ve indiriliyor...")
-        subprocess.run([sys.executable, pdf_indirici_py], cwd=PROJE_DIZINI)
+    # 1. Yerel BIST KAP ve Haber Motoru (Haberleri çeker ve Faaliyet Raporu PDF'lerini indirir)
+    kap_motoru_py = os.path.join(PROJE_DIZINI, "yerel_kap_motoru.py")
+    if os.path.exists(kap_motoru_py):
+        log("📰 Yerel KAP, Haber ve PDF İndirme Motoru çalışıyor...")
+        subprocess.run([sys.executable, kap_motoru_py], cwd=PROJE_DIZINI)
 
     # 2. Yerel klasörü kontrol et ve varsa ayrıştırıcıyı tetikle
     pdf_dosyalar = [f for f in os.listdir(GELEN_RAPOR_HEDEF) if f.lower().endswith(".pdf")]
@@ -34,19 +34,13 @@ def main():
     if os.path.exists(portfoy_motoru_py):
         subprocess.run([sys.executable, portfoy_motoru_py], cwd=PROJE_DIZINI)
 
-    # 4. Yerel BIST KAP ve Haber Motoru
-    kap_motoru_py = os.path.join(PROJE_DIZINI, "yerel_kap_motoru.py")
-    if os.path.exists(kap_motoru_py):
-        log("📰 Yerel KAP & Haber Motoru güncelleniyor...")
-        subprocess.run([sys.executable, kap_motoru_py], cwd=PROJE_DIZINI)
-
-    # 5. Make.com (LLM) Bildirimleri
+    # 4. Make.com (LLM) Bildirimleri (Spam Korumalı)
     kap_takip_py = os.path.join(PROJE_DIZINI, "portfoy_kap_takip.py")
     if os.path.exists(kap_takip_py):
         log("🤖 Make.com KAP taraması başlatılıyor...")
         subprocess.run([sys.executable, kap_takip_py], cwd=PROJE_DIZINI)
 
-    # 6. KARTAL Panolarını Üret (HTML)
+    # 5. KARTAL Panolarını Üret (HTML)
     kartal_py = os.path.join(PROJE_DIZINI, "kartal.py")
     if os.path.exists(kartal_py):
         log("🚀 KARTAL Analiz Motoru HTML üretiyor...")

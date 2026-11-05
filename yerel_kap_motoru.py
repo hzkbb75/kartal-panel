@@ -8,17 +8,16 @@ import requests
 ROOT_DIR = "hektor_kutuphane"
 BIST_MALI_TABLOLAR_YOLU = os.path.join(ROOT_DIR, "bist_mali_tablolar.json")
 CIKTI_KAP_YOLU = os.path.join(ROOT_DIR, "tum_kap_haberleri.json")
+GELEN_RAPOR_DIR = os.path.join(ROOT_DIR, "PORTFOY", "gelen_raporlar")
+
+os.makedirs(GELEN_RAPOR_DIR, exist_ok=True)
 
 ONEMLI_KELIMELER = [
-    # Büyüme & Operasyonel İvme
     "yeni iş ilişkisi", "ihale", "sipariş", "sözleşme", 
     "kapasite", "teşvik", "yeni yatırım", "yatırım kararı", "yatırım teşvik", 
-    # Şirket Yapısı & Varlıklar
     "birleşme", "devralma", "satın alma", "ortaklık",
     "maddi duran varlık", "fabrika", "arsa", "gayrimenkul",
-    # Finansal Aksiyonlar
     "geri alım", "temettü", "kâr payı", "bedelsiz", "bedelli",
-    # Sadece okumak isteyeceğin temel rapor
     "faaliyet raporu"
 ]
 
@@ -36,6 +35,12 @@ HEADERS = {
     "Referer": "https://tr.tradingview.com/"
 }
 
+# KAP sunucusuna PDF çekmek için daha profesyonel bir header (bot zannetmemesi için)
+KAP_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "Accept": "application/pdf"
+}
+
 def tum_hisseleri_oku() -> list:
     if os.path.exists(BIST_MALI_TABLOLAR_YOLU):
         try:
@@ -47,6 +52,31 @@ def tum_hisseleri_oku() -> list:
         except Exception:
             pass
     return []
+
+def faaliyet_raporu_pdf_indir(session, hisse, bildirim_id, pub_ts):
+    """TradingView'da tespit edilen faaliyet raporunun PDF'ini KAP'tan (arka kapı) zorla indirir."""
+    # Tarihi 2026_06 gibi formata çevirelim (veya varsayılan olarak şu anki yılı alalım)
+    yil = datetime.fromtimestamp(pub_ts).strftime("%Y") if pub_ts else datetime.now().strftime("%Y")
+    
+    # Basit isimlendirme
+    dosya_adi = f"{hisse}_{yil}_00_Faaliyet_Raporu.pdf" 
+    hedef_yol = os.path.join(GELEN_RAPOR_DIR, dosya_adi)
+    arsiv_yolu = os.path.join(ROOT_DIR, "PORTFOY", "arsiv_raporlar", dosya_adi)
+
+    # Zaten indirilmişse veya arşivdeyse tekrar indirme
+    if os.path.exists(hedef_yol) or os.path.exists(arsiv_yolu):
+        return
+
+    pdf_url = f"https://www.kap.org.tr/tr/BildirimPdf/{bildirim_id}"
+    print(f"    📥 [ARKA KAPI] {hisse} Faaliyet Raporu KAP'tan direkt indiriliyor...")
+    
+    try:
+        res = session.get(pdf_url, headers=KAP_HEADERS, timeout=15)
+        if res.status_code == 200 and len(res.content) > 50000: # 50KB'dan büyükse başarılıdır
+            with open(hedef_yol, "wb") as f:
+                f.write(res.content)
+    except Exception as e:
+        pass # Sessizce atla, panik yapmasın
 
 def tek_hisse_tradingview_cek(session, hisse: str) -> tuple:
     url = f"https://news-headlines.tradingview.com/v2/headlines?client=web&lang=tr&symbol=BIST%3A{hisse}"
@@ -60,7 +90,6 @@ def tek_hisse_tradingview_cek(session, hisse: str) -> tuple:
                 ozet = str(it.get("shortDescription") or baslik)
                 birlesik = f"{baslik} {ozet}".lower()
                 
-                # Önemli haber / KAP filtresi (Hem Altın Kelime olacak Hem Yasaklı OLMAYACAK)
                 if any(k in birlesik for k in ONEMLI_KELIMELER) and not any(yk in birlesik for yk in YASAKLI_KELIMELER):
                     b_id = str(it.get("id") or "")
                     pub_ts = it.get("published")
@@ -74,10 +103,14 @@ def tek_hisse_tradingview_cek(session, hisse: str) -> tuple:
                         "tarih": pub_str,
                         "link": link
                     })
+
+                    # --- ARKA KAPI: EĞER BU HABER BİR FAALİYET RAPORUYSA, HEMEN PDF'İNİ İNDİR! ---
+                    if "faaliyet raporu" in birlesik and b_id and not story_path:
+                        faaliyet_raporu_pdf_indir(session, hisse, b_id, pub_ts)
+
                 if len(secilenler) >= 4:
                     break
             
-
             return hisse, secilenler
     except Exception:
         pass
@@ -89,9 +122,7 @@ def main():
         print("❌ 'bist_mali_tablolar.json' içinde hisse bulunamadı!")
         return
 
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Yerel BIST Haber & KAP Motoru Başladı...")
-    print(f"  Taranacak şirket sayısı: {len(hisse_listesi)} hisse")
-
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Yerel BIST Haber & KAP Motoru (PDF HIZLANDIRICILI) Başladı...")
     t_basla = time.time()
     haber_ambari = {}
 
@@ -105,18 +136,13 @@ def main():
 
     gecen_sure = round(time.time() - t_basla, 1)
     print(f"  ✅ Tarama tamamlandı: {gecen_sure} saniye sürdü.")
-    print(f"  📊 Haber yakalanan şirket sayısı: {len(haber_ambari)} / {len(hisse_listesi)}")
-
+    
     cikti = {
         "son_guncelleme": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "kap_haberleri": haber_ambari
     }
-
-    os.makedirs(os.path.dirname(CIKTI_KAP_YOLU), exist_ok=True)
     with open(CIKTI_KAP_YOLU, "w", encoding="utf-8") as f:
         json.dump(cikti, f, ensure_ascii=False, indent=2)
-
-    print(f"📁 Ambar kaydedildi: {CIKTI_KAP_YOLU}")
 
 if __name__ == "__main__":
     main()
