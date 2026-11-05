@@ -331,6 +331,38 @@ def degerleme_termometresi_uret(hisse_kodu, mevcut_fiyat, adil_deger, iskonto_or
 # ==============================================================================
 # 2. ŞİRKET ELEME VE ANALİZ MOTORU
 # ==============================================================================
+def hesapla_hibrit_kartal_puani(sirket_verisi: dict, teknik_veri: dict = None) -> tuple:
+    """
+    Temel Analiz (%60) + 60G Teknik Kanal Uzaklığı (%40) Hibrit Puanı (0 - 100).
+    """
+    # 1. Temel Puan (Maks 60 Puan)
+    f_skor = int(sirket_verisi.get("piotroski_skor", 5))
+    temel_puan = (f_skor / 9.0) * 30.0  # Piotroski'den maks 30 puan
+    
+    roe = float(sirket_verisi.get("roe", 0.0))
+    if roe >= 40: temel_puan += 15.0
+    elif roe >= 25: temel_puan += 10.0
+    elif roe >= 15: temel_puan += 5.0
+    
+    nb_ozk = float(sirket_verisi.get("net_borc_ozkaynak", 1.0))
+    if nb_ozk <= 0.1: temel_puan += 15.0
+    elif nb_ozk <= 0.6: temel_puan += 10.0
+    elif nb_ozk <= 1.2: temel_puan += 5.0
+    
+    # 2. Teknik Puan (Maks 40 Puan)
+    teknik_puan = 20.0  # Teknik veri yoksa nötr varsayılan
+    if teknik_veri:
+        kanal_konumu = float(teknik_veri.get("kanal_konumu", 50.0))
+        # Desteğe ne kadar yakınsa puan o kadar yüksek
+        if kanal_konumu <= 20: teknik_puan = 40.0
+        elif kanal_konumu <= 40: teknik_puan = 30.0
+        elif kanal_konumu <= 60: teknik_puan = 20.0
+        elif kanal_konumu <= 80: teknik_puan = 10.0
+        else: teknik_puan = 0.0
+        
+    toplam_skor = round(temel_puan + teknik_puan, 1)
+    return toplam_skor
+
 def analiz_et_sirket(kod: str) -> dict:
     sirket_kaydi = YEREL_MALI_VERITABANI.get(kod)
     if not sirket_kaydi:
@@ -1100,6 +1132,21 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
             kz_gosterim = ""
             fark_metin = "-"
         # --------------------------------------
+	# Mevcut % ve Hedef % için görsel bar üretimi
+        mevcut_bar_w = min(100, int(r['Mevcut_Pay'] * 5))  # %20 tavan = %100 genişlik
+        hedef_bar_w = min(100, int(r['Hedef_Pay'] * 5))
+
+        bar_mevcut_html = f"""
+        <div style="font-size:11px; margin-bottom:2px;">%{r['Mevcut_Pay']}</div>
+        <div style="background:#1e293b; height:5px; border-radius:3px; width:70px; overflow:hidden;">
+            <div style="background:#38bdf8; width:{mevcut_bar_w}%; height:100%;"></div>
+        </div>"""
+
+        bar_hedef_html = f"""
+        <div style="font-size:11px; font-weight:bold; color:#facc15; margin-bottom:2px;">%{r['Hedef_Pay']}</div>
+        <div style="background:#1e293b; height:5px; border-radius:3px; width:70px; overflow:hidden;">
+            <div style="background:#facc15; width:{hedef_bar_w}%; height:100%;"></div>
+        </div>"""
 
         satirlar_html += f"""
         <tr class="{satir_class}" onclick="acKarneModal('{kod}')" style="cursor:pointer;">
@@ -1110,8 +1157,8 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
             <td>{r['Mevcut_Lot']:,}</td>
             <td>{r['Fiyat']:.2f} TL{kz_gosterim}</td>
             <td><strong>{r['Mevcut_Tutar']:,.0f} TL</strong></td>
-            <td>%{r['Mevcut_Pay']}</td>
-            <td><strong>%{r['Hedef_Pay']}</strong></td>
+            <td>{bar_mevcut_html}</td>
+            <td>{bar_hedef_html}</td>
             <td>{r['Hedef_Tutar']:,.0f} TL</td>
             <td>{r['Hedef_Lot']:,}</td>
             <td><strong>{fark_metin}</strong></td>
