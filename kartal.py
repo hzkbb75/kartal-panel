@@ -365,33 +365,50 @@ def hesapla_hibrit_kartal_puani(sirket_verisi: dict, teknik_veri: dict = None) -
 
 def hesapla_hibrit_kartal_puani(s: dict, teknik_veri: dict = None) -> float:
     """
-    Serkan Ünal Hibrit Puanı: Temel Kalite (%60) + 60G Destek Konumu (%40)
-    0 - 100 arası puan üretir.
+    Sektör Duyarlı Serkan Ünal Hibrit Puanı: Temel Kalite (%60) + 60G Destek (%40)
     """
-    # 1. Temel Analiz Puanı (Maks 60)
     f_skor = int(s.get("piotroski_skor", 5))
-    temel = (f_skor / 9.0) * 30.0  # F-skor'dan maks 30 puan
+    temel = (f_skor / 9.0) * 25.0  # F-skor'dan maks 25 puan
     
+    # Sektör Duyarlı ROE Puanlaması (Maks 20 Puan)
     roe = float(s.get("roe", 0.0))
-    if roe >= 35.0: temel += 15.0
-    elif roe >= 20.0: temel += 10.0
-    elif roe >= 10.0: temel += 5.0
+    sek_l = tr_norm(s.get("sektor", ""))
     
+    if any(x in sek_l for x in ["perakende", "gida", "icecek"]):
+        min_roe = 35.0
+    elif any(x in sek_l for x in ["yazilim", "teknoloji", "savunma", "telekom"]):
+        min_roe = 30.0
+    elif any(x in sek_l for x in ["banka", "sigorta", "faktoring", "finans"]):
+        min_roe = 22.0
+    elif any(x in sek_l for x in ["demir", "celik", "petrol", "kimya", "cimento", "otomotiv"]):
+        min_roe = 15.0
+    else:
+        min_roe = 10.0
+
+    if roe < 5.0:
+        temel -= 10.0  # Reel sermaye erimesine ceza puanı
+    elif roe >= min_roe * 1.3:
+        temel += 20.0  # Sektörün belirgin üzerinde üstün performans
+    elif roe >= min_roe:
+        temel += 15.0  # Sektör normuyla uyumlu
+    else:
+        temel += 5.0   # Sektörün altında
+
+    # Borçsuzluk / Bilanço Puanı (Maks 15 Puan)
     nb_ozk = float(s.get("net_borc_ozkaynak", 1.0))
     if nb_ozk <= 0.1: temel += 15.0
     elif nb_ozk <= 0.6: temel += 10.0
     elif nb_ozk <= 1.2: temel += 5.0
 
-    # 2. Teknik Destek Puanı (Maks 40)
-    teknik = 20.0  # Veri yoksa nötr puan
+    # 60G Teknik Destek Puanı (Maks 40 Puan)
+    teknik = 20.0
     if teknik_veri:
         konum = float(teknik_veri.get("kanal_konumu", 50.0))
-        # 60 günlük desteğe yakınlık: Desteğe ne kadar yakınsa o kadar ucuz
         if konum <= 25.0: teknik = 40.0
         elif konum <= 45.0: teknik = 30.0
         elif konum <= 65.0: teknik = 20.0
         elif konum <= 85.0: teknik = 10.0
-        else: teknik = 0.0  # Direnç tepesinde, pahalı
+        else: teknik = 0.0
 
     return round(temel + teknik, 1)
 
@@ -1400,9 +1417,6 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
             if (secilenBtn) secilenBtn.classList.add('aktif');
         }}
 
-        window.onload = function() {{
-            hisseFiltrele('portfoy'); // Sayfa ilk açıldığında portföyü göster
-        }};
         // ------------------------------------
 
         function sekmeDegistir(tabId, btn) {{
@@ -1542,7 +1556,37 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
         }}
 
         // 6 KÜMELİ DİNAMİK SEKTÖR ROE MOTORU
-        function uretRoeAnalizYorumu(roeDeger, sektorAdi) {{
+            // --- 12 ÇEYREKLİK ROE SPARKLINE SVG ÜRETİCİ ---
+        function uretRoeSparkline(donemler, degerler) {{
+            if (!degerler || degerler.length < 2) return '';
+            const min = Math.min(...degerler);
+            const max = Math.max(...degerler);
+            const range = max - min || 1;
+            const w = 260, h = 40;
+            
+            const points = degerler.map((v, i) => {{
+                const x = (i / (degerler.length - 1)) * w;
+                const y = h - ((v - min) / range) * (h - 10) - 5;
+                return x.toFixed(1) + ',' + y.toFixed(1);
+            }}).join(' ');
+
+            const ilk = degerler[0];
+            const son = degerler[degerler.length - 1];
+            const renk = son >= ilk ? '#34d399' : '#f87171';
+            const ok = son >= ilk ? '▲' : '▼';
+
+            return '<div style="margin: 10px 0 6px 0; background: #0f172a; padding: 8px 12px; border-radius: 6px; border: 1px solid #1e293b;">' +
+                   '<div style="display:flex; justify-content:space-between; font-size:10.5px; color:#94a3b8; margin-bottom:4px;">' +
+                   '<span>📈 Çeyreklik ROE Trendi (Son ' + degerler.length + ' Çeyrek)</span>' +
+                   '<span style="color:' + renk + '; font-weight:bold;">' + ok + ' %' + ilk + ' → %' + son + '</span>' +
+                   '</div>' +
+                   '<svg width="100%" height="40" viewBox="0 0 ' + w + ' ' + h + '" style="overflow:visible;">' +
+                   '<polyline fill="none" stroke="' + renk + '" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" points="' + points + '" />' +
+                   '</svg>' +
+                   '</div>';
+        }}
+
+	    function uretRoeAnalizYorumu(roeDeger, sektorAdi) {{
             const roe = parseFloat(roeDeger) || 0;
             const s = (sektorAdi || '').toLowerCase();
             
@@ -2069,7 +2113,7 @@ if __name__ == "__main__":
 
     firsat_adaylari = [
         s for s in tum_sonuclar
-        if s["bolum1_gecti_mi"] and s["cfo_buyuk_net_kar"] and s["piotroski_skor"] >= 7
+        if s["bolum1_gecti_mi"] and s["cfo_buyuk_net_kar"] and s["piotroski_skor"] >= 7 and s.get("roe", 0.0) >= 5.0
     ]
     print(f"  Analiz Tamamlandı: {len(firsat_adaylari)} şirket filtreyi geçerek fırsat adayı oldu.")
 
@@ -2172,19 +2216,6 @@ if __name__ == "__main__":
             item["hedef_agirlik"] = 0.0
 
     # 6. Sektörel Çeşitlendirme Kalkanı (Maksimum %20 Sektör Üst Sınırı)
-    SEKTOR_TAVANI = 20.0
-    sektor_toplamlari = {}
-    for item in kadro_60:
-        sek = item["sektor"]
-        sektor_toplamlari[sek] = sektor_toplamlari.get(sek, 0.0) + item["hedef_agirlik"]
-
-    for sek, toplam_pay in sektor_toplamlari.items():
-        if toplam_pay > SEKTOR_TAVANI:
-            kirpma = SEKTOR_TAVANI / toplam_pay
-            for item in kadro_60:
-                if item["sektor"] == sek:
-                    item["hedef_agirlik"] = max(1.0, round(item["hedef_agirlik"] * kirpma, 2))
-    # -----------------------------------------------
 
     gercek_nakit_tl = 0.0
     gercek_kasa_bulundu = False
