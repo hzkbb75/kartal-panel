@@ -101,11 +101,8 @@ def main():
     toplam_indirilen = 0
     
     with requests.Session() as session:
-        # Önemli: İlk etapta tüm listeyi (600 hisse) taramak çok uzun sürebilir.
-        # Bu yüzden ilk testte sadece ilgilendiğin / portföyündeki hisseleri tarayabilirsin.
-        # İstersen hisseler = ["EREGL", "TUPRS", "FROTO", "BIMAS"] gibi filtrele.
-        
-        for hisse in hisse_listesi[:20]: # Test amaçlı ilk 20 hisseyi tara. İstersen kaldır.
+        # DÜZELTİLEN SATIR: 'hisse_listesi' yerine 'hisseler' yazılmalı
+        for hisse in hisseler[:20]: 
             adet = kap_faaliyet_raporu_bul_ve_indir(session, hisse)
             toplam_indirilen += adet
             time.sleep(0.5)

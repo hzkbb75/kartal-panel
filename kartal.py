@@ -801,6 +801,12 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
     kod = s["kod"]
     sirket_adi = s.get("sirket_adi", kod)
     sektor = s.get("sektor", "Sanayi")
+    # Sektör "DİĞER" ise yerel kayıttan gerçek sektörü al
+    ziraat = BIST_ANALIZ_TABANI.get(kod, {})
+    if ziraat and ziraat.get("sektor") and ziraat.get("sektor") != "DİĞER":
+        sektor = ziraat.get("sektor")
+    elif s.get("sektor") and s.get("sektor") != "DİĞER":
+        sektor = s.get("sektor")
     kategori = s.get("kategori", "Kırılgan Hendekli")
     halka_aciklik = float(s.get("halka_aciklik", 35.0))
     net_borc_ozk = float(s.get("net_borc_ozkaynak", 0.0))
@@ -917,7 +923,9 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
     if not roe_degerleri:
         roe_donemler = ["Son Dönem"]
         roe_degerleri = [roe]
-
+    # Son çeyrek ROE'sini Ziraat resmi değeriyle güncelle
+    if roe_degerleri:
+        roe_degerleri[-1] = roe
     roe_serisi = {
         "donemler": roe_donemler,
         "roe_degerleri": roe_degerleri

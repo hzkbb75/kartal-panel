@@ -32,14 +32,15 @@ YASAKLI_KELIMELER = [
     "devre kesici", "volatilite", "likidite sağlayıcı", "olağandışı fiyat", 
     "fiyat hareketleri", "işlem gören tipe dönüşüm", "kredi derecelendirme", 
     "kayıtlı sermaye tavanı", "esas sözleşme", "fon sürekli bilgilendirme",
-    # Bilanço Gönderim Çöpleri (Sayıları zaten KARTAL hesaplıyor)
+    # Bilanço Gönderim Çöpleri
     "sorumluluk beyanı", "özel durum açıklaması (genel)", 
     # Günlük / Yönetimsel Rutinler
     "görev dağılımı", "imza sirküleri", "genel kurul çağrısı", "toplantı tutanağı",
-    "pay alım satım bildirimi", # Patronun/yöneticinin ufak şahsi alım satımlarını eler (Şirketin kendi "geri alım"ı filtreye takılmaz)
+    "pay alım satım bildirimi", "yatırımcı ilişkileri",
     # Haber/Medya Çöpleri
     "hedef fiyat", "tavsiyesi", "tavsiye", "aracı kurum", "piyasa yorumu"
 ]
+
 def load_seen_ids():
     """Daha önce işlenmiş bildirim ID'lerini yükler."""
     if os.path.exists(STATE_FILE):
@@ -73,7 +74,7 @@ def filtreye_uyuyor_mu(baslik, ozet):
     
     birlesik = f"{baslik} {ozet}".lower()
     
-    # Yasaklı (dedikodu/tavsiye) kelime varsa anında elenir
+    # Yasaklı kelime varsa anında elenir
     if any(yk in birlesik for yk in YASAKLI_KELIMELER):
         return False
         
@@ -81,12 +82,6 @@ def filtreye_uyuyor_mu(baslik, ozet):
 
 def main():
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Yerel JSON üzerinden KAP Taraması başlatıldı.")
-
-    # ... (dosya okuma kısımları aynı kalacak) ...
-
-    seen_ids = load_seen_ids()
-    yeni_sayac = 0
-    MAX_MESAJ = 5 # EMNİYET KEMERİ: Tek çalışmada maksimum 5 bildirim atabilir
 
     if not os.path.exists(CIKTI_KAP_YOLU):
         print(f"HATA: {CIKTI_KAP_YOLU} bulunamadı. Lütfen önce yerel_kap_motoru.py'yi çalıştırın.")
@@ -102,12 +97,12 @@ def main():
 
     seen_ids = load_seen_ids()
     yeni_sayac = 0
+    MAX_MESAJ = 5 # EMNİYET KEMERİ: Tek çalışmada maksimum 5 bildirim atabilir
 
     for hisse, bildirimler in haber_ambari.items():
         for item in bildirimler:
-    	    # SPAM KORUMASI: Sınır aşıldıysa döngüyü kır
+            # SPAM KORUMASI: Sınır aşıldıysa döngüyü kır
             if yeni_sayac >= MAX_MESAJ:
-                print("🛑 Spam koruması devrede: Kalan bildirimler bir sonraki taramaya bırakıldı.")
                 break
 
             bildirim_id = str(item.get("id") or "")
@@ -137,7 +132,8 @@ def main():
                 # Filtreye uymasa da tekrar kontrol etmemek için ID'yi kaydet
                 seen_ids.add(bildirim_id)
 
-	if yeni_sayac >= MAX_MESAJ:
+        if yeni_sayac >= MAX_MESAJ:
+            print("🛑 Spam koruması devrede: Kalan bildirimler bir sonraki taramaya bırakıldı.")
             break # Dış döngüyü de kır
 
     save_seen_ids(seen_ids)
