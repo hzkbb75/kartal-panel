@@ -363,6 +363,38 @@ def hesapla_hibrit_kartal_puani(sirket_verisi: dict, teknik_veri: dict = None) -
     toplam_skor = round(temel_puan + teknik_puan, 1)
     return toplam_skor
 
+def hesapla_hibrit_kartal_puani(s: dict, teknik_veri: dict = None) -> float:
+    """
+    Serkan Ünal Hibrit Puanı: Temel Kalite (%60) + 60G Destek Konumu (%40)
+    0 - 100 arası puan üretir.
+    """
+    # 1. Temel Analiz Puanı (Maks 60)
+    f_skor = int(s.get("piotroski_skor", 5))
+    temel = (f_skor / 9.0) * 30.0  # F-skor'dan maks 30 puan
+    
+    roe = float(s.get("roe", 0.0))
+    if roe >= 35.0: temel += 15.0
+    elif roe >= 20.0: temel += 10.0
+    elif roe >= 10.0: temel += 5.0
+    
+    nb_ozk = float(s.get("net_borc_ozkaynak", 1.0))
+    if nb_ozk <= 0.1: temel += 15.0
+    elif nb_ozk <= 0.6: temel += 10.0
+    elif nb_ozk <= 1.2: temel += 5.0
+
+    # 2. Teknik Destek Puanı (Maks 40)
+    teknik = 20.0  # Veri yoksa nötr puan
+    if teknik_veri:
+        konum = float(teknik_veri.get("kanal_konumu", 50.0))
+        # 60 günlük desteğe yakınlık: Desteğe ne kadar yakınsa o kadar ucuz
+        if konum <= 25.0: teknik = 40.0
+        elif konum <= 45.0: teknik = 30.0
+        elif konum <= 65.0: teknik = 20.0
+        elif konum <= 85.0: teknik = 10.0
+        else: teknik = 0.0  # Direnç tepesinde, pahalı
+
+    return round(temel + teknik, 1)
+
 def analiz_et_sirket(kod: str) -> dict:
     sirket_kaydi = YEREL_MALI_VERITABANI.get(kod)
     if not sirket_kaydi:
@@ -2012,6 +2044,36 @@ if __name__ == "__main__":
     tavan_sozluk = {"Korunaklı": 10.0, "Kırılgan Hendekli": 5.0, "Hendeksiz": 3.0}
 
     # --- YENİ SİRKET HAVUZU DÖNGÜSÜ (630 HİSSE) ---
+    # ==========================================================================
+    # SERKAN ÜNAL 60 HİSSE HEDEF PORTFÖY VE SEKTÖR MOTORU
+    # ==========================================================================
+    # 1. Tüm fırsat adaylarına Hibrit Puan (Temel + Teknik) ata
+    for s in tum_sonuclar:
+        kod = s["kod"]
+        tv_veri = KAP_VE_TEKNIK_AMBARI.get("teknik_veriler", {}).get(kod, None)
+        s["hibrit_puan"] = hesapla_hibrit_kartal_puani(s, tv_veri)
+
+    # 2. Top 60 Kadrosunu Belirle (Mevcut hisseler + En yüksek puanlı radarlar)
+    mevcut_kodlar = {k for k in mevcut_pozisyonlar.keys() if k not in ["NAKIT", "TRY", "KASA", "PPF"]}
+    
+    # Elemeyi geçen adayları puanına göre sırala
+    sirali_adaylar = sorted(
+        [s for s in firsat_adaylari if s["kod"] not in mevcut_kodlar],
+        key=lambda x: x["hibrit_puan"],
+        reverse=True
+    )
+    
+    # Hedef 60 kadrosu: Mevcutlar + En iyi adaylar (Tam 60 hisse)
+    hedef_60_kodlari = set(mevcut_kodlar)
+    kalan_kontenjan = max(0, 60 - len(hedef_60_kodlari))
+    for s in sirali_adaylar[:kalan_kontenjan]:
+        hedef_60_kodlari.add(s["kod"])
+
+    # 3. Hendek ve Puan Tabanlı Katsayılar (60 Hisse İçin Uyarlanmış)
+    # Korunaklı: ~%2.5 - %3.5, Kırılgan: ~%1.5 - %2.0, Hendeksiz: ~%1.0
+    katsayi_sozluk = {"Korunaklı": 2.2, "Kırılgan Hendekli": 1.5, "Hendeksiz": 1.0}
+    tavan_sozluk = {"Korunaklı": 3.5, "Kırılgan Hendekli": 2.2, "Hendeksiz": 1.2}
+
     sirket_havuzu = []
     for s_veri in tum_sonuclar:
         kod = s_veri["kod"]
@@ -2019,28 +2081,70 @@ if __name__ == "__main__":
         if fiyat <= 0:
             fiyat = mevcut_pozisyonlar.get(kod, {}).get("maliyet", 10.0)
 
-        # Eğer radar süzgecinden geçmişse veya portföydeyse para tahsis et:
-        if kod in havuz_kodlari:
-            kat = s_veri.get("kategori", "Hendeksiz")
-            katsayi = katsayi_sozluk.get(kat, 1.0)
-            tavan = tavan_sozluk.get(kat, 3.0)
-            is_radar = True
+        kat = s_veri.get("kategori", "Hendeksiz")
+        mevcut_lot = mevcut_pozisyonlar.get(kod, {}).get("adet", 0)
+
+        if kod in hedef_60_kodlari:
+            # 60'lık ana portföy kadrosunda
+            baz_katsayi = katsayi_sozluk.get(kat, 1.0)
+            # Hibrit puanı yüksek olan hisseye ek katsayı çarpanı
+            puan_carpani = max(0.7, s_veri["hibrit_puan"] / 70.0)
+            katsayi = round(baz_katsayi * puan_carpani, 2)
+            tavan = tavan_sozluk.get(kat, 1.5)
+            is_radar = (mevcut_lot == 0)
+            kadroda = True
         else:
-            # 500+ elenen hisse (Para tahsis edilmez)
-            kat = s_veri.get("kategori", "Elendi")
+            # 60 dışında kalan diğer hisseler (Yedek kulübesi)
             katsayi = 0.0
             tavan = 0.0
-            is_radar = False
+            is_radar = (s_veri in firsat_adaylari)
+            kadroda = False
 
         sirket_havuzu.append({
             "kod": kod, "sektor": s_veri.get("sektor", "Sanayi / Hizmet"), "kategori": kat,
-            "f_skor": s_veri.get("piotroski_skor", 6), "katsayi": katsayi,
-            "tavan": tavan, "fiyat": fiyat,
-            "mevcut_lot": mevcut_pozisyonlar.get(kod, {}).get("adet", 0),
+            "f_skor": s_veri.get("piotroski_skor", 6), "hibrit_puan": s_veri["hibrit_puan"],
+            "katsayi": katsayi, "tavan": tavan, "fiyat": fiyat,
+            "mevcut_lot": mevcut_lot,
             "ort_maliyet": mevcut_pozisyonlar.get(kod, {}).get("maliyet", fiyat),
             "ham_veri": s_veri,
-            "is_radar": is_radar
+            "is_radar": is_radar,
+            "kadroda": kadroda
         })
+
+    # 4. Kasa ve Portföy Büyüklüğü
+    toplam_hisse_mevcut_deger = sum(item["mevcut_lot"] * item["fiyat"] for item in sirket_havuzu)
+    nakit_orani = 10.0  # Asgari %10 kasa kalkanı
+    hedef_hisse_havuzu_orani = 90.0
+    toplam_portfoy_tl = max(toplam_hisse_mevcut_deger / (hedef_hisse_havuzu_orani / 100.0), 1000.0)
+    hisse_portfoy_tl = round(toplam_portfoy_tl * (hedef_hisse_havuzu_orani / 100.0), 2)
+    nakit_tl = round(toplam_portfoy_tl * (nakit_orani / 100.0), 2)
+
+    # 5. Ağırlıkları 60 Hisseye Dağıt (Serkan Ünal %1 Taban ve Tavan Kuralı)
+    kadro_60 = [x for x in sirket_havuzu if x["kadroda"]]
+    toplam_kadro_katsayi = max(sum(x["katsayi"] for x in kadro_60), 0.1)
+
+    for item in sirket_havuzu:
+        if item["kadroda"]:
+            # Ham dağıtım
+            pay = (item["katsayi"] / toplam_kadro_katsayi) * hedef_hisse_havuzu_orani
+            # Asgari %1.0 taban, hendek tavanı ile sınırla
+            item["hedef_agirlik"] = min(item["tavan"], max(1.0, round(pay, 2)))
+        else:
+            item["hedef_agirlik"] = 0.0
+
+    # 6. Sektörel Çeşitlendirme Kalkanı (Maksimum %20 Sektör Üst Sınırı)
+    SEKTOR_TAVANI = 20.0
+    sektor_toplamlari = {}
+    for item in kadro_60:
+        sek = item["sektor"]
+        sektor_toplamlari[sek] = sektor_toplamlari.get(sek, 0.0) + item["hedef_agirlik"]
+
+    for sek, toplam_pay in sektor_toplamlari.items():
+        if toplam_pay > SEKTOR_TAVANI:
+            kirpma = SEKTOR_TAVANI / toplam_pay
+            for item in kadro_60:
+                if item["sektor"] == sek:
+                    item["hedef_agirlik"] = max(1.0, round(item["hedef_agirlik"] * kirpma, 2))
     # -----------------------------------------------
 
     gercek_nakit_tl = 0.0
