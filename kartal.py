@@ -1079,8 +1079,15 @@ def uret_portfoy_kalkani_html(tablo_verileri: list, karneler: dict, toplam_portf
         kz_renk = "#34d399" if r["KZ_Yuzde"] >= 0 else "#f87171"
         fark_metin = f"+{r['Fark_Lot']:,}" if r['Fark_Lot'] > 0 else f"{r['Fark_Lot']:,}"
 
+        # --- 4. MADDE: FİLTRE İÇİN CLASS ATAMASI BURAYA GELDİ ---
+        if r['Mevcut_Lot'] > 0:
+            satir_class = "hisse-satiri satir-portfoy"
+        else:
+            satir_class = "hisse-satiri satir-radar"
+        # --------------------------------------------------------
+
         satirlar_html += f"""
-        <tr onclick="acKarneModal('{kod}')" style="cursor:pointer;">
+        <tr class="{satir_class}" onclick="acKarneModal('{kod}')" style="cursor:pointer;">
             <td><strong style="color:#38bdf8;">{kod} 🔍</strong></td>
             <td>{r['Sektör']}</td>
             <td>{r['Hendek']}</td>
@@ -1119,8 +1126,8 @@ def uret_portfoy_kalkani_html(tablo_verileri: list, karneler: dict, toplam_portf
         .badge-warn {{ background: #78350f; color: #fbbf24; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; }}
         .badge-fail {{ background: #7f1d1d; color: #f87171; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; }}
 
-        .modal-overlay {{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); display: none; z-index: 1000; }}
-        .drawer {{ position: fixed; right: -980px; top: 0; width: 940px; max-width: 96vw; height: 100%; background: #0f172a; border-left: 2px solid #38bdf8; padding: 22px; box-sizing: border-box; overflow-y: auto; transition: right 0.28s ease; z-index: 1001; }}
+        .modal-overlay {{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: none; z-index: 1000; }}
+        .drawer {{ position: fixed; right: -100vw; top: 2.5%; width: 95vw; height: 95vh; background: #0f172a; border-radius: 12px 0 0 12px; border-left: 2px solid #38bdf8; padding: 22px; box-sizing: border-box; overflow-y: auto; transition: right 0.3s ease-in-out; z-index: 1001; box-shadow: -5px 0 25px rgba(0,0,0,0.5); }}
         .drawer.active {{ right: 0; }}
         .close-btn {{ background: #1e293b; color: #cbd5e1; border: 1px solid #334155; padding: 6px 12px; border-radius: 6px; cursor: pointer; float: right; font-weight: bold; }}
 
@@ -1178,6 +1185,12 @@ def uret_portfoy_kalkani_html(tablo_verileri: list, karneler: dict, toplam_portf
 
     {sektor_paneli_html}
 
+    <div style="text-align: center; margin-bottom: 20px;">
+        <button onclick="hisseFiltrele('portfoy')" id="btn-portfoy" style="padding: 10px 20px; font-weight: bold; cursor: pointer; background: #1e293b; color:#38bdf8; border:1px solid #38bdf8; border-radius:6px; margin-right:8px;">🛡️ Portföy (Taşınanlar)</button>
+        <button onclick="hisseFiltrele('radar')" id="btn-radar" style="padding: 10px 20px; font-weight: bold; cursor: pointer; background: #1e293b; color:#38bdf8; border:1px solid #38bdf8; border-radius:6px; margin-right:8px;">🎯 Radar (Adaylar)</button>
+        <button onclick="hisseFiltrele('tum')" id="btn-tum" style="padding: 10px 20px; font-weight: bold; cursor: pointer; background: #1e293b; color:#38bdf8; border:1px solid #38bdf8; border-radius:6px;">🌐 Tümü (Havuz)</button>
+    </div>
+
     <table>
         <thead>
             <tr>
@@ -1213,7 +1226,33 @@ def uret_portfoy_kalkani_html(tablo_verileri: list, karneler: dict, toplam_portf
     </div>
 
     <script>
-        const KARNELER = {karneler_json_str};
+        
+    const KARNELER = {karneler_json_str};
+
+        // --- YENİ EKLENEN FİLTRE MOTORU ---
+        function hisseFiltrele(tur) {{
+            const satirlar = document.querySelectorAll('.hisse-satiri');
+            
+            satirlar.forEach(satir => {{
+                if (tur === 'tum') {{
+                    satir.style.display = '';
+                }} else if (tur === 'portfoy') {{
+                    satir.style.display = satir.classList.contains('satir-portfoy') ? '' : 'none';
+                }} else if (tur === 'radar') {{
+                    satir.style.display = satir.classList.contains('satir-radar') ? '' : 'none';
+                }}
+            }});
+
+            // Buton renklerini aktif duruma göre güncelle
+            document.getElementById('btn-portfoy').style.opacity = tur === 'portfoy' ? '1' : '0.5';
+            document.getElementById('btn-radar').style.opacity = tur === 'radar' ? '1' : '0.5';
+            document.getElementById('btn-tum').style.opacity = tur === 'tum' ? '1' : '0.5';
+        }}
+
+        window.onload = function() {{
+            hisseFiltrele('portfoy'); // Sayfa ilk açıldığında portföyü göster
+        }};
+        // ------------------------------------
 
         function sekmeDegistir(tabId, btn) {{
             document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
@@ -1808,10 +1847,7 @@ def uret_portfoy_kalkani_html(tablo_verileri: list, karneler: dict, toplam_portf
 </body>
 </html>"""
 
-    PANO_YOLU = "portfoy.html"
-    # Hem portfoy.html hem de index.html aynı güncel 6 sekmeli panoya kavuşsun:
-    with open("portfoy.html", "w", encoding="utf-8") as f:
-        f.write(html_icerik)
+    PANO_YOLU = "index.html"
 
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html_icerik)
