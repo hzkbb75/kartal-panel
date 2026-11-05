@@ -1685,23 +1685,33 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
             t3 += '</div>';
             document.getElementById('tab3').innerHTML = t3;
 
-            // === 4. TAB: DESTEK / DİRENÇ & ASİMETRİK R:R PLANI + CANLI TRADINGVIEW (FAZ 4) ===
+            // === 4. TAB: DESTEK / DİRENÇ (60G) & TRADINGVIEW KÖPRÜSÜ ===
             const tv = k.teknik_veri;
             let t4 = '';
             
-            // 1. Dinamik Koyu Tema TradingView Canlı Mum Grafiği (Sıfır Dosya Boyutu Yükü)
-            const tvIframeHtml = 
-                '<div style="margin-bottom:16px; border-radius:8px; overflow:hidden; border:1px solid #1f2937; height:460px; background:#0b0e14;">' +
-                    '<iframe ' +
-                        'src="https://s.tradingview.com/widgetembed/?symbol=BIST%3A' + kod + '&interval=D&theme=dark&style=1&timezone=Europe%2FIstanbul&locale=tr&toolbarbg=111827&enable_publishing=false&hide_side_toolbar=0&allow_symbol_change=1" ' +
-                        'style="width: 100%; height: 100%; border: none;" ' +
-                        'frameborder="0" allowtransparency="true" scrolling="no">' +
-                    '</iframe>' +
+            // 1. TradingView Doğrudan Bağlantı Kartı
+            const tvKartHtml = 
+                '<div style="background: linear-gradient(135deg, rgba(30,58,138,0.25), rgba(15,23,42,0.95)); border: 1px solid #1e40af; border-radius: 8px; padding: 16px 20px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">' +
+                    '<div>' +
+                        '<div style="font-size: 15px; font-weight: bold; color: #f8fafc; display: flex; align-items: center; gap: 8px;">' +
+                            '<span>📈 ' + kod + ' Canlı TradingView Analizi</span>' +
+                            '<span style="background: #0284c7; color: #fff; font-size: 10px; padding: 2px 6px; border-radius: 4px;">BIST:' + kod + '</span>' +
+                        '</div>' +
+                        '<div style="font-size: 11.5px; color: #94a3b8; margin-top: 4px;">' +
+                            'Borsa İstanbul veri lisansı nedeniyle grafik TradingView üzerinde kendi şablon ve indikatörlerinizle tam ekran açılır.' +
+                        '</div>' +
+                    '</div>' +
+                    '<div>' +
+                        '<a href="https://tr.tradingview.com/chart/?symbol=BIST:' + kod + '" target="_blank" ' +
+                           'style="background: #38bdf8; color: #0b0e14; text-decoration: none; font-weight: bold; font-size: 12.5px; padding: 10px 18px; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 0 12px rgba(56,189,248,0.4);">' +
+                            'Grafiği TradingView\\'de Aç ↗' +
+                        '</a>' +
+                    '</div>' +
                 '</div>';
 
-            // 2. 60 Günlük Yerel Kanal ve R:R Matrisi
+            // 2. KARTAL 60 Günlük Yerel Destek / Direnç ve R:R Matrisi
             if (tv) {{
-                t4 = tvIframeHtml + 
+                t4 = tvKartHtml + 
                     '<div class="info-card" style="background:#111827; border:1px solid #1f2937; padding:20px;">' +
                     '<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">' +
                         '<div>' +
@@ -1756,8 +1766,8 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
                     '</div>' +
                 '</div>';
             }} else {{
-                t4 = tvIframeHtml + 
-                    '<div class="info-card meal-text" style="color:#94a3b8;">Bu hisse için 60 günlük teknik kanal henüz hesaplanmadı. Canlı TradingView grafiği yukarıda aktiftir.</div>';
+                t4 = tvKartHtml + 
+                    '<div class="info-card meal-text" style="color:#94a3b8;">Bu hisse için 60 günlük teknik kanal henüz hesaplanmadı. Yukarıdaki butonla TradingView grafiğini canlı inceleyebilirsiniz.</div>';
             }}
             document.getElementById('tab4').innerHTML = t4;
 
