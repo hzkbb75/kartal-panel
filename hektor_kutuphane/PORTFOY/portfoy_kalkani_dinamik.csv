@@ -1,631 +1,631 @@
 ﻿Kod;Sektör;Hendek;F_Skor;Mevcut_Lot;Fiyat;Mevcut_Tutar;Mevcut_Pay;Hedef_Pay;Hedef_Tutar;Hedef_Lot;Fark_Lot;Aksiyon;KZ_Yuzde;Katsayi;Islem_Tutari;Ort_Maliyet;is_radar
-KCHOL;Koç Holding;Korunaklı;5;0;199.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;199.5;False
-ASELS;Savunma ve Teknoloji;Korunaklı;6;275;354.0;97350.0;6.88;1.07;15135.79;42;-233;SAT / AZALT;-5.64;1.8;82482.0;375.15;True
-ENKAI;Enka İnşaat;Korunaklı;7;0;80.7;0.0;0.0;1.07;15135.79;187;187;AL / EKLE;0.0;1.8;15090.9;80.7;True
-TUPRS;Tüpraş;Korunaklı;8;0;344.25;0.0;0.0;1.07;15135.79;43;43;AL / EKLE;0.0;1.8;14802.75;344.25;True
-BIMAS;Perakende ve Gıda;Korunaklı;8;100;364.75;36475.0;2.58;1.07;15135.79;41;-59;SAT / AZALT;-1.46;1.8;21520.25;370.15;True
-THYAO;Türk Hava Yolları;Korunaklı;5;0;277.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;277.5;False
-QNBTR;Bankacılık;Hendeksiz;7;0;152.6;0.0;0.0;0.6;8487.36;55;55;AL / EKLE;0.0;1.0;8393.0;152.6;True
-GARAN;Bankacılık;Hendeksiz;7;0;134.9;0.0;0.0;0.6;8487.36;62;62;AL / EKLE;0.0;1.0;8363.8;134.9;True
-ISBTR;İş Bankası (B);Hendeksiz;7;0;372000.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;372000.0;False
-ISCTR;Bankacılık;Hendeksiz;7;0;12.63;0.0;0.0;0.6;8487.36;672;672;AL / EKLE;0.0;1.0;8487.36;12.63;True
-CCOLA;Coca-Cola İçecek A.Ş;Korunaklı;8;0;74.3;0.0;0.0;1.07;15135.79;203;203;AL / EKLE;0.0;1.8;15082.9;74.3;True
-HALKB;Bankacılık;Hendeksiz;7;0;40.68;0.0;0.0;0.6;8487.36;208;208;AL / EKLE;0.0;1.0;8461.44;40.68;True
-TCELL;Turkcell;Kırılgan Hendekli;5;0;93.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;93.5;False
-EREGL;Demir Çelik ve Maden;Hendeksiz;7;2701;31.62;85405.62;6.04;0.6;8487.36;268;-2433;SAT / AZALT;-15.93;1.0;76931.46;37.61;True
-SAHOL;Sabancı Holding;Kırılgan Hendekli;6;0;85.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;85.05;False
-TTKOM;Telekomünikasyon;Kırılgan Hendekli;4;500;48.44;24220.0;1.71;0.83;11740.84;242;-258;SAT / AZALT;3.55;1.4;12497.52;46.78;True
-ASTOR;Elektrik ve Enerji;Kırılgan Hendekli;6;0;162.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;162.9;False
-ISDMR;İskenderun Demir Çelik;Hendeksiz;7;0;52.0;0.0;0.0;0.6;8487.36;163;163;AL / EKLE;0.0;1.0;8476.0;52.0;True
-DOCO;DO & CO Aktiengesellschaft;Hendeksiz;0;0;11795.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11795.0;False
-FROTO;Ford Otosan;Korunaklı;5;160;67.7;10832.0;0.77;1.07;15135.79;223;63;AL / EKLE;-1.46;1.8;4265.1;68.7;True
-YKBNK;Bankacılık;Hendeksiz;7;0;35.26;0.0;0.0;0.6;8487.36;240;240;AL / EKLE;0.0;1.0;8462.4;35.26;True
-ENERY;Enerya Enerji;Kırılgan Hendekli;7;0;13.99;0.0;0.0;0.83;11740.84;839;839;AL / EKLE;0.0;1.4;11737.61;13.99;True
-AHGAZ;Ahlatçı Doğalgaz;Kırılgan Hendekli;7;0;46.92;0.0;0.0;0.83;11740.84;250;250;AL / EKLE;0.0;1.4;11730.0;46.92;True
-TRALT;Türk Altın;Kırılgan Hendekli;7;0;36.6;0.0;0.0;0.83;11740.84;320;320;AL / EKLE;0.0;1.4;11712.0;36.6;True
-AKBNK;Bankacılık;Hendeksiz;7;1000;64.05;64050.0;4.53;0.6;8487.36;132;-868;SAT / AZALT;-1.51;1.0;55595.4;65.03;True
-ENJSA;Enerjisa Enerji;Kırılgan Hendekli;5;0;117.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;117.7;False
-SISE;Şişecam;Hendeksiz;4;0;35.56;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;35.56;False
-AEFES;Anadolu Efes;Kırılgan Hendekli;8;0;16.68;0.0;0.0;0.83;11740.84;703;703;AL / EKLE;0.0;1.4;11726.04;16.68;True
-TAVHL;TAV Holding;Kırılgan Hendekli;7;0;273.25;0.0;0.0;0.83;11740.84;42;42;AL / EKLE;0.0;1.4;11476.5;273.25;True
-INVES;Investco Holding;Hendeksiz;5;0;658.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;658.0;False
-TOASO;Tofaş Fabrika;Hendeksiz;5;0;223.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;223.0;False
-RYGYO;Reysaş GYO;Hendeksiz;4;0;51.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;51.5;False
-BRSAN;Borusan Birleşik Boru Fab.;Hendeksiz;8;0;665.5;0.0;0.0;0.6;8487.36;12;12;AL / EKLE;0.0;1.0;7986.0;665.5;True
-GUBRF;Gübre Fabrikaları;Korunaklı;7;0;291.25;0.0;0.0;1.07;15135.79;51;51;AL / EKLE;0.0;1.8;14853.75;291.25;True
-SASA;Sasa Polyester Sanayi A.Ş.;Hendeksiz;5;0;1.61;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.61;False
-VAKBN;Bankacılık;Hendeksiz;5;0;30.84;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;30.84;False
-OYAKC;Oyak Çimento;Kırılgan Hendekli;7;0;19.03;0.0;0.0;0.83;11740.84;616;616;AL / EKLE;0.0;1.4;11722.48;19.03;True
-ZRGYO;Ziraat GYO;Kırılgan Hendekli;6;0;16.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.25;False
-MPARK;Sağlık ve İlaç;Kırılgan Hendekli;6;100;396.0;39600.0;2.8;0.83;11740.84;29;-71;SAT / AZALT;1.76;1.4;28116.0;389.14;True
-TRGYO;Torunlar GYO;Kırılgan Hendekli;7;0;87.0;0.0;0.0;0.83;11740.84;134;134;AL / EKLE;0.0;1.4;11658.0;87.0;True
-KENT;Kent Gıda;Hendeksiz;5;0;256.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;256.0;False
-MGROS;Migros;Korunaklı;5;0;450.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;450.5;False
-AGHOL;Anadolu Grubu Holding;Hendeksiz;7;0;28.38;0.0;0.0;0.6;8487.36;299;299;AL / EKLE;0.0;1.0;8485.62;28.38;True
-AKSEN;Aksa Enerji;Kırılgan Hendekli;6;0;67.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;67.5;False
-DMLKT;Finance;Hendeksiz;0;0;6.93;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.93;False
-TKFEN;Tekfen Holding;Hendeksiz;5;0;198.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;198.5;False
-AYGAZ;Aygaz;Hendeksiz;5;0;265.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;265.5;False
-EKGYO;Emlak Konut GYO;Hendeksiz;4;0;17.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;17.36;False
-PGSUS;Pegasus Hava Taşımacılığı;Hendeksiz;5;0;132.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;132.7;False
-RYSAS;Reysaş Taşımacılık;Hendeksiz;4;0;28.44;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;28.44;False
-AKFIS;Akfen İnşaat;Kırılgan Hendekli;7;0;13.89;0.0;0.0;0.83;11740.84;845;845;AL / EKLE;0.0;1.4;11737.05;13.89;True
-TABGD;Perakende ve Gıda;Hendeksiz;5;438;186.8;81818.4;5.78;0.6;8487.36;45;-393;SAT / AZALT;-18.07;1.0;73412.4;227.99;True
-ARCLK;Arçelik;Hendeksiz;6;0;69.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;69.2;False
-RGYAS;Rönesans Gayrimenkul;Kırılgan Hendekli;7;0;176.1;0.0;0.0;0.83;11740.84;66;66;AL / EKLE;0.0;1.4;11622.6;176.1;True
-CVKMD;Cvk Maden;Hendeksiz;5;0;12.56;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.56;False
-PETKM;Kimya ve Petrokimya;Hendeksiz;5;50000;17.63;881500.0;62.32;0.6;8487.36;481;-49519;SAT / AZALT;-11.81;1.0;873019.97;19.99;True
-YGGYO;Yeni Gimat GYO;Kırılgan Hendekli;7;0;188.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;188.9;False
-KRDMB;Kardemir (B);Hendeksiz;7;0;54.05;0.0;0.0;0.6;8487.36;157;157;AL / EKLE;0.0;1.0;8485.85;54.05;True
-KRDMA;Kardemir (A);Hendeksiz;7;0;35.32;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;35.32;False
-KRDMD;Kardemir (D);Hendeksiz;7;0;40.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;40.0;False
-TURSG;Sigorta ve Emeklilik;Hendeksiz;7;0;3.61;0.0;0.0;0.6;8487.36;2351;2351;AL / EKLE;0.0;1.0;8487.11;3.61;True
-DOHOL;Doğan Holding;Kırılgan Hendekli;7;0;16.85;0.0;0.0;0.83;11740.84;696;696;AL / EKLE;0.0;1.4;11727.6;16.85;True
-KLNMA;T. Kalkınma Bankası;Hendeksiz;7;0;6.84;0.0;0.0;0.6;8487.36;1240;1240;AL / EKLE;0.0;1.0;8481.6;6.84;True
-ANHYT;Anadolu Hayat Emeklilik A.Ş.;Hendeksiz;7;0;92.15;0.0;0.0;0.6;8487.36;92;92;AL / EKLE;0.0;1.0;8477.8;92.15;True
-ALARK;Alarko Holding;Hendeksiz;8;0;96.95;0.0;0.0;0.6;8487.36;87;87;AL / EKLE;0.0;1.0;8434.65;96.95;True
-ISMEN;İş Yatırım;Hendeksiz;5;0;26.82;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;26.82;False
-SELEC;Selçuk Ecza Deposu;Hendeksiz;5;0;68.45;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;68.45;False
-AKSA;Aksa;Hendeksiz;6;0;10.32;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.32;False
-TRMET;TR Anadolu Metal;Kırılgan Hendekli;7;0;107.5;0.0;0.0;0.83;11740.84;109;109;AL / EKLE;0.0;1.4;11717.5;107.5;True
-ANSGR;Sigorta ve Emeklilik;Hendeksiz;7;1000;22.28;22280.0;1.58;0.6;8487.36;380;-620;SAT / AZALT;2.44;1.0;13813.6;21.75;True
-GLRMK;Gülermak Ağır Sanayi;Hendeksiz;4;0;118.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;118.9;False
-TTRAK;Türk Traktör;Hendeksiz;4;0;357.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;357.5;False
-CIMSA;Çimsa;Hendeksiz;3;0;41.24;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;41.24;False
-OTKAR;Otokar;Hendeksiz;4;0;307.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;307.75;False
-VERUS;Verusa Holding;Kırılgan Hendekli;8;0;489.5;0.0;0.0;0.83;11740.84;23;23;AL / EKLE;0.0;1.4;11258.5;489.5;True
-SOKM;Şok Marketler;Hendeksiz;4;0;53.55;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;53.55;False
-GLYHO;Global Yatırım Holding;Kırılgan Hendekli;6;0;15.98;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.98;False
-TBORG;Tuborg;Kırılgan Hendekli;3;0;114.6;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;114.6;False
-ARMGD;Armada Gıda;Hendeksiz;4;0;119.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;119.3;False
-AKCNS;Akçansa;Hendeksiz;2;0;189.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;189.0;False
-ECILC;Eczacıbaşı İlaç;Hendeksiz;7;0;48.04;0.0;0.0;0.6;8487.36;176;176;AL / EKLE;0.0;1.0;8455.04;48.04;True
-QNBFK;QNB Finans Fin. Kir.;Hendeksiz;0;0;35.34;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;35.34;False
-CLEBI;Çelebi;Kırılgan Hendekli;7;0;1258.0;0.0;0.0;0.83;11740.84;9;9;AL / EKLE;0.0;1.4;11322.0;1258.0;True
-BRYAT;Borusan Yatırım;Kırılgan Hendekli;6;0;1283.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1283.0;False
-ULKER;Ülker Bisküvi;Kırılgan Hendekli;5;0;79.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;79.9;False
-MAVI;Mavi Giyim Sanayi Tic.A.S;Kırılgan Hendekli;6;0;35.52;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;35.52;False
-DOAS;Doğuş Otomotiv;Hendeksiz;3;0;131.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;131.3;False
-VEYAS;Vangölü Enerj;Hendeksiz;5;0;54.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;54.3;False
-EUPWR;Europower Enerji;Kırılgan Hendekli;4;0;42.26;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;42.26;False
-EFOR;Efor Yat. San.;Hendeksiz;3;0;12.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.46;False
-AGESA;Sigorta ve Emeklilik;Korunaklı;7;0;209.0;0.0;0.0;1.07;15135.79;72;72;AL / EKLE;0.0;1.8;15048.0;209.0;True
-KLRHO;Kiler Holding;Hendeksiz;5;0;9.68;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.68;False
-HEDEF;Hedef Holding;Kırılgan Hendekli;5;0;6.27;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.27;False
-GRSEL;Gürsel Taşımacılık;Korunaklı;5;0;261.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;261.0;False
-KARCL;Kardemir Çelik Sanayi;Kırılgan Hendekli;6;0;27.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;27.1;False
-KTLEV;Katılımevim;Hendeksiz;0;0;4.02;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.02;False
-BASGZ;Başkent Doğalgaz;Kırılgan Hendekli;5;0;35.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;35.2;False
-AKSGY;Akis GYO;Kırılgan Hendekli;6;0;8.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.87;False
-ADGYO;Adra GYO;Kırılgan Hendekli;6;0;41.32;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;41.32;False
-AKFYE;Akfen Yenilenebilir Enerji;Kırılgan Hendekli;6;0;2.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.9;False
-NUHCM;Nuh Çimento;Hendeksiz;6;0;176.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;176.1;False
-MASFN;Masfen Enerji;Kırılgan Hendekli;6;0;35.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;35.2;False
-KLYPV;Kalyon Güneş Teknolojileri;Hendeksiz;6;0;49.38;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;49.38;False
-TSKB;TSKB;Hendeksiz;5;0;9.61;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.61;False
-BRISA;Brisa;Hendeksiz;5;0;69.85;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;69.85;False
-CMENT;Çimentaş;Hendeksiz;2;0;225.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;225.0;False
-TCKRC;Kıraç Galvaniz;Korunaklı;7;0;117.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;117.5;False
-TRENJ;TR Doğal Enerji Kaynakları;Kırılgan Hendekli;7;0;73.3;0.0;0.0;0.83;11740.84;160;160;AL / EKLE;0.0;1.4;11728.0;73.3;True
-ARASE;Doğu Aras Enerji;Korunaklı;8;0;76.3;0.0;0.0;1.07;15135.79;198;198;AL / EKLE;0.0;1.8;15107.4;76.3;True
-DSTKF;Destek Finans Faktoring;Hendeksiz;0;4;68.85;275.4;0.02;0.6;8487.36;123;119;AL / EKLE;-97.08;1.0;8193.15;2360.93;True
-AVPGY;Avrupakent GYO;Kırılgan Hendekli;7;0;47.22;0.0;0.0;0.83;11740.84;248;248;AL / EKLE;0.0;1.4;11710.56;47.22;True
-QUICK;Quick Sigorta;Hendeksiz;7;0;41.66;0.0;0.0;0.6;8487.36;203;203;AL / EKLE;0.0;1.0;8456.98;41.66;True
-MOGAN;Mogan Enerji;Hendeksiz;6;0;7.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.9;False
-ENTRA;Ic Enterra Yenilenebilir;Kırılgan Hendekli;5;0;4.57;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.57;False
-YEOTK;YEO Teknoloji;Kırılgan Hendekli;5;0;23.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;23.4;False
-NTHOL;Net Holding;Hendeksiz;5;0;37.16;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;37.16;False
-ISGYO;İş GYO;Kırılgan Hendekli;8;0;18.07;0.0;0.0;0.83;11740.84;649;649;AL / EKLE;0.0;1.4;11727.43;18.07;True
-SARKY;Sarkuysan;Hendeksiz;5;0;17.18;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;17.18;False
-KCAER;Kocaer Çelik Sanayi;Hendeksiz;5;0;9.65;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.65;False
-OZKGY;Özak GYO;Hendeksiz;2;0;11.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.75;False
-ARDYZ;ARD Grup Bilişim;Korunaklı;6;0;54.45;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;54.45;False
-CRFSA;Carrefoursa;Hendeksiz;4;0;133.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;133.4;False
-GMTAS;Gimat Mağazacılık;Kırılgan Hendekli;6;0;48.58;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;48.58;False
-CITAS;Çitlekçi Gıda;Kırılgan Hendekli;6;0;96.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;96.25;False
-ALBRK;Albaraka Türk;Hendeksiz;5;0;8.37;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.37;False
-CWENE;Cw Enerji;Kırılgan Hendekli;7;0;16.3;0.0;0.0;0.83;11740.84;720;720;AL / EKLE;0.0;1.4;11736.0;16.3;True
-PASEU;Pasifik Eurasia;Hendeksiz;3;0;24.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;24.3;False
-HEKTS;Hektaş;Hendeksiz;5;0;1.79;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.79;False
-ECZYT;Eczacıbaşı Yatırım;Kırılgan Hendekli;4;0;157.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;157.5;False
-GENIL;Gen İlaç;Hendeksiz;5;0;4.02;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.02;False
-EGPRO;Ege Profil;Kırılgan Hendekli;8;0;29.04;0.0;0.0;0.83;11740.84;404;404;AL / EKLE;0.0;1.4;11732.16;29.04;True
-GESAN;Girişim Elektrik;Hendeksiz;2;0;34.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;34.7;False
-SSAAT;Saat ve Saat;Korunaklı;7;0;23.64;0.0;0.0;1.07;15135.79;640;640;AL / EKLE;0.0;1.8;15129.6;23.64;True
-AYDEM;Aydem Enerji;Kırılgan Hendekli;6;0;22.62;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;22.62;False
-DEVA;Deva Holding;Kırılgan Hendekli;7;0;72.6;0.0;0.0;0.83;11740.84;161;161;AL / EKLE;0.0;1.4;11688.6;72.6;True
-METEN;Metgün Enerji;Kırılgan Hendekli;7;0;20.62;0.0;0.0;0.83;11740.84;569;569;AL / EKLE;0.0;1.4;11732.78;20.62;True
-PAHOL;Pasifik Holding;Hendeksiz;4;0;0.73;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.73;False
-EBEBK;Ebebek;Hendeksiz;5;0;78.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;78.05;False
-KONYA;Konya Çimento;Hendeksiz;6;0;3050.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3050.0;False
-HLGYO;Halk GYO;Hendeksiz;5;0;3.61;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.61;False
-MAGEN;Margün Enerji;Kırılgan Hendekli;4;0;4.78;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.78;False
-FENER;Fenerbahce Futbol A.Ş.;Kırılgan Hendekli;8;0;1.96;0.0;0.0;0.83;11740.84;5990;5990;AL / EKLE;0.0;1.4;11740.4;1.96;True
-SARAE;Şa-Ra Enerji;Hendeksiz;4;0;30.04;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;30.04;False
-EGEEN;Ege Endüstri;Hendeksiz;6;0;4297.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4297.5;False
-NETCD;Netcad Yazılım;Kırılgan Hendekli;7;0;95.25;0.0;0.0;0.83;11740.84;123;123;AL / EKLE;0.0;1.4;11715.75;95.25;True
-MCARD;MetropolCard;Hendeksiz;4;0;123.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;123.4;False
-MIATK;Mia Teknoloji;Hendeksiz;5;0;23.98;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;23.98;False
-MRSHL;Marshall;Korunaklı;7;0;1145.0;0.0;0.0;1.07;15135.79;13;13;AL / EKLE;0.0;1.8;14885.0;1145.0;True
-HRKET;Hareket Proje;Hendeksiz;7;0;7.25;0.0;0.0;0.6;8487.36;1170;1170;AL / EKLE;0.0;1.0;8482.5;7.25;True
-ECOGR;Ecogreen;Kırılgan Hendekli;6;0;19.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;19.1;False
-CEMZY;Cem Zeytin;Kırılgan Hendekli;6;0;5.65;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.65;False
-OZATD;Özata Denizcilik;Hendeksiz;4;0;126.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;126.0;False
-BFREN;Bosch Fren;Kırılgan Hendekli;7;0;94.6;0.0;0.0;0.83;11740.84;124;124;AL / EKLE;0.0;1.4;11730.4;94.6;True
-BANVT;Banvit;Hendeksiz;1;0;113.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;113.7;False
-LOGO;Logo Yazılım;Korunaklı;7;0;121.8;0.0;0.0;1.07;15135.79;124;124;AL / EKLE;0.0;1.8;15103.2;121.8;True
-DMRGD;DMR Unlu Mamüller;Kırılgan Hendekli;8;0;7.01;0.0;0.0;0.83;11740.84;1674;1674;AL / EKLE;0.0;1.4;11734.74;7.01;True
-TRCAS;Turcas Holding;Hendeksiz;5;0;40.58;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;40.58;False
-POLHO;Polisan Holding;Hendeksiz;5;0;14.72;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.72;False
-RAYSG;Ray Sigorta;Hendeksiz;0;0;100.6;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;100.6;False
+ASELS;Savunma ve Teknoloji;Korunaklı;6;275;352.75;97006.25;6.89;1.07;15063.71;42;-233;SAT / AZALT;-5.97;1.8;82190.75;375.15;True
+ENKAI;Enka İnşaat;Korunaklı;7;0;81.7;0.0;0.0;1.07;15063.71;184;184;AL / EKLE;0.0;1.8;15032.8;81.7;True
+THYAO;Türk Hava Yolları;Korunaklı;5;0;301.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;301.0;False
+BIMAS;Perakende ve Gıda;Korunaklı;8;100;374.75;37475.0;2.66;1.07;15063.71;40;-60;SAT / AZALT;1.24;1.8;22485.0;370.15;True
+TUPRS;Tüpraş;Korunaklı;8;0;331.5;0.0;0.0;1.07;15063.71;45;45;AL / EKLE;0.0;1.8;14917.5;331.5;True
+GARAN;Bankacılık;Hendeksiz;7;0;140.7;0.0;0.0;0.6;8446.94;60;60;AL / EKLE;0.0;1.0;8442.0;140.7;True
+KCHOL;Koç Holding;Korunaklı;5;0;204.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;204.7;False
+QNBTR;Bankacılık;Hendeksiz;7;0;164.5;0.0;0.0;0.6;8446.94;51;51;AL / EKLE;0.0;1.0;8389.5;164.5;True
+ISCTR;Bankacılık;Hendeksiz;7;0;13.11;0.0;0.0;0.6;8446.94;644;644;AL / EKLE;0.0;1.0;8442.84;13.11;True
+VAKBN;Bankacılık;Hendeksiz;5;0;32.02;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;32.02;False
+YKBNK;Bankacılık;Hendeksiz;7;0;36.7;0.0;0.0;0.6;8446.94;230;230;AL / EKLE;0.0;1.0;8441.0;36.7;True
+EREGL;Demir Çelik ve Maden;Hendeksiz;7;2701;31.74;85729.74;6.09;0.6;8446.94;266;-2435;SAT / AZALT;-15.61;1.0;77286.9;37.61;True
+AKBNK;Bankacılık;Hendeksiz;7;1000;67.3;67300.0;4.78;0.6;8446.94;125;-875;SAT / AZALT;3.49;1.0;58887.5;65.03;True
+FROTO;Ford Otosan;Korunaklı;5;160;69.5;11120.0;0.79;1.07;15063.71;216;56;AL / EKLE;1.16;1.8;3892.0;68.7;True
+HALKB;Bankacılık;Hendeksiz;7;0;41.1;0.0;0.0;0.6;8446.94;205;205;AL / EKLE;0.0;1.0;8425.5;41.1;True
+SAHOL;Sabancı Holding;Kırılgan Hendekli;6;0;87.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;87.0;False
+ISDMR;İskenderun Demir Çelik;Hendeksiz;7;0;52.5;0.0;0.0;0.6;8446.94;160;160;AL / EKLE;0.0;1.0;8400.0;52.5;True
+TCELL;Turkcell;Kırılgan Hendekli;5;0;94.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;94.1;False
+ISBTR;İş Bankası (B);Hendeksiz;7;0;384002.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;384002.5;False
+ENJSA;Enerjisa Enerji;Kırılgan Hendekli;5;0;120.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;120.9;False
+INVES;Investco Holding;Hendeksiz;5;0;653.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;653.5;False
+AHGAZ;Ahlatçı Doğalgaz;Kırılgan Hendekli;7;0;47.46;0.0;0.0;0.83;11684.93;246;246;AL / EKLE;0.0;1.4;11675.16;47.46;True
+ENERY;Enerya Enerji;Kırılgan Hendekli;7;0;14.25;0.0;0.0;0.83;11684.93;819;819;AL / EKLE;0.0;1.4;11670.75;14.25;True
+CCOLA;Coca-Cola İçecek A.Ş;Korunaklı;8;0;71.2;0.0;0.0;1.07;15063.71;211;211;AL / EKLE;0.0;1.8;15023.2;71.2;True
+TOASO;Tofaş Fabrika;Hendeksiz;5;0;227.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;227.8;False
+TRALT;Türk Altın;Kırılgan Hendekli;7;0;38.12;0.0;0.0;0.83;11684.93;306;306;AL / EKLE;0.0;1.4;11664.72;38.12;True
+AEFES;Anadolu Efes;Kırılgan Hendekli;8;0;16.79;0.0;0.0;0.83;11684.93;695;695;AL / EKLE;0.0;1.4;11669.05;16.79;True
+RYGYO;Reysaş GYO;Hendeksiz;4;0;51.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;51.0;False
+SISE;Şişecam;Hendeksiz;4;0;35.76;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;35.76;False
+TAVHL;TAV Holding;Kırılgan Hendekli;7;0;296.5;0.0;0.0;0.83;11684.93;39;39;AL / EKLE;0.0;1.4;11563.5;296.5;True
+DOCO;DO & CO Aktiengesellschaft;Hendeksiz;0;0;12230.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12230.0;False
+TTKOM;Telekomünikasyon;Kırılgan Hendekli;4;500;49.94;24970.0;1.77;0.83;11684.93;233;-267;SAT / AZALT;6.76;1.4;13333.98;46.78;True
+QNBFK;QNB Finans Fin. Kir.;Hendeksiz;0;0;36.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;36.74;False
+ASTOR;Elektrik ve Enerji;Kırılgan Hendekli;6;0;164.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;164.1;False
+BRSAN;Borusan Birleşik Boru Fab.;Hendeksiz;8;0;665.0;0.0;0.0;0.6;8446.94;12;12;AL / EKLE;0.0;1.0;7980.0;665.0;True
+TRGYO;Torunlar GYO;Kırılgan Hendekli;7;0;88.5;0.0;0.0;0.83;11684.93;132;132;AL / EKLE;0.0;1.4;11682.0;88.5;True
+MGROS;Migros;Korunaklı;5;0;454.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;454.25;False
+KENT;Kent Gıda;Hendeksiz;5;0;273.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;273.0;False
+ZRGYO;Ziraat GYO;Kırılgan Hendekli;6;0;16.11;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.11;False
+AKSEN;Aksa Enerji;Kırılgan Hendekli;6;0;68.55;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;68.55;False
+TKFEN;Tekfen Holding;Hendeksiz;5;0;196.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;196.0;False
+GUBRF;Gübre Fabrikaları;Korunaklı;7;0;288.25;0.0;0.0;1.07;15063.71;52;52;AL / EKLE;0.0;1.8;14989.0;288.25;True
+OYAKC;Oyak Çimento;Kırılgan Hendekli;7;0;19.63;0.0;0.0;0.83;11684.93;595;595;AL / EKLE;0.0;1.4;11679.85;19.63;True
+SASA;Process Industries;Hendeksiz;5;0;1.67;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.67;False
+MPARK;Sağlık ve İlaç;Kırılgan Hendekli;6;100;429.5;42950.0;3.05;0.83;11684.93;27;-73;SAT / AZALT;10.37;1.4;31353.5;389.14;True
+AGHOL;Anadolu Grubu Holding;Hendeksiz;7;0;28.32;0.0;0.0;0.6;8446.94;298;298;AL / EKLE;0.0;1.0;8439.36;28.32;True
+PGSUS;Pegasus Hava Taşımacılığı;Hendeksiz;5;0;139.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;139.5;False
+RGYAS;Rönesans Gayrimenkul;Kırılgan Hendekli;7;0;173.0;0.0;0.0;0.83;11684.93;67;67;AL / EKLE;0.0;1.4;11591.0;173.0;True
+KLNMA;T. Kalkınma Bankası;Hendeksiz;7;0;7.1;0.0;0.0;0.6;8446.94;1189;1189;AL / EKLE;0.0;1.0;8441.9;7.1;True
+AYGAZ;Aygaz;Hendeksiz;5;0;258.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;258.5;False
+TURSG;Sigorta ve Emeklilik;Hendeksiz;7;0;3.56;0.0;0.0;0.6;8446.94;2372;2372;AL / EKLE;0.0;1.0;8444.32;3.56;True
+EKGYO;Emlak Konut GYO;Hendeksiz;4;0;17.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;17.87;False
+RYSAS;Reysaş Taşımacılık;Hendeksiz;4;0;28.72;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;28.72;False
+AKFIS;Akfen İnşaat;Kırılgan Hendekli;7;0;14.01;0.0;0.0;0.83;11684.93;834;834;AL / EKLE;0.0;1.4;11684.34;14.01;True
+TABGD;Perakende ve Gıda;Hendeksiz;5;438;191.5;83877.0;5.96;0.6;8446.94;44;-394;SAT / AZALT;-16.01;1.0;75451.0;227.99;True
+CVKMD;Cvk Maden;Hendeksiz;5;0;13.55;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;13.55;False
+KRDMA;Kardemir (A);Hendeksiz;7;0;34.58;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;34.58;False
+YGGYO;Yeni Gimat GYO;Kırılgan Hendekli;7;0;186.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;186.0;False
+KRDMD;Kardemir (D);Hendeksiz;7;0;39.04;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;39.04;False
+DMLKT;Finance;Hendeksiz;0;0;7.01;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.01;False
+KRDMB;Kardemir (B);Hendeksiz;7;0;56.95;0.0;0.0;0.6;8446.94;148;148;AL / EKLE;0.0;1.0;8428.6;56.95;True
+SELEC;Selçuk Ecza Deposu;Hendeksiz;5;0;73.15;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;73.15;False
+ANSGR;Sigorta ve Emeklilik;Hendeksiz;7;1000;22.86;22860.0;1.62;0.6;8446.94;369;-631;SAT / AZALT;5.1;1.0;14424.66;21.75;True
+PETKM;Kimya ve Petrokimya;Hendeksiz;5;50000;17.27;863500.0;61.34;0.6;8446.94;489;-49511;SAT / AZALT;-13.61;1.0;855054.97;19.99;True
+ALARK;Alarko Holding;Hendeksiz;8;0;101.4;0.0;0.0;0.6;8446.94;83;83;AL / EKLE;0.0;1.0;8416.2;101.4;True
+TRMET;TR Anadolu Metal;Kırılgan Hendekli;7;0;109.6;0.0;0.0;0.83;11684.93;106;106;AL / EKLE;0.0;1.4;11617.6;109.6;True
+DOHOL;Doğan Holding;Kırılgan Hendekli;7;0;17.57;0.0;0.0;0.83;11684.93;665;665;AL / EKLE;0.0;1.4;11684.05;17.57;True
+CIMSA;Çimsa;Hendeksiz;3;0;42.98;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;42.98;False
+ISMEN;İş Yatırım;Hendeksiz;5;0;27.26;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;27.26;False
+ARCLK;Arçelik;Hendeksiz;6;0;69.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;69.75;False
+AKSA;Aksa;Hendeksiz;6;0;10.23;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.23;False
+OTKAR;Otokar;Hendeksiz;4;0;311.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;311.25;False
+TBORG;Tuborg;Kırılgan Hendekli;3;0;116.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;116.1;False
+ANHYT;Finance;Hendeksiz;7;0;93.7;0.0;0.0;0.6;8446.94;90;90;AL / EKLE;0.0;1.0;8433.0;93.7;True
+GLRMK;Gülermak Ağır Sanayi;Hendeksiz;4;0;121.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;121.3;False
+ECILC;Eczacıbaşı İlaç;Hendeksiz;7;0;49.1;0.0;0.0;0.6;8446.94;172;172;AL / EKLE;0.0;1.0;8445.2;49.1;True
+VERUS;Verusa Holding;Kırılgan Hendekli;8;0;485.0;0.0;0.0;0.83;11684.93;24;24;AL / EKLE;0.0;1.4;11640.0;485.0;True
+BRYAT;Borusan Yatırım;Kırılgan Hendekli;6;0;1327.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1327.0;False
+AKCNS;Akçansa;Hendeksiz;2;0;190.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;190.0;False
+ARMGD;Armada Gıda;Hendeksiz;4;0;119.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;119.5;False
+VEYAS;Vangölü Enerj;Hendeksiz;5;0;56.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;56.25;False
+AGESA;Sigorta ve Emeklilik;Korunaklı;7;0;214.0;0.0;0.0;1.07;15063.71;70;70;AL / EKLE;0.0;1.8;14980.0;214.0;True
+CLEBI;Çelebi;Kırılgan Hendekli;7;0;1288.0;0.0;0.0;0.83;11684.93;9;9;AL / EKLE;0.0;1.4;11592.0;1288.0;True
+SOKM;Şok Marketler;Hendeksiz;4;0;54.55;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;54.55;False
+TTRAK;Türk Traktör;Hendeksiz;4;0;368.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;368.25;False
+ULKER;Ülker Bisküvi;Kırılgan Hendekli;5;0;81.6;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;81.6;False
+KLRHO;Kiler Holding;Hendeksiz;5;0;10.04;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.04;False
+EUPWR;Europower Enerji;Kırılgan Hendekli;4;0;43.08;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;43.08;False
+GRSEL;Gürsel Taşımacılık;Korunaklı;5;0;286.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;286.25;False
+GLYHO;Global Yatırım Holding;Kırılgan Hendekli;6;0;15.93;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.93;False
+TSKB;TSKB;Hendeksiz;5;0;9.91;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.91;False
+MAVI;Consumer Non-Durables;Kırılgan Hendekli;6;0;36.06;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;36.06;False
+DOAS;Doğuş Otomotiv;Hendeksiz;3;0;132.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;132.8;False
+EFOR;Consumer Non-Durables;Hendeksiz;3;0;11.98;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.98;False
+KLYPV;Kalyon Güneş Teknolojileri;Hendeksiz;6;0;49.56;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;49.56;False
+BASGZ;Başkent Doğalgaz;Kırılgan Hendekli;5;0;37.52;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;37.52;False
+KARCL;Kardemir Çelik Sanayi;Kırılgan Hendekli;6;0;31.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;31.46;False
+ADGYO;Adra GYO;Kırılgan Hendekli;6;0;42.38;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;42.38;False
+HEDEF;Hedef Holding;Kırılgan Hendekli;5;0;6.57;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.57;False
+BRISA;Brisa;Hendeksiz;5;0;71.95;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;71.95;False
+AKSGY;Akis GYO;Kırılgan Hendekli;6;0;8.99;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.99;False
+NUHCM;Nuh Çimento;Hendeksiz;6;0;171.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;171.5;False
+ALBRK;Albaraka Türk;Hendeksiz;5;0;8.47;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.47;False
+AKFYE;Akfen Yenilenebilir Enerji;Kırılgan Hendekli;6;0;2.96;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.96;False
+DSTKF;Destek Finans Faktoring;Hendeksiz;0;4;70.6;282.4;0.02;0.6;8446.94;119;115;AL / EKLE;-97.01;1.0;8119.0;2360.93;True
+CMENT;Çimentaş;Hendeksiz;2;0;230.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;230.0;False
+TCKRC;Kıraç Galvaniz;Korunaklı;7;0;122.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;122.5;False
+MOGAN;Mogan Enerji;Hendeksiz;6;0;8.29;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.29;False
+AVPGY;Avrupakent GYO;Kırılgan Hendekli;7;0;49.86;0.0;0.0;0.83;11684.93;234;234;AL / EKLE;0.0;1.4;11667.24;49.86;True
+NTHOL;Net Holding;Hendeksiz;5;0;37.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;37.0;False
+KTLEV;Katılımevim;Hendeksiz;0;0;4.42;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.42;False
+YEOTK;YEO Teknoloji;Kırılgan Hendekli;5;0;24.18;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;24.18;False
+KCAER;Kocaer Çelik Sanayi;Hendeksiz;5;0;10.51;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.51;False
+SARKY;Sarkuysan;Hendeksiz;5;0;16.83;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.83;False
+OZKGY;Özak GYO;Hendeksiz;2;0;12.11;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.11;False
+QUICK;Quick Sigorta;Hendeksiz;7;0;42.36;0.0;0.0;0.6;8446.94;199;199;AL / EKLE;0.0;1.0;8429.64;42.36;True
+TRENJ;TR Doğal Enerji Kaynakları;Kırılgan Hendekli;7;0;74.8;0.0;0.0;0.83;11684.93;156;156;AL / EKLE;0.0;1.4;11668.8;74.8;True
+GENIL;Gen İlaç;Hendeksiz;5;0;4.33;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.33;False
+ENTRA;Ic Enterra Yenilenebilir;Kırılgan Hendekli;5;0;4.89;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.89;False
+ARDYZ;ARD Grup Bilişim;Korunaklı;6;0;54.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;54.75;False
+CRFSA;Carrefoursa;Hendeksiz;4;0;144.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;144.3;False
+CITAS;Çitlekçi Gıda;Kırılgan Hendekli;6;0;107.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;107.9;False
+PASEU;Pasifik Eurasia;Hendeksiz;3;0;27.86;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;27.86;False
+ECZYT;Eczacıbaşı Yatırım;Kırılgan Hendekli;4;0;162.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;162.7;False
+CWENE;Cw Enerji;Kırılgan Hendekli;7;0;17.35;0.0;0.0;0.83;11684.93;673;673;AL / EKLE;0.0;1.4;11676.55;17.35;True
+HEKTS;Hektaş;Hendeksiz;5;0;1.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.87;False
+MASFN;Masfen Enerji;Kırılgan Hendekli;6;0;35.06;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;35.06;False
+ISGYO;İş GYO;Kırılgan Hendekli;8;0;18.74;0.0;0.0;0.83;11684.93;623;623;AL / EKLE;0.0;1.4;11675.02;18.74;True
+GESAN;Girişim Elektrik;Hendeksiz;2;0;35.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;35.46;False
+GMTAS;Gimat Mağazacılık;Kırılgan Hendekli;6;0;47.96;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;47.96;False
+EGPRO;Ege Profil;Kırılgan Hendekli;8;0;29.62;0.0;0.0;0.83;11684.93;394;394;AL / EKLE;0.0;1.4;11670.28;29.62;True
+DEVA;Deva Holding;Kırılgan Hendekli;7;0;74.85;0.0;0.0;0.83;11684.93;156;156;AL / EKLE;0.0;1.4;11676.6;74.85;True
+ARASE;Doğu Aras Enerji;Korunaklı;8;0;77.8;0.0;0.0;1.07;15063.71;193;193;AL / EKLE;0.0;1.8;15015.4;77.8;True
+KONYA;Konya Çimento;Hendeksiz;6;0;3195.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3195.0;False
+RAYSG;Ray Sigorta;Hendeksiz;0;0;105.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;105.9;False
+AYDEM;Aydem Enerji;Kırılgan Hendekli;6;0;22.84;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;22.84;False
+MAGEN;Margün Enerji;Kırılgan Hendekli;4;0;5.07;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.07;False
+HLGYO;Halk GYO;Hendeksiz;5;0;3.72;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.72;False
+METEN;Metgün Enerji;Kırılgan Hendekli;7;0;20.62;0.0;0.0;0.83;11684.93;566;566;AL / EKLE;0.0;1.4;11670.92;20.62;True
+PAHOL;Pasifik Holding;Hendeksiz;4;0;0.78;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.78;False
+EGEEN;Ege Endüstri;Hendeksiz;6;0;4485.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4485.0;False
+SARAE;Şa-Ra Enerji;Hendeksiz;4;0;31.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;31.3;False
+FENER;Consumer Services;Kırılgan Hendekli;8;0;2.09;0.0;0.0;0.83;11684.93;5590;5590;AL / EKLE;0.0;1.4;11683.1;2.09;True
+MRSHL;Marshall;Korunaklı;7;0;1180.0;0.0;0.0;1.07;15063.71;12;12;AL / EKLE;0.0;1.8;14160.0;1180.0;True
+NETCD;Netcad Yazılım;Kırılgan Hendekli;7;0;93.25;0.0;0.0;0.83;11684.93;125;125;AL / EKLE;0.0;1.4;11656.25;93.25;True
+EBEBK;Ebebek;Hendeksiz;5;0;79.35;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;79.35;False
+BFREN;Bosch Fren;Kırılgan Hendekli;7;0;100.2;0.0;0.0;0.83;11684.93;116;116;AL / EKLE;0.0;1.4;11623.2;100.2;True
+HRKET;Hareket Proje;Hendeksiz;7;0;7.48;0.0;0.0;0.6;8446.94;1129;1129;AL / EKLE;0.0;1.0;8444.92;7.48;True
+MCARD;MetropolCard;Hendeksiz;4;0;121.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;121.1;False
+MIATK;Mia Teknoloji;Hendeksiz;5;0;24.86;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;24.86;False
+LOGO;Logo Yazılım;Korunaklı;7;0;127.0;0.0;0.0;1.07;15063.71;118;118;AL / EKLE;0.0;1.8;14986.0;127.0;True
+CEMZY;Cem Zeytin;Kırılgan Hendekli;6;0;6.03;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.03;False
+SSAAT;Saat ve Saat;Korunaklı;7;0;24.18;0.0;0.0;1.07;15063.71;622;622;AL / EKLE;0.0;1.8;15039.96;24.18;True
+POLHO;Polisan Holding;Hendeksiz;5;0;15.28;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.28;False
+LMKDC;Limak Doğu Anadolu Çimento;Kırılgan Hendekli;5;0;22.12;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;22.12;False
+BANVT;Banvit;Hendeksiz;1;0;116.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;116.7;False
 ULUSE;Ulusoy Elektrik;Hendeksiz;8;0;141.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;141.5;False
-SKBNK;Şekerbank;Hendeksiz;7;0;3.32;0.0;0.0;0.6;8487.36;2556;2556;AL / EKLE;0.0;1.0;8485.92;3.32;True
-LILAK;Lila Kağıt;Kırılgan Hendekli;3;0;18.54;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.54;False
-ALTNY;Altınay Savunma;Kırılgan Hendekli;3;0;10.72;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.72;False
-OBAMS;Oba Makarnacılık;Hendeksiz;6;0;3.76;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.76;False
-ICBCT;ICBC Turkey Bank;Hendeksiz;7;0;13.26;0.0;0.0;0.6;8487.36;640;640;AL / EKLE;0.0;1.0;8486.4;13.26;True
-LMKDC;Limak Doğu Anadolu Çimento;Kırılgan Hendekli;5;0;21.86;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;21.86;False
-PAGYO;Panora GYO;Kırılgan Hendekli;6;0;113.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;113.0;False
-CELHA;Çelik Halat;Hendeksiz;4;0;25.66;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;25.66;False
-GSRAY;Galatasaray Sportif A.Ş;Hendeksiz;2;0;0.73;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.73;False
-IZMDC;İzmir Demir Çelik;Hendeksiz;3;0;6.52;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.52;False
-CANTE;Elektrik Üretim;Hendeksiz;8;0;0.96;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.96;False
-GWIND;Galata Wind Enerji;Kırılgan Hendekli;5;0;18.09;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.09;False
-ASUZU;Anadolu Isuzu;Hendeksiz;3;0;38.08;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;38.08;False
-KORDS;Kordsa Teknik Tekstil;Kırılgan Hendekli;7;0;2.52;0.0;0.0;0.83;11740.84;4659;4659;AL / EKLE;0.0;1.4;11740.68;2.52;True
-HTTBT;Hitit Bilgisayar;Kırılgan Hendekli;6;0;30.44;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;30.44;False
-POLTK;Politeknik Metal;Hendeksiz;5;0;2428.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2428.0;False
-KARTN;Kartonsan;Hendeksiz;5;0;126.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;126.7;False
-BMSTL;BMS Birleşik Metal;Hendeksiz;6;0;34.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;34.36;False
-SNGYO;Sinpas GYO;Kırılgan Hendekli;7;0;2.36;0.0;0.0;0.83;11740.84;4974;4974;AL / EKLE;0.0;1.4;11738.64;2.36;True
-AKFGY;Akfen GYO;Kırılgan Hendekli;4;0;2.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.3;False
-BALSU;Balsu Gıda;Hendeksiz;3;0;7.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.7;False
-MOBTL;Mobitel İletişim;Hendeksiz;5;0;9.03;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.03;False
-ISFIN;İş Finansal Kiralama;Hendeksiz;0;0;16.06;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.06;False
-KLKIM;Kalekim Kimyevi Maddeler;Hendeksiz;5;0;18.92;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.92;False
-ALFAS;Alfa Solar;Hendeksiz;7;0;24.58;0.0;0.0;0.6;8487.36;345;345;AL / EKLE;0.0;1.0;8480.1;24.58;True
-TNZTP;Tapdi Oksijen;Kırılgan Hendekli;6;0;22.52;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;22.52;False
-GEREL;Gersan Elektrik;Hendeksiz;6;0;22.34;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;22.34;False
-GRTHO;GrainTurk Tarım;Hendeksiz;3;0;68.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;68.7;False
-DOFRB;Dof Robotik;Hendeksiz;5;0;58.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;58.0;False
-EGGUB;Ege Gübre;Kırılgan Hendekli;6;0;85.45;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;85.45;False
-IZENR;İzdemir Enerji;Hendeksiz;3;0;3.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.5;False
-BTCIM;Batıçim;Hendeksiz;6;0;1.73;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.73;False
-MEGMT;Mega Metal;Hendeksiz;4;0;3.28;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.28;False
-GEDIK;Gedik Yatırım;Hendeksiz;5;0;5.04;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.04;False
-TUKAS;Tukaş;Kırılgan Hendekli;6;0;1.77;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.77;False
-INDES;İndeks Bilgisayar;Hendeksiz;6;0;10.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.8;False
-VAKKO;Vakko Tekstil;Hendeksiz;5;0;48.94;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;48.94;False
-DGGYO;Doğuş GYO;Kırılgan Hendekli;6;0;22.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;22.36;False
-GARFA;Garanti BBVA Faktoring;Hendeksiz;0;0;21.68;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;21.68;False
-AYCES;Altınyunus Çesme;Hendeksiz;4;0;310.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;310.5;False
+LILAK;Lila Kağıt;Kırılgan Hendekli;3;0;18.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.87;False
+ALTNY;Altınay Savunma;Kırılgan Hendekli;3;0;11.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.2;False
+TRCAS;Turcas Holding;Hendeksiz;5;0;40.26;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;40.26;False
+ISFIN;İş Finansal Kiralama;Hendeksiz;0;0;16.13;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.13;False
+SKBNK;Şekerbank;Hendeksiz;7;0;3.47;0.0;0.0;0.6;8446.94;2434;2434;AL / EKLE;0.0;1.0;8445.98;3.47;True
+ECOGR;Ecogreen;Kırılgan Hendekli;6;0;19.54;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;19.54;False
+GSRAY;Galatasaray Sportif A.Ş;Hendeksiz;2;0;0.78;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.78;False
+PAGYO;Panora GYO;Kırılgan Hendekli;6;0;111.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;111.4;False
+CELHA;Çelik Halat;Hendeksiz;4;0;26.26;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;26.26;False
+DMRGD;DMR Unlu Mamüller;Kırılgan Hendekli;8;0;7.56;0.0;0.0;0.83;11684.93;1545;1545;AL / EKLE;0.0;1.4;11680.2;7.56;True
+ICBCT;ICBC Turkey Bank;Hendeksiz;7;0;13.57;0.0;0.0;0.6;8446.94;622;622;AL / EKLE;0.0;1.0;8440.54;13.57;True
+IZMDC;İzmir Demir Çelik;Hendeksiz;3;0;6.58;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.58;False
+OZATD;Özata Denizcilik;Hendeksiz;4;0;113.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;113.4;False
+KARTN;Kartonsan;Hendeksiz;5;0;127.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;127.1;False
+OBAMS;Oba Makarnacılık;Hendeksiz;6;0;3.71;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.71;False
+ASUZU;Anadolu Isuzu;Hendeksiz;3;0;38.48;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;38.48;False
+KORDS;Kordsa Teknik Tekstil;Kırılgan Hendekli;7;0;2.57;0.0;0.0;0.83;11684.93;4546;4546;AL / EKLE;0.0;1.4;11683.22;2.57;True
+GWIND;Galata Wind Enerji;Kırılgan Hendekli;5;0;18.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.1;False
+BMSTL;BMS Birleşik Metal;Hendeksiz;6;0;36.12;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;36.12;False
+CANTE;Utilities;Hendeksiz;8;0;0.98;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.98;False
+HTTBT;Hitit Bilgisayar;Kırılgan Hendekli;6;0;30.78;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;30.78;False
+SNGYO;Sinpas GYO;Kırılgan Hendekli;7;0;2.44;0.0;0.0;0.83;11684.93;4788;4788;AL / EKLE;0.0;1.4;11682.72;2.44;True
+POLTK;Politeknik Metal;Hendeksiz;5;0;2407.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2407.0;False
+AKFGY;Akfen GYO;Kırılgan Hendekli;4;0;2.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.36;False
+MOBTL;Mobitel İletişim;Hendeksiz;5;0;8.83;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.83;False
+DOFRB;Dof Robotik;Hendeksiz;5;0;58.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;58.5;False
+KLKIM;Kalekim Kimyevi Maddeler;Hendeksiz;5;0;20.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;20.4;False
+EGGUB;Ege Gübre;Kırılgan Hendekli;6;0;85.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;85.1;False
+BTCIM;Batıçim;Hendeksiz;6;0;1.77;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.77;False
+GRTHO;GrainTurk Tarım;Hendeksiz;3;0;70.35;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;70.35;False
+TNZTP;Tapdi Oksijen;Kırılgan Hendekli;6;0;23.82;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;23.82;False
+GEREL;Gersan Elektrik;Hendeksiz;6;0;22.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;22.1;False
+BALSU;Balsu Gıda;Hendeksiz;3;0;7.67;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.67;False
+PSGYO;Pasifik GYO;Hendeksiz;5;0;1.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.36;False
+GEDIK;Gedik Yatırım;Hendeksiz;5;0;5.06;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.06;False
+MEGMT;Mega Metal;Hendeksiz;4;0;3.39;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.39;False
+SDTTR;SDT Uzay;Kırılgan Hendekli;5;0;12.82;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.82;False
+IZENR;İzdemir Enerji;Hendeksiz;3;0;3.81;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.81;False
+INDES;İndeks Bilgisayar;Hendeksiz;6;0;10.98;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.98;False
+VAKKO;Vakko Tekstil;Hendeksiz;5;0;49.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;49.8;False
+TUKAS;Tukaş;Kırılgan Hendekli;6;0;1.81;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.81;False
+VAKFA;Vakıf Faktoring;Hendeksiz;0;0;9.03;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.03;False
+GARFA;Garanti BBVA Faktoring;Hendeksiz;0;0;22.48;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;22.48;False
+BAHKM;Bahadır Kimya;Kırılgan Hendekli;6;0;137.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;137.0;False
+JANTS;Jantsa Jant;Hendeksiz;2;0;11.33;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.33;False
 TERA;Finance;Hendeksiz;5;0;10.64;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.64;False
-JANTS;Jantsa Jant;Hendeksiz;2;0;10.92;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.92;False
-PSGYO;Pasifik GYO;Hendeksiz;5;0;1.24;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.24;False
-ORGE;ORGE Enerji Elektrik;Korunaklı;4;0;18.19;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.19;False
+AYCES;Altınyunus Çesme;Hendeksiz;4;0;327.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;327.75;False
+KGYO;Koray GYO;Hendeksiz;2;0;8.43;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.43;False
+EKDMR;Ekinciler;Hendeksiz;5;0;23.92;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;23.92;False
 KAYSE;Kayseri Şeker;Hendeksiz;4;0;2.42;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.42;False
-SDTTR;SDT Uzay;Kırılgan Hendekli;5;0;12.57;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.57;False
-BAHKM;Bahadır Kimya;Kırılgan Hendekli;6;0;141.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;141.8;False
-KGYO;Koray GYO;Hendeksiz;2;0;7.63;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.63;False
-EKDMR;Ekinciler;Hendeksiz;5;0;23.58;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;23.58;False
-AKMGY;Akmerkez GYO;Kırılgan Hendekli;6;0;192.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;192.0;False
-SUNTK;Sun Tekstil;Hendeksiz;4;0;14.29;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.29;False
-BOSSA;Bossa;Hendeksiz;5;0;4.99;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.99;False
-AYEN;Ayen Enerji;Kırılgan Hendekli;6;0;24.14;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;24.14;False
-SONME;Sönmez Filament;Hendeksiz;5;0;95.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;95.7;False
-KOTON;Koton;Hendeksiz;4;0;8.47;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.47;False
-SMRTG;Smart Güneş Enerjisi;Hendeksiz;5;0;4.04;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.04;False
-BESLR;Besler Gıda;Hendeksiz;5;0;9.92;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.92;False
-NTGAZ;Naturel Gaz;Korunaklı;7;0;9.13;0.0;0.0;1.07;15135.79;1657;1657;AL / EKLE;0.0;1.8;15128.41;9.13;True
-KLSER;Kaleseramik;Hendeksiz;5;0;13.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;13.87;False
-KSTUR;Kuştur Turizm;Hendeksiz;4;0;1447.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1447.0;False
-KLSYN;Koleksiyon Mobilya;Hendeksiz;4;0;15.01;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.01;False
-VKGYO;Vakıf GYO;Hendeksiz;3;0;1.48;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.48;False
-AKGRT;Aksigorta;Hendeksiz;5;0;4.79;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.79;False
-INTET;Intetra Teknoloji;Kırılgan Hendekli;7;0;42.88;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;42.88;False
-TARKM;Tarkim;Hendeksiz;3;0;319.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;319.0;False
-ODINE;Odine Solutions;Hendeksiz;4;0;54.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;54.7;False
-YYLGD;Yayla Agro Gıda;Kırılgan Hendekli;6;0;6.77;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.77;False
-ODAS;Odaş Elektrik Üretim;Hendeksiz;7;0;4.68;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.68;False
-SNPAM;Sönmez Pamuklu;Kırılgan Hendekli;6;0;15.77;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.77;False
-MEYSU;Meysu Gıda;Hendeksiz;4;0;7.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.46;False
-EMPAE;Empa Elektronik;Hendeksiz;4;0;35.14;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;35.14;False
-LYDHO;Lydia Holding;Hendeksiz;4;0;18.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.2;False
-BERA;Bera Holding;Kırılgan Hendekli;7;0;9.73;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.73;False
-KARSN;Karsan Otomotiv;Kırılgan Hendekli;6;0;7.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.4;False
-OYYAT;Oyak Yatırım;Korunaklı;7;0;22.62;0.0;0.0;1.07;15135.79;669;669;AL / EKLE;0.0;1.8;15132.78;22.62;True
-GOZDE;Gözde Girisim Sermayesi;Hendeksiz;4;0;15.93;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.93;False
-BUCIM;Bursa Çimento;Hendeksiz;6;0;4.03;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.03;False
-BSOKE;Batıçim Çimento;Hendeksiz;5;0;4.42;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.42;False
-OFSYM;Ofis Yem;Kırılgan Hendekli;5;0;43.32;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;43.32;False
-ALCAR;Alarko Carrier;Hendeksiz;5;0;565.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;565.0;False
-LIDER;Lider Turizm;Hendeksiz;6;0;6.72;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.72;False
-ASGYO;Asce GYO;Hendeksiz;6;0;9.17;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.17;False
-FZLGY;Fuzul Gayrimenkul;Hendeksiz;7;0;4.89;0.0;0.0;0.6;8487.36;1735;1735;AL / EKLE;0.0;1.0;8484.15;4.89;True
-TUREX;Tureks Tur.Taşımacılık;Kırılgan Hendekli;8;0;5.33;0.0;0.0;0.83;11740.84;2202;2202;AL / EKLE;0.0;1.4;11736.66;5.33;True
-BASCM;Baştaş Başkent Çimento Sanay;Hendeksiz;3;0;8.6;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.6;False
-MAALT;Marmaris Altınyunus;Hendeksiz;1;0;694.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;694.0;False
-VAKFA;Vakıf Faktoring;Hendeksiz;0;0;8.61;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.61;False
-ZOREN;Zorlu Enerji;Hendeksiz;5;0;1.34;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.34;False
-TSPOR;Trabzonspor A.Ş;Hendeksiz;4;0;0.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.74;False
-SRVGY;Servet GYO;Kırılgan Hendekli;7;0;1.79;0.0;0.0;0.83;11740.84;6559;6559;AL / EKLE;0.0;1.4;11740.61;1.79;True
-AKHAN;Akhan Un;Kırılgan Hendekli;6;0;24.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;24.3;False
-KBORU;Kuzey Boru;Hendeksiz;3;0;9.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.75;False
-DAPGM;Dap Gayrimenkul;Korunaklı;5;0;2.15;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.15;False
-KOCMT;Koç Metalurji;Hendeksiz;3;0;2.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.46;False
-VAKFN;Vakıf Fin. Kir.;Hendeksiz;0;0;0.84;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.84;False
-ATATP;ATP Bilgisayar;Korunaklı;5;0;214.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;214.2;False
-TRHOL;Tera Finansal Yat. Holding;Hendeksiz;4;0;140.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;140.1;False
-ATAKP;Atakey Patates;Hendeksiz;6;0;38.18;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;38.18;False
-KMPUR;Kimteks Poliüretan;Hendeksiz;5;0;12.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.1;False
-BIOEN;Biotrend Enerji;Hendeksiz;3;0;10.48;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.48;False
-ALGYO;Alarko GYO;Kırılgan Hendekli;5;0;2.63;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.63;False
-BJKAS;Beşiktaş;Hendeksiz;7;0;1.18;0.0;0.0;0.6;8487.36;7192;7192;AL / EKLE;0.0;1.0;8486.56;1.18;True
-OZYSR;Özyaşar Tel;Hendeksiz;6;0;11.92;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.92;False
-BOBET;Boğaziçi Beton;Hendeksiz;5;0;14.24;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.24;False
-FORTE;Forte Bilgi İletişim;Kırılgan Hendekli;7;0;78.2;0.0;0.0;0.83;11740.84;150;150;AL / EKLE;0.0;1.4;11730.0;78.2;True
-TMSN;Tümosan Motor ve Traktör;Hendeksiz;4;0;47.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;47.3;False
-VESBE;Vestel Beyaz Esya;Hendeksiz;3;0;3.52;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.52;False
-ADEL;Adel Kalemcilik;Hendeksiz;3;0;20.08;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;20.08;False
-EUREN;Europen Endüstri;Hendeksiz;6;0;2.38;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.38;False
-KLGYO;Kiler GYO;Hendeksiz;6;0;3.73;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.73;False
-UFUK;Ufuk Yat.Yön.ve Gay. AŞ.;Hendeksiz;3;0;93.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;93.05;False
-HATSN;Hat-San;Hendeksiz;3;0;22.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;22.5;False
-ALBTN;Albayrak Hazır Beton;Hendeksiz;7;0;21.02;0.0;0.0;0.6;8487.36;403;403;AL / EKLE;0.0;1.0;8471.06;21.02;True
-KPEKS;Kapeks Kimya;Hendeksiz;4;0;41.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;41.2;False
-KRVGD;Kervan Gıda;Kırılgan Hendekli;7;0;2.13;0.0;0.0;0.83;11740.84;5512;5512;AL / EKLE;0.0;1.4;11740.56;2.13;True
-AKENR;Akenerji;Hendeksiz;3;0;6.76;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.76;False
-ULUUN;Ulusoy Un;Hendeksiz;4;0;6.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.25;False
-INGRM;İngram Bilişim;Hendeksiz;5;0;203.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;203.1;False
-GOKNR;Göknur Gıda;Kırılgan Hendekli;7;0;13.39;0.0;0.0;0.83;11740.84;876;876;AL / EKLE;0.0;1.4;11729.64;13.39;True
-PATEK;Pasifik Teknoloji;Hendeksiz;3;0;7.51;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.51;False
-BINHO;Holdingler;Hendeksiz;3;0;3.64;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.64;False
-BLUME;Blume Metal Kimya;Hendeksiz;7;0;26.68;0.0;0.0;0.6;8487.36;318;318;AL / EKLE;0.0;1.0;8484.24;26.68;True
-BORSK;Bor Şeker;Hendeksiz;5;0;4.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.74;False
-KZBGY;Kızılbük GYO;Hendeksiz;2;0;1.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.1;False
-AFYON;Afyon Çimento;Kırılgan Hendekli;6;0;11.53;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.53;False
-PARSN;Parsan;Hendeksiz;3;0;50.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;50.9;False
-ENDAE;Enda Enerji;Kırılgan Hendekli;7;0;9.96;0.0;0.0;0.83;11740.84;1178;1178;AL / EKLE;0.0;1.4;11732.88;9.96;True
-MERIT;Merit Turizm Yatırım;Hendeksiz;5;0;12.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.8;False
-NETAS;Netaş;Hendeksiz;9;0;68.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;68.3;False
-DOKTA;Döktaş Dökümcülük;Hendeksiz;8;0;13.88;0.0;0.0;0.6;8487.36;611;611;AL / EKLE;0.0;1.0;8480.68;13.88;True
-BIENY;Bien Yapı;Hendeksiz;3;0;11.56;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.56;False
-DESA;Desa Deri Sanayii;Kırılgan Hendekli;6;0;8.15;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.15;False
-MOPAS;Mopaş;Hendeksiz;6;0;14.92;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.92;False
-GOLTS;Göltaş Çimento;Kırılgan Hendekli;6;0;225.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;225.8;False
-ISKPL;Işıklar Plastik;Kırılgan Hendekli;6;0;2.29;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.29;False
-METRO;Metro Tic. Mali Yat.;Korunaklı;8;0;7.68;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.68;False
-ISVEA;İsvea Seramik;Kırılgan Hendekli;6;0;13.08;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;13.08;False
-HUNER;Hun Enerji;Hendeksiz;3;0;3.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.87;False
-VESTL;Vestel Elektronik;Hendeksiz;2;0;13.49;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;13.49;False
-PRKAB;Prysmian Kablo;Hendeksiz;2;0;18.99;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.99;False
-TATEN;Tatlıpınar Enerji;Kırılgan Hendekli;5;0;3.62;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.62;False
-INVEO;İnveo Yatırım Holding;Kırılgan Hendekli;4;0;4.08;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.08;False
-AYES;Ayes Çelik Hasır & Çit;Hendeksiz;8;0;6.97;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.97;False
-AHSGY;Ahes GYO;Hendeksiz;3;0;5.47;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.47;False
-ZERGY;Zeray GYO;Hendeksiz;4;0;5.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.46;False
-TATGD;Tat Gıda;Hendeksiz;7;0;15.16;0.0;0.0;0.6;8487.36;559;559;AL / EKLE;0.0;1.0;8474.44;15.16;True
-ARSAN;Arsan Holding;Kırılgan Hendekli;6;0;3.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.1;False
-MNDTR;Mondi Tire;Hendeksiz;2;0;3.67;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.67;False
-GENKM;Gentaş Kimya;Kırılgan Hendekli;7;0;6.26;0.0;0.0;0.83;11740.84;1875;1875;AL / EKLE;0.0;1.4;11737.5;6.26;True
-PEKGY;Peker GYO;Hendeksiz;5;0;0.79;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.79;False
-KUYAS;Kuyas Yatırım AŞ;Hendeksiz;4;0;8.78;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.78;False
-YIGIT;Yiğit Akü;Hendeksiz;5;0;13.56;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;13.56;False
-IEYHO;Işıklar Enerji ve Yapı Holdi;Hendeksiz;5;0;6.54;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.54;False
-CATES;Çates Elektrik;Hendeksiz;3;0;24.88;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;24.88;False
-GSDHO;GSD Holding A.Ş.;Kırılgan Hendekli;6;0;4.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.0;False
-KRGYO;Korfez GYO;Hendeksiz;4;0;3.43;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.43;False
-LYDYE;Lydia Yeşil Enerji;Hendeksiz;3;0;1731.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1731.0;False
-KOPOL;Koza Polyester;Kırılgan Hendekli;7;0;2.8;0.0;0.0;0.83;11740.84;4193;4193;AL / EKLE;0.0;1.4;11740.4;2.8;True
-ESCAR;Escar Filo;Hendeksiz;7;0;8.09;0.0;0.0;0.6;8487.36;1049;1049;AL / EKLE;0.0;1.0;8486.41;8.09;True
-YATAS;Yataş Yatak;Hendeksiz;5;0;24.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;24.8;False
-GLCVY;Gelecek Varlık Yön.;Hendeksiz;5;0;32.42;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;32.42;False
-QUAGR;QUA Granite;Kırılgan Hendekli;6;0;1.39;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.39;False
-KERVN;Kervansaray Yat. Holding;Korunaklı;5;0;5.67;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.67;False
-ORMA;Orma Orman Mahsulleri;Hendeksiz;5;0;122.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;122.2;False
-PLTUR;Platform Turizm;Kırılgan Hendekli;4;0;14.44;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.44;False
-ESEN;Esenboğa Elektrik;Kırılgan Hendekli;6;0;1.98;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.98;False
-ALKA;Alkim Kağıt;Hendeksiz;3;0;4.94;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.94;False
-PCILT;PC İletişim ve Medya;Kırılgan Hendekli;7;0;29.66;0.0;0.0;0.83;11740.84;395;395;AL / EKLE;0.0;1.4;11715.7;29.66;True
-TEZOL;Europap Tezol;Hendeksiz;7;0;6.75;0.0;0.0;0.6;8487.36;1257;1257;AL / EKLE;0.0;1.0;8484.75;6.75;True
-MARMR;Marmara Holding;Hendeksiz;5;0;1.11;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.11;False
-TEHOL;Tera Holding;Hendeksiz;6;0;1.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.25;False
-TURGG;Türker Proje Gay.Gel.;Hendeksiz;6;0;25.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;25.5;False
-VSNMD;Vişne Madencilik;Hendeksiz;3;0;18.18;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.18;False
-CEMTS;Çemtas;Hendeksiz;5;0;6.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.36;False
-FONET;Fonet Bilgi Teknolojileri;Kırılgan Hendekli;8;0;3.82;0.0;0.0;0.83;11740.84;3073;3073;AL / EKLE;0.0;1.4;11738.86;3.82;True
-SANKO;Sanko Pazarlama;Hendeksiz;2;0;20.84;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;20.84;False
-OZSUB;Özsu Balık;Hendeksiz;5;0;30.24;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;30.24;False
-KZGYO;Kuzugrup GYO;Hendeksiz;4;0;15.76;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.76;False
-INTEM;İntema;Korunaklı;8;0;165.8;0.0;0.0;1.07;15135.79;91;91;AL / EKLE;0.0;1.8;15087.8;165.8;True
-RALYH;Ral Yatırım Holding;Hendeksiz;5;0;7.62;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.62;False
-ATATR;Ata Turizm;Hendeksiz;4;0;4.14;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.14;False
-HOROZ;Horoz Lojistik;Hendeksiz;6;0;36.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;36.7;False
-PENTA;Penta Teknoloji;Hendeksiz;3;0;9.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.0;False
-BIGEN;Birleşim Grup Enerji;Kırılgan Hendekli;6;0;5.13;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.13;False
-DURDO;Duran Doğan Basım;Hendeksiz;6;0;6.11;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.11;False
-YBTAS;Yibitaş İnş. Malzemeleri;Kırılgan Hendekli;7;0;9.7;0.0;0.0;0.83;11740.84;1210;1210;AL / EKLE;0.0;1.4;11737.0;9.7;True
-EGEGY;Egeyapı GYO;Hendeksiz;5;0;15.73;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.73;False
-TKNKA;Teknika Plastik;Kırılgan Hendekli;7;0;25.3;0.0;0.0;0.83;11740.84;464;464;AL / EKLE;0.0;1.4;11739.2;25.3;True
-GOODY;Goodyear;Hendeksiz;3;0;1.98;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.98;False
-FMIZP;F-M İzmit Piston;Kırılgan Hendekli;6;0;213.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;213.3;False
-PNSUT;Pınar Süt;Hendeksiz;4;0;9.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.2;False
-LIDFA;Lider Faktoring;Hendeksiz;0;0;1.79;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.79;False
-KRONT;Kron Teknoloji;Kırılgan Hendekli;5;0;17.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;17.05;False
-SOKE;Söke Değirmencilik;Hendeksiz;6;0;7.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.2;False
-BESTE;Best Brands Grup;Hendeksiz;5;0;15.42;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.42;False
-KAREL;Karel Elektronik;Hendeksiz;5;0;4.66;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.66;False
-DZGYO;Deniz GYO;Hendeksiz;4;0;6.93;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.93;False
-MHRGY;Mhr GYO;Kırılgan Hendekli;5;0;1.67;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.67;False
-IZFAS;İzmir Fırça;Kırılgan Hendekli;6;0;14.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.7;False
-CRDFA;Creditwest Faktoring;Hendeksiz;0;0;8.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.3;False
-ALKIM;Alkim;Hendeksiz;5;0;10.01;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.01;False
-AZTEK;Aztek Teknoloji;Hendeksiz;5;0;2.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.74;False
-NETGL;Net Global;Kırılgan Hendekli;6;0;9.18;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.18;False
-EKOS;Ekos Teknoloji;Hendeksiz;5;0;2.53;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.53;False
-SAFKR;Safkar Ege Soğutmacılık;Kırılgan Hendekli;5;0;14.12;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.12;False
-FRMPL;Formül Plastik;Kırılgan Hendekli;7;0;18.37;0.0;0.0;0.83;11740.84;639;639;AL / EKLE;0.0;1.4;11738.43;18.37;True
-TSGYO;TSKB GYO;Kırılgan Hendekli;6;0;4.08;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.08;False
-AGROT;Agrotech Yüksek Teknoloji;Hendeksiz;3;0;1.16;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.16;False
-REEDR;Reeder;Hendeksiz;4;0;2.68;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.68;False
-PETUN;Pınar Et ve Un;Hendeksiz;7;0;9.29;0.0;0.0;0.6;8487.36;913;913;AL / EKLE;0.0;1.0;8481.77;9.29;True
-BINBN;BinBin;Hendeksiz;5;0;26.84;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;26.84;False
-GUNDG;Gündoğdu Gıda;Hendeksiz;3;0;61.15;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;61.15;False
-MNDRS;Menderes Tekstil;Hendeksiz;7;0;9.64;0.0;0.0;0.6;8487.36;880;880;AL / EKLE;0.0;1.0;8483.2;9.64;True
-KONTR;Kontrolmatik Teknoloji;Hendeksiz;4;0;2.43;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.43;False
-GIPTA;Gıpta;Hendeksiz;4;0;22.02;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;22.02;False
-YUNSA;Yünsa;Hendeksiz;5;0;5.88;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.88;False
-CGCAM;Çağdaş Cam;Hendeksiz;4;0;16.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.46;False
-BKRGY;Bakırcı GYO;Kırılgan Hendekli;6;0;4.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.05;False
-KONKA;Konya Kağıt;Hendeksiz;2;0;6.89;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.89;False
-ALCTL;Alcatel Teletaş;Hendeksiz;3;0;68.45;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;68.45;False
-MACKO;Maçkolik;Korunaklı;4;0;24.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;24.74;False
-SURGY;Sur GYO;Hendeksiz;7;0;15.9;0.0;0.0;0.6;8487.36;533;533;AL / EKLE;0.0;1.0;8474.7;15.9;True
-PKENT;Petrokent;Hendeksiz;5;0;104.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;104.2;False
-MRGYO;Martı GYO;Kırılgan Hendekli;6;0;1.13;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.13;False
-KIMMR;Ersan Alışveriş Hizmetleri;Hendeksiz;5;0;10.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.75;False
-BEGYO;Batı Ege GYO;Kırılgan Hendekli;5;0;2.99;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.99;False
-SUWEN;Suwen Tekstil;Hendeksiz;4;0;4.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.4;False
-GENTS;Gentaş;Hendeksiz;4;0;3.42;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.42;False
-VBTYZ;VBT Yazılım;Hendeksiz;4;0;21.14;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;21.14;False
-ESCOM;Escort Teknoloji;Hendeksiz;4;0;3.66;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.66;False
-DYOBY;DYO Boya;Hendeksiz;6;0;8.54;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.54;False
-KUVVA;Kuvva Gıda;Hendeksiz;6;0;73.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;73.8;False
-KUTPO;Kütahya Porselen;Kırılgan Hendekli;5;0;61.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;61.05;False
-KATMR;Katmerciler Araç Üstü Ekipma;Hendeksiz;3;0;1.18;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.18;False
-ERCB;Erciyas Çelik Boru;Hendeksiz;2;0;31.24;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;31.24;False
-BAGFS;Bandırma Gübre Fabrikaları A;Hendeksiz;7;0;18.23;0.0;0.0;0.6;8487.36;465;465;AL / EKLE;0.0;1.0;8476.95;18.23;True
-SAYAS;Say Yenilenebilir Enerji;Korunaklı;8;0;32.44;0.0;0.0;1.07;15135.79;466;466;AL / EKLE;0.0;1.8;15117.04;32.44;True
-DAGI;Dagi Giyim;Hendeksiz;6;0;6.29;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.29;False
-NATEN;Naturel Yenilenebilir Enerji;Hendeksiz;7;0;2.97;0.0;0.0;0.6;8487.36;2857;2857;AL / EKLE;0.0;1.0;8485.29;2.97;True
-UCAYM;Üçay Mühendislik;Hendeksiz;3;0;11.09;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.09;False
-KTSKR;Kütahya Şeker;Hendeksiz;2;0;51.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;51.25;False
-LINK;Link Bilgisayar;Korunaklı;7;0;2.66;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.66;False
-ADESE;Adese AVM;Kırılgan Hendekli;6;0;0.49;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.49;False
-MEDTR;Meditera Tıbbi Malzeme;Hendeksiz;8;0;18.45;0.0;0.0;0.6;8487.36;460;460;AL / EKLE;0.0;1.0;8487.0;18.45;True
-ZGYO;Z GYO;Hendeksiz;4;0;11.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.46;False
-DARDL;Dardanel;Hendeksiz;3;0;0.97;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.97;False
-LKMNH;Lokman Hekim Engurusag;Kırılgan Hendekli;6;0;10.54;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.54;False
-ELITE;Elite Organik Gıda;Kırılgan Hendekli;3;0;17.83;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;17.83;False
-IHLAS;İhlas Holding;Hendeksiz;4;0;0.72;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.72;False
-PINSU;Pınar Su;Hendeksiz;7;0;7.46;0.0;0.0;0.6;8487.36;1137;1137;AL / EKLE;0.0;1.0;8482.02;7.46;True
-SOHOE;Soho Giyim;Kırılgan Hendekli;7;0;7.23;0.0;0.0;0.83;11740.84;1623;1623;AL / EKLE;0.0;1.4;11734.29;7.23;True
-TKNSA;Teknosa İç ve Dış Tic.;Hendeksiz;4;0;11.14;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.14;False
-ALKLC;Altınkılıç Gıda;Hendeksiz;2;0;18.41;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.41;False
-HURGZ;Hürriyet;Hendeksiz;6;0;3.64;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.64;False
-EKSUN;Eksun Gıda;Hendeksiz;6;0;3.6;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.6;False
-ATEKS;Akın Tekstil;Hendeksiz;3;0;75.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;75.1;False
-ONCSM;Oncosem;Korunaklı;6;0;87.85;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;87.85;False
-SVGYO;Savur GYO;Hendeksiz;4;0;1.97;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.97;False
-SEGMN;Seğmen Gıda;Kırılgan Hendekli;5;0;12.99;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.99;False
-SERNT;Seranit Granit;Kırılgan Hendekli;4;0;4.98;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.98;False
-KAPLM;Kaplamin;Hendeksiz;8;0;103.0;0.0;0.0;0.6;8487.36;82;82;AL / EKLE;0.0;1.0;8446.0;103.0;True
-EGEPO;Egepol Hastanesi;Hendeksiz;7;0;4.52;0.0;0.0;0.6;8487.36;1877;1877;AL / EKLE;0.0;1.0;8484.04;4.52;True
-ERBOS;Erbosan;Hendeksiz;4;0;98.55;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;98.55;False
-MSGYO;Mistral GYO;Hendeksiz;5;0;4.19;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.19;False
-PNLSN;Panelsan Çatı Cephe;Hendeksiz;4;0;26.84;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;26.84;False
-MARTI;Martı Otel İşletmeleri;Hendeksiz;3;0;1.29;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.29;False
-NUGYO;Nurol GYO;Hendeksiz;3;0;5.88;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.88;False
-ISSEN;İşbir Sentetik;Kırılgan Hendekli;5;0;4.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.74;False
-ARTMS;Artemis Halı;Hendeksiz;4;0;26.68;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;26.68;False
-ONRYT;Onur Yüksek Teknoloji;Kırılgan Hendekli;5;0;7.91;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.91;False
-BVSAN;Bülbüloğlu Vinç;Hendeksiz;5;0;53.65;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;53.65;False
-YAPRK;Yaprak Süt & Besi Çiftlikler;Hendeksiz;4;0;6.61;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.61;False
-ANELE;Anel Elektrik;Hendeksiz;5;0;6.11;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.11;False
-DNISI;Dinamik Isı Yalıtım;Hendeksiz;6;0;3.41;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.41;False
-BURVA;Burçelik Vana Sanayii;Hendeksiz;4;0;249.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;249.2;False
-TGSAS;TGS Dış Ticaret;Hendeksiz;4;0;112.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;112.4;False
-IHAAS;İhlas Haber Ajansı;Hendeksiz;3;0;11.33;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.33;False
-SMRVA;Sümer Varlık Yönetim;Hendeksiz;5;0;4.42;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.42;False
-LXGYO;Luxera GYO;Hendeksiz;2;0;5.58;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.58;False
-CMBTN;Çimbeton;Hendeksiz;4;0;1035.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1035.0;False
-OSMEN;Osmanlı Menkul Değ.;Hendeksiz;5;0;4.44;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.44;False
-BRLSM;Birlesim Mühendislik;Kırılgan Hendekli;7;0;8.33;0.0;0.0;0.83;11740.84;1409;1409;AL / EKLE;0.0;1.4;11736.97;8.33;True
-SEGYO;Şeker GYO;Hendeksiz;5;0;2.33;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.33;False
-KNFRT;Konfrut Gıda;Hendeksiz;7;0;6.84;0.0;0.0;0.6;8487.36;1240;1240;AL / EKLE;0.0;1.0;8481.6;6.84;True
-SKYMD;Şeker Yatırım;Hendeksiz;3;0;10.57;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.57;False
-DGNMO;Doğanlar Mobilya;Hendeksiz;4;0;4.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.7;False
-MARBL;Tureks Turunç;Hendeksiz;5;0;7.64;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.64;False
-BAKAB;Bak Ambalaj;Hendeksiz;8;0;24.06;0.0;0.0;0.6;8487.36;352;352;AL / EKLE;0.0;1.0;8469.12;24.06;True
-MERCN;Mercan Kimya;Hendeksiz;5;0;3.13;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.13;False
-PRKME;Park Elek. Madencilik;Hendeksiz;5;0;11.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.7;False
-ETILR;Etiler Gıda;Hendeksiz;7;0;6.5;0.0;0.0;0.6;8487.36;1305;1305;AL / EKLE;0.0;1.0;8482.5;6.5;True
-GSDDE;GSD Denizcilik Gayrimenkul İ;Kırılgan Hendekli;6;0;10.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.75;False
-FRIGO;Frigo Pak Gıda;Hendeksiz;7;0;2.03;0.0;0.0;0.6;8487.36;4180;4180;AL / EKLE;0.0;1.0;8485.4;2.03;True
-BURCE;Burçelik;Hendeksiz;5;0;19.02;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;19.02;False
-CEMAS;Çemaş Döküm;Hendeksiz;2;0;2.19;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.19;False
-AGYO;Atakule GYO;Kırılgan Hendekli;5;0;5.93;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.93;False
+SMRTG;Smart Güneş Enerjisi;Hendeksiz;5;0;3.94;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.94;False
+KLSER;Kaleseramik;Hendeksiz;5;0;14.45;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.45;False
+AKGRT;Aksigorta;Hendeksiz;5;0;4.82;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.82;False
+ORGE;ORGE Enerji Elektrik;Korunaklı;4;0;18.48;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.48;False
+KOTON;Koton;Hendeksiz;4;0;8.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.74;False
+DGGYO;Doğuş GYO;Kırılgan Hendekli;6;0;23.04;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;23.04;False
+YYLGD;Yayla Agro Gıda;Kırılgan Hendekli;6;0;6.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.8;False
+AKMGY;Akmerkez GYO;Kırılgan Hendekli;6;0;193.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;193.3;False
+SUNTK;Sun Tekstil;Hendeksiz;4;0;14.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.1;False
+KLSYN;Koleksiyon Mobilya;Hendeksiz;4;0;14.04;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.04;False
+AYEN;Ayen Enerji;Kırılgan Hendekli;6;0;24.58;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;24.58;False
+INTET;Intetra Teknoloji;Kırılgan Hendekli;7;0;45.28;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;45.28;False
+NTGAZ;Naturel Gaz;Korunaklı;7;0;9.05;0.0;0.0;1.07;15063.71;1664;1664;AL / EKLE;0.0;1.8;15059.2;9.05;True
+TARKM;Tarkim;Hendeksiz;3;0;331.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;331.0;False
+SONME;Sönmez Filament;Hendeksiz;5;0;97.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;97.2;False
+BESLR;Besler Gıda;Hendeksiz;5;0;10.03;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.03;False
+BSOKE;Batıçim Çimento;Hendeksiz;5;0;4.69;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.69;False
+OYYAT;Oyak Yatırım;Korunaklı;7;0;23.88;0.0;0.0;1.07;15063.71;630;630;AL / EKLE;0.0;1.8;15044.4;23.88;True
+KARSN;Karsan Otomotiv;Kırılgan Hendekli;6;0;7.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.7;False
+BOSSA;Bossa;Hendeksiz;5;0;5.16;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.16;False
+MEYSU;Meysu Gıda;Hendeksiz;4;0;7.78;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.78;False
+AKHAN;Akhan Un;Kırılgan Hendekli;6;0;26.98;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;26.98;False
+ODAS;Odaş Elektrik Üretim;Hendeksiz;7;0;4.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.74;False
+SNPAM;Sönmez Pamuklu;Kırılgan Hendekli;6;0;16.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.2;False
+KSTUR;Kuştur Turizm;Hendeksiz;4;0;1510.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1510.0;False
+GOZDE;Gözde Girisim Sermayesi;Hendeksiz;4;0;16.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.4;False
+ALCAR;Alarko Carrier;Hendeksiz;5;0;581.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;581.0;False
+VKGYO;Vakıf GYO;Hendeksiz;3;0;1.51;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.51;False
+OFSYM;Ofis Yem;Kırılgan Hendekli;5;0;43.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;43.46;False
+ZOREN;Zorlu Enerji;Hendeksiz;5;0;1.39;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.39;False
+LYDHO;Lydia Holding;Hendeksiz;4;0;20.02;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;20.02;False
+ASGYO;Asce GYO;Hendeksiz;6;0;9.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.4;False
+BUCIM;Bursa Çimento;Hendeksiz;6;0;4.12;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.12;False
+ALFAS;Alfa Solar;Hendeksiz;7;0;24.0;0.0;0.0;0.6;8446.94;351;351;AL / EKLE;0.0;1.0;8424.0;24.0;True
+BERA;Bera Holding;Kırılgan Hendekli;7;0;9.98;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.98;False
+SRVGY;Servet GYO;Kırılgan Hendekli;7;0;1.84;0.0;0.0;0.83;11684.93;6350;6350;AL / EKLE;0.0;1.4;11684.0;1.84;True
+MAALT;Marmaris Altınyunus;Hendeksiz;1;0;726.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;726.0;False
+BASCM;Baştaş Başkent Çimento Sanay;Hendeksiz;3;0;9.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.1;False
+EMPAE;Empa Elektronik;Hendeksiz;4;0;38.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;38.2;False
+ODINE;Odine Solutions;Hendeksiz;4;0;57.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;57.25;False
+FZLGY;Fuzul Gayrimenkul;Hendeksiz;7;0;5.43;0.0;0.0;0.6;8446.94;1555;1555;AL / EKLE;0.0;1.0;8443.65;5.43;True
+KMPUR;Kimteks Poliüretan;Hendeksiz;5;0;12.67;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.67;False
+TUREX;Tureks Tur.Taşımacılık;Kırılgan Hendekli;8;0;5.43;0.0;0.0;0.83;11684.93;2151;2151;AL / EKLE;0.0;1.4;11679.93;5.43;True
+KOCMT;Koç Metalurji;Hendeksiz;3;0;2.54;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.54;False
+BOBET;Boğaziçi Beton;Hendeksiz;5;0;14.64;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.64;False
+ATATP;ATP Bilgisayar;Korunaklı;5;0;214.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;214.0;False
+DAPGM;Dap Gayrimenkul;Korunaklı;5;0;2.32;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.32;False
+ATAKP;Atakey Patates;Hendeksiz;6;0;41.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;41.0;False
+TSPOR;Trabzonspor A.Ş;Hendeksiz;4;0;0.77;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.77;False
+KBORU;Kuzey Boru;Hendeksiz;3;0;10.23;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.23;False
+VESBE;Vestel Beyaz Esya;Hendeksiz;3;0;3.53;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.53;False
+ALGYO;Alarko GYO;Kırılgan Hendekli;5;0;2.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.75;False
+TMSN;Tümosan Motor ve Traktör;Hendeksiz;4;0;49.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;49.0;False
+FORTE;Forte Bilgi İletişim;Kırılgan Hendekli;7;0;79.3;0.0;0.0;0.83;11684.93;147;147;AL / EKLE;0.0;1.4;11657.1;79.3;True
+ARSAN;Arsan Holding;Kırılgan Hendekli;6;0;3.28;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.28;False
+LIDER;Lider Turizm;Hendeksiz;6;0;7.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.36;False
+KLGYO;Kiler GYO;Hendeksiz;6;0;3.78;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.78;False
+ALBTN;Albayrak Hazır Beton;Hendeksiz;7;0;20.9;0.0;0.0;0.6;8446.94;404;404;AL / EKLE;0.0;1.0;8443.6;20.9;True
+BIOEN;Biotrend Enerji;Hendeksiz;3;0;11.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.05;False
+OZYSR;Özyaşar Tel;Hendeksiz;6;0;12.22;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.22;False
+KPEKS;Kapeks Kimya;Hendeksiz;4;0;44.62;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;44.62;False
+PATEK;Pasifik Teknoloji;Hendeksiz;3;0;8.26;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.26;False
+ADEL;Adel Kalemcilik;Hendeksiz;3;0;21.64;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;21.64;False
+EUREN;Europen Endüstri;Hendeksiz;6;0;2.41;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.41;False
+INGRM;İngram Bilişim;Hendeksiz;5;0;213.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;213.5;False
+TRHOL;Tera Finansal Yat. Holding;Hendeksiz;4;0;126.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;126.1;False
+BLUME;Blume Metal Kimya;Hendeksiz;7;0;27.46;0.0;0.0;0.6;8446.94;307;307;AL / EKLE;0.0;1.0;8430.22;27.46;True
+BJKAS;Beşiktaş;Hendeksiz;7;0;1.26;0.0;0.0;0.6;8446.94;6703;6703;AL / EKLE;0.0;1.0;8445.78;1.26;True
+ULUUN;Ulusoy Un;Hendeksiz;4;0;6.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.36;False
+AFYON;Afyon Çimento;Kırılgan Hendekli;6;0;11.96;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.96;False
+AKENR;Akenerji;Hendeksiz;3;0;6.97;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.97;False
+GOKNR;Göknur Gıda;Kırılgan Hendekli;7;0;13.67;0.0;0.0;0.83;11684.93;854;854;AL / EKLE;0.0;1.4;11674.18;13.67;True
+DOKTA;Döktaş Dökümcülük;Hendeksiz;8;0;14.62;0.0;0.0;0.6;8446.94;577;577;AL / EKLE;0.0;1.0;8435.74;14.62;True
+KRVGD;Kervan Gıda;Kırılgan Hendekli;7;0;2.15;0.0;0.0;0.83;11684.93;5434;5434;AL / EKLE;0.0;1.4;11683.1;2.15;True
+UFUK;Ufuk Yat.Yön.ve Gay. AŞ.;Hendeksiz;3;0;90.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;90.9;False
+HATSN;Hat-San;Hendeksiz;3;0;23.54;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;23.54;False
+PARSN;Parsan;Hendeksiz;3;0;51.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;51.7;False
+BORSK;Bor Şeker;Hendeksiz;5;0;4.82;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.82;False
+KZBGY;Kızılbük GYO;Hendeksiz;2;0;1.16;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.16;False
+MERIT;Merit Turizm Yatırım;Hendeksiz;5;0;12.96;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.96;False
+BINHO;Technology Services;Hendeksiz;3;0;3.85;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.85;False
+ENDAE;Enda Enerji;Kırılgan Hendekli;7;0;10.61;0.0;0.0;0.83;11684.93;1101;1101;AL / EKLE;0.0;1.4;11681.61;10.61;True
+VESTL;Vestel Elektronik;Hendeksiz;2;0;13.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;13.3;False
+GLCVY;Gelecek Varlık Yön.;Hendeksiz;5;0;33.44;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;33.44;False
+METRO;Consumer Non-Durables;Korunaklı;8;0;7.76;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.76;False
+NETAS;Netaş;Hendeksiz;9;0;70.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;70.05;False
+YIGIT;Yiğit Akü;Hendeksiz;5;0;13.84;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;13.84;False
+BIENY;Bien Yapı;Hendeksiz;3;0;12.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.3;False
+VAKFN;Vakıf Fin. Kir.;Hendeksiz;0;0;0.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.87;False
+MOPAS;Mopaş;Hendeksiz;6;0;15.18;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.18;False
+INVEO;İnveo Yatırım Holding;Kırılgan Hendekli;4;0;4.13;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.13;False
+CATES;Çates Elektrik;Hendeksiz;3;0;27.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;27.36;False
+GOLTS;Göltaş Çimento;Kırılgan Hendekli;6;0;227.6;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;227.6;False
+DESA;Desa Deri Sanayii;Kırılgan Hendekli;6;0;8.19;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.19;False
+AHSGY;Ahes GYO;Hendeksiz;3;0;6.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.25;False
+GSDHO;Transportation;Kırılgan Hendekli;6;0;4.06;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.06;False
+ESCAR;Escar Filo;Hendeksiz;7;0;9.08;0.0;0.0;0.6;8446.94;930;930;AL / EKLE;0.0;1.0;8444.4;9.08;True
+GENKM;Gentaş Kimya;Kırılgan Hendekli;7;0;6.64;0.0;0.0;0.83;11684.93;1759;1759;AL / EKLE;0.0;1.4;11679.76;6.64;True
+MNDTR;Mondi Tire;Hendeksiz;2;0;3.66;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.66;False
+PEKGY;Peker GYO;Hendeksiz;5;0;0.88;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.88;False
+TATEN;Tatlıpınar Enerji;Kırılgan Hendekli;5;0;3.71;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.71;False
+AYES;Ayes Çelik Hasır & Çit;Hendeksiz;8;0;7.49;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.49;False
+KAREL;Karel Elektronik;Hendeksiz;5;0;4.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.74;False
+TATGD;Tat Gıda;Hendeksiz;7;0;15.13;0.0;0.0;0.6;8446.94;558;558;AL / EKLE;0.0;1.0;8442.54;15.13;True
+HUNER;Hun Enerji;Hendeksiz;3;0;4.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.05;False
+PRKAB;Prysmian Kablo;Hendeksiz;2;0;19.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;19.1;False
+ISVEA;İsvea Seramik;Kırılgan Hendekli;6;0;14.09;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.09;False
+OZSUB;Özsu Balık;Hendeksiz;5;0;33.12;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;33.12;False
+ALKA;Alkim Kağıt;Hendeksiz;3;0;5.09;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.09;False
+QUAGR;QUA Granite;Kırılgan Hendekli;6;0;1.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.5;False
+ZERGY;Zeray GYO;Hendeksiz;4;0;5.43;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.43;False
+FONET;Fonet Bilgi Teknolojileri;Kırılgan Hendekli;8;0;3.9;0.0;0.0;0.83;11684.93;2996;2996;AL / EKLE;0.0;1.4;11684.4;3.9;True
+YATAS;Yataş Yatak;Hendeksiz;5;0;25.06;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;25.06;False
+ESEN;Esenboğa Elektrik;Kırılgan Hendekli;6;0;2.03;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.03;False
+PLTUR;Platform Turizm;Kırılgan Hendekli;4;0;14.91;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.91;False
+KRGYO;Korfez GYO;Hendeksiz;4;0;3.6;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.6;False
+KOPOL;Koza Polyester;Kırılgan Hendekli;7;0;2.9;0.0;0.0;0.83;11684.93;4029;4029;AL / EKLE;0.0;1.4;11684.1;2.9;True
+ORMA;Orma Orman Mahsulleri;Hendeksiz;5;0;130.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;130.4;False
+TEZOL;Europap Tezol;Hendeksiz;7;0;6.78;0.0;0.0;0.6;8446.94;1245;1245;AL / EKLE;0.0;1.0;8441.1;6.78;True
+ISKPL;Işıklar Plastik;Kırılgan Hendekli;6;0;2.38;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.38;False
+KUYAS;Kuyas Yatırım AŞ;Hendeksiz;4;0;8.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.74;False
+TURGG;Türker Proje Gay.Gel.;Hendeksiz;6;0;27.58;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;27.58;False
+MARMR;Marmara Holding;Hendeksiz;5;0;1.15;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.15;False
+PENTA;Penta Teknoloji;Hendeksiz;3;0;9.42;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.42;False
+HOROZ;Horoz Lojistik;Hendeksiz;6;0;37.56;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;37.56;False
+LYDYE;Lydia Yeşil Enerji;Hendeksiz;3;0;1762.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1762.0;False
+KERVN;Kervansaray Yat. Holding;Korunaklı;5;0;6.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.3;False
+PCILT;PC İletişim ve Medya;Kırılgan Hendekli;7;0;30.92;0.0;0.0;0.83;11684.93;377;377;AL / EKLE;0.0;1.4;11656.84;30.92;True
+ATATR;Ata Turizm;Hendeksiz;4;0;4.49;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.49;False
+CEMTS;Çemtas;Hendeksiz;5;0;6.57;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.57;False
+IEYHO;Işıklar Enerji ve Yapı Holdi;Hendeksiz;5;0;6.11;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.11;False
+DURDO;Duran Doğan Basım;Hendeksiz;6;0;5.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.87;False
+KZGYO;Kuzugrup GYO;Hendeksiz;4;0;16.13;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.13;False
+EGEGY;Egeyapı GYO;Hendeksiz;5;0;16.35;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.35;False
+FMIZP;F-M İzmit Piston;Kırılgan Hendekli;6;0;216.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;216.1;False
+INTEM;İntema;Korunaklı;8;0;171.6;0.0;0.0;1.07;15063.71;87;87;AL / EKLE;0.0;1.8;14929.2;171.6;True
+TKNKA;Teknika Plastik;Kırılgan Hendekli;7;0;28.88;0.0;0.0;0.83;11684.93;404;404;AL / EKLE;0.0;1.4;11667.52;28.88;True
+MHRGY;Mhr GYO;Kırılgan Hendekli;5;0;1.68;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.68;False
+VSNMD;Vişne Madencilik;Hendeksiz;3;0;20.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;20.0;False
+SANKO;Sanko Pazarlama;Hendeksiz;2;0;21.42;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;21.42;False
+GOODY;Goodyear;Hendeksiz;3;0;1.96;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.96;False
+YBTAS;Yibitaş İnş. Malzemeleri;Kırılgan Hendekli;7;0;10.51;0.0;0.0;0.83;11684.93;1111;1111;AL / EKLE;0.0;1.4;11676.61;10.51;True
+BIGEN;Birleşim Grup Enerji;Kırılgan Hendekli;6;0;5.43;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.43;False
+KONTR;Kontrolmatik Teknoloji;Hendeksiz;4;0;2.67;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.67;False
+RALYH;Ral Yatırım Holding;Hendeksiz;5;0;6.86;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.86;False
+FRMPL;Formül Plastik;Kırılgan Hendekli;7;0;19.16;0.0;0.0;0.83;11684.93;609;609;AL / EKLE;0.0;1.4;11668.44;19.16;True
+BESTE;Best Brands Grup;Hendeksiz;5;0;15.81;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.81;False
+ALKIM;Alkim;Hendeksiz;5;0;10.33;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.33;False
+PNSUT;Pınar Süt;Hendeksiz;4;0;9.35;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.35;False
+KRONT;Kron Teknoloji;Kırılgan Hendekli;5;0;16.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.87;False
+TEHOL;Tera Holding;Hendeksiz;6;0;1.35;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.35;False
+LIDFA;Lider Faktoring;Hendeksiz;0;0;1.84;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.84;False
+DZGYO;Deniz GYO;Hendeksiz;4;0;7.15;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.15;False
+SAFKR;Safkar Ege Soğutmacılık;Kırılgan Hendekli;5;0;14.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.3;False
+PETUN;Pınar Et ve Un;Hendeksiz;7;0;9.49;0.0;0.0;0.6;8446.94;890;890;AL / EKLE;0.0;1.0;8446.1;9.49;True
+NETGL;Net Global;Kırılgan Hendekli;6;0;9.41;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.41;False
+EKOS;Ekos Teknoloji;Hendeksiz;5;0;2.65;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.65;False
+AZTEK;Aztek Teknoloji;Hendeksiz;5;0;2.84;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.84;False
+GIPTA;Gıpta;Hendeksiz;4;0;24.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;24.46;False
+TSGYO;TSKB GYO;Kırılgan Hendekli;6;0;4.16;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.16;False
+YUNSA;Yünsa;Hendeksiz;5;0;6.18;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.18;False
+SOKE;Söke Değirmencilik;Hendeksiz;6;0;7.42;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.42;False
+KONKA;Konya Kağıt;Hendeksiz;2;0;6.88;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.88;False
+AGROT;Agrotech Yüksek Teknoloji;Hendeksiz;3;0;1.22;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.22;False
+MNDRS;Menderes Tekstil;Hendeksiz;7;0;9.69;0.0;0.0;0.6;8446.94;871;871;AL / EKLE;0.0;1.0;8439.99;9.69;True
+KIMMR;Ersan Alışveriş Hizmetleri;Hendeksiz;5;0;11.22;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.22;False
+BKRGY;Bakırcı GYO;Kırılgan Hendekli;6;0;4.21;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.21;False
+IZFAS;İzmir Fırça;Kırılgan Hendekli;6;0;14.29;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.29;False
+MRGYO;Martı GYO;Kırılgan Hendekli;6;0;1.17;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.17;False
+SURGY;Sur GYO;Hendeksiz;7;0;16.67;0.0;0.0;0.6;8446.94;506;506;AL / EKLE;0.0;1.0;8435.02;16.67;True
+ALCTL;Alcatel Teletaş;Hendeksiz;3;0;69.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;69.7;False
+PKENT;Petrokent;Hendeksiz;5;0;106.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;106.3;False
+CGCAM;Çağdaş Cam;Hendeksiz;4;0;17.35;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;17.35;False
+BINBN;BinBin;Hendeksiz;5;0;27.12;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;27.12;False
+ESCOM;Escort Teknoloji;Hendeksiz;4;0;3.69;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.69;False
+DYOBY;DYO Boya;Hendeksiz;6;0;8.79;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.79;False
+REEDR;Reeder;Hendeksiz;4;0;2.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.75;False
+GENTS;Gentaş;Hendeksiz;4;0;3.49;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.49;False
+CRDFA;Creditwest Faktoring;Hendeksiz;0;0;7.45;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.45;False
+SUWEN;Suwen Tekstil;Hendeksiz;4;0;4.52;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.52;False
+BAGFS;Bandırma Gübre Fabrikaları A;Hendeksiz;7;0;18.38;0.0;0.0;0.6;8446.94;459;459;AL / EKLE;0.0;1.0;8436.42;18.38;True
+SMRVA;Sümer Varlık Yönetim;Hendeksiz;5;0;4.54;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.54;False
+KATMR;Katmerciler Araç Üstü Ekipma;Hendeksiz;3;0;1.22;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.22;False
+UCAYM;Üçay Mühendislik;Hendeksiz;3;0;11.54;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.54;False
+VBTYZ;VBT Yazılım;Hendeksiz;4;0;20.86;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;20.86;False
+MACKO;Maçkolik;Korunaklı;4;0;25.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;25.2;False
+KUTPO;Kütahya Porselen;Kırılgan Hendekli;5;0;61.6;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;61.6;False
+BEGYO;Batı Ege GYO;Kırılgan Hendekli;5;0;3.02;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.02;False
+DAGI;Dagi Giyim;Hendeksiz;6;0;6.51;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.51;False
+SAYAS;Say Yenilenebilir Enerji;Korunaklı;8;0;33.52;0.0;0.0;1.07;15063.71;449;449;AL / EKLE;0.0;1.8;15050.48;33.52;True
+ADESE;Adese AVM;Kırılgan Hendekli;6;0;0.53;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.53;False
+KUVVA;Kuvva Gıda;Hendeksiz;6;0;73.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;73.4;False
+ZGYO;Z GYO;Hendeksiz;4;0;12.41;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.41;False
+NATEN;Naturel Yenilenebilir Enerji;Hendeksiz;7;0;3.06;0.0;0.0;0.6;8446.94;2760;2760;AL / EKLE;0.0;1.0;8445.6;3.06;True
+GUNDG;Gündoğdu Gıda;Hendeksiz;3;0;65.6;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;65.6;False
+KTSKR;Kütahya Şeker;Hendeksiz;2;0;51.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;51.8;False
+ERCB;Erciyas Çelik Boru;Hendeksiz;2;0;31.88;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;31.88;False
+LINK;Link Bilgisayar;Korunaklı;7;0;2.82;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.82;False
+DARDL;Dardanel;Hendeksiz;3;0;1.01;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.01;False
+MEDTR;Meditera Tıbbi Malzeme;Hendeksiz;8;0;18.65;0.0;0.0;0.6;8446.94;452;452;AL / EKLE;0.0;1.0;8429.8;18.65;True
+TKNSA;Retail Trade;Hendeksiz;4;0;11.52;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.52;False
+ELITE;Elite Organik Gıda;Kırılgan Hendekli;3;0;17.82;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;17.82;False
+LKMNH;Lokman Hekim Engurusag;Kırılgan Hendekli;6;0;10.84;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.84;False
+SVGYO;Savur GYO;Hendeksiz;4;0;2.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.05;False
+SEGMN;Seğmen Gıda;Kırılgan Hendekli;5;0;14.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.46;False
+HURGZ;Hürriyet;Hendeksiz;6;0;3.81;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.81;False
+EKSUN;Eksun Gıda;Hendeksiz;6;0;3.65;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.65;False
+IHLAS;İhlas Holding;Hendeksiz;4;0;0.76;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.76;False
+PINSU;Pınar Su;Hendeksiz;7;0;7.57;0.0;0.0;0.6;8446.94;1115;1115;AL / EKLE;0.0;1.0;8440.55;7.57;True
+SOHOE;Soho Giyim;Kırılgan Hendekli;7;0;7.6;0.0;0.0;0.83;11684.93;1537;1537;AL / EKLE;0.0;1.4;11681.2;7.6;True
+KAPLM;Kaplamin;Hendeksiz;8;0;108.3;0.0;0.0;0.6;8446.94;77;77;AL / EKLE;0.0;1.0;8339.1;108.3;True
+ISSEN;İşbir Sentetik;Kırılgan Hendekli;5;0;4.91;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.91;False
+SERNT;Seranit Granit;Kırılgan Hendekli;4;0;5.12;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.12;False
+NUGYO;Nurol GYO;Hendeksiz;3;0;5.99;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.99;False
+ONCSM;Oncosem;Korunaklı;6;0;92.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;92.75;False
+ATEKS;Akın Tekstil;Hendeksiz;3;0;80.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;80.3;False
+MSGYO;Mistral GYO;Hendeksiz;5;0;4.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.36;False
+ONRYT;Onur Yüksek Teknoloji;Kırılgan Hendekli;5;0;7.99;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.99;False
+PNLSN;Panelsan Çatı Cephe;Hendeksiz;4;0;27.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;27.8;False
+BVSAN;Bülbüloğlu Vinç;Hendeksiz;5;0;56.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;56.5;False
+EGEPO;Egepol Hastanesi;Hendeksiz;7;0;4.68;0.0;0.0;0.6;8446.94;1804;1804;AL / EKLE;0.0;1.0;8442.72;4.68;True
+YAPRK;Yaprak Süt & Besi Çiftlikler;Hendeksiz;4;0;7.09;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.09;False
+ARTMS;Artemis Halı;Hendeksiz;4;0;26.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;26.8;False
+MARTI;Martı Otel İşletmeleri;Hendeksiz;3;0;1.32;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.32;False
+BURVA;Burçelik Vana Sanayii;Hendeksiz;4;0;254.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;254.0;False
+BRLSM;Birlesim Mühendislik;Kırılgan Hendekli;7;0;8.71;0.0;0.0;0.83;11684.93;1341;1341;AL / EKLE;0.0;1.4;11680.11;8.71;True
+ALKLC;Altınkılıç Gıda;Hendeksiz;2;0;18.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.9;False
+LXGYO;Luxera GYO;Hendeksiz;2;0;5.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.74;False
+KNFRT;Konfrut Gıda;Hendeksiz;7;0;7.08;0.0;0.0;0.6;8446.94;1193;1193;AL / EKLE;0.0;1.0;8446.44;7.08;True
+CMBTN;Çimbeton;Hendeksiz;4;0;1059.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1059.0;False
+MERCN;Mercan Kimya;Hendeksiz;5;0;3.26;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.26;False
+IHAAS;İhlas Haber Ajansı;Hendeksiz;3;0;12.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.46;False
+ERBOS;Erbosan;Hendeksiz;4;0;99.6;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;99.6;False
+BAKAB;Bak Ambalaj;Hendeksiz;8;0;25.24;0.0;0.0;0.6;8446.94;334;334;AL / EKLE;0.0;1.0;8430.16;25.24;True
+FRIGO;Frigo Pak Gıda;Hendeksiz;7;0;2.14;0.0;0.0;0.6;8446.94;3947;3947;AL / EKLE;0.0;1.0;8446.58;2.14;True
+MARBL;Tureks Turunç;Hendeksiz;5;0;7.91;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.91;False
+DGNMO;Doğanlar Mobilya;Hendeksiz;4;0;4.61;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.61;False
+TGSAS;TGS Dış Ticaret;Hendeksiz;4;0;112.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;112.1;False
+OSMEN;Osmanlı Menkul Değ.;Hendeksiz;5;0;4.55;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.55;False
+SEGYO;Şeker GYO;Hendeksiz;5;0;2.34;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.34;False
+CEMAS;Çemaş Döküm;Hendeksiz;2;0;2.15;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.15;False
+AVGYO;Avrasya YO;Hendeksiz;3;0;14.76;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.76;False
+ULUFA;Ulusal Faktoring;Hendeksiz;0;0;1.62;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.62;False
+ARFYE;Arf Bio Enerji;Hendeksiz;3;0;9.18;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.18;False
+SKYMD;Şeker Yatırım;Hendeksiz;3;0;10.99;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.99;False
+ETILR;Etiler Gıda;Hendeksiz;7;0;6.56;0.0;0.0;0.6;8446.94;1287;1287;AL / EKLE;0.0;1.0;8442.72;6.56;True
+ANELE;Anel Elektrik;Hendeksiz;5;0;5.96;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.96;False
+PKART;Plastikkart A.Ş;Kırılgan Hendekli;7;0;75.85;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;75.85;False
+DNISI;Dinamik Isı Yalıtım;Hendeksiz;6;0;3.66;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.66;False
+GSDDE;GSD Denizcilik Gayrimenkul İ;Kırılgan Hendekli;6;0;10.82;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.82;False
+UNLU;Ünlü Yatırım Holding;Hendeksiz;4;0;9.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.3;False
+BURCE;Burçelik;Hendeksiz;5;0;20.96;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;20.96;False
+PRKME;Park Elek. Madencilik;Hendeksiz;5;0;11.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.75;False
 DCTTR;Dct Trading;Hendeksiz;4;0;3.98;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.98;False
-AVGYO;Avrasya YO;Hendeksiz;3;0;15.01;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.01;False
-ARFYE;Arf Bio Enerji;Hendeksiz;3;0;9.07;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.07;False
-UNLU;Ünlü Yatırım Holding;Hendeksiz;4;0;9.03;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.03;False
-ULUFA;Ulusal Faktoring;Hendeksiz;0;0;1.6;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.6;False
-EDIP;Edip Gayrimenkul Yat. San.;Kırılgan Hendekli;5;0;23.28;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;23.28;False
-PKART;Plastikkart A.Ş;Kırılgan Hendekli;7;0;74.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;74.1;False
-EGSER;Ege Seramik;Hendeksiz;4;0;2.03;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.03;False
-BIGCH;BigChefs;Hendeksiz;7;0;2.7;0.0;0.0;0.6;8487.36;3143;3143;AL / EKLE;0.0;1.0;8486.1;2.7;True
-KRPLS;Koroplast Temizlik Ambalaj;Kırılgan Hendekli;8;0;8.98;0.0;0.0;0.83;11740.84;1307;1307;AL / EKLE;0.0;1.4;11736.86;8.98;True
-BLCYT;Bilici Yatırım;Hendeksiz;6;0;1.49;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.49;False
-GOLDA;Golda Gıda;Hendeksiz;4;0;5.93;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.93;False
-USHOL;Marka Yatırım Holding;Hendeksiz;3;0;65.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;65.75;False
-MTRKS;Matriks Finansal Teknolojile;Hendeksiz;5;0;15.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.2;False
-DGATE;Datagate;Hendeksiz;6;0;44.26;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;44.26;False
-VANGD;Vanet Gıda Sanayi;Hendeksiz;7;0;53.9;0.0;0.0;0.6;8487.36;157;157;AL / EKLE;0.0;1.0;8462.3;53.9;True
-BRKVY;Birikim Varlık;Hendeksiz;4;0;28.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;28.3;False
-KRSTL;Kristal Kola;Kırılgan Hendekli;6;0;7.02;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.02;False
-KLMSN;Klimasan;Hendeksiz;6;0;17.35;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;17.35;False
-SANFM;Sanifoam Sünger Sanayi;Kırılgan Hendekli;5;0;3.45;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.45;False
-INTEK;Innosa Teknoloji;Hendeksiz;3;0;168.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;168.9;False
-GATEG;Gate Group;Korunaklı;5;0;87.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;87.5;False
-LUKSK;Lüks Kadife;Hendeksiz;7;0;48.54;0.0;0.0;0.6;8487.36;174;174;AL / EKLE;0.0;1.0;8445.96;48.54;True
-MAKIM;Makim Makina;Hendeksiz;5;0;12.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.4;False
-ISBIR;İşbir Holding;Hendeksiz;5;0;56.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;56.9;False
-BNTAS;Bantaş Bandırma Ambalaj;Kırılgan Hendekli;6;0;5.17;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.17;False
-BEYAZ;Beyaz Filo;Hendeksiz;5;0;13.45;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;13.45;False
-OZGYO;Özderici GYO;Kırılgan Hendekli;4;0;1.47;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.47;False
-BIZIM;Bizim Toptan;Hendeksiz;5;0;15.81;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.81;False
-BULGS;Bulls GSYO;Hendeksiz;3;0;4.89;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.89;False
-ANGEN;Anatolia Biyoteknoloji;Hendeksiz;6;0;5.78;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.78;False
-DERHL;Derlüks Yatırım Holding;Kırılgan Hendekli;5;0;1.23;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.23;False
-MEKAG;Meka Beton;Hendeksiz;5;0;1.56;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.56;False
-IMASM;İmaş Makine;Hendeksiz;5;0;1.33;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.33;False
-EYGYO;EYG Gayrimenkul;Hendeksiz;6;0;1.78;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.78;False
-DMSAS;Demisaş;Hendeksiz;7;0;5.67;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.67;False
-BORLS;Borlease Otomotiv;Kırılgan Hendekli;6;0;1.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.8;False
-BYDNR;Baydöner;Hendeksiz;6;0;15.14;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.14;False
-PAMEL;Pamel Yenilenebilir Elekt.;Hendeksiz;3;0;39.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;39.4;False
-CUSAN;Çuhadaroğlu Metal;Hendeksiz;3;0;17.37;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;17.37;False
-BIGTK;Big Medya;Kırılgan Hendekli;5;0;34.42;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;34.42;False
-LRSHO;Loras Holding;Hendeksiz;4;0;1.53;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.53;False
-HDFGS;Hedef Girişim Sermayesi;Kırılgan Hendekli;4;0;1.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.05;False
-ENSRI;Ensari Deri;Hendeksiz;4;0;2.43;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.43;False
-PENGD;Penguen Gıda;Hendeksiz;3;0;6.66;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.66;False
-HKTM;Hidropar;Hendeksiz;4;0;11.02;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.02;False
-SNICA;Sanica Isı Sanayi;Kırılgan Hendekli;5;0;1.99;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.99;False
-DERIM;Derimod;Hendeksiz;4;0;21.22;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;21.22;False
-PAPIL;Papilon Savunma;Hendeksiz;4;0;5.78;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.78;False
-INFO;İnfo Yatırım;Kırılgan Hendekli;7;0;0.64;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.64;False
-TLMAN;Trabzon Liman İşletmeciliği;Hendeksiz;4;0;54.45;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;54.45;False
-AVHOL;Avrupa Yatırım Holding;Kırılgan Hendekli;6;0;28.22;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;28.22;False
-ARENA;Arena Bilgisayar;Hendeksiz;3;0;11.79;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.79;False
-EUHOL;Euro Yatırım;Kırılgan Hendekli;7;0;7.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.0;False
-MEPET;MEPET Metro;Hendeksiz;5;0;15.65;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.65;False
-RUBNS;Rubenis Tekstil;Hendeksiz;6;0;12.22;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.22;False
-BARMA;Barem Ambalaj;Hendeksiz;4;0;4.19;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.19;False
-CONSE;Consus Enerji;Hendeksiz;5;0;1.33;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.33;False
-MAKTK;Makina Takım;Hendeksiz;3;0;5.34;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.34;False
-DITAS;Ditaş BDY;Hendeksiz;6;0;6.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.25;False
-EDATA;E-Data Teknoloji;Hendeksiz;4;0;2.98;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.98;False
-GZNMI;Gezinomi Seyahat;Hendeksiz;4;0;17.34;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;17.34;False
-RTALB;RTA laboratuvarlari;Hendeksiz;4;0;2.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.0;False
-TEKTU;Tek-Art Turizm;Hendeksiz;5;0;3.43;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.43;False
-FORMT;Formet Metal ve Cam Sanayii;Hendeksiz;4;0;0.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.87;False
-USAK;Uşak Seramik;Hendeksiz;2;0;0.38;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.38;False
-DURKN;Durukan Şekerleme;Hendeksiz;2;0;8.07;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.07;False
-DOFER;Dofer Yapı;Hendeksiz;4;0;18.83;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.83;False
-YKSLN;Yükselen Çelik;Kırılgan Hendekli;9;0;1.97;0.0;0.0;0.83;11740.84;5959;5959;AL / EKLE;0.0;1.4;11739.23;1.97;True
-KFEIN;Kafein Yazılım;Hendeksiz;4;0;5.14;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.14;False
-RNPOL;Rainbow Polikarbonat;Hendeksiz;4;0;1.66;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.66;False
-IHLGM;İhlas Gayrimenkul;Hendeksiz;5;0;0.95;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.95;False
-YYAPI;Yesil Yapi;Hendeksiz;3;0;0.52;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.52;False
+USHOL;Marka Yatırım Holding;Hendeksiz;3;0;63.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;63.8;False
+EDIP;Finance;Kırılgan Hendekli;5;0;23.94;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;23.94;False
+KRPLS;Koroplast Temizlik Ambalaj;Kırılgan Hendekli;8;0;9.68;0.0;0.0;0.83;11684.93;1207;1207;AL / EKLE;0.0;1.4;11683.76;9.68;True
+GOLDA;Golda Gıda;Hendeksiz;4;0;6.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.3;False
+ISBIR;İşbir Holding;Hendeksiz;5;0;60.95;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;60.95;False
+BLCYT;Bilici Yatırım;Hendeksiz;6;0;1.55;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.55;False
+BRKVY;Birikim Varlık;Hendeksiz;4;0;31.12;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;31.12;False
+MAKIM;Makim Makina;Hendeksiz;5;0;12.35;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.35;False
+BIGCH;BigChefs;Hendeksiz;7;0;2.77;0.0;0.0;0.6;8446.94;3049;3049;AL / EKLE;0.0;1.0;8445.73;2.77;True
+KLMSN;Klimasan;Hendeksiz;6;0;17.29;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;17.29;False
+KRSTL;Kristal Kola;Kırılgan Hendekli;6;0;6.58;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.58;False
+MTRKS;Matriks Finansal Teknolojile;Hendeksiz;5;0;15.52;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.52;False
+OZGYO;Özderici GYO;Kırılgan Hendekli;4;0;1.45;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.45;False
+AGYO;Atakule GYO;Kırılgan Hendekli;5;0;6.13;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.13;False
+LUKSK;Lüks Kadife;Hendeksiz;7;0;50.55;0.0;0.0;0.6;8446.94;167;167;AL / EKLE;0.0;1.0;8441.85;50.55;True
+VANGD;Vanet Gıda Sanayi;Hendeksiz;7;0;56.7;0.0;0.0;0.6;8446.94;148;148;AL / EKLE;0.0;1.0;8391.6;56.7;True
+EGSER;Ege Seramik;Hendeksiz;4;0;2.07;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.07;False
+BULGS;Bulls GSYO;Hendeksiz;3;0;5.37;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.37;False
+INTEK;Innosa Teknoloji;Hendeksiz;3;0;177.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;177.7;False
+SANFM;Sanifoam Sünger Sanayi;Kırılgan Hendekli;5;0;3.84;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.84;False
+BEYAZ;Beyaz Filo;Hendeksiz;5;0;14.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.0;False
+BIZIM;Bizim Toptan;Hendeksiz;5;0;16.38;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.38;False
+EYGYO;EYG Gayrimenkul;Hendeksiz;6;0;1.82;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.82;False
+BNTAS;Bantaş Bandırma Ambalaj;Kırılgan Hendekli;6;0;5.23;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.23;False
+ENSRI;Ensari Deri;Hendeksiz;4;0;2.67;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.67;False
+PAMEL;Pamel Yenilenebilir Elekt.;Hendeksiz;3;0;40.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;40.7;False
+CUSAN;Çuhadaroğlu Metal;Hendeksiz;3;0;18.16;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.16;False
+ANGEN;Anatolia Biyoteknoloji;Hendeksiz;6;0;6.03;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.03;False
+BORLS;Borlease Otomotiv;Kırılgan Hendekli;6;0;1.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.87;False
+MEKAG;Meka Beton;Hendeksiz;5;0;1.62;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.62;False
+BYDNR;Baydöner;Hendeksiz;6;0;15.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.36;False
+DGATE;Datagate;Hendeksiz;6;0;46.26;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;46.26;False
+DERIM;Derimod;Hendeksiz;4;0;22.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;22.5;False
+IMASM;İmaş Makine;Hendeksiz;5;0;1.37;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.37;False
+DERHL;Derlüks Yatırım Holding;Kırılgan Hendekli;5;0;1.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.25;False
+HDFGS;Hedef Girişim Sermayesi;Kırılgan Hendekli;4;0;1.14;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.14;False
+INFO;İnfo Yatırım;Kırılgan Hendekli;7;0;0.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.7;False
+PAPIL;Papilon Savunma;Hendeksiz;4;0;5.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.9;False
+ARENA;Arena Bilgisayar;Hendeksiz;3;0;12.22;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.22;False
+LRSHO;Loras Holding;Hendeksiz;4;0;1.58;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.58;False
+BARMA;Barem Ambalaj;Hendeksiz;4;0;4.32;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.32;False
+DMSAS;Demisaş;Hendeksiz;7;0;6.04;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.04;False
+MEPET;MEPET Metro;Hendeksiz;5;0;15.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.8;False
+TLMAN;Trabzon Liman İşletmeciliği;Hendeksiz;4;0;56.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;56.5;False
+EUHOL;Euro Yatırım;Kırılgan Hendekli;7;0;6.59;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.59;False
+HKTM;Hidropar;Hendeksiz;4;0;11.71;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.71;False
+EDATA;E-Data Teknoloji;Hendeksiz;4;0;3.22;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.22;False
+GZNMI;Gezinomi Seyahat;Hendeksiz;4;0;19.51;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;19.51;False
+SNICA;Sanica Isı Sanayi;Kırılgan Hendekli;5;0;2.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.05;False
+BIGTK;Big Medya;Kırılgan Hendekli;5;0;37.86;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;37.86;False
+AVHOL;Avrupa Yatırım Holding;Kırılgan Hendekli;6;0;29.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;29.3;False
+GATEG;Gate Group;Korunaklı;5;0;90.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;90.0;False
+CONSE;Consus Enerji;Hendeksiz;5;0;1.39;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.39;False
+KFEIN;Kafein Yazılım;Hendeksiz;4;0;5.29;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.29;False
+TEKTU;Tek-Art Turizm;Hendeksiz;5;0;3.6;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.6;False
+DURKN;Durukan Şekerleme;Hendeksiz;2;0;7.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.9;False
+RNPOL;Rainbow Polikarbonat;Hendeksiz;4;0;1.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.74;False
+RUBNS;Rubenis Tekstil;Hendeksiz;6;0;12.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.7;False
+DOFER;Dofer Yapı;Hendeksiz;4;0;18.84;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.84;False
+RTALB;RTA laboratuvarlari;Hendeksiz;4;0;2.03;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.03;False
+MAKTK;Makina Takım;Hendeksiz;3;0;5.56;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.56;False
+SUMAS;Sumas Mobilya;Hendeksiz;5;0;179.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;179.8;False
+DITAS;Ditaş BDY;Hendeksiz;6;0;6.61;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.61;False
+YKSLN;Yükselen Çelik;Kırılgan Hendekli;9;0;2.09;0.0;0.0;0.83;11684.93;5590;5590;AL / EKLE;0.0;1.4;11683.1;2.09;True
+IHLGM;İhlas Gayrimenkul;Hendeksiz;5;0;0.98;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.98;False
+USAK;Uşak Seramik;Hendeksiz;2;0;0.41;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.41;False
+SELVA;Selva Gıda;Hendeksiz;3;0;0.97;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.97;False
 EPLAS;Egeplast;Hendeksiz;4;0;4.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.87;False
-RUZYE;Ruzy Madencilik ve Enerji;Hendeksiz;5;0;3.22;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.22;False
-EMKEL;Emek Elektrik;Hendeksiz;4;0;5.11;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.11;False
-SUMAS;Sumas Mobilya;Hendeksiz;5;0;161.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;161.0;False
-ACSEL;Acıselsan Acıpayam Selüloz;Kırılgan Hendekli;7;0;80.75;0.0;0.0;0.83;11740.84;145;145;AL / EKLE;0.0;1.4;11708.75;80.75;True
-FLAP;Flap Kongre Hiz.Oto.Tur.A.Ş;Hendeksiz;3;0;9.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.9;False
-SELVA;Selva Gıda;Hendeksiz;3;0;0.94;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.94;False
-GEDZA;Gediz Ambalaj Sanayi;Hendeksiz;4;0;18.56;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.56;False
-DOGUB;Doğusan;Hendeksiz;4;0;24.94;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;24.94;False
-BALAT;Balatacılar Balatacılık;Hendeksiz;6;0;55.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;55.25;False
-BMSCH;BMS Çelik Hasır;Hendeksiz;3;0;8.34;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.34;False
-TMPOL;TE-MAPOL Polimer Plastik;Hendeksiz;5;0;50.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;50.4;False
-OBASE;Obase Bilgisayar Danışmanlık;Hendeksiz;3;0;19.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;19.05;False
-OSTIM;Ostim Endüst. Yatırımlar;Hendeksiz;4;0;1.01;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.01;False
-GLRYH;Güler Yatırım Holding;Kırılgan Hendekli;7;0;1.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.36;False
-EMNIS;Eminiş Ambalaj;Kırılgan Hendekli;7;0;134.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;134.1;False
-MERKO;Merko Gıda;Hendeksiz;3;0;0.91;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.91;False
-FADE;Fade Gıda Yatırım;Kırılgan Hendekli;7;0;10.04;0.0;0.0;0.83;11740.84;1169;1169;AL / EKLE;0.0;1.4;11736.76;10.04;True
-TUCLK;Tuğçelik Alüminyum ve Metal;Kırılgan Hendekli;7;0;2.13;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.13;False
-ALVES;Alves Kablo;Hendeksiz;4;0;0.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.46;False
-GLBMD;Global Menkul Değerler;Hendeksiz;3;0;6.65;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.65;False
-BAYRK;Bayrak EBT Taban;Hendeksiz;8;0;2.95;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.95;False
-AKSUE;Aksu Enerji;Hendeksiz;4;0;12.73;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.73;False
-DENGE;Denge Holding;Hendeksiz;4;0;1.32;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.32;False
-NIBAS;Niğde Beton Sanayi;Hendeksiz;6;0;2.27;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.27;False
-TRILC;Turk İlaç ve Serum Sanayi;Kırılgan Hendekli;7;0;0.73;0.0;0.0;0.83;11740.84;16083;16083;AL / EKLE;0.0;1.4;11740.59;0.73;True
-SODSN;Sodaş Sodyum Sanayii;Hendeksiz;3;0;5.44;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.44;False
-CEOEM;CEO Event Medya;Hendeksiz;5;0;16.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.74;False
-OTTO;Otto Holding;Hendeksiz;5;0;92.35;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;92.35;False
-PRDGS;Pardus Girişim;Kırılgan Hendekli;8;0;3.72;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.72;False
-KRTEK;Karsu Tekstil;Hendeksiz;6;0;4.55;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.55;False
-IHGZT;İhlas Gazetecilik;Hendeksiz;5;0;0.78;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.78;False
-OZRDN;Özerden Plastik;Hendeksiz;5;0;8.14;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.14;False
-HUBVC;Hub Girişim Ser. Y.O.;Hendeksiz;5;0;2.09;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.09;False
-VRGYO;Vera GYO;Hendeksiz;4;0;0.97;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.97;False
-MANAS;Manas Enerji Yönetimi;Hendeksiz;4;0;1.78;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.78;False
-ZEDUR;Zedur Enerji;Hendeksiz;4;0;4.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.36;False
-BRKO;Birko Mensucat;Hendeksiz;4;0;5.29;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.29;False
-ETYAT;Euro Trend Yatırım;Hendeksiz;4;0;9.09;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.09;False
-SANEL;San-El Muhendislik;Korunaklı;8;0;29.5;0.0;0.0;1.07;15135.79;513;513;AL / EKLE;0.0;1.8;15133.5;29.5;True
-ERSU;Ersu Gıda;Hendeksiz;2;0;15.08;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.08;False
-SEKUR;Sekuro Plastik;Kırılgan Hendekli;9;0;2.92;0.0;0.0;0.83;11740.84;4020;4020;AL / EKLE;0.0;1.4;11738.4;2.92;True
-AVOD;Avod Kurutulmuş Gıda;Hendeksiz;4;0;2.18;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.18;False
-PRZMA;Prizma Pres Matbaacılık;Hendeksiz;7;0;8.19;0.0;0.0;0.6;8487.36;1036;1036;AL / EKLE;0.0;1.0;8484.84;8.19;True
-SKTAS;Söktaş;Hendeksiz;8;0;1.22;0.0;0.0;0.6;8487.36;6956;6956;AL / EKLE;0.0;1.0;8486.32;1.22;True
-ARZUM;Arzum Ev Aletleri;Hendeksiz;3;0;0.97;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.97;False
-COSMO;Cosmos Yatırım Holding;Hendeksiz;5;0;74.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;74.9;False
-VKFYO;Vakıf YO;Hendeksiz;3;0;16.6;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.6;False
-YAYLA;Yayla Enerji Uretim Turizm;Hendeksiz;5;0;10.35;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.35;False
-IHEVA;İhlas Ev Aletleri;Hendeksiz;7;0;1.43;0.0;0.0;0.6;8487.36;5935;5935;AL / EKLE;0.0;1.0;8487.05;1.43;True
-SEYKM;Seyitler Kimya;Hendeksiz;8;0;2.64;0.0;0.0;0.6;8487.36;3214;3214;AL / EKLE;0.0;1.0;8484.96;2.64;True
-ATSYH;Atlantis YO;Hendeksiz;3;0;63.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;63.2;False
-BRKSN;Berkosan Yalıtım;Kırılgan Hendekli;7;0;5.11;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.11;False
-SKYLP;Skyalp Fin. Tek.ve Danışmanl;Hendeksiz;8;0;49.84;0.0;0.0;0.6;8487.36;170;170;AL / EKLE;0.0;1.0;8472.8;49.84;True
-DESPC;Despec Bilgisayar;Kırılgan Hendekli;6;0;21.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;21.7;False
-OYAYO;Oyak Yatırım Ortaklığı;Kırılgan Hendekli;6;0;25.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;25.5;False
-EUKYO;Euro Kapital Yatırım Ortaklı;Hendeksiz;4;0;7.32;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.32;False
-OYLUM;Oylum Sınai Yatırımlar;Hendeksiz;3;0;5.65;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.65;False
-SILVR;Silverline;Hendeksiz;7;0;1.4;0.0;0.0;0.6;8487.36;6062;6062;AL / EKLE;0.0;1.0;8486.8;1.4;True
-YESIL;Yeşil Yatırım Holding;Hendeksiz;6;0;0.73;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.73;False
-PSDTC;Pergamon Status;Hendeksiz;3;0;59.95;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;59.95;False
-DUNYH;Dünya Holding;Hendeksiz;4;0;11.06;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.06;False
-VKING;Viking Kağıt;Hendeksiz;2;0;11.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.1;False
-YONGA;Yonga Mobilya Sanayi;Hendeksiz;4;0;24.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;24.3;False
-IZINV;İz Yatırım Holding;Hendeksiz;4;0;23.78;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;23.78;False
-MZHLD;Mazhar Zorlu Holding;Hendeksiz;3;0;3.72;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.72;False
-BRMEN;Birlik Mensucat;Hendeksiz;4;0;4.97;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.97;False
-ORCAY;Ortaköy Çay Sanayi;Hendeksiz;4;0;1.59;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.59;False
-HATEK;Hateks Hatay Tekstil;Hendeksiz;4;0;6.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.46;False
-ICUGS;Icu Girişim Ser. Y.O.;Hendeksiz;3;0;1.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.1;False
-SAMAT;Saray Matbaacılık;Hendeksiz;6;0;3.13;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.13;False
-IHYAY;İhlas Yayın Holding;Hendeksiz;5;0;0.77;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.77;False
-AKYHO;Akdeniz Yatırım Holding;Hendeksiz;4;0;1.41;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.41;False
-ATAGY;Ata GYO;Kırılgan Hendekli;3;0;6.99;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.99;False
-SMART;Smartiks Yazılım;Kırılgan Hendekli;4;0;10.85;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.85;False
-TDGYO;Trend GYO;Hendeksiz;4;0;4.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.1;False
-EKIZ;Ekiz Yağ ve Sabun;Hendeksiz;4;0;35.72;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;35.72;False
-RODRG;Rodrigo Tekstil;Hendeksiz;5;0;11.49;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.49;False
-ULAS;Ulaşlar Turizm Yatırımları;Hendeksiz;6;0;10.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.87;False
-MTRYO;Metro YO;Hendeksiz;4;0;7.62;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.62;False
-IDGYO;İdealist GYO;Hendeksiz;2;0;1.53;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.53;False
-CASA;Casa Emtia Petrol Kim.Tür.AŞ;Hendeksiz;3;0;36.96;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;36.96;False
-DIRIT;Diriteks Diriliş Tekstil;Hendeksiz;3;0;15.93;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.93;False
-MMCAS;MMC San.ve Tic. Yatırımlar A;Hendeksiz;4;0;8.68;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.68;False
-MEGAP;Mega Polietilen Köpük;Hendeksiz;5;0;0.93;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.93;False
-GRNYO;Garanti YO;Hendeksiz;5;0;7.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.0;False
-ATLAS;Atlas YO;Kırılgan Hendekli;6;0;4.11;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.11;False
-EUYO;Euro Menkul;Hendeksiz;5;0;3.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.05;False
-AAGYO;Ağaoğlu GYO;Kırılgan Hendekli;7;0;7.46;0.0;0.0;0.83;11740.84;1573;1573;AL / EKLE;0.0;1.4;11734.58;7.46;True
-EKIM;Ekim Turizm;Kırılgan Hendekli;7;0;15.08;0.0;0.0;0.83;11740.84;778;778;AL / EKLE;0.0;1.4;11732.24;15.08;True
-ORZAX;Orzaks İlaç;Kırılgan Hendekli;7;0;60.05;0.0;0.0;0.83;11740.84;195;195;AL / EKLE;0.0;1.4;11709.75;60.05;True
-SEKFK;Şeker Finansal Kiralama A.Ş;Hendeksiz;0;0;2.61;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.61;False
-ALTIN;Sanayi / Hizmet;Hendeksiz;0;0;71.04;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;71.04;False
-BETAE;Beta Enerji;Hendeksiz;5;0;44.06;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;44.06;False
-ISATR;İş Bankası (A);Hendeksiz;7;0;10.0;0.0;0.0;0.6;8487.36;848;848;AL / EKLE;0.0;1.0;8480.0;10.0;True
+RUZYE;Ruzy Madencilik ve Enerji;Hendeksiz;5;0;3.37;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.37;False
+YYAPI;Yesil Yapi;Hendeksiz;3;0;0.55;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.55;False
+ACSEL;Acıselsan Acıpayam Selüloz;Kırılgan Hendekli;7;0;88.7;0.0;0.0;0.83;11684.93;131;131;AL / EKLE;0.0;1.4;11619.7;88.7;True
+FLAP;Flap Kongre Hiz.Oto.Tur.A.Ş;Hendeksiz;3;0;10.21;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.21;False
+GEDZA;Gediz Ambalaj Sanayi;Hendeksiz;4;0;19.06;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;19.06;False
+EMNIS;Eminiş Ambalaj;Kırılgan Hendekli;7;0;149.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;149.0;False
+BMSCH;BMS Çelik Hasır;Hendeksiz;3;0;8.79;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.79;False
+FORMT;Formet Metal ve Cam Sanayii;Hendeksiz;4;0;0.92;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.92;False
+PENGD;Penguen Gıda;Hendeksiz;3;0;6.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.87;False
+AKSUE;Aksu Enerji;Hendeksiz;4;0;14.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.0;False
+BALAT;Balatacılar Balatacılık;Hendeksiz;6;0;56.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;56.0;False
+OBASE;Obase Bilgisayar Danışmanlık;Hendeksiz;3;0;19.63;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;19.63;False
+FADE;Fade Gıda Yatırım;Kırılgan Hendekli;7;0;10.3;0.0;0.0;0.83;11684.93;1134;1134;AL / EKLE;0.0;1.4;11680.2;10.3;True
+BRKO;Birko Mensucat;Hendeksiz;4;0;6.23;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.23;False
+GLBMD;Global Menkul Değerler;Hendeksiz;3;0;7.07;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.07;False
+OSTIM;Ostim Endüst. Yatırımlar;Hendeksiz;4;0;1.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.05;False
+GLRYH;Güler Yatırım Holding;Kırılgan Hendekli;7;0;1.44;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.44;False
+VRGYO;Vera GYO;Hendeksiz;4;0;0.98;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.98;False
+ALVES;Alves Kablo;Hendeksiz;4;0;0.49;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.49;False
+DENGE;Denge Holding;Hendeksiz;4;0;1.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.3;False
+TUCLK;Tuğçelik Alüminyum ve Metal;Kırılgan Hendekli;7;0;2.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.3;False
+EMKEL;Emek Elektrik;Hendeksiz;4;0;5.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.0;False
+DOGUB;Doğusan;Hendeksiz;4;0;23.66;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;23.66;False
+TMPOL;TE-MAPOL Polimer Plastik;Hendeksiz;5;0;51.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;51.75;False
+CEOEM;CEO Event Medya;Hendeksiz;5;0;17.51;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;17.51;False
+PRDGS;Pardus Girişim;Kırılgan Hendekli;8;0;4.01;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.01;False
+ZEDUR;Zedur Enerji;Hendeksiz;4;0;4.53;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.53;False
+BAYRK;Bayrak EBT Taban;Hendeksiz;8;0;3.01;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.01;False
+SODSN;Sodaş Sodyum Sanayii;Hendeksiz;3;0;5.65;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.65;False
+KRTEK;Karsu Tekstil;Hendeksiz;6;0;4.79;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.79;False
+PRZMA;Prizma Pres Matbaacılık;Hendeksiz;7;0;8.77;0.0;0.0;0.6;8446.94;963;963;AL / EKLE;0.0;1.0;8445.51;8.77;True
+MERKO;Merko Gıda;Hendeksiz;3;0;0.93;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.93;False
+IHGZT;İhlas Gazetecilik;Hendeksiz;5;0;0.79;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.79;False
+OTTO;Otto Holding;Hendeksiz;5;0;101.6;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;101.6;False
+NIBAS;Niğde Beton Sanayi;Hendeksiz;6;0;2.41;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.41;False
+SKTAS;Söktaş;Hendeksiz;8;0;1.28;0.0;0.0;0.6;8446.94;6599;6599;AL / EKLE;0.0;1.0;8446.72;1.28;True
+MANAS;Manas Enerji Yönetimi;Hendeksiz;4;0;2.03;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.03;False
+ARZUM;Arzum Ev Aletleri;Hendeksiz;3;0;1.03;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.03;False
+AVOD;Avod Kurutulmuş Gıda;Hendeksiz;4;0;2.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.2;False
+ERSU;Ersu Gıda;Hendeksiz;2;0;15.35;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.35;False
+SANEL;San-El Muhendislik;Korunaklı;8;0;29.22;0.0;0.0;1.07;15063.71;515;515;AL / EKLE;0.0;1.8;15048.3;29.22;True
+TRILC;Turk İlaç ve Serum Sanayi;Kırılgan Hendekli;7;0;0.77;0.0;0.0;0.83;11684.93;15175;15175;AL / EKLE;0.0;1.4;11684.75;0.77;True
+OZRDN;Özerden Plastik;Hendeksiz;5;0;8.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.36;False
+SEKUR;Sekuro Plastik;Kırılgan Hendekli;9;0;3.07;0.0;0.0;0.83;11684.93;3806;3806;AL / EKLE;0.0;1.4;11684.42;3.07;True
+SEYKM;Seyitler Kimya;Hendeksiz;8;0;2.69;0.0;0.0;0.6;8446.94;3140;3140;AL / EKLE;0.0;1.0;8446.6;2.69;True
+VKFYO;Vakıf YO;Hendeksiz;3;0;17.29;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;17.29;False
+IHEVA;İhlas Ev Aletleri;Hendeksiz;7;0;1.47;0.0;0.0;0.6;8446.94;5746;5746;AL / EKLE;0.0;1.0;8446.62;1.47;True
+SEKFK;Şeker Finansal Kiralama A.Ş;Hendeksiz;0;0;2.77;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.77;False
+ATSYH;Atlantis YO;Hendeksiz;3;0;75.85;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;75.85;False
+OYAYO;Oyak Yatırım Ortaklığı;Kırılgan Hendekli;6;0;28.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;28.2;False
+BRKSN;Berkosan Yalıtım;Kırılgan Hendekli;7;0;5.21;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.21;False
+OYLUM;Oylum Sınai Yatırımlar;Hendeksiz;3;0;5.73;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.73;False
+SILVR;Silverline;Hendeksiz;7;0;1.43;0.0;0.0;0.6;8446.94;5906;5906;AL / EKLE;0.0;1.0;8445.58;1.43;True
+YAYLA;Yayla Enerji Uretim Turizm;Hendeksiz;5;0;11.47;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.47;False
+HUBVC;Hub Girişim Ser. Y.O.;Hendeksiz;5;0;2.22;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.22;False
+COSMO;Cosmos Yatırım Holding;Hendeksiz;5;0;74.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;74.25;False
+ETYAT;Euro Trend Yatırım;Hendeksiz;4;0;8.93;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.93;False
+PSDTC;Pergamon Status;Hendeksiz;3;0;64.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;64.0;False
+BRMEN;Birlik Mensucat;Hendeksiz;4;0;5.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.46;False
+YONGA;Yonga Mobilya Sanayi;Hendeksiz;4;0;25.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;25.5;False
+EUKYO;Euro Kapital Yatırım Ortaklı;Hendeksiz;4;0;7.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.3;False
+VKING;Viking Kağıt;Hendeksiz;2;0;12.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.1;False
+HATEK;Hateks Hatay Tekstil;Hendeksiz;4;0;6.68;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.68;False
+IZINV;İz Yatırım Holding;Hendeksiz;4;0;23.82;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;23.82;False
+DUNYH;Dünya Holding;Hendeksiz;4;0;11.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.8;False
+ICUGS;Icu Girişim Ser. Y.O.;Hendeksiz;3;0;1.21;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.21;False
+IHYAY;İhlas Yayın Holding;Hendeksiz;5;0;0.81;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.81;False
+YESIL;Yeşil Yatırım Holding;Hendeksiz;6;0;0.77;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.77;False
+SAMAT;Saray Matbaacılık;Hendeksiz;6;0;3.26;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.26;False
+SMART;Smartiks Yazılım;Kırılgan Hendekli;4;0;11.95;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.95;False
+SKYLP;Skyalp Fin. Tek.ve Danışmanl;Hendeksiz;8;0;55.45;0.0;0.0;0.6;8446.94;152;152;AL / EKLE;0.0;1.0;8428.4;55.45;True
+MZHLD;Mazhar Zorlu Holding;Hendeksiz;3;0;3.77;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.77;False
+ATAGY;Ata GYO;Kırılgan Hendekli;3;0;7.12;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.12;False
+ORCAY;Ortaköy Çay Sanayi;Hendeksiz;4;0;1.66;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.66;False
+MTRYO;Metro YO;Hendeksiz;4;0;7.71;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.71;False
+DESPC;Despec Bilgisayar;Kırılgan Hendekli;6;0;22.14;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;22.14;False
+AKYHO;Akdeniz Yatırım Holding;Hendeksiz;4;0;1.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.46;False
+TDGYO;Trend GYO;Hendeksiz;4;0;4.45;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.45;False
+ULAS;Ulaşlar Turizm Yatırımları;Hendeksiz;6;0;11.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.74;False
+EKIZ;Ekiz Yağ ve Sabun;Hendeksiz;4;0;36.24;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;36.24;False
+RODRG;Rodrigo Tekstil;Hendeksiz;5;0;11.97;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.97;False
+GRNYO;Garanti YO;Hendeksiz;5;0;7.17;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.17;False
+ATLAS;Atlas YO;Kırılgan Hendekli;6;0;4.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.36;False
+IDGYO;İdealist GYO;Hendeksiz;2;0;1.66;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.66;False
+MEGAP;Mega Polietilen Köpük;Hendeksiz;5;0;0.99;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.99;False
+EUYO;Euro Menkul;Hendeksiz;5;0;3.13;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.13;False
+AAGYO;Ağaoğlu GYO;Kırılgan Hendekli;7;0;7.57;0.0;0.0;0.83;11684.93;1543;1543;AL / EKLE;0.0;1.4;11680.51;7.57;True
+CASA;Casa Emtia Petrol Kim.Tür.AŞ;Hendeksiz;3;0;37.12;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;37.12;False
+BETAE;Beta Enerji;Hendeksiz;5;0;45.94;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;45.94;False
+ORZAX;Orzaks İlaç;Kırılgan Hendekli;7;0;62.4;0.0;0.0;0.83;11684.93;187;187;AL / EKLE;0.0;1.4;11668.8;62.4;True
+EKIM;Ekim Turizm;Kırılgan Hendekli;7;0;15.44;0.0;0.0;0.83;11684.93;756;756;AL / EKLE;0.0;1.4;11672.64;15.44;True
 AVTUR;Avrasya Petrol&Turistik Tesi;Hendeksiz;4;0;10.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.0;False
-ISGSY;İş Girişim;Kırılgan Hendekli;5;0;10.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.0;False
+MMCAS;Transportation;Hendeksiz;4;0;9.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.9;False
+DIRIT;Diriteks Diriliş Tekstil;Hendeksiz;3;0;16.3;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.3;False
+ALTIN;Sanayi / Hizmet;Hendeksiz;0;0;72.32;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;72.32;False
 VERTU;Verusatürk Girişim Sermayesi;Hendeksiz;6;0;10.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.0;False
 ISYAT;İs YO;Kırılgan Hendekli;6;0;10.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.0;False
-ENPRA;Enpara;Hendeksiz;0;0;47.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;47.0;False
+ISGSY;İş Girişim;Kırılgan Hendekli;5;0;10.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.0;False
+ENPRA;Enpara;Hendeksiz;0;0;46.08;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;46.08;False
 ISKUR;İş Bankası Kurucu;Hendeksiz;0;0;10.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.0;False
+ISATR;İş Bankası (A);Hendeksiz;7;0;10.0;0.0;0.0;0.6;8446.94;844;844;AL / EKLE;0.0;1.0;8440.0;10.0;True

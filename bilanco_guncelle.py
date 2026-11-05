@@ -120,10 +120,17 @@ def tum_sirket_evrenini_derle() -> list:
                     td_list = re.findall(r'<td[^>]*>(.*?)</td>', tr, re.DOTALL)
                     temiz_td = [re.sub(r'<[^>]+>', '', td).strip() for td in td_list]
                     sektor = "Sanayi / Hizmet"
-                    for deger in temiz_td[1:]:
-                        if len(deger) > 3 and not any(ch.isdigit() for ch in deger):
-                            sektor = deger[:28]
-                            break
+                    
+                    # --- YENİ EKLENEN SEKTÖR FİLTRESİ ---
+                    if len(temiz_td) > 1:
+                        potansiyel_sektor = temiz_td[1]
+                        # Şirket ünvanlarının (A.Ş., SAN., TİC.) sektör olmasını engelle
+                        if len(potansiyel_sektor) > 3 and not any(ch.isdigit() for ch in potansiyel_sektor):
+                            kucuk_isim = potansiyel_sektor.lower()
+                            if "a.ş." not in kucuk_isim and "san." not in kucuk_isim and "tic." not in kucuk_isim:
+                                sektor = potansiyel_sektor[:28]
+                    # ------------------------------------
+
                     if kod not in evren:
                         evren[kod] = {
                             "kod": kod, "sirket_adi": kod, "sektor": sektor,
