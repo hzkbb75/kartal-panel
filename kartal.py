@@ -1124,7 +1124,7 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>KARTAL — Dinamik BIST Portföy Kalkanı & Serkan Ünal Teftiş Masası</title>
+    <title>KARTAL — Dinamik BIST Radar</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦅</text></svg>">
     <style>
         body {{ background-color: #0b0e14; color: #e2e8f0; font-family: monospace, system-ui; margin: 0; padding: 24px; }}
@@ -1205,13 +1205,19 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
 
     {sektor_paneli_html}
 
-    <div style="text-align: center; margin-bottom: 20px;">
-        <button onclick="hisseFiltrele('portfoy')" id="btn-portfoy" class="btn-filtre aktif">🛡️ Portföy ({sayi_portfoy})</button>
-        <button onclick="hisseFiltrele('radar')" id="btn-radar" class="btn-filtre">🎯 Radar ({sayi_radar})</button>
-        <button onclick="hisseFiltrele('tum')" id="btn-tum" class="btn-filtre">🌐 Tümü ({sayi_tum})</button>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <div>
+            <button onclick="hisseFiltrele('portfoy')" id="btn-portfoy" class="btn-filtre aktif">🛡️ Portföy ({sayi_portfoy})</button>
+            <button onclick="hisseFiltrele('radar')" id="btn-radar" class="btn-filtre">🎯 Radar ({sayi_radar})</button>
+            <button onclick="hisseFiltrele('tum')" id="btn-tum" class="btn-filtre">🌐 Tümü ({sayi_tum})</button>
+        </div>
+        <div>
+            <input type="text" id="hisseArama" onkeyup="tablodaAra()" placeholder="Hisse Kodu veya Adı Ara..." 
+            style="padding: 10px 15px; width: 250px; border-radius: 6px; border: 1px solid #334155; background-color: #1e293b; color: #f8fafc; font-weight:bold; font-family: monospace;">
+        </div>
     </div>
 
-    <table>
+    <table id="portfoy-tablosu">
         <thead>
             <tr>
                 <th>Kod</th><th>Sektör</th><th>Hendek</th><th>F-Skor</th><th>Mevcut Lot</th><th>Güncel Fiyat</th><th>Mevcut Tutar</th><th>Mevcut %</th><th>Hedef %</th><th>Hedef Tutar</th><th>Hedef Lot</th><th>Pazartesi Fark Lot</th><th>Aksiyon</th>
@@ -1248,6 +1254,36 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
     <script>
         
     const KARNELER = {karneler_json_str};
+
+        // --- YENİ EKLENEN ARAMA (SEARCH) MOTORU ---
+        function tablodaAra() {{
+            const input = document.getElementById("hisseArama").value.toUpperCase();
+            const table = document.getElementById("portfoy-tablosu");
+            const tr = table.getElementsByTagName("tr");
+            
+            // Eğer arama kutusu doluysa butonları devre dışı bırakıp hepsini gösterelim
+            if(input.length > 0) {{
+                document.querySelectorAll('.btn-filtre').forEach(b => b.classList.remove('aktif'));
+            }} else {{
+                hisseFiltrele('portfoy'); // Kutu boşalırsa tekrar portföye dön
+                return;
+            }}
+
+            for (let i = 1; i < tr.length; i++) {{
+                const tdKod = tr[i].getElementsByTagName("td")[0];
+                const tdAd = tr[i].getElementsByTagName("td")[1]; // Sektör/Ad kısmı
+                if (tdKod || tdAd) {{
+                    const txtKod = tdKod.textContent || tdKod.innerText;
+                    const txtAd = tdAd.textContent || tdAd.innerText;
+                    if (txtKod.toUpperCase().indexOf(input) > -1 || txtAd.toUpperCase().indexOf(input) > -1) {{
+                        tr[i].style.display = "";
+                    }} else {{
+                        tr[i].style.display = "none";
+                    }}
+                }}
+            }}
+        }}
+        // ------------------------------------------
 
         // --- YENİ EKLENEN FİLTRE MOTORU ---
         function hisseFiltrele(tur) {{
