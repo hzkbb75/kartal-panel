@@ -2468,6 +2468,47 @@ if __name__ == "__main__":
     sektor_paneli_html = uret_sektor_paneli_html(mevcut_sektorler, nakit_orani, nakit_tl, gercek_kasa_bulundu)
     uret_portfoy_kalkani_html(sirali_liste, karneler, toplam_portfoy_tl, hisse_portfoy_tl, nakit_tl, len(sirket_havuzu), sektor_paneli_html)
 
+    # ==============================================================================
+    # FAZ 9: ROTASYON VE ALARM MOTORU (HAFIZA KARŞILAŞTIRMASI)
+    # ==============================================================================
+    ONCEKI_TARAMA_YOLU = os.path.join(PORTFOY_DIR, "onceki_tarama.json")
+    
+    # 1. Güncel Hedef 60 Kadrosunu Çıkar
+    yeni_kadro_kodlari = {x["Kod"] for x in tablo_verileri if x["kadroda"]}
+    
+    # 2. Önceki Tarama Hafızasını Yükle
+    onceki_kadro = set()
+    if os.path.exists(ONCEKI_TARAMA_YOLU):
+        try:
+            with open(ONCEKI_TARAMA_YOLU, "r", encoding="utf-8") as f:
+                eski_veri = json.load(f)
+                onceki_kadro = set(eski_veri.get("hedef_60_kadrosu", []))
+        except Exception:
+            pass
+
+    # 3. Kümelerle Farkı (Delta) Bul
+    yeni_girenler = yeni_kadro_kodlari - onceki_kadro if onceki_kadro else set()
+    cikanlar = onceki_kadro - yeni_kadro_kodlari if onceki_kadro else set()
+
+    rotasyon_alarmi = None
+    if yeni_girenler or cikanlar:
+        rotasyon_alarmi = {
+            "girenler": list(yeni_girenler),
+            "cikanlar": list(cikanlar),
+            "zaman": datetime.now().strftime("%d.%m.%Y %H:%M")
+        }
+        print("\n🦅 KARTAL ROTASYON ALARMI:")
+        if yeni_girenler: print(f"  🟢 KADROYA YENİ GİRENLER: {', '.join(yeni_girenler)}")
+        if cikanlar: print(f"  🔴 KADRODAN DÜŞENLER: {', '.join(cikanlar)}")
+
+    # 4. Yeni Durumu Hafızaya Yaz (Bir sonraki çalışma için)
+    yeni_tarama_verisi = {
+        "tarih": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "hedef_60_kadrosu": list(yeni_kadro_kodlari)
+    }
+    with open(ONCEKI_TARAMA_YOLU, "w", encoding="utf-8") as f:
+        json.dump(yeni_tarama_verisi, f, ensure_ascii=False, indent=2)
+
     df_masa = pd.DataFrame(tablo_verileri)
     df_masa.to_csv(DINAMIK_MASA_CSV_YOLU, sep=";", index=False, encoding="utf-8-sig")
 
