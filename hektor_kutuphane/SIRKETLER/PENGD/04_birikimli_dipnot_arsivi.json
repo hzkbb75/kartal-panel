@@ -1,6 +1,6 @@
 {
   "kod": "PENGD",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 3.2,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -575 Mn ₺ (ÖZK %-11.6)<br><strong>Ham YPP:</strong> -575 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.2 (61 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.27x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": -15,
-      "dso_delta": 10.7,
       "tutarlilik_raporu": [
         "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
-      ]
+      ],
+      "dts_delta": -15,
+      "dso_delta": 10.7
     }
   }
 }

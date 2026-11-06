@@ -1,6 +1,6 @@
 {
   "kod": "YYLGD",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 10.8,
@@ -96,11 +96,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 6.71 Mr ₺ (ÖZK %+37.0)<br><strong>Ham YPP:</strong> -7.91 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.4 (77 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.90x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": -3.0,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%22.7 açıldı (DSO: 46.7 gün)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": -3.0
     }
   }
 }

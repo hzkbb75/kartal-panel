@@ -1,6 +1,6 @@
 {
   "kod": "TMPOL",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 38.8,
@@ -99,12 +99,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -221 Mn ₺ (ÖZK %-23.5)<br><strong>Ham YPP:</strong> -221 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.9 (18 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.32x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -60.2,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%17.8 açıldı (DSO: 117.4 gün).",
         "🔴 Faiz karşılama oranı 0.95x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -60.2
     }
   }
 }

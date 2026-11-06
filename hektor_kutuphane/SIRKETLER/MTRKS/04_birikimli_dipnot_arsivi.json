@@ -1,6 +1,6 @@
 {
   "kod": "MTRKS",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 274.9,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -1 Mn ₺ (ÖZK %-0.0)<br><strong>Ham YPP:</strong> -1 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %7.6 (94 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.22x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -4.7,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%70.4)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -4.7
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "kod": "GEREL",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 85.3,
@@ -96,12 +96,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -547 Mn ₺ (ÖZK %-13.3)<br><strong>Ham YPP:</strong> -547 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %5.7 (236 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.64x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 20,
-      "dso_delta": 4.6,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%9.0): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%58.8 açıldı (DSO: 113.6 gün)."
-      ]
+      ],
+      "dts_delta": 20,
+      "dso_delta": 4.6
     }
   }
 }

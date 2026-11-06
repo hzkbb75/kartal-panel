@@ -1,6 +1,6 @@
 {
   "kod": "EGSER",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 81.2,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -2.43 Mr ₺ (ÖZK %-114.2)<br><strong>Ham YPP:</strong> -2.43 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %12.7 (270 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 2.02x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -9.2,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%140.8 açıldı (DSO: 153.7 gün).",
         "🔴 Faiz karşılama oranı 0.81x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -9.2
     }
   }
 }

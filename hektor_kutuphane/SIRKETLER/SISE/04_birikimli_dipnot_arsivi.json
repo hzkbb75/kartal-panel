@@ -1,6 +1,6 @@
 {
   "kod": "SISE",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 3.5,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 17.12 Mr ₺ (ÖZK %+6.3)<br><strong>Ham YPP:</strong> -122.39 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %5.5 (14.82 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.31x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 4.2,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%54.5 açıldı (DSO: 75.5 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 4.2
     }
   }
 }

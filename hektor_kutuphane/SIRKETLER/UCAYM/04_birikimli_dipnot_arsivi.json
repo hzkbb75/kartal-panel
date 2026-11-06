@@ -1,6 +1,6 @@
 {
   "kod": "UCAYM",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 209.2,
@@ -97,13 +97,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 50 Mn ₺ (ÖZK %+2.3)<br><strong>Ham YPP:</strong> 50 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.6 (35 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.43x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 30,
-      "dso_delta": 1.0,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%10.37): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%36.5).",
         "🔴 Faiz karşılama oranı 0.81x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 30,
+      "dso_delta": 1.0
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "kod": "EKOS",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 49.7,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -441 Mn ₺ (ÖZK %-12.4)<br><strong>Ham YPP:</strong> -441 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.1 (41 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.51x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -14.5,
       "tutarlilik_raporu": [
         "🔴 Faiz karşılama oranı 0.61x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -14.5
     }
   }
 }

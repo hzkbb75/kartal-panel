@@ -1,6 +1,6 @@
 {
   "kod": "BRISA",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 21.6,
@@ -100,13 +100,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -2.80 Mr ₺ (ÖZK %-10.0)<br><strong>Ham YPP:</strong> -5.54 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %12.2 (3.42 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.01x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": -4.0,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%95.9).",
         "🟡 Alacak-Ciro makası +%22.6 açıldı (DSO: 76.8 gün).",
         "🔴 Faiz karşılama oranı 0.92x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": -4.0
     }
   }
 }

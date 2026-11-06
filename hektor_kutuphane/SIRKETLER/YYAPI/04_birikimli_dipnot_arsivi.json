@@ -1,6 +1,6 @@
 {
   "kod": "YYAPI",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 2245.8,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 110 Mn ₺ (ÖZK %+1.9)<br><strong>Ham YPP:</strong> 110 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.4 (24 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.05x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -8044.6,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%3234.7 açıldı (DSO: 23441.5 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -8044.6
     }
   }
 }

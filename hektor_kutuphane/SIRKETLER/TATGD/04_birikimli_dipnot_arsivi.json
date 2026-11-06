@@ -1,6 +1,6 @@
 {
   "kod": "TATGD",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 12.2,
@@ -96,11 +96,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -1.79 Mr ₺ (ÖZK %-21.2)<br><strong>Ham YPP:</strong> -1.79 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.2 (182 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.49x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -3.6,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%16.2 açıldı (DSO: 64.3 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -3.6
     }
   }
 }

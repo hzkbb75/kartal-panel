@@ -1,6 +1,6 @@
 {
   "kod": "MAKIM",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 30.0,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -202 Mn ₺ (ÖZK %-15.1)<br><strong>Ham YPP:</strong> -202 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.1 (29 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.50x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 5,
-      "dso_delta": -4.6,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%11.38): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%57.6 açıldı (DSO: 84.3 gün)."
-      ]
+      ],
+      "dts_delta": 5,
+      "dso_delta": -4.6
     }
   }
 }

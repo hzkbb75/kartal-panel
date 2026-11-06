@@ -1,6 +1,6 @@
 {
   "kod": "ONRYT",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 705.4,
@@ -98,13 +98,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 407 Mn ₺ (ÖZK %+13.3)<br><strong>Ham YPP:</strong> 407 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.4 (43 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.07x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": -19.3,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%55.6).",
         "🟡 Alacak-Ciro makası +%94.9 açıldı (DSO: 55.5 gün).",
         "🔴 Faiz karşılama oranı 0.76x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": -19.3
     }
   }
 }

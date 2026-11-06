@@ -1,6 +1,6 @@
 {
   "kod": "OFSYM",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 104.9,
@@ -96,11 +96,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -2.60 Mr ₺ (ÖZK %-51.3)<br><strong>Ham YPP:</strong> -2.60 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.9 (46 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.91x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": -15,
-      "dso_delta": 3.2,
       "tutarlilik_raporu": [
         "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
-      ]
+      ],
+      "dts_delta": -15,
+      "dso_delta": 3.2
     }
   }
 }

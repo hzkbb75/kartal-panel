@@ -1,6 +1,6 @@
 {
   "kod": "FORTE",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 92.1,
@@ -98,11 +98,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 322 Mn ₺ (ÖZK %+10.3)<br><strong>Ham YPP:</strong> 322 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %4.7 (147 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.94x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 12.1,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%65.6 açıldı (DSO: 111.2 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 12.1
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "kod": "DURDO",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 16.3,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -677 Mn ₺ (ÖZK %-40.1)<br><strong>Ham YPP:</strong> -677 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %5.3 (90 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.84x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 4.0,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%27.7 açıldı (DSO: 94.7 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 4.0
     }
   }
 }

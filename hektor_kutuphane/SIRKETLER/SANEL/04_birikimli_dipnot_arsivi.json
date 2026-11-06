@@ -1,6 +1,6 @@
 {
   "kod": "SANEL",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 15192.2,
@@ -96,11 +96,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 0 Mn ₺ (ÖZK %+0.0)<br><strong>Ham YPP:</strong> 0 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %13.1 (34 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.64x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": -20,
-      "dso_delta": 11.0,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%40.1 açıldı (DSO: 121.7 gün)."
-      ]
+      ],
+      "dts_delta": -20,
+      "dso_delta": 11.0
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "kod": "BIENY",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 69.6,
@@ -99,12 +99,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -4.96 Mr ₺ (ÖZK %-34.6)<br><strong>Ham YPP:</strong> -4.96 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.6 (376 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.88x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 27.6,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%39.0 açıldı (DSO: 237.3 gün).",
         "🔴 Faiz karşılama oranı 1.15x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 27.6
     }
   }
 }

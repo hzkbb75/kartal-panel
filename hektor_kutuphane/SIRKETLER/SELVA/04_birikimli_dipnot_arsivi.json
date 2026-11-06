@@ -1,6 +1,6 @@
 {
   "kod": "SELVA",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 112.6,
@@ -97,13 +97,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 0 Mn ₺ (ÖZK %+0.0)<br><strong>Ham YPP:</strong> 0 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.4 (11 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.78x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 30,
-      "dso_delta": 32.6,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%82.5).",
         "🟡 Alacak-Ciro makası +%47.4 açıldı (DSO: 55.5 gün).",
         "🔴 Faiz karşılama oranı 0.8x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 30,
+      "dso_delta": 32.6
     }
   }
 }

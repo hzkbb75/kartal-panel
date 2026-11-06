@@ -1,6 +1,6 @@
 {
   "kod": "VKING",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 7.2,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -555 Mn ₺ (ÖZK %-55514.6)<br><strong>Ham YPP:</strong> -555 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %3371.9 (34 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 4237.75x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -8.2,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%27.5 açıldı (DSO: 79.2 gün).",
         "🔴 Faiz karşılama oranı -1.12x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -8.2
     }
   }
 }

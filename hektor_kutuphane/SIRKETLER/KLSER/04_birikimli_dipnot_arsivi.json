@@ -1,6 +1,6 @@
 {
   "kod": "KLSER",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 6.0,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -4.85 Mr ₺ (ÖZK %-71.1)<br><strong>Ham YPP:</strong> -4.85 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %11.4 (776 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.59x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -8.8,
       "tutarlilik_raporu": [
         "🔴 Faiz karşılama oranı 1.28x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -8.8
     }
   }
 }

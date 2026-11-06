@@ -1,6 +1,6 @@
 {
   "kod": "SILVR",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 14.4,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -191 Mn ₺ (ÖZK %-10.3)<br><strong>Ham YPP:</strong> -191 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %7.9 (146 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.59x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 22.2,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%121.3 açıldı (DSO: 66.2 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 22.2
     }
   }
 }

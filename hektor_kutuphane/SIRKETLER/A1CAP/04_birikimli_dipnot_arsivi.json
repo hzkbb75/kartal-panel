@@ -1,6 +1,6 @@
 {
   "kod": "A1CAP",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 1535.8,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 1.48 Mr ₺ (ÖZK %+16.2)<br><strong>Ham YPP:</strong> 1.48 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.6 (236 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 2.02x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 26.6,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%67.9).",
         "🟡 Alacak-Ciro makası +%42.9 açıldı (DSO: 134.2 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 26.6
     }
   }
 }

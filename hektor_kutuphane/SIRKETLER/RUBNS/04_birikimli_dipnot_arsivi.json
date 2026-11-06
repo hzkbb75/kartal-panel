@@ -1,6 +1,6 @@
 {
   "kod": "RUBNS",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 82.4,
@@ -99,13 +99,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -4.90 Mr ₺ (ÖZK %-90.4)<br><strong>Ham YPP:</strong> -4.90 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.3 (15 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.15x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 20,
-      "dso_delta": -41.4,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%49.08): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%299.9 açıldı (DSO: 336.6 gün).",
         "🔴 Faiz karşılama oranı 1.02x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 20,
+      "dso_delta": -41.4
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "kod": "KLKIM",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 169.7,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 33 Mn ₺ (ÖZK %+0.4)<br><strong>Ham YPP:</strong> 33 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.1 (152 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.34x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 2.0,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%7.87): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%55.8 açıldı (DSO: 102.6 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 2.0
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "kod": "PASEU",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 157.9,
@@ -101,14 +101,14 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 377 Mn ₺ (ÖZK %+9.0)<br><strong>Ham YPP:</strong> 377 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.4 (15 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.50x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 20,
-      "dso_delta": 12.2,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%10.53): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%39.3).",
         "🟡 Alacak-Ciro makası +%67.1 açıldı (DSO: 288.5 gün).",
         "🔴 Faiz karşılama oranı 1.21x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 20,
+      "dso_delta": 12.2
     }
   }
 }

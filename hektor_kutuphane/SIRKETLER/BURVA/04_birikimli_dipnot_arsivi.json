@@ -1,6 +1,6 @@
 {
   "kod": "BURVA",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 771.6,
@@ -98,13 +98,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -55 Mn ₺ (ÖZK %-58.8)<br><strong>Ham YPP:</strong> -55 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %3.2 (3 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.65x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 44.1,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%14.71): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%325.5 açıldı (DSO: 67.9 gün).",
         "🔴 Faiz karşılama oranı -2.97x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 44.1
     }
   }
 }

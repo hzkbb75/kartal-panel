@@ -1,6 +1,6 @@
 {
   "kod": "CIMSA",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 1.6,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -222 Mn ₺ (ÖZK %-0.6)<br><strong>Ham YPP:</strong> -9.95 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %14.1 (5.27 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.73x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 2.2,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%28.0 açıldı (DSO: 70.8 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 2.2
     }
   }
 }

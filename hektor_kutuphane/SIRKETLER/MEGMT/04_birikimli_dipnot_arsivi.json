@@ -1,6 +1,6 @@
 {
   "kod": "MEGMT",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 5.5,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -4.51 Mr ₺ (ÖZK %-89.4)<br><strong>Ham YPP:</strong> -4.51 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %3.6 (184 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 2.04x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 5.7,
       "tutarlilik_raporu": [
         "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 5.7
     }
   }
 }

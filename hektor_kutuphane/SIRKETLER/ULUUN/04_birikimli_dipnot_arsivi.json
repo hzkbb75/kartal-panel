@@ -1,6 +1,6 @@
 {
   "kod": "ULUUN",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 182.6,
@@ -101,14 +101,14 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -5.82 Mr ₺ (ÖZK %-34.9)<br><strong>Ham YPP:</strong> -12.95 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.3 (211 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.78x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 0.0,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%5.13): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%54.0).",
         "🟡 Alacak-Ciro makası +%54.3 açıldı (DSO: 67.3 gün).",
         "🔴 Faiz karşılama oranı 0.77x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 0.0
     }
   }
 }

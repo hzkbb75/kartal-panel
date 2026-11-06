@@ -1,6 +1,6 @@
 {
   "kod": "GOODY",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 78.4,
@@ -96,12 +96,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -8.86 Mr ₺ (ÖZK %-545.1)<br><strong>Ham YPP:</strong> -8.86 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %78.3 (1.27 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 9.65x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": -0.1,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%26.8 açıldı (DSO: 61.2 gün).",
         "🔴 Faiz karşılama oranı -0.13x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": -0.1
     }
   }
 }

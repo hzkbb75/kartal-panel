@@ -1,6 +1,6 @@
 {
   "kod": "FADE",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 273.5,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 66 Mn ₺ (ÖZK %+3.0)<br><strong>Ham YPP:</strong> 66 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.5 (11 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.11x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 0.3,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%50.9).",
         "🟡 Alacak-Ciro makası +%35.6 açıldı (DSO: 68.5 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 0.3
     }
   }
 }

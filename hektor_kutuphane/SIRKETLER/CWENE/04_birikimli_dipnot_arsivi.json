@@ -1,6 +1,6 @@
 {
   "kod": "CWENE",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 25.2,
@@ -99,12 +99,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -6.93 Mr ₺ (ÖZK %-39.1)<br><strong>Ham YPP:</strong> -6.93 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.9 (168 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.04x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 3.3,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%45.7).",
         "🟡 Alacak-Ciro makası +%132.7 açıldı (DSO: 188.1 gün)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 3.3
     }
   }
 }

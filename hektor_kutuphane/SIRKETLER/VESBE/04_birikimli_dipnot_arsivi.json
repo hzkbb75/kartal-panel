@@ -1,6 +1,6 @@
 {
   "kod": "VESBE",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 10.0,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -17.56 Mr ₺ (ÖZK %-42.5)<br><strong>Ham YPP:</strong> -17.57 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %3.4 (1.40 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.06x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 2.7,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%23.9 açıldı (DSO: 88.3 gün).",
         "🔴 Faiz karşılama oranı -5.19x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 2.7
     }
   }
 }

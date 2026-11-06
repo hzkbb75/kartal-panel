@@ -1,6 +1,6 @@
 {
   "kod": "EBEBK",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 38.9,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -30 Mn ₺ (ÖZK %-0.5)<br><strong>Ham YPP:</strong> -30 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %3.0 (174 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.91x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": -15,
-      "dso_delta": -0.2,
       "tutarlilik_raporu": [
         "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
-      ]
+      ],
+      "dts_delta": -15,
+      "dso_delta": -0.2
     }
   }
 }

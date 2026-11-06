@@ -1,6 +1,6 @@
 {
   "kod": "TSPOR",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 2499.1,
@@ -75,13 +75,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -3.65 Mr ₺ (ÖZK %-26.8)<br><strong>Ham YPP:</strong> -3.65 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.5 (210 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.73x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -39.3,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%10.62): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%20.9 açıldı (DSO: 80.1 gün).",
         "🔴 Faiz karşılama oranı -2.01x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -39.3
     }
   }
 }

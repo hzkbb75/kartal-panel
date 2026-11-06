@@ -1,6 +1,6 @@
 {
   "kod": "HEKTS",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 9.9,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -3.39 Mr ₺ (ÖZK %-20.6)<br><strong>Ham YPP:</strong> -3.39 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.8 (298 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.91x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 30,
-      "dso_delta": 37.7,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%34.1 açıldı (DSO: 119.0 gün).",
         "🔴 Faiz karşılama oranı 0.15x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 30,
+      "dso_delta": 37.7
     }
   }
 }

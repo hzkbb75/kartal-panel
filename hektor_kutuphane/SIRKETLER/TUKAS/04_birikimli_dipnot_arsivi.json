@@ -1,6 +1,6 @@
 {
   "kod": "TUKAS",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.2,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -5.38 Mr ₺ (ÖZK %-26.8)<br><strong>Ham YPP:</strong> -5.38 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.6 (112 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.31x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 8.4,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%49.7).",
         "🟡 Alacak-Ciro makası +%68.5 açıldı (DSO: 93.6 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 8.4
     }
   }
 }

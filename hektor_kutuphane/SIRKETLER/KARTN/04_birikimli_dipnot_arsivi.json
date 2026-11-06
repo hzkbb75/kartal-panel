@@ -1,6 +1,6 @@
 {
   "kod": "KARTN",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 36.1,
@@ -96,12 +96,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 74 Mn ₺ (ÖZK %+2.6)<br><strong>Ham YPP:</strong> 74 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %5.1 (150 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.37x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 20,
-      "dso_delta": 10.6,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%10.42): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -17.83x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 20,
+      "dso_delta": 10.6
     }
   }
 }

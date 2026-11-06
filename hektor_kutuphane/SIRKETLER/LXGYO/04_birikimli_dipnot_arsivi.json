@@ -1,6 +1,6 @@
 {
   "kod": "LXGYO",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 94.8,
@@ -100,13 +100,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -17 Mn ₺ (ÖZK %-0.8)<br><strong>Ham YPP:</strong> -17 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.3 (7 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 2.59x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 185.4,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%8.01): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%51.0 açıldı (DSO: 414.9 gün).",
         "🔴 Faiz karşılama oranı -9.24x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 185.4
     }
   }
 }

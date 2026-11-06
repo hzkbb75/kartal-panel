@@ -1,6 +1,6 @@
 {
   "kod": "AKENR",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.1,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -25.23 Mr ₺ (ÖZK %-158.7)<br><strong>Ham YPP:</strong> -25.23 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.0 (155 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.99x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -0.1,
       "tutarlilik_raporu": [
         "🔴 Faiz karşılama oranı 0.91x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -0.1
     }
   }
 }

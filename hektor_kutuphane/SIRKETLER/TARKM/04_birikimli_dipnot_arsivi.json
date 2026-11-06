@@ -1,6 +1,6 @@
 {
   "kod": "TARKM",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 450.0,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -153 Mn ₺ (ÖZK %-4.7)<br><strong>Ham YPP:</strong> -153 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.1 (37 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.54x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": -5,
-      "dso_delta": -15.0,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%46.1 açıldı (DSO: 81.6 gün).",
         "🔴 Faiz karşılama oranı 1.49x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": -5,
+      "dso_delta": -15.0
     }
   }
 }

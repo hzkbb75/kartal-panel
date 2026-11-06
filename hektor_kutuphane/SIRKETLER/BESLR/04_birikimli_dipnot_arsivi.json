@@ -1,6 +1,6 @@
 {
   "kod": "BESLR",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 90.0,
@@ -101,13 +101,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -7.64 Mr ₺ (ÖZK %-38.3)<br><strong>Ham YPP:</strong> -7.64 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %5.1 (1.01 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.05x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -1.8,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%58.5).",
         "🟡 Alacak-Ciro makası +%30.0 açıldı (DSO: 53.4 gün).",
         "🔴 Faiz karşılama oranı 0.79x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -1.8
     }
   }
 }

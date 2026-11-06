@@ -1,6 +1,6 @@
 {
   "kod": "ERBOS",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 166.0,
@@ -98,13 +98,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -597 Mn ₺ (ÖZK %-15.2)<br><strong>Ham YPP:</strong> -597 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.0 (39 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.38x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 20,
-      "dso_delta": 3.0,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%5.16): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%53.3 açıldı (DSO: 83.3 gün).",
         "🔴 Faiz karşılama oranı 0.96x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 20,
+      "dso_delta": 3.0
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "kod": "TTKOM",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 6.6,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -110.53 Mr ₺ (ÖZK %-41.7)<br><strong>Ham YPP:</strong> -273.58 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %5.5 (14.68 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.50x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 1.4,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%39.7 açıldı (DSO: 49.4 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 1.4
     }
   }
 }

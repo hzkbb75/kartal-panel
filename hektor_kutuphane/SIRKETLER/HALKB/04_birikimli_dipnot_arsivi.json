@@ -1,6 +1,6 @@
 {
   "kod": "HALKB",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 0 Mn ₺ (ÖZK %+0.0)<br><strong>Ham YPP:</strong> 0 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.0 (0 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.00x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 20,
-      "dso_delta": 0.0,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%7.14): Kâr nakde dönüşmüyor."
-      ]
+      ],
+      "dts_delta": 20,
+      "dso_delta": 0.0
     }
   }
 }

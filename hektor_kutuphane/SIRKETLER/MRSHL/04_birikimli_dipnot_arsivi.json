@@ -1,6 +1,6 @@
 {
   "kod": "MRSHL",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 21.7,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -448 Mn ₺ (ÖZK %-36.2)<br><strong>Ham YPP:</strong> -448 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %74.6 (924 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 2.77x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 23.5,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%31.2 açıldı (DSO: 138.4 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 23.5
     }
   }
 }

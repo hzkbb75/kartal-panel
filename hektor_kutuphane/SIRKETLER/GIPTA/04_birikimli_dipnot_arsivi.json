@@ -1,6 +1,6 @@
 {
   "kod": "GIPTA",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 246.0,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -50 Mn ₺ (ÖZK %-1.4)<br><strong>Ham YPP:</strong> -50 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.1 (40 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.12x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 38.4,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%67.3).",
         "🟡 Alacak-Ciro makası +%40.3 açıldı (DSO: 165.1 gün)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 38.4
     }
   }
 }

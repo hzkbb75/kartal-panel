@@ -1,6 +1,6 @@
 {
   "kod": "ESEN",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 25.1,
@@ -96,11 +96,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -3.18 Mr ₺ (ÖZK %-20.0)<br><strong>Ham YPP:</strong> -3.27 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.1 (14 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.33x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": -15,
-      "dso_delta": -10.8,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%96.7)."
-      ]
+      ],
+      "dts_delta": -15,
+      "dso_delta": -10.8
     }
   }
 }

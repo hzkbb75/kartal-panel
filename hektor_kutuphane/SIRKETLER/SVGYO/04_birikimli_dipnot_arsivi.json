@@ -1,6 +1,6 @@
 {
   "kod": "SVGYO",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 2643.4,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 6 Mn ₺ (ÖZK %+0.1)<br><strong>Ham YPP:</strong> 6 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.0 (2 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.02x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -88.4,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%97.7).",
         "🟡 Alacak-Ciro makası +%28.0 açıldı (DSO: 141.6 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -88.4
     }
   }
 }

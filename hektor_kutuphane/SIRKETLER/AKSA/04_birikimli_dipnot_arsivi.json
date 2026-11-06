@@ -1,6 +1,6 @@
 {
   "kod": "AKSA",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 11.1,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -15.65 Mr ₺ (ÖZK %-42.7)<br><strong>Ham YPP:</strong> -13.53 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.7 (630 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.74x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 10.3,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%71.8 açıldı (DSO: 66.3 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 10.3
     }
   }
 }

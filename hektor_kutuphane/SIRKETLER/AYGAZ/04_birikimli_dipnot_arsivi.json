@@ -1,6 +1,6 @@
 {
   "kod": "AYGAZ",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 37.8,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -2.14 Mr ₺ (ÖZK %-2.5)<br><strong>Ham YPP:</strong> -2.14 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.5 (2.08 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.12x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 20,
-      "dso_delta": -5.6,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%5.89): Kâr nakde dönüşmüyor."
-      ]
+      ],
+      "dts_delta": 20,
+      "dso_delta": -5.6
     }
   }
 }

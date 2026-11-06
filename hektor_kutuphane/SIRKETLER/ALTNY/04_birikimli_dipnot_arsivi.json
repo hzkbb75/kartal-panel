@@ -1,6 +1,6 @@
 {
   "kod": "ALTNY",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 13.8,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 25.12 Mr ₺ (ÖZK %+467.1)<br><strong>Ham YPP:</strong> 25.12 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.7 (145 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.94x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -21.3,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%44.7 açıldı (DSO: 179.9 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -21.3
     }
   }
 }

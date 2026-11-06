@@ -1,6 +1,6 @@
 {
   "kod": "YAPRK",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 64.5,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 20 Mn ₺ (ÖZK %+2.4)<br><strong>Ham YPP:</strong> 20 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.7 (14 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.15x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 20,
-      "dso_delta": -1.9,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%5.86): Kâr nakde dönüşmüyor."
-      ]
+      ],
+      "dts_delta": 20,
+      "dso_delta": -1.9
     }
   }
 }

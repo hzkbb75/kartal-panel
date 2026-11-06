@@ -1,6 +1,6 @@
 {
   "kod": "ORGE",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 1250.0,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 117 Mn ₺ (ÖZK %+2.3)<br><strong>Ham YPP:</strong> 117 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.4 (23 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.34x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 34.5,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%45.3 açıldı (DSO: 59.5 gün)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 34.5
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "kod": "KONYA",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 79.7,
@@ -97,11 +97,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -186 Mn ₺ (ÖZK %-3.5)<br><strong>Ham YPP:</strong> -186 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %5.1 (272 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.36x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": -15,
-      "dso_delta": 4.0,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%49.2 açıldı (DSO: 79.2 gün)."
-      ]
+      ],
+      "dts_delta": -15,
+      "dso_delta": 4.0
     }
   }
 }

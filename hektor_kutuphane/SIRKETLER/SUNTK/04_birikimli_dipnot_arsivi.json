@@ -1,6 +1,6 @@
 {
   "kod": "SUNTK",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 63.4,
@@ -96,11 +96,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 194 Mn ₺ (ÖZK %+2.4)<br><strong>Ham YPP:</strong> -1.40 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.2 (183 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.56x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 3.7,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%96.2)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 3.7
     }
   }
 }

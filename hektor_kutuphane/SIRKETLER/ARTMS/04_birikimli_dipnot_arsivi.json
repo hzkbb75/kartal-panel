@@ -1,6 +1,6 @@
 {
   "kod": "ARTMS",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 26.1,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -161 Mn ₺ (ÖZK %-6.2)<br><strong>Ham YPP:</strong> -263 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.5 (13 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.22x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -119.2,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%58.7 açıldı (DSO: 273.2 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -119.2
     }
   }
 }

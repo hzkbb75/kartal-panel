@@ -1,6 +1,6 @@
 {
   "kod": "HURGZ",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 494.2,
@@ -96,11 +96,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 133 Mn ₺ (ÖZK %+7.1)<br><strong>Ham YPP:</strong> 133 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %10.3 (193 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 2.14x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": -15,
-      "dso_delta": 3.5,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%120.0 açıldı (DSO: 104.9 gün)."
-      ]
+      ],
+      "dts_delta": -15,
+      "dso_delta": 3.5
     }
   }
 }

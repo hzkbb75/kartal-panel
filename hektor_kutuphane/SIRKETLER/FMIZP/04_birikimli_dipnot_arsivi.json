@@ -1,6 +1,6 @@
 {
   "kod": "FMIZP",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 41.1,
@@ -96,11 +96,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 422 Mn ₺ (ÖZK %+59.2)<br><strong>Ham YPP:</strong> 422 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %7.8 (56 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.13x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": -15,
-      "dso_delta": -17.7,
       "tutarlilik_raporu": [
         "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
-      ]
+      ],
+      "dts_delta": -15,
+      "dso_delta": -17.7
     }
   }
 }

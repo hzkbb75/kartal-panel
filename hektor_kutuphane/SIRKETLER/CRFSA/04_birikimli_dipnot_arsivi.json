@@ -1,6 +1,6 @@
 {
   "kod": "CRFSA",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 15.1,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 601 Mn ₺ (ÖZK %+60069.9)<br><strong>Ham YPP:</strong> 601 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %195411.4 (1.95 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 42682.95x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 0.8,
       "tutarlilik_raporu": [
         "🔴 Faiz karşılama oranı -9.51x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 0.8
     }
   }
 }

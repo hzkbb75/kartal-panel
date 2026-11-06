@@ -1,6 +1,6 @@
 {
   "kod": "ALVES",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 19.6,
@@ -98,12 +98,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -256 Mn ₺ (ÖZK %-7.9)<br><strong>Ham YPP:</strong> -256 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.5 (16 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 2.37x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 7.1,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%56.8 açıldı (DSO: 73.9 gün).",
         "🔴 Faiz karşılama oranı 1.34x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 7.1
     }
   }
 }

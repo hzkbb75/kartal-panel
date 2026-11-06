@@ -1,6 +1,6 @@
 {
   "kod": "KCHOL",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 5.9,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -109.64 Mr ₺ (ÖZK %-13.8)<br><strong>Ham YPP:</strong> -677.29 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %9.0 (71.14 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 5.04x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": -15,
-      "dso_delta": -5.4,
       "tutarlilik_raporu": [
         "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
-      ]
+      ],
+      "dts_delta": -15,
+      "dso_delta": -5.4
     }
   }
 }

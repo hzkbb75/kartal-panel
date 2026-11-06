@@ -1,6 +1,6 @@
 {
   "kod": "ATAKP",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 199.3,
@@ -99,12 +99,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -85 Mn ₺ (ÖZK %-1.2)<br><strong>Ham YPP:</strong> -280 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.5 (32 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.07x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": -15,
-      "dso_delta": 34.9,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%31.8 açıldı (DSO: 83.7 gün).",
         "🔴 Faiz karşılama oranı 0.31x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": -15,
+      "dso_delta": 34.9
     }
   }
 }

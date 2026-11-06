@@ -1,6 +1,6 @@
 {
   "kod": "SARKY",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 13.3,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -4.41 Mr ₺ (ÖZK %-32.9)<br><strong>Ham YPP:</strong> -4.47 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %3.7 (501 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.80x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 0.6,
       "tutarlilik_raporu": [
         "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 0.6
     }
   }
 }

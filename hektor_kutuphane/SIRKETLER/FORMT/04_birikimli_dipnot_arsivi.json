@@ -1,6 +1,6 @@
 {
   "kod": "FORMT",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 67.8,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 12 Mn ₺ (ÖZK %+0.4)<br><strong>Ham YPP:</strong> 12 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.3 (35 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.22x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -105.9,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%54.2 açıldı (DSO: 140.0 gün).",
         "🔴 Faiz karşılama oranı 1.43x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -105.9
     }
   }
 }

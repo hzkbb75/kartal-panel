@@ -1,6 +1,6 @@
 {
   "kod": "IHYAY",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 229.8,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 10 Mn ₺ (ÖZK %+1.8)<br><strong>Ham YPP:</strong> 10 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %43.5 (239 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.54x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 14.1,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%66.6 açıldı (DSO: 115.1 gün).",
         "🔴 Faiz karşılama oranı -2.58x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 14.1
     }
   }
 }

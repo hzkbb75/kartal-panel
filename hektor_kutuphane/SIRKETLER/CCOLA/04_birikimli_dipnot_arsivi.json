@@ -1,6 +1,6 @@
 {
   "kod": "CCOLA",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 2.8,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -14.31 Mr ₺ (ÖZK %-15.6)<br><strong>Ham YPP:</strong> -41.22 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %3.2 (2.91 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.02x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 5.2,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%31.5 açıldı (DSO: 60.5 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 5.2
     }
   }
 }

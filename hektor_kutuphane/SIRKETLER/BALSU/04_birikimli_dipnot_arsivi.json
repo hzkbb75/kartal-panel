@@ -1,6 +1,6 @@
 {
   "kod": "BALSU",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 11.9,
@@ -50,13 +50,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -7.19 Mr ₺ (ÖZK %-197.0)<br><strong>Ham YPP:</strong> -7.19 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.8 (66 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 4.91x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 21.1,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%10.07): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%57.2 açıldı (DSO: 87.2 gün).",
         "🔴 Faiz karşılama oranı 0.39x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 21.1
     }
   }
 }

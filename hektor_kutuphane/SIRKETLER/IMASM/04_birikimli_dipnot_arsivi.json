@@ -1,6 +1,6 @@
 {
   "kod": "IMASM",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 216.9,
@@ -98,14 +98,14 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 0 Mn ₺ (ÖZK %+0.0)<br><strong>Ham YPP:</strong> 0 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.7 (92 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.67x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 50,
-      "dso_delta": 22.1,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%5.02): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%96.1).",
         "🟡 Alacak-Ciro makası +%28.2 açıldı (DSO: 132.7 gün).",
         "🔴 Faiz karşılama oranı 0.18x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 50,
+      "dso_delta": 22.1
     }
   }
 }

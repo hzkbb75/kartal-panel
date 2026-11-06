@@ -1,6 +1,6 @@
 {
   "kod": "SEYKM",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 8686.8,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 5 Mn ₺ (ÖZK %+0.8)<br><strong>Ham YPP:</strong> 5 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.9 (11 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.11x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -9.4,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%43.7 açıldı (DSO: 74.7 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -9.4
     }
   }
 }

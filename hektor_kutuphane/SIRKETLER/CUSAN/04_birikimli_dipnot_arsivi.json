@@ -1,6 +1,6 @@
 {
   "kod": "CUSAN",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 23.1,
@@ -98,12 +98,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -1.85 Mr ₺ (ÖZK %-240.0)<br><strong>Ham YPP:</strong> -1.85 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %15.9 (122 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 4.70x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -14.3,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%55.7 açıldı (DSO: 122.3 gün).",
         "🔴 Faiz karşılama oranı -0.66x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -14.3
     }
   }
 }

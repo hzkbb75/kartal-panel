@@ -1,6 +1,6 @@
 {
   "kod": "SEKUR",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 23.0,
@@ -96,12 +96,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -87 Mn ₺ (ÖZK %-14.5)<br><strong>Ham YPP:</strong> -87 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.7 (10 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 2.35x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 12.0,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%16.6 açıldı (DSO: 136.7 gün).",
         "🔴 Faiz karşılama oranı 1.38x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 12.0
     }
   }
 }

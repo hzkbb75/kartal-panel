@@ -1,6 +1,6 @@
 {
   "kod": "DOHOL",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 49.7,
@@ -100,13 +100,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 15.95 Mr ₺ (ÖZK %+16.7)<br><strong>Ham YPP:</strong> 11.00 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %43.2 (41.19 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.91x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 2.9,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%62.6).",
         "🟡 Alacak-Ciro makası +%20.8 açıldı (DSO: 54.0 gün).",
         "🔴 Faiz karşılama oranı 0.92x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 2.9
     }
   }
 }

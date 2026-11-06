@@ -1,6 +1,6 @@
 {
   "kod": "MAKTK",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 17.5,
@@ -100,14 +100,14 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -58 Mn ₺ (ÖZK %-2.8)<br><strong>Ham YPP:</strong> -58 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %5.6 (114 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.24x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 65,
-      "dso_delta": 45.4,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%14.34): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%98.3).",
         "🟡 Alacak-Ciro makası +%20.7 açıldı (DSO: 266.0 gün).",
         "🔴 Faiz karşılama oranı 0.49x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 65,
+      "dso_delta": 45.4
     }
   }
 }

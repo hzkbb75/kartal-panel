@@ -1,6 +1,6 @@
 {
   "kod": "OZYSR",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 50.7,
@@ -101,13 +101,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -688 Mn ₺ (ÖZK %-19.0)<br><strong>Ham YPP:</strong> -688 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.9 (106 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.37x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 1.4,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%64.3).",
         "🟡 Alacak-Ciro makası +%27.0 açıldı (DSO: 81.9 gün).",
         "🔴 Faiz karşılama oranı 0.87x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 1.4
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "kod": "VEYAS",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 119379.6,
@@ -98,12 +98,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -119 Mn ₺ (ÖZK %-0.7)<br><strong>Ham YPP:</strong> -119 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %4.7 (798 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.45x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -10.3,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%6.28): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 1.36x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -10.3
     }
   }
 }

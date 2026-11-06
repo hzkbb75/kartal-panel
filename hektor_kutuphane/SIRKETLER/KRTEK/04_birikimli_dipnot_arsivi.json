@@ -1,6 +1,6 @@
 {
   "kod": "KRTEK",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 32.4,
@@ -101,13 +101,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 102 Mn ₺ (ÖZK %+5.4)<br><strong>Ham YPP:</strong> 102 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %3.8 (72 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.48x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 0.6,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%44.0).",
         "🟡 Alacak-Ciro makası +%20.2 açıldı (DSO: 81.1 gün).",
         "🔴 Faiz karşılama oranı 0.74x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 0.6
     }
   }
 }

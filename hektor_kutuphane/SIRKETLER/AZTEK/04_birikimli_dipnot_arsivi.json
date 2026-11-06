@@ -1,6 +1,6 @@
 {
   "kod": "AZTEK",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 74.2,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 563 Mn ₺ (ÖZK %+30.2)<br><strong>Ham YPP:</strong> 563 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.8 (53 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.91x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -2.5,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%58.2 açıldı (DSO: 102.3 gün).",
         "🔴 Faiz karşılama oranı 0.51x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -2.5
     }
   }
 }

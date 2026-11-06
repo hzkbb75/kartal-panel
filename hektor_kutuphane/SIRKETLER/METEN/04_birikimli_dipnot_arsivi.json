@@ -1,6 +1,6 @@
 {
   "kod": "METEN",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -96,12 +96,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -5.15 Mr ₺ (ÖZK %-30.3)<br><strong>Ham YPP:</strong> -5.15 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.1 (20 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.15x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 16.2,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%52.9).",
         "🟡 Alacak-Ciro makası +%41.9 açıldı (DSO: 59.8 gün)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 16.2
     }
   }
 }

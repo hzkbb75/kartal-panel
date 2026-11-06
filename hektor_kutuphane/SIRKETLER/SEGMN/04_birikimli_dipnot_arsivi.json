@@ -1,6 +1,6 @@
 {
   "kod": "SEGMN",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 893.6,
@@ -98,12 +98,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -11 Mn ₺ (ÖZK %-0.2)<br><strong>Ham YPP:</strong> -11 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.9 (54 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.08x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -11.9,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%35.5).",
         "🟡 Alacak-Ciro makası +%27.5 açıldı (DSO: 69.9 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -11.9
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "kod": "ASUZU",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 3.6,
@@ -99,13 +99,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -5.46 Mr ₺ (ÖZK %-35.3)<br><strong>Ham YPP:</strong> -6.79 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %6.9 (1.06 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.56x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -6.8,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%10.78): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%86.5 açıldı (DSO: 132.2 gün).",
         "🔴 Faiz karşılama oranı -6.13x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -6.8
     }
   }
 }

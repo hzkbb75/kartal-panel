@@ -1,6 +1,6 @@
 {
   "kod": "DYOBY",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 19.4,
@@ -96,12 +96,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -6.42 Mr ₺ (ÖZK %-72.4)<br><strong>Ham YPP:</strong> -6.42 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %6.9 (613 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.06x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 30,
-      "dso_delta": -17.6,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%39.1).",
         "🟡 Alacak-Ciro makası +%36.4 açıldı (DSO: 146.3 gün)."
-      ]
+      ],
+      "dts_delta": 30,
+      "dso_delta": -17.6
     }
   }
 }

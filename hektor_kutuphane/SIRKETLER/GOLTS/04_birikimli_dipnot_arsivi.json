@@ -1,6 +1,6 @@
 {
   "kod": "GOLTS",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 89.2,
@@ -97,11 +97,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -733 Mn ₺ (ÖZK %-6.4)<br><strong>Ham YPP:</strong> -733 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.5 (171 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.37x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 8.2,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%28.2 açıldı (DSO: 85.5 gün)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 8.2
     }
   }
 }

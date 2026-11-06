@@ -1,6 +1,6 @@
 {
   "kod": "YATAS",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 22.6,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -6.52 Mr ₺ (ÖZK %-49.6)<br><strong>Ham YPP:</strong> -6.52 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.3 (304 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.60x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": -2.6,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%52.3)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": -2.6
     }
   }
 }

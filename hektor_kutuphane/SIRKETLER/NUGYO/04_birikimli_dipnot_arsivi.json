@@ -1,6 +1,6 @@
 {
   "kod": "NUGYO",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 114.8,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 162 Mn ₺ (ÖZK %+2.3)<br><strong>Ham YPP:</strong> 162 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.8 (52 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.03x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -349.8,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%1182.4 açıldı (DSO: 141.7 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -349.8
     }
   }
 }

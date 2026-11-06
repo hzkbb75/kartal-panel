@@ -1,6 +1,6 @@
 {
   "kod": "DOFRB",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 11.6,
@@ -98,13 +98,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -75 Mn ₺ (ÖZK %-3.2)<br><strong>Ham YPP:</strong> -75 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.6 (15 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.61x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 50.6,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%10.91): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%40.0).",
         "🟡 Alacak-Ciro makası +%26.9 açıldı (DSO: 349.2 gün)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 50.6
     }
   }
 }

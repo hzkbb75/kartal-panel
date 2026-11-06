@@ -1,6 +1,6 @@
 {
   "kod": "OYLUM",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 119.7,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 42 Mn ₺ (ÖZK %+3.4)<br><strong>Ham YPP:</strong> 42 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.4 (28 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.22x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -10.9,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%26.3 açıldı (DSO: 69.2 gün).",
         "🔴 Faiz karşılama oranı 1.44x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -10.9
     }
   }
 }

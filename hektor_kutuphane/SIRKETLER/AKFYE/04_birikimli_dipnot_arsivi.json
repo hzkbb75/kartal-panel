@@ -1,6 +1,6 @@
 {
   "kod": "AKFYE",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 1.0,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 678 Mn ₺ (ÖZK %+1.0)<br><strong>Ham YPP:</strong> -10.66 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.2 (116 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.06x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 3.4,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%85.6)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 3.4
     }
   }
 }

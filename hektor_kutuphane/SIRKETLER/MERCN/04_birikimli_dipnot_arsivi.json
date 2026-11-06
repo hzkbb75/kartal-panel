@@ -1,6 +1,6 @@
 {
   "kod": "MERCN",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 36.0,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -897 Mn ₺ (ÖZK %-31.5)<br><strong>Ham YPP:</strong> -897 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.3 (7 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.67x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -19.5,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%6.27): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%30.7 açıldı (DSO: 68.8 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -19.5
     }
   }
 }

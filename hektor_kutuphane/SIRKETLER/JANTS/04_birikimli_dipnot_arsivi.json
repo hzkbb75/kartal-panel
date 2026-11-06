@@ -1,6 +1,6 @@
 {
   "kod": "JANTS",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 184.8,
@@ -101,14 +101,14 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -372 Mn ₺ (ÖZK %-4.4)<br><strong>Ham YPP:</strong> -372 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %3.7 (314 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.28x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 35,
-      "dso_delta": 7.8,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%5.05): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%78.5).",
         "🟡 Alacak-Ciro makası +%27.4 açıldı (DSO: 77.4 gün).",
         "🔴 Faiz karşılama oranı 1.27x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 35,
+      "dso_delta": 7.8
     }
   }
 }

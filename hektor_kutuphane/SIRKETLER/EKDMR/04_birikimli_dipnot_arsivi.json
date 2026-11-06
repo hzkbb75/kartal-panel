@@ -1,6 +1,6 @@
 {
   "kod": "EKDMR",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 88.0,
@@ -97,11 +97,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 1.69 Mr ₺ (ÖZK %+9.9)<br><strong>Ham YPP:</strong> 1.69 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.1 (350 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.36x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": -15,
-      "dso_delta": -1.5,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%5.92): Kâr nakde dönüşmüyor."
-      ]
+      ],
+      "dts_delta": -15,
+      "dso_delta": -1.5
     }
   }
 }

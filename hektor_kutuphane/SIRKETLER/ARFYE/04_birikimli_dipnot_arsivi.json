@@ -1,6 +1,6 @@
 {
   "kod": "ARFYE",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 1052.0,
@@ -99,12 +99,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 172 Mn ₺ (ÖZK %+8.1)<br><strong>Ham YPP:</strong> 172 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.2 (4 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.12x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 38.5,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%15.85): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -0.14x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 38.5
     }
   }
 }

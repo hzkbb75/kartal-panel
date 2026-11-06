@@ -1,6 +1,6 @@
 {
   "kod": "ULUSE",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 5.8,
@@ -96,12 +96,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -4.70 Mr ₺ (ÖZK %-477.9)<br><strong>Ham YPP:</strong> -4.70 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %26.8 (264 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 5.69x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 20,
-      "dso_delta": -10.4,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%5.97): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 0.42x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 20,
+      "dso_delta": -10.4
     }
   }
 }

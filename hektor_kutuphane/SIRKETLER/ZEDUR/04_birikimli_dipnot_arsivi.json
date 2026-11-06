@@ -1,6 +1,6 @@
 {
   "kod": "ZEDUR",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 34.5,
@@ -96,12 +96,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -267 Mn ₺ (ÖZK %-10.2)<br><strong>Ham YPP:</strong> -255 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.2 (6 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.14x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 7.7,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%20.9 açıldı (DSO: 72.0 gün).",
         "🔴 Faiz karşılama oranı 0.2x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 7.7
     }
   }
 }

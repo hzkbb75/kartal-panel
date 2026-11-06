@@ -1,6 +1,6 @@
 {
   "kod": "ECOGR",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 50.5,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -10.46 Mr ₺ (ÖZK %-53.1)<br><strong>Ham YPP:</strong> -10.46 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.2 (43 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.36x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": -19.5,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%59.5).",
         "🟡 Alacak-Ciro makası +%40.1 açıldı (DSO: 55.6 gün)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": -19.5
     }
   }
 }

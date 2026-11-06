@@ -1,6 +1,6 @@
 {
   "kod": "TOASO",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 14.5,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 3.59 Mr ₺ (ÖZK %+5.5)<br><strong>Ham YPP:</strong> -20.32 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %13.7 (9.00 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.54x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 20,
-      "dso_delta": 3.3,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%6.25): Kâr nakde dönüşmüyor."
-      ]
+      ],
+      "dts_delta": 20,
+      "dso_delta": 3.3
     }
   }
 }

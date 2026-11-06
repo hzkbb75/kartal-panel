@@ -1,6 +1,6 @@
 {
   "kod": "MOGAN",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 36.7,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -32.09 Mr ₺ (ÖZK %-36.6)<br><strong>Ham YPP:</strong> -32.86 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.2 (175 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.13x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 27.4,
       "tutarlilik_raporu": [
         "🔴 Faiz karşılama oranı 1.06x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 27.4
     }
   }
 }

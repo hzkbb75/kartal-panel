@@ -1,6 +1,6 @@
 {
   "kod": "ZERGY",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 30.2,
@@ -102,14 +102,14 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 0 Mn ₺ (ÖZK %+0.0)<br><strong>Ham YPP:</strong> 0 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.3 (8 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.57x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": -4002.5,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%10.64): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%62.5).",
         "🟡 Alacak-Ciro makası +%31.2 açıldı (DSO: 2440.0 gün).",
         "🔴 Faiz karşılama oranı 0.99x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": -4002.5
     }
   }
 }

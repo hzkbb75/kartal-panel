@@ -1,6 +1,6 @@
 {
   "kod": "ARASE",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 237.6,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 711 Mn ₺ (ÖZK %+2.9)<br><strong>Ham YPP:</strong> 711 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.4 (344 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.24x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 7.9,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%31.6 açıldı (DSO: 49.4 gün)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 7.9
     }
   }
 }

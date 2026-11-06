@@ -1,6 +1,6 @@
 {
   "kod": "NETAS",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 11.6,
@@ -96,11 +96,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 829 Mn ₺ (ÖZK %+82867.2)<br><strong>Ham YPP:</strong> 829 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %28678.4 (287 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 11466.55x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": -15,
-      "dso_delta": -2.7,
       "tutarlilik_raporu": [
         "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
-      ]
+      ],
+      "dts_delta": -15,
+      "dso_delta": -2.7
     }
   }
 }

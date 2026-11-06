@@ -1,6 +1,6 @@
 {
   "kod": "TBORG",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -96,11 +96,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -150 Mn ₺ (ÖZK %-0.5)<br><strong>Ham YPP:</strong> -150 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %12.3 (3.67 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.92x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": -15,
-      "dso_delta": -1.6,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%28.3 açıldı (DSO: 138.8 gün)."
-      ]
+      ],
+      "dts_delta": -15,
+      "dso_delta": -1.6
     }
   }
 }

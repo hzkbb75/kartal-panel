@@ -1,6 +1,6 @@
 {
   "kod": "ENKAI",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 19.5,
@@ -97,12 +97,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 35.46 Mr ₺ (ÖZK %+8.6)<br><strong>Ham YPP:</strong> 35.39 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.9 (3.81 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.21x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": -0.8,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%54.7).",
         "🟡 Alacak-Ciro makası +%33.6 açıldı (DSO: 56.6 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": -0.8
     }
   }
 }

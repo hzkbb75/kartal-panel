@@ -1,6 +1,6 @@
 {
   "kod": "SANKO",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -96,11 +96,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 685 Mn ₺ (ÖZK %+26.6)<br><strong>Ham YPP:</strong> 685 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.1 (3 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.34x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 7.3,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%35.0 açıldı (DSO: 101.7 gün)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 7.3
     }
   }
 }

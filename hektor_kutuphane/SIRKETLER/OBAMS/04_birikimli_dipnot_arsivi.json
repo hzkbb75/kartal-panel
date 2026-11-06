@@ -1,6 +1,6 @@
 {
   "kod": "OBAMS",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -96,11 +96,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 5.42 Mr ₺ (ÖZK %+42.0)<br><strong>Ham YPP:</strong> 5.42 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.9 (117 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.21x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": -5.8,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%53.4 açıldı (DSO: 45.4 gün)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": -5.8
     }
   }
 }

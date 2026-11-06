@@ -1,6 +1,6 @@
 {
   "kod": "EMNIS",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -97,13 +97,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -2 Mn ₺ (ÖZK %-0.6)<br><strong>Ham YPP:</strong> -2 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %8.8 (24 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.32x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 35,
-      "dso_delta": -1.2,
       "tutarlilik_raporu": [
         "🔴 Tahakkuk anomalisi (%5.68): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%51.1).",
         "🟡 Alacak-Ciro makası +%26.4 açıldı (DSO: 82.4 gün)."
-      ]
+      ],
+      "dts_delta": 35,
+      "dso_delta": -1.2
     }
   }
 }

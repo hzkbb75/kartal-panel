@@ -1,6 +1,6 @@
 {
   "kod": "BFREN",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 1.2,
@@ -96,11 +96,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -175 Mn ₺ (ÖZK %-21.7)<br><strong>Ham YPP:</strong> -175 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %13.4 (108 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.50x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": -6.3,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%16.6 açıldı (DSO: 64.3 gün)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": -6.3
     }
   }
 }

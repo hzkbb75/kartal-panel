@@ -1,6 +1,6 @@
 {
   "kod": "AVHOL",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 46.6,
@@ -102,13 +102,13 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 0 Mn ₺ (ÖZK %+0.0)<br><strong>Ham YPP:</strong> 0 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.6 (7 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.41x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 260.8,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%91.3).",
         "🟡 Alacak-Ciro makası +%134.9 açıldı (DSO: 507.1 gün).",
         "🔴 Faiz karşılama oranı 0.2x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 260.8
     }
   }
 }

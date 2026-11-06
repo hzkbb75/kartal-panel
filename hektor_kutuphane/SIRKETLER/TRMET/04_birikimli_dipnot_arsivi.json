@@ -1,6 +1,6 @@
 {
   "kod": "TRMET",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 24744.0,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 3.37 Mr ₺ (ÖZK %+11.2)<br><strong>Ham YPP:</strong> 3.37 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %16.2 (4.86 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.19x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 0.3,
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%40.9)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 0.3
     }
   }
 }

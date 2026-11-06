@@ -1,6 +1,6 @@
 {
   "kod": "ZOREN",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 36.8,
@@ -98,12 +98,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -29.61 Mr ₺ (ÖZK %-46.7)<br><strong>Ham YPP:</strong> -29.61 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.5 (931 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.41x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
-      "dso_delta": 18.6,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%73.8 açıldı (DSO: 156.5 gün).",
         "🔴 Faiz karşılama oranı 0.77x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 0,
+      "dso_delta": 18.6
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "kod": "PENTA",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 73.3,
@@ -95,11 +95,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 155 Mn ₺ (ÖZK %+3.3)<br><strong>Ham YPP:</strong> -870 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %4.2 (196 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 2.84x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 8.7,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%19.8 açıldı (DSO: 104.5 gün)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 8.7
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "kod": "KAYSE",
-  "son_guncelleme": "2026-11-06 16:41",
+  "son_guncelleme": "2026-11-06 17:00",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 111.3,
@@ -72,12 +72,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -58 Mn ₺ (ÖZK %-0.1)<br><strong>Ham YPP:</strong> -58 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.6 (1.14 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.45x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
-      "dso_delta": 700.5,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%43.3 açıldı (DSO: 1121.7 gün).",
         "🔴 Faiz karşılama oranı -0.16x (ICR zayıf)."
-      ]
+      ],
+      "dts_delta": 15,
+      "dso_delta": 700.5
     }
   }
 }
