@@ -53,6 +53,16 @@ if os.path.exists(ANALIZ_TABANI_YOLU):
             print(f"  [Bilgi] 'bist_analiz_tabani.json' başarıyla yüklendi ({len(BIST_ANALIZ_TABANI)} şirket).")
     except Exception as e:
         print(f"  [Uyarı] bist_analiz_tabani.json okunamadı: {e}")
+# 1.2 Kusursuz Sektör Sözlüğünü Yükle
+BIST_SOZLUK = {}
+SOZLUK_YOLU = "bist_sozluk.json"
+if os.path.exists(SOZLUK_YOLU):
+    try:
+        with open(SOZLUK_YOLU, "r", encoding="utf-8") as f:
+            BIST_SOZLUK = json.load(f)
+            print(f"  [Bilgi] 'bist_sozluk.json' başarıyla yüklendi ({len(BIST_SOZLUK)} şirket).")
+    except Exception as e:
+        print(f"  [Uyarı] bist_sozluk.json okunamadı: {e}")
 
 # 2. kap_indirici.py Tarafından Üretilen KAP & Teknik Veri Ambarını Yükle
 KAP_VE_TEKNIK_YOLLARI = [
@@ -524,16 +534,22 @@ def analiz_et_sirket(kod: str) -> dict:
 
     roe_hesap = round((net_c / max(ozk_c, 1.0)) * 100, 1) if ozk_c > 0 else float(sirket_kaydi.get("roe_tv", 0.0))
 
-    # ZİRAAT RESMİ VERİLERİNİ DEVREYE AL
+    # ZİRAAT RESMİ VERİLERİNİ DEVREYE AL (Sektör hariç)
     ziraat = BIST_ANALIZ_TABANI.get(kod, {})
     if ziraat:
-        sektor = ziraat.get("sektor", sirket_kaydi.get("sektor", sektor))
         sirket_adi = ziraat.get("sirket_adi", sirket_kaydi.get("sirket_adi", kod))
         if ziraat.get("fiyat", 0) > 0: fiyat = ziraat["fiyat"]
         if ziraat.get("fk", 0) > 0: fk = ziraat["fk"]
         if ziraat.get("fd_favok", 0) > 0: fd_favok = ziraat["fd_favok"]
         if ziraat.get("roe", 0) != 0: roe_hesap = ziraat["roe"]
         if ziraat.get("net_kar_son4c_mn", 0) != 0: net_c = ziraat["net_kar_son4c_mn"]
+
+    # KUSURSUZ SEKTÖR ATAMASI (bist_sozluk.json baz alınır)
+    sozluk_verisi = BIST_SOZLUK.get(kod, {})
+    if sozluk_verisi and sozluk_verisi.get("sektor"):
+        sektor = sozluk_verisi.get("sektor")
+    elif not sektor or sektor == "DİĞER":
+        sektor = "Sanayi" # Son çare güvenlik ağı
 
     return {
         "kod": kod, "sirket_adi": sirket_kaydi.get("sirket_adi", kod), "sektor": sektor,
