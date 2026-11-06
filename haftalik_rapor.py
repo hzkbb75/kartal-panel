@@ -1,14 +1,25 @@
 import os
 import requests
 
-# Kendi bilgilerinizi buraya girin (kartal_bot.py içindeki ile aynı)
-TELEGRAM_BOT_TOKEN = "8843188278:AAH26HlS26ECK1_DZ0AVVfCpq8c_vCaKAnQ"
-TELEGRAM_CHAT_ID = "932085366" 
-
+# 1. ÖNCE KLASÖR YOLLARI TANIMLANMALI
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-portfoy_csv_yolu = os.path.join(BASE_DIR, "portfoyum.csv")
+portfoy_csv_yolu = os.path.join(BASE_DIR, "hektor_kutuphane", "PORTFOY", "portfoyum.csv")
 
+# 2. SONRA ŞİFRELER OKUNMALI
+try:
+    with open(os.path.join(BASE_DIR, "token.txt"), "r") as f:
+        TELEGRAM_BOT_TOKEN = f.read().strip()
+    with open(os.path.join(BASE_DIR, "chat_id.txt"), "r") as f:
+        TELEGRAM_CHAT_ID = f.read().strip()
+except FileNotFoundError:
+    print("HATA: token.txt veya chat_id.txt bulunamadı!")
+    TELEGRAM_BOT_TOKEN = ""
+    TELEGRAM_CHAT_ID = ""
+
+# 3. İŞLEMLER BAŞLAMALI
 mesaj = "🦅 *KARTAL HAFTALIK KAPANIŞ RAPORU*\n\n"
+
+# ... (Kodun geri kalanı mevcut haliyle devam edebilir)
 
 try:
     if os.path.exists(portfoy_csv_yolu):

@@ -2497,24 +2497,40 @@ if __name__ == "__main__":
         if cikanlar: print(f"  🔴 KADRODAN DÜŞENLER: {', '.join(cikanlar)}")
 
         # === DOĞRUDAN TELEGRAM ALARM TETİKLEYİCİSİ ===
-        TELEGRAM_BOT_TOKEN = "8843188278:AAH26HlS26ECK1_DZ0AVVfCpq8c_vCaKAnQ"
-        TELEGRAM_CHAT_ID = "932085366"
-        
-        mesaj = "🦅 *KARTAL PORTFÖY ROTASYON ALARMI*\n\n"
-        if yeni_girenler:
-            mesaj += "🟢 *Kadroya Yeni Girenler:*\n" + ", ".join(yeni_girenler) + "\n\n"
-        if cikanlar:
-            mesaj += "🔴 *Kadrodan Düşenler:*\n" + ", ".join(cikanlar) + "\n\n"
-        mesaj += "🔗 [KARTAL Panele Git](https://hzkbb75.github.io/kartal-panel/)"
-        
-        url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-        payload = {"chat_id": TELEGRAM_CHAT_ID, "text": mesaj, "parse_mode": "Markdown"}
-        
+        import os
+        import requests
+        # BASE_DIR'i garanti altına alıyoruz (Zaten üstte varsa bile burada bir kez daha netleştirmek zarar vermez)
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    
+        # Şifreleri dışarıdan okuyan güvenli yapı:
         try:
-            requests.post(url, json=payload, timeout=10)
-            print("  [Telegram] Rotasyon alarmı telefonunuza başarıyla gönderildi.")
+            with open(os.path.join(BASE_DIR, "token.txt"), "r") as f:
+                TELEGRAM_BOT_TOKEN = f.read().strip()
+            with open(os.path.join(BASE_DIR, "chat_id.txt"), "r") as f:
+                TELEGRAM_CHAT_ID = f.read().strip()
+            
+            # Eğer dosyalar var ama içi boşsa hata fırlat
+            if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+                raise ValueError("token.txt veya chat_id.txt içi boş!")
+            
+            mesaj = "🦅 *KARTAL PORTFÖY ROTASYON ALARMI*\n\n"
+            if yeni_girenler:
+                mesaj += "🟢 *Kadroya Yeni Girenler:*\n" + ", ".join(yeni_girenler) + "\n\n"
+            if cikanlar:
+                mesaj += "🔴 *Kadrodan Düşenler:*\n" + ", ".join(cikanlar) + "\n\n"
+            mesaj += "🔗 [KARTAL Panele Git](https://hzkbb75.github.io/kartal-panel/)"
+
+            url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+            payload = {"chat_id": TELEGRAM_CHAT_ID, "text": mesaj, "parse_mode": "Markdown"}
+
+            try:
+                requests.post(url, json=payload, timeout=10)
+                print("  [Telegram] Rotasyon alarmı telefonunuza başarıyla gönderildi.")
+            except Exception as e:
+                print(f"  [Telegram] Alarm gönderilemedi: {e}")
+            
         except Exception as e:
-            print(f"  [Telegram] Alarm gönderilemedi: {e}")
+            print(f"  [HATA] Şifreler okunamadı veya Telegram'a bağlanılamadı: {e}")
 
     # 4. Yeni Durumu Hafızaya Yaz (Bir sonraki çalışma için)
     yeni_tarama_verisi = {
