@@ -64,6 +64,22 @@ if os.path.exists(SOZLUK_YOLU):
     except Exception as e:
         print(f"  [Uyarı] bist_sozluk.json okunamadı: {e}")
 
+# 1.3 Ziraat Bülteni Verilerinden Gerçek Sektörel Medyan F/K Haritasını Üret
+SEKTOR_FK_HARITASI = {}
+if BIST_ANALIZ_TABANI:
+    _sektor_fk_listeleri = {}
+    for _k, _v in BIST_ANALIZ_TABANI.items():
+        _fk_val = float(_v.get("fk", 0.0) or 0.0)
+        if 1.0 <= _fk_val <= 80.0:
+            _sek = (BIST_SOZLUK.get(_k, {}).get("sektor") or _v.get("sektor") or "Sanayi").strip()
+            if _sek and _sek not in ("ALT PAZAR", "YAKIN İZLEME PAZARI", "DİĞER"):
+                _sektor_fk_listeleri.setdefault(_sek, []).append(_fk_val)
+    for _sek, _liste in _sektor_fk_listeleri.items():
+        _sirali_fk = sorted(_liste)
+        _orta = len(_sirali_fk) // 2
+        _medyan = _sirali_fk[_orta] if len(_sirali_fk) % 2 == 1 else (_sirali_fk[_orta - 1] + _sirali_fk[_orta]) / 2.0
+        SEKTOR_FK_HARITASI[_sek] = round(_medyan, 2)
+
 # 2. kap_indirici.py Tarafından Üretilen KAP & Teknik Veri Ambarını Yükle
 KAP_VE_TEKNIK_YOLLARI = [
     "kap_ve_teknik.json",
@@ -560,25 +576,31 @@ def analiz_et_sirket(kod: str) -> dict:
         if ziraat.get("roe", 0) != 0: roe_hesap = ziraat["roe"]
         if ziraat.get("net_kar_son4c_mn", 0) != 0: net_c = ziraat["net_kar_son4c_mn"]
 
-    # KUSURSUZ SEKTÖR ATAMASI (bist_sozluk.json baz alınır)
+    # KUSURSUZ SEKTÖR ATAMASI (bist_sozluk.json baz alınır; pazar adı karışmışsa yerel sektör kullanılır)
+    pazar_etiketleri = {"ALT PAZAR", "YAKIN İZLEME PAZARI", "ANA PAZAR", "YILDIZ PAZAR", "DİĞER", "BIST", ""}
     sozluk_verisi = BIST_SOZLUK.get(kod, {})
-    if sozluk_verisi and sozluk_verisi.get("sektor"):
-        sektor = sozluk_verisi.get("sektor")
-    elif not sektor or sektor == "DİĞER":
-        sektor = "Sanayi" # Son çare güvenlik ağı
+    sozluk_sektor = (sozluk_verisi.get("sektor") or "").strip() if sozluk_verisi else ""
+    yerel_sektor = (sirket_kaydi.get("sektor") or "").strip() if sirket_kaydi else ""
+    if sozluk_sektor and sozluk_sektor not in pazar_etiketleri:
+        sektor = sozluk_sektor
+    elif yerel_sektor and yerel_sektor not in pazar_etiketleri:
+        sektor = yerel_sektor
+    else:
+        sektor = "Sanayi"
 
-    # BÖLÜM 3 (DİPNOT RÖNTGENİ) & BÖLÜM 4 (RASYONEL DEĞERLEME) ÖN HESABI
+    # BÖLÜM 3 (DİPNOT RÖNTGENİ) & BÖLÜM 4 (ZİRAAT SEKTÖR F/K DESTEKLİ RASYONEL DEĞERLEME)
     cari_s_dipnot = [(r[0], r[1], r[1]) for r in satirlar]
     onceki_s_dipnot = [(r[0], r[2], r[2]) for r in satirlar]
     dipnot_ozet = hesapla_donem_dipnot_metrikleri(cari_s_dipnot, onceki_s_dipnot)
     dts_skor = int(dipnot_ozet.get("dts_skor", 0))
     icr_kati = float(dipnot_ozet.get("icr_kati", 99.0))
 
+    sektor_fk = SEKTOR_FK_HARITASI.get(sektor, 10.0)
     sirket_hbk = round(fiyat / fk, 2) if fk > 0 else 0.0
     pddd = ziraat.get("pddd", 0.0) if ziraat else 0.0
     sirket_dd = round(fiyat / pddd, 2) if pddd > 0 else (ozk_c / max((pd_milyar * 1000) / max(fiyat, 1.0), 1.0) if pd_milyar > 0 else 0.0)
     adil_deger_tl, iskonto_orani, degerleme_durumu = rasyonel_degerleme_hesapla(
-        fiyat=fiyat, hbk=sirket_hbk, dd=sirket_dd, roe=roe_hesap
+        fiyat=fiyat, hbk=sirket_hbk, dd=sirket_dd, roe=roe_hesap, sektor_fk=sektor_fk
     )
 
     return {
@@ -643,24 +665,7 @@ def uret_dna_ve_tercume_katmani(m: dict) -> dict:
         or ("faktoring" in tr_norm(sektor))
     )
 
-    if pd_milyar >= 15.0 and 10.0 <= halka_aciklik <= 70.0:
-        tahta_derinligi = {
-            "sinif": "Kurumsal / Likit 250 Tahta",
-            "rozet_renk": "badge-ok",
-            "aciklama": f"Piyasa değeri {pd_milyar:,.1f} milyar TL, halka açıklık %{halka_aciklik:.1f} — kurumsal derinliği yüksek tahta."
-        }
-    elif pd_milyar >= 2.5 and 5.0 <= halka_aciklik <= 70.0:
-        tahta_derinligi = {
-            "sinif": "Orta Ölçek / Standart Tahta",
-            "rozet_renk": "badge-ok",
-            "aciklama": f"Piyasa değeri {pd_milyar:,.1f} milyar TL, halka açıklık %{halka_aciklik:.1f} — standart likidite koşullarına uygun."
-        }
-    else:
-        tahta_derinligi = {
-            "sinif": "Sığ Tahta / Likidite Uyarısı",
-            "rozet_renk": "badge-warn",
-            "aciklama": f"Piyasa değeri {pd_milyar:,.1f} milyar TL, halka açıklık %{halka_aciklik:.1f} — kademe derinliği sığ olabilir, kademeli emir şart."
-        }
+
 
     if banka_mi:
         kar_cumlesi = (
@@ -857,8 +862,7 @@ def uret_dna_ve_tercume_katmani(m: dict) -> dict:
             "iyiye_giden_taraf": ivme,
             "kritik_risk": kritik_risk
         },
-        "oz_turkce_seridi": oz_turkce_seridi,
-        "tahta_derinligi": tahta_derinligi
+        "oz_turkce_seridi": oz_turkce_seridi
     }
 
 
@@ -992,15 +996,6 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
         "roe_degerleri": roe_degerleri
     }
 
-    konum_yuzde = int(min(95, max(5, (fk / 20.0) * 100))) if fk > 0 else 5
-    marj_durum = "GÜÇLÜ GÜVENLİK MARJI (İSKONTOLU)" if (0 < fk < 6.0) else ("DENGELİ / MAKUL DEĞERLEME" if fk <= 16.0 else "DOYUM NOKTASI / PAHALI")
-    marj_renk = "badge-ok" if (0 < fk < 6.0) else ("badge-warn" if fk <= 16.0 else "badge-fail")
-
-    degerleme_bandi = {
-        "fk": fk, "pfk": pfk, "alt_fk": 6.0, "medyan_fk": 11.0, "ust_fk": 16.0,
-        "marj_durum": marj_durum, "marj_renk": marj_renk, "konum_yuzde": konum_yuzde
-    }
-    
     # HİBRİT DEĞERLEME MODÜLÜ (ZİRAAT GÜVENCELİ - Sektör bist_sozluk'ten korunur)
     ziraat = BIST_ANALIZ_TABANI.get(kod, {})
     if ziraat:
@@ -1008,6 +1003,20 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
         if ziraat.get("fd_favok", 0) > 0: fd_favok = ziraat["fd_favok"]
         if ziraat.get("roe", 0) != 0: roe = ziraat["roe"]
         if ziraat.get("net_kar_son4c_mn", 0) != 0: net_c = ziraat["net_kar_son4c_mn"]
+
+    sektor_medyan_fk = SEKTOR_FK_HARITASI.get(sektor, 10.0)
+    alt_fk = round(max(3.0, sektor_medyan_fk * 0.65), 1)
+    medyan_fk = round(sektor_medyan_fk, 1)
+    ust_fk = round(sektor_medyan_fk * 1.35, 1)
+
+    konum_yuzde = int(min(95, max(5, (fk / max(ust_fk * 1.25, 1.0)) * 100))) if fk > 0 else 5
+    marj_durum = "GÜÇLÜ GÜVENLİK MARJI (İSKONTOLU)" if (0 < fk < alt_fk) else ("DENGELİ / MAKUL DEĞERLEME" if (0 < fk <= ust_fk) else "DOYUM NOKTASI / PAHALI")
+    marj_renk = "badge-ok" if (0 < fk < alt_fk) else ("badge-warn" if (0 < fk <= ust_fk) else "badge-fail")
+
+    degerleme_bandi = {
+        "fk": fk, "pfk": pfk, "alt_fk": alt_fk, "medyan_fk": medyan_fk, "ust_fk": ust_fk,
+        "marj_durum": marj_durum, "marj_renk": marj_renk, "konum_yuzde": konum_yuzde
+    }
 
     # Hatasız Hisse Başına Kâr (HBK) ve Defter Değeri (DD) Türetimi
     sirket_hbk = round(fiyat / fk, 2) if fk > 0 else 0.0
@@ -1018,7 +1027,8 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
         fiyat=fiyat, 
         hbk=sirket_hbk, 
         dd=sirket_dd, 
-        roe=roe
+        roe=roe,
+        sektor_fk=sektor_medyan_fk
     )
     
     termometre_html_kodu = degerleme_termometresi_uret(
@@ -1149,7 +1159,6 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
         "teknik_veri": teknik_veri,
         "dna_ozeti": dna_katmani["dna_ozeti"],
         "oz_turkce_seridi": dna_katmani["oz_turkce_seridi"],
-        "tahta_derinligi": dna_katmani["tahta_derinligi"],
         "roe_serisi": roe_serisi,
         "son_soz": {
             "dikkat_cekenler": dikkat_cekenler,
@@ -1544,7 +1553,7 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
 
         function uretDinamikDnaVeTercume(k) {{
             if (k.dna_ozeti && k.oz_turkce_seridi) {{
-                return {{ dna_ozeti: k.dna_ozeti, oz_turkce_seridi: k.oz_turkce_seridi, tahta_derinligi: k.tahta_derinligi }};
+                return {{ dna_ozeti: k.dna_ozeti, oz_turkce_seridi: k.oz_turkce_seridi }};
             }}
             const kod = k.kod || '';
             const sektor = k.sektor || '';
@@ -1767,7 +1776,6 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
             const katman = uretDinamikDnaVeTercume(k);
             const dna = katman.dna_ozeti;
             const serit = katman.oz_turkce_seridi;
-            const td = katman.tahta_derinligi || {{ sinif: 'Standart Tahta', rozet_renk: 'badge-ok' }};
 	    
             const seritHtml = serit.map(item =>
                 '<div class="oz-turkce-item"><span>' + item.ikon + ' <strong>' + item.etiket + ':</strong> ' + item.metin + '</span></div>'
@@ -1776,7 +1784,6 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
             document.getElementById('modalHisseBaslik').innerHTML = 
                 '<div style="display:flex; align-items:center; flex-wrap:wrap;">' + 
                     kod + ' — ' + k.sirket_adi + 
-                    ' <span class="' + td.rozet_renk + '" style="font-size:11px; margin-left:12px; padding:4px 8px; border-radius:4px; font-weight:bold;">' + td.sinif + '</span>' +
                 '</div>' +
                 '<div style="margin-top:10px;">' + (k.etiketler_html || '') + '</div>' + 
                 (k.buyume_rozetleri_html || '');
