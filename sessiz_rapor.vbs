@@ -1,0 +1,1 @@
+WshShell.Run "cmd /c python haftalik_rapor.py", 0, False
