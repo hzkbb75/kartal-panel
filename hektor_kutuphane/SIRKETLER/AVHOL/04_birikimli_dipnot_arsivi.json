@@ -1,20 +1,21 @@
 {
   "kod": "AVHOL",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 11.7,
       "icr_kati": 0.74,
-      "tahakkuk_orani": -0.42,
+      "tahakkuk_orani": 35.6,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 605.2,
       "acm_makasi": 0.0,
-      "serefiye_ozk_orani": 4.1,
+      "serefiye_ozk_orani": 5.2,
       "karsilik_ozk_orani": 0.1,
       "iliskili_orani": 0.0,
-      "dts_skor": 30,
+      "dts_skor": 50,
       "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%35.6): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
         "🔴 Faiz karşılama oranı 0.74x (ICR zayıf)."
       ],
@@ -25,16 +26,17 @@
     "2025/06": {
       "efm_yuzde": 23.8,
       "icr_kati": 0.6,
-      "tahakkuk_orani": -0.07,
+      "tahakkuk_orani": 40.63,
       "aga_orani": 46.1,
       "ykp_orani": 100.0,
       "dso_gun": 322.6,
       "acm_makasi": -109.4,
-      "serefiye_ozk_orani": 3.7,
-      "karsilik_ozk_orani": 0.1,
+      "serefiye_ozk_orani": 4.5,
+      "karsilik_ozk_orani": 0.2,
       "iliskili_orani": 0.0,
-      "dts_skor": 30,
+      "dts_skor": 50,
       "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%40.63): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
         "🔴 Faiz karşılama oranı 0.6x (ICR zayıf)."
       ],
@@ -45,13 +47,13 @@
     "2026/03": {
       "efm_yuzde": 24.1,
       "icr_kati": -0.08,
-      "tahakkuk_orani": -5.63,
+      "tahakkuk_orani": -17.46,
       "aga_orani": 0.0,
-      "ykp_orani": 10.9,
+      "ykp_orani": 4.3,
       "dso_gun": 985.1,
       "acm_makasi": 50.9,
-      "serefiye_ozk_orani": 7.0,
-      "karsilik_ozk_orani": 0.2,
+      "serefiye_ozk_orani": 10.4,
+      "karsilik_ozk_orani": 0.3,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
@@ -59,19 +61,19 @@
         "🔴 Faiz karşılama oranı -0.08x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 0,
+      "dts_delta": -20,
       "dso_delta": 662.5
     },
     "2026/06": {
       "efm_yuzde": 31.8,
       "icr_kati": 0.09,
-      "tahakkuk_orani": -14.15,
+      "tahakkuk_orani": -10.25,
       "aga_orani": 1621.6,
       "ykp_orani": 100.0,
       "dso_gun": 1014.2,
       "acm_makasi": 7.5,
-      "serefiye_ozk_orani": 5.2,
-      "karsilik_ozk_orani": 0.4,
+      "serefiye_ozk_orani": 8.2,
+      "karsilik_ozk_orani": 0.6,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [

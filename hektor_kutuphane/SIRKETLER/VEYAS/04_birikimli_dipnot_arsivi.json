@@ -1,6 +1,6 @@
 {
   "kod": "VEYAS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 31235.3,
@@ -45,7 +45,7 @@
     "2026/03": {
       "efm_yuzde": 44.3,
       "icr_kati": 1.09,
-      "tahakkuk_orani": 17.1,
+      "tahakkuk_orani": 6.51,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 363.8,
@@ -55,7 +55,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%17.1): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%6.51): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%32.9 açıldı (DSO: 363.8 gün).",
         "🔴 Faiz karşılama oranı 1.09x (ICR zayıf)."
       ],
@@ -66,7 +66,7 @@
     "2026/06": {
       "efm_yuzde": 34.5,
       "icr_kati": 1.17,
-      "tahakkuk_orani": 16.19,
+      "tahakkuk_orani": 6.28,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 161.3,
@@ -76,7 +76,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%16.19): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%6.28): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 1.17x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},

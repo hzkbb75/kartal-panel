@@ -1,13 +1,13 @@
 {
   "kod": "EMKEL",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 37.5,
       "icr_kati": -0.91,
-      "tahakkuk_orani": -5.06,
+      "tahakkuk_orani": -4.89,
       "aga_orani": 0.0,
-      "ykp_orani": 0.8,
+      "ykp_orani": 0.5,
       "dso_gun": 1047.9,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 25.5,
       "icr_kati": 0.58,
-      "tahakkuk_orani": 24.82,
+      "tahakkuk_orani": 16.79,
       "aga_orani": 6.1,
       "ykp_orani": 0.0,
       "dso_gun": 317.6,
@@ -34,7 +34,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%24.82): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%16.79): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 0.58x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 14.4,
       "icr_kati": 0.24,
-      "tahakkuk_orani": -2.32,
+      "tahakkuk_orani": -1.41,
       "aga_orani": 366.3,
       "ykp_orani": 0.0,
       "dso_gun": 649.0,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 83.5,
       "icr_kati": 0.37,
-      "tahakkuk_orani": -10.88,
+      "tahakkuk_orani": -6.57,
       "aga_orani": 12.2,
       "ykp_orani": 0.0,
       "dso_gun": 365.8,

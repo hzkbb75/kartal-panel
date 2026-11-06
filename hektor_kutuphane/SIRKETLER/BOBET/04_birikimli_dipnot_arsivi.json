@@ -1,13 +1,13 @@
 {
   "kod": "BOBET",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 14.7,
       "icr_kati": -0.09,
-      "tahakkuk_orani": 41.03,
+      "tahakkuk_orani": 15.63,
       "aga_orani": 0.0,
-      "ykp_orani": 3.2,
+      "ykp_orani": 1.2,
       "dso_gun": 195.9,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%41.03): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%15.63): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -0.09x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,9 +25,9 @@
     "2025/06": {
       "efm_yuzde": 31.2,
       "icr_kati": -0.09,
-      "tahakkuk_orani": 17.69,
+      "tahakkuk_orani": 5.76,
       "aga_orani": 0.0,
-      "ykp_orani": 4.6,
+      "ykp_orani": 1.9,
       "dso_gun": 110.5,
       "acm_makasi": -93.7,
       "serefiye_ozk_orani": 0.0,
@@ -35,7 +35,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%17.69): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%5.76): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -0.09x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -45,7 +45,7 @@
     "2026/03": {
       "efm_yuzde": 3.2,
       "icr_kati": -1.18,
-      "tahakkuk_orani": -10.6,
+      "tahakkuk_orani": -4.92,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 184.6,
@@ -65,7 +65,7 @@
     "2026/06": {
       "efm_yuzde": 6.3,
       "icr_kati": -1.13,
-      "tahakkuk_orani": -4.82,
+      "tahakkuk_orani": -5.25,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 100.3,

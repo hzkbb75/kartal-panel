@@ -1,11 +1,11 @@
 {
   "kod": "BRYAT",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 99.0,
-      "tahakkuk_orani": -75.92,
+      "tahakkuk_orani": -4.27,
       "aga_orani": 0.0,
       "ykp_orani": 1.4,
       "dso_gun": 0.0,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 99.0,
-      "tahakkuk_orani": -138.84,
+      "tahakkuk_orani": -2.87,
       "aga_orani": 0.0,
-      "ykp_orani": 12.6,
+      "ykp_orani": 0.5,
       "dso_gun": 0.0,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 99.0,
-      "tahakkuk_orani": -16.17,
+      "tahakkuk_orani": -2.05,
       "aga_orani": 0.0,
       "ykp_orani": 18.1,
       "dso_gun": 0.0,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 99.0,
-      "tahakkuk_orani": -133.73,
+      "tahakkuk_orani": -2.19,
       "aga_orani": 0.0,
       "ykp_orani": 57.7,
       "dso_gun": 0.0,

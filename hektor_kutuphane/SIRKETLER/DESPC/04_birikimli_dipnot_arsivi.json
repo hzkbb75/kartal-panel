@@ -1,11 +1,11 @@
 {
   "kod": "DESPC",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 17039.4,
       "icr_kati": 1.16,
-      "tahakkuk_orani": -2.41,
+      "tahakkuk_orani": -2.66,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 246.7,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 38054.6,
       "icr_kati": 1.04,
-      "tahakkuk_orani": -16.32,
+      "tahakkuk_orani": -15.99,
       "aga_orani": 0.0,
       "ykp_orani": 2.6,
       "dso_gun": 118.9,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 3735.7,
       "icr_kati": 0.72,
-      "tahakkuk_orani": -0.8,
+      "tahakkuk_orani": -2.55,
       "aga_orani": 1.6,
       "ykp_orani": 0.0,
       "dso_gun": 506.6,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 16593.3,
       "icr_kati": 0.71,
-      "tahakkuk_orani": -9.2,
+      "tahakkuk_orani": -12.32,
       "aga_orani": 0.0,
       "ykp_orani": 0.6,
       "dso_gun": 243.0,

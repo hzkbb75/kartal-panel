@@ -1,13 +1,13 @@
 {
   "kod": "SILVR",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 3.7,
       "icr_kati": -9.19,
-      "tahakkuk_orani": -4.34,
+      "tahakkuk_orani": -1.66,
       "aga_orani": 0.0,
-      "ykp_orani": 0.6,
+      "ykp_orani": 0.2,
       "dso_gun": 128.1,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 10.0,
       "icr_kati": -7.81,
-      "tahakkuk_orani": -29.68,
+      "tahakkuk_orani": -8.86,
       "aga_orani": 0.0,
-      "ykp_orani": 1.7,
+      "ykp_orani": 0.4,
       "dso_gun": 53.8,
       "acm_makasi": -112.7,
       "serefiye_ozk_orani": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 32.1,
       "icr_kati": -0.99,
-      "tahakkuk_orani": -15.15,
+      "tahakkuk_orani": -3.99,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 176.1,
@@ -63,9 +63,9 @@
     "2026/06": {
       "efm_yuzde": 8.5,
       "icr_kati": -5.27,
-      "tahakkuk_orani": -6.65,
+      "tahakkuk_orani": -2.03,
       "aga_orani": 0.0,
-      "ykp_orani": 1.6,
+      "ykp_orani": 0.5,
       "dso_gun": 132.5,
       "acm_makasi": -61.1,
       "serefiye_ozk_orani": 0.0,

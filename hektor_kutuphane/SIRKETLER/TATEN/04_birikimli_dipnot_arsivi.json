@@ -1,11 +1,11 @@
 {
   "kod": "TATEN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 6.5,
       "icr_kati": 0.53,
-      "tahakkuk_orani": -31.45,
+      "tahakkuk_orani": -2.27,
       "aga_orani": 0.0,
       "ykp_orani": 9.9,
       "dso_gun": 58.2,
@@ -24,13 +24,13 @@
     "2025/06": {
       "efm_yuzde": 17.5,
       "icr_kati": 0.45,
-      "tahakkuk_orani": -134.16,
+      "tahakkuk_orani": -6.99,
       "aga_orani": 0.0,
       "ykp_orani": 5.3,
       "dso_gun": 35.4,
       "acm_makasi": -81.7,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.2,
+      "karsilik_ozk_orani": 0.3,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -43,41 +43,40 @@
     "2026/03": {
       "efm_yuzde": 2.8,
       "icr_kati": 1.36,
-      "tahakkuk_orani": 31.52,
+      "tahakkuk_orani": 1.72,
       "aga_orani": 0.0,
       "ykp_orani": 0.4,
       "dso_gun": 49.5,
       "acm_makasi": 25.2,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.2,
+      "karsilik_ozk_orani": 0.3,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 30,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%31.52): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%25.2 açıldı (DSO: 49.5 gün).",
         "🔴 Faiz karşılama oranı 1.36x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 35,
+      "dts_delta": 15,
       "dso_delta": 14.1
     },
     "2026/06": {
       "efm_yuzde": 3.2,
       "icr_kati": 2.06,
-      "tahakkuk_orani": -87.72,
+      "tahakkuk_orani": -3.82,
       "aga_orani": 0.0,
       "ykp_orani": 1.8,
       "dso_gun": 49.8,
       "acm_makasi": 1.1,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.2,
+      "karsilik_ozk_orani": 0.3,
       "iliskili_orani": 0.0,
       "dts_skor": 0,
       "uyarilar": [
         "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -50,
+      "dts_delta": -30,
       "dso_delta": 0.3
     }
   }

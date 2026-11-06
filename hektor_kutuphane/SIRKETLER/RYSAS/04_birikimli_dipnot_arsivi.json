@@ -1,17 +1,17 @@
 {
   "kod": "RYSAS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 4.2,
       "icr_kati": 2.98,
-      "tahakkuk_orani": -49.44,
+      "tahakkuk_orani": -8.13,
       "aga_orani": 0.0,
       "ykp_orani": 1.0,
       "dso_gun": 226.6,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.3,
+      "karsilik_ozk_orani": 0.4,
       "iliskili_orani": 0.0,
       "dts_skor": 0,
       "uyarilar": [
@@ -24,13 +24,13 @@
     "2025/06": {
       "efm_yuzde": 20.6,
       "icr_kati": 1.66,
-      "tahakkuk_orani": -58.46,
+      "tahakkuk_orani": -9.4,
       "aga_orani": 0.0,
       "ykp_orani": 0.6,
       "dso_gun": 71.8,
       "acm_makasi": -154.6,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.3,
+      "karsilik_ozk_orani": 0.4,
       "iliskili_orani": 0.0,
       "dts_skor": 0,
       "uyarilar": [
@@ -43,13 +43,13 @@
     "2026/03": {
       "efm_yuzde": 6.0,
       "icr_kati": 1.53,
-      "tahakkuk_orani": -11.81,
+      "tahakkuk_orani": -2.13,
       "aga_orani": 0.0,
       "ykp_orani": 1.8,
       "dso_gun": 165.1,
       "acm_makasi": 62.6,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.2,
+      "karsilik_ozk_orani": 0.3,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -62,20 +62,20 @@
     "2026/06": {
       "efm_yuzde": 6.9,
       "icr_kati": 1.81,
-      "tahakkuk_orani": 16.21,
+      "tahakkuk_orani": 3.95,
       "aga_orani": 0.0,
       "ykp_orani": 1.2,
       "dso_gun": 84.1,
       "acm_makasi": -102.8,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.2,
+      "karsilik_ozk_orani": 0.3,
       "iliskili_orani": 0.0,
-      "dts_skor": 20,
+      "dts_skor": 0,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%16.21): Kâr nakde dönüşmüyor."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 5,
+      "dts_delta": -15,
       "dso_delta": -81.0
     }
   }

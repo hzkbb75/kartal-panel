@@ -1,11 +1,11 @@
 {
   "kod": "GOZDE",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 9.4,
       "icr_kati": -6.07,
-      "tahakkuk_orani": -62.23,
+      "tahakkuk_orani": -7.93,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 23.1,
       "icr_kati": -6.09,
-      "tahakkuk_orani": -12814.15,
+      "tahakkuk_orani": -27.72,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 748.7,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -36.85,
-      "tahakkuk_orani": -5382.0,
+      "tahakkuk_orani": -5.44,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -70.13,
-      "tahakkuk_orani": -89400.49,
+      "tahakkuk_orani": -9.1,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 752.5,

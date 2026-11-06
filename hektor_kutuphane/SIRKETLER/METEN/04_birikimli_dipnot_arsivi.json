@@ -1,6 +1,6 @@
 {
   "kod": "METEN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -45,7 +45,7 @@
     "2026/03": {
       "efm_yuzde": 10.8,
       "icr_kati": 0.1,
-      "tahakkuk_orani": -26.65,
+      "tahakkuk_orani": -2.22,
       "aga_orani": 3548.4,
       "ykp_orani": 0.0,
       "dso_gun": 174.4,
@@ -65,7 +65,7 @@
     "2026/06": {
       "efm_yuzde": 7.4,
       "icr_kati": 0.46,
-      "tahakkuk_orani": -66.65,
+      "tahakkuk_orani": -1.82,
       "aga_orani": 31.0,
       "ykp_orani": 100.0,
       "dso_gun": 119.7,

@@ -1,21 +1,21 @@
 {
   "kod": "INDES",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 18.3,
       "icr_kati": 1.27,
-      "tahakkuk_orani": 7.57,
+      "tahakkuk_orani": 6.48,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
       "dso_gun": 195.9,
       "acm_makasi": 0.0,
-      "serefiye_ozk_orani": 2.2,
-      "karsilik_ozk_orani": 3.8,
+      "serefiye_ozk_orani": 2.4,
+      "karsilik_ozk_orani": 4.1,
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%7.57): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%6.48): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 1.27x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,13 +25,13 @@
     "2025/06": {
       "efm_yuzde": 39.1,
       "icr_kati": 1.06,
-      "tahakkuk_orani": 1.78,
+      "tahakkuk_orani": 2.23,
       "aga_orani": 0.7,
       "ykp_orani": 16.0,
       "dso_gun": 90.8,
       "acm_makasi": -107.8,
-      "serefiye_ozk_orani": 2.2,
-      "karsilik_ozk_orani": 3.7,
+      "serefiye_ozk_orani": 2.3,
+      "karsilik_ozk_orani": 4.0,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -44,13 +44,13 @@
     "2026/03": {
       "efm_yuzde": 11.9,
       "icr_kati": 1.87,
-      "tahakkuk_orani": -2.03,
+      "tahakkuk_orani": -1.35,
       "aga_orani": 30.3,
       "ykp_orani": 0.0,
       "dso_gun": 248.5,
       "acm_makasi": 107.4,
-      "serefiye_ozk_orani": 2.0,
-      "karsilik_ozk_orani": 1.5,
+      "serefiye_ozk_orani": 2.2,
+      "karsilik_ozk_orani": 1.6,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -63,13 +63,13 @@
     "2026/06": {
       "efm_yuzde": 34.3,
       "icr_kati": 1.5,
-      "tahakkuk_orani": -3.26,
+      "tahakkuk_orani": -1.98,
       "aga_orani": 0.6,
       "ykp_orani": 0.0,
       "dso_gun": 123.3,
       "acm_makasi": -112.1,
-      "serefiye_ozk_orani": 2.0,
-      "karsilik_ozk_orani": 1.5,
+      "serefiye_ozk_orani": 2.1,
+      "karsilik_ozk_orani": 1.6,
       "iliskili_orani": 0.0,
       "dts_skor": 0,
       "uyarilar": [

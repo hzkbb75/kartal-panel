@@ -1,17 +1,17 @@
 {
   "kod": "KLSER",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 4.3,
       "icr_kati": -2.29,
-      "tahakkuk_orani": -7.77,
+      "tahakkuk_orani": -4.75,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 282.2,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 5.7,
+      "karsilik_ozk_orani": 5.8,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -24,13 +24,13 @@
     "2025/06": {
       "efm_yuzde": 14.2,
       "icr_kati": -1.21,
-      "tahakkuk_orani": -18.48,
+      "tahakkuk_orani": -10.98,
       "aga_orani": 0.0,
-      "ykp_orani": 0.5,
+      "ykp_orani": 0.2,
       "dso_gun": 145.4,
       "acm_makasi": -105.1,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 7.2,
+      "karsilik_ozk_orani": 7.3,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -43,9 +43,9 @@
     "2026/03": {
       "efm_yuzde": 0.1,
       "icr_kati": -25.58,
-      "tahakkuk_orani": -7.7,
+      "tahakkuk_orani": -3.47,
       "aga_orani": 0.0,
-      "ykp_orani": 1.5,
+      "ykp_orani": 0.7,
       "dso_gun": 357.5,
       "acm_makasi": 82.8,
       "serefiye_ozk_orani": 0.0,
@@ -63,21 +63,20 @@
     "2026/06": {
       "efm_yuzde": 4.4,
       "icr_kati": -1.08,
-      "tahakkuk_orani": 6.01,
+      "tahakkuk_orani": 2.53,
       "aga_orani": 0.0,
-      "ykp_orani": 10.5,
+      "ykp_orani": 4.4,
       "dso_gun": 161.1,
       "acm_makasi": -110.3,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 10.1,
+      "karsilik_ozk_orani": 9.9,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%6.01): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -1.08x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 5,
+      "dts_delta": -15,
       "dso_delta": -196.4
     }
   }

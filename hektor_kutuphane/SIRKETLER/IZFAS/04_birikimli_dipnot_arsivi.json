@@ -1,11 +1,11 @@
 {
   "kod": "IZFAS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 16.4,
       "icr_kati": -0.31,
-      "tahakkuk_orani": 10.21,
+      "tahakkuk_orani": 5.58,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 455.7,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%10.21): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%5.58): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -0.31x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,17 +25,17 @@
     "2025/06": {
       "efm_yuzde": 33.3,
       "icr_kati": -0.13,
-      "tahakkuk_orani": 27.14,
+      "tahakkuk_orani": 17.13,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 240.1,
       "acm_makasi": -101.8,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 3.8,
+      "karsilik_ozk_orani": 3.9,
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%27.14): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%17.13): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -0.13x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -45,9 +45,9 @@
     "2026/03": {
       "efm_yuzde": 17.1,
       "icr_kati": -1.44,
-      "tahakkuk_orani": -19.82,
+      "tahakkuk_orani": -14.82,
       "aga_orani": 0.0,
-      "ykp_orani": 1.0,
+      "ykp_orani": 0.8,
       "dso_gun": 623.0,
       "acm_makasi": 88.4,
       "serefiye_ozk_orani": 0.0,
@@ -65,7 +65,7 @@
     "2026/06": {
       "efm_yuzde": 131.7,
       "icr_kati": 0.41,
-      "tahakkuk_orani": -5.24,
+      "tahakkuk_orani": -10.02,
       "aga_orani": 0.0,
       "ykp_orani": 19.6,
       "dso_gun": 277.9,

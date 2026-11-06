@@ -1,11 +1,11 @@
 {
   "kod": "BRSAN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 3.4,
       "icr_kati": 0.24,
-      "tahakkuk_orani": -6.18,
+      "tahakkuk_orani": -3.56,
       "aga_orani": 0.0,
       "ykp_orani": 57.5,
       "dso_gun": 250.8,
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 4.9,
       "icr_kati": 1.71,
-      "tahakkuk_orani": -11.08,
+      "tahakkuk_orani": -5.24,
       "aga_orani": 0.0,
       "ykp_orani": 5.7,
       "dso_gun": 118.4,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 1.4,
       "icr_kati": 1.51,
-      "tahakkuk_orani": -7.95,
+      "tahakkuk_orani": -4.02,
       "aga_orani": 367.1,
       "ykp_orani": 53.4,
       "dso_gun": 159.9,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 2.2,
       "icr_kati": 6.42,
-      "tahakkuk_orani": -14.41,
+      "tahakkuk_orani": -6.04,
       "aga_orani": 2.2,
       "ykp_orani": 5.5,
       "dso_gun": 86.7,

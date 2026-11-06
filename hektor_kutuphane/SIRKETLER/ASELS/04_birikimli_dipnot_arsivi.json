@@ -1,11 +1,11 @@
 {
   "kod": "ASELS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 45.3,
       "icr_kati": 0.72,
-      "tahakkuk_orani": -2.92,
+      "tahakkuk_orani": -0.95,
       "aga_orani": 0.0,
       "ykp_orani": 59.3,
       "dso_gun": 338.8,
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 89.6,
       "icr_kati": 0.8,
-      "tahakkuk_orani": -9.56,
+      "tahakkuk_orani": -3.29,
       "aga_orani": 13.8,
       "ykp_orani": 52.2,
       "dso_gun": 135.1,
@@ -45,13 +45,13 @@
     "2026/03": {
       "efm_yuzde": 17.4,
       "icr_kati": 1.02,
-      "tahakkuk_orani": -2.8,
+      "tahakkuk_orani": -0.07,
       "aga_orani": 181.8,
       "ykp_orani": 60.8,
       "dso_gun": 441.8,
       "acm_makasi": 109.8,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 2.8,
+      "karsilik_ozk_orani": 2.9,
       "iliskili_orani": 0.0,
       "dts_skor": 45,
       "uyarilar": [
@@ -66,7 +66,7 @@
     "2026/06": {
       "efm_yuzde": 15.9,
       "icr_kati": 1.74,
-      "tahakkuk_orani": -6.11,
+      "tahakkuk_orani": -0.14,
       "aga_orani": 38.2,
       "ykp_orani": 16.6,
       "dso_gun": 194.5,

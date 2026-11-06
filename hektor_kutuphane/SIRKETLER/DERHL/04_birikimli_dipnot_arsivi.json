@@ -1,17 +1,17 @@
 {
   "kod": "DERHL",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 8.8,
       "icr_kati": 1.36,
-      "tahakkuk_orani": 0.59,
+      "tahakkuk_orani": 0.5,
       "aga_orani": 0.0,
       "ykp_orani": 0.8,
       "dso_gun": 333.8,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.8,
+      "karsilik_ozk_orani": 1.1,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -24,13 +24,13 @@
     "2025/06": {
       "efm_yuzde": 24.9,
       "icr_kati": 1.29,
-      "tahakkuk_orani": 2.94,
+      "tahakkuk_orani": 1.93,
       "aga_orani": 0.3,
       "ykp_orani": 0.0,
       "dso_gun": 184.9,
       "acm_makasi": -109.9,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.8,
+      "karsilik_ozk_orani": 1.1,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -43,13 +43,13 @@
     "2026/03": {
       "efm_yuzde": 7.7,
       "icr_kati": 1.22,
-      "tahakkuk_orani": 3.79,
+      "tahakkuk_orani": 1.79,
       "aga_orani": 0.6,
       "ykp_orani": 9.0,
       "dso_gun": 564.4,
       "acm_makasi": 73.6,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 1.0,
+      "karsilik_ozk_orani": 1.4,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
@@ -63,13 +63,13 @@
     "2026/06": {
       "efm_yuzde": 15.5,
       "icr_kati": 1.28,
-      "tahakkuk_orani": -7.06,
+      "tahakkuk_orani": -3.87,
       "aga_orani": 0.3,
       "ykp_orani": 4.0,
       "dso_gun": 200.8,
       "acm_makasi": -160.4,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.9,
+      "karsilik_ozk_orani": 1.3,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [

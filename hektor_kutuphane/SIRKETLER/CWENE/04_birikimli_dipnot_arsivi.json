@@ -1,11 +1,11 @@
 {
   "kod": "CWENE",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 7.0,
       "icr_kati": 0.69,
-      "tahakkuk_orani": 31.52,
+      "tahakkuk_orani": 17.48,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 332.9,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%31.52): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%17.48): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
         "🔴 Faiz karşılama oranı 0.69x (ICR zayıf)."
       ],
@@ -26,7 +26,7 @@
     "2025/06": {
       "efm_yuzde": 13.9,
       "icr_kati": 0.79,
-      "tahakkuk_orani": -0.98,
+      "tahakkuk_orani": 2.6,
       "aga_orani": 1.6,
       "ykp_orani": 71.1,
       "dso_gun": 177.9,
@@ -46,7 +46,7 @@
     "2026/03": {
       "efm_yuzde": 4.1,
       "icr_kati": 1.97,
-      "tahakkuk_orani": 2.8,
+      "tahakkuk_orani": 1.44,
       "aga_orani": 0.0,
       "ykp_orani": 38.2,
       "dso_gun": 739.2,
@@ -66,7 +66,7 @@
     "2026/06": {
       "efm_yuzde": 8.2,
       "icr_kati": 1.31,
-      "tahakkuk_orani": -0.28,
+      "tahakkuk_orani": 2.97,
       "aga_orani": 0.9,
       "ykp_orani": 84.1,
       "dso_gun": 376.1,

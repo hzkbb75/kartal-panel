@@ -1,11 +1,11 @@
 {
   "kod": "BMSTL",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 3.9,
       "icr_kati": -0.35,
-      "tahakkuk_orani": -3.41,
+      "tahakkuk_orani": -1.27,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 163.8,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 10.3,
       "icr_kati": 0.46,
-      "tahakkuk_orani": -5.05,
+      "tahakkuk_orani": -1.86,
       "aga_orani": 0.0,
       "ykp_orani": 2.7,
       "dso_gun": 81.9,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 7.6,
       "icr_kati": 0.28,
-      "tahakkuk_orani": -5.7,
+      "tahakkuk_orani": -2.17,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 202.1,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 14.5,
       "icr_kati": 0.72,
-      "tahakkuk_orani": -0.64,
+      "tahakkuk_orani": -0.28,
       "aga_orani": 0.0,
       "ykp_orani": 2.6,
       "dso_gun": 108.0,

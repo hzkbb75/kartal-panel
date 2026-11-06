@@ -1,17 +1,17 @@
 {
   "kod": "IZMDC",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 2.0,
       "icr_kati": 1.19,
-      "tahakkuk_orani": -5.03,
+      "tahakkuk_orani": -3.31,
       "aga_orani": 0.0,
       "ykp_orani": 61.3,
       "dso_gun": 62.3,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 1.7,
+      "karsilik_ozk_orani": 2.2,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
@@ -25,13 +25,13 @@
     "2025/06": {
       "efm_yuzde": 5.4,
       "icr_kati": 0.22,
-      "tahakkuk_orani": 4.19,
+      "tahakkuk_orani": -0.5,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 48.1,
       "acm_makasi": -47.1,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 1.7,
+      "karsilik_ozk_orani": 2.2,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
@@ -45,13 +45,13 @@
     "2026/03": {
       "efm_yuzde": 1.5,
       "icr_kati": -1.54,
-      "tahakkuk_orani": -0.1,
+      "tahakkuk_orani": -0.03,
       "aga_orani": 0.0,
-      "ykp_orani": 1.9,
+      "ykp_orani": 0.6,
       "dso_gun": 93.8,
       "acm_makasi": 38.2,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 2.1,
+      "karsilik_ozk_orani": 2.8,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
@@ -65,21 +65,20 @@
     "2026/06": {
       "efm_yuzde": 2.4,
       "icr_kati": -3.17,
-      "tahakkuk_orani": 15.21,
+      "tahakkuk_orani": 3.9,
       "aga_orani": 0.0,
-      "ykp_orani": 5.4,
+      "ykp_orani": 1.5,
       "dso_gun": 47.8,
       "acm_makasi": -115.2,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 2.2,
+      "karsilik_ozk_orani": 3.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%15.21): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -3.17x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 5,
+      "dts_delta": -15,
       "dso_delta": -46.0
     }
   }

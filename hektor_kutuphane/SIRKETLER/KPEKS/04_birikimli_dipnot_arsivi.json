@@ -1,11 +1,11 @@
 {
   "kod": "KPEKS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 1191.4,
       "icr_kati": 0.9,
-      "tahakkuk_orani": -1.25,
+      "tahakkuk_orani": -1.63,
       "aga_orani": 0.0,
       "ykp_orani": 22.6,
       "dso_gun": 374.6,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 537.2,
       "icr_kati": 1.28,
-      "tahakkuk_orani": -15802.82,
+      "tahakkuk_orani": -15775.15,
       "aga_orani": 0.0,
       "ykp_orani": 3.0,
       "dso_gun": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 88.7,
       "icr_kati": 1.05,
-      "tahakkuk_orani": -3.35,
+      "tahakkuk_orani": -1.16,
       "aga_orani": 2.6,
       "ykp_orani": 25.3,
       "dso_gun": 453.9,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 26.4,
       "icr_kati": 1.02,
-      "tahakkuk_orani": 3.85,
+      "tahakkuk_orani": 3.38,
       "aga_orani": 0.0,
       "ykp_orani": 21.4,
       "dso_gun": 230.0,

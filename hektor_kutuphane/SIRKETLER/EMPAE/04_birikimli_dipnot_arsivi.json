@@ -1,6 +1,6 @@
 {
   "kod": "EMPAE",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 1053.1,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 1.09,
-      "tahakkuk_orani": 6.35,
+      "tahakkuk_orani": 4.64,
       "aga_orani": 0.9,
       "ykp_orani": 12.7,
       "dso_gun": 417.5,
@@ -52,20 +52,19 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.4,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 30,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%6.35): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%48.9 açıldı (DSO: 417.5 gün).",
         "🔴 Faiz karşılama oranı 1.09x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 30,
+      "dts_delta": 10,
       "dso_delta": 417.5
     },
     "2026/06": {
       "efm_yuzde": 577.1,
       "icr_kati": 1.1,
-      "tahakkuk_orani": 4.5,
+      "tahakkuk_orani": 3.52,
       "aga_orani": 5.4,
       "ykp_orani": 17.0,
       "dso_gun": 227.2,
@@ -78,7 +77,7 @@
         "🔴 Faiz karşılama oranı 1.1x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -35,
+      "dts_delta": -15,
       "dso_delta": -190.3
     }
   }

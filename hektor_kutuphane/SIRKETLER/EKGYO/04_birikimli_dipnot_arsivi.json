@@ -1,11 +1,11 @@
 {
   "kod": "EKGYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 11.0,
       "icr_kati": 5.43,
-      "tahakkuk_orani": 3.28,
+      "tahakkuk_orani": 4.01,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 95.1,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 18.8,
       "icr_kati": 4.4,
-      "tahakkuk_orani": 6.72,
+      "tahakkuk_orani": 10.14,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 63.9,
@@ -34,7 +34,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 20,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%6.72): Kâr nakde dönüşmüyor."
+        "🔴 Tahakkuk anomalisi (%10.14): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {},
       "dts_delta": 20,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 2.1,
       "icr_kati": 5.96,
-      "tahakkuk_orani": 3.0,
+      "tahakkuk_orani": 2.75,
       "aga_orani": 0.0,
       "ykp_orani": 0.6,
       "dso_gun": 551.5,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 8.2,
       "icr_kati": 1.77,
-      "tahakkuk_orani": 3.25,
+      "tahakkuk_orani": 3.54,
       "aga_orani": 0.0,
       "ykp_orani": 0.8,
       "dso_gun": 329.5,

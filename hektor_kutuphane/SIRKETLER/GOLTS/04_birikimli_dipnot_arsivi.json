@@ -1,11 +1,11 @@
 {
   "kod": "GOLTS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 27.9,
       "icr_kati": 0.54,
-      "tahakkuk_orani": -0.59,
+      "tahakkuk_orani": -0.12,
       "aga_orani": 0.0,
       "ykp_orani": 57.8,
       "dso_gun": 293.3,
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 46.3,
       "icr_kati": 0.36,
-      "tahakkuk_orani": -6.72,
+      "tahakkuk_orani": -1.47,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 136.5,
@@ -45,13 +45,13 @@
     "2026/03": {
       "efm_yuzde": 4.2,
       "icr_kati": 4.02,
-      "tahakkuk_orani": -3.87,
+      "tahakkuk_orani": -0.95,
       "aga_orani": 1.1,
       "ykp_orani": 0.2,
       "dso_gun": 309.1,
       "acm_makasi": 57.6,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.8,
+      "karsilik_ozk_orani": 0.9,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -64,13 +64,13 @@
     "2026/06": {
       "efm_yuzde": 0.9,
       "icr_kati": 13.66,
-      "tahakkuk_orani": -9.32,
+      "tahakkuk_orani": -1.0,
       "aga_orani": 0.0,
       "ykp_orani": 21.4,
       "dso_gun": 171.1,
       "acm_makasi": -109.0,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.7,
+      "karsilik_ozk_orani": 0.8,
       "iliskili_orani": 0.0,
       "dts_skor": 0,
       "uyarilar": [

@@ -1,13 +1,13 @@
 {
   "kod": "EGSER",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 20.9,
       "icr_kati": -0.82,
-      "tahakkuk_orani": 1.33,
+      "tahakkuk_orani": -1.18,
       "aga_orani": 0.0,
-      "ykp_orani": 9.6,
+      "ykp_orani": 4.7,
       "dso_gun": 263.5,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 15.7,
       "icr_kati": -1.84,
-      "tahakkuk_orani": -9.87,
+      "tahakkuk_orani": -8.85,
       "aga_orani": 0.0,
-      "ykp_orani": 0.1,
+      "ykp_orani": 0.0,
       "dso_gun": 139.7,
       "acm_makasi": -105.6,
       "serefiye_ozk_orani": 0.0,
@@ -43,9 +43,9 @@
     "2026/03": {
       "efm_yuzde": 6.5,
       "icr_kati": -0.35,
-      "tahakkuk_orani": -2.38,
+      "tahakkuk_orani": -1.26,
       "aga_orani": 0.0,
-      "ykp_orani": 0.2,
+      "ykp_orani": 0.1,
       "dso_gun": 651.7,
       "acm_makasi": 185.4,
       "serefiye_ozk_orani": 0.0,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 14.3,
       "icr_kati": 0.31,
-      "tahakkuk_orani": 4.27,
+      "tahakkuk_orani": 2.27,
       "aga_orani": 2.1,
       "ykp_orani": 0.7,
       "dso_gun": 307.3,

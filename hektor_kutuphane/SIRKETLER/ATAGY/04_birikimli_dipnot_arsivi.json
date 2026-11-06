@@ -1,11 +1,11 @@
 {
   "kod": "ATAGY",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 823.3,
       "icr_kati": 1.09,
-      "tahakkuk_orani": -37.63,
+      "tahakkuk_orani": -5.38,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 106.6,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 1320.1,
       "icr_kati": 1.62,
-      "tahakkuk_orani": 89.66,
+      "tahakkuk_orani": 6.3,
       "aga_orani": 0.1,
       "ykp_orani": 0.0,
       "dso_gun": 56.2,
@@ -34,7 +34,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 20,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%89.66): Kâr nakde dönüşmüyor."
+        "🔴 Tahakkuk anomalisi (%6.3): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {},
       "dts_delta": 5,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 251.3,
       "icr_kati": 0.8,
-      "tahakkuk_orani": -26.37,
+      "tahakkuk_orani": -1.49,
       "aga_orani": 21.3,
       "ykp_orani": 0.0,
       "dso_gun": 164.1,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 169.2,
       "icr_kati": 1.36,
-      "tahakkuk_orani": -52.4,
+      "tahakkuk_orani": -2.37,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 81.2,

@@ -1,11 +1,11 @@
 {
   "kod": "EUYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 377.1,
       "icr_kati": 0.89,
-      "tahakkuk_orani": -2.62,
+      "tahakkuk_orani": -2.61,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 3.4,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 545.2,
       "icr_kati": 0.07,
-      "tahakkuk_orani": -0.27,
+      "tahakkuk_orani": -4.85,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 11.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 206.0,
       "icr_kati": -0.26,
-      "tahakkuk_orani": -3.92,
+      "tahakkuk_orani": -3.5,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 648.3,
       "icr_kati": 0.23,
-      "tahakkuk_orani": -6.9,
+      "tahakkuk_orani": -6.21,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,

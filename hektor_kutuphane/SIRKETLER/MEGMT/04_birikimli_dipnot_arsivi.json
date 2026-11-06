@@ -1,11 +1,11 @@
 {
   "kod": "MEGMT",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 3.9,
       "icr_kati": 1.13,
-      "tahakkuk_orani": -1.4,
+      "tahakkuk_orani": -0.89,
       "aga_orani": 0.0,
       "ykp_orani": 7.9,
       "dso_gun": 147.9,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 4.0,
       "icr_kati": 1.56,
-      "tahakkuk_orani": 17.66,
+      "tahakkuk_orani": 11.51,
       "aga_orani": 0.0,
       "ykp_orani": 15.9,
       "dso_gun": 70.9,
@@ -34,7 +34,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 20,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%17.66): Kâr nakde dönüşmüyor."
+        "🔴 Tahakkuk anomalisi (%11.51): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {},
       "dts_delta": 5,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 3.3,
       "icr_kati": 1.72,
-      "tahakkuk_orani": 1.99,
+      "tahakkuk_orani": 1.14,
       "aga_orani": 6.2,
       "ykp_orani": 36.7,
       "dso_gun": 107.9,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 4.4,
       "icr_kati": 1.52,
-      "tahakkuk_orani": 2.72,
+      "tahakkuk_orani": 1.56,
       "aga_orani": 97.0,
       "ykp_orani": 39.8,
       "dso_gun": 65.5,

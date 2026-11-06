@@ -1,13 +1,13 @@
 {
   "kod": "KOCMT",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 66.1,
       "icr_kati": -0.21,
-      "tahakkuk_orani": 24.67,
+      "tahakkuk_orani": 10.36,
       "aga_orani": 0.0,
-      "ykp_orani": 2.4,
+      "ykp_orani": 1.1,
       "dso_gun": 7.8,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%24.67): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%10.36): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -0.21x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,9 +25,9 @@
     "2025/06": {
       "efm_yuzde": 110.6,
       "icr_kati": -0.23,
-      "tahakkuk_orani": 40.01,
+      "tahakkuk_orani": 17.48,
       "aga_orani": 0.0,
-      "ykp_orani": 6.4,
+      "ykp_orani": 2.9,
       "dso_gun": 18.1,
       "acm_makasi": 329.7,
       "serefiye_ozk_orani": 0.0,
@@ -35,7 +35,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%40.01): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%17.48): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%329.7 açıldı (DSO: 18.1 gün).",
         "🔴 Faiz karşılama oranı -0.23x (ICR zayıf)."
       ],
@@ -46,9 +46,9 @@
     "2026/03": {
       "efm_yuzde": 7.3,
       "icr_kati": -0.15,
-      "tahakkuk_orani": 16.05,
+      "tahakkuk_orani": 6.38,
       "aga_orani": 0.0,
-      "ykp_orani": 0.5,
+      "ykp_orani": 0.2,
       "dso_gun": 50.7,
       "acm_makasi": 21.2,
       "serefiye_ozk_orani": 0.0,
@@ -56,7 +56,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%16.05): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%6.38): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%21.2 açıldı (DSO: 50.7 gün).",
         "🔴 Faiz karşılama oranı -0.15x (ICR zayıf)."
       ],
@@ -67,7 +67,7 @@
     "2026/06": {
       "efm_yuzde": 16.8,
       "icr_kati": 0.52,
-      "tahakkuk_orani": 9.23,
+      "tahakkuk_orani": 3.83,
       "aga_orani": 0.1,
       "ykp_orani": 34.2,
       "dso_gun": 81.4,
@@ -75,14 +75,13 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 30,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%9.23): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%370.5 açıldı (DSO: 81.4 gün).",
         "🔴 Faiz karşılama oranı 0.52x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 0,
+      "dts_delta": -20,
       "dso_delta": 30.7
     }
   }

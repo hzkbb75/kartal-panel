@@ -1,11 +1,11 @@
 {
   "kod": "SELVA",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 40.3,
       "icr_kati": -0.2,
-      "tahakkuk_orani": -17.98,
+      "tahakkuk_orani": -2.78,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 117.2,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 13.5,
       "icr_kati": -0.27,
-      "tahakkuk_orani": -53.67,
+      "tahakkuk_orani": -10.21,
       "aga_orani": 0.0,
-      "ykp_orani": 1.4,
+      "ykp_orani": 0.3,
       "dso_gun": 74.6,
       "acm_makasi": -72.0,
       "serefiye_ozk_orani": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 3.4,
       "icr_kati": -2.72,
-      "tahakkuk_orani": -35.79,
+      "tahakkuk_orani": -5.35,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 91.4,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 4.7,
       "icr_kati": 0.01,
-      "tahakkuk_orani": -37.81,
+      "tahakkuk_orani": -6.81,
       "aga_orani": 2.7,
       "ykp_orani": 100.0,
       "dso_gun": 111.0,

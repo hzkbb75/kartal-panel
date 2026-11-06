@@ -1,13 +1,13 @@
 {
   "kod": "ZOREN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 13.4,
       "icr_kati": -0.03,
-      "tahakkuk_orani": -4.39,
+      "tahakkuk_orani": -4.06,
       "aga_orani": 0.0,
-      "ykp_orani": 4.4,
+      "ykp_orani": 0.7,
       "dso_gun": 313.9,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 28.1,
       "icr_kati": 0.01,
-      "tahakkuk_orani": -19.64,
+      "tahakkuk_orani": -11.36,
       "aga_orani": 408.4,
       "ykp_orani": 100.0,
       "dso_gun": 158.0,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 6.2,
       "icr_kati": 0.05,
-      "tahakkuk_orani": 3.39,
+      "tahakkuk_orani": -1.88,
       "aga_orani": 1160.7,
       "ykp_orani": 3.7,
       "dso_gun": 551.7,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 13.1,
       "icr_kati": 0.09,
-      "tahakkuk_orani": -6.58,
+      "tahakkuk_orani": -5.27,
       "aga_orani": 106.9,
       "ykp_orani": 3.5,
       "dso_gun": 313.1,

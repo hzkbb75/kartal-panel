@@ -1,13 +1,13 @@
 {
   "kod": "DURDO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 4.2,
       "icr_kati": -3.45,
-      "tahakkuk_orani": -18.73,
+      "tahakkuk_orani": -8.96,
       "aga_orani": 0.0,
-      "ykp_orani": 2.8,
+      "ykp_orani": 1.2,
       "dso_gun": 305.4,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 22.5,
       "icr_kati": -0.4,
-      "tahakkuk_orani": -33.16,
+      "tahakkuk_orani": -16.67,
       "aga_orani": 0.0,
-      "ykp_orani": 0.2,
+      "ykp_orani": 0.1,
       "dso_gun": 147.9,
       "acm_makasi": -112.3,
       "serefiye_ozk_orani": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -48.37,
-      "tahakkuk_orani": -17.14,
+      "tahakkuk_orani": -7.79,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
       "dso_gun": 362.9,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 3.6,
       "icr_kati": 0.32,
-      "tahakkuk_orani": -9.4,
+      "tahakkuk_orani": -5.48,
       "aga_orani": 0.0,
       "ykp_orani": 43.0,
       "dso_gun": 189.3,

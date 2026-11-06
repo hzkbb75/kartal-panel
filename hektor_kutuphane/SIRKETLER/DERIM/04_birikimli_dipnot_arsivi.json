@@ -1,11 +1,11 @@
 {
   "kod": "DERIM",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 1.68,
-      "tahakkuk_orani": -11.41,
+      "tahakkuk_orani": -11.13,
       "aga_orani": 0.0,
       "ykp_orani": 10.7,
       "dso_gun": 217.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 1.22,
-      "tahakkuk_orani": 10.57,
+      "tahakkuk_orani": 12.18,
       "aga_orani": 0.0,
       "ykp_orani": 3.0,
       "dso_gun": 134.2,
@@ -34,7 +34,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%10.57): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%12.18): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 1.22x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 1.05,
-      "tahakkuk_orani": 14.06,
+      "tahakkuk_orani": 15.04,
       "aga_orani": 2.0,
       "ykp_orani": 31.2,
       "dso_gun": 330.4,
@@ -54,7 +54,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%14.06): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%15.04): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%71.0 açıldı (DSO: 330.4 gün).",
         "🔴 Faiz karşılama oranı 1.05x (ICR zayıf)."
       ],
@@ -65,7 +65,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.86,
-      "tahakkuk_orani": 10.01,
+      "tahakkuk_orani": 11.73,
       "aga_orani": 0.5,
       "ykp_orani": 60.0,
       "dso_gun": 146.5,
@@ -75,7 +75,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%10.01): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%11.73): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%60.0).",
         "🔴 Faiz karşılama oranı 0.86x (ICR zayıf)."
       ],

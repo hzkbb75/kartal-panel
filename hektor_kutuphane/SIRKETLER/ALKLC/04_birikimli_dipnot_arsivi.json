@@ -1,11 +1,11 @@
 {
   "kod": "ALKLC",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 13.4,
       "icr_kati": 1.29,
-      "tahakkuk_orani": -4.53,
+      "tahakkuk_orani": -2.58,
       "aga_orani": 0.0,
       "ykp_orani": 0.3,
       "dso_gun": 224.3,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 32.5,
       "icr_kati": 1.19,
-      "tahakkuk_orani": -3.04,
+      "tahakkuk_orani": -0.19,
       "aga_orani": 0.0,
       "ykp_orani": 7.4,
       "dso_gun": 87.9,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 12.4,
       "icr_kati": 1.01,
-      "tahakkuk_orani": 2.21,
+      "tahakkuk_orani": 0.25,
       "aga_orani": 0.3,
       "ykp_orani": 0.0,
       "dso_gun": 302.2,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 17.5,
       "icr_kati": 0.73,
-      "tahakkuk_orani": 1.7,
+      "tahakkuk_orani": 0.9,
       "aga_orani": 0.8,
       "ykp_orani": 2.2,
       "dso_gun": 164.6,

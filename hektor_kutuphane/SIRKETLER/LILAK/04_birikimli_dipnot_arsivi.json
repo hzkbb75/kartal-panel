@@ -1,11 +1,11 @@
 {
   "kod": "LILAK",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 87.5,
       "icr_kati": 0.71,
-      "tahakkuk_orani": 2.28,
+      "tahakkuk_orani": 0.78,
       "aga_orani": 0.0,
       "ykp_orani": 16.2,
       "dso_gun": 268.4,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.89,
-      "tahakkuk_orani": 1.54,
+      "tahakkuk_orani": 2.62,
       "aga_orani": 0.5,
       "ykp_orani": 39.4,
       "dso_gun": 123.5,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 786.5,
       "icr_kati": 0.55,
-      "tahakkuk_orani": -11.69,
+      "tahakkuk_orani": -6.32,
       "aga_orani": 4.0,
       "ykp_orani": 4.0,
       "dso_gun": 386.9,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 94.1,
       "icr_kati": 0.68,
-      "tahakkuk_orani": -13.99,
+      "tahakkuk_orani": -8.05,
       "aga_orani": 0.4,
       "ykp_orani": 20.4,
       "dso_gun": 190.3,

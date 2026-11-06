@@ -1,11 +1,11 @@
 {
   "kod": "EGPRO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.93,
-      "tahakkuk_orani": -9.54,
+      "tahakkuk_orani": -3.97,
       "aga_orani": 0.0,
       "ykp_orani": 21.2,
       "dso_gun": 427.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 82419.0,
       "icr_kati": 0.98,
-      "tahakkuk_orani": -14.63,
+      "tahakkuk_orani": -3.71,
       "aga_orani": 0.8,
       "ykp_orani": 39.9,
       "dso_gun": 188.9,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 66.6,
       "icr_kati": 1.75,
-      "tahakkuk_orani": -2.22,
+      "tahakkuk_orani": -0.64,
       "aga_orani": 10.7,
       "ykp_orani": 12.6,
       "dso_gun": 629.5,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 54.8,
       "icr_kati": 2.05,
-      "tahakkuk_orani": -3.09,
+      "tahakkuk_orani": 1.58,
       "aga_orani": 0.0,
       "ykp_orani": 28.4,
       "dso_gun": 249.5,

@@ -1,11 +1,11 @@
 {
   "kod": "ATSYH",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 1.01,
-      "tahakkuk_orani": 0.7,
+      "tahakkuk_orani": 0.73,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 2001.9,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 3.3,
-      "tahakkuk_orani": 1.66,
+      "tahakkuk_orani": -1.13,
       "aga_orani": 84.1,
       "ykp_orani": 0.0,
       "dso_gun": 249.5,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 2.35,
-      "tahakkuk_orani": 0.66,
+      "tahakkuk_orani": 0.35,
       "aga_orani": 428.8,
       "ykp_orani": 0.0,
       "dso_gun": 853.7,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 1.49,
-      "tahakkuk_orani": 0.54,
+      "tahakkuk_orani": 0.06,
       "aga_orani": 54.7,
       "ykp_orani": 0.0,
       "dso_gun": 372.5,

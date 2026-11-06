@@ -1,13 +1,13 @@
 {
   "kod": "ECILC",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 15.7,
       "icr_kati": -0.12,
-      "tahakkuk_orani": 3.86,
+      "tahakkuk_orani": 3.29,
       "aga_orani": 0.0,
-      "ykp_orani": 30.7,
+      "ykp_orani": 5.1,
       "dso_gun": 311.4,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 29.7,
       "icr_kati": 0.23,
-      "tahakkuk_orani": -3.52,
+      "tahakkuk_orani": 3.37,
       "aga_orani": 42.0,
       "ykp_orani": 100.0,
       "dso_gun": 131.4,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 6.9,
       "icr_kati": -0.51,
-      "tahakkuk_orani": 0.69,
+      "tahakkuk_orani": -1.08,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 362.6,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 12.6,
       "icr_kati": -0.38,
-      "tahakkuk_orani": -0.46,
+      "tahakkuk_orani": -2.26,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 161.6,

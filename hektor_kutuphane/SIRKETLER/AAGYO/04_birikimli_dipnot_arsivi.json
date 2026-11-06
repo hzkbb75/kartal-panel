@@ -1,6 +1,6 @@
 {
   "kod": "AAGYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -47,7 +47,7 @@
     "2026/03": {
       "efm_yuzde": 29199.7,
       "icr_kati": 1.06,
-      "tahakkuk_orani": -21.97,
+      "tahakkuk_orani": -1.77,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 12.7,
@@ -67,7 +67,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.95,
-      "tahakkuk_orani": -5.59,
+      "tahakkuk_orani": -1.01,
       "aga_orani": 0.0,
       "ykp_orani": 0.8,
       "dso_gun": 20.8,

@@ -1,11 +1,11 @@
 {
   "kod": "GWIND",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 4.1,
       "icr_kati": 8.73,
-      "tahakkuk_orani": -41.44,
+      "tahakkuk_orani": -2.23,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 111.8,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 5.9,
       "icr_kati": 11.03,
-      "tahakkuk_orani": -82.96,
+      "tahakkuk_orani": -3.18,
       "aga_orani": 43.4,
       "ykp_orani": 0.0,
       "dso_gun": 72.8,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 3.0,
       "icr_kati": 5.79,
-      "tahakkuk_orani": -21.04,
+      "tahakkuk_orani": -1.3,
       "aga_orani": 532.2,
       "ykp_orani": 0.0,
       "dso_gun": 110.3,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 3.7,
       "icr_kati": 4.99,
-      "tahakkuk_orani": 83.93,
+      "tahakkuk_orani": 5.89,
       "aga_orani": 99.7,
       "ykp_orani": 100.0,
       "dso_gun": 80.3,
@@ -72,7 +72,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%83.93): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%5.89): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0)."
       ],
       "pdf_dipnot_notlari": {},

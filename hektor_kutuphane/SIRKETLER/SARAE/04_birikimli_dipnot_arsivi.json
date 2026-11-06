@@ -1,6 +1,6 @@
 {
   "kod": "SARAE",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 60.2,
@@ -46,7 +46,7 @@
     "2026/03": {
       "efm_yuzde": 13.5,
       "icr_kati": 1.56,
-      "tahakkuk_orani": 2.23,
+      "tahakkuk_orani": 3.38,
       "aga_orani": 25.8,
       "ykp_orani": 3.8,
       "dso_gun": 489.0,
@@ -65,7 +65,7 @@
     "2026/06": {
       "efm_yuzde": 26.4,
       "icr_kati": 0.45,
-      "tahakkuk_orani": 12.59,
+      "tahakkuk_orani": 8.38,
       "aga_orani": 5.5,
       "ykp_orani": 62.5,
       "dso_gun": 261.2,
@@ -75,7 +75,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%12.59): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%8.38): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%62.5).",
         "🔴 Faiz karşılama oranı 0.45x (ICR zayıf)."
       ],

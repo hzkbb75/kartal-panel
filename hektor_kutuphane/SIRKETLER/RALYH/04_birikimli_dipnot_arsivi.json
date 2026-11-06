@@ -1,11 +1,11 @@
 {
   "kod": "RALYH",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 39.5,
       "icr_kati": 0.32,
-      "tahakkuk_orani": -79.31,
+      "tahakkuk_orani": -20.18,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 50.1,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 29.2,
       "icr_kati": 1.23,
-      "tahakkuk_orani": -35.61,
+      "tahakkuk_orani": -8.79,
       "aga_orani": 0.0,
       "ykp_orani": 0.2,
       "dso_gun": 63.5,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 14.4,
       "icr_kati": 0.2,
-      "tahakkuk_orani": -23.83,
+      "tahakkuk_orani": 1.35,
       "aga_orani": 1.0,
       "ykp_orani": 100.0,
       "dso_gun": 18.8,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 36.9,
       "icr_kati": 0.08,
-      "tahakkuk_orani": -13.29,
+      "tahakkuk_orani": -2.47,
       "aga_orani": 0.3,
       "ykp_orani": 100.0,
       "dso_gun": 16.1,

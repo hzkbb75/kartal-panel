@@ -1,13 +1,13 @@
 {
   "kod": "HATEK",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 15.8,
       "icr_kati": -0.73,
-      "tahakkuk_orani": -5.78,
+      "tahakkuk_orani": -1.99,
       "aga_orani": 0.0,
-      "ykp_orani": 1.2,
+      "ykp_orani": 0.5,
       "dso_gun": 273.1,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 38.9,
       "icr_kati": 0.04,
-      "tahakkuk_orani": 11.11,
+      "tahakkuk_orani": -9.07,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 135.1,
@@ -32,22 +32,21 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 4.1,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 30,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%11.11): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
         "🔴 Faiz karşılama oranı 0.04x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 35,
+      "dts_delta": 15,
       "dso_delta": -138.0
     },
     "2026/03": {
       "efm_yuzde": 3.8,
       "icr_kati": -1.63,
-      "tahakkuk_orani": -23.21,
+      "tahakkuk_orani": -6.74,
       "aga_orani": 0.0,
-      "ykp_orani": 0.5,
+      "ykp_orani": 0.2,
       "dso_gun": 331.5,
       "acm_makasi": 60.3,
       "serefiye_ozk_orani": 0.0,
@@ -59,15 +58,15 @@
         "🔴 Faiz karşılama oranı -1.63x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -20,
+      "dts_delta": 0,
       "dso_delta": 196.4
     },
     "2026/06": {
       "efm_yuzde": 9.3,
       "icr_kati": -0.95,
-      "tahakkuk_orani": -24.86,
+      "tahakkuk_orani": -6.84,
       "aga_orani": 0.0,
-      "ykp_orani": 0.6,
+      "ykp_orani": 0.2,
       "dso_gun": 160.3,
       "acm_makasi": -110.9,
       "serefiye_ozk_orani": 0.0,

@@ -1,11 +1,11 @@
 {
   "kod": "GOKNR",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 27.5,
       "icr_kati": 1.39,
-      "tahakkuk_orani": 7.08,
+      "tahakkuk_orani": 5.28,
       "aga_orani": 0.0,
       "ykp_orani": 1.9,
       "dso_gun": 358.5,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%7.08): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%5.28): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 1.39x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 42.8,
       "icr_kati": 0.96,
-      "tahakkuk_orani": -4.93,
+      "tahakkuk_orani": -2.26,
       "aga_orani": 0.4,
       "ykp_orani": 5.1,
       "dso_gun": 128.5,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 18.5,
       "icr_kati": 1.06,
-      "tahakkuk_orani": 2.28,
+      "tahakkuk_orani": 3.01,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 263.4,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 48.7,
       "icr_kati": 1.04,
-      "tahakkuk_orani": -5.56,
+      "tahakkuk_orani": -0.81,
       "aga_orani": 0.1,
       "ykp_orani": 2.0,
       "dso_gun": 114.7,

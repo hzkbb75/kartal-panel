@@ -1,11 +1,11 @@
 {
   "kod": "TRALT",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 33867.0,
       "icr_kati": 0.34,
-      "tahakkuk_orani": -26.97,
+      "tahakkuk_orani": -10.77,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 0.1,
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 48425.5,
       "icr_kati": 0.82,
-      "tahakkuk_orani": -23.79,
+      "tahakkuk_orani": -5.44,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 0.1,
@@ -45,7 +45,7 @@
     "2026/03": {
       "efm_yuzde": 29981.7,
       "icr_kati": 1.64,
-      "tahakkuk_orani": -28.59,
+      "tahakkuk_orani": -13.19,
       "aga_orani": 0.0,
       "ykp_orani": 42.6,
       "dso_gun": 0.1,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 6554.0,
       "icr_kati": 1.61,
-      "tahakkuk_orani": -23.78,
+      "tahakkuk_orani": -5.43,
       "aga_orani": 0.2,
       "ykp_orani": 63.3,
       "dso_gun": 0.1,

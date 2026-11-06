@@ -1,11 +1,11 @@
 {
   "kod": "GENIL",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 5.5,
       "icr_kati": 4.66,
-      "tahakkuk_orani": 10.39,
+      "tahakkuk_orani": 7.71,
       "aga_orani": 0.0,
       "ykp_orani": 1.7,
       "dso_gun": 148.4,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 20,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%10.39): Kâr nakde dönüşmüyor."
+        "🔴 Tahakkuk anomalisi (%7.71): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {},
       "dts_delta": 0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 24.1,
       "icr_kati": 1.9,
-      "tahakkuk_orani": -0.31,
+      "tahakkuk_orani": 2.98,
       "aga_orani": 7.9,
       "ykp_orani": 2.5,
       "dso_gun": 75.7,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 12.1,
       "icr_kati": 2.3,
-      "tahakkuk_orani": 5.41,
+      "tahakkuk_orani": 4.31,
       "aga_orani": 50.7,
       "ykp_orani": 0.4,
       "dso_gun": 239.4,
@@ -51,19 +51,18 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.8,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%5.41): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%129.4 açıldı (DSO: 239.4 gün)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 35,
+      "dts_delta": 15,
       "dso_delta": 163.7
     },
     "2026/06": {
       "efm_yuzde": 17.0,
       "icr_kati": 1.88,
-      "tahakkuk_orani": 2.05,
+      "tahakkuk_orani": 4.33,
       "aga_orani": 4.2,
       "ykp_orani": 12.3,
       "dso_gun": 124.3,
@@ -76,7 +75,7 @@
         "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -35,
+      "dts_delta": -15,
       "dso_delta": -115.1
     }
   }

@@ -1,11 +1,11 @@
 {
   "kod": "KLYPV",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 3.9,
       "icr_kati": -0.07,
-      "tahakkuk_orani": -17.36,
+      "tahakkuk_orani": -6.38,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 351.3,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 4.5,
       "icr_kati": -0.35,
-      "tahakkuk_orani": -0.54,
+      "tahakkuk_orani": -0.26,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 338.9,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 2.9,
       "icr_kati": -0.63,
-      "tahakkuk_orani": -6.62,
+      "tahakkuk_orani": -1.9,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 340.4,
@@ -62,9 +62,9 @@
     "2026/06": {
       "efm_yuzde": 7.0,
       "icr_kati": -2.33,
-      "tahakkuk_orani": -9.09,
+      "tahakkuk_orani": -1.97,
       "aga_orani": 0.0,
-      "ykp_orani": 31.9,
+      "ykp_orani": 6.9,
       "dso_gun": 80.7,
       "acm_makasi": -226.9,
       "serefiye_ozk_orani": 0.0,

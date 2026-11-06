@@ -1,11 +1,11 @@
 {
   "kod": "MMCAS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -1.23,
-      "tahakkuk_orani": 49.7,
+      "tahakkuk_orani": -34.89,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 885.9,
@@ -13,9 +13,8 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 6.2,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 30,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%49.7): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%55.6 açıldı (DSO: 885.9 gün).",
         "🔴 Faiz karşılama oranı -1.23x (ICR zayıf)."
       ],
@@ -26,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -1.29,
-      "tahakkuk_orani": 98.45,
+      "tahakkuk_orani": -22.83,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 154.2,
@@ -34,9 +33,8 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 8.6,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%98.45): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -1.29x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -46,17 +44,16 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -2.49,
-      "tahakkuk_orani": 43.57,
+      "tahakkuk_orani": -12.25,
       "aga_orani": 0.0,
-      "ykp_orani": 20.8,
+      "ykp_orani": 13.0,
       "dso_gun": 173.4,
       "acm_makasi": 28.0,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 30,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%43.57): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%28.0 açıldı (DSO: 173.4 gün).",
         "🔴 Faiz karşılama oranı -2.49x (ICR zayıf)."
       ],
@@ -67,9 +64,9 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -2.5,
-      "tahakkuk_orani": 97.76,
+      "tahakkuk_orani": 81.66,
       "aga_orani": 0.0,
-      "ykp_orani": 1.0,
+      "ykp_orani": 0.9,
       "dso_gun": 0.0,
       "acm_makasi": 47.6,
       "serefiye_ozk_orani": 0.0,
@@ -77,12 +74,12 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%97.76): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%81.66): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%47.6 açıldı (DSO: 0.0 gün).",
         "🔴 Faiz karşılama oranı -2.5x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 0,
+      "dts_delta": 20,
       "dso_delta": -173.4
     }
   }

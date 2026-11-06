@@ -1,11 +1,11 @@
 {
   "kod": "RODRG",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 200.4,
       "icr_kati": 0.18,
-      "tahakkuk_orani": -15.82,
+      "tahakkuk_orani": -11.66,
       "aga_orani": 0.0,
       "ykp_orani": 90.2,
       "dso_gun": 14.4,
@@ -25,9 +25,9 @@
     "2025/06": {
       "efm_yuzde": 141.6,
       "icr_kati": -0.15,
-      "tahakkuk_orani": -20.68,
+      "tahakkuk_orani": -16.33,
       "aga_orani": 0.0,
-      "ykp_orani": 4.8,
+      "ykp_orani": 2.9,
       "dso_gun": 8.0,
       "acm_makasi": -82.1,
       "serefiye_ozk_orani": 0.0,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 33.9,
       "icr_kati": -0.66,
-      "tahakkuk_orani": 4.05,
+      "tahakkuk_orani": 2.38,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.4,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 67.3,
       "icr_kati": -1.25,
-      "tahakkuk_orani": -7.56,
+      "tahakkuk_orani": -4.45,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.1,

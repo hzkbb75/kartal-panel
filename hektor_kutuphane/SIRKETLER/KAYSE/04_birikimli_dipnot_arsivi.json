@@ -1,13 +1,13 @@
 {
   "kod": "KAYSE",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 28.8,
       "icr_kati": -0.17,
-      "tahakkuk_orani": -21.79,
+      "tahakkuk_orani": -7.55,
       "aga_orani": 0.0,
-      "ykp_orani": 1.4,
+      "ykp_orani": 0.4,
       "dso_gun": 3274.2,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.4,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 58.2,
       "icr_kati": -0.38,
-      "tahakkuk_orani": -36.38,
+      "tahakkuk_orani": -11.39,
       "aga_orani": 0.0,
-      "ykp_orani": 3.3,
+      "ykp_orani": 1.0,
       "dso_gun": 842.4,
       "acm_makasi": -142.0,
       "serefiye_ozk_orani": 0.4,
@@ -43,9 +43,9 @@
     "2026/03": {
       "efm_yuzde": 20.1,
       "icr_kati": -0.23,
-      "tahakkuk_orani": 0.12,
+      "tahakkuk_orani": -3.16,
       "aga_orani": 0.0,
-      "ykp_orani": 0.2,
+      "ykp_orani": 0.1,
       "dso_gun": 4487.0,
       "acm_makasi": 264.2,
       "serefiye_ozk_orani": 0.5,

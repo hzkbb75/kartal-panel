@@ -1,11 +1,11 @@
 {
   "kod": "EKSUN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 16.4,
       "icr_kati": 0.27,
-      "tahakkuk_orani": -8.15,
+      "tahakkuk_orani": -7.09,
       "aga_orani": 0.0,
       "ykp_orani": 22.6,
       "dso_gun": 153.9,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 40.4,
       "icr_kati": 0.21,
-      "tahakkuk_orani": -44.76,
+      "tahakkuk_orani": -35.3,
       "aga_orani": 0.1,
       "ykp_orani": 29.4,
       "dso_gun": 64.8,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 6.4,
       "icr_kati": 0.82,
-      "tahakkuk_orani": -0.7,
+      "tahakkuk_orani": -0.48,
       "aga_orani": 39.7,
       "ykp_orani": 1.9,
       "dso_gun": 204.5,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 10.2,
       "icr_kati": 0.91,
-      "tahakkuk_orani": -16.23,
+      "tahakkuk_orani": -10.08,
       "aga_orani": 0.6,
       "ykp_orani": 1.2,
       "dso_gun": 91.5,

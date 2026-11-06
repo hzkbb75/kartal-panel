@@ -1,11 +1,11 @@
 {
   "kod": "AKGRT",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2024/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 99.0,
-      "tahakkuk_orani": 1.05,
+      "tahakkuk_orani": 2.84,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -24,7 +24,7 @@
     "2024/09": {
       "efm_yuzde": 0.0,
       "icr_kati": 99.0,
-      "tahakkuk_orani": 1.47,
+      "tahakkuk_orani": 6.12,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -32,12 +32,12 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 0,
+      "dts_skor": 20,
       "uyarilar": [
-        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+        "🔴 Tahakkuk anomalisi (%6.12): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 0,
+      "dts_delta": 20,
       "dso_delta": 0.0
     }
   }

@@ -1,11 +1,11 @@
 {
   "kod": "MEPET",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 91.0,
       "icr_kati": 0.15,
-      "tahakkuk_orani": -20.32,
+      "tahakkuk_orani": -3.49,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 25.9,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 142.8,
       "icr_kati": 0.42,
-      "tahakkuk_orani": -48.27,
+      "tahakkuk_orani": -7.71,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 3.3,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 159.7,
       "icr_kati": 0.75,
-      "tahakkuk_orani": 21.63,
+      "tahakkuk_orani": 4.65,
       "aga_orani": 0.8,
       "ykp_orani": 81.4,
       "dso_gun": 72.3,
@@ -51,21 +51,20 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.4,
       "iliskili_orani": 0.0,
-      "dts_skor": 65,
+      "dts_skor": 45,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%21.63): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%81.4).",
         "🟡 Alacak-Ciro makası +%985.9 açıldı (DSO: 72.3 gün).",
         "🔴 Faiz karşılama oranı 0.75x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 50,
+      "dts_delta": 30,
       "dso_delta": 69.0
     },
     "2026/06": {
       "efm_yuzde": 3327.4,
       "icr_kati": 0.54,
-      "tahakkuk_orani": 42.83,
+      "tahakkuk_orani": 3.38,
       "aga_orani": 0.6,
       "ykp_orani": 31.2,
       "dso_gun": 52.6,
@@ -73,9 +72,8 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.5,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%42.83): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 0.54x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},

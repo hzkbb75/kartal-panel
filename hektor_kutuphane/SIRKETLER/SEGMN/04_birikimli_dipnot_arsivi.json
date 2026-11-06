@@ -1,11 +1,11 @@
 {
   "kod": "SEGMN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 235.4,
       "icr_kati": 0.91,
-      "tahakkuk_orani": 2.85,
+      "tahakkuk_orani": 3.32,
       "aga_orani": 0.0,
       "ykp_orani": 66.3,
       "dso_gun": 248.2,
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 580.7,
       "icr_kati": 0.74,
-      "tahakkuk_orani": 14.21,
+      "tahakkuk_orani": 9.1,
       "aga_orani": 1.2,
       "ykp_orani": 71.8,
       "dso_gun": 111.4,
@@ -35,7 +35,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%14.21): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%9.1): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%71.8).",
         "🔴 Faiz karşılama oranı 0.74x (ICR zayıf)."
       ],
@@ -46,7 +46,7 @@
     "2026/03": {
       "efm_yuzde": 310.0,
       "icr_kati": 0.62,
-      "tahakkuk_orani": 0.7,
+      "tahakkuk_orani": 0.33,
       "aga_orani": 0.0,
       "ykp_orani": 96.7,
       "dso_gun": 327.2,
@@ -67,7 +67,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.44,
-      "tahakkuk_orani": -9.86,
+      "tahakkuk_orani": -3.46,
       "aga_orani": 0.0,
       "ykp_orani": 55.0,
       "dso_gun": 139.7,

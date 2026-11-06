@@ -1,11 +1,11 @@
 {
   "kod": "ASTOR",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 59.6,
       "icr_kati": 0.73,
-      "tahakkuk_orani": -4.12,
+      "tahakkuk_orani": 0.29,
       "aga_orani": 0.0,
       "ykp_orani": 79.2,
       "dso_gun": 282.7,
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 129.3,
       "icr_kati": 0.84,
-      "tahakkuk_orani": -8.06,
+      "tahakkuk_orani": 0.71,
       "aga_orani": 5.6,
       "ykp_orani": 43.5,
       "dso_gun": 128.6,
@@ -45,7 +45,7 @@
     "2026/03": {
       "efm_yuzde": 39.3,
       "icr_kati": 1.14,
-      "tahakkuk_orani": -2.9,
+      "tahakkuk_orani": 0.8,
       "aga_orani": 0.0,
       "ykp_orani": 54.7,
       "dso_gun": 441.5,
@@ -76,7 +76,7 @@
     "2026/06": {
       "efm_yuzde": 66.5,
       "icr_kati": 1.25,
-      "tahakkuk_orani": -10.94,
+      "tahakkuk_orani": -1.56,
       "aga_orani": 5.7,
       "ykp_orani": 63.2,
       "dso_gun": 209.0,

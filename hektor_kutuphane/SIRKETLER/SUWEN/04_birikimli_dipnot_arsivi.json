@@ -1,13 +1,13 @@
 {
   "kod": "SUWEN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 4.7,
       "icr_kati": -1.32,
-      "tahakkuk_orani": -10.08,
+      "tahakkuk_orani": -7.15,
       "aga_orani": 0.0,
-      "ykp_orani": 0.3,
+      "ykp_orani": 0.2,
       "dso_gun": 30.4,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 5.9,
       "icr_kati": 2.57,
-      "tahakkuk_orani": -22.37,
+      "tahakkuk_orani": -11.79,
       "aga_orani": 10.7,
       "ykp_orani": 2.2,
       "dso_gun": 25.2,
@@ -43,9 +43,9 @@
     "2026/03": {
       "efm_yuzde": 9.4,
       "icr_kati": -0.45,
-      "tahakkuk_orani": -9.42,
+      "tahakkuk_orani": -5.12,
       "aga_orani": 0.0,
-      "ykp_orani": 0.1,
+      "ykp_orani": 0.0,
       "dso_gun": 24.5,
       "acm_makasi": -1.1,
       "serefiye_ozk_orani": 0.0,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 10.5,
       "icr_kati": 0.41,
-      "tahakkuk_orani": -25.36,
+      "tahakkuk_orani": -13.43,
       "aga_orani": 0.0,
       "ykp_orani": 1.6,
       "dso_gun": 11.8,

@@ -1,13 +1,13 @@
 {
   "kod": "SEYKM",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 2276.1,
       "icr_kati": -0.43,
-      "tahakkuk_orani": -16.61,
+      "tahakkuk_orani": -12.75,
       "aga_orani": 0.0,
-      "ykp_orani": 7.0,
+      "ykp_orani": 5.0,
       "dso_gun": 198.0,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.37,
-      "tahakkuk_orani": -31.97,
+      "tahakkuk_orani": -25.49,
       "aga_orani": 0.0,
-      "ykp_orani": 5.8,
+      "ykp_orani": 4.1,
       "dso_gun": 107.3,
       "acm_makasi": -88.4,
       "serefiye_ozk_orani": 0.0,
@@ -43,9 +43,9 @@
     "2026/03": {
       "efm_yuzde": 1569.8,
       "icr_kati": -0.28,
-      "tahakkuk_orani": -6.12,
+      "tahakkuk_orani": -1.35,
       "aga_orani": 0.0,
-      "ykp_orani": 30.1,
+      "ykp_orani": 22.1,
       "dso_gun": 336.5,
       "acm_makasi": 123.4,
       "serefiye_ozk_orani": 0.0,
@@ -63,21 +63,20 @@
     "2026/06": {
       "efm_yuzde": 5905.5,
       "icr_kati": -0.27,
-      "tahakkuk_orani": -12.06,
+      "tahakkuk_orani": -8.5,
       "aga_orani": 0.0,
-      "ykp_orani": 37.3,
+      "ykp_orani": 27.2,
       "dso_gun": 149.4,
       "acm_makasi": -107.0,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 1.3,
       "iliskili_orani": 0.0,
-      "dts_skor": 30,
+      "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%37.3).",
         "🔴 Faiz karşılama oranı -0.27x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 0,
+      "dts_delta": -15,
       "dso_delta": -187.1
     }
   }

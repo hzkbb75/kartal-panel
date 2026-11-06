@@ -1,11 +1,11 @@
 {
   "kod": "CEMZY",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 96.7,
       "icr_kati": 0.53,
-      "tahakkuk_orani": -9.02,
+      "tahakkuk_orani": -12.58,
       "aga_orani": 0.0,
       "ykp_orani": 6.5,
       "dso_gun": 236.3,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.47,
-      "tahakkuk_orani": -21.85,
+      "tahakkuk_orani": -24.97,
       "aga_orani": 0.0,
       "ykp_orani": 12.3,
       "dso_gun": 119.7,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 35.3,
       "icr_kati": 1.22,
-      "tahakkuk_orani": -11.67,
+      "tahakkuk_orani": -6.37,
       "aga_orani": 0.0,
       "ykp_orani": 91.4,
       "dso_gun": 396.5,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 99.0,
       "icr_kati": 0.47,
-      "tahakkuk_orani": -22.26,
+      "tahakkuk_orani": -18.63,
       "aga_orani": 0.0,
       "ykp_orani": 75.5,
       "dso_gun": 216.5,

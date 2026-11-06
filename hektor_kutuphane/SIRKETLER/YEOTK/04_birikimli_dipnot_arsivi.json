@@ -1,21 +1,20 @@
 {
   "kod": "YEOTK",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 12.4,
       "icr_kati": 0.92,
-      "tahakkuk_orani": 6.79,
+      "tahakkuk_orani": 4.98,
       "aga_orani": 0.0,
       "ykp_orani": 10.7,
       "dso_gun": 198.6,
       "acm_makasi": 0.0,
-      "serefiye_ozk_orani": 6.2,
-      "karsilik_ozk_orani": 0.7,
+      "serefiye_ozk_orani": 6.5,
+      "karsilik_ozk_orani": 0.8,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%6.79): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 0.92x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,13 +24,13 @@
     "2025/06": {
       "efm_yuzde": 19.5,
       "icr_kati": 0.61,
-      "tahakkuk_orani": -8.56,
+      "tahakkuk_orani": -7.06,
       "aga_orani": 0.0,
       "ykp_orani": 38.5,
       "dso_gun": 43.6,
       "acm_makasi": -195.4,
-      "serefiye_ozk_orani": 18.5,
-      "karsilik_ozk_orani": 0.9,
+      "serefiye_ozk_orani": 22.2,
+      "karsilik_ozk_orani": 1.1,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
@@ -39,18 +38,18 @@
         "🔴 Faiz karşılama oranı 0.61x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -5,
+      "dts_delta": 15,
       "dso_delta": -155.0
     },
     "2026/03": {
       "efm_yuzde": 19.3,
       "icr_kati": 0.8,
-      "tahakkuk_orani": -5.5,
+      "tahakkuk_orani": -2.81,
       "aga_orani": 0.2,
       "ykp_orani": 1.6,
       "dso_gun": 149.5,
       "acm_makasi": 180.1,
-      "serefiye_ozk_orani": 11.7,
+      "serefiye_ozk_orani": 12.0,
       "karsilik_ozk_orani": 0.7,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
@@ -65,13 +64,13 @@
     "2026/06": {
       "efm_yuzde": 19.8,
       "icr_kati": 0.84,
-      "tahakkuk_orani": -15.56,
+      "tahakkuk_orani": -6.63,
       "aga_orani": 0.2,
       "ykp_orani": 2.2,
       "dso_gun": 95.2,
       "acm_makasi": -72.6,
-      "serefiye_ozk_orani": 22.3,
-      "karsilik_ozk_orani": 0.7,
+      "serefiye_ozk_orani": 24.5,
+      "karsilik_ozk_orani": 0.8,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [

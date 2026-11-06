@@ -1,11 +1,11 @@
 {
   "kod": "GRNYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 791.5,
       "icr_kati": 0.45,
-      "tahakkuk_orani": -5.33,
+      "tahakkuk_orani": -6.8,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.1,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 908.7,
       "icr_kati": 0.36,
-      "tahakkuk_orani": -11.09,
+      "tahakkuk_orani": -13.65,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.9,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 448.8,
       "icr_kati": 0.35,
-      "tahakkuk_orani": -6.56,
+      "tahakkuk_orani": -6.4,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.3,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 1131.5,
       "icr_kati": -0.2,
-      "tahakkuk_orani": -105.47,
+      "tahakkuk_orani": -103.03,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.1,

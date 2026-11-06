@@ -1,11 +1,11 @@
 {
   "kod": "EUREN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 2.2,
       "icr_kati": 9.28,
-      "tahakkuk_orani": 14.69,
+      "tahakkuk_orani": 8.41,
       "aga_orani": 0.0,
       "ykp_orani": 32.8,
       "dso_gun": 315.5,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 20,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%14.69): Kâr nakde dönüşmüyor."
+        "🔴 Tahakkuk anomalisi (%8.41): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {},
       "dts_delta": 0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 4.3,
       "icr_kati": 8.3,
-      "tahakkuk_orani": 19.38,
+      "tahakkuk_orani": 14.28,
       "aga_orani": 2.7,
       "ykp_orani": 35.3,
       "dso_gun": 181.5,
@@ -34,7 +34,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%19.38): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%14.28): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%35.3)."
       ],
       "pdf_dipnot_notlari": {},
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 6.1,
       "icr_kati": 0.7,
-      "tahakkuk_orani": -3.72,
+      "tahakkuk_orani": -0.72,
       "aga_orani": 2.4,
       "ykp_orani": 100.0,
       "dso_gun": 383.5,
@@ -65,7 +65,7 @@
     "2026/06": {
       "efm_yuzde": 17.7,
       "icr_kati": 0.52,
-      "tahakkuk_orani": -7.96,
+      "tahakkuk_orani": -1.59,
       "aga_orani": 0.3,
       "ykp_orani": 100.0,
       "dso_gun": 196.0,

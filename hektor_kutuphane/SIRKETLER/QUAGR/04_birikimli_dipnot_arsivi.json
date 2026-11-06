@@ -1,11 +1,11 @@
 {
   "kod": "QUAGR",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 24.8,
       "icr_kati": 0.23,
-      "tahakkuk_orani": -9.81,
+      "tahakkuk_orani": -6.31,
       "aga_orani": 0.0,
       "ykp_orani": 2.5,
       "dso_gun": 617.6,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 40.0,
       "icr_kati": 0.48,
-      "tahakkuk_orani": -12.09,
+      "tahakkuk_orani": -7.53,
       "aga_orani": 0.1,
       "ykp_orani": 6.6,
       "dso_gun": 303.7,
@@ -43,9 +43,9 @@
     "2026/03": {
       "efm_yuzde": 7.9,
       "icr_kati": -0.97,
-      "tahakkuk_orani": -5.86,
+      "tahakkuk_orani": -5.22,
       "aga_orani": 0.0,
-      "ykp_orani": 1.0,
+      "ykp_orani": 0.5,
       "dso_gun": 988.4,
       "acm_makasi": 82.1,
       "serefiye_ozk_orani": 0.0,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 21.6,
       "icr_kati": 0.54,
-      "tahakkuk_orani": -0.87,
+      "tahakkuk_orani": -2.63,
       "aga_orani": 0.0,
       "ykp_orani": 33.2,
       "dso_gun": 576.4,

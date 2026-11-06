@@ -1,11 +1,11 @@
 {
   "kod": "FADE",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 71.5,
       "icr_kati": 0.23,
-      "tahakkuk_orani": 2.52,
+      "tahakkuk_orani": 0.85,
       "aga_orani": 0.0,
       "ykp_orani": 19.9,
       "dso_gun": 133.9,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 8.8,
       "icr_kati": 7.14,
-      "tahakkuk_orani": -2.29,
+      "tahakkuk_orani": 0.42,
       "aga_orani": 0.0,
       "ykp_orani": 5.1,
       "dso_gun": 98.9,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 13.1,
       "icr_kati": 1.73,
-      "tahakkuk_orani": -5.93,
+      "tahakkuk_orani": 0.14,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 272.8,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 82.7,
       "icr_kati": 0.96,
-      "tahakkuk_orani": -23.18,
+      "tahakkuk_orani": -2.87,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 137.0,

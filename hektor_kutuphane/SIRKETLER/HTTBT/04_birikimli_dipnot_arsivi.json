@@ -1,11 +1,11 @@
 {
   "kod": "HTTBT",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 6.2,
       "icr_kati": 1.78,
-      "tahakkuk_orani": -8.28,
+      "tahakkuk_orani": -1.58,
       "aga_orani": 0.0,
       "ykp_orani": 49.0,
       "dso_gun": 393.7,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 12.7,
       "icr_kati": 2.38,
-      "tahakkuk_orani": -25.32,
+      "tahakkuk_orani": -4.12,
       "aga_orani": 105.1,
       "ykp_orani": 38.7,
       "dso_gun": 185.3,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 5.19,
-      "tahakkuk_orani": -12.89,
+      "tahakkuk_orani": -1.08,
       "aga_orani": 879.7,
       "ykp_orani": 32.3,
       "dso_gun": 345.0,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 2579.4,
       "icr_kati": 7.06,
-      "tahakkuk_orani": -29.24,
+      "tahakkuk_orani": -2.98,
       "aga_orani": 139.4,
       "ykp_orani": 22.9,
       "dso_gun": 182.3,

@@ -1,11 +1,11 @@
 {
   "kod": "DAPGM",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 73.5,
       "icr_kati": 0.96,
-      "tahakkuk_orani": 3.99,
+      "tahakkuk_orani": 1.53,
       "aga_orani": 0.0,
       "ykp_orani": 0.2,
       "dso_gun": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 93.3,
       "icr_kati": 1.27,
-      "tahakkuk_orani": 14.1,
+      "tahakkuk_orani": 6.35,
       "aga_orani": 0.1,
       "ykp_orani": 0.1,
       "dso_gun": 0.0,
@@ -34,7 +34,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%14.1): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%6.35): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 1.27x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 50.7,
       "icr_kati": 1.04,
-      "tahakkuk_orani": -1.81,
+      "tahakkuk_orani": -0.6,
       "aga_orani": 0.0,
       "ykp_orani": 0.3,
       "dso_gun": 0.0,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 116.1,
       "icr_kati": 1.18,
-      "tahakkuk_orani": 1.38,
+      "tahakkuk_orani": 0.45,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
       "dso_gun": 0.0,

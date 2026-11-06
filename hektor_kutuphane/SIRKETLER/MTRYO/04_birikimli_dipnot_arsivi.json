@@ -1,11 +1,11 @@
 {
   "kod": "MTRYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.39,
-      "tahakkuk_orani": -6.4,
+      "tahakkuk_orani": -8.23,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 1.16,
-      "tahakkuk_orani": -7.38,
+      "tahakkuk_orani": -6.66,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 1.19,
-      "tahakkuk_orani": 25.59,
+      "tahakkuk_orani": 25.57,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -72,7 +72,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%25.59): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%25.57): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 1.19x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},

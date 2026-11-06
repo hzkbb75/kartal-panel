@@ -1,11 +1,11 @@
 {
   "kod": "ADESE",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 58.4,
       "icr_kati": 0.43,
-      "tahakkuk_orani": -0.95,
+      "tahakkuk_orani": -1.85,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 145.2,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 282.0,
       "icr_kati": 0.37,
-      "tahakkuk_orani": -2.46,
+      "tahakkuk_orani": -1.62,
       "aga_orani": 1.8,
       "ykp_orani": 0.0,
       "dso_gun": 95.3,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 12.3,
       "icr_kati": 1.48,
-      "tahakkuk_orani": -5.27,
+      "tahakkuk_orani": -2.18,
       "aga_orani": 49.6,
       "ykp_orani": 0.0,
       "dso_gun": 390.6,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 40.5,
       "icr_kati": 1.74,
-      "tahakkuk_orani": -0.56,
+      "tahakkuk_orani": -1.19,
       "aga_orani": 4.9,
       "ykp_orani": 0.0,
       "dso_gun": 126.2,

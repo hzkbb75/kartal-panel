@@ -1,6 +1,6 @@
 {
   "kod": "ORZAX",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 152.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 13.7,
       "icr_kati": 1.94,
-      "tahakkuk_orani": -5.53,
+      "tahakkuk_orani": -2.76,
       "aga_orani": 26.7,
       "ykp_orani": 0.4,
       "dso_gun": 407.0,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 17.8,
       "icr_kati": 1.08,
-      "tahakkuk_orani": -7.06,
+      "tahakkuk_orani": -2.91,
       "aga_orani": 1.4,
       "ykp_orani": 10.3,
       "dso_gun": 178.7,

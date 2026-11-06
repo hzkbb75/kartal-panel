@@ -1,11 +1,11 @@
 {
   "kod": "MARMR",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -4.82,
-      "tahakkuk_orani": 2852.18,
+      "tahakkuk_orani": 2.12,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -13,9 +13,8 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%2852.18): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -4.82x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,7 +24,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -8.22,
-      "tahakkuk_orani": -17.18,
+      "tahakkuk_orani": -17.13,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -38,7 +37,7 @@
         "🔴 Faiz karşılama oranı -8.22x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -20,
+      "dts_delta": 0,
       "dso_delta": 0.0
     }
   }

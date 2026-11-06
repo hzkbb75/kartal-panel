@@ -1,21 +1,20 @@
 {
   "kod": "RUZYE",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.89,
-      "tahakkuk_orani": 5.78,
+      "tahakkuk_orani": -1.74,
       "aga_orani": 0.0,
-      "ykp_orani": 11.0,
+      "ykp_orani": 4.6,
       "dso_gun": 147.3,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.8,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%5.78): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -0.89x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.5,
-      "tahakkuk_orani": 13.95,
+      "tahakkuk_orani": 6.92,
       "aga_orani": 0.0,
-      "ykp_orani": 24.2,
+      "ykp_orani": 11.3,
       "dso_gun": 212.2,
       "acm_makasi": 188.7,
       "serefiye_ozk_orani": 0.0,
@@ -35,20 +34,20 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%13.95): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%6.92): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%188.7 açıldı (DSO: 212.2 gün).",
         "🔴 Faiz karşılama oranı -0.5x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 15,
+      "dts_delta": 35,
       "dso_delta": 64.9
     },
     "2026/03": {
       "efm_yuzde": 139.0,
       "icr_kati": -0.94,
-      "tahakkuk_orani": 0.36,
+      "tahakkuk_orani": -4.63,
       "aga_orani": 0.0,
-      "ykp_orani": 8.6,
+      "ykp_orani": 2.6,
       "dso_gun": 344.2,
       "acm_makasi": 27.5,
       "serefiye_ozk_orani": 0.0,
@@ -66,9 +65,9 @@
     "2026/06": {
       "efm_yuzde": 23.0,
       "icr_kati": -0.89,
-      "tahakkuk_orani": -3.77,
+      "tahakkuk_orani": -6.34,
       "aga_orani": 0.0,
-      "ykp_orani": 12.7,
+      "ykp_orani": 5.1,
       "dso_gun": 152.9,
       "acm_makasi": -92.4,
       "serefiye_ozk_orani": 0.0,

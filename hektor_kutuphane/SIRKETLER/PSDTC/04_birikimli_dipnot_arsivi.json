@@ -1,11 +1,11 @@
 {
   "kod": "PSDTC",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 11.0,
       "icr_kati": 0.01,
-      "tahakkuk_orani": -0.09,
+      "tahakkuk_orani": 0.09,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 70224.8,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 26.8,
       "icr_kati": 0.11,
-      "tahakkuk_orani": 2.25,
+      "tahakkuk_orani": 2.87,
       "aga_orani": 0.0,
       "ykp_orani": 2.7,
       "dso_gun": 34473.2,

@@ -1,11 +1,11 @@
 {
   "kod": "BOSSA",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 6.1,
       "icr_kati": 1.52,
-      "tahakkuk_orani": -12.36,
+      "tahakkuk_orani": -4.09,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 316.3,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 17.2,
       "icr_kati": 1.86,
-      "tahakkuk_orani": -13.31,
+      "tahakkuk_orani": -3.2,
       "aga_orani": 5.5,
       "ykp_orani": 0.0,
       "dso_gun": 171.9,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 2.5,
       "icr_kati": 2.31,
-      "tahakkuk_orani": -8.1,
+      "tahakkuk_orani": -2.57,
       "aga_orani": 0.0,
       "ykp_orani": 13.7,
       "dso_gun": 469.7,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 9.3,
       "icr_kati": 0.7,
-      "tahakkuk_orani": -13.84,
+      "tahakkuk_orani": -4.67,
       "aga_orani": 29.3,
       "ykp_orani": 18.6,
       "dso_gun": 236.5,

@@ -1,13 +1,13 @@
 {
   "kod": "DOFER",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 20.3,
       "icr_kati": -0.15,
-      "tahakkuk_orani": -11.28,
+      "tahakkuk_orani": -8.0,
       "aga_orani": 0.0,
-      "ykp_orani": 1.8,
+      "ykp_orani": 1.1,
       "dso_gun": 101.1,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 26.4,
       "icr_kati": -0.14,
-      "tahakkuk_orani": 22.4,
+      "tahakkuk_orani": 12.44,
       "aga_orani": 0.0,
-      "ykp_orani": 1.0,
+      "ykp_orani": 0.6,
       "dso_gun": 60.7,
       "acm_makasi": -92.6,
       "serefiye_ozk_orani": 0.0,
@@ -34,7 +34,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%22.4): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%12.44): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -0.14x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -44,9 +44,9 @@
     "2026/03": {
       "efm_yuzde": 19.4,
       "icr_kati": -0.31,
-      "tahakkuk_orani": -23.27,
+      "tahakkuk_orani": -13.51,
       "aga_orani": 0.0,
-      "ykp_orani": 0.9,
+      "ykp_orani": 0.5,
       "dso_gun": 149.8,
       "acm_makasi": 72.6,
       "serefiye_ozk_orani": 0.0,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 36.0,
       "icr_kati": 0.13,
-      "tahakkuk_orani": -1.76,
+      "tahakkuk_orani": -1.06,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 89.2,

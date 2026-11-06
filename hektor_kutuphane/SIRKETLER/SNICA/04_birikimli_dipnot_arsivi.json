@@ -1,11 +1,11 @@
 {
   "kod": "SNICA",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 74.4,
       "icr_kati": 0.01,
-      "tahakkuk_orani": -16.12,
+      "tahakkuk_orani": -12.53,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 294.6,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 68.1,
       "icr_kati": -0.03,
-      "tahakkuk_orani": -16.04,
+      "tahakkuk_orani": -14.38,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 288.4,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 48.1,
       "icr_kati": 0.36,
-      "tahakkuk_orani": -17.55,
+      "tahakkuk_orani": -7.26,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 889.9,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 55.6,
       "icr_kati": 0.31,
-      "tahakkuk_orani": -18.3,
+      "tahakkuk_orani": -7.13,
       "aga_orani": 0.1,
       "ykp_orani": 1.9,
       "dso_gun": 328.7,

@@ -1,11 +1,11 @@
 {
   "kod": "FENER",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 2.6,
       "icr_kati": -2.02,
-      "tahakkuk_orani": -11.32,
+      "tahakkuk_orani": -6.33,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 280.1,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 2.2,
       "icr_kati": -25.33,
-      "tahakkuk_orani": -34.95,
+      "tahakkuk_orani": -16.96,
       "aga_orani": 0.0,
-      "ykp_orani": 12.8,
+      "ykp_orani": 6.2,
       "dso_gun": 130.6,
       "acm_makasi": -90.6,
       "serefiye_ozk_orani": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 8.1,
       "icr_kati": 2.27,
-      "tahakkuk_orani": -48.21,
+      "tahakkuk_orani": -15.0,
       "aga_orani": 278.4,
       "ykp_orani": 100.0,
       "dso_gun": 399.6,

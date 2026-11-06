@@ -1,11 +1,11 @@
 {
   "kod": "KRGYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.08,
-      "tahakkuk_orani": -15.33,
+      "tahakkuk_orani": -6.58,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 99.9,
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 10.32,
-      "tahakkuk_orani": -8.46,
+      "tahakkuk_orani": -0.91,
       "aga_orani": 0.0,
       "ykp_orani": 8.8,
       "dso_gun": 26.6,
@@ -44,9 +44,9 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.17,
-      "tahakkuk_orani": 2.02,
+      "tahakkuk_orani": -1.43,
       "aga_orani": 0.0,
-      "ykp_orani": 5.4,
+      "ykp_orani": 3.4,
       "dso_gun": 163.0,
       "acm_makasi": 65.3,
       "serefiye_ozk_orani": 0.0,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.09,
-      "tahakkuk_orani": 5.4,
+      "tahakkuk_orani": -0.87,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 87.4,
@@ -72,14 +72,13 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.1,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 30,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%5.4): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
         "🔴 Faiz karşılama oranı 0.09x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 20,
+      "dts_delta": 0,
       "dso_delta": -75.6
     }
   }

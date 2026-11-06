@@ -1,11 +1,11 @@
 {
   "kod": "TTRAK",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 6.0,
       "icr_kati": 0.44,
-      "tahakkuk_orani": -4.28,
+      "tahakkuk_orani": -2.34,
       "aga_orani": 0.0,
       "ykp_orani": 29.5,
       "dso_gun": 132.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 17.1,
       "icr_kati": 0.69,
-      "tahakkuk_orani": -14.34,
+      "tahakkuk_orani": -6.98,
       "aga_orani": 0.0,
       "ykp_orani": 3.5,
       "dso_gun": 42.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 3.0,
       "icr_kati": -1.47,
-      "tahakkuk_orani": -8.95,
+      "tahakkuk_orani": -5.22,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 179.8,
@@ -63,9 +63,9 @@
     "2026/06": {
       "efm_yuzde": 9.0,
       "icr_kati": -0.77,
-      "tahakkuk_orani": -13.66,
+      "tahakkuk_orani": -7.46,
       "aga_orani": 0.0,
-      "ykp_orani": 3.4,
+      "ykp_orani": 1.8,
       "dso_gun": 85.6,
       "acm_makasi": -123.4,
       "serefiye_ozk_orani": 0.0,

@@ -1,11 +1,11 @@
 {
   "kod": "MACKO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 4489.3,
       "icr_kati": 3.97,
-      "tahakkuk_orani": 2.44,
+      "tahakkuk_orani": 13.41,
       "aga_orani": 0.0,
       "ykp_orani": 16.1,
       "dso_gun": 318.4,
@@ -13,9 +13,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.7,
       "iliskili_orani": 0.0,
-      "dts_skor": 0,
+      "dts_skor": 20,
       "uyarilar": [
-        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+        "🔴 Tahakkuk anomalisi (%13.41): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {},
       "dts_delta": 0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 3.94,
-      "tahakkuk_orani": -42.17,
+      "tahakkuk_orani": 7.21,
       "aga_orani": 2.2,
       "ykp_orani": 18.6,
       "dso_gun": 138.4,
@@ -32,9 +32,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.9,
       "iliskili_orani": 0.0,
-      "dts_skor": 0,
+      "dts_skor": 20,
       "uyarilar": [
-        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+        "🔴 Tahakkuk anomalisi (%7.21): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {},
       "dts_delta": 0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 7129.6,
       "icr_kati": 1.65,
-      "tahakkuk_orani": -5.79,
+      "tahakkuk_orani": -0.19,
       "aga_orani": 19.5,
       "ykp_orani": 35.1,
       "dso_gun": 401.7,
@@ -57,13 +57,13 @@
         "🟡 Alacak-Ciro makası +%70.5 açıldı (DSO: 401.7 gün)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 30,
+      "dts_delta": 10,
       "dso_delta": 263.3
     },
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 1.95,
-      "tahakkuk_orani": -83.13,
+      "tahakkuk_orani": -43.32,
       "aga_orani": 2.0,
       "ykp_orani": 39.7,
       "dso_gun": 178.2,

@@ -1,11 +1,11 @@
 {
   "kod": "FONET",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 4.1,
       "icr_kati": 14.89,
-      "tahakkuk_orani": -48.54,
+      "tahakkuk_orani": -2.53,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 147.9,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 117.9,
       "icr_kati": 1.98,
-      "tahakkuk_orani": -12.42,
+      "tahakkuk_orani": -0.41,
       "aga_orani": 40.3,
       "ykp_orani": 0.0,
       "dso_gun": 75.1,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 43.1,
       "icr_kati": 1.87,
-      "tahakkuk_orani": -22.43,
+      "tahakkuk_orani": -3.37,
       "aga_orani": 1179.3,
       "ykp_orani": 73.3,
       "dso_gun": 279.1,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 119.4,
       "icr_kati": 3.6,
-      "tahakkuk_orani": -30.01,
+      "tahakkuk_orani": -4.38,
       "aga_orani": 123.6,
       "ykp_orani": 27.8,
       "dso_gun": 130.5,

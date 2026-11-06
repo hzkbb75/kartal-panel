@@ -1,13 +1,13 @@
 {
   "kod": "GSRAY",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 16.8,
       "icr_kati": -4.01,
-      "tahakkuk_orani": 80.0,
+      "tahakkuk_orani": 17.85,
       "aga_orani": 0.0,
-      "ykp_orani": 3.2,
+      "ykp_orani": 0.7,
       "dso_gun": 298.4,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%80.0): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%17.85): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -4.01x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,9 +25,9 @@
     "2025/06": {
       "efm_yuzde": 1.3,
       "icr_kati": -10.05,
-      "tahakkuk_orani": 112.39,
+      "tahakkuk_orani": 16.61,
       "aga_orani": 0.0,
-      "ykp_orani": 3.8,
+      "ykp_orani": 0.5,
       "dso_gun": 80.2,
       "acm_makasi": -137.2,
       "serefiye_ozk_orani": 0.0,
@@ -35,7 +35,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%112.39): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%16.61): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -10.05x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -45,22 +45,21 @@
     "2026/03": {
       "efm_yuzde": 6.4,
       "icr_kati": -2.74,
-      "tahakkuk_orani": 20.46,
+      "tahakkuk_orani": 3.44,
       "aga_orani": 0.0,
-      "ykp_orani": 2.3,
+      "ykp_orani": 0.4,
       "dso_gun": 294.4,
       "acm_makasi": 131.7,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.3,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 30,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%20.46): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%131.7 açıldı (DSO: 294.4 gün).",
         "🔴 Faiz karşılama oranı -2.74x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 15,
+      "dts_delta": -5,
       "dso_delta": 214.2
     }
   }

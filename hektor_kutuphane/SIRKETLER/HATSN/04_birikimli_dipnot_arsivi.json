@@ -1,11 +1,11 @@
 {
   "kod": "HATSN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 23.0,
       "icr_kati": 0.71,
-      "tahakkuk_orani": -8.1,
+      "tahakkuk_orani": -1.7,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 119.0,
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 41.7,
       "icr_kati": 1.63,
-      "tahakkuk_orani": -9.76,
+      "tahakkuk_orani": 0.03,
       "aga_orani": 0.0,
       "ykp_orani": 47.2,
       "dso_gun": 33.6,
@@ -44,9 +44,9 @@
     "2026/03": {
       "efm_yuzde": 3.6,
       "icr_kati": -4.58,
-      "tahakkuk_orani": -11.6,
+      "tahakkuk_orani": -2.54,
       "aga_orani": 0.0,
-      "ykp_orani": 4.9,
+      "ykp_orani": 1.1,
       "dso_gun": 75.2,
       "acm_makasi": 38.6,
       "serefiye_ozk_orani": 0.0,
@@ -64,9 +64,9 @@
     "2026/06": {
       "efm_yuzde": 1.6,
       "icr_kati": -26.42,
-      "tahakkuk_orani": -32.11,
+      "tahakkuk_orani": -6.74,
       "aga_orani": 0.0,
-      "ykp_orani": 4.1,
+      "ykp_orani": 0.9,
       "dso_gun": 26.2,
       "acm_makasi": -131.2,
       "serefiye_ozk_orani": 0.0,

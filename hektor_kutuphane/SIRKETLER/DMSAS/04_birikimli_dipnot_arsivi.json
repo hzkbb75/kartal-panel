@@ -1,13 +1,13 @@
 {
   "kod": "DMSAS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 4.1,
       "icr_kati": -1.54,
-      "tahakkuk_orani": 3.91,
+      "tahakkuk_orani": 1.23,
       "aga_orani": 0.0,
-      "ykp_orani": 4.6,
+      "ykp_orani": 1.7,
       "dso_gun": 190.4,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 29.8,
       "icr_kati": 0.29,
-      "tahakkuk_orani": 2.0,
+      "tahakkuk_orani": -0.03,
       "aga_orani": 7.3,
       "ykp_orani": 62.3,
       "dso_gun": 94.4,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 0.9,
       "icr_kati": 1.39,
-      "tahakkuk_orani": 3.88,
+      "tahakkuk_orani": 1.37,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 240.2,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 3.6,
       "icr_kati": -0.28,
-      "tahakkuk_orani": -17.27,
+      "tahakkuk_orani": -6.59,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 114.3,

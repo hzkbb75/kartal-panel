@@ -1,11 +1,11 @@
 {
   "kod": "ARMGD",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 3.6,
       "icr_kati": 2.37,
-      "tahakkuk_orani": -5.16,
+      "tahakkuk_orani": -1.41,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 185.9,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 10.7,
       "icr_kati": 1.42,
-      "tahakkuk_orani": -41.24,
+      "tahakkuk_orani": -21.99,
       "aga_orani": 0.0,
       "ykp_orani": 0.5,
       "dso_gun": 48.8,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 0.8,
       "icr_kati": 10.94,
-      "tahakkuk_orani": 0.46,
+      "tahakkuk_orani": 3.62,
       "aga_orani": 2.0,
       "ykp_orani": 53.6,
       "dso_gun": 137.4,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 5.2,
       "icr_kati": 2.86,
-      "tahakkuk_orani": 2.92,
+      "tahakkuk_orani": 12.27,
       "aga_orani": 3.6,
       "ykp_orani": 80.3,
       "dso_gun": 54.4,
@@ -71,12 +71,13 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.1,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 35,
       "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%12.27): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%80.3)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -15,
+      "dts_delta": 5,
       "dso_delta": -83.0
     }
   }

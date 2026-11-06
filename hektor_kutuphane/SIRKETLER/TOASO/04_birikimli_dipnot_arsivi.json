@@ -1,13 +1,13 @@
 {
   "kod": "TOASO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 10.3,
       "icr_kati": -0.37,
-      "tahakkuk_orani": -10.03,
+      "tahakkuk_orani": -7.06,
       "aga_orani": 0.0,
-      "ykp_orani": 0.7,
+      "ykp_orani": 0.5,
       "dso_gun": 240.3,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 18.5,
       "icr_kati": -0.15,
-      "tahakkuk_orani": -17.32,
+      "tahakkuk_orani": -10.64,
       "aga_orani": 0.0,
-      "ykp_orani": 0.8,
+      "ykp_orani": 0.5,
       "dso_gun": 114.5,
       "acm_makasi": -207.7,
       "serefiye_ozk_orani": 14.9,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 1.6,
       "icr_kati": 1.75,
-      "tahakkuk_orani": 0.85,
+      "tahakkuk_orani": 2.03,
       "aga_orani": 43.9,
       "ykp_orani": 4.2,
       "dso_gun": 197.7,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 0.8,
       "icr_kati": 4.34,
-      "tahakkuk_orani": 4.91,
+      "tahakkuk_orani": 6.25,
       "aga_orani": 0.0,
       "ykp_orani": 5.0,
       "dso_gun": 105.5,
@@ -70,12 +70,12 @@
       "serefiye_ozk_orani": 13.2,
       "karsilik_ozk_orani": 4.8,
       "iliskili_orani": 0.0,
-      "dts_skor": 0,
+      "dts_skor": 20,
       "uyarilar": [
-        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+        "🔴 Tahakkuk anomalisi (%6.25): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -15,
+      "dts_delta": 5,
       "dso_delta": -92.2
     }
   }

@@ -1,11 +1,11 @@
 {
   "kod": "INTEM",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 70.6,
       "icr_kati": 0.33,
-      "tahakkuk_orani": -3.29,
+      "tahakkuk_orani": -3.6,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 1557.6,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 99.0,
       "icr_kati": 1.79,
-      "tahakkuk_orani": 0.49,
+      "tahakkuk_orani": 0.58,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
       "dso_gun": 961.8,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 64.9,
       "icr_kati": 1.82,
-      "tahakkuk_orani": -1.46,
+      "tahakkuk_orani": -1.38,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 2884.2,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 126.6,
       "icr_kati": 2.26,
-      "tahakkuk_orani": -0.23,
+      "tahakkuk_orani": 0.36,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
       "dso_gun": 1381.6,

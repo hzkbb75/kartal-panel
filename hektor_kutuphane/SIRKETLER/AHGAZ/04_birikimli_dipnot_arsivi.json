@@ -1,17 +1,17 @@
 {
   "kod": "AHGAZ",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 23.5,
       "icr_kati": 2.0,
-      "tahakkuk_orani": -18.34,
+      "tahakkuk_orani": -7.04,
       "aga_orani": 0.0,
       "ykp_orani": 39.5,
       "dso_gun": 74.1,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.4,
+      "karsilik_ozk_orani": 0.5,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -24,13 +24,13 @@
     "2025/06": {
       "efm_yuzde": 46.9,
       "icr_kati": 1.55,
-      "tahakkuk_orani": -11.32,
+      "tahakkuk_orani": -3.79,
       "aga_orani": 3.7,
       "ykp_orani": 47.2,
       "dso_gun": 21.5,
       "acm_makasi": -111.8,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.3,
+      "karsilik_ozk_orani": 0.4,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -43,13 +43,13 @@
     "2026/03": {
       "efm_yuzde": 21.4,
       "icr_kati": 3.72,
-      "tahakkuk_orani": -13.1,
+      "tahakkuk_orani": -6.76,
       "aga_orani": 17.2,
       "ykp_orani": 0.0,
       "dso_gun": 103.6,
       "acm_makasi": 283.8,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.3,
+      "karsilik_ozk_orani": 0.5,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -62,13 +62,13 @@
     "2026/06": {
       "efm_yuzde": 42.7,
       "icr_kati": 2.91,
-      "tahakkuk_orani": -8.06,
+      "tahakkuk_orani": -3.02,
       "aga_orani": 4.5,
       "ykp_orani": 16.6,
       "dso_gun": 28.2,
       "acm_makasi": -118.0,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.3,
+      "karsilik_ozk_orani": 0.5,
       "iliskili_orani": 0.0,
       "dts_skor": 0,
       "uyarilar": [

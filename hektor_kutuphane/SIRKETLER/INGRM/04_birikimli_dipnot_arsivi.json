@@ -1,11 +1,11 @@
 {
   "kod": "INGRM",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 10.1,
       "icr_kati": 0.23,
-      "tahakkuk_orani": 7.87,
+      "tahakkuk_orani": 7.63,
       "aga_orani": 0.0,
       "ykp_orani": 4.0,
       "dso_gun": 578.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%7.87): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%7.63): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 0.23x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 5.1,
       "icr_kati": 0.76,
-      "tahakkuk_orani": 8.43,
+      "tahakkuk_orani": 8.16,
       "aga_orani": 0.5,
       "ykp_orani": 0.0,
       "dso_gun": 282.7,
@@ -35,7 +35,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%8.43): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%8.16): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 0.76x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -45,13 +45,13 @@
     "2026/03": {
       "efm_yuzde": 2.6,
       "icr_kati": 0.87,
-      "tahakkuk_orani": 2.11,
+      "tahakkuk_orani": 1.79,
       "aga_orani": 0.5,
       "ykp_orani": 10.3,
       "dso_gun": 568.4,
       "acm_makasi": 71.1,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.8,
+      "karsilik_ozk_orani": 0.9,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
@@ -65,13 +65,13 @@
     "2026/06": {
       "efm_yuzde": 5.7,
       "icr_kati": 1.12,
-      "tahakkuk_orani": 1.25,
+      "tahakkuk_orani": 1.17,
       "aga_orani": 0.2,
       "ykp_orani": 0.0,
       "dso_gun": 279.2,
       "acm_makasi": -112.0,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.8,
+      "karsilik_ozk_orani": 0.9,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [

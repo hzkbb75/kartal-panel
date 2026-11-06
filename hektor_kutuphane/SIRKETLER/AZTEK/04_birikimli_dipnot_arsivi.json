@@ -1,11 +1,11 @@
 {
   "kod": "AZTEK",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 21.4,
       "icr_kati": 0.91,
-      "tahakkuk_orani": -1.69,
+      "tahakkuk_orani": -2.42,
       "aga_orani": 0.0,
       "ykp_orani": 0.3,
       "dso_gun": 314.1,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 35.8,
       "icr_kati": 0.85,
-      "tahakkuk_orani": -10.3,
+      "tahakkuk_orani": -9.29,
       "aga_orani": 0.3,
       "ykp_orani": 0.5,
       "dso_gun": 124.8,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 12.7,
       "icr_kati": 0.34,
-      "tahakkuk_orani": 2.58,
+      "tahakkuk_orani": -0.45,
       "aga_orani": 2.2,
       "ykp_orani": 27.0,
       "dso_gun": 419.2,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 22.3,
       "icr_kati": 0.35,
-      "tahakkuk_orani": -9.99,
+      "tahakkuk_orani": -9.28,
       "aga_orani": 0.0,
       "ykp_orani": 19.2,
       "dso_gun": 204.5,

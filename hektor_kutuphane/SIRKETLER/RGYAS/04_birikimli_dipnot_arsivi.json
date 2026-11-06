@@ -1,11 +1,11 @@
 {
   "kod": "RGYAS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 4.4,
       "icr_kati": 3.03,
-      "tahakkuk_orani": -14.45,
+      "tahakkuk_orani": -0.43,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
       "dso_gun": 76.3,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 23.2,
       "icr_kati": 2.55,
-      "tahakkuk_orani": -35.08,
+      "tahakkuk_orani": 1.14,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 38.2,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 6.2,
       "icr_kati": 1.84,
-      "tahakkuk_orani": -13.86,
+      "tahakkuk_orani": 0.36,
       "aga_orani": 0.2,
       "ykp_orani": 9.4,
       "dso_gun": 90.4,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 4.1,
       "icr_kati": 6.46,
-      "tahakkuk_orani": -17.56,
+      "tahakkuk_orani": 1.56,
       "aga_orani": 0.0,
       "ykp_orani": 3.3,
       "dso_gun": 48.9,

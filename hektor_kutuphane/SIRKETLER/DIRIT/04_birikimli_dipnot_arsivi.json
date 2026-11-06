@@ -1,11 +1,11 @@
 {
   "kod": "DIRIT",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 99.0,
-      "tahakkuk_orani": -3.61,
+      "tahakkuk_orani": -1.03,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 2518.3,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 84.7,
       "icr_kati": -27.26,
-      "tahakkuk_orani": 1044.67,
+      "tahakkuk_orani": 108.77,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 1844.9,
@@ -34,7 +34,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%1044.67): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%108.77): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -27.26x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -20.11,
-      "tahakkuk_orani": -69.49,
+      "tahakkuk_orani": -52.11,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 2724.5,

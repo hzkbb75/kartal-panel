@@ -1,13 +1,13 @@
 {
   "kod": "KUYAS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 18.5,
       "icr_kati": -0.54,
-      "tahakkuk_orani": -38.27,
+      "tahakkuk_orani": -20.03,
       "aga_orani": 0.0,
-      "ykp_orani": 15.4,
+      "ykp_orani": 11.5,
       "dso_gun": 535.3,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 1.9,
       "icr_kati": -5.67,
-      "tahakkuk_orani": -7.13,
+      "tahakkuk_orani": 3.85,
       "aga_orani": 0.0,
-      "ykp_orani": 22.5,
+      "ykp_orani": 17.0,
       "dso_gun": 452.1,
       "acm_makasi": -19.0,
       "serefiye_ozk_orani": 0.0,
@@ -43,9 +43,9 @@
     "2026/03": {
       "efm_yuzde": 19.9,
       "icr_kati": -0.21,
-      "tahakkuk_orani": -8.41,
+      "tahakkuk_orani": -2.56,
       "aga_orani": 0.0,
-      "ykp_orani": 28.9,
+      "ykp_orani": 20.2,
       "dso_gun": 550.6,
       "acm_makasi": 6.3,
       "serefiye_ozk_orani": 0.0,
@@ -62,21 +62,20 @@
     "2026/06": {
       "efm_yuzde": 53.9,
       "icr_kati": -0.12,
-      "tahakkuk_orani": -31.97,
+      "tahakkuk_orani": -20.23,
       "aga_orani": 0.0,
-      "ykp_orani": 50.2,
+      "ykp_orani": 31.8,
       "dso_gun": 485.6,
       "acm_makasi": -16.1,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 30,
+      "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%50.2).",
         "🔴 Faiz karşılama oranı -0.12x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 15,
+      "dts_delta": 0,
       "dso_delta": -65.0
     }
   }

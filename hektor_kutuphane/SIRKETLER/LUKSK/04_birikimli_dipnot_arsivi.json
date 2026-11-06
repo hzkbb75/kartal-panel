@@ -1,13 +1,13 @@
 {
   "kod": "LUKSK",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 23.8,
       "icr_kati": -0.51,
-      "tahakkuk_orani": -14.84,
+      "tahakkuk_orani": -2.25,
       "aga_orani": 0.0,
-      "ykp_orani": 9.9,
+      "ykp_orani": 1.6,
       "dso_gun": 284.2,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 51.1,
       "icr_kati": -0.03,
-      "tahakkuk_orani": -26.2,
+      "tahakkuk_orani": -4.38,
       "aga_orani": 0.0,
-      "ykp_orani": 16.4,
+      "ykp_orani": 2.6,
       "dso_gun": 153.3,
       "acm_makasi": -95.7,
       "serefiye_ozk_orani": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 1.41,
-      "tahakkuk_orani": -46.88,
+      "tahakkuk_orani": -7.3,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 348.3,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 159.7,
       "icr_kati": 0.12,
-      "tahakkuk_orani": -10.33,
+      "tahakkuk_orani": -1.52,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 172.9,

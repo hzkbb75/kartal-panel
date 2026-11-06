@@ -1,11 +1,11 @@
 {
   "kod": "TEZOL",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.94,
-      "tahakkuk_orani": -11.13,
+      "tahakkuk_orani": -6.65,
       "aga_orani": 0.0,
       "ykp_orani": 19.1,
       "dso_gun": 252.7,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 1.02,
-      "tahakkuk_orani": -25.01,
+      "tahakkuk_orani": -10.08,
       "aga_orani": 0.0,
       "ykp_orani": 40.4,
       "dso_gun": 111.1,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 1283.3,
       "icr_kati": 0.25,
-      "tahakkuk_orani": -0.31,
+      "tahakkuk_orani": -1.99,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 276.9,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 150.3,
       "icr_kati": 0.01,
-      "tahakkuk_orani": -0.9,
+      "tahakkuk_orani": -2.1,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 143.5,

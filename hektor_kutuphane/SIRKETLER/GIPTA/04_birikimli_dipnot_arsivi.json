@@ -1,11 +1,11 @@
 {
   "kod": "GIPTA",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 175.7,
       "icr_kati": 0.04,
-      "tahakkuk_orani": -22.27,
+      "tahakkuk_orani": -15.32,
       "aga_orani": 0.0,
       "ykp_orani": 16.6,
       "dso_gun": 541.8,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 371.0,
       "icr_kati": 0.3,
-      "tahakkuk_orani": 11.7,
+      "tahakkuk_orani": 11.21,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 224.9,
@@ -34,7 +34,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%11.7): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%11.21): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
         "🔴 Faiz karşılama oranı 0.3x (ICR zayıf)."
       ],
@@ -45,7 +45,7 @@
     "2026/03": {
       "efm_yuzde": 346.4,
       "icr_kati": 0.02,
-      "tahakkuk_orani": -5.62,
+      "tahakkuk_orani": -6.37,
       "aga_orani": 0.9,
       "ykp_orani": 100.0,
       "dso_gun": 506.6,
@@ -66,7 +66,7 @@
     "2026/06": {
       "efm_yuzde": 699.0,
       "icr_kati": 0.06,
-      "tahakkuk_orani": 3.5,
+      "tahakkuk_orani": -0.67,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 330.1,

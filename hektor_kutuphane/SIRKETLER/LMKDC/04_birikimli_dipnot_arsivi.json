@@ -1,11 +1,11 @@
 {
   "kod": "LMKDC",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 2.15,
-      "tahakkuk_orani": -9.81,
+      "tahakkuk_orani": -3.69,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 183.1,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 3.34,
-      "tahakkuk_orani": -33.01,
+      "tahakkuk_orani": -1.8,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 95.4,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 365.8,
       "icr_kati": 0.97,
-      "tahakkuk_orani": -0.47,
+      "tahakkuk_orani": -0.52,
       "aga_orani": 1.2,
       "ykp_orani": 0.0,
       "dso_gun": 329.9,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 454.8,
       "icr_kati": 1.62,
-      "tahakkuk_orani": 6.54,
+      "tahakkuk_orani": 2.57,
       "aga_orani": 0.8,
       "ykp_orani": 0.0,
       "dso_gun": 166.9,
@@ -71,12 +71,12 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 2.8,
       "iliskili_orani": 0.0,
-      "dts_skor": 20,
+      "dts_skor": 0,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%6.54): Kâr nakde dönüşmüyor."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -10,
+      "dts_delta": -30,
       "dso_delta": -163.0
     }
   }

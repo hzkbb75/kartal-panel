@@ -1,11 +1,11 @@
 {
   "kod": "ORCAY",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 76.6,
       "icr_kati": 0.75,
-      "tahakkuk_orani": -35.14,
+      "tahakkuk_orani": -20.64,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 172.4,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 120.1,
       "icr_kati": 0.61,
-      "tahakkuk_orani": -48.54,
+      "tahakkuk_orani": -30.28,
       "aga_orani": 0.0,
       "ykp_orani": 1.0,
       "dso_gun": 120.4,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 1.7,
       "icr_kati": -0.74,
-      "tahakkuk_orani": -25.97,
+      "tahakkuk_orani": -7.24,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 477.1,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 3.6,
       "icr_kati": 0.3,
-      "tahakkuk_orani": 0.67,
+      "tahakkuk_orani": 0.26,
       "aga_orani": 38.9,
       "ykp_orani": 5.5,
       "dso_gun": 167.1,

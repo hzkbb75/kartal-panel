@@ -1,11 +1,11 @@
 {
   "kod": "NUHCM",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 113.8,
       "icr_kati": 0.19,
-      "tahakkuk_orani": -2.29,
+      "tahakkuk_orani": -2.45,
       "aga_orani": 0.0,
       "ykp_orani": 38.3,
       "dso_gun": 92.2,
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 221.2,
       "icr_kati": 0.51,
-      "tahakkuk_orani": -19.36,
+      "tahakkuk_orani": -8.93,
       "aga_orani": 5.3,
       "ykp_orani": 47.3,
       "dso_gun": 72.5,
@@ -45,9 +45,9 @@
     "2026/03": {
       "efm_yuzde": 75.6,
       "icr_kati": -0.3,
-      "tahakkuk_orani": -5.4,
+      "tahakkuk_orani": -5.35,
       "aga_orani": 0.0,
-      "ykp_orani": 0.5,
+      "ykp_orani": 0.2,
       "dso_gun": 255.8,
       "acm_makasi": 100.2,
       "serefiye_ozk_orani": 0.4,
@@ -65,7 +65,7 @@
     "2026/06": {
       "efm_yuzde": 140.2,
       "icr_kati": 0.28,
-      "tahakkuk_orani": -4.89,
+      "tahakkuk_orani": -4.27,
       "aga_orani": 9.1,
       "ykp_orani": 39.6,
       "dso_gun": 132.7,

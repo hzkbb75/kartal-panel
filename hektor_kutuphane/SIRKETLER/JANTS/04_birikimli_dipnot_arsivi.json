@@ -1,11 +1,11 @@
 {
   "kod": "JANTS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 46.2,
       "icr_kati": 0.62,
-      "tahakkuk_orani": -2.88,
+      "tahakkuk_orani": -2.37,
       "aga_orani": 0.0,
       "ykp_orani": 61.9,
       "dso_gun": 207.7,
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 52.1,
       "icr_kati": 0.77,
-      "tahakkuk_orani": 0.93,
+      "tahakkuk_orani": 0.1,
       "aga_orani": 1.9,
       "ykp_orani": 68.1,
       "dso_gun": 125.4,
@@ -45,7 +45,7 @@
     "2026/03": {
       "efm_yuzde": 8.5,
       "icr_kati": 0.39,
-      "tahakkuk_orani": -2.05,
+      "tahakkuk_orani": -0.75,
       "aga_orani": 0.0,
       "ykp_orani": 52.9,
       "dso_gun": 278.4,
@@ -66,7 +66,7 @@
     "2026/06": {
       "efm_yuzde": 10.7,
       "icr_kati": 0.59,
-      "tahakkuk_orani": 14.62,
+      "tahakkuk_orani": 5.05,
       "aga_orani": 43.2,
       "ykp_orani": 100.0,
       "dso_gun": 154.9,
@@ -76,7 +76,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%14.62): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%5.05): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
         "🔴 Faiz karşılama oranı 0.59x (ICR zayıf)."
       ],

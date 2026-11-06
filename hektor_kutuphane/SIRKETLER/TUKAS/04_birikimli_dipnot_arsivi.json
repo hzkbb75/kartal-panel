@@ -1,11 +1,11 @@
 {
   "kod": "TUKAS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.1,
       "icr_kati": 54.05,
-      "tahakkuk_orani": 14.42,
+      "tahakkuk_orani": 9.33,
       "aga_orani": 0.0,
       "ykp_orani": 36.7,
       "dso_gun": 230.6,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%14.42): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%9.33): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%36.7)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 17.8,
       "icr_kati": 0.87,
-      "tahakkuk_orani": 2.94,
+      "tahakkuk_orani": 1.52,
       "aga_orani": 0.0,
       "ykp_orani": 39.0,
       "dso_gun": 114.6,
@@ -45,7 +45,7 @@
     "2026/03": {
       "efm_yuzde": 3.6,
       "icr_kati": 0.86,
-      "tahakkuk_orani": -3.49,
+      "tahakkuk_orani": -0.98,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 340.9,
@@ -66,7 +66,7 @@
     "2026/06": {
       "efm_yuzde": 12.6,
       "icr_kati": 0.48,
-      "tahakkuk_orani": -27.32,
+      "tahakkuk_orani": -10.34,
       "aga_orani": 95.2,
       "ykp_orani": 98.9,
       "dso_gun": 187.2,

@@ -1,13 +1,13 @@
 {
   "kod": "BINBN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.13,
-      "tahakkuk_orani": -26.9,
+      "tahakkuk_orani": -19.36,
       "aga_orani": 0.0,
-      "ykp_orani": 7.9,
+      "ykp_orani": 5.5,
       "dso_gun": 229.4,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.16,
-      "tahakkuk_orani": -1.14,
+      "tahakkuk_orani": -3.91,
       "aga_orani": 24.3,
       "ykp_orani": 100.0,
       "dso_gun": 132.3,
@@ -44,9 +44,9 @@
     "2026/03": {
       "efm_yuzde": 1043.5,
       "icr_kati": -0.48,
-      "tahakkuk_orani": -54.35,
+      "tahakkuk_orani": -30.65,
       "aga_orani": 0.0,
-      "ykp_orani": 4.7,
+      "ykp_orani": 2.7,
       "dso_gun": 395.9,
       "acm_makasi": 49.8,
       "serefiye_ozk_orani": 0.0,
@@ -64,9 +64,9 @@
     "2026/06": {
       "efm_yuzde": 474.8,
       "icr_kati": -0.72,
-      "tahakkuk_orani": -43.31,
+      "tahakkuk_orani": -24.3,
       "aga_orani": 0.0,
-      "ykp_orani": 5.9,
+      "ykp_orani": 3.3,
       "dso_gun": 146.3,
       "acm_makasi": -191.5,
       "serefiye_ozk_orani": 0.0,

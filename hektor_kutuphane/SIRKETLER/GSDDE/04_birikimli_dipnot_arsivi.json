@@ -1,11 +1,11 @@
 {
   "kod": "GSDDE",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 14.0,
       "icr_kati": 0.25,
-      "tahakkuk_orani": -6.08,
+      "tahakkuk_orani": -4.35,
       "aga_orani": 0.0,
       "ykp_orani": 2.3,
       "dso_gun": 39.3,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 20.1,
       "icr_kati": 0.31,
-      "tahakkuk_orani": -18.84,
+      "tahakkuk_orani": -9.84,
       "aga_orani": 0.0,
       "ykp_orani": 1.1,
       "dso_gun": 20.4,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 10.0,
       "icr_kati": 0.49,
-      "tahakkuk_orani": 2.29,
+      "tahakkuk_orani": 0.75,
       "aga_orani": 0.0,
       "ykp_orani": 2.1,
       "dso_gun": 41.9,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 17.0,
       "icr_kati": 0.51,
-      "tahakkuk_orani": 7.93,
+      "tahakkuk_orani": 4.12,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 4.7,
@@ -71,14 +71,13 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.1,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 30,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%7.93): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
         "🔴 Faiz karşılama oranı 0.51x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 20,
+      "dts_delta": 0,
       "dso_delta": -37.2
     }
   }

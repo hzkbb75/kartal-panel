@@ -1,11 +1,11 @@
 {
   "kod": "GOODY",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 23.1,
       "icr_kati": 2.11,
-      "tahakkuk_orani": 1.46,
+      "tahakkuk_orani": 1.78,
       "aga_orani": 0.0,
       "ykp_orani": 1.1,
       "dso_gun": 210.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 53.6,
       "icr_kati": 0.19,
-      "tahakkuk_orani": -2.55,
+      "tahakkuk_orani": -2.63,
       "aga_orani": 0.0,
       "ykp_orani": 5.0,
       "dso_gun": 94.5,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 12.6,
       "icr_kati": 0.32,
-      "tahakkuk_orani": -10.07,
+      "tahakkuk_orani": -6.57,
       "aga_orani": 4.9,
       "ykp_orani": 81.3,
       "dso_gun": 245.1,
@@ -64,9 +64,9 @@
     "2026/06": {
       "efm_yuzde": 45.8,
       "icr_kati": -0.79,
-      "tahakkuk_orani": -23.07,
+      "tahakkuk_orani": -14.73,
       "aga_orani": 0.0,
-      "ykp_orani": 2.0,
+      "ykp_orani": 1.3,
       "dso_gun": 122.4,
       "acm_makasi": -102.2,
       "serefiye_ozk_orani": 0.0,

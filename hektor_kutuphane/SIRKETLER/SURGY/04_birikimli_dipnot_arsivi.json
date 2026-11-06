@@ -1,22 +1,21 @@
 {
   "kod": "SURGY",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 623.9,
       "icr_kati": -0.13,
-      "tahakkuk_orani": 50.57,
+      "tahakkuk_orani": 15.14,
       "aga_orani": 0.0,
-      "ykp_orani": 57.2,
+      "ykp_orani": 14.0,
       "dso_gun": 0.0,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%50.57): Kâr nakde dönüşmüyor.",
-        "🟡 Kağıt üzeri kâr payı yüksek (%57.2).",
+        "🔴 Tahakkuk anomalisi (%15.14): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -0.13x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -26,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 190.8,
       "icr_kati": 7.26,
-      "tahakkuk_orani": 74.98,
+      "tahakkuk_orani": 19.72,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 0.0,
@@ -36,17 +35,17 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%74.98): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%19.72): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -15,
+      "dts_delta": 0,
       "dso_delta": 0.0
     },
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.63,
-      "tahakkuk_orani": -4.15,
+      "tahakkuk_orani": -0.79,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -65,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.62,
-      "tahakkuk_orani": -5.95,
+      "tahakkuk_orani": -1.15,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,

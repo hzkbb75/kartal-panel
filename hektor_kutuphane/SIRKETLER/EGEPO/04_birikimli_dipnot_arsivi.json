@@ -1,11 +1,11 @@
 {
   "kod": "EGEPO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 46.1,
       "icr_kati": 0.76,
-      "tahakkuk_orani": 41.7,
+      "tahakkuk_orani": 6.34,
       "aga_orani": 0.0,
       "ykp_orani": 9.6,
       "dso_gun": 108.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%41.7): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%6.34): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 0.76x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 62.0,
       "icr_kati": 0.72,
-      "tahakkuk_orani": 25.55,
+      "tahakkuk_orani": 3.41,
       "aga_orani": 28.5,
       "ykp_orani": 0.0,
       "dso_gun": 53.0,
@@ -33,21 +33,20 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.4,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%25.55): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 0.72x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 0,
+      "dts_delta": -20,
       "dso_delta": -55.0
     },
     "2026/03": {
       "efm_yuzde": 39.6,
       "icr_kati": -0.33,
-      "tahakkuk_orani": 2.92,
+      "tahakkuk_orani": 0.53,
       "aga_orani": 0.0,
-      "ykp_orani": 11.9,
+      "ykp_orani": 2.2,
       "dso_gun": 196.8,
       "acm_makasi": 151.9,
       "serefiye_ozk_orani": 0.0,
@@ -59,13 +58,13 @@
         "🔴 Faiz karşılama oranı -0.33x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -5,
+      "dts_delta": 15,
       "dso_delta": 143.8
     },
     "2026/06": {
       "efm_yuzde": 93.6,
       "icr_kati": 1.33,
-      "tahakkuk_orani": -22.81,
+      "tahakkuk_orani": -6.83,
       "aga_orani": 38.8,
       "ykp_orani": 4.2,
       "dso_gun": 92.9,

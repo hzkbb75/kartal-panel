@@ -1,11 +1,11 @@
 {
   "kod": "SNGYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 21.9,
       "icr_kati": 0.06,
-      "tahakkuk_orani": -2.83,
+      "tahakkuk_orani": -0.37,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 294.5,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 30.5,
       "icr_kati": 0.09,
-      "tahakkuk_orani": 8.81,
+      "tahakkuk_orani": 2.12,
       "aga_orani": 0.0,
       "ykp_orani": 21.9,
       "dso_gun": 314.2,
@@ -32,20 +32,19 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 30,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%8.81): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%21.9 açıldı (DSO: 314.2 gün).",
         "🔴 Faiz karşılama oranı 0.09x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 35,
+      "dts_delta": 15,
       "dso_delta": 19.7
     },
     "2026/03": {
       "efm_yuzde": 16.5,
       "icr_kati": 0.91,
-      "tahakkuk_orani": -0.62,
+      "tahakkuk_orani": 0.64,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 134.7,
@@ -58,13 +57,13 @@
         "🔴 Faiz karşılama oranı 0.91x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -35,
+      "dts_delta": -15,
       "dso_delta": -179.5
     },
     "2026/06": {
       "efm_yuzde": 12.9,
       "icr_kati": 2.06,
-      "tahakkuk_orani": -9.15,
+      "tahakkuk_orani": -1.57,
       "aga_orani": 0.2,
       "ykp_orani": 0.6,
       "dso_gun": 66.0,

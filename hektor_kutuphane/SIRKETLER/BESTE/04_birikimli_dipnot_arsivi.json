@@ -1,6 +1,6 @@
 {
   "kod": "BESTE",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -45,9 +45,9 @@
     "2026/03": {
       "efm_yuzde": 63.3,
       "icr_kati": -0.87,
-      "tahakkuk_orani": -8.66,
+      "tahakkuk_orani": -0.99,
       "aga_orani": 0.0,
-      "ykp_orani": 10.1,
+      "ykp_orani": 1.2,
       "dso_gun": 275.9,
       "acm_makasi": 74.3,
       "serefiye_ozk_orani": 0.0,
@@ -65,22 +65,20 @@
     "2026/06": {
       "efm_yuzde": 54.6,
       "icr_kati": -0.37,
-      "tahakkuk_orani": 36.25,
+      "tahakkuk_orani": 4.31,
       "aga_orani": 0.0,
-      "ykp_orani": 63.3,
+      "ykp_orani": 7.5,
       "dso_gun": 144.1,
       "acm_makasi": -155.0,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%36.25): Kâr nakde dönüşmüyor.",
-        "🟡 Kağıt üzeri kâr payı yüksek (%63.3).",
         "🔴 Faiz karşılama oranı -0.37x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 20,
+      "dts_delta": -15,
       "dso_delta": -131.8
     }
   }

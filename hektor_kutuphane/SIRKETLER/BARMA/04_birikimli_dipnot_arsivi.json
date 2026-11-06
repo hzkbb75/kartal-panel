@@ -1,11 +1,11 @@
 {
   "kod": "BARMA",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.5,
       "icr_kati": 8.03,
-      "tahakkuk_orani": -73.46,
+      "tahakkuk_orani": -11.36,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 336.6,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 1.5,
       "icr_kati": 2.87,
-      "tahakkuk_orani": -103.78,
+      "tahakkuk_orani": -13.7,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 168.9,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 0.6,
       "icr_kati": 5.35,
-      "tahakkuk_orani": -47.67,
+      "tahakkuk_orani": -6.61,
       "aga_orani": 0.0,
       "ykp_orani": 7.5,
       "dso_gun": 388.6,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 0.9,
       "icr_kati": 2.35,
-      "tahakkuk_orani": -78.6,
+      "tahakkuk_orani": -10.09,
       "aga_orani": 0.0,
       "ykp_orani": 55.0,
       "dso_gun": 216.2,

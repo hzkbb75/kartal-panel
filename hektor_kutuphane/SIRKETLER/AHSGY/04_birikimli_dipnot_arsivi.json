@@ -1,11 +1,11 @@
 {
   "kod": "AHSGY",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 11441.0,
       "icr_kati": 0.21,
-      "tahakkuk_orani": 0.3,
+      "tahakkuk_orani": -0.0,
       "aga_orani": 0.0,
       "ykp_orani": 0.7,
       "dso_gun": 176.8,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 22082.5,
       "icr_kati": 0.36,
-      "tahakkuk_orani": 6.92,
+      "tahakkuk_orani": 1.83,
       "aga_orani": 0.0,
       "ykp_orani": 37.5,
       "dso_gun": 60.1,
@@ -32,20 +32,19 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 30,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%6.92): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%37.5).",
         "🔴 Faiz karşılama oranı 0.36x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 35,
+      "dts_delta": 15,
       "dso_delta": -116.7
     },
     "2026/03": {
       "efm_yuzde": 12448.7,
       "icr_kati": 0.27,
-      "tahakkuk_orani": 4.4,
+      "tahakkuk_orani": 0.58,
       "aga_orani": 0.0,
       "ykp_orani": 42.7,
       "dso_gun": 198.2,
@@ -60,13 +59,13 @@
         "🔴 Faiz karşılama oranı 0.27x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -5,
+      "dts_delta": 15,
       "dso_delta": 138.1
     },
     "2026/06": {
       "efm_yuzde": 21389.0,
       "icr_kati": 0.32,
-      "tahakkuk_orani": 11.7,
+      "tahakkuk_orani": 1.56,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 100.6,
@@ -74,14 +73,13 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 30,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%11.7): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
         "🔴 Faiz karşılama oranı 0.32x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 5,
+      "dts_delta": -15,
       "dso_delta": -97.6
     }
   }

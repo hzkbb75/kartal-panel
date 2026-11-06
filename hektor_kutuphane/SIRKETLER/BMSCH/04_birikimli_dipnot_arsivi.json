@@ -1,11 +1,11 @@
 {
   "kod": "BMSCH",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 5.5,
       "icr_kati": 0.13,
-      "tahakkuk_orani": 17.31,
+      "tahakkuk_orani": 3.31,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 36.6,
@@ -13,9 +13,8 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.9,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%17.31): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 0.13x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 13.7,
       "icr_kati": 0.21,
-      "tahakkuk_orani": -29.68,
+      "tahakkuk_orani": -8.17,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 10.1,
@@ -38,13 +37,13 @@
         "🔴 Faiz karşılama oranı 0.21x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -20,
+      "dts_delta": 0,
       "dso_delta": -26.5
     },
     "2026/03": {
       "efm_yuzde": 2.2,
       "icr_kati": 0.17,
-      "tahakkuk_orani": -3.32,
+      "tahakkuk_orani": -0.73,
       "aga_orani": 1.6,
       "ykp_orani": 0.0,
       "dso_gun": 96.8,
@@ -64,9 +63,9 @@
     "2026/06": {
       "efm_yuzde": 1.0,
       "icr_kati": -3.57,
-      "tahakkuk_orani": 25.25,
+      "tahakkuk_orani": 5.27,
       "aga_orani": 0.0,
-      "ykp_orani": 4.3,
+      "ykp_orani": 0.9,
       "dso_gun": 44.0,
       "acm_makasi": -149.5,
       "serefiye_ozk_orani": 0.0,
@@ -74,7 +73,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%25.25): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%5.27): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -3.57x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},

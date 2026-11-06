@@ -1,11 +1,11 @@
 {
   "kod": "HDFGS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 14029.9,
       "icr_kati": -0.19,
-      "tahakkuk_orani": -544.55,
+      "tahakkuk_orani": -28.47,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 21088.0,
       "icr_kati": -0.0,
-      "tahakkuk_orani": -17.87,
+      "tahakkuk_orani": -7.81,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 74.1,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 2131.4,
       "icr_kati": 0.62,
-      "tahakkuk_orani": -2107.71,
+      "tahakkuk_orani": -9.18,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 5335.3,
       "icr_kati": 0.41,
-      "tahakkuk_orani": -8987.47,
+      "tahakkuk_orani": -17.45,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.4,

@@ -1,17 +1,17 @@
 {
   "kod": "VERUS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 40.5,
       "icr_kati": -4.63,
-      "tahakkuk_orani": -18.05,
+      "tahakkuk_orani": -15.4,
       "aga_orani": 0.0,
-      "ykp_orani": 1.4,
+      "ykp_orani": 0.8,
       "dso_gun": 340.8,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.2,
+      "karsilik_ozk_orani": 0.3,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -24,17 +24,17 @@
     "2025/06": {
       "efm_yuzde": 30.7,
       "icr_kati": 4.25,
-      "tahakkuk_orani": 9.19,
+      "tahakkuk_orani": 7.67,
       "aga_orani": 0.0,
       "ykp_orani": 0.9,
       "dso_gun": 166.5,
       "acm_makasi": -92.9,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.2,
+      "karsilik_ozk_orani": 0.3,
       "iliskili_orani": 0.0,
       "dts_skor": 20,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%9.19): Kâr nakde dönüşmüyor."
+        "🔴 Tahakkuk anomalisi (%7.67): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {},
       "dts_delta": 5,
@@ -43,13 +43,13 @@
     "2026/03": {
       "efm_yuzde": 3.6,
       "icr_kati": -13.17,
-      "tahakkuk_orani": -1.92,
+      "tahakkuk_orani": -6.92,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
       "dso_gun": 296.5,
       "acm_makasi": 35.0,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.2,
+      "karsilik_ozk_orani": 0.3,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
@@ -63,13 +63,13 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.63,
-      "tahakkuk_orani": -0.35,
+      "tahakkuk_orani": -1.77,
       "aga_orani": 0.0,
       "ykp_orani": 11.7,
       "dso_gun": 154.8,
       "acm_makasi": -100.6,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.2,
+      "karsilik_ozk_orani": 0.3,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [

@@ -1,11 +1,11 @@
 {
   "kod": "SAYAS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 54.6,
       "icr_kati": 0.43,
-      "tahakkuk_orani": -22.17,
+      "tahakkuk_orani": -19.83,
       "aga_orani": 0.0,
       "ykp_orani": 6.4,
       "dso_gun": 305.1,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 138.2,
       "icr_kati": 1.16,
-      "tahakkuk_orani": 1.97,
+      "tahakkuk_orani": 6.12,
       "aga_orani": 0.0,
       "ykp_orani": 19.1,
       "dso_gun": 162.4,
@@ -32,18 +32,19 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 2.9,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 35,
       "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%6.12): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 1.16x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 0,
+      "dts_delta": 20,
       "dso_delta": -142.7
     },
     "2026/03": {
       "efm_yuzde": 31.3,
       "icr_kati": 1.67,
-      "tahakkuk_orani": 2.59,
+      "tahakkuk_orani": 1.28,
       "aga_orani": 0.1,
       "ykp_orani": 11.9,
       "dso_gun": 424.7,
@@ -56,13 +57,13 @@
         "🟡 Alacak-Ciro makası +%98.0 açıldı (DSO: 424.7 gün)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 0,
+      "dts_delta": -20,
       "dso_delta": 262.3
     },
     "2026/06": {
       "efm_yuzde": 50.6,
       "icr_kati": 2.04,
-      "tahakkuk_orani": -8.82,
+      "tahakkuk_orani": -3.07,
       "aga_orani": 0.0,
       "ykp_orani": 9.8,
       "dso_gun": 179.8,

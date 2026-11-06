@@ -1,11 +1,11 @@
 {
   "kod": "KMPUR",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 15.5,
       "icr_kati": 0.59,
-      "tahakkuk_orani": -0.74,
+      "tahakkuk_orani": -1.21,
       "aga_orani": 0.0,
       "ykp_orani": 0.7,
       "dso_gun": 534.2,
@@ -24,13 +24,13 @@
     "2025/06": {
       "efm_yuzde": 36.8,
       "icr_kati": 0.48,
-      "tahakkuk_orani": -5.82,
+      "tahakkuk_orani": -6.29,
       "aga_orani": 0.1,
       "ykp_orani": 0.3,
       "dso_gun": 268.1,
       "acm_makasi": -108.1,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 1.0,
+      "karsilik_ozk_orani": 0.9,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 6.9,
       "icr_kati": 1.06,
-      "tahakkuk_orani": 0.97,
+      "tahakkuk_orani": 1.95,
       "aga_orani": 17.7,
       "ykp_orani": 3.1,
       "dso_gun": 757.0,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 13.4,
       "icr_kati": 1.45,
-      "tahakkuk_orani": 9.15,
+      "tahakkuk_orani": 7.01,
       "aga_orani": 1.1,
       "ykp_orani": 0.4,
       "dso_gun": 367.4,
@@ -73,7 +73,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%9.15): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%7.01): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 1.45x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},

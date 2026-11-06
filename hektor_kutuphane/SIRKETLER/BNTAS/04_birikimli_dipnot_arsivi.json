@@ -1,11 +1,11 @@
 {
   "kod": "BNTAS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 53.1,
       "icr_kati": 27.18,
-      "tahakkuk_orani": -13.91,
+      "tahakkuk_orani": -0.92,
       "aga_orani": 0.0,
       "ykp_orani": 54.1,
       "dso_gun": 240.8,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 2.7,
       "icr_kati": 140.31,
-      "tahakkuk_orani": -11.11,
+      "tahakkuk_orani": 2.67,
       "aga_orani": 0.0,
       "ykp_orani": 7.2,
       "dso_gun": 120.2,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 1.2,
       "icr_kati": 64.97,
-      "tahakkuk_orani": -1.94,
+      "tahakkuk_orani": 2.93,
       "aga_orani": 0.0,
       "ykp_orani": 32.6,
       "dso_gun": 318.7,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 19.5,
       "icr_kati": 16.8,
-      "tahakkuk_orani": -38.35,
+      "tahakkuk_orani": -16.41,
       "aga_orani": 0.0,
       "ykp_orani": 8.8,
       "dso_gun": 153.9,

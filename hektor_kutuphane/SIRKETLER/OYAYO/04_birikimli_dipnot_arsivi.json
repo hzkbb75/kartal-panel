@@ -1,11 +1,11 @@
 {
   "kod": "OYAYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.3,
-      "tahakkuk_orani": 33.54,
+      "tahakkuk_orani": 31.44,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 2.9,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%33.54): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%31.44): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 0.3x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.96,
-      "tahakkuk_orani": 22.34,
+      "tahakkuk_orani": 22.16,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 10.9,
@@ -35,7 +35,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%22.34): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%22.16): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%619.5 açıldı (DSO: 10.9 gün).",
         "🔴 Faiz karşılama oranı 0.96x (ICR zayıf)."
       ],

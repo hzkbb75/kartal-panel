@@ -1,13 +1,13 @@
 {
   "kod": "REEDR",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 73.4,
       "icr_kati": -0.46,
-      "tahakkuk_orani": -17.62,
+      "tahakkuk_orani": -9.12,
       "aga_orani": 0.0,
-      "ykp_orani": 1.4,
+      "ykp_orani": 0.6,
       "dso_gun": 349.2,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.1,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 139.0,
       "icr_kati": -2.17,
-      "tahakkuk_orani": -14.48,
+      "tahakkuk_orani": -15.24,
       "aga_orani": 0.0,
-      "ykp_orani": 2.0,
+      "ykp_orani": 0.9,
       "dso_gun": 239.5,
       "acm_makasi": -52.0,
       "serefiye_ozk_orani": 0.1,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 75.9,
       "icr_kati": 0.04,
-      "tahakkuk_orani": -9.98,
+      "tahakkuk_orani": -4.27,
       "aga_orani": 1900.4,
       "ykp_orani": 67.4,
       "dso_gun": 799.5,
@@ -64,13 +64,13 @@
     "2026/06": {
       "efm_yuzde": 56.9,
       "icr_kati": -1.38,
-      "tahakkuk_orani": -18.91,
+      "tahakkuk_orani": -5.86,
       "aga_orani": 0.0,
-      "ykp_orani": 2.9,
+      "ykp_orani": 0.9,
       "dso_gun": 248.0,
       "acm_makasi": -113.6,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 1.0,
+      "karsilik_ozk_orani": 0.9,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [

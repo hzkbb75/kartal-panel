@@ -1,11 +1,11 @@
 {
   "kod": "BRKSN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 50.5,
       "icr_kati": 1.36,
-      "tahakkuk_orani": -16.89,
+      "tahakkuk_orani": -8.43,
       "aga_orani": 0.0,
       "ykp_orani": 6.7,
       "dso_gun": 178.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 97.2,
       "icr_kati": 1.93,
-      "tahakkuk_orani": -2.2,
+      "tahakkuk_orani": -1.25,
       "aga_orani": 0.0,
       "ykp_orani": 2.9,
       "dso_gun": 112.7,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 52.0,
       "icr_kati": 1.33,
-      "tahakkuk_orani": -6.37,
+      "tahakkuk_orani": -3.52,
       "aga_orani": 0.1,
       "ykp_orani": 0.9,
       "dso_gun": 284.8,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 155.7,
       "icr_kati": 1.88,
-      "tahakkuk_orani": -14.81,
+      "tahakkuk_orani": -7.09,
       "aga_orani": 0.1,
       "ykp_orani": 3.0,
       "dso_gun": 139.4,

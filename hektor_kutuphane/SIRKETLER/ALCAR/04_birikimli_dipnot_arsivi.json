@@ -1,13 +1,13 @@
 {
   "kod": "ALCAR",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 18.4,
       "icr_kati": -0.04,
-      "tahakkuk_orani": -32.7,
+      "tahakkuk_orani": -27.43,
       "aga_orani": 0.0,
-      "ykp_orani": 0.2,
+      "ykp_orani": 0.1,
       "dso_gun": 371.0,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 37.8,
       "icr_kati": 0.22,
-      "tahakkuk_orani": 0.7,
+      "tahakkuk_orani": -1.1,
       "aga_orani": 0.7,
       "ykp_orani": 16.4,
       "dso_gun": 176.1,
@@ -43,9 +43,9 @@
     "2026/03": {
       "efm_yuzde": 2.0,
       "icr_kati": -1.91,
-      "tahakkuk_orani": -1.97,
+      "tahakkuk_orani": -1.45,
       "aga_orani": 0.0,
-      "ykp_orani": 0.3,
+      "ykp_orani": 0.2,
       "dso_gun": 410.1,
       "acm_makasi": 50.9,
       "serefiye_ozk_orani": 0.0,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 12.2,
       "icr_kati": -0.12,
-      "tahakkuk_orani": -8.13,
+      "tahakkuk_orani": -6.05,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 165.4,

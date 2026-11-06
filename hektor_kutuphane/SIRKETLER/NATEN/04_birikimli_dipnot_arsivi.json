@@ -1,21 +1,20 @@
 {
   "kod": "NATEN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 5.7,
       "icr_kati": -0.67,
-      "tahakkuk_orani": -8.43,
+      "tahakkuk_orani": -0.68,
       "aga_orani": 0.0,
-      "ykp_orani": 44.8,
+      "ykp_orani": 4.8,
       "dso_gun": 586.9,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 30,
+      "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%44.8).",
         "🔴 Faiz karşılama oranı -0.67x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,62 +24,59 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 33.02,
-      "tahakkuk_orani": -90.61,
+      "tahakkuk_orani": -7.73,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 283.5,
       "acm_makasi": -89.2,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -15,
+      "dts_delta": 0,
       "dso_delta": -303.4
     },
     "2026/03": {
       "efm_yuzde": 2.2,
       "icr_kati": -0.59,
-      "tahakkuk_orani": 28.38,
+      "tahakkuk_orani": 1.44,
       "aga_orani": 0.0,
-      "ykp_orani": 100.0,
+      "ykp_orani": 6.3,
       "dso_gun": 755.1,
       "acm_makasi": 55.7,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
       "iliskili_orani": 0.0,
-      "dts_skor": 65,
+      "dts_skor": 30,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%28.38): Kâr nakde dönüşmüyor.",
-        "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
         "🟡 Alacak-Ciro makası +%55.7 açıldı (DSO: 755.1 gün).",
         "🔴 Faiz karşılama oranı -0.59x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 50,
+      "dts_delta": 15,
       "dso_delta": 471.6
     },
     "2026/06": {
       "efm_yuzde": 0.3,
       "icr_kati": -5.58,
-      "tahakkuk_orani": -12.94,
+      "tahakkuk_orani": -0.82,
       "aga_orani": 0.0,
-      "ykp_orani": 39.5,
+      "ykp_orani": 6.2,
       "dso_gun": 352.2,
       "acm_makasi": -119.5,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
       "iliskili_orani": 0.0,
-      "dts_skor": 30,
+      "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%39.5).",
         "🔴 Faiz karşılama oranı -5.58x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -35,
+      "dts_delta": -15,
       "dso_delta": -402.9
     }
   }

@@ -1,6 +1,6 @@
 {
   "kod": "EKDMR",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 62.8,
@@ -47,7 +47,7 @@
     "2026/03": {
       "efm_yuzde": 5.5,
       "icr_kati": 1.01,
-      "tahakkuk_orani": 21.46,
+      "tahakkuk_orani": 6.39,
       "aga_orani": 15.0,
       "ykp_orani": 64.5,
       "dso_gun": 44.8,
@@ -57,7 +57,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 65,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%21.46): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%6.39): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%64.5).",
         "🟡 Alacak-Ciro makası +%49.4 açıldı (DSO: 44.8 gün).",
         "🔴 Faiz karşılama oranı 1.01x (ICR zayıf)."
@@ -69,7 +69,7 @@
     "2026/06": {
       "efm_yuzde": 5.5,
       "icr_kati": 1.13,
-      "tahakkuk_orani": 15.42,
+      "tahakkuk_orani": 5.92,
       "aga_orani": 0.2,
       "ykp_orani": 52.7,
       "dso_gun": 19.5,
@@ -79,7 +79,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%15.42): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%5.92): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%52.7).",
         "🔴 Faiz karşılama oranı 1.13x (ICR zayıf)."
       ],

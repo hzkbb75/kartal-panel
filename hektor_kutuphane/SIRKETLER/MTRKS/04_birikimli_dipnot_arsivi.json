@@ -1,11 +1,11 @@
 {
   "kod": "MTRKS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 68.9,
       "icr_kati": 2.22,
-      "tahakkuk_orani": -28.12,
+      "tahakkuk_orani": -3.3,
       "aga_orani": 0.0,
       "ykp_orani": 36.2,
       "dso_gun": 71.1,
@@ -24,13 +24,13 @@
     "2025/06": {
       "efm_yuzde": 296.6,
       "icr_kati": 1.37,
-      "tahakkuk_orani": -116.08,
+      "tahakkuk_orani": -28.64,
       "aga_orani": 25.2,
       "ykp_orani": 34.8,
       "dso_gun": 30.4,
       "acm_makasi": -118.3,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 4.7,
+      "karsilik_ozk_orani": 4.8,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 58.3,
       "icr_kati": 0.38,
-      "tahakkuk_orani": -21.33,
+      "tahakkuk_orani": -1.74,
       "aga_orani": 2955.4,
       "ykp_orani": 100.0,
       "dso_gun": 120.7,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 32.3,
       "icr_kati": 0.5,
-      "tahakkuk_orani": -33.56,
+      "tahakkuk_orani": -3.33,
       "aga_orani": 473.1,
       "ykp_orani": 100.0,
       "dso_gun": 51.0,

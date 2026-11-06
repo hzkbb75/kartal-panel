@@ -1,17 +1,17 @@
 {
   "kod": "EBEBK",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 9.7,
       "icr_kati": -0.86,
-      "tahakkuk_orani": 1.29,
+      "tahakkuk_orani": -0.24,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 5.8,
       "acm_makasi": 0.0,
-      "serefiye_ozk_orani": 6.3,
-      "karsilik_ozk_orani": 2.6,
+      "serefiye_ozk_orani": 6.2,
+      "karsilik_ozk_orani": 2.5,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -24,12 +24,12 @@
     "2025/06": {
       "efm_yuzde": 2.2,
       "icr_kati": 0.08,
-      "tahakkuk_orani": -6.9,
+      "tahakkuk_orani": -5.43,
       "aga_orani": 1341.2,
       "ykp_orani": 100.0,
       "dso_gun": 3.1,
       "acm_makasi": -102.8,
-      "serefiye_ozk_orani": 6.3,
+      "serefiye_ozk_orani": 6.2,
       "karsilik_ozk_orani": 2.4,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
@@ -44,9 +44,9 @@
     "2026/03": {
       "efm_yuzde": 6.7,
       "icr_kati": -0.28,
-      "tahakkuk_orani": -9.83,
+      "tahakkuk_orani": -6.08,
       "aga_orani": 0.0,
-      "ykp_orani": 0.3,
+      "ykp_orani": 0.2,
       "dso_gun": 6.9,
       "acm_makasi": 65.4,
       "serefiye_ozk_orani": 5.2,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 11.3,
       "icr_kati": 0.25,
-      "tahakkuk_orani": -15.42,
+      "tahakkuk_orani": -8.65,
       "aga_orani": 84.1,
       "ykp_orani": 49.8,
       "dso_gun": 2.9,

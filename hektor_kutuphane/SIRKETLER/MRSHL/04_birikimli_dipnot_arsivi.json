@@ -1,11 +1,11 @@
 {
   "kod": "MRSHL",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 15.5,
       "icr_kati": 1.69,
-      "tahakkuk_orani": -4.47,
+      "tahakkuk_orani": -2.38,
       "aga_orani": 0.0,
       "ykp_orani": 5.1,
       "dso_gun": 255.7,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 39.9,
       "icr_kati": 1.22,
-      "tahakkuk_orani": 2.1,
+      "tahakkuk_orani": 1.78,
       "aga_orani": 0.0,
       "ykp_orani": 3.3,
       "dso_gun": 207.6,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 6.8,
       "icr_kati": 4.59,
-      "tahakkuk_orani": 4.4,
+      "tahakkuk_orani": 3.03,
       "aga_orani": 0.0,
       "ykp_orani": 1.6,
       "dso_gun": 459.5,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 40.3,
       "icr_kati": 1.88,
-      "tahakkuk_orani": -6.18,
+      "tahakkuk_orani": -4.41,
       "aga_orani": 0.0,
       "ykp_orani": 4.3,
       "dso_gun": 276.8,

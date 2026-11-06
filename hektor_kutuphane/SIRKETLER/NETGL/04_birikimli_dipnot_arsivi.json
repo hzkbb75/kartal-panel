@@ -1,6 +1,6 @@
 {
   "kod": "NETGL",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/06": {
       "efm_yuzde": 46.4,
@@ -26,7 +26,7 @@
     "2026/06": {
       "efm_yuzde": 24.7,
       "icr_kati": 1.07,
-      "tahakkuk_orani": -7.51,
+      "tahakkuk_orani": -2.8,
       "aga_orani": 0.0,
       "ykp_orani": 16.4,
       "dso_gun": 287.9,

@@ -1,11 +1,11 @@
 {
   "kod": "SERNT",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 21.3,
       "icr_kati": 0.12,
-      "tahakkuk_orani": -5.5,
+      "tahakkuk_orani": -3.91,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 586.1,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 30.6,
       "icr_kati": 0.14,
-      "tahakkuk_orani": -24.12,
+      "tahakkuk_orani": -13.63,
       "aga_orani": 0.5,
       "ykp_orani": 0.0,
       "dso_gun": 327.8,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 4.8,
       "icr_kati": 0.06,
-      "tahakkuk_orani": -17.79,
+      "tahakkuk_orani": -7.67,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 899.9,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 19.7,
       "icr_kati": 0.16,
-      "tahakkuk_orani": -43.87,
+      "tahakkuk_orani": -17.35,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 370.1,

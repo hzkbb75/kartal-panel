@@ -1,11 +1,11 @@
 {
   "kod": "AKFIS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 36.6,
       "icr_kati": 1.04,
-      "tahakkuk_orani": -19.59,
+      "tahakkuk_orani": -3.46,
       "aga_orani": 0.0,
       "ykp_orani": 1.8,
       "dso_gun": 194.3,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 76.0,
       "icr_kati": 1.12,
-      "tahakkuk_orani": -28.85,
+      "tahakkuk_orani": -4.48,
       "aga_orani": 0.1,
       "ykp_orani": 0.9,
       "dso_gun": 101.3,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 22.8,
       "icr_kati": 1.24,
-      "tahakkuk_orani": -4.16,
+      "tahakkuk_orani": -0.62,
       "aga_orani": 1.7,
       "ykp_orani": 0.8,
       "dso_gun": 221.2,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 42.0,
       "icr_kati": 1.0,
-      "tahakkuk_orani": -23.78,
+      "tahakkuk_orani": -3.6,
       "aga_orani": 0.4,
       "ykp_orani": 0.6,
       "dso_gun": 147.4,

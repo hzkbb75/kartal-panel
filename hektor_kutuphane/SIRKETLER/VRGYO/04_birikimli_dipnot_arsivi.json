@@ -1,11 +1,11 @@
 {
   "kod": "VRGYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 100.8,
       "icr_kati": -0.09,
-      "tahakkuk_orani": 0.05,
+      "tahakkuk_orani": 0.04,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 225.6,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 110.5,
       "icr_kati": 0.32,
-      "tahakkuk_orani": -3.48,
+      "tahakkuk_orani": -3.61,
       "aga_orani": 0.0,
       "ykp_orani": 9.5,
       "dso_gun": 119.0,
@@ -43,9 +43,9 @@
     "2026/03": {
       "efm_yuzde": 142.5,
       "icr_kati": -0.0,
-      "tahakkuk_orani": -140.77,
+      "tahakkuk_orani": -56.07,
       "aga_orani": 0.0,
-      "ykp_orani": 1.2,
+      "ykp_orani": 0.5,
       "dso_gun": 743.9,
       "acm_makasi": 33.3,
       "serefiye_ozk_orani": 0.0,
@@ -63,9 +63,9 @@
     "2026/06": {
       "efm_yuzde": 47.3,
       "icr_kati": -0.0,
-      "tahakkuk_orani": -103.86,
+      "tahakkuk_orani": -44.21,
       "aga_orani": 0.0,
-      "ykp_orani": 4.7,
+      "ykp_orani": 2.0,
       "dso_gun": 6972.3,
       "acm_makasi": 2455.1,
       "serefiye_ozk_orani": 0.0,

@@ -1,11 +1,11 @@
 {
   "kod": "TSGYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 20.1,
       "icr_kati": 0.43,
-      "tahakkuk_orani": -40.49,
+      "tahakkuk_orani": -1.98,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 13.7,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 49.9,
       "icr_kati": 1.14,
-      "tahakkuk_orani": -30.81,
+      "tahakkuk_orani": -1.0,
       "aga_orani": 0.1,
       "ykp_orani": 0.0,
       "dso_gun": 7.1,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 12.0,
       "icr_kati": 4.56,
-      "tahakkuk_orani": -273.48,
+      "tahakkuk_orani": -2.39,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 32.1,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 15.8,
       "icr_kati": 8.81,
-      "tahakkuk_orani": -204.75,
+      "tahakkuk_orani": -1.11,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 15.9,

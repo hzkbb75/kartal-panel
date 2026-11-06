@@ -1,11 +1,11 @@
 {
   "kod": "HUBVC",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.27,
-      "tahakkuk_orani": -1890.12,
+      "tahakkuk_orani": -4.05,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 2222.7,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -17.61,
-      "tahakkuk_orani": -79.24,
+      "tahakkuk_orani": -20.37,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 2239.5,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 51.5,
       "icr_kati": 1.99,
-      "tahakkuk_orani": -143.27,
+      "tahakkuk_orani": -8.51,
       "aga_orani": 7.2,
       "ykp_orani": 0.0,
       "dso_gun": 727.7,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 73.7,
       "icr_kati": -9.26,
-      "tahakkuk_orani": -439.07,
+      "tahakkuk_orani": -17.67,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 67.3,

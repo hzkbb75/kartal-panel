@@ -1,13 +1,13 @@
 {
   "kod": "YKSLN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -2.52,
-      "tahakkuk_orani": -97.03,
+      "tahakkuk_orani": -64.09,
       "aga_orani": 0.0,
-      "ykp_orani": 17.4,
+      "ykp_orani": 10.8,
       "dso_gun": 347.3,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.4,
-      "tahakkuk_orani": -77.44,
+      "tahakkuk_orani": -54.96,
       "aga_orani": 0.0,
-      "ykp_orani": 9.3,
+      "ykp_orani": 6.4,
       "dso_gun": 171.0,
       "acm_makasi": -93.3,
       "serefiye_ozk_orani": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 3.2,
       "icr_kati": 11.32,
-      "tahakkuk_orani": 3.87,
+      "tahakkuk_orani": 2.73,
       "aga_orani": 0.3,
       "ykp_orani": 7.2,
       "dso_gun": 402.3,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 14.7,
       "icr_kati": 1.51,
-      "tahakkuk_orani": -3.82,
+      "tahakkuk_orani": -2.69,
       "aga_orani": 0.0,
       "ykp_orani": 2.5,
       "dso_gun": 182.8,

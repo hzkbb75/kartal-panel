@@ -1,11 +1,11 @@
 {
   "kod": "SMART",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 7.5,
       "icr_kati": 3.13,
-      "tahakkuk_orani": -55.71,
+      "tahakkuk_orani": -8.03,
       "aga_orani": 0.0,
       "ykp_orani": 0.2,
       "dso_gun": 324.1,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 17.3,
       "icr_kati": 2.97,
-      "tahakkuk_orani": -62.22,
+      "tahakkuk_orani": -12.29,
       "aga_orani": 38.8,
       "ykp_orani": 0.6,
       "dso_gun": 186.4,
@@ -43,9 +43,9 @@
     "2026/03": {
       "efm_yuzde": 1.5,
       "icr_kati": -6.15,
-      "tahakkuk_orani": -240.68,
+      "tahakkuk_orani": -17.13,
       "aga_orani": 0.0,
-      "ykp_orani": 0.3,
+      "ykp_orani": 0.0,
       "dso_gun": 389.7,
       "acm_makasi": 22.0,
       "serefiye_ozk_orani": 17.0,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 0.2,
       "icr_kati": 9.15,
-      "tahakkuk_orani": -334.04,
+      "tahakkuk_orani": -29.75,
       "aga_orani": 1961.7,
       "ykp_orani": 2.7,
       "dso_gun": 234.3,

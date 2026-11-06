@@ -1,11 +1,11 @@
 {
   "kod": "ENTRA",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 2.5,
       "icr_kati": 0.38,
-      "tahakkuk_orani": -76.75,
+      "tahakkuk_orani": -4.6,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 156.8,
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 9.9,
       "icr_kati": 1.29,
-      "tahakkuk_orani": -211.28,
+      "tahakkuk_orani": -8.76,
       "aga_orani": 2.5,
       "ykp_orani": 27.0,
       "dso_gun": 22.0,
@@ -44,9 +44,9 @@
     "2026/03": {
       "efm_yuzde": 3.6,
       "icr_kati": -0.12,
-      "tahakkuk_orani": -20.85,
+      "tahakkuk_orani": -1.16,
       "aga_orani": 0.0,
-      "ykp_orani": 3.0,
+      "ykp_orani": 0.1,
       "dso_gun": 175.4,
       "acm_makasi": 203.0,
       "serefiye_ozk_orani": 0.0,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 1.6,
       "icr_kati": 1.61,
-      "tahakkuk_orani": -124.95,
+      "tahakkuk_orani": -2.75,
       "aga_orani": 6.3,
       "ykp_orani": 39.9,
       "dso_gun": 44.5,

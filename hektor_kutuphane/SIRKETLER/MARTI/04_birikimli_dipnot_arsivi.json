@@ -1,21 +1,20 @@
 {
   "kod": "MARTI",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 4.2,
       "icr_kati": 0.04,
-      "tahakkuk_orani": 92.33,
+      "tahakkuk_orani": 1.31,
       "aga_orani": 0.0,
       "ykp_orani": 14.7,
       "dso_gun": 52.6,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.4,
+      "karsilik_ozk_orani": 1.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%92.33): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 0.04x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,17 +24,16 @@
     "2025/06": {
       "efm_yuzde": 5.5,
       "icr_kati": 0.31,
-      "tahakkuk_orani": 55.63,
+      "tahakkuk_orani": 1.7,
       "aga_orani": 0.0,
       "ykp_orani": 65.9,
       "dso_gun": 106.7,
       "acm_makasi": 383.4,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.5,
+      "karsilik_ozk_orani": 1.2,
       "iliskili_orani": 0.0,
-      "dts_skor": 65,
+      "dts_skor": 45,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%55.63): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%65.9).",
         "🟡 Alacak-Ciro makası +%383.4 açıldı (DSO: 106.7 gün).",
         "🔴 Faiz karşılama oranı 0.31x (ICR zayıf)."
@@ -47,20 +45,20 @@
     "2026/03": {
       "efm_yuzde": 7.2,
       "icr_kati": -0.1,
-      "tahakkuk_orani": -53.06,
+      "tahakkuk_orani": -0.6,
       "aga_orani": 0.0,
-      "ykp_orani": 9.9,
+      "ykp_orani": 0.1,
       "dso_gun": 46.5,
       "acm_makasi": -14.7,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.5,
+      "karsilik_ozk_orani": 1.3,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
         "🔴 Faiz karşılama oranı -0.1x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -50,
+      "dts_delta": -30,
       "dso_delta": -60.2
     }
   }

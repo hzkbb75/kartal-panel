@@ -1,11 +1,11 @@
 {
   "kod": "CANTE",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 91.6,
       "icr_kati": -0.31,
-      "tahakkuk_orani": -33.41,
+      "tahakkuk_orani": -8.2,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 623.7,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 116.6,
       "icr_kati": -0.25,
-      "tahakkuk_orani": -17.22,
+      "tahakkuk_orani": -5.51,
       "aga_orani": 0.0,
-      "ykp_orani": 0.4,
+      "ykp_orani": 0.1,
       "dso_gun": 216.9,
       "acm_makasi": -172.1,
       "serefiye_ozk_orani": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 39.0,
       "icr_kati": -0.7,
-      "tahakkuk_orani": 22.55,
+      "tahakkuk_orani": 1.1,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 315.0,
@@ -51,20 +51,19 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.1,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 30,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%22.55): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%25.0 açıldı (DSO: 315.0 gün).",
         "🔴 Faiz karşılama oranı -0.7x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 35,
+      "dts_delta": 15,
       "dso_delta": 98.1
     },
     "2026/06": {
       "efm_yuzde": 277.9,
       "icr_kati": -0.22,
-      "tahakkuk_orani": -57.44,
+      "tahakkuk_orani": -10.96,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 121.0,
@@ -77,7 +76,7 @@
         "🔴 Faiz karşılama oranı -0.22x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -35,
+      "dts_delta": -15,
       "dso_delta": -194.0
     }
   }

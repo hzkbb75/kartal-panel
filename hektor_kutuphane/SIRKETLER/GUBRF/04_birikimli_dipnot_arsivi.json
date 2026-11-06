@@ -1,17 +1,17 @@
 {
   "kod": "GUBRF",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 19.3,
       "icr_kati": 1.37,
-      "tahakkuk_orani": -2.95,
+      "tahakkuk_orani": -0.31,
       "aga_orani": 0.0,
       "ykp_orani": 0.6,
       "dso_gun": 159.2,
       "acm_makasi": 0.0,
-      "serefiye_ozk_orani": 0.7,
-      "karsilik_ozk_orani": 4.7,
+      "serefiye_ozk_orani": 0.9,
+      "karsilik_ozk_orani": 6.0,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -24,13 +24,13 @@
     "2025/06": {
       "efm_yuzde": 40.5,
       "icr_kati": 1.78,
-      "tahakkuk_orani": -12.51,
+      "tahakkuk_orani": -1.85,
       "aga_orani": 2.3,
       "ykp_orani": 0.4,
       "dso_gun": 60.0,
       "acm_makasi": -106.8,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 2.5,
+      "karsilik_ozk_orani": 3.1,
       "iliskili_orani": 0.0,
       "dts_skor": 0,
       "uyarilar": [
@@ -43,13 +43,13 @@
     "2026/03": {
       "efm_yuzde": 21.8,
       "icr_kati": 2.48,
-      "tahakkuk_orani": 0.06,
+      "tahakkuk_orani": 0.04,
       "aga_orani": 12.8,
       "ykp_orani": 1.1,
       "dso_gun": 104.3,
       "acm_makasi": 53.1,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 2.3,
+      "karsilik_ozk_orani": 2.8,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -62,13 +62,13 @@
     "2026/06": {
       "efm_yuzde": 36.5,
       "icr_kati": 2.71,
-      "tahakkuk_orani": -17.52,
+      "tahakkuk_orani": -5.31,
       "aga_orani": 3.3,
       "ykp_orani": 4.5,
       "dso_gun": 24.4,
       "acm_makasi": -129.5,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 2.2,
+      "karsilik_ozk_orani": 2.6,
       "iliskili_orani": 0.0,
       "dts_skor": 0,
       "uyarilar": [

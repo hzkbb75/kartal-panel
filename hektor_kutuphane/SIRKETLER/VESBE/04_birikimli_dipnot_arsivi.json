@@ -1,11 +1,11 @@
 {
   "kod": "VESBE",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 7.1,
       "icr_kati": -0.64,
-      "tahakkuk_orani": -5.0,
+      "tahakkuk_orani": -2.56,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 222.1,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 20.3,
       "icr_kati": -0.46,
-      "tahakkuk_orani": -13.67,
+      "tahakkuk_orani": -7.19,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 119.6,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 1.0,
       "icr_kati": -6.29,
-      "tahakkuk_orani": -9.41,
+      "tahakkuk_orani": -3.38,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 342.4,
@@ -63,9 +63,9 @@
     "2026/06": {
       "efm_yuzde": 3.4,
       "icr_kati": -3.89,
-      "tahakkuk_orani": -5.48,
+      "tahakkuk_orani": -1.9,
       "aga_orani": 0.0,
-      "ykp_orani": 0.8,
+      "ykp_orani": 0.3,
       "dso_gun": 176.6,
       "acm_makasi": -115.9,
       "serefiye_ozk_orani": 0.0,

@@ -125,6 +125,25 @@ def tr_norm(metin: str) -> str:
 
 def satir_bul(satirlar: list, aranan_kelimeler: list, mod: str = "ilk") -> tuple:
     norm_arananlar = [tr_norm(k) for k in aranan_kelimeler]
+    if mod == "ilk":
+        # 1. Öncelik: Aranan kelimelerin sırasıyla TAM EŞLEŞME (ad == aranan) kontrolü
+        for aranan in norm_arananlar:
+            for satir in satirlar:
+                ad = satir[0]
+                v1 = float(satir[1] or 0.0)
+                v2 = float(satir[2] or 0.0)
+                if ad == aranan and (v1 != 0.0 or v2 != 0.0):
+                    return v1, v2
+        # 2. Öncelik: Aranan kelimelerin sırasıyla ALT METİN (aranan in ad) kontrolü
+        for aranan in norm_arananlar:
+            for satir in satirlar:
+                ad = satir[0]
+                v1 = float(satir[1] or 0.0)
+                v2 = float(satir[2] or 0.0)
+                if aranan in ad and (v1 != 0.0 or v2 != 0.0):
+                    return v1, v2
+        return 0.0, 0.0
+
     toplam_c, toplam_o = 0.0, 0.0
     bulundu = False
     for satir in satirlar:
@@ -134,13 +153,11 @@ def satir_bul(satirlar: list, aranan_kelimeler: list, mod: str = "ilk") -> tuple
         for aranan in norm_arananlar:
             if aranan in ad or ad == aranan:
                 if v1 != 0.0 or v2 != 0.0:
-                    if mod == "ilk":
-                        return v1, v2
                     toplam_c += v1
                     toplam_o += v2
                     bulundu = True
                     break
-    if mod == "topla" and bulundu:
+    if bulundu:
         return toplam_c, toplam_o
     return 0.0, 0.0
 
@@ -195,7 +212,12 @@ def hesapla_donem_dipnot_metrikleri(satirlar_cari: list, satirlar_onceki: list =
     net_c = satir_bul(satirlar_cari, ["donem net kar", "donem kari", "ana ortaklik paylari"])[0]
     cfo_c = satir_bul(satirlar_cari, ["isletme faaliyetlerinden", "faaliyetlerden nakit", "kaynaklanan net nakit"])[0]
 
-    varlik_c = max(satir_bul(satirlar_cari, ["toplam varliklar", "toplam aktifler", "varliklar"])[0], 1.0)
+    _donen_d = satir_bul(satirlar_cari, ["donen varliklar", "toplam donen varliklar"])[0]
+    _duran_d = satir_bul(satirlar_cari, ["duran varliklar", "toplam duran varliklar"])[0]
+    _ozk_d = satir_bul(satirlar_cari, ["ana ortakliga ait ozkaynaklar", "toplam ozkaynaklar", "ozkaynaklar"])[0]
+    _kv_d = satir_bul(satirlar_cari, ["kisa vadeli yukumlulukler", "toplam kisa vadeli yukumlulukler"])[0]
+    _uv_d = satir_bul(satirlar_cari, ["uzun vadeli yukumlulukler", "toplam uzun vadeli yukumlulukler"])[0]
+    varlik_c = max(satir_bul(satirlar_cari, ["toplam varliklar", "toplam aktifler"])[0], _donen_d + _duran_d, _ozk_d + _kv_d + _uv_d, 1.0)
     ozk_c = max(satir_bul(satirlar_cari, ["ana ortakliga ait ozkaynaklar", "toplam ozkaynaklar", "ozkaynaklar"])[0], 1.0)
     fin_borc_c = satir_bul(satirlar_cari, ["finansal borclar"], mod="topla")[0]
     fin_borc_o = satir_bul(onceki, ["finansal borclar"], mod="topla")[0]
@@ -320,8 +342,16 @@ def degerleme_termometresi_uret(hisse_kodu, mevcut_fiyat, adil_deger, iskonto_or
         border_alert = "#ef4444"
         text_alert = "#fca5a5"
 
-    ibre_pozisyonu = 50 + (iskonto_orani)
-    ibre_pozisyonu = max(5, min(95, ibre_pozisyonu))
+    if iskonto_orani <= -25.0:
+        # Kelepir Bölge (0% - 35% arası): -75% -> 5%, -25% -> 35%
+        ibre_pozisyonu = 35.0 + ((iskonto_orani + 25.0) / 50.0) * 30.0
+    elif iskonto_orani <= 15.0:
+        # Adil Değer Bölgesi (35% - 70% arası): -25% -> 35%, +15% -> 70%
+        ibre_pozisyonu = 35.0 + ((iskonto_orani + 25.0) / 40.0) * 35.0
+    else:
+        # Primli Bölge (70% - 95% arası): +15% -> 70%, +65% -> 95%
+        ibre_pozisyonu = 70.0 + ((iskonto_orani - 15.0) / 50.0) * 25.0
+    ibre_pozisyonu = round(max(5.0, min(95.0, ibre_pozisyonu)), 1)
 
     kelepir_sinir = round(adil_deger * 0.75, 2)
     primli_sinir = round(adil_deger * 1.15, 2)
@@ -494,7 +524,7 @@ def analiz_et_sirket(kod: str) -> dict:
     net_c, net_o = satir_bul(satirlar, ["donem net kar", "donem kari", "ana ortaklik paylari"])
     cfo_c, cfo_o = satir_bul(satirlar, ["isletme faaliyetlerinden", "faaliyetlerden nakit", "kaynaklanan net nakit"])
 
-    varlik_c, varlik_o = satir_bul(satirlar, ["toplam varliklar", "toplam aktifler", "varliklar", "aktifler"])
+    varlik_c, varlik_o = satir_bul(satirlar, ["toplam varliklar", "toplam aktifler"])
     ozk_c, ozk_o = satir_bul(satirlar, ["ana ortakliga ait ozkaynaklar", "toplam ozkaynaklar", "ozkaynaklar"])
     nakit_c, nakit_o = satir_bul(satirlar, ["nakit ve nakit benzerleri", "nakit degerler"])
     fin_borc_c, fin_borc_o = satir_bul(satirlar, ["finansal borclar"], mod="topla")
@@ -503,9 +533,14 @@ def analiz_et_sirket(kod: str) -> dict:
     stok_c, stok_o = satir_bul(satirlar, ["stoklar"], mod="ilk")
     mdv_c, mdv_o = satir_bul(satirlar, ["maddi duran varliklar"], mod="ilk")
     ertelenmis_c, ertelenmis_o = satir_bul(satirlar, ["ertelenmis gelirler", "alinan siparis avanslari"], mod="topla")
-    donen_c, donen_o = satir_bul(satirlar, ["donen varliklar"], mod="ilk")
-    kv_c, kv_o = satir_bul(satirlar, ["kisa vadeli yukumlulukler"], mod="ilk")
-    uv_c, uv_o = satir_bul(satirlar, ["uzun vadeli yukumlulukler"], mod="ilk")
+    donen_c, donen_o = satir_bul(satirlar, ["donen varliklar", "toplam donen varliklar"], mod="ilk")
+    duran_c, duran_o = satir_bul(satirlar, ["duran varliklar", "toplam duran varliklar"], mod="ilk")
+    kv_c, kv_o = satir_bul(satirlar, ["kisa vadeli yukumlulukler", "toplam kisa vadeli yukumlulukler"], mod="ilk")
+    uv_c, uv_o = satir_bul(satirlar, ["uzun vadeli yukumlulukler", "toplam uzun vadeli yukumlulukler"], mod="ilk")
+
+    # Muhasebe Denklemi Güvencesi: Toplam Varlıklar = max(Toplam Varlıklar, Dönen + Duran, Özkaynak + KV + UV)
+    varlik_c = max(varlik_c, donen_c + duran_c, ozk_c + kv_c + uv_c)
+    varlik_o = max(varlik_o, donen_o + duran_o, ozk_o + kv_o + uv_o)
 
     iliskili_oran = round((iliskili_alacak_c / max(varlik_c, 1.0)) * 100, 2)
     net_borc_c = max(fin_borc_c - nakit_c, 0.0)
@@ -536,13 +571,13 @@ def analiz_et_sirket(kod: str) -> dict:
     # döngüsel marj diplerinde dahi sektörden silinmez, en az Kırılgan Hendekli (Döngüsel Hendek) kabul edilir.
     kurumsal_altyapi_hendegi = (ozk_c >= 10000.0 and net_borc_ozkaynak <= 0.50 and cfo_c > 0)
 
-    # Serkan Ünal: Korunaklı (İstikrarlı medyan marj >= %14 veya ROIC/EFK güçlü ve CFO > 0)
+    # Serkan Ünal 60 Hisse Portföy Tavanları: Korunaklı (%3.5), Kırılgan Hendekli (%2.2), Hendeksiz (%1.2)
     if (medyan_efk_marj >= 0.14 or (efk_marj_c >= 0.12 and roic_tahmini >= 0.15)) and cfo_c > 0:
-        kategori, tavan = "Korunaklı", 10.0
+        kategori, tavan = "Korunaklı", 3.5
     elif (medyan_efk_marj >= 0.07 or efk_marj_c >= 0.07 or kurumsal_altyapi_hendegi) and cfo_c > 0:
-        kategori, tavan = "Kırılgan Hendekli", 5.0
+        kategori, tavan = "Kırılgan Hendekli", 2.2
     else:
-        kategori, tavan = "Hendeksiz", 3.0
+        kategori, tavan = "Hendeksiz", 1.2
 
     if banka_mi:
         cfo_kaliteli = net_c > 0
@@ -566,27 +601,63 @@ def analiz_et_sirket(kod: str) -> dict:
 
     roe_hesap = round((net_c / max(ozk_c, 1.0)) * 100, 1) if ozk_c > 0 else float(sirket_kaydi.get("roe_tv", 0.0))
 
-    # ZİRAAT RESMİ VERİLERİNİ DEVREYE AL (Sektör hariç)
+    # ZİRAAT RESMİ VERİLERİNİ DEVREYE AL
+    # (UFRS dönemlik net_c ve net_o oran bütünlüğü için korunur; Ziraat 4Ç TTM kârı ayrı saklanır)
+    net_kar_ttm = net_c
     ziraat = BIST_ANALIZ_TABANI.get(kod, {})
     if ziraat:
-        sirket_adi = ziraat.get("sirket_adi", sirket_kaydi.get("sirket_adi", kod))
-        if ziraat.get("fiyat", 0) > 0: fiyat = ziraat["fiyat"]
-        if ziraat.get("fk", 0) > 0: fk = ziraat["fk"]
-        if ziraat.get("fd_favok", 0) > 0: fd_favok = ziraat["fd_favok"]
-        if ziraat.get("roe", 0) != 0: roe_hesap = ziraat["roe"]
-        if ziraat.get("net_kar_son4c_mn", 0) != 0: net_c = ziraat["net_kar_son4c_mn"]
+        if ziraat.get("fiyat", 0) > 0: fiyat = float(ziraat["fiyat"])
+        if ziraat.get("fk", 0) > 0: fk = float(ziraat["fk"])
+        if ziraat.get("fd_favok", 0) > 0: fd_favok = float(ziraat["fd_favok"])
+        if ziraat.get("roe", 0) != 0: roe_hesap = float(ziraat["roe"])
+        if ziraat.get("net_kar_son4c_mn", 0) != 0: net_kar_ttm = float(ziraat["net_kar_son4c_mn"])
 
-    # KUSURSUZ SEKTÖR ATAMASI (bist_sozluk.json baz alınır; pazar adı karışmışsa yerel sektör kullanılır)
-    pazar_etiketleri = {"ALT PAZAR", "YAKIN İZLEME PAZARI", "ANA PAZAR", "YILDIZ PAZAR", "DİĞER", "BIST", ""}
+    # Gerçek Piyasa Değeri Türetimi (TV verisi yoksa veya 0 ise Ziraat PD/DD veya F/K üzerinden gerçek PD)
+    pddd_z = float(ziraat.get("pddd", 0.0) or 0.0) if ziraat else 0.0
+    if pd_milyar <= 0.0:
+        if pddd_z > 0 and ozk_c > 0:
+            pd_milyar = round((ozk_c * pddd_z) / 1000.0, 2)
+        elif fk > 0 and net_kar_ttm > 0:
+            pd_milyar = round((net_kar_ttm * fk) / 1000.0, 2)
+
+    # KUSURSUZ SEKTÖR ATAMASI (ALT PAZAR / YAKIN İZLEME PAZARI olan hisselerin unvandan gerçek Ziraat sektörünü bul)
+    pazar_etiketleri = {"ALT PAZAR", "YAKIN İZLEME PAZARI", "ANA PAZAR", "YILDIZ PAZAR", "DİĞER", "BIST", "Sanayi", ""}
     sozluk_verisi = BIST_SOZLUK.get(kod, {})
     sozluk_sektor = (sozluk_verisi.get("sektor") or "").strip() if sozluk_verisi else ""
     yerel_sektor = (sirket_kaydi.get("sektor") or "").strip() if sirket_kaydi else ""
+    tam_isim = tr_norm((sozluk_verisi.get("isim") if sozluk_verisi else "") or sirket_kaydi.get("sirket_adi", ""))
+
     if sozluk_sektor and sozluk_sektor not in pazar_etiketleri:
         sektor = sozluk_sektor
     elif yerel_sektor and yerel_sektor not in pazar_etiketleri:
         sektor = yerel_sektor
     else:
-        sektor = "Sanayi"
+        if any(k in tam_isim for k in ["elektrik", "muhendislik", "kablo", "pano"]):
+            sektor = "ELEKTRİK MALZEMELERİ"
+        elif any(k in tam_isim for k in ["enerji", "elektrik uretim", "yenilenebilir"]):
+            sektor = "ENERJİ"
+        elif any(k in tam_isim for k in ["gida", "un ", "sut", "tarim", "yem"]):
+            sektor = "GIDA"
+        elif any(k in tam_isim for k in ["tekstil", "giyim", "dokuma", "iplik"]):
+            sektor = "TEKSTİL & TEKSTİL YAN SANAYİ"
+        elif any(k in tam_isim for k in ["gayrimenkul", "gyo"]):
+            sektor = "GAYRİMENKUL YATIRIM ORTAKLIKLARI"
+        elif any(k in tam_isim for k in ["kimya", "boya", "plastik", "polimer"]):
+            sektor = "KİMYASAL MADDELER"
+        elif any(k in tam_isim for k in ["makina", "makine", "celik", "dokum", "metal"]):
+            sektor = "MAKİNE"
+        elif any(k in tam_isim for k in ["yazilim", "bilgisayar", "teknoloji", "bilisim"]):
+            sektor = "BİLGİSAYAR & YAZILIM"
+        elif any(k in tam_isim for k in ["kagit", "ambalaj", "basim", "matbaa", "orman"]):
+            sektor = "ORMAN, KAĞIT & KAĞIT ÜRÜNLERİ"
+        elif any(k in tam_isim for k in ["inşaat", "insaat", "yapi", "cimento", "beton"]):
+            sektor = "YAPI MALZEMELERİ"
+        elif any(k in tam_isim for k in ["turizm", "otel", "konaklama"]):
+            sektor = "TURİZM, OTEL, EĞLENCE"
+        elif any(k in tam_isim for k in ["holding", "yatirim"]):
+            sektor = "FİNANS-DIŞI HOLDİNG"
+        else:
+            sektor = "DİĞER İMALAT"
 
     # BÖLÜM 3 (DİPNOT RÖNTGENİ) & BÖLÜM 4 (ZİRAAT SEKTÖR F/K DESTEKLİ RASYONEL DEĞERLEME)
     cari_s_dipnot = [(r[0], r[1], r[1]) for r in satirlar]
@@ -597,8 +668,7 @@ def analiz_et_sirket(kod: str) -> dict:
 
     sektor_fk = SEKTOR_FK_HARITASI.get(sektor, 10.0)
     sirket_hbk = round(fiyat / fk, 2) if fk > 0 else 0.0
-    pddd = ziraat.get("pddd", 0.0) if ziraat else 0.0
-    sirket_dd = round(fiyat / pddd, 2) if pddd > 0 else (ozk_c / max((pd_milyar * 1000) / max(fiyat, 1.0), 1.0) if pd_milyar > 0 else 0.0)
+    sirket_dd = round(fiyat / pddd_z, 2) if pddd_z > 0 else (ozk_c / max((pd_milyar * 1000) / max(fiyat, 1.0), 1.0) if pd_milyar > 0 else 0.0)
     adil_deger_tl, iskonto_orani, degerleme_durumu = rasyonel_degerleme_hesapla(
         fiyat=fiyat, hbk=sirket_hbk, dd=sirket_dd, roe=roe_hesap, sektor_fk=sektor_fk
     )
@@ -607,7 +677,8 @@ def analiz_et_sirket(kod: str) -> dict:
         "kod": kod, "sirket_adi": sirket_kaydi.get("sirket_adi", kod), "sektor": sektor,
         "kategori": kategori, "tavan_agirlik": tavan, "halka_aciklik": halka_aciklik, "net_borc_ozkaynak": net_borc_ozkaynak,
         "bolum1_gecti_mi": bolum1_gecti_mi, "fiyat_tl": fiyat, "cfo_buyuk_net_kar": cfo_kaliteli, "piotroski_skor": f_skor,
-        "iliskili_oran": iliskili_oran, "kv_borc_oran": kv_borc_oran, "cfo_milyon_tl": round(cfo_c, 1), "net_kar_milyon_tl": round(net_c, 1),
+        "iliskili_oran": iliskili_oran, "kv_borc_oran": kv_borc_oran, "cfo_milyon_tl": round(cfo_c, 1),
+        "net_kar_milyon_tl": round(net_c, 1), "net_kar_ttm_milyon_tl": round(net_kar_ttm, 1),
         "net_kar_onceki_milyon_tl": round(net_o, 1), "satis_milyon_tl": round(satis_c, 1), "satis_onceki_milyon_tl": round(satis_o, 1),
         "efk_milyon_tl": round(efk_c, 1), "efk_onceki_milyon_tl": round(efk_o, 1), "ozk_c": round(ozk_c, 1), "ozk_o": round(ozk_o, 1),
         "varlik_c": round(varlik_c, 1), "varlik_o": round(varlik_o, 1), "mdv_c": round(mdv_c, 1), "mdv_o": round(mdv_o, 1),
@@ -908,11 +979,15 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
     fk = float(s.get("fk", 0.0))
     fd_favok = float(s.get("fd_favok", 0.0))
     net_borc_c = float(s.get("net_borc_c", 0.0))
+    net_kar_ttm = float(s.get("net_kar_ttm_milyon_tl", net_c))
     fd_satis = round((pd_milyar * 1000 + net_borc_c) / max(satis_c, 1.0), 2) if satis_c > 0 else 0.0
     roe = float(s.get("roe", round((net_c / max(ozk_c, 1.0)) * 100, 1)))
 
-    satis_buyume = round(((satis_c / max(satis_o, 1.0)) - 1) * 100, 1) if satis_o > 0 else 0.0
-    net_kar_buyume = round(((net_c / max(abs(net_o), 1.0)) - 1) * 100, 1) if net_o > 0 else 0.0
+    satis_buyume = round(((satis_c - satis_o) / max(abs(satis_o), 1.0)) * 100, 1) if satis_o != 0 else 0.0
+    if net_o != 0:
+        net_kar_buyume = round(((net_c - net_o) / max(abs(net_o), 1.0)) * 100, 1)
+    else:
+        net_kar_buyume = 100.0 if net_c > 0 else 0.0
     efk_marj_c = round((efk_c / max(satis_c, 1.0)) * 100, 1) if satis_c > 0 else 0.0
     efk_marj_o = round((efk_o / max(satis_o, 1.0)) * 100, 1) if satis_o > 0 else 0.0
     marj_fark_puan = round(efk_marj_c - efk_marj_o, 1)
@@ -996,13 +1071,14 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
         "roe_degerleri": roe_degerleri
     }
 
-    # HİBRİT DEĞERLEME MODÜLÜ (ZİRAAT GÜVENCELİ - Sektör bist_sozluk'ten korunur)
+    # HİBRİT DEĞERLEME MODÜLÜ (ZİRAAT GÜVENCELİ - UFRS net_c korunur, 4Ç TTM kârı net_kar_ttm'de tutulur)
     ziraat = BIST_ANALIZ_TABANI.get(kod, {})
     if ziraat:
-        if ziraat.get("fk", 0) > 0: fk = ziraat["fk"]
-        if ziraat.get("fd_favok", 0) > 0: fd_favok = ziraat["fd_favok"]
-        if ziraat.get("roe", 0) != 0: roe = ziraat["roe"]
-        if ziraat.get("net_kar_son4c_mn", 0) != 0: net_c = ziraat["net_kar_son4c_mn"]
+        if ziraat.get("fk", 0) > 0: fk = float(ziraat["fk"])
+        if ziraat.get("fd_favok", 0) > 0: fd_favok = float(ziraat["fd_favok"])
+        if ziraat.get("roe", 0) != 0: roe = float(ziraat["roe"])
+        if ziraat.get("net_kar_son4c_mn", 0) != 0: net_kar_ttm = float(ziraat["net_kar_son4c_mn"])
+        if ziraat.get("pd_s", 0) > 0: fd_satis = float(ziraat["pd_s"])
 
     sektor_medyan_fk = SEKTOR_FK_HARITASI.get(sektor, 10.0)
     alt_fk = round(max(3.0, sektor_medyan_fk * 0.65), 1)
@@ -1043,16 +1119,17 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
     mevcut_agirlik = round(float(pozisyon.get("agirlik_yuzde", 0.0)), 2) if pozisyon else 0.0
     kademe_durumu = pozisyon.get("kademe", "1/3 Başlangıç (Radar)") if pozisyon else "1/3 Başlangıç (Yeni Aday)"
 
+    kar_degisim_etiket = f"Zarardan Kâra ({format_milyar_milyon(net_o)} → {format_milyar_milyon(net_c)})" if (net_o < 0 and net_c > 0) else f"%{net_kar_buyume:+.1f} ({format_milyar_milyon(net_o)} → {format_milyar_milyon(net_c)})"
     sirketi_tani = {
         "sirket_adi": sirket_adi,
         "ne_is_yapar": f"{sirket_adi}, {sektor} sektöründe faaliyet gösteren, Bölüm 1 süzgeçlerini geçen BIST şirketidir.",
         "urun_ve_pazar": f"{sektor} ana ürün ve hizmetleri | Yurt içi ve ihracat pazarları",
-        "piyasa_degeri": f"{pd_milyar:,.1f} milyar TL" if pd_milyar > 0 else format_milyar_milyon(ozk_c * 1.3),
-        "net_kar_12ay": format_milyar_milyon(net_c),
-        "net_kar_yorum": f"Son dönem net kârı {format_milyar_milyon(net_c)} oldu (%{net_kar_buyume:+.1f}).",
+        "piyasa_degeri": format_milyar_milyon(pd_milyar * 1000.0) if pd_milyar > 0 else format_milyar_milyon(ozk_c),
+        "net_kar_12ay": format_milyar_milyon(net_kar_ttm),
+        "net_kar_yorum": f"Son 4 çeyrek (TTM) net kâr: {format_milyar_milyon(net_kar_ttm)} | UFRS dönem değişimi: {kar_degisim_etiket}.",
         "roe_deger": f"%{roe:.1f}",
         "roe_yorum": f"Özkaynak kârlılığı (ROE) %{roe:.1f} düzeyindedir.",
-        "carpan_ozet": f"F/K: {fk if fk > 0 else 'N/A'}x | FD/FAVÖK: {fd_favok if fd_favok > 0 else 'N/A'}x | FD/Satış: {fd_satis}x"
+        "carpan_ozet": f"F/K: {fk if fk > 0 else 'N/A'}x | FD/FAVÖK: {fd_favok if fd_favok > 0 else 'N/A'}x | PD/Satış: {fd_satis}x"
     }
 
     dna_ve_gidisat = [

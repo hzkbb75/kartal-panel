@@ -1,11 +1,11 @@
 {
   "kod": "MAKTK",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 4.4,
       "icr_kati": 17.34,
-      "tahakkuk_orani": 3.75,
+      "tahakkuk_orani": 6.76,
       "aga_orani": 0.0,
       "ykp_orani": 93.7,
       "dso_gun": 859.4,
@@ -13,8 +13,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 3.6,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 35,
       "uyarilar": [
+        "🔴 Tahakkuk anomalisi (%6.76): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%93.7)."
       ],
       "pdf_dipnot_notlari": {},
@@ -24,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 71.6,
       "icr_kati": 2.25,
-      "tahakkuk_orani": 13.45,
+      "tahakkuk_orani": 14.39,
       "aga_orani": 0.1,
       "ykp_orani": 79.7,
       "dso_gun": 418.5,
@@ -34,19 +35,19 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%13.45): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%14.39): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%79.7)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 20,
+      "dts_delta": 0,
       "dso_delta": -440.9
     },
     "2026/03": {
       "efm_yuzde": 11.9,
       "icr_kati": -0.18,
-      "tahakkuk_orani": 2.47,
+      "tahakkuk_orani": 1.48,
       "aga_orani": 0.0,
-      "ykp_orani": 3.9,
+      "ykp_orani": 2.2,
       "dso_gun": 882.6,
       "acm_makasi": 32.9,
       "serefiye_ozk_orani": 0.0,
@@ -64,7 +65,7 @@
     "2026/06": {
       "efm_yuzde": 57.2,
       "icr_kati": 0.03,
-      "tahakkuk_orani": 24.51,
+      "tahakkuk_orani": 14.34,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 532.0,
@@ -74,7 +75,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%24.51): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%14.34): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
         "🔴 Faiz karşılama oranı 0.03x (ICR zayıf)."
       ],

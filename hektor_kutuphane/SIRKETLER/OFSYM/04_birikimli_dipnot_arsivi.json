@@ -1,11 +1,11 @@
 {
   "kod": "OFSYM",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 27.7,
       "icr_kati": 1.19,
-      "tahakkuk_orani": -5.44,
+      "tahakkuk_orani": -3.44,
       "aga_orani": 0.0,
       "ykp_orani": 10.0,
       "dso_gun": 237.7,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 49.1,
       "icr_kati": 1.31,
-      "tahakkuk_orani": -7.14,
+      "tahakkuk_orani": -1.31,
       "aga_orani": 0.0,
       "ykp_orani": 6.0,
       "dso_gun": 140.3,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 11.0,
       "icr_kati": 1.2,
-      "tahakkuk_orani": -6.62,
+      "tahakkuk_orani": -4.61,
       "aga_orani": 0.1,
       "ykp_orani": 8.7,
       "dso_gun": 233.0,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 17.5,
       "icr_kati": 1.35,
-      "tahakkuk_orani": -13.97,
+      "tahakkuk_orani": -7.15,
       "aga_orani": 0.0,
       "ykp_orani": 7.9,
       "dso_gun": 123.1,

@@ -1,13 +1,13 @@
 {
   "kod": "EYGYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.8,
       "icr_kati": -6.3,
-      "tahakkuk_orani": -7.12,
+      "tahakkuk_orani": -3.75,
       "aga_orani": 0.0,
-      "ykp_orani": 0.1,
+      "ykp_orani": 0.0,
       "dso_gun": 145.6,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 6.0,
       "icr_kati": -1.58,
-      "tahakkuk_orani": -17.11,
+      "tahakkuk_orani": -7.31,
       "aga_orani": 0.0,
-      "ykp_orani": 0.1,
+      "ykp_orani": 0.0,
       "dso_gun": 58.1,
       "acm_makasi": -146.9,
       "serefiye_ozk_orani": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 2.0,
       "icr_kati": -1.93,
-      "tahakkuk_orani": -13.17,
+      "tahakkuk_orani": -3.25,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 310.9,
@@ -63,9 +63,9 @@
     "2026/06": {
       "efm_yuzde": 0.4,
       "icr_kati": -6.31,
-      "tahakkuk_orani": -11.64,
+      "tahakkuk_orani": -3.01,
       "aga_orani": 0.0,
-      "ykp_orani": 0.3,
+      "ykp_orani": 0.1,
       "dso_gun": 41.1,
       "acm_makasi": -1159.0,
       "serefiye_ozk_orani": 0.0,

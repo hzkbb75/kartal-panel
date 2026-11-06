@@ -1,11 +1,11 @@
 {
   "kod": "IZENR",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 8.0,
       "icr_kati": 2.02,
-      "tahakkuk_orani": -10.69,
+      "tahakkuk_orani": -2.65,
       "aga_orani": 0.0,
       "ykp_orani": 12.5,
       "dso_gun": 58.5,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 36.4,
       "icr_kati": 0.64,
-      "tahakkuk_orani": -29.27,
+      "tahakkuk_orani": -5.27,
       "aga_orani": 0.0,
       "ykp_orani": 11.7,
       "dso_gun": 11.7,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 14.0,
       "icr_kati": 0.09,
-      "tahakkuk_orani": -5.09,
+      "tahakkuk_orani": -1.02,
       "aga_orani": 0.2,
       "ykp_orani": 100.0,
       "dso_gun": 283.4,
@@ -64,21 +64,20 @@
     "2026/06": {
       "efm_yuzde": 29.7,
       "icr_kati": -2.4,
-      "tahakkuk_orani": 10.31,
+      "tahakkuk_orani": 1.81,
       "aga_orani": 0.0,
-      "ykp_orani": 4.4,
+      "ykp_orani": 0.8,
       "dso_gun": 115.7,
       "acm_makasi": -89.0,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.4,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%10.31): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -2.4x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -10,
+      "dts_delta": -30,
       "dso_delta": -167.7
     }
   }

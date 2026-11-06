@@ -1,11 +1,11 @@
 {
   "kod": "MANAS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 11.7,
       "icr_kati": -0.01,
-      "tahakkuk_orani": -24.6,
+      "tahakkuk_orani": -9.42,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 220.1,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 17.6,
       "icr_kati": -0.02,
-      "tahakkuk_orani": -43.79,
+      "tahakkuk_orani": -16.99,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 103.3,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 1.5,
       "icr_kati": -2.59,
-      "tahakkuk_orani": 2.66,
+      "tahakkuk_orani": 1.1,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 342.0,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 15.6,
       "icr_kati": -0.85,
-      "tahakkuk_orani": -38.37,
+      "tahakkuk_orani": -15.92,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
       "dso_gun": 208.5,

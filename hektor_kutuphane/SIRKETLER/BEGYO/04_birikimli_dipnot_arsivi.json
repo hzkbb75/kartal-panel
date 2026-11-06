@@ -1,11 +1,11 @@
 {
   "kod": "BEGYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 6.62,
-      "tahakkuk_orani": -1.14,
+      "tahakkuk_orani": -0.18,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 163.1,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.27,
-      "tahakkuk_orani": -6.35,
+      "tahakkuk_orani": -1.17,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 85.2,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 17.73,
-      "tahakkuk_orani": -45.75,
+      "tahakkuk_orani": -3.97,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 212.6,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 11.46,
-      "tahakkuk_orani": -68.46,
+      "tahakkuk_orani": -5.81,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 81.2,

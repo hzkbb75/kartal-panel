@@ -1,11 +1,11 @@
 {
   "kod": "NTGAZ",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 18.4,
       "icr_kati": 8.47,
-      "tahakkuk_orani": -35.01,
+      "tahakkuk_orani": -3.31,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 115.5,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 8.4,
       "icr_kati": 22.95,
-      "tahakkuk_orani": -90.67,
+      "tahakkuk_orani": -9.97,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 37.3,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 14.4,
       "icr_kati": 10.57,
-      "tahakkuk_orani": -28.83,
+      "tahakkuk_orani": -3.83,
       "aga_orani": 0.2,
       "ykp_orani": 0.0,
       "dso_gun": 139.5,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 30.1,
       "icr_kati": 6.01,
-      "tahakkuk_orani": -65.99,
+      "tahakkuk_orani": -6.38,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 52.0,

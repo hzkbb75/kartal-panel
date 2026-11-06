@@ -1,11 +1,11 @@
 {
   "kod": "ANGEN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 158.9,
       "icr_kati": 0.08,
-      "tahakkuk_orani": 0.43,
+      "tahakkuk_orani": -7.11,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 257.2,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 203.0,
       "icr_kati": 0.04,
-      "tahakkuk_orani": 0.66,
+      "tahakkuk_orani": -13.35,
       "aga_orani": 52.7,
       "ykp_orani": 29.6,
       "dso_gun": 128.3,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 18.6,
       "icr_kati": -0.79,
-      "tahakkuk_orani": -7.6,
+      "tahakkuk_orani": -8.01,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 372.6,
@@ -63,9 +63,9 @@
     "2026/06": {
       "efm_yuzde": 21.8,
       "icr_kati": -0.36,
-      "tahakkuk_orani": -8.98,
+      "tahakkuk_orani": -10.45,
       "aga_orani": 0.0,
-      "ykp_orani": 0.1,
+      "ykp_orani": 0.0,
       "dso_gun": 189.7,
       "acm_makasi": -111.1,
       "serefiye_ozk_orani": 0.0,

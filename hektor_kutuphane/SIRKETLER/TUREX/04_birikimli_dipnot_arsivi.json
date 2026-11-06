@@ -1,11 +1,11 @@
 {
   "kod": "TUREX",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 2.4,
       "icr_kati": 11.94,
-      "tahakkuk_orani": -20.41,
+      "tahakkuk_orani": -3.98,
       "aga_orani": 0.0,
       "ykp_orani": 51.6,
       "dso_gun": 240.4,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 14.8,
       "icr_kati": 5.06,
-      "tahakkuk_orani": -32.25,
+      "tahakkuk_orani": -3.56,
       "aga_orani": 9.9,
       "ykp_orani": 25.5,
       "dso_gun": 138.7,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 0.1,
       "icr_kati": 196.97,
-      "tahakkuk_orani": -11.45,
+      "tahakkuk_orani": -2.52,
       "aga_orani": 166.5,
       "ykp_orani": 22.1,
       "dso_gun": 404.6,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 4.1,
       "icr_kati": 16.96,
-      "tahakkuk_orani": -23.72,
+      "tahakkuk_orani": -5.59,
       "aga_orani": 13.2,
       "ykp_orani": 28.7,
       "dso_gun": 191.2,

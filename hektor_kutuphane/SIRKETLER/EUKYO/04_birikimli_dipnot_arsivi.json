@@ -1,11 +1,11 @@
 {
   "kod": "EUKYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 437.2,
       "icr_kati": 0.74,
-      "tahakkuk_orani": -3.47,
+      "tahakkuk_orani": -3.62,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 3.4,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 855.4,
       "icr_kati": -0.06,
-      "tahakkuk_orani": -1.33,
+      "tahakkuk_orani": -6.19,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 11.4,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 355.3,
       "icr_kati": -0.02,
-      "tahakkuk_orani": -8.36,
+      "tahakkuk_orani": -7.22,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 602.7,
       "icr_kati": 0.0,
-      "tahakkuk_orani": -9.21,
+      "tahakkuk_orani": -8.01,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,

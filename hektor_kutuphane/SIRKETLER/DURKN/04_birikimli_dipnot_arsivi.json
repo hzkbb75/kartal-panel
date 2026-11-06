@@ -1,11 +1,11 @@
 {
   "kod": "DURKN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 11.2,
       "icr_kati": 0.73,
-      "tahakkuk_orani": 5.1,
+      "tahakkuk_orani": 3.45,
       "aga_orani": 0.0,
       "ykp_orani": 31.4,
       "dso_gun": 512.3,
@@ -13,9 +13,8 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.3,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%5.1): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 0.73x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 21.8,
       "icr_kati": 0.72,
-      "tahakkuk_orani": 8.73,
+      "tahakkuk_orani": 6.33,
       "aga_orani": 3.5,
       "ykp_orani": 36.1,
       "dso_gun": 281.3,
@@ -35,20 +34,20 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%8.73): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%6.33): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%36.1).",
         "🔴 Faiz karşılama oranı 0.72x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 15,
+      "dts_delta": 35,
       "dso_delta": -231.0
     },
     "2026/03": {
       "efm_yuzde": 0.5,
       "icr_kati": -2.28,
-      "tahakkuk_orani": 1.19,
+      "tahakkuk_orani": 0.72,
       "aga_orani": 0.0,
-      "ykp_orani": 0.1,
+      "ykp_orani": 0.0,
       "dso_gun": 976.0,
       "acm_makasi": 76.9,
       "serefiye_ozk_orani": 0.0,
@@ -66,7 +65,7 @@
     "2026/06": {
       "efm_yuzde": 8.8,
       "icr_kati": 0.28,
-      "tahakkuk_orani": 0.5,
+      "tahakkuk_orani": 0.3,
       "aga_orani": 31.0,
       "ykp_orani": 9.6,
       "dso_gun": 480.2,

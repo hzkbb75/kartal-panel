@@ -1,13 +1,13 @@
 {
   "kod": "ACSEL",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 1.7,
       "icr_kati": -10.01,
-      "tahakkuk_orani": -14.0,
+      "tahakkuk_orani": -5.39,
       "aga_orani": 0.0,
-      "ykp_orani": 1.6,
+      "ykp_orani": 0.5,
       "dso_gun": 290.2,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 15.7,
       "icr_kati": -1.11,
-      "tahakkuk_orani": -26.55,
+      "tahakkuk_orani": -10.38,
       "aga_orani": 0.0,
-      "ykp_orani": 3.3,
+      "ykp_orani": 1.0,
       "dso_gun": 146.6,
       "acm_makasi": -118.5,
       "serefiye_ozk_orani": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 0.6,
       "icr_kati": 11.53,
-      "tahakkuk_orani": -5.67,
+      "tahakkuk_orani": -1.66,
       "aga_orani": 10.1,
       "ykp_orani": 35.2,
       "dso_gun": 294.9,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 5.7,
       "icr_kati": 4.83,
-      "tahakkuk_orani": -14.51,
+      "tahakkuk_orani": -4.23,
       "aga_orani": 0.0,
       "ykp_orani": 28.4,
       "dso_gun": 159.3,

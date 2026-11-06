@@ -1,11 +1,11 @@
 {
   "kod": "INTET",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.61,
-      "tahakkuk_orani": -34503.12,
+      "tahakkuk_orani": -35603.83,
       "aga_orani": 0.0,
       "ykp_orani": 60.0,
       "dso_gun": 0.0,
@@ -25,13 +25,13 @@
     "2026/03": {
       "efm_yuzde": 28.0,
       "icr_kati": 1.63,
-      "tahakkuk_orani": -18.9,
+      "tahakkuk_orani": -12.55,
       "aga_orani": 284.0,
       "ykp_orani": 3.7,
       "dso_gun": 321.3,
       "acm_makasi": 39.9,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 1.7,
+      "karsilik_ozk_orani": 1.8,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
@@ -44,13 +44,13 @@
     "2026/06": {
       "efm_yuzde": 38.7,
       "icr_kati": 1.32,
-      "tahakkuk_orani": -23.87,
+      "tahakkuk_orani": -15.08,
       "aga_orani": 14.0,
       "ykp_orani": 1.9,
       "dso_gun": 141.0,
       "acm_makasi": -131.7,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 1.7,
+      "karsilik_ozk_orani": 1.8,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [

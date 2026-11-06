@@ -1,11 +1,11 @@
 {
   "kod": "AGYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 1026.5,
       "icr_kati": 2.35,
-      "tahakkuk_orani": -84.26,
+      "tahakkuk_orani": -2.44,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 86.6,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 3.45,
-      "tahakkuk_orani": -108.92,
+      "tahakkuk_orani": -3.7,
       "aga_orani": 0.0,
       "ykp_orani": 14.5,
       "dso_gun": 47.1,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 1542.4,
       "icr_kati": 1.61,
-      "tahakkuk_orani": -39.29,
+      "tahakkuk_orani": -1.43,
       "aga_orani": 0.5,
       "ykp_orani": 74.5,
       "dso_gun": 107.8,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 1.75,
-      "tahakkuk_orani": -61.51,
+      "tahakkuk_orani": -2.35,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 63.5,

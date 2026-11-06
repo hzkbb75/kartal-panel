@@ -1,11 +1,11 @@
 {
   "kod": "AYDEM",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 3.8,
       "icr_kati": 0.99,
-      "tahakkuk_orani": -48.27,
+      "tahakkuk_orani": -3.76,
       "aga_orani": 0.0,
       "ykp_orani": 8.9,
       "dso_gun": 244.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 11.3,
       "icr_kati": 0.76,
-      "tahakkuk_orani": -58.58,
+      "tahakkuk_orani": -5.74,
       "aga_orani": 7.8,
       "ykp_orani": 21.1,
       "dso_gun": 153.2,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 0.4,
       "icr_kati": 6.91,
-      "tahakkuk_orani": -61.13,
+      "tahakkuk_orani": -3.16,
       "aga_orani": 0.0,
       "ykp_orani": 9.8,
       "dso_gun": 205.1,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 2.8,
       "icr_kati": 1.65,
-      "tahakkuk_orani": 38.88,
+      "tahakkuk_orani": 2.54,
       "aga_orani": 14.2,
       "ykp_orani": 100.0,
       "dso_gun": 119.6,
@@ -70,13 +70,12 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.4,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%38.88): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 20,
+      "dts_delta": 0,
       "dso_delta": -85.5
     }
   }

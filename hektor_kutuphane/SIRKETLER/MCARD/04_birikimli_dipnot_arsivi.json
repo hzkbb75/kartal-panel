@@ -1,6 +1,6 @@
 {
   "kod": "MCARD",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 89.0,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 32.9,
       "icr_kati": 0.78,
-      "tahakkuk_orani": 10.77,
+      "tahakkuk_orani": 9.58,
       "aga_orani": 123.8,
       "ykp_orani": 100.0,
       "dso_gun": 1056.9,
@@ -54,7 +54,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 65,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%10.77): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%9.58): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
         "🟡 Alacak-Ciro makası +%36.0 açıldı (DSO: 1056.9 gün).",
         "🔴 Faiz karşılama oranı 0.78x (ICR zayıf)."
@@ -66,7 +66,7 @@
     "2026/06": {
       "efm_yuzde": 37.1,
       "icr_kati": 2.96,
-      "tahakkuk_orani": 12.05,
+      "tahakkuk_orani": 12.67,
       "aga_orani": 26.9,
       "ykp_orani": 4.2,
       "dso_gun": 641.5,
@@ -76,7 +76,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 20,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%12.05): Kâr nakde dönüşmüyor."
+        "🔴 Tahakkuk anomalisi (%12.67): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {},
       "dts_delta": -45,

@@ -1,13 +1,13 @@
 {
   "kod": "AGROT",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 1101.2,
       "icr_kati": -0.16,
-      "tahakkuk_orani": -43.56,
+      "tahakkuk_orani": -10.58,
       "aga_orani": 0.0,
-      "ykp_orani": 15.1,
+      "ykp_orani": 3.3,
       "dso_gun": 438.5,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 1929.4,
       "icr_kati": -0.96,
-      "tahakkuk_orani": -30.65,
+      "tahakkuk_orani": -10.85,
       "aga_orani": 0.0,
-      "ykp_orani": 11.7,
+      "ykp_orani": 3.2,
       "dso_gun": 341.1,
       "acm_makasi": -53.1,
       "serefiye_ozk_orani": 0.0,
@@ -43,29 +43,28 @@
     "2026/03": {
       "efm_yuzde": 94.9,
       "icr_kati": -0.62,
-      "tahakkuk_orani": 9.46,
+      "tahakkuk_orani": -0.08,
       "aga_orani": 0.0,
-      "ykp_orani": 2.1,
+      "ykp_orani": 0.4,
       "dso_gun": 378.7,
       "acm_makasi": 4.4,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.1,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%9.46): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -0.62x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 20,
+      "dts_delta": 0,
       "dso_delta": 37.6
     },
     "2026/06": {
       "efm_yuzde": 82.7,
       "icr_kati": -0.41,
-      "tahakkuk_orani": 0.47,
+      "tahakkuk_orani": -0.94,
       "aga_orani": 0.0,
-      "ykp_orani": 6.6,
+      "ykp_orani": 1.2,
       "dso_gun": 330.9,
       "acm_makasi": -19.3,
       "serefiye_ozk_orani": 0.0,
@@ -76,7 +75,7 @@
         "🔴 Faiz karşılama oranı -0.41x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -20,
+      "dts_delta": 0,
       "dso_delta": -47.8
     }
   }

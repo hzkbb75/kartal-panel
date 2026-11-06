@@ -1,6 +1,6 @@
 {
   "kod": "ARFYE",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 298.6,
@@ -45,7 +45,7 @@
     "2026/03": {
       "efm_yuzde": 40.5,
       "icr_kati": 0.11,
-      "tahakkuk_orani": 70.48,
+      "tahakkuk_orani": 34.5,
       "aga_orani": 13.0,
       "ykp_orani": 29.7,
       "dso_gun": 591.6,
@@ -55,7 +55,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%70.48): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%34.5): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 0.11x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -65,9 +65,9 @@
     "2026/06": {
       "efm_yuzde": 69.9,
       "icr_kati": -0.17,
-      "tahakkuk_orani": 33.73,
+      "tahakkuk_orani": 15.85,
       "aga_orani": 0.0,
-      "ykp_orani": 0.8,
+      "ykp_orani": 0.4,
       "dso_gun": 372.8,
       "acm_makasi": -53.3,
       "serefiye_ozk_orani": 0.0,
@@ -75,7 +75,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%33.73): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%15.85): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -0.17x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},

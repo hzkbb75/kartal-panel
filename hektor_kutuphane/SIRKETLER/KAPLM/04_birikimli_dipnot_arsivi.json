@@ -1,21 +1,20 @@
 {
   "kod": "KAPLM",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.9,
       "icr_kati": -9.47,
-      "tahakkuk_orani": 7.78,
+      "tahakkuk_orani": 2.56,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 461.7,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 2.3,
+      "karsilik_ozk_orani": 2.4,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%7.78): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -9.47x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,17 +24,16 @@
     "2025/06": {
       "efm_yuzde": 10.1,
       "icr_kati": -0.45,
-      "tahakkuk_orani": 5.49,
+      "tahakkuk_orani": 1.74,
       "aga_orani": 0.0,
-      "ykp_orani": 0.7,
+      "ykp_orani": 0.3,
       "dso_gun": 254.1,
       "acm_makasi": -102.8,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 1.6,
+      "karsilik_ozk_orani": 1.7,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%5.49): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -0.45x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -45,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.18,
-      "tahakkuk_orani": -14.66,
+      "tahakkuk_orani": -6.07,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 537.5,
@@ -59,15 +57,15 @@
         "🔴 Faiz karşılama oranı -0.18x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -5,
+      "dts_delta": 15,
       "dso_delta": 283.4
     },
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.16,
-      "tahakkuk_orani": -9.76,
+      "tahakkuk_orani": -3.63,
       "aga_orani": 0.0,
-      "ykp_orani": 3.5,
+      "ykp_orani": 1.3,
       "dso_gun": 223.7,
       "acm_makasi": -119.5,
       "serefiye_ozk_orani": 0.0,

@@ -1,11 +1,11 @@
 {
   "kod": "GSDHO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 38.8,
       "icr_kati": 0.6,
-      "tahakkuk_orani": 2.81,
+      "tahakkuk_orani": -1.42,
       "aga_orani": 0.0,
       "ykp_orani": 32.6,
       "dso_gun": 45.9,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 49.4,
       "icr_kati": 0.74,
-      "tahakkuk_orani": -5.83,
+      "tahakkuk_orani": -5.18,
       "aga_orani": 0.0,
       "ykp_orani": 20.8,
       "dso_gun": 26.2,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 20.3,
       "icr_kati": 0.61,
-      "tahakkuk_orani": -1.09,
+      "tahakkuk_orani": -2.56,
       "aga_orani": 0.5,
       "ykp_orani": 8.5,
       "dso_gun": 54.5,
@@ -63,13 +63,13 @@
     "2026/06": {
       "efm_yuzde": 32.5,
       "icr_kati": 0.71,
-      "tahakkuk_orani": -5.06,
+      "tahakkuk_orani": -3.83,
       "aga_orani": 0.0,
       "ykp_orani": 40.1,
       "dso_gun": 17.9,
       "acm_makasi": -145.7,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.2,
+      "karsilik_ozk_orani": 0.3,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [

@@ -1,13 +1,13 @@
 {
   "kod": "VAKKO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 6.6,
       "icr_kati": -0.72,
-      "tahakkuk_orani": 3.62,
+      "tahakkuk_orani": 0.67,
       "aga_orani": 0.0,
-      "ykp_orani": 0.5,
+      "ykp_orani": 0.3,
       "dso_gun": 31.5,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 17.0,
       "icr_kati": -0.09,
-      "tahakkuk_orani": -14.41,
+      "tahakkuk_orani": -9.8,
       "aga_orani": 0.0,
-      "ykp_orani": 5.0,
+      "ykp_orani": 2.9,
       "dso_gun": 12.9,
       "acm_makasi": -137.7,
       "serefiye_ozk_orani": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 3.1,
       "icr_kati": 0.65,
-      "tahakkuk_orani": 3.8,
+      "tahakkuk_orani": 1.35,
       "aga_orani": 21.5,
       "ykp_orani": 83.7,
       "dso_gun": 38.7,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 8.7,
       "icr_kati": 0.6,
-      "tahakkuk_orani": -11.66,
+      "tahakkuk_orani": -8.78,
       "aga_orani": 10.9,
       "ykp_orani": 64.5,
       "dso_gun": 13.6,

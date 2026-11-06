@@ -1,11 +1,11 @@
 {
   "kod": "VKFYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 546.3,
       "icr_kati": -3.48,
-      "tahakkuk_orani": -14.35,
+      "tahakkuk_orani": -20.07,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 475.8,
       "icr_kati": -2.29,
-      "tahakkuk_orani": -18.47,
+      "tahakkuk_orani": -24.91,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 77.1,
       "icr_kati": -4.92,
-      "tahakkuk_orani": 4.17,
+      "tahakkuk_orani": 4.11,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 121.8,
       "icr_kati": -9.8,
-      "tahakkuk_orani": -6.51,
+      "tahakkuk_orani": -6.44,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,

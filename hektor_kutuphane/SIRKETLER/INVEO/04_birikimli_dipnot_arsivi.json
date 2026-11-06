@@ -1,13 +1,13 @@
 {
   "kod": "INVEO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.2,
       "icr_kati": -351.99,
-      "tahakkuk_orani": -457.81,
+      "tahakkuk_orani": -12.35,
       "aga_orani": 0.0,
-      "ykp_orani": 29.2,
+      "ykp_orani": 0.6,
       "dso_gun": 0.0,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 5.2,
       "icr_kati": 85.95,
-      "tahakkuk_orani": 3662.36,
+      "tahakkuk_orani": 46.36,
       "aga_orani": 0.0,
       "ykp_orani": 5.5,
       "dso_gun": 0.0,
@@ -34,7 +34,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 20,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%3662.36): Kâr nakde dönüşmüyor."
+        "🔴 Tahakkuk anomalisi (%46.36): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {},
       "dts_delta": 5,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 2.1,
       "icr_kati": -10.95,
-      "tahakkuk_orani": -267.64,
+      "tahakkuk_orani": -9.81,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 3.4,
       "icr_kati": 3.49,
-      "tahakkuk_orani": -106.69,
+      "tahakkuk_orani": -2.68,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 111.6,

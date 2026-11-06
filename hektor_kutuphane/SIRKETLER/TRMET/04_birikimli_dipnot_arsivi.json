@@ -1,17 +1,17 @@
 {
   "kod": "TRMET",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 6186.0,
       "icr_kati": 0.36,
-      "tahakkuk_orani": -26.43,
+      "tahakkuk_orani": -10.82,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 6.2,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 3.2,
+      "karsilik_ozk_orani": 6.0,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
@@ -25,13 +25,13 @@
     "2025/06": {
       "efm_yuzde": 8745.8,
       "icr_kati": 0.7,
-      "tahakkuk_orani": -25.88,
+      "tahakkuk_orani": -8.52,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 2.1,
       "acm_makasi": -119.1,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 3.6,
+      "karsilik_ozk_orani": 6.8,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
@@ -45,13 +45,13 @@
     "2026/03": {
       "efm_yuzde": 3118.9,
       "icr_kati": 1.5,
-      "tahakkuk_orani": -29.18,
+      "tahakkuk_orani": -14.57,
       "aga_orani": 0.0,
       "ykp_orani": 47.5,
       "dso_gun": 3.0,
       "acm_makasi": 41.3,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 3.0,
+      "karsilik_ozk_orani": 5.7,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
@@ -65,13 +65,13 @@
     "2026/06": {
       "efm_yuzde": 1954.5,
       "icr_kati": 1.54,
-      "tahakkuk_orani": -23.39,
+      "tahakkuk_orani": -7.79,
       "aga_orani": 0.2,
       "ykp_orani": 69.2,
       "dso_gun": 2.3,
       "acm_makasi": -38.7,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 3.9,
+      "karsilik_ozk_orani": 7.3,
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [

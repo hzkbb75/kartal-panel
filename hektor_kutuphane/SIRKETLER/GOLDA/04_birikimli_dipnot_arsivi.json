@@ -1,6 +1,6 @@
 {
   "kod": "GOLDA",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.4,
-      "tahakkuk_orani": 3.31,
+      "tahakkuk_orani": -1.09,
       "aga_orani": 21.2,
       "ykp_orani": 0.0,
       "dso_gun": 131.5,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.21,
-      "tahakkuk_orani": 31.07,
+      "tahakkuk_orani": 5.91,
       "aga_orani": 1.3,
       "ykp_orani": 4.1,
       "dso_gun": 142.6,
@@ -74,7 +74,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%31.07): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%5.91): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%17.2 açıldı (DSO: 142.6 gün).",
         "🔴 Faiz karşılama oranı 0.21x (ICR zayıf)."
       ],

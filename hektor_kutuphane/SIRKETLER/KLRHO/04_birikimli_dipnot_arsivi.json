@@ -1,17 +1,17 @@
 {
   "kod": "KLRHO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 13.0,
       "icr_kati": 1.44,
-      "tahakkuk_orani": 3.56,
+      "tahakkuk_orani": 1.65,
       "aga_orani": 0.0,
       "ykp_orani": 80.0,
       "dso_gun": 360.4,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.5,
+      "karsilik_ozk_orani": 0.7,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
@@ -25,13 +25,13 @@
     "2025/06": {
       "efm_yuzde": 32.8,
       "icr_kati": 0.53,
-      "tahakkuk_orani": -0.95,
+      "tahakkuk_orani": 0.85,
       "aga_orani": 0.2,
       "ykp_orani": 100.0,
       "dso_gun": 159.6,
       "acm_makasi": -150.8,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.5,
+      "karsilik_ozk_orani": 0.7,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
@@ -45,13 +45,13 @@
     "2026/03": {
       "efm_yuzde": 16.0,
       "icr_kati": 1.03,
-      "tahakkuk_orani": 1.24,
+      "tahakkuk_orani": -1.44,
       "aga_orani": 0.0,
       "ykp_orani": 14.1,
       "dso_gun": 296.0,
       "acm_makasi": 44.8,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.6,
+      "karsilik_ozk_orani": 0.9,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
@@ -65,13 +65,13 @@
     "2026/06": {
       "efm_yuzde": 18.8,
       "icr_kati": 1.74,
-      "tahakkuk_orani": 2.08,
+      "tahakkuk_orani": -0.25,
       "aga_orani": 0.0,
       "ykp_orani": 11.3,
       "dso_gun": 161.9,
       "acm_makasi": -102.8,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.7,
+      "karsilik_ozk_orani": 1.0,
       "iliskili_orani": 0.0,
       "dts_skor": 0,
       "uyarilar": [

@@ -1,13 +1,13 @@
 {
   "kod": "VANGD",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.98,
-      "tahakkuk_orani": -19.91,
+      "tahakkuk_orani": -2.36,
       "aga_orani": 0.0,
-      "ykp_orani": 8.8,
+      "ykp_orani": 0.9,
       "dso_gun": 200.4,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,9 +24,9 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -1.37,
-      "tahakkuk_orani": -56.16,
+      "tahakkuk_orani": -5.83,
       "aga_orani": 0.0,
-      "ykp_orani": 19.7,
+      "ykp_orani": 1.9,
       "dso_gun": 49.5,
       "acm_makasi": -226.8,
       "serefiye_ozk_orani": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.56,
-      "tahakkuk_orani": 2.13,
+      "tahakkuk_orani": 0.12,
       "aga_orani": 0.1,
       "ykp_orani": 0.0,
       "dso_gun": 253.7,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 2.88,
-      "tahakkuk_orani": -38.47,
+      "tahakkuk_orani": -1.79,
       "aga_orani": 0.0,
       "ykp_orani": 28.3,
       "dso_gun": 6.7,

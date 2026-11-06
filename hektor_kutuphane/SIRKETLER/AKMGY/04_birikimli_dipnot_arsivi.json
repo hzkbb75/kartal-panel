@@ -1,11 +1,11 @@
 {
   "kod": "AKMGY",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 1.9,
-      "tahakkuk_orani": -33.37,
+      "tahakkuk_orani": -2.72,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 23.6,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 2.99,
-      "tahakkuk_orani": -55.63,
+      "tahakkuk_orani": -1.4,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 21.1,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 4571.4,
       "icr_kati": 2.54,
-      "tahakkuk_orani": 4.35,
+      "tahakkuk_orani": -1.0,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 120.0,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 4374.8,
       "icr_kati": 2.86,
-      "tahakkuk_orani": -26.44,
+      "tahakkuk_orani": -0.35,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 52.0,

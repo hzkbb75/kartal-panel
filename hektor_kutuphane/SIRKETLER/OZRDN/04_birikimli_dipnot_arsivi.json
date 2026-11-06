@@ -1,11 +1,11 @@
 {
   "kod": "OZRDN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 1238.6,
       "icr_kati": 0.18,
-      "tahakkuk_orani": -8.36,
+      "tahakkuk_orani": -6.3,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 169.4,
@@ -25,9 +25,9 @@
     "2025/06": {
       "efm_yuzde": 2982.3,
       "icr_kati": -0.2,
-      "tahakkuk_orani": -14.08,
+      "tahakkuk_orani": -10.87,
       "aga_orani": 0.0,
-      "ykp_orani": 4.3,
+      "ykp_orani": 2.7,
       "dso_gun": 78.0,
       "acm_makasi": -106.2,
       "serefiye_ozk_orani": 0.0,
@@ -44,7 +44,7 @@
     "2026/03": {
       "efm_yuzde": 656.8,
       "icr_kati": 0.68,
-      "tahakkuk_orani": -5.72,
+      "tahakkuk_orani": -3.65,
       "aga_orani": 0.0,
       "ykp_orani": 26.9,
       "dso_gun": 248.8,
@@ -64,7 +64,7 @@
     "2026/06": {
       "efm_yuzde": 839.9,
       "icr_kati": 0.83,
-      "tahakkuk_orani": -7.57,
+      "tahakkuk_orani": -5.32,
       "aga_orani": 0.0,
       "ykp_orani": 34.5,
       "dso_gun": 156.9,

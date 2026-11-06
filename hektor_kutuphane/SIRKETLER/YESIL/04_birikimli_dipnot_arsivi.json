@@ -1,11 +1,11 @@
 {
   "kod": "YESIL",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.04,
-      "tahakkuk_orani": -84.58,
+      "tahakkuk_orani": -6.27,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -24,27 +24,26 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.01,
-      "tahakkuk_orani": -120.64,
+      "tahakkuk_orani": -9.24,
       "aga_orani": 0.0,
-      "ykp_orani": 100.0,
+      "ykp_orani": 8.5,
       "dso_gun": 0.0,
       "acm_makasi": -99.8,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 30,
+      "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
         "🔴 Faiz karşılama oranı -0.01x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 15,
+      "dts_delta": 0,
       "dso_delta": 0.0
     },
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 99.0,
-      "tahakkuk_orani": -20.13,
+      "tahakkuk_orani": -6.65,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -57,13 +56,13 @@
         "🟡 Alacak-Ciro makası +%43900.2 açıldı (DSO: 0.0 gün)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -15,
+      "dts_delta": 0,
       "dso_delta": 0.0
     },
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.02,
-      "tahakkuk_orani": -34.92,
+      "tahakkuk_orani": -11.25,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,

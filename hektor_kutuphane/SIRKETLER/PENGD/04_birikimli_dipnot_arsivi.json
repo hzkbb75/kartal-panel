@@ -1,11 +1,11 @@
 {
   "kod": "PENGD",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 1.2,
       "icr_kati": -10.0,
-      "tahakkuk_orani": -9.02,
+      "tahakkuk_orani": -3.45,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 104.5,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 16.5,
       "icr_kati": -0.31,
-      "tahakkuk_orani": -24.11,
+      "tahakkuk_orani": -5.34,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 53.9,
@@ -43,9 +43,9 @@
     "2026/03": {
       "efm_yuzde": 0.8,
       "icr_kati": -4.58,
-      "tahakkuk_orani": -37.79,
+      "tahakkuk_orani": -3.59,
       "aga_orani": 0.0,
-      "ykp_orani": 0.2,
+      "ykp_orani": 0.0,
       "dso_gun": 98.7,
       "acm_makasi": 37.1,
       "serefiye_ozk_orani": 0.0,
@@ -63,9 +63,9 @@
     "2026/06": {
       "efm_yuzde": 2.2,
       "icr_kati": -2.06,
-      "tahakkuk_orani": -30.58,
+      "tahakkuk_orani": -4.63,
       "aga_orani": 0.0,
-      "ykp_orani": 0.1,
+      "ykp_orani": 0.0,
       "dso_gun": 70.7,
       "acm_makasi": -44.4,
       "serefiye_ozk_orani": 0.0,

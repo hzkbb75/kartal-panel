@@ -1,11 +1,11 @@
 {
   "kod": "BALSU",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 3.4,
       "icr_kati": -0.51,
-      "tahakkuk_orani": 8.57,
+      "tahakkuk_orani": 6.83,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
       "dso_gun": 264.5,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%8.57): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%6.83): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı -0.51x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 8.1,
       "icr_kati": 0.29,
-      "tahakkuk_orani": 12.6,
+      "tahakkuk_orani": 10.07,
       "aga_orani": 0.0,
       "ykp_orani": 5.8,
       "dso_gun": 174.4,
@@ -35,7 +35,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%12.6): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%10.07): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 0.29x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},

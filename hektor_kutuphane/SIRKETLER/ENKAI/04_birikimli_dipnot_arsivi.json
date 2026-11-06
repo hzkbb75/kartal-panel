@@ -1,11 +1,11 @@
 {
   "kod": "ENKAI",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 13.9,
       "icr_kati": 7.63,
-      "tahakkuk_orani": -0.64,
+      "tahakkuk_orani": 0.28,
       "aga_orani": 0.0,
       "ykp_orani": 39.9,
       "dso_gun": 162.6,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 29.9,
       "icr_kati": 8.36,
-      "tahakkuk_orani": -3.9,
+      "tahakkuk_orani": 1.54,
       "aga_orani": 0.3,
       "ykp_orani": 93.6,
       "dso_gun": 90.3,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 26.0,
       "icr_kati": 3.97,
-      "tahakkuk_orani": 0.19,
+      "tahakkuk_orani": 0.26,
       "aga_orani": 0.7,
       "ykp_orani": 100.0,
       "dso_gun": 229.6,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 37.1,
       "icr_kati": 4.52,
-      "tahakkuk_orani": -2.65,
+      "tahakkuk_orani": 1.76,
       "aga_orani": 0.2,
       "ykp_orani": 100.0,
       "dso_gun": 113.3,

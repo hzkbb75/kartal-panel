@@ -1,11 +1,11 @@
 {
   "kod": "DOGUB",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -9.63,
-      "tahakkuk_orani": -12.47,
+      "tahakkuk_orani": -5.21,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 308.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -33.07,
-      "tahakkuk_orani": -51.24,
+      "tahakkuk_orani": -20.9,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 163.2,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -3.09,
-      "tahakkuk_orani": -10.58,
+      "tahakkuk_orani": -3.04,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 225.1,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -1.56,
-      "tahakkuk_orani": -6.27,
+      "tahakkuk_orani": -2.05,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 98.7,

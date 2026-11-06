@@ -1,11 +1,11 @@
 {
   "kod": "KRTEK",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 9.0,
       "icr_kati": 0.09,
-      "tahakkuk_orani": -20.02,
+      "tahakkuk_orani": -8.95,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 269.1,
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 18.4,
       "icr_kati": 0.15,
-      "tahakkuk_orani": -24.06,
+      "tahakkuk_orani": -10.71,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 134.3,
@@ -45,7 +45,7 @@
     "2026/03": {
       "efm_yuzde": 11.5,
       "icr_kati": 0.23,
-      "tahakkuk_orani": -16.29,
+      "tahakkuk_orani": -6.01,
       "aga_orani": 0.0,
       "ykp_orani": 80.6,
       "dso_gun": 322.0,
@@ -66,7 +66,7 @@
     "2026/06": {
       "efm_yuzde": 21.1,
       "icr_kati": 0.14,
-      "tahakkuk_orani": -19.06,
+      "tahakkuk_orani": -7.17,
       "aga_orani": 0.1,
       "ykp_orani": 78.6,
       "dso_gun": 162.1,

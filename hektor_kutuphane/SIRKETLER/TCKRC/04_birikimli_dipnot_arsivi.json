@@ -1,11 +1,11 @@
 {
   "kod": "TCKRC",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 1.9,
       "icr_kati": 32.65,
-      "tahakkuk_orani": 15.05,
+      "tahakkuk_orani": 10.41,
       "aga_orani": 0.0,
       "ykp_orani": 3.8,
       "dso_gun": 58.2,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 20,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%15.05): Kâr nakde dönüşmüyor."
+        "🔴 Tahakkuk anomalisi (%10.41): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {},
       "dts_delta": 0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 27.1,
       "icr_kati": 2.07,
-      "tahakkuk_orani": 9.32,
+      "tahakkuk_orani": 7.93,
       "aga_orani": 0.2,
       "ykp_orani": 0.8,
       "dso_gun": 46.0,
@@ -34,7 +34,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 20,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%9.32): Kâr nakde dönüşmüyor."
+        "🔴 Tahakkuk anomalisi (%7.93): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {},
       "dts_delta": 0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 16.9,
       "icr_kati": 3.04,
-      "tahakkuk_orani": 9.36,
+      "tahakkuk_orani": 5.31,
       "aga_orani": 1.5,
       "ykp_orani": 25.1,
       "dso_gun": 82.1,
@@ -53,7 +53,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 35,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%9.36): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%5.31): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%78.4 açıldı (DSO: 82.1 gün)."
       ],
       "pdf_dipnot_notlari": {},
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 52.3,
       "icr_kati": 2.6,
-      "tahakkuk_orani": 15.52,
+      "tahakkuk_orani": 8.98,
       "aga_orani": 0.1,
       "ykp_orani": 28.7,
       "dso_gun": 49.1,
@@ -73,7 +73,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 20,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%15.52): Kâr nakde dönüşmüyor."
+        "🔴 Tahakkuk anomalisi (%8.98): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {},
       "dts_delta": -15,

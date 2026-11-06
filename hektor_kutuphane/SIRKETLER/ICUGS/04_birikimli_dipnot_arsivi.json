@@ -1,11 +1,11 @@
 {
   "kod": "ICUGS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.5,
-      "tahakkuk_orani": -51.69,
+      "tahakkuk_orani": -2.6,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.71,
-      "tahakkuk_orani": -34.8,
+      "tahakkuk_orani": -1.72,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.32,
-      "tahakkuk_orani": -78.41,
+      "tahakkuk_orani": -4.45,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.52,
-      "tahakkuk_orani": -112.06,
+      "tahakkuk_orani": -6.43,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,

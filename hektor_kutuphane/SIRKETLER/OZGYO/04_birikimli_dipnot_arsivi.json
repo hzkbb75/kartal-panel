@@ -1,11 +1,11 @@
 {
   "kod": "OZGYO",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 1063.1,
       "icr_kati": 0.21,
-      "tahakkuk_orani": -151.35,
+      "tahakkuk_orani": -1.26,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 20.4,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 1460.9,
       "icr_kati": 0.31,
-      "tahakkuk_orani": -212.95,
+      "tahakkuk_orani": -2.69,
       "aga_orani": 0.0,
       "ykp_orani": 4.5,
       "dso_gun": 12.1,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 606.5,
       "icr_kati": 0.57,
-      "tahakkuk_orani": -69.85,
+      "tahakkuk_orani": -0.55,
       "aga_orani": 0.2,
       "ykp_orani": 0.0,
       "dso_gun": 56.7,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 791.6,
       "icr_kati": 0.67,
-      "tahakkuk_orani": -93.47,
+      "tahakkuk_orani": -0.84,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 17.3,

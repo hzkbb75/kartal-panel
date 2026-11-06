@@ -1,11 +1,11 @@
 {
   "kod": "BSOKE",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 3.1,
       "icr_kati": 1.45,
-      "tahakkuk_orani": 26.99,
+      "tahakkuk_orani": 5.51,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 301.3,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 50,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%26.99): Kâr nakde dönüşmüyor.",
+        "🔴 Tahakkuk anomalisi (%5.51): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
         "🔴 Faiz karşılama oranı 1.45x (ICR zayıf)."
       ],
@@ -26,7 +26,7 @@
     "2025/06": {
       "efm_yuzde": 4.4,
       "icr_kati": 1.06,
-      "tahakkuk_orani": 8.29,
+      "tahakkuk_orani": -0.7,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 148.5,
@@ -34,19 +34,18 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 1.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%8.29): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 1.06x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -15,
+      "dts_delta": -35,
       "dso_delta": -152.8
     },
     "2026/03": {
       "efm_yuzde": 4.9,
       "icr_kati": -0.6,
-      "tahakkuk_orani": -20.75,
+      "tahakkuk_orani": -3.6,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 425.1,
@@ -60,15 +59,15 @@
         "🔴 Faiz karşılama oranı -0.6x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -5,
+      "dts_delta": 15,
       "dso_delta": 276.6
     },
     "2026/06": {
       "efm_yuzde": 7.2,
       "icr_kati": -0.23,
-      "tahakkuk_orani": -17.03,
+      "tahakkuk_orani": -2.83,
       "aga_orani": 0.0,
-      "ykp_orani": 0.1,
+      "ykp_orani": 0.0,
       "dso_gun": 186.5,
       "acm_makasi": -123.6,
       "serefiye_ozk_orani": 0.0,

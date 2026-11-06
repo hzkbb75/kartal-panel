@@ -1,13 +1,13 @@
 {
   "kod": "KARSN",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 10.2,
       "icr_kati": -0.1,
-      "tahakkuk_orani": -0.5,
+      "tahakkuk_orani": -2.55,
       "aga_orani": 0.0,
-      "ykp_orani": 3.3,
+      "ykp_orani": 1.6,
       "dso_gun": 798.9,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 21.0,
       "icr_kati": 0.65,
-      "tahakkuk_orani": 5.61,
+      "tahakkuk_orani": 0.95,
       "aga_orani": 0.0,
       "ykp_orani": 10.9,
       "dso_gun": 285.2,
@@ -32,19 +32,18 @@
       "serefiye_ozk_orani": 0.6,
       "karsilik_ozk_orani": 8.7,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 15,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%5.61): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 0.65x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": 20,
+      "dts_delta": 0,
       "dso_delta": -513.7
     },
     "2026/03": {
       "efm_yuzde": 2.7,
       "icr_kati": 2.52,
-      "tahakkuk_orani": 0.65,
+      "tahakkuk_orani": 0.64,
       "aga_orani": 193.3,
       "ykp_orani": 3.6,
       "dso_gun": 486.0,
@@ -57,13 +56,13 @@
         "🟡 Alacak-Ciro makası +%49.8 açıldı (DSO: 486.0 gün)."
       ],
       "pdf_dipnot_notlari": {},
-      "dts_delta": -20,
+      "dts_delta": 0,
       "dso_delta": 200.8
     },
     "2026/06": {
       "efm_yuzde": 7.2,
       "icr_kati": 1.01,
-      "tahakkuk_orani": -2.57,
+      "tahakkuk_orani": -2.44,
       "aga_orani": 51.8,
       "ykp_orani": 10.4,
       "dso_gun": 239.9,

@@ -1,11 +1,11 @@
 {
   "kod": "ECZYT",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 11054.6,
       "icr_kati": 0.83,
-      "tahakkuk_orani": -7.85,
+      "tahakkuk_orani": 1.95,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 15438.6,
       "icr_kati": 1.15,
-      "tahakkuk_orani": -26.27,
+      "tahakkuk_orani": 2.51,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 8260.7,
       "icr_kati": 0.1,
-      "tahakkuk_orani": -46.85,
+      "tahakkuk_orani": -1.23,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,
@@ -62,7 +62,7 @@
     "2026/06": {
       "efm_yuzde": 13946.5,
       "icr_kati": 0.25,
-      "tahakkuk_orani": -1.18,
+      "tahakkuk_orani": -2.05,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 0.0,

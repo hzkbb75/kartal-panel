@@ -1,11 +1,11 @@
 {
   "kod": "KRPLS",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 13.5,
       "icr_kati": -0.01,
-      "tahakkuk_orani": -10.35,
+      "tahakkuk_orani": -6.72,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
       "dso_gun": 425.0,
@@ -24,7 +24,7 @@
     "2025/06": {
       "efm_yuzde": 32.6,
       "icr_kati": 0.43,
-      "tahakkuk_orani": -12.5,
+      "tahakkuk_orani": -8.04,
       "aga_orani": 1.9,
       "ykp_orani": 24.1,
       "dso_gun": 199.2,
@@ -43,7 +43,7 @@
     "2026/03": {
       "efm_yuzde": 12.3,
       "icr_kati": 0.95,
-      "tahakkuk_orani": -0.3,
+      "tahakkuk_orani": -1.91,
       "aga_orani": 16.1,
       "ykp_orani": 0.0,
       "dso_gun": 555.8,
@@ -63,7 +63,7 @@
     "2026/06": {
       "efm_yuzde": 36.4,
       "icr_kati": 1.66,
-      "tahakkuk_orani": -6.06,
+      "tahakkuk_orani": -3.54,
       "aga_orani": 1.4,
       "ykp_orani": 0.0,
       "dso_gun": 278.3,

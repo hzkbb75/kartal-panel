@@ -1,11 +1,11 @@
 {
   "kod": "HRKET",
-  "son_guncelleme": "2026-11-06 16:00",
+  "son_guncelleme": "2026-11-06 16:06",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 9.0,
       "icr_kati": 0.29,
-      "tahakkuk_orani": -16.72,
+      "tahakkuk_orani": -2.58,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 323.4,
@@ -25,7 +25,7 @@
     "2025/06": {
       "efm_yuzde": 14.6,
       "icr_kati": 0.16,
-      "tahakkuk_orani": 3.53,
+      "tahakkuk_orani": 0.96,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
       "dso_gun": 178.4,
@@ -45,7 +45,7 @@
     "2026/03": {
       "efm_yuzde": 5.1,
       "icr_kati": 0.2,
-      "tahakkuk_orani": -36.92,
+      "tahakkuk_orani": -5.03,
       "aga_orani": 6.9,
       "ykp_orani": 60.7,
       "dso_gun": 548.1,
@@ -66,7 +66,7 @@
     "2026/06": {
       "efm_yuzde": 4.9,
       "icr_kati": 0.22,
-      "tahakkuk_orani": -44.55,
+      "tahakkuk_orani": -7.02,
       "aga_orani": 0.4,
       "ykp_orani": 86.6,
       "dso_gun": 272.9,
