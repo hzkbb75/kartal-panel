@@ -1,6 +1,6 @@
 {
   "kod": "FORTE",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 92.1,
@@ -54,8 +54,8 @@
       "dso_delta": -1.7
     },
     "2026/03": {
-      "efm_yuzde": 5.3,
-      "icr_kati": 2.87,
+      "efm_yuzde": 2.4,
+      "icr_kati": 6.25,
       "tahakkuk_orani": -1.16,
       "aga_orani": 8021.8,
       "ykp_orani": 0.0,
@@ -78,8 +78,8 @@
       "dso_delta": 7.8
     },
     "2026/06": {
-      "efm_yuzde": 3.5,
-      "icr_kati": 10.11,
+      "efm_yuzde": 1.0,
+      "icr_kati": 37.13,
       "tahakkuk_orani": -1.68,
       "aga_orani": 1037.7,
       "ykp_orani": 0.3,

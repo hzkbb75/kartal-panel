@@ -1,10 +1,10 @@
 {
   "kod": "KUTPO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 199.2,
-      "icr_kati": 8.34,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -1.55,
       "aga_orani": 0.0,
       "ykp_orani": 52.8,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 365.4,
-      "icr_kati": 5.95,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 4.75,
       "aga_orani": 2.4,
       "ykp_orani": 39.5,
@@ -52,8 +52,8 @@
       "dso_delta": 10.2
     },
     "2026/03": {
-      "efm_yuzde": 103.5,
-      "icr_kati": 9.46,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -6.79,
       "aga_orani": 26.3,
       "ykp_orani": 2.3,
@@ -76,8 +76,8 @@
       "dso_delta": 11.0
     },
     "2026/06": {
-      "efm_yuzde": 173.4,
-      "icr_kati": 6.54,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -7.17,
       "aga_orani": 19.9,
       "ykp_orani": 7.3,

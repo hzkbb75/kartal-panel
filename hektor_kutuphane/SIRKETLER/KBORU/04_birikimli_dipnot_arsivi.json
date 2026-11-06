@@ -1,10 +1,10 @@
 {
   "kod": "KBORU",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 32.4,
-      "icr_kati": 4.14,
+      "efm_yuzde": 12.4,
+      "icr_kati": 10.81,
       "tahakkuk_orani": 11.18,
       "aga_orani": 0.0,
       "ykp_orani": 2.7,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 5.7,
-      "icr_kati": 17.99,
+      "efm_yuzde": 0.0,
+      "icr_kati": 6.3,
       "tahakkuk_orani": 19.74,
       "aga_orani": 0.1,
       "ykp_orani": 3.1,
@@ -51,8 +51,8 @@
       "dso_delta": 3.2
     },
     "2026/03": {
-      "efm_yuzde": 9.3,
-      "icr_kati": 4.65,
+      "efm_yuzde": 6.9,
+      "icr_kati": 6.29,
       "tahakkuk_orani": -7.84,
       "aga_orani": 6.9,
       "ykp_orani": 1.0,

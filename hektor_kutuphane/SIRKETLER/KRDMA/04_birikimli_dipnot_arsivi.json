@@ -1,10 +1,10 @@
 {
   "kod": "KRDMA",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 4.8,
-      "icr_kati": 1.75,
+      "efm_yuzde": 0.4,
+      "icr_kati": 20.74,
       "tahakkuk_orani": 1.55,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 1.6,
-      "icr_kati": 12.65,
+      "efm_yuzde": 0.0,
+      "icr_kati": 4.43,
       "tahakkuk_orani": 3.49,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -51,8 +51,8 @@
       "dso_delta": -3.2
     },
     "2026/03": {
-      "efm_yuzde": 2.0,
-      "icr_kati": 38.88,
+      "efm_yuzde": 0.0,
+      "icr_kati": 13.61,
       "tahakkuk_orani": -3.07,
       "aga_orani": 17.3,
       "ykp_orani": 5.6,
@@ -75,8 +75,8 @@
       "dso_delta": 27.3
     },
     "2026/06": {
-      "efm_yuzde": 1.1,
-      "icr_kati": 62.46,
+      "efm_yuzde": 0.0,
+      "icr_kati": 21.86,
       "tahakkuk_orani": -1.52,
       "aga_orani": 12.9,
       "ykp_orani": 71.6,

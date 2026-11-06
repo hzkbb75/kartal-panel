@@ -1,9 +1,9 @@
 {
   "kod": "IMASM",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 216.9,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.41,
       "tahakkuk_orani": -2.96,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 218.3,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.55,
       "tahakkuk_orani": -10.63,
       "aga_orani": 0.0,
@@ -51,7 +51,7 @@
       "dso_delta": -0.2
     },
     "2026/03": {
-      "efm_yuzde": 151.0,
+      "efm_yuzde": 95.0,
       "icr_kati": -0.2,
       "tahakkuk_orani": 0.8,
       "aga_orani": 0.0,
@@ -75,7 +75,7 @@
       "dso_delta": 2.2
     },
     "2026/06": {
-      "efm_yuzde": 160.2,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.18,
       "tahakkuk_orani": 5.02,
       "aga_orani": 0.5,

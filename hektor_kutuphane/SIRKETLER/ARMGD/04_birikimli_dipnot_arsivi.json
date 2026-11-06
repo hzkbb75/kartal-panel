@@ -1,10 +1,10 @@
 {
   "kod": "ARMGD",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 5.1,
-      "icr_kati": 7.45,
+      "efm_yuzde": 0.0,
+      "icr_kati": 2.61,
       "tahakkuk_orani": -1.95,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 7.5,
-      "icr_kati": 4.63,
+      "efm_yuzde": 0.0,
+      "icr_kati": 1.62,
       "tahakkuk_orani": -22.91,
       "aga_orani": 0.0,
       "ykp_orani": 0.5,
@@ -51,8 +51,8 @@
       "dso_delta": -22.1
     },
     "2026/03": {
-      "efm_yuzde": 1.1,
-      "icr_kati": 33.7,
+      "efm_yuzde": 0.0,
+      "icr_kati": 11.8,
       "tahakkuk_orani": 3.62,
       "aga_orani": 1.7,
       "ykp_orani": 34.9,

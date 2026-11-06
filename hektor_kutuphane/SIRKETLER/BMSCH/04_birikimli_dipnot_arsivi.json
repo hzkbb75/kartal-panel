@@ -1,6 +1,6 @@
 {
   "kod": "BMSCH",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 15.8,
@@ -75,8 +75,8 @@
       "dso_delta": 19.2
     },
     "2026/06": {
-      "efm_yuzde": 0.6,
-      "icr_kati": 5.5,
+      "efm_yuzde": 0.0,
+      "icr_kati": 1.93,
       "tahakkuk_orani": 5.27,
       "aga_orani": 0.0,
       "ykp_orani": 0.9,

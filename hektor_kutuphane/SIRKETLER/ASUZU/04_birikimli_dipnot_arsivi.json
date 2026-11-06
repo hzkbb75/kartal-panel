@@ -1,10 +1,10 @@
 {
   "kod": "ASUZU",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 3.6,
-      "icr_kati": 6.86,
+      "efm_yuzde": 0.0,
+      "icr_kati": 2.4,
       "tahakkuk_orani": 9.96,
       "aga_orani": 0.0,
       "ykp_orani": 0.5,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 6.5,
-      "icr_kati": 4.49,
+      "efm_yuzde": 0.0,
+      "icr_kati": 1.57,
       "tahakkuk_orani": 15.32,
       "aga_orani": 82.3,
       "ykp_orani": 3.9,
@@ -51,8 +51,8 @@
       "dso_delta": 4.2
     },
     "2026/03": {
-      "efm_yuzde": 1.2,
-      "icr_kati": -6.38,
+      "efm_yuzde": 0.0,
+      "icr_kati": -2.23,
       "tahakkuk_orani": 6.05,
       "aga_orani": 0.0,
       "ykp_orani": 0.2,
@@ -61,11 +61,10 @@
       "serefiye_ozk_orani": 1.4,
       "karsilik_ozk_orani": 6.7,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%6.05): Kâr nakde dönüşmüyor.",
-        "🟡 Alacak-Ciro makası +%115.9 açıldı (DSO: 139.0 gün).",
-        "🔴 Faiz karşılama oranı -6.38x (ICR zayıf)."
+        "🟡 Alacak-Ciro makası +%115.9 açıldı (DSO: 139.0 gün)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 363 Mn ₺ (0.9x Amortisman)<br><strong>MDV:</strong> 12.88 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -73,12 +72,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -4.46 Mr ₺ (ÖZK %-28.1)<br><strong>Ham YPP:</strong> -6.75 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %6.7 (1.06 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.40x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 30,
+      "dts_delta": 15,
       "dso_delta": 61.1
     },
     "2026/06": {
-      "efm_yuzde": 1.2,
-      "icr_kati": -6.13,
+      "efm_yuzde": 0.0,
+      "icr_kati": -2.14,
       "tahakkuk_orani": 10.78,
       "aga_orani": 0.0,
       "ykp_orani": 0.6,
@@ -87,11 +86,10 @@
       "serefiye_ozk_orani": 1.5,
       "karsilik_ozk_orani": 6.9,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%10.78): Kâr nakde dönüşmüyor.",
-        "🟡 Alacak-Ciro makası +%86.5 açıldı (DSO: 132.2 gün).",
-        "🔴 Faiz karşılama oranı -6.13x (ICR zayıf)."
+        "🟡 Alacak-Ciro makası +%86.5 açıldı (DSO: 132.2 gün)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 572 Mn ₺ (0.8x Amortisman)<br><strong>MDV:</strong> 13.88 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",

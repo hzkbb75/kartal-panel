@@ -1,6 +1,6 @@
 {
   "kod": "MAGEN",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 29.2,
@@ -76,8 +76,8 @@
       "dso_delta": -32.0
     },
     "2026/06": {
-      "efm_yuzde": 0.3,
-      "icr_kati": 53.82,
+      "efm_yuzde": 0.0,
+      "icr_kati": 18.84,
       "tahakkuk_orani": 2.41,
       "aga_orani": 77.1,
       "ykp_orani": 95.3,

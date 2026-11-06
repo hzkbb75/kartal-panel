@@ -1,6 +1,6 @@
 {
   "kod": "PRZMA",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 46.7,
@@ -51,7 +51,7 @@
       "dso_delta": -24.3
     },
     "2026/03": {
-      "efm_yuzde": 34.0,
+      "efm_yuzde": 0.0,
       "icr_kati": -6.13,
       "tahakkuk_orani": -3.03,
       "aga_orani": 0.0,
@@ -76,7 +76,7 @@
       "dso_delta": 75.3
     },
     "2026/06": {
-      "efm_yuzde": 2407.6,
+      "efm_yuzde": 0.0,
       "icr_kati": -0.14,
       "tahakkuk_orani": -23.78,
       "aga_orani": 0.0,

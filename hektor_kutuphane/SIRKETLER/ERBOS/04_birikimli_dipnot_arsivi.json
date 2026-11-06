@@ -1,9 +1,9 @@
 {
   "kod": "ERBOS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 166.0,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.43,
       "tahakkuk_orani": -1.42,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 115.3,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.64,
       "tahakkuk_orani": 4.98,
       "aga_orani": 0.0,
@@ -51,7 +51,7 @@
       "dso_delta": -5.9
     },
     "2026/03": {
-      "efm_yuzde": 148.3,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.76,
       "tahakkuk_orani": -3.17,
       "aga_orani": 0.2,

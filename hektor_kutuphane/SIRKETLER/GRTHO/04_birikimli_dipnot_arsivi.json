@@ -1,6 +1,6 @@
 {
   "kod": "GRTHO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 31.7,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 145.3,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.52,
       "tahakkuk_orani": 1.32,
       "aga_orani": 0.0,
@@ -51,7 +51,7 @@
       "dso_delta": -6.1
     },
     "2026/03": {
-      "efm_yuzde": 130.2,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.64,
       "tahakkuk_orani": 15.43,
       "aga_orani": 0.0,
@@ -78,7 +78,7 @@
       "dso_delta": 20.9
     },
     "2026/06": {
-      "efm_yuzde": 205.6,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.39,
       "tahakkuk_orani": 14.61,
       "aga_orani": 0.0,

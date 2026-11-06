@@ -1,6 +1,6 @@
 {
   "kod": "ARCLK",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 10.4,
@@ -51,8 +51,8 @@
       "dso_delta": 4.3
     },
     "2026/03": {
-      "efm_yuzde": 3.2,
-      "icr_kati": 3.41,
+      "efm_yuzde": 0.0,
+      "icr_kati": 1.19,
       "tahakkuk_orani": 2.6,
       "aga_orani": 6154.1,
       "ykp_orani": 5.8,
@@ -75,8 +75,8 @@
       "dso_delta": 11.5
     },
     "2026/06": {
-      "efm_yuzde": 3.0,
-      "icr_kati": 4.28,
+      "efm_yuzde": 1.8,
+      "icr_kati": 7.09,
       "tahakkuk_orani": 2.26,
       "aga_orani": 163.0,
       "ykp_orani": 0.4,

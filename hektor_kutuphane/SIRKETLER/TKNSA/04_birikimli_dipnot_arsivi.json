@@ -1,6 +1,6 @@
 {
   "kod": "TKNSA",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 15.9,
@@ -28,8 +28,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 2.3,
-      "icr_kati": -11.34,
+      "efm_yuzde": 0.0,
+      "icr_kati": -3.97,
       "tahakkuk_orani": -0.31,
       "aga_orani": 0.0,
       "ykp_orani": 1.7,
@@ -38,9 +38,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 27.1,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 0,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -11.34x (ICR zayıf)."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 428 Mn ₺ (0.4x Amortisman)<br><strong>MDV:</strong> 1.09 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -48,7 +48,7 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -1.01 Mr ₺ (ÖZK %-60.7)<br><strong>Ham YPP:</strong> -1.01 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %27.1 (450 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 10.03x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": -20,
+      "dts_delta": -35,
       "dso_delta": 2.9
     },
     "2026/03": {
@@ -73,7 +73,7 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -1.67 Mr ₺ (ÖZK %-515.3)<br><strong>Ham YPP:</strong> -1.67 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %111.1 (360 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 65.30x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 20,
+      "dts_delta": 35,
       "dso_delta": 0.5
     },
     "2026/06": {

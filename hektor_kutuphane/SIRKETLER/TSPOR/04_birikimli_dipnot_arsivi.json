@@ -1,10 +1,10 @@
 {
   "kod": "TSPOR",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 2499.1,
-      "icr_kati": -3.32,
+      "efm_yuzde": 0.0,
+      "icr_kati": -3.26,
       "tahakkuk_orani": 28.55,
       "aga_orani": 0.0,
       "ykp_orani": 1.1,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 4460.6,
+      "efm_yuzde": 0.0,
       "icr_kati": -1.41,
       "tahakkuk_orani": 32.7,
       "aga_orani": 0.0,
@@ -53,7 +53,7 @@
       "dso_delta": 50.2
     },
     "2026/03": {
-      "efm_yuzde": 1678.0,
+      "efm_yuzde": 0.0,
       "icr_kati": -2.01,
       "tahakkuk_orani": 10.62,
       "aga_orani": 0.0,

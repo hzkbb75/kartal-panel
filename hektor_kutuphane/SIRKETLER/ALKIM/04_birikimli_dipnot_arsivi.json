@@ -1,10 +1,10 @@
 {
   "kod": "ALKIM",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 288.5,
-      "icr_kati": 1.81,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -3.05,
       "aga_orani": 0.0,
       "ykp_orani": 12.1,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 157.0,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.28,
       "tahakkuk_orani": 0.22,
       "aga_orani": 0.0,
@@ -51,7 +51,7 @@
       "dso_delta": 0.2
     },
     "2026/03": {
-      "efm_yuzde": 82.9,
+      "efm_yuzde": 0.0,
       "icr_kati": -0.24,
       "tahakkuk_orani": -6.45,
       "aga_orani": 0.0,

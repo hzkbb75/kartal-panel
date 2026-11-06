@@ -1,6 +1,6 @@
 {
   "kod": "DOGUB",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -52,7 +52,7 @@
     },
     "2026/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": -6.89,
+      "icr_kati": -2.79,
       "tahakkuk_orani": -3.04,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -76,7 +76,7 @@
     },
     "2026/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": -3.79,
+      "icr_kati": -1.33,
       "tahakkuk_orani": -2.05,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

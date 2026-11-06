@@ -1,10 +1,10 @@
 {
   "kod": "MCARD",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 124.5,
-      "icr_kati": -13.22,
+      "efm_yuzde": 0.0,
+      "icr_kati": -4.63,
       "tahakkuk_orani": -102719.25,
       "aga_orani": 0.0,
       "ykp_orani": 100.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 5.0,
-      "icr_kati": 408.43,
+      "efm_yuzde": 0.0,
+      "icr_kati": 142.95,
       "tahakkuk_orani": -2992.54,
       "aga_orani": 0.0,
       "ykp_orani": 1.8,
@@ -51,8 +51,8 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 123.2,
-      "icr_kati": 1.64,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 9.58,
       "aga_orani": 123.8,
       "ykp_orani": 75.4,
@@ -76,8 +76,8 @@
       "dso_delta": 264.2
     },
     "2026/06": {
-      "efm_yuzde": 106.3,
-      "icr_kati": 3.99,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 12.67,
       "aga_orani": 42.3,
       "ykp_orani": 4.0,

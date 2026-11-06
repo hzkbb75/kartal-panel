@@ -1,9 +1,9 @@
 {
   "kod": "SURGY",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 2493.4,
+      "efm_yuzde": 0.0,
       "icr_kati": -0.13,
       "tahakkuk_orani": 12.41,
       "aga_orani": 0.0,
@@ -28,8 +28,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 378.4,
-      "icr_kati": 7.34,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 15.72,
       "aga_orani": 0.0,
       "ykp_orani": 75.7,
@@ -54,7 +54,7 @@
     },
     "2026/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": -0.63,
+      "icr_kati": -0.62,
       "tahakkuk_orani": -0.79,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -78,7 +78,7 @@
     },
     "2026/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": -0.62,
+      "icr_kati": -0.61,
       "tahakkuk_orani": -1.15,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

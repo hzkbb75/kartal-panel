@@ -1,6 +1,6 @@
 {
   "kod": "AVOD",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 90.6,
@@ -53,8 +53,8 @@
       "dso_delta": 4.1
     },
     "2026/03": {
-      "efm_yuzde": 6.7,
-      "icr_kati": -1.39,
+      "efm_yuzde": 6.1,
+      "icr_kati": -1.51,
       "tahakkuk_orani": -0.05,
       "aga_orani": 0.0,
       "ykp_orani": 0.8,
@@ -66,7 +66,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%56.5 açıldı (DSO: 81.1 gün).",
-        "🔴 Faiz karşılama oranı -1.39x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -1.51x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 3 Mn ₺ (0.2x Amortisman)<br><strong>MDV:</strong> 543 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

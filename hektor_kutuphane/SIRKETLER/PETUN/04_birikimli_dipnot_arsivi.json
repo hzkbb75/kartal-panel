@@ -1,10 +1,10 @@
 {
   "kod": "PETUN",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 7.1,
-      "icr_kati": 6.83,
+      "efm_yuzde": 1.1,
+      "icr_kati": 42.89,
       "tahakkuk_orani": -0.35,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 10.2,
-      "icr_kati": 4.06,
+      "efm_yuzde": 9.6,
+      "icr_kati": 4.29,
       "tahakkuk_orani": 1.49,
       "aga_orani": 0.4,
       "ykp_orani": 16.6,
@@ -51,8 +51,8 @@
       "dso_delta": 2.5
     },
     "2026/03": {
-      "efm_yuzde": 8.0,
-      "icr_kati": 3.36,
+      "efm_yuzde": 0.0,
+      "icr_kati": 1.18,
       "tahakkuk_orani": -1.0,
       "aga_orani": 245.1,
       "ykp_orani": 0.1,
@@ -75,8 +75,8 @@
       "dso_delta": 15.8
     },
     "2026/06": {
-      "efm_yuzde": 9.1,
-      "icr_kati": 2.88,
+      "efm_yuzde": 1.1,
+      "icr_kati": 24.0,
       "tahakkuk_orani": -1.95,
       "aga_orani": 119.6,
       "ykp_orani": 19.5,

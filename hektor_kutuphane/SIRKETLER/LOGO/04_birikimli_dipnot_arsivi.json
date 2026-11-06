@@ -1,10 +1,10 @@
 {
   "kod": "LOGO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 2704.5,
-      "icr_kati": 2.95,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -3.49,
       "aga_orani": 0.0,
       "ykp_orani": 69.8,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 2776.8,
-      "icr_kati": 3.47,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 1.47,
       "aga_orani": 17.9,
       "ykp_orani": 52.0,
@@ -51,8 +51,8 @@
       "dso_delta": 4.3
     },
     "2026/03": {
-      "efm_yuzde": 3217.6,
-      "icr_kati": 2.83,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -4.2,
       "aga_orani": 245.4,
       "ykp_orani": 7.8,
@@ -75,8 +75,8 @@
       "dso_delta": 0.1
     },
     "2026/06": {
-      "efm_yuzde": 3529.1,
-      "icr_kati": 3.57,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -5.25,
       "aga_orani": 120.4,
       "ykp_orani": 8.9,

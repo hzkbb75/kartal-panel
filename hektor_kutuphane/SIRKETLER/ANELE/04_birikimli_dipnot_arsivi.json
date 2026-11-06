@@ -1,6 +1,6 @@
 {
   "kod": "ANELE",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 19.9,
@@ -78,7 +78,7 @@
     },
     "2026/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": -212.97,
+      "icr_kati": -74.57,
       "tahakkuk_orani": -10.75,
       "aga_orani": 0.0,
       "ykp_orani": 0.3,

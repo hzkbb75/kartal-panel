@@ -1,10 +1,10 @@
 {
   "kod": "DESA",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 155.4,
-      "icr_kati": 4.15,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -15.96,
       "aga_orani": 0.0,
       "ykp_orani": 51.3,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 263.5,
-      "icr_kati": 3.12,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -11.81,
       "aga_orani": 0.3,
       "ykp_orani": 31.5,
@@ -51,7 +51,7 @@
       "dso_delta": -2.8
     },
     "2026/03": {
-      "efm_yuzde": 147.7,
+      "efm_yuzde": 95.0,
       "icr_kati": 4.78,
       "tahakkuk_orani": -3.49,
       "aga_orani": 2.8,

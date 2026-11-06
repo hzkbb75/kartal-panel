@@ -1,10 +1,10 @@
 {
   "kod": "TABGD",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 29.0,
-      "icr_kati": 6.49,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -5.56,
       "aga_orani": 0.0,
       "ykp_orani": 55.2,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 31.8,
-      "icr_kati": 7.51,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -13.72,
       "aga_orani": 4.2,
       "ykp_orani": 37.8,

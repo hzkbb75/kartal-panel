@@ -1,10 +1,10 @@
 {
   "kod": "GEDZA",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 226.5,
-      "icr_kati": 2.19,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -1.72,
       "aga_orani": 0.0,
       "ykp_orani": 2.4,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 297.2,
-      "icr_kati": 2.22,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -2.68,
       "aga_orani": 0.0,
       "ykp_orani": 1.5,
@@ -51,8 +51,8 @@
       "dso_delta": 4.1
     },
     "2026/03": {
-      "efm_yuzde": 64.7,
-      "icr_kati": 10.37,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 3.86,
       "aga_orani": 0.7,
       "ykp_orani": 7.0,
@@ -75,8 +75,8 @@
       "dso_delta": 20.4
     },
     "2026/06": {
-      "efm_yuzde": 141.2,
-      "icr_kati": 4.9,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 7.21,
       "aga_orani": 1.2,
       "ykp_orani": 7.2,

@@ -1,10 +1,10 @@
 {
   "kod": "PRKAB",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 15.8,
-      "icr_kati": -22.76,
+      "efm_yuzde": 0.0,
+      "icr_kati": -7.97,
       "tahakkuk_orani": 24.41,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 230.6,
-      "icr_kati": 0.82,
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.31,
       "tahakkuk_orani": 36.45,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -3.5
     },
     "2026/03": {
-      "efm_yuzde": 278.5,
-      "icr_kati": -0.54,
+      "efm_yuzde": 0.0,
+      "icr_kati": -0.24,
       "tahakkuk_orani": -4.22,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 17.4
     },
     "2026/06": {
-      "efm_yuzde": 975.8,
-      "icr_kati": 0.38,
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.25,
       "tahakkuk_orani": 0.11,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

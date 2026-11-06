@@ -1,10 +1,10 @@
 {
   "kod": "YAPRK",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 64.5,
-      "icr_kati": 3.54,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -2.92,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 40.4,
-      "icr_kati": 8.38,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -2.23,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -4.3
     },
     "2026/03": {
-      "efm_yuzde": 17.5,
-      "icr_kati": 10.12,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 1.02,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 15.1
     },
     "2026/06": {
-      "efm_yuzde": 30.5,
-      "icr_kati": 7.31,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 5.86,
       "aga_orani": 0.0,
       "ykp_orani": 16.7,

@@ -1,6 +1,6 @@
 {
   "kod": "DOAS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 46.8,
@@ -51,8 +51,8 @@
       "dso_delta": -4.8
     },
     "2026/03": {
-      "efm_yuzde": 9.3,
-      "icr_kati": 5.31,
+      "efm_yuzde": 4.8,
+      "icr_kati": 10.24,
       "tahakkuk_orani": 2.02,
       "aga_orani": 26.6,
       "ykp_orani": 8.1,
@@ -75,8 +75,8 @@
       "dso_delta": 5.9
     },
     "2026/06": {
-      "efm_yuzde": 7.5,
-      "icr_kati": 5.36,
+      "efm_yuzde": 5.1,
+      "icr_kati": 7.81,
       "tahakkuk_orani": 3.28,
       "aga_orani": 14.1,
       "ykp_orani": 7.7,

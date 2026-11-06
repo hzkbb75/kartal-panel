@@ -1,9 +1,9 @@
 {
   "kod": "TMSN",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 105.4,
+      "efm_yuzde": 95.0,
       "icr_kati": -0.06,
       "tahakkuk_orani": 20.32,
       "aga_orani": 0.0,
@@ -55,8 +55,8 @@
       "dso_delta": 83.4
     },
     "2026/03": {
-      "efm_yuzde": 0.6,
-      "icr_kati": 16.08,
+      "efm_yuzde": 0.0,
+      "icr_kati": 5.63,
       "tahakkuk_orani": -0.07,
       "aga_orani": 0.0,
       "ykp_orani": 0.3,

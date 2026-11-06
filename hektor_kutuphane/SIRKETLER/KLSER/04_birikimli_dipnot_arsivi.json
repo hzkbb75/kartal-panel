@@ -1,10 +1,10 @@
 {
   "kod": "KLSER",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 6.0,
-      "icr_kati": -3.52,
+      "efm_yuzde": 5.4,
+      "icr_kati": -3.94,
       "tahakkuk_orani": -3.65,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -3.52x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -3.94x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 593 Mn ₺ (1.8x Amortisman)<br><strong>MDV:</strong> 7.41 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -51,8 +51,8 @@
       "dso_delta": 2.2
     },
     "2026/03": {
-      "efm_yuzde": 0.2,
-      "icr_kati": 50.16,
+      "efm_yuzde": 0.0,
+      "icr_kati": 17.56,
       "tahakkuk_orani": -3.47,
       "aga_orani": 0.0,
       "ykp_orani": 0.7,

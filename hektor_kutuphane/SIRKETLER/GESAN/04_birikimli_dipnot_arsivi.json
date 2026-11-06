@@ -1,9 +1,9 @@
 {
   "kod": "GESAN",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 150.7,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.8,
       "tahakkuk_orani": 2.02,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 99.7,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.56,
       "tahakkuk_orani": 5.84,
       "aga_orani": 2.7,
@@ -51,7 +51,7 @@
       "dso_delta": -1.5
     },
     "2026/03": {
-      "efm_yuzde": 126.7,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.58,
       "tahakkuk_orani": 3.03,
       "aga_orani": 21.9,

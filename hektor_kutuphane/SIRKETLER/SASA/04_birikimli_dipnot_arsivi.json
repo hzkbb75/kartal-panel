@@ -1,6 +1,6 @@
 {
   "kod": "SASA",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 11.5,
@@ -54,8 +54,8 @@
       "dso_delta": 8.6
     },
     "2026/03": {
-      "efm_yuzde": 1.4,
-      "icr_kati": 7.28,
+      "efm_yuzde": 0.0,
+      "icr_kati": 2.55,
       "tahakkuk_orani": -0.76,
       "aga_orani": 28.4,
       "ykp_orani": 31.6,
@@ -78,8 +78,8 @@
       "dso_delta": 21.1
     },
     "2026/06": {
-      "efm_yuzde": 0.8,
-      "icr_kati": 14.53,
+      "efm_yuzde": 0.0,
+      "icr_kati": 5.09,
       "tahakkuk_orani": 1.09,
       "aga_orani": 0.0,
       "ykp_orani": 2.6,

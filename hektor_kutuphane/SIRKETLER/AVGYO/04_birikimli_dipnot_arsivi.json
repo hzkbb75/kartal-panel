@@ -1,10 +1,10 @@
 {
   "kod": "AVGYO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": 0.82,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -1.06,
       "aga_orani": 0.0,
       "ykp_orani": 1.3,
@@ -28,7 +28,7 @@
     },
     "2025/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": 1.89,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -3.69,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -52,7 +52,7 @@
     },
     "2026/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": 1.48,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 3.48,
       "aga_orani": 0.0,
       "ykp_orani": 45.5,

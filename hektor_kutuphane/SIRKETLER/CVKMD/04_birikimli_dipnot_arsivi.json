@@ -1,10 +1,10 @@
 {
   "kod": "CVKMD",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 2.8,
-      "icr_kati": 13.59,
+      "efm_yuzde": 0.0,
+      "icr_kati": 4.76,
       "tahakkuk_orani": 0.19,
       "aga_orani": 0.0,
       "ykp_orani": 14.8,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 2.9,
-      "icr_kati": 22.44,
+      "efm_yuzde": 0.0,
+      "icr_kati": 7.85,
       "tahakkuk_orani": -13.31,
       "aga_orani": 33.9,
       "ykp_orani": 25.0,
@@ -51,8 +51,8 @@
       "dso_delta": -10.1
     },
     "2026/03": {
-      "efm_yuzde": 2.8,
-      "icr_kati": 7.01,
+      "efm_yuzde": 0.0,
+      "icr_kati": 2.45,
       "tahakkuk_orani": -0.21,
       "aga_orani": 2873.7,
       "ykp_orani": 6.6,

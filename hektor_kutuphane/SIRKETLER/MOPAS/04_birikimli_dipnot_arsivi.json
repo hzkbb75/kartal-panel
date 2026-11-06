@@ -1,6 +1,6 @@
 {
   "kod": "MOPAS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 47.6,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 0.7,
-      "icr_kati": 100.16,
+      "efm_yuzde": 0.0,
+      "icr_kati": 35.05,
       "tahakkuk_orani": 18.7,
       "aga_orani": 21.4,
       "ykp_orani": 81.9,
@@ -52,8 +52,8 @@
       "dso_delta": -2.0
     },
     "2026/03": {
-      "efm_yuzde": 1.4,
-      "icr_kati": 59.37,
+      "efm_yuzde": 0.0,
+      "icr_kati": 20.78,
       "tahakkuk_orani": -0.88,
       "aga_orani": 0.0,
       "ykp_orani": 0.9,
@@ -76,8 +76,8 @@
       "dso_delta": 1.9
     },
     "2026/06": {
-      "efm_yuzde": 4.1,
-      "icr_kati": 21.98,
+      "efm_yuzde": 0.0,
+      "icr_kati": 7.69,
       "tahakkuk_orani": -2.91,
       "aga_orani": 0.0,
       "ykp_orani": 10.1,

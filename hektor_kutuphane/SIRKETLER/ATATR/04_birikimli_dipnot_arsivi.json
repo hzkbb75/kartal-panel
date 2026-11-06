@@ -1,10 +1,10 @@
 {
   "kod": "ATATR",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": 8.77,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -13282.73,
       "aga_orani": 0.0,
       "ykp_orani": 25.1,
@@ -28,7 +28,7 @@
     },
     "2025/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": 31.37,
+      "icr_kati": 10.98,
       "tahakkuk_orani": 27373.23,
       "aga_orani": 0.0,
       "ykp_orani": 2.7,
@@ -51,8 +51,8 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 24.5,
-      "icr_kati": -2.21,
+      "efm_yuzde": 0.0,
+      "icr_kati": -0.77,
       "tahakkuk_orani": 2.78,
       "aga_orani": 0.0,
       "ykp_orani": 0.9,
@@ -75,8 +75,8 @@
       "dso_delta": 30.2
     },
     "2026/06": {
-      "efm_yuzde": 150.3,
-      "icr_kati": 0.4,
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.21,
       "tahakkuk_orani": 7.9,
       "aga_orani": 0.0,
       "ykp_orani": 12.9,

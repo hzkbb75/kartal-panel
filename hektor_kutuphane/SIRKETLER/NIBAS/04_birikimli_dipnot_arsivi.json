@@ -1,10 +1,10 @@
 {
   "kod": "NIBAS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 275.5,
-      "icr_kati": -0.68,
+      "efm_yuzde": 0.0,
+      "icr_kati": -0.45,
       "tahakkuk_orani": 0.69,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 131.8,
-      "icr_kati": -1.6,
+      "efm_yuzde": 0.0,
+      "icr_kati": -0.66,
       "tahakkuk_orani": 5.52,
       "aga_orani": 0.0,
       "ykp_orani": 1.4,
@@ -41,7 +41,7 @@
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%5.52): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%65.2 açıldı (DSO: 179.0 gün).",
-        "🔴 Faiz karşılama oranı -1.6x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.66x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 57 Mn ₺ (15.3x Amortisman)<br><strong>MDV:</strong> 100 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -54,7 +54,7 @@
     },
     "2026/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": -0.63,
+      "icr_kati": -0.22,
       "tahakkuk_orani": -44.31,
       "aga_orani": 0.0,
       "ykp_orani": 1.2,
@@ -78,7 +78,7 @@
     },
     "2026/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": -3.27,
+      "icr_kati": -2.27,
       "tahakkuk_orani": 84.6,
       "aga_orani": 0.0,
       "ykp_orani": 21.4,

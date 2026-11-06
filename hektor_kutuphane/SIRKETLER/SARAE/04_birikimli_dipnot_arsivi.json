@@ -1,9 +1,9 @@
 {
   "kod": "SARAE",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 236.0,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.7,
       "tahakkuk_orani": 104292.33,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 266.1,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.94,
       "tahakkuk_orani": 156273.61,
       "aga_orani": 0.0,

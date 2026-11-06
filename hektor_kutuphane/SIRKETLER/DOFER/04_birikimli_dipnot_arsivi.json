@@ -1,6 +1,6 @@
 {
   "kod": "DOFER",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 62.9,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 18.5,
-      "icr_kati": 0.43,
+      "efm_yuzde": 17.4,
+      "icr_kati": 0.46,
       "tahakkuk_orani": 13.24,
       "aga_orani": 0.0,
       "ykp_orani": 0.6,
@@ -40,7 +40,7 @@
       "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%13.24): Kâr nakde dönüşmüyor.",
-        "🔴 Faiz karşılama oranı 0.43x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.46x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 51 Mn ₺ (1.1x Amortisman)<br><strong>MDV:</strong> 820 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",

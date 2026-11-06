@@ -1,10 +1,10 @@
 {
   "kod": "EGEPO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 64.5,
-      "icr_kati": 6.16,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 6.35,
       "aga_orani": 0.0,
       "ykp_orani": 8.8,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 43.4,
-      "icr_kati": 10.83,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 3.45,
       "aga_orani": 28.5,
       "ykp_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -0.5
     },
     "2026/03": {
-      "efm_yuzde": 85.8,
-      "icr_kati": 4.8,
+      "efm_yuzde": 0.0,
+      "icr_kati": 2.83,
       "tahakkuk_orani": 0.53,
       "aga_orani": 0.0,
       "ykp_orani": 2.2,
@@ -75,8 +75,8 @@
       "dso_delta": 22.7
     },
     "2026/06": {
-      "efm_yuzde": 98.6,
-      "icr_kati": 6.99,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -6.83,
       "aga_orani": 126.1,
       "ykp_orani": 4.0,

@@ -1,6 +1,6 @@
 {
   "kod": "HUBVC",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 564.0
     },
     "2026/03": {
-      "efm_yuzde": 205.9,
-      "icr_kati": 2.42,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -8.51,
       "aga_orani": 7.5,
       "ykp_orani": 0.0,
@@ -75,7 +75,7 @@
       "dso_delta": -937.8
     },
     "2026/06": {
-      "efm_yuzde": 264.5,
+      "efm_yuzde": 0.0,
       "icr_kati": -8.66,
       "tahakkuk_orani": -17.67,
       "aga_orani": 0.0,

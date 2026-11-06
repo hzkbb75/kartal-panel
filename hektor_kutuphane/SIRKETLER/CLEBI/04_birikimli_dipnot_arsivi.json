@@ -1,10 +1,10 @@
 {
   "kod": "CLEBI",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 2.2,
-      "icr_kati": 13.45,
+      "efm_yuzde": 0.0,
+      "icr_kati": 4.71,
       "tahakkuk_orani": -0.57,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 2.5,
-      "icr_kati": 13.14,
+      "efm_yuzde": 2.2,
+      "icr_kati": 14.68,
       "tahakkuk_orani": -4.74,
       "aga_orani": 0.0,
       "ykp_orani": 18.0,
@@ -51,8 +51,8 @@
       "dso_delta": -13.5
     },
     "2026/03": {
-      "efm_yuzde": 2.7,
-      "icr_kati": 9.62,
+      "efm_yuzde": 0.0,
+      "icr_kati": 3.37,
       "tahakkuk_orani": -1.11,
       "aga_orani": 0.0,
       "ykp_orani": 4.6,

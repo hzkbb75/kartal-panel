@@ -1,9 +1,9 @@
 {
   "kod": "CANTE",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 354.8,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.53,
       "tahakkuk_orani": -7.9,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 224.8,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.74,
       "tahakkuk_orani": -3.56,
       "aga_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -47.4
     },
     "2026/03": {
-      "efm_yuzde": 67.4,
-      "icr_kati": 3.68,
+      "efm_yuzde": 0.0,
+      "icr_kati": 1.29,
       "tahakkuk_orani": 1.1,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": -29.7
     },
     "2026/06": {
-      "efm_yuzde": 339.4,
-      "icr_kati": 0.48,
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.39,
       "tahakkuk_orani": -10.96,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

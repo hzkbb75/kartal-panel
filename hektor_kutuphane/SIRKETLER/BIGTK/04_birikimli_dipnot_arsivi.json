@@ -1,9 +1,9 @@
 {
   "kod": "BIGTK",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 10.4,
+      "efm_yuzde": 0.0,
       "icr_kati": -27.02,
       "tahakkuk_orani": -8.21,
       "aga_orani": 0.0,
@@ -51,7 +51,7 @@
       "dso_delta": -17.6
     },
     "2026/03": {
-      "efm_yuzde": 134.7,
+      "efm_yuzde": 95.0,
       "icr_kati": 11.57,
       "tahakkuk_orani": 3.83,
       "aga_orani": 582.1,

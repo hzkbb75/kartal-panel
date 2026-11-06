@@ -1,10 +1,10 @@
 {
   "kod": "OTTO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 406.9,
-      "icr_kati": 5.72,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -2.49,
       "aga_orani": 0.0,
       "ykp_orani": 1.8,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 281.4,
-      "icr_kati": 5.12,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -1.6,
       "aga_orani": 34.2,
       "ykp_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 1.6
     },
     "2026/03": {
-      "efm_yuzde": 7734.5,
-      "icr_kati": 0.12,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 1.57,
       "aga_orani": 652.7,
       "ykp_orani": 1.4,
@@ -75,8 +75,8 @@
       "dso_delta": -34.0
     },
     "2026/06": {
-      "efm_yuzde": 78.1,
-      "icr_kati": 4.37,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -0.08,
       "aga_orani": 3764.8,
       "ykp_orani": 0.0,

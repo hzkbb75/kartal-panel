@@ -1,10 +1,10 @@
 {
   "kod": "PCILT",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 378.8,
-      "icr_kati": 24.41,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -3.43,
       "aga_orani": 0.0,
       "ykp_orani": 7.6,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 1079.0,
-      "icr_kati": 15.56,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -2.3,
       "aga_orani": 0.0,
       "ykp_orani": 8.4,
@@ -51,8 +51,8 @@
       "dso_delta": 0.9
     },
     "2026/03": {
-      "efm_yuzde": 857.4,
-      "icr_kati": 8.45,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -6.09,
       "aga_orani": 0.0,
       "ykp_orani": 14.3,
@@ -75,8 +75,8 @@
       "dso_delta": 11.6
     },
     "2026/06": {
-      "efm_yuzde": 1657.8,
-      "icr_kati": 8.46,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -3.62,
       "aga_orani": 0.0,
       "ykp_orani": 11.4,

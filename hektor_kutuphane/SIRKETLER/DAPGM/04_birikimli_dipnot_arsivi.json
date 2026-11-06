@@ -1,9 +1,9 @@
 {
   "kod": "DAPGM",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 246.5,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.16,
       "tahakkuk_orani": 1.51,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 158.4,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.51,
       "tahakkuk_orani": 5.64,
       "aga_orani": 0.1,
@@ -51,7 +51,7 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 255.2,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.16,
       "tahakkuk_orani": -0.6,
       "aga_orani": 0.0,
@@ -75,7 +75,7 @@
       "dso_delta": 0.0
     },
     "2026/06": {
-      "efm_yuzde": 178.7,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.33,
       "tahakkuk_orani": 0.45,
       "aga_orani": 0.0,

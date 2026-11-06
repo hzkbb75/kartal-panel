@@ -1,6 +1,6 @@
 {
   "kod": "ECOGR",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 50.5,
@@ -52,8 +52,8 @@
       "dso_delta": 36.6
     },
     "2026/03": {
-      "efm_yuzde": 9.7,
-      "icr_kati": 3.68,
+      "efm_yuzde": 1.7,
+      "icr_kati": 21.18,
       "tahakkuk_orani": -0.29,
       "aga_orani": 14.5,
       "ykp_orani": 57.4,
@@ -76,8 +76,8 @@
       "dso_delta": 38.5
     },
     "2026/06": {
-      "efm_yuzde": 2.4,
-      "icr_kati": 8.37,
+      "efm_yuzde": 0.0,
+      "icr_kati": 2.93,
       "tahakkuk_orani": 0.32,
       "aga_orani": 1.3,
       "ykp_orani": 59.5,

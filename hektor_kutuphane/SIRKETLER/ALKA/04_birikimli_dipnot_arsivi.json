@@ -1,10 +1,10 @@
 {
   "kod": "ALKA",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 94.2,
-      "icr_kati": 1.15,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -0.98,
       "aga_orani": 0.0,
       "ykp_orani": 13.0,

@@ -1,6 +1,6 @@
 {
   "kod": "TLMAN",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 70.0,
@@ -52,7 +52,7 @@
       "dso_delta": -3.7
     },
     "2026/03": {
-      "efm_yuzde": 110.5,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.0,
       "tahakkuk_orani": 4.86,
       "aga_orani": 0.0,
@@ -76,7 +76,7 @@
       "dso_delta": 12.3
     },
     "2026/06": {
-      "efm_yuzde": 129.8,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.97,
       "tahakkuk_orani": 6.75,
       "aga_orani": 0.0,

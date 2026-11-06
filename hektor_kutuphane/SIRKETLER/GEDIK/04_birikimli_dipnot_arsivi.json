@@ -1,6 +1,6 @@
 {
   "kod": "GEDIK",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 13.9,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 6.4,
-      "icr_kati": 9.05,
+      "efm_yuzde": 0.5,
+      "icr_kati": 106.5,
       "tahakkuk_orani": 1.81,
       "aga_orani": 1.1,
       "ykp_orani": 12.3,
@@ -51,8 +51,8 @@
       "dso_delta": -14.2
     },
     "2026/03": {
-      "efm_yuzde": 1.5,
-      "icr_kati": 14.39,
+      "efm_yuzde": 0.0,
+      "icr_kati": 5.04,
       "tahakkuk_orani": 5.31,
       "aga_orani": 3.1,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 3.0
     },
     "2026/06": {
-      "efm_yuzde": 2.0,
-      "icr_kati": 14.51,
+      "efm_yuzde": 0.0,
+      "icr_kati": 5.08,
       "tahakkuk_orani": 3.91,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

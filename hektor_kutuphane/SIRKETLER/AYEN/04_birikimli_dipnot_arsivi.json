@@ -1,6 +1,6 @@
 {
   "kod": "AYEN",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 20.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 16.3,
-      "icr_kati": 2.57,
+      "efm_yuzde": 11.0,
+      "icr_kati": 3.82,
       "tahakkuk_orani": -2.65,
       "aga_orani": 0.0,
       "ykp_orani": 15.8,

@@ -1,10 +1,10 @@
 {
   "kod": "BLCYT",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": 0.51,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 8.99,
       "aga_orani": 0.0,
       "ykp_orani": 85.8,
@@ -28,8 +28,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 14764.4,
-      "icr_kati": 1.52,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 6.48,
       "aga_orani": 0.0,
       "ykp_orani": 82.2,
@@ -53,7 +53,7 @@
       "dso_delta": 16.0
     },
     "2026/03": {
-      "efm_yuzde": 63704.2,
+      "efm_yuzde": 0.0,
       "icr_kati": -0.02,
       "tahakkuk_orani": -2.66,
       "aga_orani": 0.0,
@@ -78,7 +78,7 @@
     },
     "2026/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": 0.34,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -0.86,
       "aga_orani": 0.0,
       "ykp_orani": 88.7,

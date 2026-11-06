@@ -1,10 +1,10 @@
 {
   "kod": "PKENT",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": -11.93,
+      "icr_kati": -4.18,
       "tahakkuk_orani": -6.13,
       "aga_orani": 0.0,
       "ykp_orani": 0.5,
@@ -28,7 +28,7 @@
     },
     "2025/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": -4.69,
+      "icr_kati": -1.64,
       "tahakkuk_orani": -16.88,
       "aga_orani": 0.0,
       "ykp_orani": 0.8,
@@ -51,8 +51,8 @@
       "dso_delta": -91.6
     },
     "2026/03": {
-      "efm_yuzde": 26.0,
-      "icr_kati": -44.98,
+      "efm_yuzde": 0.0,
+      "icr_kati": -15.74,
       "tahakkuk_orani": -9.6,
       "aga_orani": 0.0,
       "ykp_orani": 0.2,
@@ -76,7 +76,7 @@
     },
     "2026/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": -18.26,
+      "icr_kati": -6.39,
       "tahakkuk_orani": -8.33,
       "aga_orani": 0.0,
       "ykp_orani": 0.7,

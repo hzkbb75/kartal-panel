@@ -1,10 +1,10 @@
 {
   "kod": "ODINE",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 20.4,
-      "icr_kati": 25.14,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -18.64,
       "aga_orani": 0.0,
       "ykp_orani": 81.8,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 13.1,
-      "icr_kati": 0.6,
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.21,
       "tahakkuk_orani": -22.37,
       "aga_orani": 0.0,
       "ykp_orani": 0.8,
@@ -51,8 +51,8 @@
       "dso_delta": -26.2
     },
     "2026/03": {
-      "efm_yuzde": 15.4,
-      "icr_kati": 25.02,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -6.67,
       "aga_orani": 21009.4,
       "ykp_orani": 77.3,
@@ -75,8 +75,8 @@
       "dso_delta": 12.4
     },
     "2026/06": {
-      "efm_yuzde": 12.6,
-      "icr_kati": 17.71,
+      "efm_yuzde": 0.0,
+      "icr_kati": 6.2,
       "tahakkuk_orani": -9.45,
       "aga_orani": 0.0,
       "ykp_orani": 0.7,

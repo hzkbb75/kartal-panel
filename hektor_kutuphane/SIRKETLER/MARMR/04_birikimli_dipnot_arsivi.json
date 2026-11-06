@@ -1,6 +1,6 @@
 {
   "kod": "MARMR",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2026/03": {
       "efm_yuzde": 0.0,
@@ -28,7 +28,7 @@
     },
     "2026/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": -8.29,
+      "icr_kati": -8.21,
       "tahakkuk_orani": -17.13,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

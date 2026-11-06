@@ -1,6 +1,6 @@
 {
   "kod": "YATAS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 22.6,
@@ -51,8 +51,8 @@
       "dso_delta": -2.1
     },
     "2026/03": {
-      "efm_yuzde": 1.7,
-      "icr_kati": 15.15,
+      "efm_yuzde": 0.0,
+      "icr_kati": 5.3,
       "tahakkuk_orani": 2.3,
       "aga_orani": 1874.1,
       "ykp_orani": 13.9,

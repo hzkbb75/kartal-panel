@@ -1,10 +1,10 @@
 {
   "kod": "LRSHO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 2.2,
-      "icr_kati": 32.06,
+      "efm_yuzde": 0.0,
+      "icr_kati": 11.22,
       "tahakkuk_orani": -1.93,
       "aga_orani": 0.0,
       "ykp_orani": 16.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 8.5,
-      "icr_kati": 9.57,
+      "efm_yuzde": 0.0,
+      "icr_kati": 3.35,
       "tahakkuk_orani": -3.91,
       "aga_orani": 1.6,
       "ykp_orani": 8.4,

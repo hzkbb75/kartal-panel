@@ -32,7 +32,7 @@ OYAKC;ÇİMENTO;Korunaklı;5;68.0;0;19.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0
 TRGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Korunaklı;5;50.0;0;89.65;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;89.65;False;False;<span class='badge-fail'>%4.9 🚨</span>
 SASA;KİMYASAL MADDELER;Hendeksiz;5;27.0;0;1.63;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.63;False;False;<span class='badge-fail'>%0.3 🚨</span>
 AKSEN;ENERJİ;Korunaklı;5;54.0;0;66.55;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;66.55;False;False;<span class='badge-warn'>%5.4 ⚠️</span>
-MPARK;İLAÇ & SAĞLIK;Korunaklı;5;49.5;100;429.25;42925.0;3.11;0.0;0.0;0;-100;SAT / AZALT;10.31;0.0;42925.0;389.14;False;False;<span class='badge-ok'>%16.2 🟢</span>
+MPARK;İLAÇ & SAĞLIK;Korunaklı;5;41.5;100;429.25;42925.0;3.11;0.0;0.0;0;-100;SAT / AZALT;10.31;0.0;42925.0;389.14;False;False;<span class='badge-warn'>%16.2 ⚠️</span>
 MGROS;PERAKENDE;Kırılgan Hendekli;5;58.0;0;452.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;452.5;False;False;<span class='badge-warn'>%5.6 ⚠️</span>
 ZRGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Korunaklı;5;61.0;0;16.18;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.18;False;False;<span class='badge-warn'>%7.4 ⚠️</span>
 TOASO;OTOMOTİV;Hendeksiz;5;52.0;0;222.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;222.7;False;False;<span class='badge-ok'>%24.1 🟢</span>
@@ -57,7 +57,7 @@ GUBRF;KİMYASAL MADDELER;Korunaklı;7;69.0;0;289.75;0.0;0.0;2.12;29259.46;101;10
 TRMET;MADENCİLİK;Korunaklı;5;49.0;0;109.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;109.1;False;False;<span class='badge-warn'>%7.5 ⚠️</span>
 DOHOL;FİNANS-DIŞI HOLDİNG;Korunaklı;7;65.5;0;17.56;0.0;0.0;1.98;27327.23;1556;1556;AL / EKLE;0.0;2.313;27323.36;17.56;True;False;<span class='badge-warn'>%8.3 ⚠️</span>
 KRDMA;DEMİR & ÇELİK;Kırılgan Hendekli;7;74.0;0;32.16;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;32.16;False;False;<span class='badge-warn'>%5.0 ⚠️</span>
-ALARK;FİNANS-DIŞI HOLDİNG;Kırılgan Hendekli;8;64.5;0;101.3;0.0;0.0;1.35;18632.2;184;184;AL / EKLE;0.0;1.545;18639.2;101.3;True;False;<span class='badge-warn'>%7.6 ⚠️</span>
+ALARK;FİNANS-DIŞI HOLDİNG;Kırılgan Hendekli;8;66.5;0;101.3;0.0;0.0;1.4;19322.28;191;191;AL / EKLE;0.0;1.61;19348.3;101.3;True;False;<span class='badge-warn'>%7.6 ⚠️</span>
 ARCLK;DAYANIKLI TÜKETİM;Hendeksiz;5;27.0;0;70.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;70.4;False;False;<span class='badge-fail'>%1.9 🚨</span>
 ISMEN;MENKUL DEĞERLER;Hendeksiz;3;48.0;0;26.66;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;26.66;False;False;<span class='badge-warn'>%20.8 ⚠️</span>
 GLRMK;İNŞAAT;Hendeksiz;4;61.5;0;116.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;116.8;False;False;<span class='badge-ok'>%13.7 🟢</span>
@@ -68,7 +68,7 @@ OTKAR;SAVUNMA SANAYİ;Hendeksiz;2;15.0;0;307.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGED
 AKSA;KİMYASAL MADDELER;Kırılgan Hendekli;6;70.0;0;9.92;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.92;False;True;<span class='badge-warn'>%10.8 ⚠️</span>
 AKCNS;ÇİMENTO;Hendeksiz;1;23.0;0;184.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;184.5;False;False;<span class='badge-fail'>%3.1 🚨</span>
 VERUS;FİNANS-DIŞI HOLDİNG;Korunaklı;6;49.0;0;486.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;486.0;False;False;<span class='badge-fail'>%-2.4 🚨</span>
-TTRAK;OTOMOTİV;Kırılgan Hendekli;4;32.5;0;369.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;369.75;False;False;<span class='badge-fail'>%-3.5 🚨</span>
+TTRAK;OTOMOTİV;Kırılgan Hendekli;4;35.5;0;369.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;369.75;False;False;<span class='badge-fail'>%-3.5 🚨</span>
 TBORG;İÇECEK;Korunaklı;3;63.0;0;115.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;115.5;False;False;<span class='badge-warn'>%10.5 ⚠️</span>
 ECILC;İLAÇ & SAĞLIK;Kırılgan Hendekli;5;34.0;0;48.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;48.4;False;False;<span class='badge-fail'>%-2.7 🚨</span>
 GLYHO;FİNANS-DIŞI HOLDİNG;Korunaklı;7;80.0;0;16.35;0.0;0.0;2.58;35608.21;2178;2178;AL / EKLE;0.0;3.03;35610.3;16.35;True;False;<span class='badge-ok'>%38.5 🚀</span>
@@ -152,7 +152,7 @@ DMRGD;GIDA;Korunaklı;8;61.0;0;7.44;0.0;0.0;1.81;24980.95;3358;3358;AL / EKLE;0.
 BMSTL;DEMİR & ÇELİK;Hendeksiz;7;26.5;0;38.06;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;38.06;False;False;<span class='badge-fail'>%-0.7 🚨</span>
 EFOR;İÇECEK;Hendeksiz;3;37.5;0;12.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.05;False;False;<span class='badge-warn'>%7.7 ⚠️</span>
 ECOGR;ENERJİ;Korunaklı;5;34.5;0;18.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.5;False;False;<span class='badge-fail'>%2.1 🚨</span>
-ASUZU;OTOMOTİV;Hendeksiz;2;6.0;0;38.52;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;38.52;False;False;<span class='badge-fail'>%-5.3 🚨</span>
+ASUZU;OTOMOTİV;Hendeksiz;2;13.0;0;38.52;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;38.52;False;False;<span class='badge-fail'>%-5.3 🚨</span>
 PAGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Korunaklı;6;85.0;0;110.0;0.0;0.0;1.56;21530.55;196;196;AL / EKLE;0.0;1.859;21560.0;110.0;True;False;<span class='badge-warn'>%10.4 ⚠️</span>
 TRCAS;PETROL & PETRO-KİMYA & GAZ;Hendeksiz;5;59.5;0;39.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;39.5;False;False;<span class='badge-warn'>%6.9 ⚠️</span>
 GWIND;ENERJİ;Korunaklı;5;68.5;0;17.92;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;17.92;False;False;<span class='badge-ok'>%11.9 🟢</span>
@@ -172,9 +172,9 @@ DOFRB;BİLGİSAYAR & YAZILIM;Hendeksiz;5;22.0;0;59.35;0.0;0.0;0.0;0.0;0;0;KORU /
 MOBTL;TELEKOM TEKNOLOJİLERİ;Hendeksiz;5;50.5;0;8.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.74;False;False;<span class='badge-warn'>%8.9 ⚠️</span>
 HTTBT;BİLGİSAYAR & YAZILIM;Korunaklı;7;57.5;0;30.0;0.0;0.0;1.67;23048.73;768;768;AL / EKLE;0.0;1.94;23040.0;30.0;True;False;<span class='badge-warn'>%12.0 ⚠️</span>
 KLKIM;CAM & SERAMİK;Hendeksiz;4;47.0;0;19.83;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;19.83;False;False;<span class='badge-warn'>%10.1 ⚠️</span>
-PSGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Hendeksiz;5;51.5;0;1.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.36;False;False;<span class='badge-warn'>%5.9 ⚠️</span>
+PSGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Hendeksiz;5;59.5;0;1.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.36;False;False;<span class='badge-warn'>%5.9 ⚠️</span>
 GARFA;FAKTORİNG;Hendeksiz;0;24.0;0;22.64;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;22.64;False;False;<span class='badge-fail'>%0.0 🚨</span>
-GRTHO;FİNANS-DIŞI HOLDİNG;Hendeksiz;3;42.5;0;73.95;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;73.95;False;False;<span class='badge-warn'>%18.6 ⚠️</span>
+GRTHO;FİNANS-DIŞI HOLDİNG;Hendeksiz;3;50.5;0;73.95;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;73.95;False;False;<span class='badge-ok'>%18.6 🟢</span>
 POLTK;KİMYASAL MADDELER;Hendeksiz;3;39.0;0;2440.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2440.0;False;False;<span class='badge-fail'>%-13.3 🚨</span>
 MEGMT;DEMİR & ÇELİK;Hendeksiz;3;69.0;0;3.32;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.32;False;False;<span class='badge-ok'>%22.0 🟢</span>
 EGGUB;KİMYASAL MADDELER;Korunaklı;6;72.0;0;84.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;84.0;False;True;<span class='badge-warn'>%6.2 ⚠️</span>
@@ -237,7 +237,7 @@ ARSAN;TEKSTİL & TEKSTİL YAN SANAYİ;Korunaklı;6;45.0;0;3.25;0.0;0.0;0.0;0.0;0
 DAPGM;İNŞAAT;Korunaklı;5;38.0;0;2.28;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.28;False;False;<span class='badge-fail'>%0.6 🚨</span>
 LIDER;LOJİSTİK;Kırılgan Hendekli;5;38.5;0;7.53;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.53;False;False;<span class='badge-fail'>%1.4 🚨</span>
 TSPOR;SPOR;Hendeksiz;6;32.0;0;0.77;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.77;False;False;<span class='badge-warn'>%6.4 ⚠️</span>
-VESBE;DAYANIKLI TÜKETİM;Hendeksiz;3;27.5;0;3.49;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.49;False;False;<span class='badge-fail'>%-5.5 🚨</span>
+VESBE;DAYANIKLI TÜKETİM;Hendeksiz;3;29.5;0;3.49;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.49;False;False;<span class='badge-fail'>%-5.5 🚨</span>
 ATAKP;GIDA;Hendeksiz;5;21.0;0;39.64;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;39.64;False;False;<span class='badge-fail'>%-5.2 🚨</span>
 TMSN;OTOMOTİV;Kırılgan Hendekli;4;40.0;0;48.74;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;48.74;False;False;<span class='badge-fail'>%-14.9 🚨</span>
 ATATP;BİLGİSAYAR & YAZILIM;Korunaklı;4;75.0;0;206.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;206.1;False;False;<span class='badge-ok'>%36.4 🟢</span>
@@ -245,7 +245,7 @@ BOBET;ÇİMENTO;Hendeksiz;4;41.0;0;14.62;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;
 BIOEN;ENERJİ;Hendeksiz;3;19.0;0;11.21;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.21;False;False;<span class='badge-fail'>%1.8 🚨</span>
 SRVGY;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Korunaklı;5;79.0;0;1.81;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.81;False;False;<span class='badge-warn'>%7.5 ⚠️</span>
 KPEKS;KİMYASAL MADDELER;Hendeksiz;4;46.0;0;46.34;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;46.34;False;False;<span class='badge-warn'>%6.9 ⚠️</span>
-BJKAS;SPOR;Hendeksiz;5;32.0;0;1.23;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.23;False;False;<span class='badge-fail'>%-24.7 🚨</span>
+BJKAS;SPOR;Hendeksiz;5;34.0;0;1.23;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.23;False;False;<span class='badge-fail'>%-24.7 🚨</span>
 ADEL;DİĞER İMALAT;Hendeksiz;4;11.5;0;21.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;21.0;False;False;<span class='badge-fail'>%-3.8 🚨</span>
 ALGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Korunaklı;4;32.5;0;2.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.75;False;False;<span class='badge-fail'>%2.1 🚨</span>
 KLGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Kırılgan Hendekli;4;40.0;0;3.71;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.71;False;False;<span class='badge-fail'>%-2.6 🚨</span>
@@ -269,7 +269,7 @@ KZBGY;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Hendeksiz;2;46.5;0;1.15;0.0;0.0;0.0;0.0;
 INGRM;BİLGİSAYAR & YAZILIM;Hendeksiz;5;25.0;0;216.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;216.0;False;False;<span class='badge-fail'>%0.9 🚨</span>
 ENDAE;ENERJİ;Korunaklı;8;44.0;0;10.71;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.71;False;False;<span class='badge-fail'>%1.4 🚨</span>
 NETAS;TELEKOM TEKNOLOJİLERİ;Hendeksiz;9;38.0;0;66.85;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;66.85;False;False;<span class='badge-fail'>%0.0 🚨</span>
-VESTL;ELEKTRİK MALZEMELERİ;Hendeksiz;2;24.0;0;13.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;13.25;False;False;<span class='badge-fail'>%-44.5 🚨</span>
+VESTL;ELEKTRİK MALZEMELERİ;Hendeksiz;2;27.0;0;13.25;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;13.25;False;False;<span class='badge-fail'>%-44.5 🚨</span>
 PARSN;OTOMOTİV YAN SANAYİ;Hendeksiz;3;32.0;0;50.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;50.5;False;False;<span class='badge-fail'>%-2.5 🚨</span>
 MERIT;TURİZM, OTEL, EĞLENCE;Hendeksiz;3;48.0;0;12.68;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.68;False;False;<span class='badge-fail'>%4.1 🚨</span>
 ESCAR;LOJİSTİK;Kırılgan Hendekli;7;37.5;0;9.08;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.08;False;False;<span class='badge-fail'>%2.5 🚨</span>
@@ -280,13 +280,13 @@ MOPAS;PERAKENDE;Hendeksiz;6;62.5;0;15.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0
 BIENY;CAM & SERAMİK;Hendeksiz;3;24.0;0;12.97;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.97;False;False;<span class='badge-fail'>%-6.4 🚨</span>
 AFYON;ÇİMENTO;Kırılgan Hendekli;5;22.0;0;12.26;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.26;False;False;<span class='badge-fail'>%1.8 🚨</span>
 PRKAB;ELEKTRİK MALZEMELERİ;Hendeksiz;2;30.0;0;18.61;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;18.61;False;False;<span class='badge-fail'>%-43.1 🚨</span>
-GOLTS;ÇİMENTO;Korunaklı;6;74.5;0;225.5;0.0;0.0;1.35;18632.2;83;83;AL / EKLE;0.0;1.555;18716.5;225.5;True;False;<span class='badge-warn'>%5.8 ⚠️</span>
+GOLTS;ÇİMENTO;Korunaklı;6;74.5;0;225.5;0.0;0.0;1.36;18770.22;83;83;AL / EKLE;0.0;1.555;18716.5;225.5;True;False;<span class='badge-warn'>%5.8 ⚠️</span>
 YIGIT;OTOMOTİV YAN SANAYİ;Hendeksiz;2;21.5;0;13.47;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;13.47;False;False;<span class='badge-fail'>%0.8 🚨</span>
 LYDHO;FİNANS-DIŞI HOLDİNG;Hendeksiz;4;40.0;0;19.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;19.0;False;False;<span class='badge-fail'>%-5.1 🚨</span>
 TATEN;ENERJİ;Korunaklı;4;42.0;0;3.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.8;False;False;<span class='badge-fail'>%-6.0 🚨</span>
 DESA;TEKSTİL & TEKSTİL YAN SANAYİ;Korunaklı;6;75.0;0;8.21;0.0;0.0;1.37;18908.24;2303;2303;AL / EKLE;0.0;1.57;18907.63;8.21;True;False;<span class='badge-warn'>%12.0 ⚠️</span>
 UFUK;FİNANS-DIŞI HOLDİNG;Hendeksiz;3;34.0;0;90.9;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;90.9;False;False;<span class='badge-fail'>%3.0 🚨</span>
-HUNER;ENERJİ;Korunaklı;3;41.5;0;3.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.87;False;False;<span class='badge-fail'>%-1.4 🚨</span>
+HUNER;ENERJİ;Korunaklı;3;44.5;0;3.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.87;False;False;<span class='badge-fail'>%-1.4 🚨</span>
 GSDHO;FİNANS-DIŞI HOLDİNG;Korunaklı;6;51.0;0;4.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.05;False;False;<span class='badge-fail'>%2.3 🚨</span>
 PEKGY;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Hendeksiz;5;28.0;0;0.88;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.88;False;False;<span class='badge-fail'>%4.8 🚨</span>
 KAREL;TELEKOM TEKNOLOJİLERİ;Hendeksiz;5;35.0;0;4.42;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.42;False;False;<span class='badge-fail'>%-14.9 🚨</span>
@@ -307,7 +307,7 @@ TURGG;İNŞAAT;Hendeksiz;5;39.0;0;26.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0
 PENTA;BİLGİSAYAR & YAZILIM;Hendeksiz;3;23.5;0;9.15;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.15;False;False;<span class='badge-fail'>%3.6 🚨</span>
 PLTUR;TURİZM, OTEL, EĞLENCE;Korunaklı;5;78.0;0;14.62;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.62;False;False;<span class='badge-warn'>%6.0 ⚠️</span>
 ZERGY;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Hendeksiz;4;23.5;0;5.28;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.28;False;False;<span class='badge-warn'>%8.1 ⚠️</span>
-PCILT;MESLEKİ, BİLİMSEL VE TEKNİK FAALİYETLER;Kırılgan Hendekli;6;66.0;0;31.28;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;31.28;False;True;<span class='badge-ok'>%20.6 🟢</span>
+PCILT;MESLEKİ, BİLİMSEL VE TEKNİK FAALİYETLER;Kırılgan Hendekli;6;58.0;0;31.28;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;31.28;False;True;<span class='badge-warn'>%20.6 ⚠️</span>
 MARMR;FİNANS-DIŞI HOLDİNG;Hendeksiz;5;36.0;0;1.15;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.15;False;False;<span class='badge-fail'>%-17.3 🚨</span>
 ATATR;TURİZM, OTEL, EĞLENCE;Hendeksiz;4;68.0;0;4.36;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.36;False;False;<span class='badge-ok'>%12.1 🟢</span>
 VSNMD;MADENCİLİK;Hendeksiz;2;30.0;0;20.24;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;20.24;False;False;<span class='badge-fail'>%-3.5 🚨</span>
@@ -327,7 +327,7 @@ SANKO;PAZARLAMA;Hendeksiz;2;10.0;0;20.96;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;
 FMIZP;OTOMOTİV YAN SANAYİ;Korunaklı;6;59.0;0;214.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;214.1;False;True;<span class='badge-ok'>%21.2 🟢</span>
 ALKIM;KİMYASAL MADDELER;Hendeksiz;3;38.5;0;10.09;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.09;False;False;<span class='badge-fail'>%-2.9 🚨</span>
 ALKA;ORMAN, KAĞIT & KAĞIT ÜRÜNLERİ;Hendeksiz;3;34.5;0;4.87;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.87;False;False;<span class='badge-fail'>%-1.2 🚨</span>
-FRMPL;YAPI MALZEMELERİ;Korunaklı;7;73.0;0;18.96;0.0;0.0;2.28;31467.72;1660;1660;AL / EKLE;0.0;2.677;31473.6;18.96;True;False;<span class='badge-warn'>%7.1 ⚠️</span>
+FRMPL;YAPI MALZEMELERİ;Korunaklı;7;73.0;0;18.96;0.0;0.0;2.29;31605.74;1667;1667;AL / EKLE;0.0;2.677;31606.32;18.96;True;False;<span class='badge-warn'>%7.1 ⚠️</span>
 BIGEN;ENERJİ;Korunaklı;6;46.0;0;5.63;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.63;False;False;<span class='badge-fail'>%-0.1 🚨</span>
 KZGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Hendeksiz;3;36.0;0;16.26;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.26;False;False;<span class='badge-fail'>%-10.0 🚨</span>
 PNSUT;GIDA;Kırılgan Hendekli;5;27.0;0;9.24;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.24;False;False;<span class='badge-fail'>%-2.5 🚨</span>
@@ -348,7 +348,7 @@ BINBN;BİLGİSAYAR & YAZILIM;Hendeksiz;4;37.0;0;27.12;0.0;0.0;0.0;0.0;0;0;KORU /
 TKNKA;KİMYASAL MADDELER;Kırılgan Hendekli;7;35.0;0;28.88;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;28.88;False;False;<span class='badge-fail'>%0.6 🚨</span>
 SAFKR;MAKİNE;Kırılgan Hendekli;6;52.0;0;14.35;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.35;False;True;<span class='badge-warn'>%12.5 ⚠️</span>
 AZTEK;BİLGİSAYAR & YAZILIM;Kırılgan Hendekli;4;38.0;0;2.78;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.78;False;False;<span class='badge-fail'>%-17.6 🚨</span>
-MNDRS;TEKSTİL & TEKSTİL YAN SANAYİ;Kırılgan Hendekli;7;56.0;0;9.38;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.38;False;False;<span class='badge-fail'>%3.0 🚨</span>
+MNDRS;TEKSTİL & TEKSTİL YAN SANAYİ;Kırılgan Hendekli;7;58.0;0;9.38;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.38;False;False;<span class='badge-fail'>%3.0 🚨</span>
 TSGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Korunaklı;5;46.5;0;4.09;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.09;False;False;<span class='badge-fail'>%1.4 🚨</span>
 SURGY;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Kırılgan Hendekli;7;42.0;0;16.59;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;16.59;False;False;<span class='badge-fail'>%0.1 🚨</span>
 ALCTL;TELEKOM TEKNOLOJİLERİ;Hendeksiz;2;30.5;0;69.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;69.05;False;False;<span class='badge-fail'>%0.1 🚨</span>
@@ -362,7 +362,7 @@ DURDO;ORMAN, KAĞIT & KAĞIT ÜRÜNLERİ;Kırılgan Hendekli;5;26.0;0;5.68;0.0;0
 REEDR;TELEKOM TEKNOLOJİLERİ;Hendeksiz;4;37.0;0;2.67;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.67;False;False;<span class='badge-fail'>%-6.9 🚨</span>
 ESCOM;BİLGİSAYAR & YAZILIM;Hendeksiz;5;69.0;0;3.56;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.56;False;False;<span class='badge-ok'>%41.0 🟢</span>
 MACKO;TURİZM, OTEL, EĞLENCE;Korunaklı;4;72.0;0;24.54;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;24.54;False;False;<span class='badge-ok'>%46.2 🚀</span>
-RALYH;FİNANS-DIŞI HOLDİNG;Korunaklı;6;81.5;0;6.86;0.0;0.0;1.52;20978.48;3058;3058;AL / EKLE;0.0;1.756;20977.88;6.86;True;False;<span class='badge-ok'>%33.1 🟢</span>
+RALYH;FİNANS-DIŞI HOLDİNG;Korunaklı;6;85.5;0;6.86;0.0;0.0;1.56;21530.55;3139;3139;AL / EKLE;0.0;1.873;21533.54;6.86;True;False;<span class='badge-ok'>%33.1 🚀</span>
 UCAYM;İNŞAAT;Hendeksiz;3;24.0;0;11.45;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.45;False;False;<span class='badge-warn'>%6.4 ⚠️</span>
 IZFAS;KİMYASAL MADDELER;Kırılgan Hendekli;5;45.0;0;14.95;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.95;False;False;<span class='badge-fail'>%-9.6 🚨</span>
 KIMMR;PERAKENDE;Hendeksiz;5;59.5;0;10.66;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.66;False;False;<span class='badge-warn'>%14.7 ⚠️</span>
@@ -380,7 +380,7 @@ SMRVA;VARLIK YÖNETİMİ;Hendeksiz;4;25.0;0;4.47;0.0;0.0;0.0;0.0;0;0;KORU / DENG
 ZGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Hendeksiz;4;72.0;0;12.41;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.41;False;False;<span class='badge-ok'>%50.1 🚀</span>
 LINK;BİLGİSAYAR & YAZILIM;Korunaklı;6;70.0;0;2.8;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.8;False;False;<span class='badge-warn'>%15.6 ⚠️</span>
 KTSKR;GIDA;Hendeksiz;1;32.0;0;51.35;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;51.35;False;False;<span class='badge-fail'>%-1.0 🚨</span>
-TEHOL;FİNANS-DIŞI HOLDİNG;Kırılgan Hendekli;6;69.5;0;1.21;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.21;False;False;<span class='badge-ok'>%35.4 🟢</span>
+TEHOL;FİNANS-DIŞI HOLDİNG;Kırılgan Hendekli;6;73.5;0;1.21;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.21;False;False;<span class='badge-ok'>%35.4 🚀</span>
 GUNDG;GIDA;Hendeksiz;3;29.0;0;65.6;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;65.6;False;False;<span class='badge-fail'>%-9.0 🚨</span>
 LKMNH;İLAÇ & SAĞLIK;Korunaklı;5;28.0;0;11.28;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.28;False;False;<span class='badge-fail'>%4.6 🚨</span>
 CRDFA;ALT PAZAR;Hendeksiz;0;31.0;0;7.48;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.48;False;False;<span class='badge-fail'>%0.0 🚨</span>
@@ -419,13 +419,13 @@ BVSAN;MAKİNE;Hendeksiz;4;25.5;0;57.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0
 BURVA;MAKİNE;Hendeksiz;4;11.0;0;258.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;258.0;False;False;<span class='badge-fail'>%-4.0 🚨</span>
 MERCN;KİMYASAL MADDELER;Hendeksiz;4;49.0;0;3.17;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.17;False;False;<span class='badge-warn'>%6.3 ⚠️</span>
 FRIGO;GIDA;Hendeksiz;6;17.5;0;2.13;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.13;False;False;<span class='badge-fail'>%-10.0 🚨</span>
-LXGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Hendeksiz;2;13.0;0;5.66;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.66;False;False;<span class='badge-fail'>%-2.8 🚨</span>
+LXGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Hendeksiz;2;20.0;0;5.66;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.66;False;False;<span class='badge-fail'>%-2.8 🚨</span>
 PRKME;MADENCİLİK;Hendeksiz;3;31.0;0;11.4;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;11.4;False;False;<span class='badge-fail'>%-7.2 🚨</span>
 CMBTN;ÇİMENTO;Hendeksiz;4;31.0;0;1060.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1060.0;False;False;<span class='badge-fail'>%-82.3 🚨</span>
 CEMAS;DEMİR & ÇELİK;Hendeksiz;2;11.5;0;2.18;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.18;False;False;<span class='badge-fail'>%-2.9 🚨</span>
 TGSAS;PERAKENDE;Hendeksiz;4;53.0;0;109.5;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;109.5;False;False;<span class='badge-ok'>%36.3 🟢</span>
 PKART;BİLGİSAYAR & YAZILIM;Kırılgan Hendekli;7;57.0;0;72.85;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;72.85;False;False;<span class='badge-warn'>%19.0 ⚠️</span>
-IHAAS;MEDYA;Hendeksiz;2;33.0;0;12.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.46;False;False;<span class='badge-fail'>%-29.6 🚨</span>
+IHAAS;MEDYA;Hendeksiz;2;35.0;0;12.46;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;12.46;False;False;<span class='badge-fail'>%-29.6 🚨</span>
 GSDDE;LOJİSTİK;Korunaklı;6;81.0;0;10.53;0.0;0.0;1.51;20840.46;1979;1979;AL / EKLE;0.0;1.741;20838.87;10.53;True;False;<span class='badge-ok'>%16.6 🟢</span>
 AGYO;DİĞER İMALAT;Korunaklı;5;45.0;0;6.1;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.1;False;False;<span class='badge-fail'>%-2.1 🚨</span>
 BURCE;DEMİR & ÇELİK;Hendeksiz;5;32.0;0;20.96;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;20.96;False;False;<span class='badge-warn'>%10.9 ⚠️</span>
@@ -438,7 +438,7 @@ MARBL;MADENCİLİK;Kırılgan Hendekli;5;41.0;0;7.8;0.0;0.0;0.0;0.0;0;0;KORU / D
 DCTTR;PERAKENDE;Kırılgan Hendekli;4;42.5;0;3.88;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;3.88;False;False;<span class='badge-fail'>%-14.6 🚨</span>
 AVGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Hendeksiz;3;49.5;0;14.08;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;14.08;False;False;<span class='badge-warn'>%6.4 ⚠️</span>
 MTRKS;BİLGİSAYAR & YAZILIM;Korunaklı;5;74.5;0;15.2;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.2;False;False;<span class='badge-warn'>%22.4 ⚠️</span>
-BRKVY;VARLIK YÖNETİMİ;Hendeksiz;4;64.0;0;31.12;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;31.12;False;False;<span class='badge-ok'>%20.5 🟢</span>
+BRKVY;VARLIK YÖNETİMİ;Hendeksiz;4;56.0;0;31.12;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;31.12;False;False;<span class='badge-warn'>%20.5 ⚠️</span>
 KRPLS;KİMYASAL MADDELER;Kırılgan Hendekli;8;32.5;0;9.68;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;9.68;False;False;<span class='badge-fail'>%0.3 🚨</span>
 DGNMO;ORMAN, KAĞIT & KAĞIT ÜRÜNLERİ;Hendeksiz;4;41.0;0;4.92;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.92;False;False;<span class='badge-ok'>%16.2 🟢</span>
 GOLDA;GIDA;Hendeksiz;2;28.0;0;6.15;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.15;False;False;<span class='badge-fail'>%-1.6 🚨</span>
@@ -463,7 +463,7 @@ ENSRI;TEKSTİL & TEKSTİL YAN SANAYİ;Hendeksiz;4;35.5;0;2.67;0.0;0.0;0.0;0.0;0;
 BLCYT;TEKSTİL & TEKSTİL YAN SANAYİ;Hendeksiz;6;39.5;0;1.51;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.51;False;False;<span class='badge-fail'>%2.3 🚨</span>
 INFO;MENKUL DEĞERLER;Korunaklı;7;86.0;0;0.7;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.7;False;False;<span class='badge-ok'>%34.1 🟢</span>
 BYDNR;TURİZM, OTEL, EĞLENCE;Kırılgan Hendekli;6;44.5;0;15.05;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;15.05;False;False;<span class='badge-fail'>%-2.1 🚨</span>
-EYGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Hendeksiz;6;42.5;0;1.76;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.76;False;False;<span class='badge-fail'>%-5.2 🚨</span>
+EYGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Hendeksiz;6;45.5;0;1.76;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.76;False;False;<span class='badge-fail'>%-5.2 🚨</span>
 PAMEL;ENERJİ;Hendeksiz;2;33.0;0;40.54;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;40.54;False;False;<span class='badge-fail'>%-24.2 🚨</span>
 IMASM;MAKİNE;Hendeksiz;4;16.0;0;1.39;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.39;False;False;<span class='badge-fail'>%-2.2 🚨</span>
 MEKAG;MAKİNE;Hendeksiz;3;30.5;0;1.61;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.61;False;False;<span class='badge-fail'>%-3.8 🚨</span>
@@ -474,7 +474,7 @@ EDATA;BİLGİSAYAR & YAZILIM;Hendeksiz;2;38.0;0;2.95;0.0;0.0;0.0;0.0;0;0;KORU / 
 DERIM;TEKSTİL & TEKSTİL YAN SANAYİ;Hendeksiz;5;53.0;0;21.84;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;21.84;False;False;<span class='badge-ok'>%18.7 🟢</span>
 SNICA;DİĞER İMALAT;Kırılgan Hendekli;5;45.5;0;2.02;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.02;False;False;<span class='badge-fail'>%-7.6 🚨</span>
 PENGD;GIDA;Hendeksiz;4;43.5;0;6.72;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;6.72;False;False;<span class='badge-fail'>%-1.3 🚨</span>
-HDFGS;GİRİŞİM SERMAYESİ YATIRIM ORTAKLIKLARI;Korunaklı;6;76.0;0;1.14;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.14;False;False;<span class='badge-warn'>%5.4 ⚠️</span>
+HDFGS;GİRİŞİM SERMAYESİ YATIRIM ORTAKLIKLARI;Korunaklı;6;79.0;0;1.14;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.14;False;False;<span class='badge-warn'>%5.4 ⚠️</span>
 BIGTK;MEDYA;Korunaklı;6;42.0;0;37.86;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;37.86;False;False;<span class='badge-fail'>%0.5 🚨</span>
 PAPIL;BİLGİSAYAR & YAZILIM;Korunaklı;4;43.5;0;5.89;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;5.89;False;False;<span class='badge-fail'>%-69.3 🚨</span>
 GZNMI;TURİZM, OTEL, EĞLENCE;Hendeksiz;4;31.0;0;19.51;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;19.51;False;False;<span class='badge-fail'>%-20.8 🚨</span>
@@ -519,7 +519,7 @@ AKSUE;ENERJİ;Hendeksiz;4;30.0;0;14.0;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0
 TUCLK;DEMİR & ÇELİK;Korunaklı;5;42.0;0;2.19;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.19;False;False;<span class='badge-fail'>%-2.0 🚨</span>
 ALVES;ELEKTRİK MALZEMELERİ;Hendeksiz;4;39.0;0;0.49;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.49;False;False;<span class='badge-fail'>%2.6 🚨</span>
 VRGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Hendeksiz;4;33.5;0;0.99;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.99;False;False;<span class='badge-fail'>%-6.8 🚨</span>
-TRILC;DİĞER İMALAT;Korunaklı;7;72.5;0;0.77;0.0;0.0;2.26;31191.69;40509;40509;AL / EKLE;0.0;2.653;31191.93;0.77;True;False;<span class='badge-warn'>%5.1 ⚠️</span>
+TRILC;DİĞER İMALAT;Korunaklı;7;72.5;0;0.77;0.0;0.0;2.27;31329.7;40688;40688;AL / EKLE;0.0;2.653;31329.76;0.77;True;False;<span class='badge-warn'>%5.1 ⚠️</span>
 MERKO;GIDA;Hendeksiz;3;34.5;0;0.92;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;0.92;False;False;<span class='badge-fail'>%-1.2 🚨</span>
 DENGE;FİNANS-DIŞI HOLDİNG;Hendeksiz;4;30.0;0;1.28;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.28;False;False;<span class='badge-fail'>%-6.6 🚨</span>
 GLRYH;FİNANS-DIŞI HOLDİNG;Korunaklı;6;75.0;0;1.44;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;1.44;False;False;<span class='badge-warn'>%8.3 ⚠️</span>
@@ -542,7 +542,7 @@ HUBVC;DİĞER İMALAT;Hendeksiz;5;21.0;0;2.22;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE
 MANAS;BİLGİSAYAR & YAZILIM;Hendeksiz;4;29.0;0;2.03;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.03;False;False;<span class='badge-fail'>%-58.2 🚨</span>
 ATSYH;FİNANS-DIŞI HOLDİNG;Hendeksiz;4;26.0;0;76.15;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;76.15;False;False;<span class='badge-fail'>%0.1 🚨</span>
 ETYAT;FİNANS-DIŞI HOLDİNG;Hendeksiz;4;37.5;0;8.64;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;8.64;False;False;<span class='badge-fail'>%-4.3 🚨</span>
-SANEL;ELEKTRİK MALZEMELERİ;Korunaklı;7;95.0;0;31.0;0.0;0.0;3.23;44579.27;1438;1438;AL / EKLE;0.0;3.821;44578.0;31.0;True;False;<span class='badge-ok'>%78.9 🚀</span>
+SANEL;ELEKTRİK MALZEMELERİ;Korunaklı;7;95.0;0;31.0;0.0;0.0;3.24;44717.29;1442;1442;AL / EKLE;0.0;3.821;44702.0;31.0;True;False;<span class='badge-ok'>%78.9 🚀</span>
 SEYKM;KİMYASAL MADDELER;Hendeksiz;8;35.0;0;2.75;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.75;False;False;<span class='badge-fail'>%2.6 🚨</span>
 SEKFK;LEASING;Hendeksiz;0;25.0;0;2.84;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;2.84;False;False;<span class='badge-fail'>%0.0 🚨</span>
 OYAYO;FİNANS-DIŞI HOLDİNG;Kırılgan Hendekli;6;45.0;0;27.78;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;27.78;False;False;<span class='badge-fail'>%-4.5 🚨</span>
@@ -589,5 +589,5 @@ EKIM;LOJİSTİK;Korunaklı;7;35.0;0;15.51;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0
 GRNYO;FİNANS-DIŞI HOLDİNG;Hendeksiz;5;41.0;0;7.52;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;7.52;False;False;<span class='badge-fail'>%-23.2 🚨</span>
 MMCAS;FİNANS-DIŞI HOLDİNG;Hendeksiz;4;22.0;0;10.45;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;10.45;False;False;<span class='badge-fail'>%-12.0 🚨</span>
 AAGYO;GAYRİMENKUL YATIRIM ORTAKLIKLARI;Korunaklı;7;83.5;0;7.54;0.0;0.0;2.73;37678.46;4997;4997;AL / EKLE;0.0;3.21;37677.38;7.54;True;False;<span class='badge-warn'>%5.1 ⚠️</span>
-ORZAX;İLAÇ & SAĞLIK;Korunaklı;7;66.0;0;61.0;0.0;0.0;2.0;27603.26;453;453;AL / EKLE;0.0;2.337;27633.0;61.0;True;False;<span class='badge-ok'>%38.0 🚀</span>
+ORZAX;İLAÇ & SAĞLIK;Korunaklı;7;62.0;0;61.0;0.0;0.0;1.85;25533.02;419;419;AL / EKLE;0.0;2.148;25559.0;61.0;True;False;<span class='badge-ok'>%38.0 🟢</span>
 TDGYO;DİĞER İMALAT;Korunaklı;5;75.0;0;4.44;0.0;0.0;0.0;0.0;0;0;KORU / DENGEDE;0.0;0.0;0.0;4.44;False;False;<span class='badge-ok'>%46.3 🚀</span>

@@ -1,6 +1,6 @@
 {
   "kod": "DMSAS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 8.2,
@@ -52,8 +52,8 @@
       "dso_delta": -0.4
     },
     "2026/03": {
-      "efm_yuzde": 1.4,
-      "icr_kati": 24.21,
+      "efm_yuzde": 0.0,
+      "icr_kati": 8.47,
       "tahakkuk_orani": 1.37,
       "aga_orani": 44.9,
       "ykp_orani": 0.0,
@@ -76,8 +76,8 @@
       "dso_delta": 12.8
     },
     "2026/06": {
-      "efm_yuzde": 2.3,
-      "icr_kati": 11.14,
+      "efm_yuzde": 1.3,
+      "icr_kati": 20.64,
       "tahakkuk_orani": -6.59,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

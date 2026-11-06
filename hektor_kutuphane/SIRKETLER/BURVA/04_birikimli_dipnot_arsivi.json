@@ -1,10 +1,10 @@
 {
   "kod": "BURVA",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 771.6,
-      "icr_kati": -3.61,
+      "efm_yuzde": 0.0,
+      "icr_kati": -2.02,
       "tahakkuk_orani": 5.66,
       "aga_orani": 0.0,
       "ykp_orani": 0.4,
@@ -28,7 +28,7 @@
     },
     "2025/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": -8.23,
+      "icr_kati": -4.36,
       "tahakkuk_orani": 3.99,
       "aga_orani": 0.0,
       "ykp_orani": 3.3,

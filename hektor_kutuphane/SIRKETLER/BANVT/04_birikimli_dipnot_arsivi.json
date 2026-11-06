@@ -1,10 +1,10 @@
 {
   "kod": "BANVT",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 37.0,
-      "icr_kati": 3.4,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -5.77,
       "aga_orani": 0.0,
       "ykp_orani": 45.1,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 22.4,
-      "icr_kati": 1.22,
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.43,
       "tahakkuk_orani": -2.13,
       "aga_orani": 0.0,
       "ykp_orani": 1.0,
@@ -51,8 +51,8 @@
       "dso_delta": -4.4
     },
     "2026/03": {
-      "efm_yuzde": 8.6,
-      "icr_kati": -3.55,
+      "efm_yuzde": 0.0,
+      "icr_kati": -1.24,
       "tahakkuk_orani": 1.43,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 6.0
     },
     "2026/06": {
-      "efm_yuzde": 6.7,
-      "icr_kati": 1.23,
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.43,
       "tahakkuk_orani": 5.96,
       "aga_orani": 0.0,
       "ykp_orani": 1.1,

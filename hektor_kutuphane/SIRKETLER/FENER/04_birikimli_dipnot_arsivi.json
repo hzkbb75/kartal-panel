@@ -1,10 +1,10 @@
 {
   "kod": "FENER",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 3.7,
-      "icr_kati": 5.57,
+      "efm_yuzde": 0.0,
+      "icr_kati": 1.95,
       "tahakkuk_orani": -6.59,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 1.5,
-      "icr_kati": -23.35,
+      "efm_yuzde": 0.0,
+      "icr_kati": -8.17,
       "tahakkuk_orani": -16.97,
       "aga_orani": 0.0,
       "ykp_orani": 6.2,
@@ -37,9 +37,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 4450.7,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 0,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -23.35x (ICR zayıf)."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 3.23 Mr ₺ (2.2x Amortisman)<br><strong>MDV:</strong> 498 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -47,12 +47,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -7.37 Mr ₺ (ÖZK %-736996.9)<br><strong>Ham YPP:</strong> -7.37 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %4450.7 (45 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 15326.65x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": 15,
+      "dts_delta": 0,
       "dso_delta": -4.7
     },
     "2026/03": {
-      "efm_yuzde": 10.7,
-      "icr_kati": 10.53,
+      "efm_yuzde": 5.1,
+      "icr_kati": 22.05,
       "tahakkuk_orani": -15.0,
       "aga_orani": 467.9,
       "ykp_orani": 63.1,
@@ -76,7 +76,7 @@
         "🟡 Kağıt üzeri kâr payı yüksek (%63.1).",
         "🟡 Alacak-Ciro makası +%56.9 açıldı (DSO: 99.9 gün)."
       ],
-      "dts_delta": 15,
+      "dts_delta": 30,
       "dso_delta": 34.6
     }
   }

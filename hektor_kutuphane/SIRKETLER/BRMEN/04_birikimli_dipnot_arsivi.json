@@ -1,9 +1,9 @@
 {
   "kod": "BRMEN",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 84.4,
+      "efm_yuzde": 0.0,
       "icr_kati": -10.01,
       "tahakkuk_orani": 1.08,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 1525.5,
+      "efm_yuzde": 95.0,
       "icr_kati": -1.67,
       "tahakkuk_orani": -7.17,
       "aga_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -6.0
     },
     "2026/03": {
-      "efm_yuzde": 982.1,
-      "icr_kati": -0.32,
+      "efm_yuzde": 0.0,
+      "icr_kati": -0.28,
       "tahakkuk_orani": 0.5,
       "aga_orani": 0.0,
       "ykp_orani": 0.3,
@@ -75,7 +75,7 @@
       "dso_delta": 9.7
     },
     "2026/06": {
-      "efm_yuzde": 939.3,
+      "efm_yuzde": 95.0,
       "icr_kati": -0.63,
       "tahakkuk_orani": 2.77,
       "aga_orani": 0.0,

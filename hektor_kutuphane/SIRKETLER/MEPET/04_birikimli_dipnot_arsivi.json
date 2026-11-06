@@ -1,9 +1,9 @@
 {
   "kod": "MEPET",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 324.1,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.35,
       "tahakkuk_orani": -2.24,
       "aga_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 248.4,
-      "icr_kati": 0.73,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -6.42,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -4.9
     },
     "2026/03": {
-      "efm_yuzde": 665.2,
-      "icr_kati": 0.91,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 4.65,
       "aga_orani": 0.5,
       "ykp_orani": 44.9,
@@ -75,8 +75,8 @@
       "dso_delta": 16.5
     },
     "2026/06": {
-      "efm_yuzde": 534.8,
-      "icr_kati": 0.82,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 3.38,
       "aga_orani": 1.1,
       "ykp_orani": 23.8,

@@ -1,10 +1,10 @@
 {
   "kod": "GLRYH",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 286.8,
-      "icr_kati": 2.46,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -15.1,
       "aga_orani": 0.0,
       "ykp_orani": 15.2,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 184.2,
+      "efm_yuzde": 95.0,
       "icr_kati": 2.13,
       "tahakkuk_orani": -4.4,
       "aga_orani": 0.0,
@@ -51,7 +51,7 @@
       "dso_delta": 4.1
     },
     "2026/03": {
-      "efm_yuzde": 371.8,
+      "efm_yuzde": 0.0,
       "icr_kati": 0.04,
       "tahakkuk_orani": -6.26,
       "aga_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 13.1
     },
     "2026/06": {
-      "efm_yuzde": 199.9,
-      "icr_kati": 0.35,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -16.18,
       "aga_orani": 0.0,
       "ykp_orani": 58.2,

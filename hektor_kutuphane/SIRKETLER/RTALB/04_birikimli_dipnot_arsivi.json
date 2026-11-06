@@ -1,9 +1,9 @@
 {
   "kod": "RTALB",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 272.2,
+      "efm_yuzde": 95.0,
       "icr_kati": -0.1,
       "tahakkuk_orani": 2.89,
       "aga_orani": 0.0,
@@ -28,7 +28,7 @@
     },
     "2025/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": -0.27,
+      "icr_kati": -0.22,
       "tahakkuk_orani": 6.13,
       "aga_orani": 0.0,
       "ykp_orani": 8.1,
@@ -52,7 +52,7 @@
     },
     "2026/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": 0.66,
+      "icr_kati": 0.55,
       "tahakkuk_orani": -12.01,
       "aga_orani": 0.0,
       "ykp_orani": 0.6,
@@ -76,7 +76,7 @@
     },
     "2026/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": -0.18,
+      "icr_kati": -0.16,
       "tahakkuk_orani": -18.06,
       "aga_orani": 0.0,
       "ykp_orani": 2.6,

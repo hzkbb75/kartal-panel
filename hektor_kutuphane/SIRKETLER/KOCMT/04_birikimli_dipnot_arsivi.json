@@ -1,10 +1,10 @@
 {
   "kod": "KOCMT",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 157.7,
-      "icr_kati": -0.14,
+      "efm_yuzde": 0.0,
+      "icr_kati": -0.09,
       "tahakkuk_orani": 11.08,
       "aga_orani": 0.0,
       "ykp_orani": 1.1,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 146.2,
-      "icr_kati": -0.08,
+      "efm_yuzde": 0.0,
+      "icr_kati": -0.05,
       "tahakkuk_orani": 18.35,
       "aga_orani": 0.0,
       "ykp_orani": 2.9,
@@ -51,8 +51,8 @@
       "dso_delta": 7.1
     },
     "2026/03": {
-      "efm_yuzde": 9.8,
-      "icr_kati": 1.58,
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.55,
       "tahakkuk_orani": 6.38,
       "aga_orani": 0.0,
       "ykp_orani": 0.2,

@@ -1,6 +1,6 @@
 {
   "kod": "MIATK",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 78.8,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 0.7,
-      "icr_kati": 124.14,
+      "efm_yuzde": 0.0,
+      "icr_kati": 43.45,
       "tahakkuk_orani": -2.52,
       "aga_orani": 150.5,
       "ykp_orani": 52.8,

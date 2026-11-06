@@ -1,6 +1,6 @@
 {
   "kod": "NTHOL",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 15.4,
@@ -51,8 +51,8 @@
       "dso_delta": -1.0
     },
     "2026/03": {
-      "efm_yuzde": 1.7,
-      "icr_kati": 56.76,
+      "efm_yuzde": 0.0,
+      "icr_kati": 19.86,
       "tahakkuk_orani": -0.94,
       "aga_orani": 42.0,
       "ykp_orani": 1.9,
@@ -75,8 +75,8 @@
       "dso_delta": -1.3
     },
     "2026/06": {
-      "efm_yuzde": 0.2,
-      "icr_kati": 311.06,
+      "efm_yuzde": 0.0,
+      "icr_kati": 108.87,
       "tahakkuk_orani": -0.89,
       "aga_orani": 48.2,
       "ykp_orani": 12.6,

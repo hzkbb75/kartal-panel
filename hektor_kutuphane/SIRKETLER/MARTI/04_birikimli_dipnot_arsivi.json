@@ -1,10 +1,10 @@
 {
   "kod": "MARTI",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 5.8,
-      "icr_kati": 0.22,
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.08,
       "tahakkuk_orani": 1.31,
       "aga_orani": 0.0,
       "ykp_orani": 12.8,
@@ -13,9 +13,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 2.3,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 0,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.22x (ICR zayıf)."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 40 Mn ₺ (5.2x Amortisman)<br><strong>MDV:</strong> 18.97 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 3.9,
-      "icr_kati": 1.74,
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.61,
       "tahakkuk_orani": 1.7,
       "aga_orani": 0.0,
       "ykp_orani": 39.7,
@@ -48,12 +48,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -5.84 Mr ₺ (ÖZK %-100.4)<br><strong>Ham YPP:</strong> -5.84 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %3.2 (188 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.34x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 15,
+      "dts_delta": 30,
       "dso_delta": 40.1
     },
     "2026/03": {
-      "efm_yuzde": 10.8,
-      "icr_kati": -0.16,
+      "efm_yuzde": 7.7,
+      "icr_kati": -0.22,
       "tahakkuk_orani": -0.6,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -64,7 +64,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -0.16x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.22x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 43 Mn ₺ (2.6x Amortisman)<br><strong>MDV:</strong> 24.76 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

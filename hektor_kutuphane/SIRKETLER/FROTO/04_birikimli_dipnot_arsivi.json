@@ -1,10 +1,10 @@
 {
   "kod": "FROTO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 8.2,
-      "icr_kati": 5.11,
+      "efm_yuzde": 3.9,
+      "icr_kati": 10.69,
       "tahakkuk_orani": -8.58,
       "aga_orani": 0.0,
       "ykp_orani": 24.3,
@@ -51,8 +51,8 @@
       "dso_delta": -3.3
     },
     "2026/03": {
-      "efm_yuzde": 3.4,
-      "icr_kati": 7.95,
+      "efm_yuzde": 0.0,
+      "icr_kati": 2.78,
       "tahakkuk_orani": -2.74,
       "aga_orani": 171.2,
       "ykp_orani": 19.4,
@@ -75,8 +75,8 @@
       "dso_delta": 6.6
     },
     "2026/06": {
-      "efm_yuzde": 7.1,
-      "icr_kati": 4.09,
+      "efm_yuzde": 5.9,
+      "icr_kati": 4.91,
       "tahakkuk_orani": -1.82,
       "aga_orani": 70.5,
       "ykp_orani": 23.5,

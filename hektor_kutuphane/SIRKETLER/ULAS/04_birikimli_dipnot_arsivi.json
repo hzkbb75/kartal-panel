@@ -1,6 +1,6 @@
 {
   "kod": "ULAS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 52.9,
@@ -28,7 +28,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 105.9,
+      "efm_yuzde": 0.0,
       "icr_kati": -0.37,
       "tahakkuk_orani": 7.39,
       "aga_orani": 0.0,

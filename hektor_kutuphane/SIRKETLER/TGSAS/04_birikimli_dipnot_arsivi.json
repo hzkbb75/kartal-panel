@@ -1,10 +1,10 @@
 {
   "kod": "TGSAS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 1213.7,
-      "icr_kati": 16.78,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 0.12,
       "aga_orani": 0.0,
       "ykp_orani": 1.0,
@@ -28,7 +28,7 @@
     },
     "2025/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": 1.09,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 1.0,
       "aga_orani": 0.0,
       "ykp_orani": 2.7,
@@ -51,8 +51,8 @@
       "dso_delta": -8022.3
     },
     "2026/03": {
-      "efm_yuzde": 1103.3,
-      "icr_kati": 1.02,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -0.08,
       "aga_orani": 0.0,
       "ykp_orani": 28.4,
@@ -75,8 +75,8 @@
       "dso_delta": -2208.0
     },
     "2026/06": {
-      "efm_yuzde": 891.2,
-      "icr_kati": 1.65,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 0.44,
       "aga_orani": 0.0,
       "ykp_orani": 14.2,

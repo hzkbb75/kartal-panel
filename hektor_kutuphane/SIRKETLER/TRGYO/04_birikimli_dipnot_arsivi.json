@@ -1,10 +1,10 @@
 {
   "kod": "TRGYO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 303.8,
-      "icr_kati": 1.55,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -0.12,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 379.9,
-      "icr_kati": 3.04,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 0.6,
       "aga_orani": 0.1,
       "ykp_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -4.6
     },
     "2026/03": {
-      "efm_yuzde": 26.3,
-      "icr_kati": 2.65,
+      "efm_yuzde": 3.3,
+      "icr_kati": 21.31,
       "tahakkuk_orani": -4.35,
       "aga_orani": 0.2,
       "ykp_orani": 5.1,
@@ -75,8 +75,8 @@
       "dso_delta": -6.5
     },
     "2026/06": {
-      "efm_yuzde": 22.0,
-      "icr_kati": 2.95,
+      "efm_yuzde": 0.0,
+      "icr_kati": 1.03,
       "tahakkuk_orani": -3.99,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

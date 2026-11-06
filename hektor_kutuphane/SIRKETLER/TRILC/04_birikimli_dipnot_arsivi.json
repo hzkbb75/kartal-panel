@@ -1,9 +1,9 @@
 {
   "kod": "TRILC",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 129.9,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.28,
       "tahakkuk_orani": -7.24,
       "aga_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 16.1
     },
     "2026/03": {
-      "efm_yuzde": 1.7,
-      "icr_kati": 25.37,
+      "efm_yuzde": 0.0,
+      "icr_kati": 8.88,
       "tahakkuk_orani": 0.88,
       "aga_orani": 35.7,
       "ykp_orani": 0.0,

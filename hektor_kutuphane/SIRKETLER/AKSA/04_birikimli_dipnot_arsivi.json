@@ -1,10 +1,10 @@
 {
   "kod": "AKSA",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 11.1,
-      "icr_kati": 6.81,
+      "efm_yuzde": 4.1,
+      "icr_kati": 18.35,
       "tahakkuk_orani": -4.33,
       "aga_orani": 0.0,
       "ykp_orani": 2.5,
@@ -51,8 +51,8 @@
       "dso_delta": 2.6
     },
     "2026/03": {
-      "efm_yuzde": 0.9,
-      "icr_kati": 47.94,
+      "efm_yuzde": 0.0,
+      "icr_kati": 16.78,
       "tahakkuk_orani": -3.96,
       "aga_orani": 466.8,
       "ykp_orani": 2.8,
@@ -75,8 +75,8 @@
       "dso_delta": 14.5
     },
     "2026/06": {
-      "efm_yuzde": 0.7,
-      "icr_kati": 53.79,
+      "efm_yuzde": 0.0,
+      "icr_kati": 18.83,
       "tahakkuk_orani": -1.56,
       "aga_orani": 242.9,
       "ykp_orani": 3.2,

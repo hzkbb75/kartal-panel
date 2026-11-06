@@ -1,6 +1,6 @@
 {
   "kod": "TATGD",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 12.2,
@@ -52,8 +52,8 @@
       "dso_delta": 5.3
     },
     "2026/03": {
-      "efm_yuzde": 2.1,
-      "icr_kati": 12.87,
+      "efm_yuzde": 0.8,
+      "icr_kati": 34.75,
       "tahakkuk_orani": -1.61,
       "aga_orani": 73.0,
       "ykp_orani": 0.0,
@@ -76,8 +76,8 @@
       "dso_delta": 12.3
     },
     "2026/06": {
-      "efm_yuzde": 4.5,
-      "icr_kati": 4.93,
+      "efm_yuzde": 2.3,
+      "icr_kati": 9.52,
       "tahakkuk_orani": -9.44,
       "aga_orani": 26.9,
       "ykp_orani": 27.1,

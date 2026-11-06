@@ -1,10 +1,10 @@
 {
   "kod": "INGRM",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 14.1,
-      "icr_kati": 0.73,
+      "efm_yuzde": 8.7,
+      "icr_kati": 1.2,
       "tahakkuk_orani": 7.63,
       "aga_orani": 0.0,
       "ykp_orani": 3.9,
@@ -16,7 +16,7 @@
       "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%7.63): Kâr nakde dönüşmüyor.",
-        "🔴 Faiz karşılama oranı 0.73x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.2x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 1 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 75 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

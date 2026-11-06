@@ -1,6 +1,6 @@
 {
   "kod": "HTTBT",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 11.6,
@@ -52,7 +52,7 @@
     },
     "2026/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": 16.48,
+      "icr_kati": 12.84,
       "tahakkuk_orani": -1.08,
       "aga_orani": 1132.6,
       "ykp_orani": 24.4,
@@ -75,8 +75,8 @@
       "dso_delta": -6.4
     },
     "2026/06": {
-      "efm_yuzde": 11.5,
-      "icr_kati": 20.25,
+      "efm_yuzde": 0.0,
+      "icr_kati": 15.76,
       "tahakkuk_orani": -2.98,
       "aga_orani": 491.8,
       "ykp_orani": 18.6,

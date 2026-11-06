@@ -1,10 +1,10 @@
 {
   "kod": "IHAAS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 230.2,
-      "icr_kati": -2.32,
+      "efm_yuzde": 0.0,
+      "icr_kati": -0.81,
       "tahakkuk_orani": -14.32,
       "aga_orani": 0.0,
       "ykp_orani": 2.7,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 202.9,
-      "icr_kati": -1.92,
+      "efm_yuzde": 4.2,
+      "icr_kati": -66.63,
       "tahakkuk_orani": 3.96,
       "aga_orani": 0.0,
       "ykp_orani": 2.5,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -1.92x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -66.63x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 6 Mn ₺ (0.2x Amortisman)<br><strong>MDV:</strong> 97 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -51,8 +51,8 @@
       "dso_delta": -18.8
     },
     "2026/03": {
-      "efm_yuzde": 194.1,
-      "icr_kati": -2.78,
+      "efm_yuzde": 0.0,
+      "icr_kati": -0.97,
       "tahakkuk_orani": -23.39,
       "aga_orani": 0.0,
       "ykp_orani": 1.2,
@@ -75,8 +75,8 @@
       "dso_delta": 10.7
     },
     "2026/06": {
-      "efm_yuzde": 107.1,
-      "icr_kati": -3.2,
+      "efm_yuzde": 0.0,
+      "icr_kati": -1.12,
       "tahakkuk_orani": -15.38,
       "aga_orani": 0.0,
       "ykp_orani": 2.3,
@@ -85,10 +85,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 26.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 30,
+      "dts_skor": 15,
       "uyarilar": [
-        "🟡 Alacak-Ciro makası +%23.9 açıldı (DSO: 50.3 gün).",
-        "🔴 Faiz karşılama oranı -3.2x (ICR zayıf)."
+        "🟡 Alacak-Ciro makası +%23.9 açıldı (DSO: 50.3 gün)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 8 Mn ₺ (0.2x Amortisman)<br><strong>MDV:</strong> 100 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -100,7 +99,7 @@
         "🟡 Alacak-Ciro makası +%23.9 açıldı (DSO: 50.3 gün).",
         "🔴 Faiz karşılama oranı -3.2x (ICR zayıf)."
       ],
-      "dts_delta": 30,
+      "dts_delta": 15,
       "dso_delta": -0.9
     }
   }

@@ -1,10 +1,10 @@
 {
   "kod": "GUNDG",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 1121.2,
-      "icr_kati": 0.75,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -2.66,
       "aga_orani": 0.0,
       "ykp_orani": 7.8,
@@ -28,7 +28,7 @@
     },
     "2025/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": 0.9,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -7.49,
       "aga_orani": 0.1,
       "ykp_orani": 8.2,
@@ -52,7 +52,7 @@
     },
     "2026/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": -11.28,
+      "icr_kati": -11.25,
       "tahakkuk_orani": 39.19,
       "aga_orani": 0.0,
       "ykp_orani": 15.6,

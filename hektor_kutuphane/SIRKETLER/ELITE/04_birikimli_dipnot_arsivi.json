@@ -1,10 +1,10 @@
 {
   "kod": "ELITE",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 16.7,
-      "icr_kati": 44.36,
+      "efm_yuzde": 0.0,
+      "icr_kati": 15.53,
       "tahakkuk_orani": 1.16,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 250.2,
-      "icr_kati": 4.47,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -7.53,
       "aga_orani": 0.0,
       "ykp_orani": 25.0,
@@ -51,8 +51,8 @@
       "dso_delta": -43.8
     },
     "2026/03": {
-      "efm_yuzde": 395.3,
-      "icr_kati": 0.73,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -0.51,
       "aga_orani": 0.0,
       "ykp_orani": 49.1,

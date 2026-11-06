@@ -1,6 +1,6 @@
 {
   "kod": "OTKAR",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 13.9,
@@ -51,8 +51,8 @@
       "dso_delta": -7.8
     },
     "2026/03": {
-      "efm_yuzde": 3.5,
-      "icr_kati": -3.91,
+      "efm_yuzde": 1.5,
+      "icr_kati": -9.23,
       "tahakkuk_orani": 0.03,
       "aga_orani": 0.0,
       "ykp_orani": 0.5,
@@ -64,7 +64,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%44.9 açıldı (DSO: 115.4 gün).",
-        "🔴 Faiz karşılama oranı -3.91x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -9.23x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 900 Mn ₺ (1.3x Amortisman)<br><strong>MDV:</strong> 7.89 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",

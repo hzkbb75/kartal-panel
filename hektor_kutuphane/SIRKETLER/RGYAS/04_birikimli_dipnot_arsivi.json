@@ -1,10 +1,10 @@
 {
   "kod": "RGYAS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 6.2,
-      "icr_kati": 8.69,
+      "efm_yuzde": 3.4,
+      "icr_kati": 15.7,
       "tahakkuk_orani": -0.53,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -75,8 +75,8 @@
       "dso_delta": 3.5
     },
     "2026/06": {
-      "efm_yuzde": 3.6,
-      "icr_kati": 18.5,
+      "efm_yuzde": 0.0,
+      "icr_kati": 6.47,
       "tahakkuk_orani": 1.56,
       "aga_orani": 0.1,
       "ykp_orani": 3.2,

@@ -1,9 +1,9 @@
 {
   "kod": "UCAYM",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 209.2,
+      "efm_yuzde": 0.0,
       "icr_kati": -1.27,
       "tahakkuk_orani": -3172.18,
       "aga_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 781.4,
-      "icr_kati": 0.95,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -13701.69,
       "aga_orani": 0.0,
       "ykp_orani": 27.9,
@@ -51,7 +51,7 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 171.8,
+      "efm_yuzde": 95.0,
       "icr_kati": 2.93,
       "tahakkuk_orani": 9.73,
       "aga_orani": 100.4,
@@ -75,7 +75,7 @@
       "dso_delta": 55.5
     },
     "2026/06": {
-      "efm_yuzde": 313.0,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.81,
       "tahakkuk_orani": 10.37,
       "aga_orani": 66.7,

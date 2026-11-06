@@ -1,9 +1,9 @@
 {
   "kod": "IHYAY",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 229.8,
+      "efm_yuzde": 95.0,
       "icr_kati": -1.68,
       "tahakkuk_orani": -4.37,
       "aga_orani": 0.0,
@@ -51,7 +51,7 @@
       "dso_delta": 0.6
     },
     "2026/03": {
-      "efm_yuzde": 196.3,
+      "efm_yuzde": 95.0,
       "icr_kati": -1.8,
       "tahakkuk_orani": -4.45,
       "aga_orani": 0.0,

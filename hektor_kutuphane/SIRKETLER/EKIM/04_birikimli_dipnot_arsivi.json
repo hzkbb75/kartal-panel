@@ -1,9 +1,9 @@
 {
   "kod": "EKIM",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 101.6,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.27,
       "tahakkuk_orani": 20795.5,
       "aga_orani": 0.0,
@@ -28,7 +28,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 122.4,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.15,
       "tahakkuk_orani": -55695.89,
       "aga_orani": 0.0,

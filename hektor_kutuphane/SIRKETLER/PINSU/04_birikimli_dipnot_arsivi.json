@@ -1,10 +1,10 @@
 {
   "kod": "PINSU",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 0.6,
-      "icr_kati": 37.56,
+      "efm_yuzde": 0.1,
+      "icr_kati": 41.91,
       "tahakkuk_orani": -1.24,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -51,8 +51,8 @@
       "dso_delta": -2.9
     },
     "2026/03": {
-      "efm_yuzde": 0.4,
-      "icr_kati": 83.18,
+      "efm_yuzde": 0.0,
+      "icr_kati": 40.06,
       "tahakkuk_orani": -1.8,
       "aga_orani": 840.9,
       "ykp_orani": 55.5,
@@ -75,8 +75,8 @@
       "dso_delta": 0.7
     },
     "2026/06": {
-      "efm_yuzde": 3.1,
-      "icr_kati": 27.79,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.73,
       "tahakkuk_orani": -4.39,
       "aga_orani": 28.7,
       "ykp_orani": 12.4,

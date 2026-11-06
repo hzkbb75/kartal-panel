@@ -1,10 +1,10 @@
 {
   "kod": "ETYAT",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 1604.9,
-      "icr_kati": 0.91,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -2.09,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 987.1,
+      "efm_yuzde": 0.0,
       "icr_kati": 0.03,
       "tahakkuk_orani": 0.46,
       "aga_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 5.8
     },
     "2026/03": {
-      "efm_yuzde": 619.9,
-      "icr_kati": 0.41,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -2.02,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": -5.8
     },
     "2026/06": {
-      "efm_yuzde": 270.2,
-      "icr_kati": 0.81,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -2.99,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

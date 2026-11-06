@@ -1,6 +1,6 @@
 {
   "kod": "NATEN",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 18.9,
@@ -28,7 +28,7 @@
     },
     "2025/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": 376.62,
+      "icr_kati": 229.52,
       "tahakkuk_orani": -7.89,
       "aga_orani": 0.0,
       "ykp_orani": 95.8,
@@ -76,8 +76,8 @@
       "dso_delta": 47.1
     },
     "2026/06": {
-      "efm_yuzde": 0.3,
-      "icr_kati": 19.41,
+      "efm_yuzde": 0.0,
+      "icr_kati": 6.79,
       "tahakkuk_orani": -0.82,
       "aga_orani": 0.0,
       "ykp_orani": 6.2,

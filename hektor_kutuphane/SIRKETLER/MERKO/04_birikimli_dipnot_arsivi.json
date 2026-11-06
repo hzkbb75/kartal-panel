@@ -1,6 +1,6 @@
 {
   "kod": "MERKO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 58.4,
@@ -28,8 +28,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 0.3,
-      "icr_kati": 77.77,
+      "efm_yuzde": 0.0,
+      "icr_kati": 36.76,
       "tahakkuk_orani": 8.13,
       "aga_orani": 0.0,
       "ykp_orani": 52.0,

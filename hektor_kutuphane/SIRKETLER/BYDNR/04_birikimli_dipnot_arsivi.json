@@ -1,10 +1,10 @@
 {
   "kod": "BYDNR",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 6.8,
-      "icr_kati": 7.54,
+      "efm_yuzde": 0.0,
+      "icr_kati": 2.64,
       "tahakkuk_orani": 3.66,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 10.5,
-      "icr_kati": 8.33,
+      "efm_yuzde": 5.5,
+      "icr_kati": 16.0,
       "tahakkuk_orani": -16.29,
       "aga_orani": 0.0,
       "ykp_orani": 1.7,
@@ -51,8 +51,8 @@
       "dso_delta": -2.2
     },
     "2026/03": {
-      "efm_yuzde": 0.3,
-      "icr_kati": 178.25,
+      "efm_yuzde": 0.0,
+      "icr_kati": 80.65,
       "tahakkuk_orani": 0.51,
       "aga_orani": 280.9,
       "ykp_orani": 0.0,

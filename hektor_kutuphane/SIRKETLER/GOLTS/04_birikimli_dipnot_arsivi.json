@@ -1,6 +1,6 @@
 {
   "kod": "GOLTS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 89.2,
@@ -77,8 +77,8 @@
       "dso_delta": 9.0
     },
     "2026/06": {
-      "efm_yuzde": 0.7,
-      "icr_kati": 58.33,
+      "efm_yuzde": 0.0,
+      "icr_kati": 20.42,
       "tahakkuk_orani": -1.0,
       "aga_orani": 0.0,
       "ykp_orani": 17.7,

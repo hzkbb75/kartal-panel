@@ -1,9 +1,9 @@
 {
   "kod": "FADE",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 273.5,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.43,
       "tahakkuk_orani": 0.5,
       "aga_orani": 0.0,
@@ -76,8 +76,8 @@
       "dso_delta": 18.7
     },
     "2026/06": {
-      "efm_yuzde": 186.8,
-      "icr_kati": 1.26,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -2.87,
       "aga_orani": 0.0,
       "ykp_orani": 50.9,

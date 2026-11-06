@@ -1,10 +1,10 @@
 {
   "kod": "MEGMT",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 5.5,
-      "icr_kati": 5.2,
+      "efm_yuzde": 3.6,
+      "icr_kati": 7.9,
       "tahakkuk_orani": -0.89,
       "aga_orani": 0.0,
       "ykp_orani": 7.3,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 2.8,
-      "icr_kati": 9.08,
+      "efm_yuzde": 0.0,
+      "icr_kati": 3.18,
       "tahakkuk_orani": 11.51,
       "aga_orani": 0.0,
       "ykp_orani": 13.7,
@@ -51,8 +51,8 @@
       "dso_delta": -1.6
     },
     "2026/03": {
-      "efm_yuzde": 4.9,
-      "icr_kati": 7.17,
+      "efm_yuzde": 0.0,
+      "icr_kati": 2.51,
       "tahakkuk_orani": 1.14,
       "aga_orani": 0.2,
       "ykp_orani": 26.9,
@@ -75,8 +75,8 @@
       "dso_delta": -8.4
     },
     "2026/06": {
-      "efm_yuzde": 3.7,
-      "icr_kati": 6.97,
+      "efm_yuzde": 3.1,
+      "icr_kati": 8.35,
       "tahakkuk_orani": 1.56,
       "aga_orani": 100.9,
       "ykp_orani": 28.4,

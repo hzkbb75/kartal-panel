@@ -1,9 +1,9 @@
 {
   "kod": "NUGYO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 114.8,
+      "efm_yuzde": 95.0,
       "icr_kati": -0.84,
       "tahakkuk_orani": -4.62,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 96.1,
+      "efm_yuzde": 95.0,
       "icr_kati": -0.97,
       "tahakkuk_orani": -2.24,
       "aga_orani": 0.0,
@@ -75,7 +75,7 @@
       "dso_delta": 481.2
     },
     "2026/06": {
-      "efm_yuzde": 303.4,
+      "efm_yuzde": 0.0,
       "icr_kati": -6.04,
       "tahakkuk_orani": -8.06,
       "aga_orani": 0.0,

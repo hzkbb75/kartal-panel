@@ -1,10 +1,10 @@
 {
   "kod": "TOASO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 14.5,
-      "icr_kati": 1.02,
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.36,
       "tahakkuk_orani": -7.02,
       "aga_orani": 0.0,
       "ykp_orani": 0.5,
@@ -13,9 +13,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 8.5,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 0,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 1.02x (ICR zayıf)."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 1.34 Mr ₺ (0.6x Amortisman)<br><strong>MDV:</strong> 16.03 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 12.9,
-      "icr_kati": 1.79,
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.63,
       "tahakkuk_orani": -11.0,
       "aga_orani": 0.0,
       "ykp_orani": 0.5,
@@ -47,12 +47,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 8.96 Mr ₺ (ÖZK %+18.6)<br><strong>Ham YPP:</strong> -3.55 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %10.2 (4.93 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.47x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
-      "dts_delta": -15,
+      "dts_delta": 0,
       "dso_delta": -2.9
     },
     "2026/03": {
-      "efm_yuzde": 2.4,
-      "icr_kati": 9.01,
+      "efm_yuzde": 0.0,
+      "icr_kati": 3.15,
       "tahakkuk_orani": 2.03,
       "aga_orani": 58.6,
       "ykp_orani": 4.1,
@@ -75,8 +75,8 @@
       "dso_delta": -7.8
     },
     "2026/06": {
-      "efm_yuzde": 0.8,
-      "icr_kati": 25.22,
+      "efm_yuzde": 0.0,
+      "icr_kati": 8.83,
       "tahakkuk_orani": 6.25,
       "aga_orani": 25.1,
       "ykp_orani": 4.8,

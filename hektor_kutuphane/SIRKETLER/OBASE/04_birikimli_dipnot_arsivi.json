@@ -1,10 +1,10 @@
 {
   "kod": "OBASE",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 15.2,
-      "icr_kati": 11.0,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -10.61,
       "aga_orani": 0.0,
       "ykp_orani": 4.6,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 10.7,
-      "icr_kati": 12.58,
+      "efm_yuzde": 0.0,
+      "icr_kati": 4.4,
       "tahakkuk_orani": -6.39,
       "aga_orani": 177.6,
       "ykp_orani": 3.7,
@@ -51,8 +51,8 @@
       "dso_delta": -15.0
     },
     "2026/03": {
-      "efm_yuzde": 5.2,
-      "icr_kati": 17.42,
+      "efm_yuzde": 2.4,
+      "icr_kati": 38.0,
       "tahakkuk_orani": -10.52,
       "aga_orani": 7850.3,
       "ykp_orani": 4.1,
@@ -75,8 +75,8 @@
       "dso_delta": 38.1
     },
     "2026/06": {
-      "efm_yuzde": 4.1,
-      "icr_kati": 16.87,
+      "efm_yuzde": 0.3,
+      "icr_kati": 113.36,
       "tahakkuk_orani": -10.45,
       "aga_orani": 4473.1,
       "ykp_orani": 4.9,

@@ -1,9 +1,9 @@
 {
   "kod": "BULGS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 918.5,
+      "efm_yuzde": 0.0,
       "icr_kati": -18.07,
       "tahakkuk_orani": 11.92,
       "aga_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 1849.5,
-      "icr_kati": 5.16,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 16.7,
       "aga_orani": 1.0,
       "ykp_orani": 0.0,
@@ -51,7 +51,7 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 4137.7,
+      "efm_yuzde": 0.0,
       "icr_kati": -0.37,
       "tahakkuk_orani": -2.79,
       "aga_orani": 0.0,
@@ -75,7 +75,7 @@
       "dso_delta": 0.0
     },
     "2026/06": {
-      "efm_yuzde": 4503.6,
+      "efm_yuzde": 0.0,
       "icr_kati": -3.21,
       "tahakkuk_orani": -6.49,
       "aga_orani": 0.0,

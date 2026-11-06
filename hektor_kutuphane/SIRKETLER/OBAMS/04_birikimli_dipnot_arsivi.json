@@ -1,10 +1,10 @@
 {
   "kod": "OBAMS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": 0.93,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 5.96,
       "aga_orani": 0.0,
       "ykp_orani": 46.0,
@@ -29,7 +29,7 @@
     },
     "2025/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": 0.94,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -14.26,
       "aga_orani": 0.0,
       "ykp_orani": 25.0,
@@ -52,8 +52,8 @@
       "dso_delta": -20.0
     },
     "2026/03": {
-      "efm_yuzde": 170313.9,
-      "icr_kati": 0.52,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 0.44,
       "aga_orani": 0.0,
       "ykp_orani": 2.8,
@@ -76,8 +76,8 @@
       "dso_delta": 22.7
     },
     "2026/06": {
-      "efm_yuzde": 125848.6,
-      "icr_kati": 1.16,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -2.59,
       "aga_orani": 4.2,
       "ykp_orani": 33.3,

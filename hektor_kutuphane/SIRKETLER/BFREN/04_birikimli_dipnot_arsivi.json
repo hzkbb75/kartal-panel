@@ -1,10 +1,10 @@
 {
   "kod": "BFREN",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 1.2,
-      "icr_kati": 28.74,
+      "efm_yuzde": 0.0,
+      "icr_kati": 23.68,
       "tahakkuk_orani": 8.89,
       "aga_orani": 0.0,
       "ykp_orani": 55.7,
@@ -52,8 +52,8 @@
       "dso_delta": -15.2
     },
     "2026/03": {
-      "efm_yuzde": 6.7,
-      "icr_kati": 56.8,
+      "efm_yuzde": 0.0,
+      "icr_kati": 19.88,
       "tahakkuk_orani": -11.29,
       "aga_orani": 0.0,
       "ykp_orani": 6.1,
@@ -76,8 +76,8 @@
       "dso_delta": 16.0
     },
     "2026/06": {
-      "efm_yuzde": 2.2,
-      "icr_kati": 160.33,
+      "efm_yuzde": 0.0,
+      "icr_kati": 56.12,
       "tahakkuk_orani": -6.63,
       "aga_orani": 0.0,
       "ykp_orani": 12.6,

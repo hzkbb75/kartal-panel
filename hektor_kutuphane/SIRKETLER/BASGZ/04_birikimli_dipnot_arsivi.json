@@ -1,9 +1,9 @@
 {
   "kod": "BASGZ",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 9.9,
+      "efm_yuzde": 0.0,
       "icr_kati": 42.37,
       "tahakkuk_orani": 3.13,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 27.6,
+      "efm_yuzde": 0.0,
       "icr_kati": 11.06,
       "tahakkuk_orani": 4.65,
       "aga_orani": 121.2,
@@ -51,7 +51,7 @@
       "dso_delta": -8.6
     },
     "2026/03": {
-      "efm_yuzde": 23.0,
+      "efm_yuzde": 0.0,
       "icr_kati": 32.22,
       "tahakkuk_orani": -1.95,
       "aga_orani": 425.6,
@@ -75,8 +75,8 @@
       "dso_delta": 16.6
     },
     "2026/06": {
-      "efm_yuzde": 65.8,
-      "icr_kati": 8.24,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 2.0,
       "aga_orani": 475.0,
       "ykp_orani": 28.5,

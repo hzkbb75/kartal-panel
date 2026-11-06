@@ -1,6 +1,6 @@
 {
   "kod": "PNSUT",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 13.5,
@@ -52,8 +52,8 @@
       "dso_delta": 3.4
     },
     "2026/03": {
-      "efm_yuzde": 2.2,
-      "icr_kati": 6.27,
+      "efm_yuzde": 0.0,
+      "icr_kati": 2.2,
       "tahakkuk_orani": -0.69,
       "aga_orani": 1850.2,
       "ykp_orani": 27.7,

@@ -1,10 +1,10 @@
 {
   "kod": "BAHKM",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": 0.34,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -3.43,
       "aga_orani": 0.0,
       "ykp_orani": 67.1,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 2698.4,
-      "icr_kati": 0.65,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 26.11,
       "aga_orani": 23.8,
       "ykp_orani": 53.8,
@@ -52,8 +52,8 @@
       "dso_delta": -8.6
     },
     "2026/03": {
-      "efm_yuzde": 6693.7,
-      "icr_kati": 0.24,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -0.95,
       "aga_orani": 0.0,
       "ykp_orani": 79.3,
@@ -77,8 +77,8 @@
       "dso_delta": 61.9
     },
     "2026/06": {
-      "efm_yuzde": 1371.0,
-      "icr_kati": 0.55,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -2.25,
       "aga_orani": 0.0,
       "ykp_orani": 44.3,

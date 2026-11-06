@@ -1,9 +1,9 @@
 {
   "kod": "BORSK",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 342.2,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.76,
       "tahakkuk_orani": -10.07,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 156.6,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.45,
       "tahakkuk_orani": -7.55,
       "aga_orani": 0.0,

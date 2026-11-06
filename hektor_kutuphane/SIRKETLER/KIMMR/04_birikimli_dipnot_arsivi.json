@@ -1,10 +1,10 @@
 {
   "kod": "KIMMR",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 9.8,
-      "icr_kati": 7.31,
+      "efm_yuzde": 0.0,
+      "icr_kati": 2.56,
       "tahakkuk_orani": -3.26,
       "aga_orani": 0.0,
       "ykp_orani": 1.7,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 2.7,
-      "icr_kati": 23.31,
+      "efm_yuzde": 0.0,
+      "icr_kati": 8.16,
       "tahakkuk_orani": -8.7,
       "aga_orani": 0.0,
       "ykp_orani": 2.2,
@@ -51,8 +51,8 @@
       "dso_delta": -0.8
     },
     "2026/03": {
-      "efm_yuzde": 0.2,
-      "icr_kati": 254.37,
+      "efm_yuzde": 0.0,
+      "icr_kati": 100.62,
       "tahakkuk_orani": -2.94,
       "aga_orani": 0.0,
       "ykp_orani": 0.8,
@@ -75,8 +75,8 @@
       "dso_delta": 1.1
     },
     "2026/06": {
-      "efm_yuzde": 3.8,
-      "icr_kati": 13.5,
+      "efm_yuzde": 0.0,
+      "icr_kati": 4.72,
       "tahakkuk_orani": -7.57,
       "aga_orani": 22.4,
       "ykp_orani": 93.0,

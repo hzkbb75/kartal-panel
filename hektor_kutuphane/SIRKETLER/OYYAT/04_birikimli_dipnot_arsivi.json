@@ -1,6 +1,6 @@
 {
   "kod": "OYYAT",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 90.6,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 100.4,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.08,
       "tahakkuk_orani": -13.38,
       "aga_orani": 0.0,
@@ -51,7 +51,7 @@
       "dso_delta": -56.0
     },
     "2026/03": {
-      "efm_yuzde": 102.9,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.81,
       "tahakkuk_orani": -7.91,
       "aga_orani": 0.0,
@@ -75,7 +75,7 @@
       "dso_delta": -34.5
     },
     "2026/06": {
-      "efm_yuzde": 104.7,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.18,
       "tahakkuk_orani": -11.37,
       "aga_orani": 0.0,

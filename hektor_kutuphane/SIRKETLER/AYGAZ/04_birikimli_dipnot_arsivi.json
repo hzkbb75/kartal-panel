@@ -1,10 +1,10 @@
 {
   "kod": "AYGAZ",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 37.8,
-      "icr_kati": 3.79,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -0.4,
       "aga_orani": 0.0,
       "ykp_orani": 19.3,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 33.4,
-      "icr_kati": 4.88,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -1.19,
       "aga_orani": 0.0,
       "ykp_orani": 14.2,
@@ -51,8 +51,8 @@
       "dso_delta": -2.1
     },
     "2026/03": {
-      "efm_yuzde": 46.1,
-      "icr_kati": 2.82,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 3.45,
       "aga_orani": 59.6,
       "ykp_orani": 4.7,
@@ -75,8 +75,8 @@
       "dso_delta": 10.3
     },
     "2026/06": {
-      "efm_yuzde": 39.5,
-      "icr_kati": 3.9,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 5.89,
       "aga_orani": 20.5,
       "ykp_orani": 16.5,

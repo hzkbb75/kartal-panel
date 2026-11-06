@@ -1,6 +1,6 @@
 {
   "kod": "KRSTL",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 65.1,
@@ -51,8 +51,8 @@
       "dso_delta": 5.2
     },
     "2026/03": {
-      "efm_yuzde": 41.7,
-      "icr_kati": 9.3,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 0.53,
       "aga_orani": 12.6,
       "ykp_orani": 0.2,

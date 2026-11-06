@@ -1,10 +1,10 @@
 {
   "kod": "ENDAE",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 31.6,
-      "icr_kati": 3.74,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -1.56,
       "aga_orani": 0.0,
       "ykp_orani": 0.3,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 106.0,
-      "icr_kati": 1.84,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -1.18,
       "aga_orani": 1.7,
       "ykp_orani": 74.5,
@@ -51,8 +51,8 @@
       "dso_delta": 17.8
     },
     "2026/03": {
-      "efm_yuzde": 52.9,
-      "icr_kati": 4.33,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -0.21,
       "aga_orani": 15.6,
       "ykp_orani": 67.0,
@@ -76,7 +76,7 @@
     },
     "2026/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": 1.09,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -1.94,
       "aga_orani": 15.8,
       "ykp_orani": 91.8,

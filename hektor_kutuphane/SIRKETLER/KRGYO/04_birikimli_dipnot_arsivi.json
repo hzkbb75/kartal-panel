@@ -1,10 +1,10 @@
 {
   "kod": "KRGYO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": 0.22,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -6.56,
       "aga_orani": 0.0,
       "ykp_orani": 90.2,
@@ -76,7 +76,7 @@
     },
     "2026/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": 0.11,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -0.87,
       "aga_orani": 0.0,
       "ykp_orani": 92.6,

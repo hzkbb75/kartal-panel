@@ -1,10 +1,10 @@
 {
   "kod": "SISE",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 3.5,
-      "icr_kati": 4.26,
+      "efm_yuzde": 0.0,
+      "icr_kati": 1.49,
       "tahakkuk_orani": -0.51,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 9.5,
-      "icr_kati": 2.05,
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.72,
       "tahakkuk_orani": -3.58,
       "aga_orani": 142.9,
       "ykp_orani": 41.7,
@@ -51,8 +51,8 @@
       "dso_delta": -4.2
     },
     "2026/03": {
-      "efm_yuzde": 0.4,
-      "icr_kati": 30.24,
+      "efm_yuzde": 0.0,
+      "icr_kati": 10.58,
       "tahakkuk_orani": 0.09,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -75,8 +75,8 @@
       "dso_delta": 23.9
     },
     "2026/06": {
-      "efm_yuzde": 0.5,
-      "icr_kati": 25.5,
+      "efm_yuzde": 0.0,
+      "icr_kati": 8.93,
       "tahakkuk_orani": 1.57,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,

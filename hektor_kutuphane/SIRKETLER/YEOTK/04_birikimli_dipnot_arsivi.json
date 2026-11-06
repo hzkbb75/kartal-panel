@@ -1,6 +1,6 @@
 {
   "kod": "YEOTK",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 35.3,
@@ -75,8 +75,8 @@
       "dso_delta": 15.6
     },
     "2026/06": {
-      "efm_yuzde": 15.0,
-      "icr_kati": 2.59,
+      "efm_yuzde": 11.9,
+      "icr_kati": 3.25,
       "tahakkuk_orani": -6.63,
       "aga_orani": 0.3,
       "ykp_orani": 2.1,

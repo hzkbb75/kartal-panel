@@ -1,10 +1,10 @@
 {
   "kod": "AGHOL",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 2.8,
-      "icr_kati": 5.05,
+      "efm_yuzde": 0.0,
+      "icr_kati": 1.77,
       "tahakkuk_orani": 3.0,
       "aga_orani": 0.0,
       "ykp_orani": 0.7,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 0.4,
-      "icr_kati": 73.05,
+      "efm_yuzde": 0.0,
+      "icr_kati": 25.57,
       "tahakkuk_orani": -1.94,
       "aga_orani": 128.7,
       "ykp_orani": 48.1,
@@ -75,8 +75,8 @@
       "dso_delta": 5.2
     },
     "2026/06": {
-      "efm_yuzde": 3.3,
-      "icr_kati": 8.97,
+      "efm_yuzde": 1.5,
+      "icr_kati": 19.12,
       "tahakkuk_orani": -2.38,
       "aga_orani": 597.5,
       "ykp_orani": 3.4,

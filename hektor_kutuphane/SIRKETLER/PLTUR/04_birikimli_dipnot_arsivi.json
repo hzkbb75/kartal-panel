@@ -1,9 +1,9 @@
 {
   "kod": "PLTUR",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 134.3,
+      "efm_yuzde": 95.0,
       "icr_kati": 2.32,
       "tahakkuk_orani": -0.01,
       "aga_orani": 0.0,
@@ -51,7 +51,7 @@
       "dso_delta": 7.0
     },
     "2026/03": {
-      "efm_yuzde": 116.0,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.73,
       "tahakkuk_orani": -8.83,
       "aga_orani": 2.3,

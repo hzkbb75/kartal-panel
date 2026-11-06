@@ -1,6 +1,6 @@
 {
   "kod": "ARDYZ",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 68.1,
@@ -52,7 +52,7 @@
       "dso_delta": 32.3
     },
     "2026/03": {
-      "efm_yuzde": 130.2,
+      "efm_yuzde": 95.0,
       "icr_kati": 2.54,
       "tahakkuk_orani": -2.15,
       "aga_orani": 399.5,

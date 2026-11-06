@@ -1,9 +1,9 @@
 {
   "kod": "HURGZ",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 494.2,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.26,
       "tahakkuk_orani": -6.0,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 422.0,
+      "efm_yuzde": 95.0,
       "icr_kati": -0.13,
       "tahakkuk_orani": -11.44,
       "aga_orani": 0.0,
@@ -51,7 +51,7 @@
       "dso_delta": -0.6
     },
     "2026/03": {
-      "efm_yuzde": 922.6,
+      "efm_yuzde": 95.0,
       "icr_kati": -0.68,
       "tahakkuk_orani": -7.12,
       "aga_orani": 0.0,
@@ -76,7 +76,7 @@
       "dso_delta": 57.3
     },
     "2026/06": {
-      "efm_yuzde": 1291.1,
+      "efm_yuzde": 0.0,
       "icr_kati": -0.66,
       "tahakkuk_orani": -21.26,
       "aga_orani": 0.0,

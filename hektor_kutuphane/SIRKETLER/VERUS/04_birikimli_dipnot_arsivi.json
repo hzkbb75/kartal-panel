@@ -1,9 +1,9 @@
 {
   "kod": "VERUS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 135.3,
+      "efm_yuzde": 95.0,
       "icr_kati": -5.15,
       "tahakkuk_orani": -14.38,
       "aga_orani": 0.0,
@@ -76,7 +76,7 @@
     },
     "2026/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": 1.03,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -1.77,
       "aga_orani": 1.5,
       "ykp_orani": 10.4,

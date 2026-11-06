@@ -1,6 +1,6 @@
 {
   "kod": "TUCLK",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 41.5,
@@ -78,8 +78,8 @@
       "dso_delta": 177.3
     },
     "2026/06": {
-      "efm_yuzde": 2.0,
-      "icr_kati": 11.37,
+      "efm_yuzde": 1.2,
+      "icr_kati": 18.4,
       "tahakkuk_orani": -15.41,
       "aga_orani": 658.4,
       "ykp_orani": 7.0,

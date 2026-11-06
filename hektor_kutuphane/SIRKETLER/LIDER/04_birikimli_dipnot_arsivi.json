@@ -1,9 +1,9 @@
 {
   "kod": "LIDER",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 165.8,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.13,
       "tahakkuk_orani": 0.2,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 151.1,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.18,
       "tahakkuk_orani": 9.87,
       "aga_orani": 0.0,
@@ -52,7 +52,7 @@
       "dso_delta": 2.8
     },
     "2026/03": {
-      "efm_yuzde": 204.2,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.13,
       "tahakkuk_orani": 22.0,
       "aga_orani": 0.0,
@@ -78,7 +78,7 @@
       "dso_delta": 1.7
     },
     "2026/06": {
-      "efm_yuzde": 173.5,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.14,
       "tahakkuk_orani": -2.16,
       "aga_orani": 0.4,

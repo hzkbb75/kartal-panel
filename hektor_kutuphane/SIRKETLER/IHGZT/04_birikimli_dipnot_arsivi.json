@@ -1,9 +1,9 @@
 {
   "kod": "IHGZT",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 227.0,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.44,
       "tahakkuk_orani": -2.66,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 155.9,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.03,
       "tahakkuk_orani": -5.01,
       "aga_orani": 0.0,
@@ -51,7 +51,7 @@
       "dso_delta": 5.1
     },
     "2026/03": {
-      "efm_yuzde": 210.3,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.27,
       "tahakkuk_orani": -2.31,
       "aga_orani": 0.0,

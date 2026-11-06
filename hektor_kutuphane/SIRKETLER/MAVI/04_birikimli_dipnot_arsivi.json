@@ -1,10 +1,10 @@
 {
   "kod": "MAVI",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 87.2,
-      "icr_kati": 5.46,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -6.43,
       "aga_orani": 0.0,
       "ykp_orani": 6.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 93.3,
-      "icr_kati": 4.24,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -10.33,
       "aga_orani": 1.5,
       "ykp_orani": 11.9,
@@ -51,8 +51,8 @@
       "dso_delta": -3.7
     },
     "2026/03": {
-      "efm_yuzde": 52.3,
-      "icr_kati": 5.2,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -3.2,
       "aga_orani": 10.8,
       "ykp_orani": 0.1,
@@ -75,8 +75,8 @@
       "dso_delta": 10.2
     },
     "2026/06": {
-      "efm_yuzde": 45.6,
-      "icr_kati": 4.93,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -10.1,
       "aga_orani": 6.3,
       "ykp_orani": 0.1,

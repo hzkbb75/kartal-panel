@@ -1,6 +1,6 @@
 {
   "kod": "IZFAS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 62.7,
@@ -53,7 +53,7 @@
       "dso_delta": 6.1
     },
     "2026/03": {
-      "efm_yuzde": 108.6,
+      "efm_yuzde": 95.0,
       "icr_kati": -1.48,
       "tahakkuk_orani": -14.82,
       "aga_orani": 0.0,

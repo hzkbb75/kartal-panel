@@ -396,11 +396,22 @@ def hesapla_donem_dipnot_metrikleri(satirlar_cari: list, satirlar_onceki: list =
     karsiliklar_c = satir_bul(satirlar_cari, ["borc karsiliklari", "kisa vadeli karsiliklar", "uzun vadeli karsiliklar", "calisanlara saglanan"], mod="topla")[0]
 
     # Net Finansman Gideri ve Operasyonel FAVÖK (EFK + Amortisman) bazlı gerçekçi ICR & Yıllıklandırılmış Borç Maliyeti
-    net_fin_gider_c = max(fin_gider_c - fin_gelir_c, fin_gider_c * 0.35) if fin_gider_c > 0 else 0.0
+    # Net Nakit (fin_borc_c <= nakit_c) veya ihmal edilebilir finansal borç (<%1.5 aktif) durumunda
+    # gelir tablosundaki finansal giderler kredi faizi değil kur/vade farkı olduğu için yapay %1000+ EFM üretilmez.
+    net_nakit_mi = (fin_borc_c <= nakit_c) or (fin_borc_c < varlik_c * 0.015)
+    net_fin_gider_c = max(0.0, fin_gider_c - fin_gelir_c)
     ort_borc = max((fin_borc_c + fin_borc_o) / 2.0, 1.0)
-    efm_yuzde = round(((net_fin_gider_c * yillik_carpan) / ort_borc) * 100.0, 1) if fin_borc_c > 0 else 0.0
+    if net_nakit_mi or fin_borc_c <= 0:
+        efm_yuzde = 0.0
+    else:
+        efm_yuzde = round(min(95.0, ((net_fin_gider_c * yillik_carpan) / ort_borc) * 100.0), 1)
+
     operasyonel_nakit_kar = max(efk_c + amort_c, efk_c)
-    icr_kati = round(operasyonel_nakit_kar / max(net_fin_gider_c, 1.0), 2) if net_fin_gider_c > 0 else 99.0
+    if net_nakit_mi or net_fin_gider_c <= 0:
+        icr_kati = round(operasyonel_nakit_kar / max(fin_gider_c, 1.0), 2) if fin_gider_c > 0 else 99.0
+        icr_kati = max(icr_kati, 9.9) if net_nakit_mi and efk_c > 0 else icr_kati
+    else:
+        icr_kati = round(operasyonel_nakit_kar / max(net_fin_gider_c, 1.0), 2)
 
     tahakkuk_orani = round(((net_c - cfo_c) / varlik_c) * 100.0, 2)
     aga_orani = round((max(0.0, modv_c - modv_o) / max(efk_c, 1.0)) * 100.0, 1) if efk_c > 0 else 0.0
@@ -628,23 +639,23 @@ def degerleme_termometresi_uret(hisse_kodu, mevcut_fiyat, adil_deger, iskonto_or
 # ==============================================================================
 def sektor_roe_normu_getir(sektor_adi: str) -> tuple:
     """
-    6 Kümeli DuPont Sektörel ROE Matrisi (Python & JS Tam Senkronize).
+    6 Kümeli DuPont Sektörel ROE Matrisi (Tüm 45 Ziraat Sektörü İçin Python & JS Tam Senkronize).
     Döndürür: (min_norm, ust_norm, kume_adi)
     """
     sek_l = tr_norm(str(sektor_adi or ""))
-    if any(x in sek_l for x in ["perakende", "magaza", "gida", "icecek"]):
+    if any(x in sek_l for x in ["perakende", "magaza", "gida", "icecek", "pazarlama"]):
         return 35.0, 60.0, "Organize Perakende & Tüketim"
-    elif any(x in sek_l for x in ["yazilim", "bilisim", "teknoloji", "savunma", "telekom"]):
-        return 30.0, 50.0, "Hafif Varlık & Teknoloji"
-    elif any(x in sek_l for x in ["banka", "sigorta", "faktoring", "finans", "menkul", "emeklilik"]):
-        return 22.0, 38.0, "Banka & Finans"
-    elif any(x in sek_l for x in ["demir", "celik", "petrol", "kimya", "cimento", "otomotiv", "maden"]):
-        return 15.0, 30.0, "Ağır Sanayi & Döngüsel"
-    elif any(x in sek_l for x in ["gyo", "gayrimenkul", "insaat", "turizm", "enerji", "otel", "tarim"]):
-        return 8.0, 20.0, "Varlık Yoğun & Düşük Devir"
+    elif any(x in sek_l for x in ["yazilim", "bilisim", "bilgisayar", "teknoloji", "savunma", "telekom", "mesleki", "medya", "ilac", "saglik"]):
+        return 30.0, 50.0, "Hafif Varlık, Teknoloji & Sağlık"
+    elif any(x in sek_l for x in ["banka", "sigorta", "faktoring", "leasing", "menkul", "varlik yonetimi", "yatirim ortakliklari", "girisim sermayesi", "emeklilik"]):
+        return 22.0, 38.0, "Banka & Finansal Kuruluşlar"
     elif any(x in sek_l for x in ["holding"]):
         return 18.0, 32.0, "Holding & İştirak Grubu"
-    return 15.0, 30.0, "Ağır Sanayi & Üretim"
+    elif any(x in sek_l for x in ["gyo", "gayrimenkul", "insaat", "turizm", "enerji", "otel", "tarim", "spor"]):
+        return 8.0, 20.0, "Varlık Yoğun & Düşük Devir"
+    elif any(x in sek_l for x in ["demir", "celik", "petrol", "kimya", "cimento", "cam", "seramik", "yapi malzemeleri", "otomotiv", "maden", "makine", "elektrik malzemeleri", "dayanikli tuketim", "tekstil", "orman", "kagit", "havayolu", "lojistik", "imalat"]):
+        return 15.0, 30.0, "Sanayi, İmalat & Ulaştırma"
+    return 15.0, 30.0, "Sanayi, İmalat & Ulaştırma"
 
 
 def hesapla_hibrit_kartal_puani(s: dict, teknik_veri: dict = None) -> float:
@@ -1307,33 +1318,6 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
     else:
         pfk = 0.0
 
-    # 12 ÇEYREKLİK (3 YILLIK) ROE TRENDİ VE SEKTÖREL VERİLER
-    sirket_kaydi = YEREL_MALI_VERITABANI.get(kod, {})
-    cok_donem = sirket_kaydi.get("donemler", {})
-    # Son 12 çeyreği (3 yıl) çek
-    sirali_donemler = sorted(cok_donem.keys())[-12:]
-
-    roe_donemler = []
-    roe_degerleri = []
-    for d_adi in sirali_donemler:
-        d_satirlar = [(row[0], row[1], row[1]) for row in cok_donem[d_adi]]
-        d_net = satir_bul(d_satirlar, ["donem net kar", "donem kari", "ana ortaklik paylari"])[0]
-        d_ozk = max(satir_bul(d_satirlar, ["ana ortakliga ait ozkaynaklar", "toplam ozkaynaklar", "ozkaynaklar"])[0], 1.0)
-        d_roe = round((d_net / d_ozk) * 100.0, 1)
-        roe_donemler.append(d_adi)
-        roe_degerleri.append(d_roe)
-
-    if not roe_degerleri:
-        roe_donemler = ["Son Dönem"]
-        roe_degerleri = [roe]
-    # Son çeyrek ROE'sini Ziraat resmi değeriyle güncelle
-    if roe_degerleri:
-        roe_degerleri[-1] = roe
-    roe_serisi = {
-        "donemler": roe_donemler,
-        "roe_degerleri": roe_degerleri
-    }
-
     # HİBRİT DEĞERLEME MODÜLÜ (ZİRAAT GÜVENCELİ - UFRS net_c korunur, 4Ç TTM kârı net_kar_ttm'de tutulur)
     ziraat = BIST_ANALIZ_TABANI.get(kod, {})
     if ziraat:
@@ -1342,6 +1326,33 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
         if ziraat.get("roe", 0) != 0: roe = float(ziraat["roe"])
         if ziraat.get("net_kar_son4c_mn", 0) != 0: net_kar_ttm = float(ziraat["net_kar_son4c_mn"])
         if ziraat.get("pd_s", 0) > 0: fd_satis = float(ziraat["pd_s"])
+
+    # 12 ÇEYREKLİK (YILLIKLANDIRILMIŞ) ROE TRENDİ VE SEKTÖREL VERİLER
+    sirket_kaydi = YEREL_MALI_VERITABANI.get(kod, {})
+    cok_donem = sirket_kaydi.get("donemler", {})
+    sirali_donemler = sorted(cok_donem.keys())[-12:]
+
+    roe_donemler = []
+    roe_degerleri = []
+    for d_adi in sirali_donemler:
+        d_satirlar = [(row[0], row[1], row[1]) for row in cok_donem[d_adi]]
+        d_net = satir_bul(d_satirlar, ["donem net kar/zarari", "ana ortaklik paylari", "donem net kar", "surdurulen faaliyetler donem kari/zarari", "donem kari"])[0]
+        d_ozk = max(satir_bul(d_satirlar, ["ana ortakliga ait ozkaynaklar", "toplam ozkaynaklar", "ozkaynaklar"])[0], 1.0)
+        _, d_yillik_carpan = _donem_gun_ve_yillik_carpan(d_adi)
+        d_roe = round(((d_net * d_yillik_carpan) / d_ozk) * 100.0, 1)
+        d_roe = max(-100.0, min(150.0, d_roe))
+        roe_donemler.append(d_adi)
+        roe_degerleri.append(d_roe)
+
+    if not roe_degerleri:
+        roe_donemler = ["Son Dönem"]
+        roe_degerleri = [roe]
+    if roe_degerleri:
+        roe_degerleri[-1] = roe
+    roe_serisi = {
+        "donemler": roe_donemler,
+        "roe_degerleri": roe_degerleri
+    }
 
     sektor_medyan_fk = SEKTOR_FK_HARITASI.get(sektor, 10.0)
     alt_fk = round(max(3.0, sektor_medyan_fk * 0.65), 1)
@@ -1420,19 +1431,30 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
 
     def degisim_karti(kalem_adi, c_val, o_val, varlik_onceki, ozel_not):
         fark = c_val - o_val
-        yuzde = round(((c_val / max(abs(o_val), 1.0)) - 1) * 100, 1) if o_val != 0 else 0.0
+        if abs(c_val) < 0.05 and abs(o_val) < 0.05:
+            baslik_etiket = f"{kalem_adi} BULUNMUYOR (0 TL)"
+        elif abs(fark) < 0.05:
+            baslik_etiket = f"{kalem_adi} DEĞİŞMEDİ (%0.0)"
+        else:
+            yuzde = round(((c_val - o_val) / max(abs(o_val), 1.0)) * 100, 1) if o_val != 0 else 100.0
+            yon = "YÜKSELDİ" if fark > 0 else "AZALDI"
+            baslik_etiket = f"{kalem_adi} %{abs(yuzde):.1f} {yon}"
         aktif_etkisi = round((abs(fark) / max(varlik_onceki, 1.0)) * 100, 1)
-        yon = "YÜKSELDİ" if fark >= 0 else "AZALDI"
         
         return {
-            "kalem": f"{kalem_adi} %{abs(yuzde):.1f} {yon}",
+            "kalem": baslik_etiket,
             "guncel_tutar": format_milyar_milyon(c_val),
             "ne_ifade_ediyor": f"{format_milyar_milyon(o_val)} → {format_milyar_milyon(c_val)}. Değişim aktifin %{aktif_etkisi:.1f}'i. {ozel_not}"
         }
 
     ozk_not = "Özkaynak tamponunun net kârla büyümesi içsel değeri artırır." if ozk_c >= ozk_o else "Özkaynak tabanındaki daralma veya temettü çıkışı izlenmelidir."
-    mdv_not = "Maddi duran varlık artışı kapasite ve tesis yatırımlarının sürdüğünü gösterir." if mdv_c >= mdv_o else "Sabit kıymetlerde reel artış yok; mevcut kapasiteyle üretim yapılıyor."
-    avans_not = "Alınan peşin sipariş avanslarındaki artış gelecek çeyreklerin hazır hasılatıdır." if ertelenmis_c >= ertelenmis_o else "Sipariş avanslarının azalması geçmiş siparişlerin teslim edilip faturaya dönüştüğünü gösterir."
+    mdv_not = "Maddi duran varlık artışı kapasite ve tesis yatırımlarının sürdüğünü gösterir." if mdv_c > mdv_o else "Sabit kıymetlerde reel artış yok; mevcut kapasiteyle üretim yapılıyor."
+    if ertelenmis_c < 0.05 and ertelenmis_o < 0.05:
+        avans_not = "Şirket bilançosunda peşin sipariş avansı taşımıyor; satışlar doğrudan faturalandırılıyor."
+    elif ertelenmis_c >= ertelenmis_o:
+        avans_not = "Alınan peşin sipariş avanslarındaki artış gelecek çeyreklerin hazır hasılatıdır."
+    else:
+        avans_not = "Sipariş avanslarının azalması geçmiş siparişlerin teslim edilip faturaya dönüştüğünü gösterir."
     stok_deg = ((stok_c / max(stok_o, 1.0)) - 1.0) * 100.0 if stok_o > 0 else 0.0
     stok_not = "Stok artışı ciro büyümesinin üzerinde; stok devir hızı yakından izlenmelidir." if (stok_deg > satis_buyume + 15.0) else "Stoklar operasyonel satış hacmiyle dengeli seyrediyor."
     alacak_deg = ((alacak_c / max(alacak_o, 1.0)) - 1.0) * 100.0 if alacak_o > 0 else 0.0
@@ -1507,10 +1529,52 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
         f"yakından izlenen kritik zaafı '{dna_katmani['dna_ozeti']['kritik_risk']['baslik']}' tarafıdır."
     )
 
-    # KAP_VE_TEKNIK_AMBARI'ndan Gerçek Verileri Bağla
-    # YENİ HALİ:
-    kap_verileri = TUM_KAP_HABERLERI.get(kod) or KAP_VE_TEKNIK_AMBARI.get("kap_haberleri", {}).get(kod, [])
-    teknik_veri = KAP_VE_TEKNIK_AMBARI.get("teknik_veriler", {}).get(kod, None)
+    # KAP_VE_TEKNIK_AMBARI'ndan Gerçek Verileri Bağla & Fiyat Senkronizasyonu Yap
+    ham_kap_verileri = TUM_KAP_HABERLERI.get(kod) or KAP_VE_TEKNIK_AMBARI.get("kap_haberleri", {}).get(kod, [])
+    kap_verileri = []
+    for _kp in ham_kap_verileri:
+        _k_kopya = dict(_kp)
+        _bsl = str(_k_kopya.get("baslik", "")).strip()
+        if len(_bsl) >= 75 and not _bsl.endswith((".", "!", ")", "KAP", "…")):
+            # Kelime ortasında kesilmiş KAP başlığını son tam kelimede toparla
+            if " " in _bsl[-15:]:
+                _bsl = _bsl.rsplit(" ", 1)[0].rstrip(",;:-") + "..."
+            else:
+                _bsl = _bsl + "..."
+        _k_kopya["baslik"] = _bsl
+        kap_verileri.append(_k_kopya)
+
+    ham_tv = KAP_VE_TEKNIK_AMBARI.get("teknik_veriler", {}).get(kod, None)
+    if ham_tv and fiyat > 0:
+        teknik_veri = dict(ham_tv)
+        destek_60g = min(float(teknik_veri.get("destek_60g", fiyat * 0.88)), round(fiyat * 0.99, 2))
+        direnc_60g = max(float(teknik_veri.get("direnc_60g", fiyat * 1.15)), round(fiyat * 1.01, 2))
+        kanal_boyu = max(direnc_60g - destek_60g, fiyat * 0.01, 0.01)
+        kanal_konumu = round(max(0.0, min(100.0, ((fiyat - destek_60g) / kanal_boyu) * 100.0)), 1)
+        risk_yuzde = round(max(0.5, ((fiyat - destek_60g) / fiyat) * 100.0), 1)
+        odul_yuzde = round(max(0.5, ((direnc_60g - fiyat) / fiyat) * 100.0), 1)
+        rr_orani = round(odul_yuzde / max(risk_yuzde, 0.5), 2)
+        if kanal_konumu <= 25.0:
+            durum, renk = "🟢 60G DESTEK BÖLGESİ (ALIM FIRSATI)", "#10b981"
+        elif kanal_konumu <= 65.0:
+            durum, renk = "🔵 KANAL ORTA BANT (DENGELİ)", "#38bdf8"
+        elif kanal_konumu <= 85.0:
+            durum, renk = "🟡 DİRENCE YAKIN (DİKKATLİ İZLE)", "#f59e0b"
+        else:
+            durum, renk = "🔴 60G DİRENÇ TAVANI (PRİMLİ)", "#ef4444"
+        teknik_veri.update({
+            "fiyat": round(fiyat, 2),
+            "destek_60g": destek_60g,
+            "direnc_60g": direnc_60g,
+            "kanal_konumu": kanal_konumu,
+            "risk_yuzde": risk_yuzde,
+            "odul_yuzde": odul_yuzde,
+            "rr_orani": rr_orani,
+            "durum": durum,
+            "renk": renk
+        })
+    else:
+        teknik_veri = ham_tv
 
     return {
         "etiketler_html": etiketler_html,
@@ -2090,29 +2154,29 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
                 .replace(/Ç/g, 'c').replace(/ç/g, 'c')
                 .toLowerCase();
             
-            let kume = 'Ağır Sanayi & Üretim';
+            let kume = 'Sanayi, İmalat & Ulaştırma';
             let minNorm = 15;
             let ustNorm = 30;
-            let motor = 'Kapasite Kullanımı & Emtia/Spread Dengesi';
+            let motor = 'Kapasite Kullanımı & Operasyonel Verimlilik';
 
-            if (/perakende|magaza|gida|icecek/i.test(s)) {{
+            if (/perakende|magaza|gida|icecek|pazarlama/i.test(s)) {{
                 kume = 'Organize Perakende & Tüketim'; minNorm = 35; ustNorm = 60;
                 motor = 'Yüksek Aktif Devir Hızı (Stok Sirkülasyonu)';
-            }} else if (/yazilim|bilisim|teknoloji|savunma|telekom/i.test(s)) {{
-                kume = 'Hafif Varlık & Teknoloji'; minNorm = 30; ustNorm = 50;
-                motor = 'Yüksek Net Faaliyet Marjı';
-            }} else if (/banka|sigorta|faktoring|finans|menkul/i.test(s)) {{
-                kume = 'Banka & Finans'; minNorm = 22; ustNorm = 38;
-                motor = 'Finansal Kaldıraç & Net Faiz Marjı';
-            }} else if (/demir|celik|petrol|kimya|cimento|otomotiv|maden/i.test(s)) {{
-                kume = 'Ağır Sanayi & Döngüsel'; minNorm = 15; ustNorm = 30;
-                motor = 'Emtia Döngüsü & Operasyonel Verimlilik';
-            }} else if (/gyo|gayrimenkul|insaat|turizm|enerji|otel|tarim/i.test(s)) {{
-                kume = 'Varlık Yoğun & Düşük Devir'; minNorm = 8; ustNorm = 20;
-                motor = 'Varlık Değeri & Nakit Akış Verimi';
+            }} else if (/yazilim|bilisim|bilgisayar|teknoloji|savunma|telekom|mesleki|medya|ilac|saglik/i.test(s)) {{
+                kume = 'Hafif Varlık, Teknoloji & Sağlık'; minNorm = 30; ustNorm = 50;
+                motor = 'Yüksek Net Faaliyet Marjı & Katma Değer';
+            }} else if (/banka|sigorta|faktoring|leasing|menkul|varlik yonetimi|yatirim ortakliklari|girisim sermayesi|emeklilik/i.test(s)) {{
+                kume = 'Banka & Finansal Kuruluşlar'; minNorm = 22; ustNorm = 38;
+                motor = 'Finansal Kaldıraç & Sermaye Getirisi';
             }} else if (/holding/i.test(s)) {{
                 kume = 'Holding & İştirak Grubu'; minNorm = 18; ustNorm = 32;
                 motor = 'Konsolide İştirak Portföy Getirisi';
+            }} else if (/gyo|gayrimenkul|insaat|turizm|enerji|otel|tarim|spor/i.test(s)) {{
+                kume = 'Varlık Yoğun & Düşük Devir'; minNorm = 8; ustNorm = 20;
+                motor = 'Varlık Değeri & Nakit Akış Verimi';
+            }} else if (/demir|celik|petrol|kimya|cimento|cam|seramik|yapi malzemeleri|otomotiv|maden|makine|elektrik malzemeleri|dayanikli tuketim|tekstil|orman|kagit|havayolu|lojistik|imalat/i.test(s)) {{
+                kume = 'Sanayi, İmalat & Ulaştırma'; minNorm = 15; ustNorm = 30;
+                motor = 'Kapasite Kullanımı & Operasyonel Verimlilik';
             }}
 
             let rozet, metin, stil;
@@ -2501,7 +2565,7 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
             if (tutarlilikListesi.length > 0) {{
                 t6 += '<div class="section-title" style="color:#facc15;">⚖️ YÖNETİM VAATLERİ & TUTARLILIK KARNESİ (' + enGuncelPdfDonem + ')</div>';
                 tutarlilikListesi.forEach(item => {{
-                    const sinif = item.includes('🚨') ? 'cikis-kural' : (item.includes('⚠️') ? 'warn-box' : 'good-box');
+                    const sinif = (item.includes('🚨') || item.includes('🔴')) ? 'cikis-kural' : ((item.includes('⚠️') || item.includes('🟡')) ? 'warn-box' : 'good-box');
                     t6 += '<div class="' + sinif + '">' + item + '</div>';
                 }});
             }}
@@ -2550,7 +2614,7 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
                 {{ ad: 'Tahakkuk Oranı ((Kâr-CFO)/Aktif)', esik: '&le; %5.0 (Negatif = Sağlam)', fn: d => '%' + (bd.donemler[d]?.tahakkuk_orani ?? '-') }},
                 {{ ad: 'Kağıt Üzeri Kâr Payı (Normalleştirilmiş)', esik: '&le; %35.0', fn: d => '%' + (bd.donemler[d]?.ykp_orani ?? '-') }},
                 {{ ad: 'Alacak Tahsilat Süresi (DSO)', esik: 'Düşen Trend', fn: d => (bd.donemler[d]?.dso_gun ?? '-') + ' gün' }},
-                {{ ad: 'Efektif Borç Maliyeti / ICR', esik: 'ICR &ge; 1.5x', fn: d => '%' + (bd.donemler[d]?.efm_yuzde ?? '-') + ' (' + (bd.donemler[d]?.icr_kati ?? '-') + 'x)' }},
+                {{ ad: 'Efektif Borç Maliyeti / ICR', esik: 'ICR &ge; 1.5x', fn: d => (bd.donemler[d]?.efm_yuzde === 0 ? '<span style="color:#34d399;">Net Nakit</span> (' + (bd.donemler[d]?.icr_kati ?? '-') + 'x)' : '%' + (bd.donemler[d]?.efm_yuzde ?? '-') + ' (' + (bd.donemler[d]?.icr_kati ?? '-') + 'x)') }},
                 {{ ad: 'İlişkili Taraf Ticari Olmayan Alacak', esik: '&lt; %3.0', fn: d => '%' + (bd.donemler[d]?.iliskili_orani ?? '-') }}
             ];
 

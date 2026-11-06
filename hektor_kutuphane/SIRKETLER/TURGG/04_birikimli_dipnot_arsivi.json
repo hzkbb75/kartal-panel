@@ -1,9 +1,9 @@
 {
   "kod": "TURGG",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 11118.5,
+      "efm_yuzde": 0.0,
       "icr_kati": -0.08,
       "tahakkuk_orani": -0.07,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 2281.7,
+      "efm_yuzde": 0.0,
       "icr_kati": -0.11,
       "tahakkuk_orani": 0.05,
       "aga_orani": 0.0,
@@ -51,7 +51,7 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 13943.6,
+      "efm_yuzde": 0.0,
       "icr_kati": -0.12,
       "tahakkuk_orani": -0.16,
       "aga_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 0.0
     },
     "2026/06": {
-      "efm_yuzde": 2614.9,
-      "icr_kati": 0.77,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 2.2,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

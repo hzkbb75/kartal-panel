@@ -1,9 +1,9 @@
 {
   "kod": "PAGYO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 6501.3,
+      "efm_yuzde": 0.0,
       "icr_kati": 12.75,
       "tahakkuk_orani": -1.3,
       "aga_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 12672.0,
-      "icr_kati": 7.88,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -1.54,
       "aga_orani": 0.0,
       "ykp_orani": 2.6,
@@ -51,7 +51,7 @@
       "dso_delta": 5.6
     },
     "2026/03": {
-      "efm_yuzde": 7252.4,
+      "efm_yuzde": 0.0,
       "icr_kati": 14.27,
       "tahakkuk_orani": -0.46,
       "aga_orani": 0.0,
@@ -75,7 +75,7 @@
       "dso_delta": 3.3
     },
     "2026/06": {
-      "efm_yuzde": 6270.1,
+      "efm_yuzde": 0.0,
       "icr_kati": 17.87,
       "tahakkuk_orani": -0.33,
       "aga_orani": 0.0,

@@ -1,10 +1,10 @@
 {
   "kod": "PSDTC",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 15.3,
-      "icr_kati": 0.09,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 0.03,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 18.7,
-      "icr_kati": 0.37,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 2.7,
       "aga_orani": 0.0,
       "ykp_orani": 2.6,
@@ -51,8 +51,8 @@
       "dso_delta": -319.6
     },
     "2026/03": {
-      "efm_yuzde": 18.7,
-      "icr_kati": -0.52,
+      "efm_yuzde": 0.0,
+      "icr_kati": -0.18,
       "tahakkuk_orani": -0.88,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -76,7 +76,7 @@
     },
     "2026/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": -0.49,
+      "icr_kati": -0.17,
       "tahakkuk_orani": 0.14,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

@@ -1,6 +1,6 @@
 {
   "kod": "LXGYO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 94.8,
@@ -28,7 +28,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 331.0,
+      "efm_yuzde": 95.0,
       "icr_kati": -1.45,
       "tahakkuk_orani": -30900.88,
       "aga_orani": 0.0,
@@ -53,8 +53,8 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 5.8,
-      "icr_kati": -17.74,
+      "efm_yuzde": 0.0,
+      "icr_kati": -6.21,
       "tahakkuk_orani": 7.89,
       "aga_orani": 0.0,
       "ykp_orani": 0.3,
@@ -78,8 +78,8 @@
       "dso_delta": 229.5
     },
     "2026/06": {
-      "efm_yuzde": 2.6,
-      "icr_kati": -9.24,
+      "efm_yuzde": 0.0,
+      "icr_kati": -3.23,
       "tahakkuk_orani": 8.01,
       "aga_orani": 0.0,
       "ykp_orani": 1.3,
@@ -88,11 +88,10 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.3,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%8.01): Kâr nakde dönüşmüyor.",
-        "🟡 Alacak-Ciro makası +%51.0 açıldı (DSO: 414.9 gün).",
-        "🔴 Faiz karşılama oranı -9.24x (ICR zayıf)."
+        "🟡 Alacak-Ciro makası +%51.0 açıldı (DSO: 414.9 gün)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 56 Mn ₺ (3.6x Amortisman)<br><strong>MDV:</strong> 106 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -105,7 +104,7 @@
         "🟡 Alacak-Ciro makası +%51.0 açıldı (DSO: 414.9 gün).",
         "🔴 Faiz karşılama oranı -9.24x (ICR zayıf)."
       ],
-      "dts_delta": 15,
+      "dts_delta": 0,
       "dso_delta": 185.4
     }
   }

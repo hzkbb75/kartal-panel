@@ -1,10 +1,10 @@
 {
   "kod": "AKCNS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 12.4,
-      "icr_kati": 1.07,
+      "efm_yuzde": 0.0,
+      "icr_kati": 0.37,
       "tahakkuk_orani": 1.15,
       "aga_orani": 0.0,
       "ykp_orani": 0.2,
@@ -13,9 +13,9 @@
       "serefiye_ozk_orani": 13.1,
       "karsilik_ozk_orani": 2.1,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 0,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 1.07x (ICR zayıf)."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 236 Mn ₺ (0.5x Amortisman)<br><strong>MDV:</strong> 10.33 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 11.6,
-      "icr_kati": 3.25,
+      "efm_yuzde": 0.0,
+      "icr_kati": 1.14,
       "tahakkuk_orani": 3.11,
       "aga_orani": 47.9,
       "ykp_orani": 54.9,
@@ -47,12 +47,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 17 Mn ₺ (ÖZK %+0.1)<br><strong>Ham YPP:</strong> 17 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.3 (512 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.32x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
+      "dts_delta": 15,
       "dso_delta": -0.8
     },
     "2026/03": {
-      "efm_yuzde": 10.7,
-      "icr_kati": 3.22,
+      "efm_yuzde": 0.0,
+      "icr_kati": 1.13,
       "tahakkuk_orani": 0.98,
       "aga_orani": 0.0,
       "ykp_orani": 0.2,
@@ -75,8 +75,8 @@
       "dso_delta": 15.2
     },
     "2026/06": {
-      "efm_yuzde": 9.0,
-      "icr_kati": 3.21,
+      "efm_yuzde": 0.0,
+      "icr_kati": 1.12,
       "tahakkuk_orani": 0.46,
       "aga_orani": 0.0,
       "ykp_orani": 0.7,

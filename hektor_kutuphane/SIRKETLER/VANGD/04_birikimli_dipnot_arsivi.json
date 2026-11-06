@@ -1,6 +1,6 @@
 {
   "kod": "VANGD",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -52,7 +52,7 @@
     },
     "2026/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": 0.62,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 0.12,
       "aga_orani": 0.1,
       "ykp_orani": 0.0,
@@ -76,7 +76,7 @@
     },
     "2026/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": 3.3,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -1.79,
       "aga_orani": 0.1,
       "ykp_orani": 22.1,

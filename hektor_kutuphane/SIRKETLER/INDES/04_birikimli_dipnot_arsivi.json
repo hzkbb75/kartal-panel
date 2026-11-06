@@ -1,6 +1,6 @@
 {
   "kod": "INDES",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 57.5,
@@ -51,8 +51,8 @@
       "dso_delta": -3.6
     },
     "2026/03": {
-      "efm_yuzde": 23.6,
-      "icr_kati": 4.39,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -1.35,
       "aga_orani": 31.7,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 16.7
     },
     "2026/06": {
-      "efm_yuzde": 47.2,
-      "icr_kati": 2.08,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -1.98,
       "aga_orani": 10.1,
       "ykp_orani": 0.0,

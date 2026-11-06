@@ -1,10 +1,10 @@
 {
   "kod": "SAFKR",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 53.1,
-      "icr_kati": 14.79,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": 4.14,
       "aga_orani": 0.0,
       "ykp_orani": 2.8,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 195.8,
+      "efm_yuzde": 95.0,
       "icr_kati": 3.67,
       "tahakkuk_orani": 2.98,
       "aga_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -8.6
     },
     "2026/03": {
-      "efm_yuzde": 528.4,
-      "icr_kati": 0.93,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -4.67,
       "aga_orani": 5.8,
       "ykp_orani": 30.3,
@@ -75,8 +75,8 @@
       "dso_delta": 19.5
     },
     "2026/06": {
-      "efm_yuzde": 424.4,
-      "icr_kati": 1.61,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -3.75,
       "aga_orani": 1.7,
       "ykp_orani": 18.3,

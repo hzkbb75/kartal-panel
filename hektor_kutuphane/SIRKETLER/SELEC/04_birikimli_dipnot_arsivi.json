@@ -1,10 +1,10 @@
 {
   "kod": "SELEC",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": 0.48,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -7.9,
       "aga_orani": 0.0,
       "ykp_orani": 75.1,
@@ -28,7 +28,7 @@
     },
     "2025/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": 0.39,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -12.09,
       "aga_orani": 0.0,
       "ykp_orani": 76.8,
@@ -51,7 +51,7 @@
       "dso_delta": -2.5
     },
     "2026/03": {
-      "efm_yuzde": 119.2,
+      "efm_yuzde": 95.0,
       "icr_kati": 3.12,
       "tahakkuk_orani": 3.55,
       "aga_orani": 0.0,
@@ -75,7 +75,7 @@
       "dso_delta": 23.1
     },
     "2026/06": {
-      "efm_yuzde": 343.0,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.78,
       "tahakkuk_orani": 4.36,
       "aga_orani": 0.0,

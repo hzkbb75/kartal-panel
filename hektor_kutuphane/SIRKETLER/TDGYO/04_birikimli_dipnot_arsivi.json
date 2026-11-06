@@ -1,10 +1,10 @@
 {
   "kod": "TDGYO",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 1474.1,
-      "icr_kati": 3.59,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -9.47,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 1506.1,
-      "icr_kati": 2.42,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -37.49,
       "aga_orani": 0.1,
       "ykp_orani": 0.0,
@@ -51,7 +51,7 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 6250.4,
+      "efm_yuzde": 0.0,
       "icr_kati": -0.17,
       "tahakkuk_orani": 14.07,
       "aga_orani": 0.0,
@@ -75,7 +75,7 @@
       "dso_delta": 0.0
     },
     "2026/06": {
-      "efm_yuzde": 5182.3,
+      "efm_yuzde": 0.0,
       "icr_kati": -0.52,
       "tahakkuk_orani": 30.49,
       "aga_orani": 0.0,

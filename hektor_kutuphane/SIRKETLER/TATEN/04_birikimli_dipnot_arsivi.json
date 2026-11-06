@@ -1,6 +1,6 @@
 {
   "kod": "TATEN",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 23.5,
@@ -51,8 +51,8 @@
       "dso_delta": 3.1
     },
     "2026/03": {
-      "efm_yuzde": 3.8,
-      "icr_kati": 7.13,
+      "efm_yuzde": 0.0,
+      "icr_kati": 2.5,
       "tahakkuk_orani": 1.72,
       "aga_orani": 0.0,
       "ykp_orani": 0.4,
@@ -75,8 +75,8 @@
       "dso_delta": -5.3
     },
     "2026/06": {
-      "efm_yuzde": 2.7,
-      "icr_kati": 11.47,
+      "efm_yuzde": 0.0,
+      "icr_kati": 4.02,
       "tahakkuk_orani": -3.82,
       "aga_orani": 0.0,
       "ykp_orani": 1.8,

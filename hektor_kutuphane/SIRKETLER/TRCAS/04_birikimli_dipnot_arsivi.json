@@ -1,10 +1,10 @@
 {
   "kod": "TRCAS",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": -1.91,
+      "icr_kati": -0.67,
       "tahakkuk_orani": 0.66,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -28,7 +28,7 @@
     },
     "2025/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": -3.85,
+      "icr_kati": -1.35,
       "tahakkuk_orani": 2.92,
       "aga_orani": 0.0,
       "ykp_orani": 2.7,
@@ -52,7 +52,7 @@
     },
     "2026/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": -0.81,
+      "icr_kati": -0.39,
       "tahakkuk_orani": 6.15,
       "aga_orani": 0.0,
       "ykp_orani": 0.4,
@@ -76,7 +76,7 @@
     },
     "2026/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": -1.2,
+      "icr_kati": -0.42,
       "tahakkuk_orani": 6.2,
       "aga_orani": 0.0,
       "ykp_orani": 2.2,

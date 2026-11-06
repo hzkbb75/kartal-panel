@@ -1,6 +1,6 @@
 {
   "kod": "ESCAR",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 39.5,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 141.9,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.26,
       "tahakkuk_orani": -16.72,
       "aga_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -7.0
     },
     "2026/03": {
-      "efm_yuzde": 1.2,
-      "icr_kati": 20.17,
+      "efm_yuzde": 0.6,
+      "icr_kati": 40.97,
       "tahakkuk_orani": -0.95,
       "aga_orani": 0.0,
       "ykp_orani": 10.8,

@@ -1,6 +1,6 @@
 {
   "kod": "PATEK",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 76.0,
@@ -76,7 +76,7 @@
       "dso_delta": 84.9
     },
     "2026/06": {
-      "efm_yuzde": 550.2,
+      "efm_yuzde": 95.0,
       "icr_kati": -0.2,
       "tahakkuk_orani": 1.44,
       "aga_orani": 0.0,

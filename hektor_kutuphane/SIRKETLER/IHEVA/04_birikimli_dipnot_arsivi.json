@@ -1,9 +1,9 @@
 {
   "kod": "IHEVA",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 202.7,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.39,
       "tahakkuk_orani": -0.59,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 226.1,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.15,
       "tahakkuk_orani": -1.43,
       "aga_orani": 16.3,
@@ -51,7 +51,7 @@
       "dso_delta": 3.4
     },
     "2026/03": {
-      "efm_yuzde": 185.5,
+      "efm_yuzde": 95.0,
       "icr_kati": 0.97,
       "tahakkuk_orani": -3.32,
       "aga_orani": 164.5,
@@ -75,7 +75,7 @@
       "dso_delta": -21.3
     },
     "2026/06": {
-      "efm_yuzde": 113.0,
+      "efm_yuzde": 95.0,
       "icr_kati": 1.63,
       "tahakkuk_orani": -3.48,
       "aga_orani": 77.2,

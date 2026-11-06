@@ -1,10 +1,10 @@
 {
   "kod": "MRSHL",
-  "son_guncelleme": "2026-11-06 17:00",
+  "son_guncelleme": "2026-11-06 17:02",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 21.7,
-      "icr_kati": 10.57,
+      "efm_yuzde": 0.0,
+      "icr_kati": 9.9,
       "tahakkuk_orani": -2.98,
       "aga_orani": 0.0,
       "ykp_orani": 4.9,
