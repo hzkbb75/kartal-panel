@@ -2492,14 +2492,29 @@ if __name__ == "__main__":
 
     rotasyon_alarmi = None
     if yeni_girenler or cikanlar:
-        rotasyon_alarmi = {
-            "girenler": list(yeni_girenler),
-            "cikanlar": list(cikanlar),
-            "zaman": datetime.now().strftime("%d.%m.%Y %H:%M")
-        }
         print("\n🦅 KARTAL ROTASYON ALARMI:")
         if yeni_girenler: print(f"  🟢 KADROYA YENİ GİRENLER: {', '.join(yeni_girenler)}")
         if cikanlar: print(f"  🔴 KADRODAN DÜŞENLER: {', '.join(cikanlar)}")
+
+        # === DOĞRUDAN TELEGRAM ALARM TETİKLEYİCİSİ ===
+        TELEGRAM_BOT_TOKEN = "8843188278:AAH26HlS26ECK1_DZ0AVVfCpq8c_vCaKAnQ"
+        TELEGRAM_CHAT_ID = "932085366"
+        
+        mesaj = "🦅 *KARTAL PORTFÖY ROTASYON ALARMI*\n\n"
+        if yeni_girenler:
+            mesaj += "🟢 *Kadroya Yeni Girenler:*\n" + ", ".join(yeni_girenler) + "\n\n"
+        if cikanlar:
+            mesaj += "🔴 *Kadrodan Düşenler:*\n" + ", ".join(cikanlar) + "\n\n"
+        mesaj += "🔗 [KARTAL Panele Git](https://hzkbb75.github.io/kartal-panel/)"
+        
+        url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+        payload = {"chat_id": TELEGRAM_CHAT_ID, "text": mesaj, "parse_mode": "Markdown"}
+        
+        try:
+            requests.post(url, json=payload, timeout=10)
+            print("  [Telegram] Rotasyon alarmı telefonunuza başarıyla gönderildi.")
+        except Exception as e:
+            print(f"  [Telegram] Alarm gönderilemedi: {e}")
 
     # 4. Yeni Durumu Hafızaya Yaz (Bir sonraki çalışma için)
     yeni_tarama_verisi = {
