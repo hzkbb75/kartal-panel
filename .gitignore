@@ -3,3 +3,6 @@ __pycache__/
 .env
 kartal_bot.py
 token.txt
+webhook_mail.txt
+chat_id.txt
+*.key

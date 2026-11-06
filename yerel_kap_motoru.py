@@ -71,7 +71,7 @@ def faaliyet_raporu_pdf_indir(session, hisse, bildirim_id, pub_ts):
     print(f"    📥 [ARKA KAPI] {hisse} Faaliyet Raporu KAP'tan direkt indiriliyor...")
     
     try:
-        res = session.get(pdf_url, headers=KAP_HEADERS, timeout=15)
+        res = session.get(pdf_url, headers=KAP_HEADERS, timeout=45)
         if res.status_code == 200 and len(res.content) > 50000: # 50KB'dan büyükse başarılıdır
             with open(hedef_yol, "wb") as f:
                 f.write(res.content)

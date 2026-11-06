@@ -4,21 +4,22 @@ import requests
 from datetime import datetime
 
 MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/w2bw4cexf24z4huxs3nikopnofif1t1j"
+# Yeni Hali (Burayla Değiştirin)
 ROOT_DIR = "hektor_kutuphane"
-CIKTI_KAP_YOLU = os.path.join(ROOT_DIR, "tum_kap_haberleri.json")
-STATE_FILE = "son_bildirimler.json"
+CIKTI_KAP_YOLU = os.path.join(ROOT_DIR, "tum_kap_haberleri.json") 
+# son_bildirimler.json dosyası PORTFOY klasörünün içinde olduğu için yolu güncelledik:
+STATE_FILE = os.path.join(ROOT_DIR, "PORTFOY", "son_bildirimler.json")
 
-# === 1. ALTIN KELİMELER (DÜZELTİLDİ: Ünvan Tuzakları Temizlendi) ===
+# Yeni Hali (Burayla Değiştirin)
 FILTRE_KELIMELER = [
     "yeni iş ilişkisi", "ihale", "sipariş", "sözleşme", 
     "kapasite", "teşvik", "yeni yatırım", "yatırım kararı", "yatırım teşvik", 
     "birleşme", "devralma", "satın alma", "stratejik ortaklık", "yeni ortaklık",
     "maddi duran varlık", "fabrika", "arsa alımı", "arsa satışı", "gayrimenkul alımı", "gayrimenkul satışı",
-    "geri alım", "temettü", "kâr payı", "bedelsiz", "bedelli",
-    "faaliyet raporu"
+    "geri alım", "temettü", "kâr payı", "bedelsiz", "bedelli"
+    # "faaliyet raporu" BURADAN SİLİNDİ
 ]
 
-# === 2. GİYOTİN FİLTRESİ ===
 YASAKLI_KELIMELER = [
     "devre kesici", "volatilite", "likidite sağlayıcı", "olağandışı fiyat", 
     "fiyat hareketleri", "işlem gören tipe dönüşüm", "kredi derecelendirme", 
@@ -26,7 +27,8 @@ YASAKLI_KELIMELER = [
     "sorumluluk beyanı", "özel durum açıklaması (genel)", 
     "görev dağılımı", "imza sirküleri", "genel kurul çağrısı", "toplantı tutanağı",
     "pay alım satım bildirimi", "yatırımcı ilişkileri",
-    "hedef fiyat", "tavsiyesi", "tavsiye", "geri alım endeksi", "endeks değişiklikleri", "aracı kurum", "piyasa yorumu"
+    "hedef fiyat", "tavsiyesi", "tavsiye", "geri alım endeksi", "endeks değişiklikleri", "aracı kurum", "piyasa yorumu",
+    "faaliyet raporu" # YASAKLILARA EKLENDİ (Make.com'a gitmemesi için)
 ]
 
 def load_seen_ids():
@@ -62,10 +64,15 @@ def filtreye_uyuyor_mu(baslik, ozet):
 def main():
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Make.com KAP Taraması Başladı.")
     if not os.path.exists(CIKTI_KAP_YOLU):
+        print(f"  ⚠️ Uyarı: {CIKTI_KAP_YOLU} bulunamadı.")
         return
 
-    with open(CIKTI_KAP_YOLU, "r", encoding="utf-8") as f:
-        haber_ambari = json.load(f).get("kap_haberleri", {})
+    try:
+        with open(CIKTI_KAP_YOLU, "r", encoding="utf-8") as f:
+            haber_ambari = json.load(f).get("kap_haberleri", {})
+    except json.JSONDecodeError:
+        print(f"  ❌ Hata: {CIKTI_KAP_YOLU} dosyası bozuk veya boş!")
+        return
 
     seen_ids = load_seen_ids()
     yeni_sayac = 0

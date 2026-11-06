@@ -350,38 +350,6 @@ def degerleme_termometresi_uret(hisse_kodu, mevcut_fiyat, adil_deger, iskonto_or
 # ==============================================================================
 # 2. ŞİRKET ELEME VE ANALİZ MOTORU
 # ==============================================================================
-def hesapla_hibrit_kartal_puani(sirket_verisi: dict, teknik_veri: dict = None) -> tuple:
-    """
-    Temel Analiz (%60) + 60G Teknik Kanal Uzaklığı (%40) Hibrit Puanı (0 - 100).
-    """
-    # 1. Temel Puan (Maks 60 Puan)
-    f_skor = int(sirket_verisi.get("piotroski_skor", 5))
-    temel_puan = (f_skor / 9.0) * 30.0  # Piotroski'den maks 30 puan
-    
-    roe = float(sirket_verisi.get("roe", 0.0))
-    if roe >= 40: temel_puan += 15.0
-    elif roe >= 25: temel_puan += 10.0
-    elif roe >= 15: temel_puan += 5.0
-    
-    nb_ozk = float(sirket_verisi.get("net_borc_ozkaynak", 1.0))
-    if nb_ozk <= 0.1: temel_puan += 15.0
-    elif nb_ozk <= 0.6: temel_puan += 10.0
-    elif nb_ozk <= 1.2: temel_puan += 5.0
-    
-    # 2. Teknik Puan (Maks 40 Puan)
-    teknik_puan = 20.0  # Teknik veri yoksa nötr varsayılan
-    if teknik_veri:
-        kanal_konumu = float(teknik_veri.get("kanal_konumu", 50.0))
-        # Desteğe ne kadar yakınsa puan o kadar yüksek
-        if kanal_konumu <= 20: teknik_puan = 40.0
-        elif kanal_konumu <= 40: teknik_puan = 30.0
-        elif kanal_konumu <= 60: teknik_puan = 20.0
-        elif kanal_konumu <= 80: teknik_puan = 10.0
-        else: teknik_puan = 0.0
-        
-    toplam_skor = round(temel_puan + teknik_puan, 1)
-    return toplam_skor
-
 def hesapla_hibrit_kartal_puani(s: dict, teknik_veri: dict = None) -> float:
     """
     Sektör Duyarlı Serkan Ünal Hibrit Puanı: Temel Kalite (%60) + 60G Destek (%40)
@@ -500,17 +468,17 @@ def analiz_et_sirket(kod: str) -> dict:
     medyan_efk_marj = (sorted(gecmis_efk_marjlari)[len(gecmis_efk_marjlari)//2]) if gecmis_efk_marjlari else efk_marj_c
 
     # === KURUMSAL ALTYAPI & BİLANÇO BÜYÜKLÜĞÜ HENDEĞİ ===
-# Özkaynakları 10 Milyar TL üzerinde olan, borçsuz (Net Borç/ÖZK <= 0.50) ve nakit üreten devler,
-# döngüsel marj diplerinde dahi sektörden silinmez, en az Kırılgan Hendekli (Döngüsel Hendek) kabul edilir.
+    # Özkaynakları 10 Milyar TL üzerinde olan, borçsuz (Net Borç/ÖZK <= 0.50) ve nakit üreten devler,
+    # döngüsel marj diplerinde dahi sektörden silinmez, en az Kırılgan Hendekli (Döngüsel Hendek) kabul edilir.
     kurumsal_altyapi_hendegi = (ozk_c >= 10000.0 and net_borc_ozkaynak <= 0.50 and cfo_c > 0)
 
-# Serkan Ünal: Korunaklı (İstikrarlı medyan marj >= %14 veya ROIC/EFK güçlü ve CFO > 0)
+    # Serkan Ünal: Korunaklı (İstikrarlı medyan marj >= %14 veya ROIC/EFK güçlü ve CFO > 0)
     if (medyan_efk_marj >= 0.14 or (efk_marj_c >= 0.12 and roic_tahmini >= 0.15)) and cfo_c > 0:
         kategori, tavan = "Korunaklı", 10.0
     elif (medyan_efk_marj >= 0.07 or efk_marj_c >= 0.07 or kurumsal_altyapi_hendegi) and cfo_c > 0:
-    	kategori, tavan = "Kırılgan Hendekli", 5.0
+        kategori, tavan = "Kırılgan Hendekli", 5.0
     else:
-    	kategori, tavan = "Hendeksiz", 3.0
+        kategori, tavan = "Hendeksiz", 3.0
 
     if banka_mi:
         cfo_kaliteli = net_c > 0
@@ -969,10 +937,9 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
         "marj_durum": marj_durum, "marj_renk": marj_renk, "konum_yuzde": konum_yuzde
     }
     
-    # HİBRİT DEĞERLEME MODÜLÜ (ZİRAAT GÜVENCELİ)
+    # HİBRİT DEĞERLEME MODÜLÜ (ZİRAAT GÜVENCELİ - Sektör bist_sozluk'ten korunur)
     ziraat = BIST_ANALIZ_TABANI.get(kod, {})
     if ziraat:
-        sektor = ziraat.get("sektor", sektor)
         if ziraat.get("fk", 0) > 0: fk = ziraat["fk"]
         if ziraat.get("fd_favok", 0) > 0: fd_favok = ziraat["fd_favok"]
         if ziraat.get("roe", 0) != 0: roe = ziraat["roe"]
@@ -1221,6 +1188,16 @@ def uret_sektor_paneli_html(mevcut_sektorler: dict, nakit_orani: float, nakit_tl
 
 
 def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_portfoy_tl, nakit_tl, hisse_sayisi, sektor_paneli_html):
+    # --- FAZ 9: HTML VİTRİN ROZETLERİ İÇİN HAFIZA OKUMA ---
+    import os, json
+    onceki_kadro = set()
+    ONCEKI_TARAMA_YOLU = os.path.join("hektor_kutuphane", "PORTFOY", "onceki_tarama.json")
+    if os.path.exists(ONCEKI_TARAMA_YOLU):
+        try:
+            with open(ONCEKI_TARAMA_YOLU, "r", encoding="utf-8") as f:
+                onceki_kadro = set(json.load(f).get("hedef_60_kadrosu", []))
+        except Exception: pass
+
     # 4'LÜ DİNAMİK BUTON SAYAÇLARI
     sayi_hedef60 = sum(1 for r in tablo_verileri if r.get('kadroda', False))
     sayi_mevcut = sum(1 for r in tablo_verileri if r['Mevcut_Lot'] > 0)
@@ -1230,6 +1207,12 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
     satirlar_html = ""
     for r in tablo_verileri:
         kod = r["Kod"]
+        
+        # YENİ GİRİŞ ROZETİ KONTROLÜ
+        yeni_giris_rozet = ""
+        if r.get('kadroda', False) and onceki_kadro and kod not in onceki_kadro:
+            yeni_giris_rozet = ' <span style="background:#10b981; color:#022c22; font-size:9px; padding:2px 5px; border-radius:4px; font-weight:bold; box-shadow: 0 0 5px #10b981; position:relative; top:-2px; margin-left:4px; animation: pulse 2s infinite;">YENİ</span>'
+
         kz_renk = "#34d399" if r["KZ_Yuzde"] >= 0 else "#f87171"
         fark_metin = f"+{r['Fark_Lot']:,}" if r['Fark_Lot'] > 0 else f"{r['Fark_Lot']:,}"
 
@@ -1277,7 +1260,7 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
 
         satirlar_html += f"""
         <tr class="{satir_class}" onclick="acKarneModal('{kod}')" style="cursor:pointer;">
-            <td><strong style="color:#38bdf8;">{kod} 🔍</strong></td>
+            <td><strong style="color:#38bdf8;">{kod} 🔍</strong>{yeni_giris_rozet}</td>
             <td>{r['Sektör']}</td>
             <td>{r['Hendek']}</td>
             <td><strong>{r['F_Skor']}/9</strong></td>
@@ -1364,6 +1347,7 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
         .oz-turkce-item strong {{ color: #facc15; }}
 
         .invalidation-box {{ background: linear-gradient(135deg, rgba(127,29,29,0.35), rgba(15,23,42,0.95)); border: 1px solid #ef4444; border-left: 4px solid #ef4444; border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; font-size: 12px; color: #fecaca; line-height: 1.5; }}
+        @keyframes pulse {{ 0% {{ box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }} 70% {{ box-shadow: 0 0 0 5px rgba(16, 185, 129, 0); }} 100% {{ box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }} }}
     </style>
 </head>
 <body>
@@ -1656,26 +1640,33 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
 
 	    function uretRoeAnalizYorumu(roeDeger, sektorAdi) {{
             const roe = parseFloat(roeDeger) || 0;
-            const s = (sektorAdi || '').toLowerCase();
+            const s = (sektorAdi || '')
+                .replace(/İ/g, 'i').replace(/I/g, 'i').replace(/ı/g, 'i')
+                .replace(/Ş/g, 's').replace(/ş/g, 's')
+                .replace(/Ğ/g, 'g').replace(/ğ/g, 'g')
+                .replace(/Ü/g, 'u').replace(/ü/g, 'u')
+                .replace(/Ö/g, 'o').replace(/ö/g, 'o')
+                .replace(/Ç/g, 'c').replace(/ç/g, 'c')
+                .toLowerCase();
             
             let kume = 'Ağır Sanayi & Üretim';
             let minNorm = 15;
             let ustNorm = 30;
             let motor = 'Kapasite Kullanımı & Emtia/Spread Dengesi';
 
-            if (/perakende|mağaza|gıda|içecek/i.test(s)) {{
+            if (/perakende|magaza|gida|icecek/i.test(s)) {{
                 kume = 'Organize Perakende & Tüketim'; minNorm = 35; ustNorm = 60;
                 motor = 'Yüksek Aktif Devir Hızı (Stok Sirkülasyonu)';
-            }} else if (/yazılım|bilişim|teknoloji|savunma|telekom/i.test(s)) {{
+            }} else if (/yazilim|bilisim|teknoloji|savunma|telekom/i.test(s)) {{
                 kume = 'Hafif Varlık & Teknoloji'; minNorm = 30; ustNorm = 50;
                 motor = 'Yüksek Net Faaliyet Marjı';
             }} else if (/banka|sigorta|faktoring|finans|menkul/i.test(s)) {{
                 kume = 'Banka & Finans'; minNorm = 22; ustNorm = 38;
                 motor = 'Finansal Kaldıraç & Net Faiz Marjı';
-            }} else if (/demir|çelik|petrol|kimya|çimento|otomotiv|maden/i.test(s)) {{
+            }} else if (/demir|celik|petrol|kimya|cimento|otomotiv|maden/i.test(s)) {{
                 kume = 'Ağır Sanayi & Döngüsel'; minNorm = 15; ustNorm = 30;
                 motor = 'Emtia Döngüsü & Operasyonel Verimlilik';
-            }} else if (/gyo|gayrimenkul|inşaat|turizm|enerji|otel|tarım/i.test(s)) {{
+            }} else if (/gyo|gayrimenkul|insaat|turizm|enerji|otel|tarim/i.test(s)) {{
                 kume = 'Varlık Yoğun & Düşük Devir'; minNorm = 8; ustNorm = 20;
                 motor = 'Varlık Değeri & Nakit Akış Verimi';
             }} else if (/holding/i.test(s)) {{
@@ -2230,8 +2221,9 @@ if __name__ == "__main__":
         tv_veri = KAP_VE_TEKNIK_AMBARI.get("teknik_veriler", {}).get(kod, None)
         s["hibrit_puan"] = hesapla_hibrit_kartal_puani(s, tv_veri)
 
-    # 2. Top 60 Kadrosunu Belirle (Mevcut hisseler + En yüksek puanlı radarlar)
+    # 2. Top 60 Kadrosunu Belirle (Sadece filtreyi geçen nitelikli mevcutlar + en yüksek puanlı adaylar)
     mevcut_kodlar = {k for k in mevcut_pozisyonlar.keys() if k not in ["NAKIT", "TRY", "KASA", "PPF"]}
+    firsat_kodlari = {s["kod"] for s in firsat_adaylari}
     
     # Elemeyi geçen adayları puanına göre sırala
     sirali_adaylar = sorted(
@@ -2240,8 +2232,8 @@ if __name__ == "__main__":
         reverse=True
     )
     
-    # Hedef 60 kadrosu: Mevcutlar + En iyi adaylar (Tam 60 hisse)
-    hedef_60_kodlari = set(mevcut_kodlar)
+    # Hedef 60 kadrosu: Sadece standartları geçen mevcutlar + En iyi adaylar (Tam 60 hisse)
+    hedef_60_kodlari = {k for k in mevcut_kodlar if k in firsat_kodlari}
     kalan_kontenjan = max(0, 60 - len(hedef_60_kodlari))
     for s in sirali_adaylar[:kalan_kontenjan]:
         hedef_60_kodlari.add(s["kod"])
@@ -2288,29 +2280,7 @@ if __name__ == "__main__":
             "kadroda": kadroda
         })
 
-    # 4. Kasa ve Portföy Büyüklüğü
-    toplam_hisse_mevcut_deger = sum(item["mevcut_lot"] * item["fiyat"] for item in sirket_havuzu)
-    nakit_orani = 10.0  # Asgari %10 kasa kalkanı
-    hedef_hisse_havuzu_orani = 90.0
-    toplam_portfoy_tl = max(toplam_hisse_mevcut_deger / (hedef_hisse_havuzu_orani / 100.0), 1000.0)
-    hisse_portfoy_tl = round(toplam_portfoy_tl * (hedef_hisse_havuzu_orani / 100.0), 2)
-    nakit_tl = round(toplam_portfoy_tl * (nakit_orani / 100.0), 2)
-
-    # 5. Ağırlıkları 60 Hisseye Dağıt (Serkan Ünal %1 Taban ve Tavan Kuralı)
-    kadro_60 = [x for x in sirket_havuzu if x["kadroda"]]
-    toplam_kadro_katsayi = max(sum(x["katsayi"] for x in kadro_60), 0.1)
-
-    for item in sirket_havuzu:
-        if item["kadroda"]:
-            # Ham dağıtım
-            pay = (item["katsayi"] / toplam_kadro_katsayi) * hedef_hisse_havuzu_orani
-            # Asgari %1.0 taban, hendek tavanı ile sınırla
-            item["hedef_agirlik"] = min(item["tavan"], max(1.0, round(pay, 2)))
-        else:
-            item["hedef_agirlik"] = 0.0
-
-    # 6. Sektörel Çeşitlendirme Kalkanı (Maksimum %20 Sektör Üst Sınırı)
-
+    # 4. Gerçek Kasa ve Portföy Büyüklüğü Hesabı
     gercek_nakit_tl = 0.0
     gercek_kasa_bulundu = False
 
@@ -2344,11 +2314,19 @@ if __name__ == "__main__":
         hisse_portfoy_tl = round(toplam_portfoy_tl * (hedef_hisse_havuzu_orani / 100.0), 2)
         nakit_tl = round(toplam_portfoy_tl * (nakit_orani / 100.0), 2)
 
+    # 5. Ağırlıkları 60 Hisseye Dağıt (Serkan Ünal %1 Taban ve Tavan Kuralı)
     SEKTOR_TAVANI = 20.0
-    toplam_katsayi = max(sum(item["katsayi"] for item in sirket_havuzu), 0.1)
+    kadro_60 = [x for x in sirket_havuzu if x["kadroda"]]
+    toplam_katsayi = max(sum(x["katsayi"] for x in kadro_60), 0.1)
 
     for item in sirket_havuzu:
-        item["hedef_agirlik"] = min((item["katsayi"] / toplam_katsayi) * hedef_hisse_havuzu_orani, item["tavan"])
+        if item["kadroda"]:
+            pay = (item["katsayi"] / toplam_katsayi) * hedef_hisse_havuzu_orani
+            item["hedef_agirlik"] = min(item["tavan"], max(1.0, round(pay, 2)))
+        else:
+            item["hedef_agirlik"] = 0.0
+
+    # 6. Sektörel Çeşitlendirme Kalkanı (Maksimum %20 Sektör Üst Sınırı)
 
     sektor_toplamlari = {}
     for item in sirket_havuzu:
@@ -2391,18 +2369,18 @@ if __name__ == "__main__":
         )
         kz_yuzde = round(((fiyat / item["ort_maliyet"]) - 1) * 100, 2) if item["ort_maliyet"] > 0 else 0.0
 
-	# TABLO İÇİN HIZLI ROE ROZETİ
-        sek_l = str(item["sektor"]).lower()
+	# TABLO İÇİN HIZLI ROE ROZETİ (tr_norm ile Türkçe karakter duyarlı)
+        sek_l = tr_norm(str(item["sektor"]))
         r_val = float(item["ham_veri"].get("roe", 0.0))
         
         # Sektör alt tabanı
-        if any(x in sek_l for x in ["perakende", "gıda", "içecek"]):
+        if any(x in sek_l for x in ["perakende", "magaza", "gida", "icecek"]):
             taban = 35.0
-        elif any(x in sek_l for x in ["yazılım", "teknoloji", "savunma", "telekom"]):
+        elif any(x in sek_l for x in ["yazilim", "bilisim", "teknoloji", "savunma", "telekom"]):
             taban = 30.0
-        elif any(x in sek_l for x in ["banka", "sigorta", "faktoring", "finans"]):
+        elif any(x in sek_l for x in ["banka", "sigorta", "faktoring", "finans", "menkul"]):
             taban = 22.0
-        elif any(x in sek_l for x in ["demir", "çelik", "petrol", "kimya", "çimento", "otomotiv"]):
+        elif any(x in sek_l for x in ["demir", "celik", "petrol", "kimya", "cimento", "otomotiv", "maden"]):
             taban = 15.0
         else:
             taban = 10.0
@@ -2575,6 +2553,25 @@ if __name__ == "__main__":
 def github_guncelle():
     print("\n🚀 Güncel panolar GitHub Pages'e aktarılıyor...")
     try:
+        # 1. Hassas şifre/anahtar dosyalarının Git'e eklenmesini (.gitignore ile) kesin olarak engelle
+        gizli_dosyalar = ["webhook_mail.txt", "token.txt", "chat_id.txt", ".env", "*.key"]
+        gitignore_mevcut = set()
+        if os.path.exists(".gitignore"):
+            with open(".gitignore", "r", encoding="utf-8") as gf:
+                gitignore_mevcut = {line.strip() for line in gf if line.strip()}
+        eksik_gizliler = [d for d in gizli_dosyalar if d not in gitignore_mevcut]
+        if eksik_gizliler:
+            with open(".gitignore", "a", encoding="utf-8") as gf:
+                gf.write("\n" + "\n".join(eksik_gizliler) + "\n")
+
+        # 2. Önceki commit'te (örn. webhook_mail.txt yüzünden) takılı kalan push varsa origin/main'e yumuşak sıfırla
+        subprocess.run(["git", "reset", "--soft", "origin/main"], check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(
+            ["git", "rm", "--cached", "--ignore-unmatch", "webhook_mail.txt", "token.txt", "chat_id.txt", "hektor_kutuphane/PORTFOY/index.html"],
+            check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
+        )
+
+        # 3. Temiz çalışma ağacını ekle, commit et ve GitHub Pages'e gönder
         subprocess.run(["git", "add", "."], check=True)
         subprocess.run(["git", "commit", "-m", "Oto-guncelleme: index.html ve panolar güncellendi"], check=True)
         subprocess.run(["git", "push", "origin", "main"], check=True)
