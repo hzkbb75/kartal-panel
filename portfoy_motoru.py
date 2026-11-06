@@ -178,7 +178,7 @@ def google_sheets_uzerinden_senkronize_et() -> dict:
 
         # Nakit satırına nema ve fon fiyatı detaylarını ekle
         nakit_notu = f"OSL Fiyat: {osl_fiyat:.6f} | Nema: +{gunluk_nema_tl:.1f}TL/gun (~{aylik_tahmini_nema:.0f}TL/ay)"
-        satirlar.append(f"NAKIT;1;{kasa_tutari:.2f};{bugun_str};PPF Likidite Kalkanı;{nakit_notu}")
+        satirlar.append(f"NAKIT;1;{round(kasa_tutari):d};{bugun_str};PPF Likidite Kalkanı;{nakit_notu}")
 
         with open(PORTFOY_CSV_YOLU, "w", encoding="utf-8-sig") as f:
             f.write("\n".join(satirlar))
