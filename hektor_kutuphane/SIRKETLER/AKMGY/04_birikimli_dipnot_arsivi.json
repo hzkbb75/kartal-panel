@@ -1,14 +1,14 @@
 {
   "kod": "AKMGY",
-  "son_guncelleme": "2026-11-06 16:18",
+  "son_guncelleme": "2026-11-06 16:41",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
-      "icr_kati": 1.9,
-      "tahakkuk_orani": -2.72,
+      "icr_kati": 5.44,
+      "tahakkuk_orani": -2.89,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
-      "dso_gun": 23.6,
+      "dso_gun": 5.9,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.1,
@@ -17,18 +17,23 @@
       "uyarilar": [
         "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
-      "pdf_dipnot_notlari": {},
+      "pdf_dipnot_notlari": {
+        "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 0 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
+        "siparis_ve_backlog": "<strong>Sipariş Avansı:</strong> 2 Mn ₺ (Yıllık Cironun %0.1'i)<br><strong>İhracat Payı:</strong> %0.0 (0 Mn ₺)",
+        "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 101 Mn ₺ (ÖZK %+1.3)<br><strong>Ham YPP:</strong> 101 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
+        "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.1 (10 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.07x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
+      },
       "dts_delta": 0,
       "dso_delta": 0.0
     },
     "2025/06": {
       "efm_yuzde": 0.0,
-      "icr_kati": 2.99,
-      "tahakkuk_orani": -1.4,
+      "icr_kati": 8.54,
+      "tahakkuk_orani": -2.04,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
-      "dso_gun": 21.1,
-      "acm_makasi": -23.0,
+      "dso_gun": 10.5,
+      "acm_makasi": 84.9,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.1,
       "iliskili_orani": 0.0,
@@ -36,37 +41,23 @@
       "uyarilar": [
         "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
-      "pdf_dipnot_notlari": {},
+      "pdf_dipnot_notlari": {
+        "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 0 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
+        "siparis_ve_backlog": "<strong>Sipariş Avansı:</strong> 2 Mn ₺ (Yıllık Cironun %0.1'i)<br><strong>İhracat Payı:</strong> %0.0 (0 Mn ₺)",
+        "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 109 Mn ₺ (ÖZK %+1.3)<br><strong>Ham YPP:</strong> 109 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
+        "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.1 (10 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.02x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
+      },
       "dts_delta": 0,
-      "dso_delta": -2.5
+      "dso_delta": 4.6
     },
     "2026/03": {
-      "efm_yuzde": 4571.4,
-      "icr_kati": 2.54,
+      "efm_yuzde": 6400.0,
+      "icr_kati": 7.28,
       "tahakkuk_orani": -1.0,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
-      "dso_gun": 120.0,
-      "acm_makasi": 231.3,
-      "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 0.1,
-      "iliskili_orani": 0.0,
-      "dts_skor": 15,
-      "uyarilar": [
-        "🟡 Alacak-Ciro makası +%231.3 açıldı (DSO: 120.0 gün)."
-      ],
-      "pdf_dipnot_notlari": {},
-      "dts_delta": 15,
-      "dso_delta": 98.9
-    },
-    "2026/06": {
-      "efm_yuzde": 4374.8,
-      "icr_kati": 2.86,
-      "tahakkuk_orani": -0.35,
-      "aga_orani": 0.0,
-      "ykp_orani": 0.0,
-      "dso_gun": 52.0,
-      "acm_makasi": -118.5,
+      "dso_gun": 30.0,
+      "acm_makasi": 434.9,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.1,
       "iliskili_orani": 0.0,
@@ -74,9 +65,41 @@
       "uyarilar": [
         "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
-      "pdf_dipnot_notlari": {},
-      "dts_delta": -15,
-      "dso_delta": -68.0
+      "pdf_dipnot_notlari": {
+        "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 0 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
+        "siparis_ve_backlog": "<strong>Sipariş Avansı:</strong> 5 Mn ₺ (Yıllık Cironun %0.4'i)<br><strong>İhracat Payı:</strong> %0.0 (0 Mn ₺)",
+        "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 125 Mn ₺ (ÖZK %+1.2)<br><strong>Ham YPP:</strong> 125 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
+        "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.1 (15 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.03x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
+      },
+      "dts_delta": 0,
+      "dso_delta": 19.5
+    },
+    "2026/06": {
+      "efm_yuzde": 6297.2,
+      "icr_kati": 8.19,
+      "tahakkuk_orani": -0.35,
+      "aga_orani": 0.0,
+      "ykp_orani": 0.0,
+      "dso_gun": 26.0,
+      "acm_makasi": 151.2,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 0.1,
+      "iliskili_orani": 0.0,
+      "dts_skor": 0,
+      "uyarilar": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ],
+      "pdf_dipnot_notlari": {
+        "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 0 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
+        "siparis_ve_backlog": "<strong>Sipariş Avansı:</strong> 2 Mn ₺ (Yıllık Cironun %0.1'i)<br><strong>İhracat Payı:</strong> %0.0 (0 Mn ₺)",
+        "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 131 Mn ₺ (ÖZK %+1.2)<br><strong>Ham YPP:</strong> 131 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
+        "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.1 (16 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.01x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
+      },
+      "dts_delta": 0,
+      "dso_delta": -4.0,
+      "tutarlilik_raporu": [
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+      ]
     }
   }
 }

@@ -1,87 +1,111 @@
 {
   "kod": "BVSAN",
-  "son_guncelleme": "2026-11-06 16:18",
+  "son_guncelleme": "2026-11-06 16:41",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 68.6,
-      "icr_kati": 0.08,
-      "tahakkuk_orani": -3.93,
+      "efm_yuzde": 225.3,
+      "icr_kati": 1.8,
+      "tahakkuk_orani": -4.53,
       "aga_orani": 0.0,
-      "ykp_orani": 100.0,
-      "dso_gun": 494.5,
+      "ykp_orani": 51.5,
+      "dso_gun": 123.6,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 2.5,
+      "karsilik_ozk_orani": 3.8,
       "iliskili_orani": 0.0,
-      "dts_skor": 30,
+      "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
-        "🔴 Faiz karşılama oranı 0.08x (ICR zayıf)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%51.5)."
       ],
-      "pdf_dipnot_notlari": {},
+      "pdf_dipnot_notlari": {
+        "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 228 Mn ₺ (1.7x Amortisman)<br><strong>MDV:</strong> 1.77 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
+        "siparis_ve_backlog": "<strong>Sipariş Avansı:</strong> 812 Mn ₺ (Yıllık Cironun %73.5'i)<br><strong>İhracat Payı:</strong> %35.8 (99 Mn ₺)",
+        "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -67 Mn ₺ (ÖZK %-3.3)<br><strong>Ham YPP:</strong> -67 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
+        "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %3.8 (78 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.76x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
+      },
       "dts_delta": 0,
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 57.3,
-      "icr_kati": 0.94,
-      "tahakkuk_orani": 3.62,
+      "efm_yuzde": 101.6,
+      "icr_kati": 1.25,
+      "tahakkuk_orani": 2.58,
       "aga_orani": 51.0,
-      "ykp_orani": 81.9,
-      "dso_gun": 138.1,
-      "acm_makasi": -291.5,
+      "ykp_orani": 45.0,
+      "dso_gun": 69.1,
+      "acm_makasi": -89.2,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 2.8,
+      "karsilik_ozk_orani": 3.7,
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%81.9).",
-        "🔴 Faiz karşılama oranı 0.94x (ICR zayıf)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%45.0).",
+        "🔴 Faiz karşılama oranı 1.25x (ICR zayıf)."
       ],
-      "pdf_dipnot_notlari": {},
-      "dts_delta": 0,
-      "dso_delta": -356.4
+      "pdf_dipnot_notlari": {
+        "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 221 Mn ₺ (5.1x Amortisman)<br><strong>MDV:</strong> 1.81 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
+        "siparis_ve_backlog": "<strong>Sipariş Avansı:</strong> 821 Mn ₺ (Yıllık Cironun %36.7'i)<br><strong>İhracat Payı:</strong> %22.1 (247 Mn ₺)",
+        "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 1.01 Mr ₺ (ÖZK %+45.2)<br><strong>Ham YPP:</strong> 1.01 Mr ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
+        "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %3.7 (83 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.79x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
+      },
+      "dts_delta": 15,
+      "dso_delta": -54.5
     },
     "2026/03": {
-      "efm_yuzde": 27.5,
-      "icr_kati": 0.05,
+      "efm_yuzde": 218.2,
+      "icr_kati": 0.2,
       "tahakkuk_orani": -3.85,
-      "aga_orani": 0.0,
-      "ykp_orani": 100.0,
-      "dso_gun": 475.2,
-      "acm_makasi": 99.7,
+      "aga_orani": 369.1,
+      "ykp_orani": 83.5,
+      "dso_gun": 118.8,
+      "acm_makasi": -6.4,
       "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 2.3,
+      "karsilik_ozk_orani": 3.5,
+      "iliskili_orani": 0.0,
+      "dts_skor": 30,
+      "uyarilar": [
+        "🟡 Kağıt üzeri kâr payı yüksek (%83.5).",
+        "🔴 Faiz karşılama oranı 0.2x (ICR zayıf)."
+      ],
+      "pdf_dipnot_notlari": {
+        "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 29 Mn ₺ (1.2x Amortisman)<br><strong>MDV:</strong> 2.15 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
+        "siparis_ve_backlog": "<strong>Sipariş Avansı:</strong> 733 Mn ₺ (Yıllık Cironun %40.1'i)<br><strong>İhracat Payı:</strong> %46.7 (213 Mn ₺)",
+        "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -156 Mn ₺ (ÖZK %-5.9)<br><strong>Ham YPP:</strong> -156 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
+        "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %3.5 (93 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.76x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
+      },
+      "dts_delta": 0,
+      "dso_delta": 49.7
+    },
+    "2026/06": {
+      "efm_yuzde": 25.3,
+      "icr_kati": 0.6,
+      "tahakkuk_orani": -2.74,
+      "aga_orani": 0.0,
+      "ykp_orani": 74.9,
+      "dso_gun": 98.1,
+      "acm_makasi": 37.9,
+      "serefiye_ozk_orani": 0.0,
+      "karsilik_ozk_orani": 4.8,
       "iliskili_orani": 0.0,
       "dts_skor": 45,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
-        "🟡 Alacak-Ciro makası +%99.7 açıldı (DSO: 475.2 gün).",
-        "🔴 Faiz karşılama oranı 0.05x (ICR zayıf)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%74.9).",
+        "🟡 Alacak-Ciro makası +%37.9 açıldı (DSO: 98.1 gün).",
+        "🔴 Faiz karşılama oranı 0.6x (ICR zayıf)."
       ],
-      "pdf_dipnot_notlari": {},
+      "pdf_dipnot_notlari": {
+        "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 37 Mn ₺ (0.7x Amortisman)<br><strong>MDV:</strong> 2.27 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
+        "siparis_ve_backlog": "<strong>Sipariş Avansı:</strong> 1.06 Mr ₺ (Yıllık Cironun %52.3'i)<br><strong>İhracat Payı:</strong> %46.2 (466 Mn ₺)",
+        "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -415 Mn ₺ (ÖZK %-16.1)<br><strong>Ham YPP:</strong> -415 Mn ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
+        "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %4.8 (124 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.09x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
+      },
       "dts_delta": 15,
-      "dso_delta": 337.1
-    },
-    "2026/06": {
-      "efm_yuzde": 20.7,
-      "icr_kati": 0.07,
-      "tahakkuk_orani": -2.74,
-      "aga_orani": 0.0,
-      "ykp_orani": 100.0,
-      "dso_gun": 196.1,
-      "acm_makasi": -129.8,
-      "serefiye_ozk_orani": 0.0,
-      "karsilik_ozk_orani": 3.2,
-      "iliskili_orani": 0.0,
-      "dts_skor": 30,
-      "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%100.0).",
-        "🔴 Faiz karşılama oranı 0.07x (ICR zayıf)."
-      ],
-      "pdf_dipnot_notlari": {},
-      "dts_delta": -15,
-      "dso_delta": -279.1
+      "dso_delta": -20.7,
+      "tutarlilik_raporu": [
+        "🟡 Kağıt üzeri kâr payı yüksek (%74.9).",
+        "🟡 Alacak-Ciro makası +%37.9 açıldı (DSO: 98.1 gün).",
+        "🔴 Faiz karşılama oranı 0.6x (ICR zayıf)."
+      ]
     }
   }
 }

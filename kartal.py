@@ -80,7 +80,7 @@ if BIST_ANALIZ_TABANI:
         _medyan = _sirali_fk[_orta] if len(_sirali_fk) % 2 == 1 else (_sirali_fk[_orta - 1] + _sirali_fk[_orta]) / 2.0
         SEKTOR_FK_HARITASI[_sek] = round(_medyan, 2)
 
-# 2. kap_indirici.py Tarafından Üretilen KAP & Teknik Veri Ambarını Yükle
+# 2. 60 Günlük Teknik Kanal & R:R Veri Ambarını Yükle (Yoksa veya Eksikse Canlı Hesapla)
 KAP_VE_TEKNIK_YOLLARI = [
     "kap_ve_teknik.json",
     os.path.join(ROOT_DIR, "kap_ve_teknik.json"),
@@ -92,10 +92,129 @@ for yol in KAP_VE_TEKNIK_YOLLARI:
         try:
             with open(yol, "r", encoding="utf-8") as f:
                 KAP_VE_TEKNIK_AMBARI = json.load(f)
-                print(f"  [Bilgi] 'kap_ve_teknik.json' başarıyla hafızaya alındı ({yol}).")
-                break
+                if KAP_VE_TEKNIK_AMBARI.get("teknik_veriler"):
+                    print(f"  [Bilgi] 'kap_ve_teknik.json' başarıyla hafızaya alındı ({yol}).")
+                    break
         except Exception as e:
             print(f"  [Uyarı] kap_ve_teknik.json okunamadı: {e}")
+
+
+def guncelle_canli_teknik_kanal_ambari() -> dict:
+    """
+    TradingView BIST Scanner API üzerinden tek seferde tüm BIST hisselerinin
+    60 işlem günü (3 Ay) Destek, Direnç, Kanal Konumu (%), R:R, 20G/30G Hacim Çarpanı
+    ve BIST 100 Göreceli Güç (1 Ay) verilerini hesaplar ve kap_ve_teknik.json'a yazar.
+    """
+    global KAP_VE_TEKNIK_AMBARI
+    mevcut_tv = KAP_VE_TEKNIK_AMBARI.get("teknik_veriler", {})
+    guncel_tarih_str = datetime.now().strftime("%Y-%m-%d")
+    if len(mevcut_tv) >= 400 and str(KAP_VE_TEKNIK_AMBARI.get("guncelleme", "")).startswith(guncel_tarih_str):
+        return KAP_VE_TEKNIK_AMBARI
+
+    url = "https://scanner.tradingview.com/turkey/scan"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "Accept": "application/json, text/plain, */*"
+    }
+    payload = {
+        "filter": [{"left": "exchange", "operation": "equal", "right": "BIST"}],
+        "options": {"lang": "tr"},
+        "markets": ["turkey"],
+        "columns": [
+            "name", "close", "High.3M", "Low.3M", "High.1M", "Low.1M",
+            "Perf.1M", "volume", "average_volume_30d_calc"
+        ],
+        "sort": {"sortBy": "name", "sortOrder": "asc"},
+        "range": [0, 950]
+    }
+    try:
+        r = requests.post(url, json=payload, headers=headers, timeout=15)
+        if r.status_code == 200:
+            satirlar = r.json().get("data", [])
+            ham_liste = []
+            xu100_perf = None
+            perf_listesi = []
+
+            for s in satirlar:
+                d = s.get("d", [])
+                if not d or not d[0]:
+                    continue
+                kod = str(d[0]).strip().upper()
+                fiyat = float(d[1] or 0.0)
+                if fiyat <= 0:
+                    continue
+                p1m = float(d[6] or 0.0)
+                if kod == "XU100":
+                    xu100_perf = p1m
+                perf_listesi.append(p1m)
+                ham_liste.append((kod, fiyat, d))
+
+            if xu100_perf is None and perf_listesi:
+                sirali_p = sorted(perf_listesi)
+                xu100_perf = sirali_p[len(sirali_p) // 2]
+            xu100_perf = float(xu100_perf or 0.0)
+
+            yeni_teknik = {}
+            for kod, fiyat, d in ham_liste:
+                h3m = float(d[2] or d[4] or (fiyat * 1.15))
+                l3m = float(d[3] or d[5] or (fiyat * 0.88))
+                direnc_60g = round(max(h3m, fiyat * 1.01), 2)
+                destek_60g = round(min(l3m, fiyat * 0.99), 2)
+                if destek_60g <= 0:
+                    destek_60g = round(fiyat * 0.88, 2)
+
+                kanal_boyu = max(direnc_60g - destek_60g, fiyat * 0.01, 0.01)
+                kanal_konumu = round(max(0.0, min(100.0, ((fiyat - destek_60g) / kanal_boyu) * 100.0)), 1)
+
+                risk_yuzde = round(max(0.5, ((fiyat - destek_60g) / fiyat) * 100.0), 1)
+                odul_yuzde = round(max(0.5, ((direnc_60g - fiyat) / fiyat) * 100.0), 1)
+                rr_orani = round(odul_yuzde / max(risk_yuzde, 0.5), 2)
+
+                vol = float(d[7] or 0.0)
+                avg_vol = float(d[8] or 0.0)
+                hacim_kati = round(vol / avg_vol, 2) if avg_vol > 0 else 1.0
+
+                p1m = float(d[6] or 0.0)
+                rs_bist_fark = round(p1m - xu100_perf, 1)
+
+                if kanal_konumu <= 25.0:
+                    durum = "🟢 60G DESTEK BÖLGESİ (ALIM FIRSATI)"
+                    renk = "#10b981"
+                elif kanal_konumu <= 65.0:
+                    durum = "🔵 KANAL ORTA BANT (DENGELİ)"
+                    renk = "#38bdf8"
+                elif kanal_konumu <= 85.0:
+                    durum = "🟡 DİRENCE YAKIN (DİKKATLİ İZLE)"
+                    renk = "#f59e0b"
+                else:
+                    durum = "🔴 60G DİRENÇ TAVANI (PRİMLİ)"
+                    renk = "#ef4444"
+
+                yeni_teknik[kod] = {
+                    "fiyat": round(fiyat, 2),
+                    "destek_60g": destek_60g,
+                    "direnc_60g": direnc_60g,
+                    "kanal_konumu": kanal_konumu,
+                    "risk_yuzde": risk_yuzde,
+                    "odul_yuzde": odul_yuzde,
+                    "rr_orani": rr_orani,
+                    "hacim_kati": hacim_kati,
+                    "rs_bist_fark": rs_bist_fark,
+                    "durum": durum,
+                    "renk": renk
+                }
+
+            if yeni_teknik:
+                KAP_VE_TEKNIK_AMBARI["guncelleme"] = datetime.now().strftime("%Y-%m-%d %H:%M")
+                KAP_VE_TEKNIK_AMBARI["teknik_veriler"] = yeni_teknik
+                with open("kap_ve_teknik.json", "w", encoding="utf-8") as f:
+                    json.dump(KAP_VE_TEKNIK_AMBARI, f, ensure_ascii=False, indent=2)
+                print(f"  [Bilgi] 60 Günlük Teknik Kanal & R:R Ambarı canlı güncellendi ({len(yeni_teknik)} hisse).")
+    except Exception as e:
+        print(f"  [Uyarı] Canlı teknik kanal verisi çekilemedi: {e}")
+    return KAP_VE_TEKNIK_AMBARI
+
+guncelle_canli_teknik_kanal_ambari()
 
 # 3. Yerel KAP Haberleri Ambarını Yükle (Tüm BİST)
 YEREL_KAP_DOSYASI = os.path.join(ROOT_DIR, "tum_kap_haberleri.json")
@@ -219,13 +338,40 @@ def rasyonel_degerleme_hesapla(fiyat, hbk, dd, roe, sektor_fk=10.0, sermaye_mali
         return 0.0, 0.0, "Hata"
 
 
-def hesapla_donem_dipnot_metrikleri(satirlar_cari: list, satirlar_onceki: list = None) -> dict:
+def _donem_gun_ve_yillik_carpan(donem_adi: str) -> tuple:
+    """
+    UFRS gelir tablosu kümülatif dönemine göre (03, 06, 09, 12)
+    gerçek gün sayısını ve yıllıklandırma çarpanını döndürür.
+    """
+    if not donem_adi or "/" not in str(donem_adi):
+        return 365.0, 1.0
+    ay_str = str(donem_adi).split("/")[-1].strip()
+    if ay_str in ("03", "3"):
+        return 91.25, 4.0
+    elif ay_str in ("06", "6"):
+        return 182.5, 2.0
+    elif ay_str in ("09", "9"):
+        return 273.75, (12.0 / 9.0)
+    return 365.0, 1.0
+
+
+def _kisa_tutar_metni(deger_mn: float) -> str:
+    if abs(deger_mn) >= 1000.0:
+        return f"{deger_mn / 1000.0:,.2f} Mr ₺"
+    return f"{deger_mn:,.0f} Mn ₺"
+
+
+def hesapla_donem_dipnot_metrikleri(satirlar_cari: list, satirlar_onceki: list = None, donem_adi: str = "2026/06", onceki_donem_adi: str = None) -> dict:
     onceki = satirlar_onceki if satirlar_onceki else satirlar_cari
-    satis_c = satir_bul(satirlar_cari, ["hasilat", "satis gelirleri", "faiz gelirleri"])[0]
-    satis_o = satir_bul(onceki, ["hasilat", "satis gelirleri", "faiz gelirleri"])[0]
+    donem_gun, yillik_carpan = _donem_gun_ve_yillik_carpan(donem_adi)
+    _, onceki_yillik_carpan = _donem_gun_ve_yillik_carpan(onceki_donem_adi or donem_adi)
+
+    satis_c = satir_bul(satirlar_cari, ["hasilat", "satis gelirleri", "faiz, ucret, prim, komisyon ve diger gelirler", "faiz gelirleri"])[0]
+    satis_o = satir_bul(onceki, ["hasilat", "satis gelirleri", "faiz, ucret, prim, komisyon ve diger gelirler", "faiz gelirleri"])[0]
     efk_c = satir_bul(satirlar_cari, ["esas faaliyet kari", "faaliyet kari"])[0]
-    net_c = satir_bul(satirlar_cari, ["donem net kar", "donem kari", "ana ortaklik paylari"])[0]
-    cfo_c = satir_bul(satirlar_cari, ["isletme faaliyetlerinden", "faaliyetlerden nakit", "kaynaklanan net nakit"])[0]
+    amort_c = abs(satir_bul(satirlar_cari, ["amortisman giderleri", "amortisman & itfa paylari"])[0])
+    net_c = satir_bul(satirlar_cari, ["donem net kar/zarari", "donem net kar", "ana ortaklik paylari", "donem kari"])[0]
+    cfo_c = satir_bul(satirlar_cari, ["isletme faaliyetlerinden nakit akislari", "isletme faaliyetlerinden", "faaliyetlerden nakit", "kaynaklanan net nakit"])[0]
 
     _donen_d = satir_bul(satirlar_cari, ["donen varliklar", "toplam donen varliklar"])[0]
     _duran_d = satir_bul(satirlar_cari, ["duran varliklar", "toplam duran varliklar"])[0]
@@ -234,9 +380,11 @@ def hesapla_donem_dipnot_metrikleri(satirlar_cari: list, satirlar_onceki: list =
     _uv_d = satir_bul(satirlar_cari, ["uzun vadeli yukumlulukler", "toplam uzun vadeli yukumlulukler"])[0]
     varlik_c = max(satir_bul(satirlar_cari, ["toplam varliklar", "toplam aktifler"])[0], _donen_d + _duran_d, _ozk_d + _kv_d + _uv_d, 1.0)
     ozk_c = max(satir_bul(satirlar_cari, ["ana ortakliga ait ozkaynaklar", "toplam ozkaynaklar", "ozkaynaklar"])[0], 1.0)
+    nakit_c = satir_bul(satirlar_cari, ["nakit ve nakit benzerleri", "nakit degerler"])[0]
     fin_borc_c = satir_bul(satirlar_cari, ["finansal borclar"], mod="topla")[0]
     fin_borc_o = satir_bul(onceki, ["finansal borclar"], mod="topla")[0]
-    fin_gider_c = abs(satir_bul(satirlar_cari, ["finansman giderleri", "esas faaliyet disi finansal giderler"])[0])
+    fin_gider_c = abs(satir_bul(satirlar_cari, ["finansman giderleri", "(esas faaliyet disi) finansal giderler", "esas faaliyet disi finansal giderler"])[0])
+    fin_gelir_c = abs(satir_bul(satirlar_cari, ["(esas faaliyet disi) finansal gelirler", "esas faaliyet disi finansal gelirler"])[0])
 
     alacak_c = satir_bul(satirlar_cari, ["ticari alacaklar"])[0]
     alacak_o = satir_bul(onceki, ["ticari alacaklar"])[0]
@@ -245,36 +393,83 @@ def hesapla_donem_dipnot_metrikleri(satirlar_cari: list, satirlar_onceki: list =
     modv_o = satir_bul(onceki, ["maddi olmayan duran varliklar"])[0]
     serefiye_c = satir_bul(satirlar_cari, ["serefiye"])[0]
     kagit_kar = max(0.0, satir_bul(satirlar_cari, ["yatirim faaliyetlerinden gelirler"])[0]) + max(0.0, satir_bul(satirlar_cari, ["ertelenmis vergi geliri"])[0])
-    karsiliklar_c = satir_bul(satirlar_cari, ["kisa vadeli karsiliklar", "uzun vadeli karsiliklar", "calisanlara saglanan"], mod="topla")[0]
+    karsiliklar_c = satir_bul(satirlar_cari, ["borc karsiliklari", "kisa vadeli karsiliklar", "uzun vadeli karsiliklar", "calisanlara saglanan"], mod="topla")[0]
 
+    # Net Finansman Gideri ve Operasyonel FAVÖK (EFK + Amortisman) bazlı gerçekçi ICR & Yıllıklandırılmış Borç Maliyeti
+    net_fin_gider_c = max(fin_gider_c - fin_gelir_c, fin_gider_c * 0.35) if fin_gider_c > 0 else 0.0
     ort_borc = max((fin_borc_c + fin_borc_o) / 2.0, 1.0)
-    efm_yuzde = round((fin_gider_c / ort_borc) * 100, 1) if fin_borc_c > 0 else 0.0
-    icr_kati = round(efk_c / max(fin_gider_c, 1.0), 2) if fin_gider_c > 0 else 99.0
+    efm_yuzde = round(((net_fin_gider_c * yillik_carpan) / ort_borc) * 100.0, 1) if fin_borc_c > 0 else 0.0
+    operasyonel_nakit_kar = max(efk_c + amort_c, efk_c)
+    icr_kati = round(operasyonel_nakit_kar / max(net_fin_gider_c, 1.0), 2) if net_fin_gider_c > 0 else 99.0
 
-    tahakkuk_orani = round(((net_c - cfo_c) / varlik_c) * 100, 2)
-    aga_orani = round((max(0.0, modv_c - modv_o) / max(efk_c, 1.0)) * 100, 1) if efk_c > 0 else 0.0
+    tahakkuk_orani = round(((net_c - cfo_c) / varlik_c) * 100.0, 2)
+    aga_orani = round((max(0.0, modv_c - modv_o) / max(efk_c, 1.0)) * 100.0, 1) if efk_c > 0 else 0.0
     
     if efk_c > 0:
-        ykp_orani = min(100.0, round((kagit_kar / efk_c) * 100, 1))
+        ykp_orani = min(100.0, round((kagit_kar / max(efk_c + kagit_kar, 1.0)) * 100.0, 1))
     else:
-        ykp_orani = min(100.0, round((kagit_kar / max(varlik_c, 1.0)) * 100, 1))
+        ykp_orani = min(100.0, round((kagit_kar / max(varlik_c, 1.0)) * 100.0, 1))
 
-    dso_gun = round(365.0 * (alacak_c / max(satis_c, 1.0)), 1) if satis_c > 0 else 0.0
-    alacak_buyume = ((alacak_c / max(alacak_o, 1.0)) - 1.0) * 100 if alacak_o > 0 else 0.0
-    satis_buyume = ((satis_c / max(satis_o, 1.0)) - 1.0) * 100 if satis_o > 0 else 0.0
+    # Kümülatif dönem gün sayısına (91.25 / 182.5 / 273.75 / 365) göre gerçek DSO (Alacak Tahsil Süresi)
+    dso_gun = round(donem_gun * (alacak_c / max(satis_c, 1.0)), 1) if satis_c > 0 else 0.0
+    satis_c_yillik = satis_c * yillik_carpan
+    satis_o_yillik = satis_o * onceki_yillik_carpan
+    alacak_buyume = ((alacak_c / max(alacak_o, 1.0)) - 1.0) * 100.0 if alacak_o > 0 else 0.0
+    satis_buyume = ((satis_c_yillik / max(satis_o_yillik, 1.0)) - 1.0) * 100.0 if satis_o_yillik > 0 else 0.0
     acm_makasi = round(alacak_buyume - satis_buyume, 1)
 
-    serefiye_ozk_orani = round((serefiye_c / ozk_c) * 100, 1)
-    karsilik_ozk_orani = round((karsiliklar_c / ozk_c) * 100, 1)
-    iliskili_orani = round((iliskili_alacak_c / varlik_c) * 100, 2)
+    serefiye_ozk_orani = round((serefiye_c / ozk_c) * 100.0, 1)
+    karsilik_ozk_orani = round((karsiliklar_c / ozk_c) * 100.0, 1)
+    iliskili_orani = round((iliskili_alacak_c / varlik_c) * 100.0, 2)
+
+    # 4 Çeyreklik Kurumsal Denetim Matrisi İçin Otomatik UFRS Dipnot Röntgeni Üretimi
+    mdv_c_val = satir_bul(satirlar_cari, ["maddi duran varliklar"])[0]
+    capex_c_val = abs(satir_bul(satirlar_cari, ["sabit sermaye yatirimlari"])[0])
+    ydisi_satis_c = satir_bul(satirlar_cari, ["yurtdisi satislar"])[0]
+    avans_c_val = satir_bul(satirlar_cari, ["musteri soz. dogan yuk.", "musteri soz.dogan yuk.", "ertelenmis gelirler", "alinan siparis avanslari"], mod="topla")[0]
+    ypp_hedge_c = satir_bul(satirlar_cari, ["net ypp (hedge dahil)", "net yabanci para pozisyonu"])[0]
+    ypp_ham_c = satir_bul(satirlar_cari, ["net yabanci para pozisyonu"])[0]
+
+    capex_amort_kati = round(capex_c_val / amort_c, 2) if amort_c > 0 else 0.0
+    yatirim_durum = "Agresif Kapasite Artışı" if capex_amort_kati >= 1.5 else ("Kapasite Korunumu / İdame" if capex_amort_kati >= 0.7 else "Düşük CAPEX / Hasat Dönemi")
+    not_yatirim = f"<strong>CAPEX:</strong> {_kisa_tutar_metni(capex_c_val)} ({capex_amort_kati:.1f}x Amortisman)<br><strong>MDV:</strong> {_kisa_tutar_metni(mdv_c_val)}<br><span style='color:#34d399; font-size:10.5px;'>● {yatirim_durum}</span>"
+
+    ihracat_payi = round((ydisi_satis_c / max(satis_c, 1.0)) * 100.0, 1) if satis_c > 0 and ydisi_satis_c > 0 else 0.0
+    avans_ciro_orani = round((avans_c_val / max(satis_c_yillik, 1.0)) * 100.0, 1) if satis_c_yillik > 0 else 0.0
+    not_siparis = (
+        f"<strong>Sipariş Avansı:</strong> {_kisa_tutar_metni(avans_c_val)} (Yıllık Cironun %{avans_ciro_orani:.1f}'i)<br>"
+        f"<strong>İhracat Payı:</strong> %{ihracat_payi:.1f} ({_kisa_tutar_metni(ydisi_satis_c)})"
+    )
+
+    ypp_ozk_orani = round((ypp_hedge_c / ozk_c) * 100.0, 1)
+    ypp_renk = "#34d399" if ypp_ozk_orani >= -10.0 else "#f87171"
+    ypp_etiket = "Kur Korumalı / Fazla" if ypp_hedge_c >= 0 else ("Kontrollü Açık" if ypp_ozk_orani >= -15.0 else "Yüksek Kur Riski")
+    not_doviz = (
+        f"<strong>Net YPP (Hedge Dahil):</strong> {_kisa_tutar_metni(ypp_hedge_c)} (ÖZK %{ypp_ozk_orani:+.1f})<br>"
+        f"<strong>Ham YPP:</strong> {_kisa_tutar_metni(ypp_ham_c)} | <span style='color:{ypp_renk}; font-weight:bold;'>{ypp_etiket}</span>"
+    )
+
+    kv_ozk_kati = round(_kv_d / ozk_c, 2)
+    tri_etiket = "Temiz / Düşük Karşılık" if karsilik_ozk_orani <= 10.0 else "Yüksek Karşılık Yükü"
+    not_tri = (
+        f"<strong>Karşılık / ÖZK:</strong> %{karsilik_ozk_orani:.1f} ({_kisa_tutar_metni(karsiliklar_c)})<br>"
+        f"<strong>KV Yükümlülük / ÖZK:</strong> {kv_ozk_kati:.2f}x | <span style='color:#93c5fd;'>{tri_etiket}</span>"
+    )
+
+    otomatik_notlar = {
+        "yatirim_ve_kapasite": not_yatirim,
+        "siparis_ve_backlog": not_siparis,
+        "doviz_ve_turev": not_doviz,
+        "tri_rehin_ipotek": not_tri
+    }
 
     ceza = 0
     uyarilar = []
     if iliskili_orani > 3.0: ceza += 20; uyarilar.append(f"🔴 İlişkili taraflardan ticari olmayan alacaklar aktifin %{iliskili_orani}'ine ulaştı.")
     if tahakkuk_orani > 5.0: ceza += 20; uyarilar.append(f"🔴 Tahakkuk anomalisi (%{tahakkuk_orani}): Kâr nakde dönüşmüyor.")
     if ykp_orani > 35.0: ceza += 15; uyarilar.append(f"🟡 Kağıt üzeri kâr payı yüksek (%{ykp_orani}).")
-    if acm_makasi > 15.0: ceza += 15; uyarilar.append(f"🟡 Alacak-Ciro makası +%{acm_makasi} açıldı (DSO: {dso_gun} gün).")
-    if icr_kati < 1.5 and fin_gider_c > 0: ceza += 15; uyarilar.append(f"🔴 Faiz karşılama oranı {icr_kati}x (ICR zayıf).")
+    if acm_makasi > 15.0 and dso_gun > 45.0: ceza += 15; uyarilar.append(f"🟡 Alacak-Ciro makası +%{acm_makasi} açıldı (DSO: {dso_gun} gün).")
+    if icr_kati < 1.5 and net_fin_gider_c > 0 and fin_borc_c > nakit_c: ceza += 15; uyarilar.append(f"🔴 Faiz karşılama oranı {icr_kati}x (ICR zayıf).")
 
     if not uyarilar: uyarilar.append("🟢 Muhasebe makyajı veya anomali tespit edilmedi.")
 
@@ -283,7 +478,7 @@ def hesapla_donem_dipnot_metrikleri(satirlar_cari: list, satirlar_onceki: list =
         "aga_orani": aga_orani, "ykp_orani": ykp_orani, "dso_gun": dso_gun, "acm_makasi": acm_makasi,
         "serefiye_ozk_orani": serefiye_ozk_orani, "karsilik_ozk_orani": karsilik_ozk_orani,
         "iliskili_orani": iliskili_orani, "dts_skor": min(100, ceza), "uyarilar": uyarilar,
-        "pdf_dipnot_notlari": {}
+        "pdf_dipnot_notlari": otomatik_notlar
     }
 
 
@@ -302,16 +497,30 @@ def guncelle_birikimli_dipnot_arsivi(kod: str) -> dict:
     sirali_anahtarlar = sorted(cok_donem.keys())
 
     for idx, d_adi in enumerate(sirali_anahtarlar):
-        onceki_satirlar = cok_donem[sirali_anahtarlar[idx - 1]] if idx > 0 else cok_donem[d_adi]
+        # Elma-Elma Dönem Eşleşmesi: Önce aynı ay kodlu geçen yıl dönemini (örn. 2026/06 -> 2025/06) ara
+        ay_kodu = d_adi.split("/")[-1] if "/" in d_adi else ""
+        es_donem_adi = d_adi
+        for k_onceki in reversed(sirali_anahtarlar[:idx]):
+            if k_onceki.endswith("/" + ay_kodu):
+                es_donem_adi = k_onceki
+                break
+        if es_donem_adi == d_adi and idx > 0:
+            es_donem_adi = sirali_anahtarlar[idx - 1]
+
+        onceki_satirlar = cok_donem[es_donem_adi]
         cari_satirlar = [(s[0], s[1], s[1]) for s in cok_donem[d_adi]]
         onceki_s = [(s[0], s[1], s[1]) for s in onceki_satirlar]
 
-        hesaplanan = hesapla_donem_dipnot_metrikleri(cari_satirlar, onceki_s)
+        hesaplanan = hesapla_donem_dipnot_metrikleri(cari_satirlar, onceki_s, donem_adi=d_adi, onceki_donem_adi=es_donem_adi)
 
         if d_adi in mevcut_arsiv.get("donemler", {}):
             eski = mevcut_arsiv["donemler"][d_adi]
-            if eski.get("pdf_dipnot_notlari"):
-                hesaplanan["pdf_dipnot_notlari"] = eski["pdf_dipnot_notlari"]
+            eski_notlar = eski.get("pdf_dipnot_notlari") or {}
+            # Eğer PDF madencisinden özel metin geldiyse onu koru, boş kalan alanlarda UFRS dipnot röntgenini kullan
+            for k_alan, v_otomatik in hesaplanan["pdf_dipnot_notlari"].items():
+                eski_val = str(eski_notlar.get(k_alan, "")).strip()
+                if eski_val and len(eski_val) > 5 and eski_val != "-" and "CAPEX:" not in eski_val and "Sipariş Avansı:" not in eski_val and "Net YPP" not in eski_val and "Karşılık / ÖZK:" not in eski_val:
+                    hesaplanan["pdf_dipnot_notlari"][k_alan] = eski_val
             if eski.get("tutarlilik_raporu"):
                 hesaplanan["tutarlilik_raporu"] = eski["tutarlilik_raporu"]
 
@@ -326,6 +535,12 @@ def guncelle_birikimli_dipnot_arsivi(kod: str) -> dict:
             curr["dso_delta"] = round(curr["dso_gun"] - prev["dso_gun"], 1)
         else:
             curr["dts_delta"], curr["dso_delta"] = 0, 0.0
+
+    # Son çeyrek için otomatik Yönetim Vaatleri & Tutarlılık Karnesi özeti
+    if tum_adlar:
+        son_d = mevcut_arsiv["donemler"][tum_adlar[-1]]
+        if not son_d.get("tutarlilik_raporu"):
+            son_d["tutarlilik_raporu"] = list(son_d.get("uyarilar", []))
 
     mevcut_arsiv["son_guncelleme"] = datetime.now().strftime("%Y-%m-%d %H:%M")
     os.makedirs(os.path.dirname(arsiv_yolu), exist_ok=True)
@@ -557,7 +772,8 @@ def analiz_et_sirket(kod: str) -> dict:
     iliskili_alacak_c, _ = satir_bul(satirlar, ["iliskili taraflardan diğer alacaklar", "iliskili taraflardan ticari olmayan alacaklar"], mod="topla")
     stok_c, stok_o = satir_bul(satirlar, ["stoklar"], mod="ilk")
     mdv_c, mdv_o = satir_bul(satirlar, ["maddi duran varliklar"], mod="ilk")
-    ertelenmis_c, ertelenmis_o = satir_bul(satirlar, ["ertelenmis gelirler", "alinan siparis avanslari"], mod="topla")
+    ertelenmis_c, ertelenmis_o = satir_bul(satirlar, ["musteri soz. dogan yuk.", "musteri soz.dogan yuk.", "ertelenmis gelirler", "alinan siparis avanslari"], mod="topla")
+    amort_c, amort_o = satir_bul(satirlar, ["amortisman giderleri", "amortisman & itfa paylari"], mod="ilk")
     donen_c, donen_o = satir_bul(satirlar, ["donen varliklar", "toplam donen varliklar"], mod="ilk")
     duran_c, duran_o = satir_bul(satirlar, ["duran varliklar", "toplam duran varliklar"], mod="ilk")
     kv_c, kv_o = satir_bul(satirlar, ["kisa vadeli yukumlulukler", "toplam kisa vadeli yukumlulukler"], mod="ilk")
@@ -577,6 +793,7 @@ def analiz_et_sirket(kod: str) -> dict:
     bolum1_gecti_mi = not kirmizi_cizgi
 
     efk_marj_c = (efk_c / max(satis_c, 1.0))
+    favok_marj_c = ((efk_c + abs(amort_c)) / max(satis_c, 1.0)) if satis_c > 0 else 0.0
     yatirilan_sermaye = max(ozk_c + net_borc_c, 1.0)
     roic_tahmini = efk_c / yatirilan_sermaye
 
@@ -592,9 +809,9 @@ def analiz_et_sirket(kod: str) -> dict:
     medyan_efk_marj = (sorted(gecmis_efk_marjlari)[len(gecmis_efk_marjlari)//2]) if gecmis_efk_marjlari else efk_marj_c
 
     # === KURUMSAL ALTYAPI & BİLANÇO BÜYÜKLÜĞÜ HENDEĞİ ===
-    # Özkaynakları 10 Milyar TL üzerinde olan, borçsuz (Net Borç/ÖZK <= 0.50) ve nakit üreten devler,
-    # döngüsel marj diplerinde dahi sektörden silinmez, en az Kırılgan Hendekli (Döngüsel Hendek) kabul edilir.
-    kurumsal_altyapi_hendegi = (ozk_c >= 10000.0 and net_borc_ozkaynak <= 0.50 and cfo_c > 0)
+    # Özkaynakları 10 Milyar TL üzerinde olan, güvenli borçlulukta (Net Borç/ÖZK <= 0.85) ve güçlü nakit üreten devler,
+    # ağır yatırım ve döngüsel marj diplerinde dahi en az Kırılgan Hendekli (Döngüsel Hendek) kabul edilir.
+    kurumsal_altyapi_hendegi = (ozk_c >= 10000.0 and net_borc_ozkaynak <= 0.85 and cfo_c > 0) or (favok_marj_c >= 0.10 and net_borc_ozkaynak <= 0.80 and cfo_c > 0)
 
     # Serkan Ünal 60 Hisse Portföy Tavanları: Korunaklı (%3.5), Kırılgan Hendekli (%2.2), Hendeksiz (%1.2)
     if (medyan_efk_marj >= 0.14 or (efk_marj_c >= 0.12 and roic_tahmini >= 0.15)) and cfo_c > 0:
@@ -687,7 +904,9 @@ def analiz_et_sirket(kod: str) -> dict:
     # BÖLÜM 3 (DİPNOT RÖNTGENİ) & BÖLÜM 4 (ZİRAAT SEKTÖR F/K DESTEKLİ RASYONEL DEĞERLEME)
     cari_s_dipnot = [(r[0], r[1], r[1]) for r in satirlar]
     onceki_s_dipnot = [(r[0], r[2], r[2]) for r in satirlar]
-    dipnot_ozet = hesapla_donem_dipnot_metrikleri(cari_s_dipnot, onceki_s_dipnot)
+    son_d_etiket = sirket_kaydi.get("son_donem") or "2026/06"
+    onceki_d_etiket = sirket_kaydi.get("onceki_donem") or "2025/06"
+    dipnot_ozet = hesapla_donem_dipnot_metrikleri(cari_s_dipnot, onceki_s_dipnot, donem_adi=son_d_etiket, onceki_donem_adi=onceki_d_etiket)
     dts_skor = int(dipnot_ozet.get("dts_skor", 0))
     icr_kati = float(dipnot_ozet.get("icr_kati", 99.0))
 
@@ -862,9 +1081,15 @@ def uret_dna_ve_tercume_katmani(m: dict) -> dict:
             "baslik": f"Güvenlik Marjı ({fk:.1f}x F/K) & F-Skor ({f_skor}/9)",
             "detay": f"Tarihsel çarpan bandının %{tarihsel_bant_yuzde:.0f} diliminde iskontolu ve {f_skor}/9 finansal kalite puanına sahip."
         }
-    else:
+    elif ina_nk_orani >= 1.2:
         en_guclu = {
-            "baslik": f"{kategori} Yapı & Nakit Akışı ({f_skor}/9)",
+            "baslik": f"Güçlü Nakit Dönüşümü ({ina_nk_orani:.2f}x CFO/Net Kâr)",
+            "detay": f"1 TL net kâra karşılık kasaya {ina_nk_orani:.2f} TL gerçek işletme nakdi indirerek operasyonlarını finanse ediyor."
+        }
+    else:
+        baslik_hendek = f"{kategori} Yapı & Nakit Akışı ({f_skor}/9)" if kategori != "Hendeksiz" else f"Pozitif İşletme Nakit Üretimi ({f_skor}/9)"
+        en_guclu = {
+            "baslik": baslik_hendek,
             "detay": f"1 TL net kâra karşılık {ina_nk_orani:.2f} TL işletme nakdi üreterek faaliyet döngüsünü finanse ediyor."
         }
 
@@ -905,12 +1130,17 @@ def uret_dna_ve_tercume_katmani(m: dict) -> dict:
             )
         }
     elif not banka_mi and net_borc_ozk > 0.25 and ((kv_borc_orani >= 75.0 and net_borc_ozk >= 0.50) or (0 < icr < 1.5) or net_borc_ozk >= 1.20):
+        esik_icr = round(min(1.25, max(0.50, icr * 0.80)), 2) if icr > 0 else 1.00
+        icr_kosul_metni = (
+            f"Faiz karşılama oranı (ICR: {icr:.2f}x) gelecek çeyrekte 1.25x üzerine toparlanamaz ve {esik_icr:.2f}x altına sarkar"
+            if icr < 1.25 else f"Faiz karşılama oranı (ICR) 1.25x'in altına sarkar"
+        )
         kritik_risk = {
             "kod": "KISA_VADELI_BORC_VE_FAIZ_BASKISI",
             "baslik": "Kısa Vadeli Borç Çevirme & Finansman Yükü",
-            "detay": f"Borcun %{kv_borc_orani:.0f}'i kısa vadeli; Net Borç/ÖZK {net_borc_ozk:.2f}x ve faiz karşılama (ICR) {icr:.2f}x sınırında.",
+            "detay": f"Borcun %{kv_borc_orani:.0f}'i kısa vadeli; Net Borç/ÖZK {net_borc_ozk:.2f}x ve faiz karşılama (ICR) {icr:.2f}x düzeyinde.",
             "iptal_tetikleyicisi": (
-                f"ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: Faiz karşılama oranı (ICR) 1.25x'in altına sarkar veya "
+                f"ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: {icr_kosul_metni} veya "
                 f"Net Borç/ÖZK rasyosu {max(1.50, net_borc_ozk + 0.35):.2f}x eşiğini aşarsa temel tez iptal olur ve pozisyondan çıkılır."
             )
         }
@@ -1200,12 +1430,20 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
             "ne_ifade_ediyor": f"{format_milyar_milyon(o_val)} → {format_milyar_milyon(c_val)}. Değişim aktifin %{aktif_etkisi:.1f}'i. {ozel_not}"
         }
 
+    ozk_not = "Özkaynak tamponunun net kârla büyümesi içsel değeri artırır." if ozk_c >= ozk_o else "Özkaynak tabanındaki daralma veya temettü çıkışı izlenmelidir."
+    mdv_not = "Maddi duran varlık artışı kapasite ve tesis yatırımlarının sürdüğünü gösterir." if mdv_c >= mdv_o else "Sabit kıymetlerde reel artış yok; mevcut kapasiteyle üretim yapılıyor."
+    avans_not = "Alınan peşin sipariş avanslarındaki artış gelecek çeyreklerin hazır hasılatıdır." if ertelenmis_c >= ertelenmis_o else "Sipariş avanslarının azalması geçmiş siparişlerin teslim edilip faturaya dönüştüğünü gösterir."
+    stok_deg = ((stok_c / max(stok_o, 1.0)) - 1.0) * 100.0 if stok_o > 0 else 0.0
+    stok_not = "Stok artışı ciro büyümesinin üzerinde; stok devir hızı yakından izlenmelidir." if (stok_deg > satis_buyume + 15.0) else "Stoklar operasyonel satış hacmiyle dengeli seyrediyor."
+    alacak_deg = ((alacak_c / max(alacak_o, 1.0)) - 1.0) * 100.0 if alacak_o > 0 else 0.0
+    alacak_not = "Alacaklar satıştan hızlı büyüdü; tahsilat vadesinde (DSO) açılma var." if (alacak_deg > satis_buyume + 15.0) else "Ticari alacaklar satış temposuyla uyumlu ve tahsilat disiplini korunuyor."
+
     bilanco_degisimleri = [
-        degisim_karti("ANA ORTAKLIK ÖZKAYNAĞI", ozk_c, ozk_o, varlik_o, "Özkaynak tamponunun net kârla büyümesi içsel değeri artırır."),
-        degisim_karti("MADDİ DURAN VARLIKLAR", mdv_c, mdv_o, varlik_o, "Kapasite yatırımları gelecek reel büyümenin göstergesidir."),
-        degisim_karti("SİPARİŞ AVANSLARI (ERTELENMİŞ GELİR)", ertelenmis_c, ertelenmis_o, varlik_o, "Alınan peşin avanslar şirketin hazır hasılatıdır."),
-        degisim_karti("STOKLAR", stok_c, stok_o, varlik_o, "Stokların satış büyümesiyle dengeli ilerlemesi izlenmelidir."),
-        degisim_karti("TİCARİ ALACAKLAR", alacak_c, alacak_o, varlik_o, "Satıştan hızlı büyüyen alacaklar vade açılmasına işaret eder.")
+        degisim_karti("ANA ORTAKLIK ÖZKAYNAĞI", ozk_c, ozk_o, varlik_o, ozk_not),
+        degisim_karti("MADDİ DURAN VARLIKLAR", mdv_c, mdv_o, varlik_o, mdv_not),
+        degisim_karti("SİPARİŞ AVANSLARI (ERTELENMİŞ GELİR)", ertelenmis_c, ertelenmis_o, varlik_o, avans_not),
+        degisim_karti("STOKLAR", stok_c, stok_o, varlik_o, stok_not),
+        degisim_karti("TİCARİ ALACAKLAR", alacak_c, alacak_o, varlik_o, alacak_not)
     ]
 
     donemler_dict = birikimli_dipnot_arsivi.get("donemler", {})
@@ -1434,7 +1672,11 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
         else:
             kz_gosterim = ""
 
-        if not r.get('kadroda', False) and r['Mevcut_Lot'] == 0 and not r.get('is_radar', False):
+        if not r.get('kadroda', False) and r['Mevcut_Lot'] == 0 and r.get('is_radar', False):
+            aksiyon = "RADAR / YEDEK"
+            fark_metin = "-"
+            renk = "badge-warn"
+        elif not r.get('kadroda', False) and r['Mevcut_Lot'] == 0 and not r.get('is_radar', False):
             aksiyon = "ELENDİ"
             fark_metin = "-"
             renk = "badge-fail"
@@ -2476,12 +2718,15 @@ if __name__ == "__main__":
         kat = s_veri.get("kategori", "Hendeksiz")
         mevcut_lot = mevcut_pozisyonlar.get(kod, {}).get("adet", 0)
 
+        altin_kalite_mi = bool(s_veri.get("cfo_buyuk_net_kar", False) and int(s_veri.get("piotroski_skor", 0)) >= 7)
         if kod in hedef_60_kodlari:
             baz_katsayi = katsayi_sozluk.get(kat, 1.0)
-            puan_carpani = max(0.7, s_veri["hibrit_puan"] / 70.0)
-            katsayi = round(baz_katsayi * puan_carpani, 2)
-            tavan = tavan_sozluk.get(kat, 1.5)
-            is_radar = (mevcut_lot == 0)
+            puan_carpani = max(0.7, (s_veri["hibrit_puan"] / 70.0) ** 1.35)
+            # 1. Derece Altın Standart (F>=7 ve CFO>NetKâr) hisselere tam katsayı, 6/9 tamamlayıcı hisselere 0.65x katsayı ve maks %1.60 tavan
+            kalite_carpani = 1.15 if altin_kalite_mi else 0.65
+            katsayi = round(baz_katsayi * puan_carpani * kalite_carpani, 3)
+            tavan = tavan_sozluk.get(kat, 1.5) if altin_kalite_mi else min(tavan_sozluk.get(kat, 1.5), 1.60)
+            is_radar = False
             kadroda = True
         else:
             katsayi = 0.0
