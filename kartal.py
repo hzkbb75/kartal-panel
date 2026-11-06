@@ -88,7 +88,6 @@ BANKA_VE_FINANS_KODLARI = {
     "ANSGR", "AKGRT", "RAYSG", "ISMEN", "INFO", "OSMEN", "GEDIK", "GLCVY", "OYYAT", "DSTKF"
 }
 SADECE_ENDEKS_PARA_HARIC = {"BIST", "XU100", "XU030", "TRY", "USD", "EUR", "XU050", "XUMKR", "XUTUM", "XUSIN", "XBANK", "NAKIT", "KASA", "PPF"}
-CEKIRDEK_KORUNAKLI_SIRKETLER = {"ASELS", "BIMAS", "KCHOL", "CCOLA", "FROTO", "MGROS", "AGESA", "ENKAI", "THYAO", "TUPRS"}
 
 
 def tr_norm(metin: str) -> str:
@@ -475,9 +474,21 @@ def analiz_et_sirket(kod: str) -> dict:
     yatirilan_sermaye = max(ozk_c + net_borc_c, 1.0)
     roic_tahmini = efk_c / yatirilan_sermaye
 
-    if kod in CEKIRDEK_KORUNAKLI_SIRKETLER or (efk_marj_c >= 0.14 and roic_tahmini >= 0.15 and cfo_c > 0):
+    # === EVRENSEL ÇOK DÖNEMLİ HENDEK MOTORU ===
+    cok_donem = sirket_kaydi.get("donemler", {})
+    gecmis_efk_marjlari = []
+    for d_adi, d_satirlar in cok_donem.items():
+        s_gelir = satir_bul([(r[0], r[1], r[1]) for r in d_satirlar], ["hasilat", "satis gelirleri", "faaliyet gelirleri", "faiz gelirleri"])[0]
+        e_kar = satir_bul([(r[0], r[1], r[1]) for r in d_satirlar], ["esas faaliyet kari", "faaliyet kari"])[0]
+        if s_gelir > 0:
+            gecmis_efk_marjlari.append(e_kar / s_gelir)
+            
+    medyan_efk_marj = (sorted(gecmis_efk_marjlari)[len(gecmis_efk_marjlari)//2]) if gecmis_efk_marjlari else efk_marj_c
+
+    # Serkan Ünal: Korunaklı (İstikrarlı medyan marj >= %14 veya ROIC/EFK güçlü ve CFO > 0)
+    if (medyan_efk_marj >= 0.14 or (efk_marj_c >= 0.12 and roic_tahmini >= 0.15)) and cfo_c > 0:
         kategori, tavan = "Korunaklı", 10.0
-    elif efk_marj_c >= 0.07 and cfo_c > 0:
+    elif (medyan_efk_marj >= 0.07 or efk_marj_c >= 0.07) and cfo_c > 0:
         kategori, tavan = "Kırılgan Hendekli", 5.0
     else:
         kategori, tavan = "Hendeksiz", 3.0
@@ -735,7 +746,7 @@ def uret_dna_ve_tercume_katmani(m: dict) -> dict:
                 "devam ederse döngü zirvesi teyit edilir, değer tuzağına düşmemek için çıkılır."
             )
         }
-    elif not banka_mi and ((kv_borc_orani >= 75.0 and net_borc_ozk >= 0.50) or (0 < icr < 1.5) or net_borc_ozk >= 1.20):
+    elif not banka_mi and net_borc_ozk > 0.25 and ((kv_borc_orani >= 75.0 and net_borc_ozk >= 0.50) or (0 < icr < 1.5) or net_borc_ozk >= 1.20):
         kritik_risk = {
             "kod": "KISA_VADELI_BORC_VE_FAIZ_BASKISI",
             "baslik": "Kısa Vadeli Borç Çevirme & Finansman Yükü",
@@ -755,15 +766,12 @@ def uret_dna_ve_tercume_katmani(m: dict) -> dict:
                 f"İNA/Net Kâr oranı 1.00x'in altına inerse alacak kalitesi bozulmuş sayılır, pozisyon kapatılır."
             )
         }
-    elif marj_degisim_qoq <= -2.0 or efk_marji < 0:
+    elif marj_degisim_qoq <= -2.0 or efk_marji < 7.0:
         kritik_risk = {
             "kod": "OPERASYONEL_MARJ_EROZYONU",
-            "baslik": "Operasyonel Marj Daralması & Maliyet Baskısı",
-            "detay": f"Esas faaliyet marjı %{efk_marji:.1f} seviyesinde (Önceki döneme göre değişim: {marj_degisim_qoq:+.1f} puan).",
-            "iptal_tetikleyicisi": (
-                f"ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: Esas faaliyet kâr marjı gelecek çeyrekte de toparlanamaz ve "
-                f"%{max(3.0, efk_marji - 1.5):.1f} eşiğinin altında kalırsa büyüme hikayesi çürümüş sayılır, pozisyon azaltılır."
-            )
+            "baslik": "Döngüsel Marj Daralması & Emtia / Maliyet Baskısı",
+            "detay": f"Esas faaliyet marjı %{efk_marji:.1f} seviyesinde (Önceki döneme göre marj değişimi: {marj_degisim_qoq:+.1f} puan).",
+            "iptal_tetikleyicisi": f"ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: Esas faaliyet kâr marjı gelecek çeyrekte de toparlanamaz ve %{max(2.0, efk_marji - 1.5):.1f} eşiğinin altında kalmaya devam ederse pozisyon azaltılır."
         }
     elif tarihsel_bant_yuzde >= 80.0 or fk >= 18.0:
         kritik_risk = {
