@@ -49,21 +49,55 @@ def tr_sayi(deger) -> float:
         return 0.0
 
 
+def tefas_ppf_gunluk_getiri(fon_kodu: str = "OSL") -> tuple[float, float]:
+    """
+    TEFAS API üzerinden ilgili fonun son günlük getiri oranını ve birim fiyatını çeker.
+    Dönüş: (gunluk_oran, birim_fiyat) -> Örn: (0.00138, 0.167619)
+    """
+    bugun_str = datetime.now().strftime("%d.%m.%Y")
+    try:
+        url = "https://www.tefas.gov.tr/api/DB/BindHistoryInfo"
+        payload = {
+            "fontip": "YAT",
+            "fonkod": fon_kodu,
+            "bastarih": bugun_str,
+            "bittarih": bugun_str
+        }
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+            "Referer": "https://www.tefas.gov.tr/TarihselVeriler.aspx"
+        }
+        r = requests.post(url, data=payload, headers=headers, timeout=8)
+        if r.status_code == 200:
+            veri = r.json().get("data", [])
+            if veri:
+                son = veri[-1]
+                gunluk_oran = float(son.get("GUNLUKGETIRI", 0.0)) / 100.0
+                birim_fiyat = float(son.get("FIYAT", 0.0))
+                return gunluk_oran, birim_fiyat
+    except Exception as e:
+        print(f"  [Uyarı] TEFAS {fon_kodu} verisi çekilemedi: {e}")
+
+    # Emniyet Değeri: Yıllık ~%50 faiz karşılığı günlük net nema oranı
+    return 0.00135, 0.167619
+
+
 def kasa_bakiyesi_cek() -> float:
-    """Google Sheets 'Kasa' sekmesinden güncel nakit/PPF tutarını okur."""
+    """Google Sheets 'Kasa_Hareketleri' (gid=515795505) sekmesinden G sütunundaki tüm hareketleri toplayarak net kasayı hesaplar."""
     try:
         resp = requests.get(SHEETS_KASA_CSV_URL, headers={"User-Agent": "Mozilla/5.0"}, timeout=12)
         if resp.status_code == 200:
-            lines = [line.strip() for line in resp.text.splitlines() if line.strip()]
-            for line in lines:
-                parcalar = re.split(r"[,;\t]", line)
-                for p in parcalar:
-                    sayi = tr_sayi(p)
-                    if sayi > 500:  # Kasa bakiyesini yakala (örn: 70753)
-                        return sayi
+            df = pd.read_csv(pd.io.common.StringIO(resp.text), sep=None, engine="python", dtype=str)
+            # G sütununu (Kasa Etkisi) bul veya son sütunu al
+            kasa_col = next((c for c in df.columns if "KASA ETKİSİ" in str(c).upper() or "KASA" in str(c).upper()), df.columns[-1])
+            toplam_kasa = 0.0
+            for val in df[kasa_col]:
+                toplam_kasa += tr_sayi(val)
+            if toplam_kasa > 0:
+                return round(toplam_kasa, 2)
     except Exception as e:
         print(f"  [Uyarı] Kasa sekmesi okunamadı: {e}")
-    return 0.0
+    return 69633.0
 
 
 def google_sheets_uzerinden_senkronize_et() -> dict:
@@ -114,12 +148,16 @@ def google_sheets_uzerinden_senkronize_et() -> dict:
     except Exception as e:
         print(f"  [Uyarı] Bist_Spot_Islemler okunamadı: {e}")
 
-    # 2. Kasayı Çek (Kasa Sekmesi)
+    # 2. Kasayı Çek ve TEFAS Günlük Nema Getirisini Hesapla
     kasa_tutari = kasa_bakiyesi_cek()
     if kasa_tutari <= 0:
-        kasa_tutari = 70753.0
+        kasa_tutari = 70000.0
 
-    # 3. İnternetten başarıyla veri geldiyse portfoyum.csv dosyasını tazele
+    gunluk_nema_orani, osl_fiyat = tefas_ppf_gunluk_getiri("OSL")
+    gunluk_nema_tl = round(kasa_tutari * gunluk_nema_orani, 2)
+    aylik_tahmini_nema = round(kasa_tutari * gunluk_nema_orani * 30, 2)
+
+    # 3. portfoyum.csv dosyasını tazele
     if pozisyonlar:
         satirlar = ["Kod;Adet;Birim_Maliyet_TL;Alim_Tarihi;Kademe_Durumu;Cikis_Kosulu_Notu"]
         bugun_str = datetime.now().strftime("%d.%m.%Y")
@@ -138,12 +176,14 @@ def google_sheets_uzerinden_senkronize_et() -> dict:
 
                 satirlar.append(f"{kod};{adet_str};{maliyet:.2f};{not_bilgi['tarih']};{not_bilgi['kademe']};{not_bilgi['not']}")
 
-        satirlar.append(f"NAKIT;1;{kasa_tutari:.0f};{bugun_str};Nakit Tamponu;Google Sheets Kasa Sekmesi")
+        # Nakit satırına nema ve fon fiyatı detaylarını ekle
+        nakit_notu = f"OSL Fiyat: {osl_fiyat:.6f} | Nema: +{gunluk_nema_tl:.1f}TL/gun (~{aylik_tahmini_nema:.0f}TL/ay)"
+        satirlar.append(f"NAKIT;1;{kasa_tutari:.2f};{bugun_str};PPF Likidite Kalkanı;{nakit_notu}")
 
         with open(PORTFOY_CSV_YOLU, "w", encoding="utf-8-sig") as f:
             f.write("\n".join(satirlar))
 
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] portfoyum.csv güncellendi: {len(satirlar)-2} Hisse + {kasa_tutari:,.0f} TL Kasa.")
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] portfoyum.csv güncellendi: {len(satirlar)-2} Hisse | Kasa: {kasa_tutari:,.2f} TL (+{gunluk_nema_tl:.2f} TL/gün OSL Nema).")
 
     return pozisyonlar
 
@@ -164,11 +204,13 @@ def portfoy_ve_canli_fiyatlari_getir(bist_sozluk: dict = None) -> dict:
                     adet = tr_sayi(r.get("Adet", 0))
                     maliyet = tr_sayi(r.get("Birim_Maliyet_TL", 0))
                     kademe = r.get("Kademe_Durumu", "1/3 Başlangıç")
+                    cikis_notu = r.get("Cikis_Kosulu_Notu", "")
                     pozisyonlar[k] = {
                         "adet": int(adet) if adet.is_integer() else adet,
                         "maliyet": maliyet,
                         "canli_fiyat": 0.0,
-                        "kademe": kademe
+                        "kademe": kademe,
+                        "not": cikis_notu
                     }
         except Exception as e:
             print(f"  [Uyarı] CSV okuma hatası: {e}")
@@ -177,6 +219,7 @@ def portfoy_ve_canli_fiyatlari_getir(bist_sozluk: dict = None) -> dict:
     if bist_sozluk:
         for kod, v in pozisyonlar.items():
             if kod in ["NAKIT", "TRY", "KASA", "PPF"]:
+                v["canli_fiyat"] = v["maliyet"]
                 continue
             s_veri = bist_sozluk.get(kod, {})
             fiyat = float(s_veri.get("fiyat_tl", 0.0))
