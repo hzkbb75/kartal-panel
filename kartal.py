@@ -2126,6 +2126,32 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html_icerik)
 
+# ==============================================================================
+# KANTİTATİF TOLERANS VE KOMİSYON KALKANI (FAZ 5)
+# ==============================================================================
+POZISYON_TOLERANS_ORANI = 0.20          # %20: Pozisyon içi sapma eşiği
+ASGARI_PORTFOY_AGIRLIK_ETKISI = 0.005   # %0.5: Portföyün %0.5'inden küçük farklar elenir
+
+def toleransli_aksiyon_hesapla(mevcut_lot: int, hedef_lot: int, guncel_fiyat: float, toplam_portfoy_tl: float):
+    fark_lot = int(hedef_lot - mevcut_lot)
+    islem_tutari = round(abs(fark_lot * guncel_fiyat), 2)
+    portfoy_etkisi = (islem_tutari / toplam_portfoy_tl) if toplam_portfoy_tl > 0 else 0.0
+
+    if mevcut_lot > 0:
+        sapma_orani = abs(fark_lot) / mevcut_lot
+        # Sapma %20'den azsa VEYA toplam portföye etkisi %0.5'in altındaysa dokunma
+        if sapma_orani <= POZISYON_TOLERANS_ORANI or portfoy_etkisi < ASGARI_PORTFOY_AGIRLIK_ETKISI:
+            return "KORU / DENGEDE", 0, 0.0
+        elif fark_lot > 0:
+            return "AL / EKLE", fark_lot, islem_tutari
+        else:
+            return "SAT / AZALT", fark_lot, islem_tutari
+    else:
+        # Yeni alınacak aday hisse: Portföyün en az %0.5'i kadar ağırlık oluşturuyorsa
+        if portfoy_etkisi >= ASGARI_PORTFOY_AGIRLIK_ETKISI and hedef_lot > 0:
+            return "AL / EKLE", hedef_lot, round(hedef_lot * guncel_fiyat, 2)
+        else:
+            return "KORU / DENGEDE", 0, 0.0
 
 # ==============================================================================
 # 5. ANA AKIŞ MOTORU (GERÇEK KASA, SEKTÖR KALKANI & GOOGLE SHEETS AKTARIMI)
@@ -2326,10 +2352,14 @@ if __name__ == "__main__":
         h_pay = round(item["hedef_agirlik"], 2)
         h_tutar = round(toplam_portfoy_tl * (h_pay / 100.0), 2)
         h_lot = int(h_tutar / fiyat) if fiyat > 0 else 0
-        fark_lot = int(h_lot - m_lot)
-        islem_tutari = round(abs(fark_lot * fiyat), 2)
-
-        aksiyon = "AL / EKLE" if fark_lot > 0 else ("SAT / AZALT" if fark_lot < 0 else "KORU / DENGEDE")
+        
+        # Matematiksel Çift Tolerans Filtresi
+        aksiyon, fark_lot, islem_tutari = toleransli_aksiyon_hesapla(
+            mevcut_lot=m_lot,
+            hedef_lot=h_lot,
+            guncel_fiyat=fiyat,
+            toplam_portfoy_tl=toplam_portfoy_tl
+        )
         kz_yuzde = round(((fiyat / item["ort_maliyet"]) - 1) * 100, 2) if item["ort_maliyet"] > 0 else 0.0
 
 	# TABLO İÇİN HIZLI ROE ROZETİ
