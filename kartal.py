@@ -111,7 +111,7 @@ if os.path.exists(YEREL_KAP_DOSYASI):
 BANKA_VE_FINANS_KODLARI = {
     "GARAN", "AKBNK", "ISCTR", "YKBNK", "VAKBN", "HALKB", "TSKB", "SKBNK",
     "ALBRK", "QNBFB", "QNBTR", "KLNMA", "ICBCT", "TURSG", "AGESA", "ANHYT",
-    "ANSGR", "AKGRT", "RAYSG", "ISMEN", "INFO", "OSMEN", "GEDIK", "GLCVY", "OYYAT", "DSTKF"
+    "ANSGR", "AKGRT", "RAYSG", "DSTKF"
 }
 SADECE_ENDEKS_PARA_HARIC = {"BIST", "XU100", "XU030", "TRY", "USD", "EUR", "XU050", "XUMKR", "XUTUM", "XUSIN", "XBANK", "NAKIT", "KASA", "PPF"}
 
@@ -125,11 +125,24 @@ def tr_norm(metin: str) -> str:
 
 def satir_bul(satirlar: list, aranan_kelimeler: list, mod: str = "ilk") -> tuple:
     norm_arananlar = [tr_norm(k) for k in aranan_kelimeler]
+
+    def _yasakli_satir_mi(ad: str, aranan: str) -> bool:
+        # "donem kari vergi yukumlulugu" satırının "donem kari" aramasında net kâr sanılmasını engelle
+        if any(k in aranan for k in ["donem kar", "donem net kar", "ana ortaklik paylari"]):
+            if any(y in ad for y in ["vergi", "yukumluluk", "karsilik", "dagilimi", "onceki"]):
+                return True
+        # "finansman gideri oncesi faaliyet kari" satırının esas faaliyet kârı sanılmasını engelle
+        if aranan in ("esas faaliyet kari", "faaliyet kari") and "finansman gideri oncesi" in ad:
+            return True
+        return False
+
     if mod == "ilk":
         # 1. Öncelik: Aranan kelimelerin sırasıyla TAM EŞLEŞME (ad == aranan) kontrolü
         for aranan in norm_arananlar:
             for satir in satirlar:
                 ad = satir[0]
+                if _yasakli_satir_mi(ad, aranan):
+                    continue
                 v1 = float(satir[1] or 0.0)
                 v2 = float(satir[2] or 0.0)
                 if ad == aranan and (v1 != 0.0 or v2 != 0.0):
@@ -138,6 +151,8 @@ def satir_bul(satirlar: list, aranan_kelimeler: list, mod: str = "ilk") -> tuple
         for aranan in norm_arananlar:
             for satir in satirlar:
                 ad = satir[0]
+                if _yasakli_satir_mi(ad, aranan):
+                    continue
                 v1 = float(satir[1] or 0.0)
                 v2 = float(satir[2] or 0.0)
                 if aranan in ad and (v1 != 0.0 or v2 != 0.0):
@@ -425,14 +440,19 @@ def hesapla_hibrit_kartal_puani(s: dict, teknik_veri: dict = None) -> float:
       3. Rasyonel Değerleme Güvenlik Marjı (Bölüm 4) & Dipnot Temizliği (Bölüm 3): Maks 20 Puan
       4. 60G Teknik Kanal Konumu & BIST Göreceli Güç (RS): Maks 35 Puan
     """
-    # KATMAN 1: F-Skor (Maks 12p) + Net Borç/ÖZK Zırhı (Maks 8p) = 20 Puan
+    # KATMAN 1: F-Skor (Maks 9p) + Nakit Dönüşüm Kalitesi CFO>NetKâr (Maks 5p) + Net Borç/ÖZK Zırhı (Maks 6p) = 20 Puan
     f_skor = int(s.get("piotroski_skor", 5))
-    katman1 = (f_skor / 9.0) * 12.0
+    katman1 = float(f_skor)
+
+    if s.get("cfo_buyuk_net_kar", False):
+        katman1 += 5.0
+    elif float(s.get("cfo_milyon_tl", 0.0)) > 0:
+        katman1 += 2.0
 
     nb_ozk = float(s.get("net_borc_ozkaynak", 1.0))
-    if nb_ozk <= 0.10: katman1 += 8.0
-    elif nb_ozk <= 0.50: katman1 += 6.0
-    elif nb_ozk <= 1.00: katman1 += 3.0
+    if nb_ozk <= 0.10: katman1 += 6.0
+    elif nb_ozk <= 0.50: katman1 += 4.5
+    elif nb_ozk <= 1.00: katman1 += 2.0
 
     # KATMAN 2: 6 Kümeli Sektörel ROE (Maks 17p) + Hendek Sınıfı (Maks 8p) = 25 Puan
     roe = float(s.get("roe", 0.0))
@@ -518,11 +538,16 @@ def analiz_et_sirket(kod: str) -> dict:
             "fiyat_tl": fiyat, "halka_aciklik": halka_aciklik, "net_borc_ozkaynak": 0.0
         }
 
-    satis_c, satis_o = satir_bul(satirlar, ["hasilat", "satis gelirleri", "faaliyet gelirleri", "faiz gelirleri"])
-    brut_c, brut_o = satir_bul(satirlar, ["brut kar", "net faiz geliri"])
+    satis_c, satis_o = satir_bul(satirlar, ["hasilat", "satis gelirleri", "faiz, ucret, prim, komisyon ve diger gelirler", "faaliyet gelirleri", "faiz gelirleri"])
+    brut_c, brut_o = satir_bul(satirlar, ["ticari faaliyetlerden brut kar", "brut kar", "faiz, ucret, prim, komisyon kar", "net faiz geliri"])
     efk_c, efk_o = satir_bul(satirlar, ["esas faaliyet kari", "faaliyet kari"])
-    net_c, net_o = satir_bul(satirlar, ["donem net kar", "donem kari", "ana ortaklik paylari"])
-    cfo_c, cfo_o = satir_bul(satirlar, ["isletme faaliyetlerinden", "faaliyetlerden nakit", "kaynaklanan net nakit"])
+    net_c, net_o = satir_bul(satirlar, ["donem net kar/zarari", "donem net kar", "ana ortaklik paylari", "surdurulen faaliyetler donem kari/zarari", "donem kari"])
+    cfo_c, cfo_o = satir_bul(satirlar, ["isletme faaliyetlerinden nakit akislari", "isletme faaliyetlerinden", "faaliyetlerden nakit", "kaynaklanan net nakit"])
+
+    # Eğer şirketin UFRS tablosunda satış ve CFO verisi tam ise (örn. OYYAT, ISMEN vb. aracı kurumlar),
+    # standart UFRS tablo ve Piotroski motorunu kullan; yalnızca gerçek Banka/Sigorta (satis_c == 0 ve cfo_c == 0) için banka_mi uygula
+    if satis_c > 0 and cfo_c != 0:
+        banka_mi = False
 
     varlik_c, varlik_o = satir_bul(satirlar, ["toplam varliklar", "toplam aktifler"])
     ozk_c, ozk_o = satir_bul(satirlar, ["ana ortakliga ait ozkaynaklar", "toplam ozkaynaklar", "ozkaynaklar"])
@@ -728,13 +753,8 @@ def uret_dna_ve_tercume_katmani(m: dict) -> dict:
     tarihsel_bant_yuzde = float(m.get("tarihsel_bant_konumu", 50.0))
     pfk = float(m.get("pfk", 0.0))
 
-    banka_mi = (
-        (kod in BANKA_VE_FINANS_KODLARI)
-        or ("banka" in tr_norm(sektor))
-        or ("sigorta" in tr_norm(sektor))
-        or ("emeklilik" in tr_norm(sektor))
-        or ("faktoring" in tr_norm(sektor))
-    )
+    banka_mi = bool(m.get("banka_mi", False))
+    min_roe_norm, _, _ = sektor_roe_normu_getir(sektor)
 
 
 
@@ -812,10 +832,15 @@ def uret_dna_ve_tercume_katmani(m: dict) -> dict:
     ]
 
     if banka_mi:
-        if 0 < fk <= 6.0 and roe >= 10.0:
+        if 0 < fk <= 6.0 and roe >= min_roe_norm:
             en_guclu = {
                 "baslik": "Güçlü ROE & Çarpan İskontosu",
-                "detay": f"%{roe:.1f} özkaynak kârlılığı ve {fk:.1f}x F/K çarpanıyla tarihsel iskonto bölgesinde."
+                "detay": f"%{roe:.1f} özkaynak kârlılığı (Sektör normu >=%{min_roe_norm:.0f}) ve {fk:.1f}x F/K çarpanıyla iskonto bölgesinde."
+            }
+        elif 0 < fk <= 6.0:
+            en_guclu = {
+                "baslik": f"Çarpan İskontosu ({fk:.1f}x F/K) & {f_skor}/9 F-Skor",
+                "detay": f"{fk:.1f}x F/K çarpanı ve %{ozk_buyume:+.1f} özkaynak büyümesiyle güvenlik marjı sunuyor."
             }
         else:
             en_guclu = {
@@ -1032,14 +1057,22 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
     </div>
     '''
 
-    # SENTETİK P-F/K MOTORU
+    # SENTETİK P-F/K MOTORU (Kâr İvmesi + Ciro İvmesi + Marj Genişlemesi + Maddi Sipariş Avansı)
     avans_buyume = round(((ertelenmis_c / max(abs(ertelenmis_o), 1.0)) - 1) * 100, 1) if ertelenmis_o > 0 else 0.0
-    satis_ivmesi = max(-0.50, min(1.00, satis_buyume / 100.0))
-    marj_ivmesi = max(-0.30, min(0.30, marj_fark_puan / 100.0))
-    avans_ivmesi = max(-0.30, min(0.50, (avans_buyume / 100.0) * 0.35))
-    toplam_ivme = max(-0.70, min(1.50, satis_ivmesi + marj_ivmesi + avans_ivmesi))
+    avans_maddi_mi = max(ertelenmis_c, ertelenmis_o) >= (satis_c * 0.05) and satis_c > 0
+    avans_ivmesi = max(-0.20, min(0.35, (avans_buyume / 100.0) * 0.30)) if avans_maddi_mi else 0.0
 
-    if fk > 0 and (1.0 + toplam_ivme) > 0.15:
+    satis_ivmesi = max(-0.40, min(0.80, satis_buyume / 100.0))
+    kar_ivmesi = max(-0.40, min(0.80, net_kar_buyume / 100.0))
+    marj_ivmesi = max(-0.30, min(0.30, marj_fark_puan / 100.0))
+
+    # Eğer net kâr ve faaliyet marjı birlikte büyüyorsa, brüt işlem hacmi (ciro) daralmasının etkisini sınırla
+    if net_kar_buyume > 0 and marj_fark_puan > 0 and satis_ivmesi < 0:
+        toplam_ivme = max(-0.20, min(1.20, (0.55 * kar_ivmesi) + (0.20 * satis_ivmesi) + marj_ivmesi + avans_ivmesi))
+    else:
+        toplam_ivme = max(-0.60, min(1.20, (0.45 * kar_ivmesi) + (0.35 * satis_ivmesi) + marj_ivmesi + avans_ivmesi))
+
+    if fk > 0 and (1.0 + toplam_ivme) > 0.20:
         pfk = round(fk / (1.0 + toplam_ivme), 1)
     else:
         pfk = 0.0
@@ -1132,13 +1165,28 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
         "carpan_ozet": f"F/K: {fk if fk > 0 else 'N/A'}x | FD/FAVÖK: {fd_favok if fd_favok > 0 else 'N/A'}x | PD/Satış: {fd_satis}x"
     }
 
-    dna_ve_gidisat = [
-        {"baslik": "Satışlar Hızlanıyor mu?", "deger": f"%{satis_buyume:+.1f}", "durum": "GÜÇLÜ" if satis_buyume >= 20.0 else "DENGELİ", "yorum": f"Yıllık satış gelirleri {format_milyar_milyon(satis_o)}'den {format_milyar_milyon(satis_c)}'ye geldi."},
-        {"baslik": "Kâr Artıyor mu?", "deger": f"%{net_kar_buyume:+.1f}", "durum": "ARTIŞ VAR" if net_kar_buyume > 0 else "DÜŞÜŞ / ZARAR", "yorum": f"Net kâr {format_milyar_milyon(net_o)}'den {format_milyar_milyon(net_c)}'ye değişti."},
-        {"baslik": "Marjlar Güçleniyor mu?", "deger": f"EFK %{efk_marj_c:.1f}", "durum": "İYİLEŞİYOR" if marj_fark_puan > 0 else "DARALMA", "yorum": f"Operasyonel kâr marjı önceki döneme göre {marj_fark_puan:+.1f} puan değişti."},
-        {"baslik": "Borç Azalıyor mu? (Sağlamlık)", "deger": f"{net_borc_ozk:.2f}x", "durum": "GÜVENLİ" if net_borc_ozk <= 1.0 else "RİSKLİ", "yorum": f"Net Borç / Özkaynak oranı {net_borc_ozk:.2f}x. Kısa vadeli borç payı %{kv_borc_oran:.0f}."},
-        {"baslik": "Parası Var mı? (Nakit Üretimi)", "deger": f"{nakit_donusum_kati:.1f} TL Nakit", "durum": "SAĞLAM" if cfo_ok else "İZLEMEDE", "yorum": f"Her 1 TL net kâra karşılık {nakit_donusum_kati:.2f} TL işletme nakdi üretildi."}
-    ]
+    gercek_banka_sigorta_mi = (satis_c <= 0.0 and cfo_c == 0.0) or any(x in tr_norm(sektor) for x in ["banka", "sigorta", "emeklilik"])
+    ozk_buyume_tab2 = round(((ozk_c / max(abs(ozk_o), 1.0)) - 1.0) * 100.0, 1) if ozk_o != 0 else 0.0
+    ozk_aktif_tab2 = round((ozk_c / max(varlik_c, 1.0)) * 100.0, 1)
+    min_roe_tab2, _, _ = sektor_roe_normu_getir(sektor)
+
+    if gercek_banka_sigorta_mi and satis_c <= 0.0:
+        dna_ve_gidisat = [
+            {"baslik": "Özkaynaklar Büyüyor mu?", "deger": f"%{ozk_buyume_tab2:+.1f}", "durum": "GÜÇLÜ" if ozk_buyume_tab2 >= 15.0 else "DENGELİ", "yorum": f"Ana ortaklık özkaynakları {format_milyar_milyon(ozk_o)}'den {format_milyar_milyon(ozk_c)}'ye ulaştı."},
+            {"baslik": "Kâr Artıyor mu?", "deger": f"%{net_kar_buyume:+.1f}", "durum": "ARTIŞ VAR" if net_kar_buyume > 0 else "DÜŞÜŞ / ZARAR", "yorum": f"Dönem net kârı {format_milyar_milyon(net_o)}'den {format_milyar_milyon(net_c)}'ye değişti."},
+            {"baslik": "Sermaye Getirisi (ROE) Yeterli mi?", "deger": f"ROE %{roe:.1f}", "durum": "İYİLEŞİYOR" if roe >= min_roe_tab2 else "DARALMA", "yorum": f"Sektör asgari ROE normu %{min_roe_tab2:.0f} iken şirketin cari ROE'si %{roe:.1f} düzeyindedir."},
+            {"baslik": "Sermaye Tamponu (Özkaynak / Aktif)", "deger": f"%{ozk_aktif_tab2:.1f}", "durum": "GÜVENLİ" if ozk_aktif_tab2 >= 10.0 else "İZLEMEDE", "yorum": f"Toplam {format_milyar_milyon(varlik_c)} aktif içinde özkaynak payı %{ozk_aktif_tab2:.1f} seviyesindedir."},
+            {"baslik": "Bilanço İvmesi & Kâr Kalitesi", "deger": f"{f_skor}/9 F-Skor", "durum": "SAĞLAM" if cfo_ok else "İZLEMEDE", "yorum": f"Son 4 çeyrek (TTM) net kâr {format_milyar_milyon(net_kar_ttm)} ile finansal kârlılık korunuyor."}
+        ]
+    else:
+        satis_durum = "GÜÇLÜ" if satis_buyume >= 20.0 else ("DARALMA" if satis_buyume < 0 else "DENGELİ")
+        dna_ve_gidisat = [
+            {"baslik": "Satışlar Hızlanıyor mu?", "deger": f"%{satis_buyume:+.1f}", "durum": satis_durum, "yorum": f"Yıllık satış gelirleri {format_milyar_milyon(satis_o)}'den {format_milyar_milyon(satis_c)}'ye geldi."},
+            {"baslik": "Kâr Artıyor mu?", "deger": f"%{net_kar_buyume:+.1f}", "durum": "ARTIŞ VAR" if net_kar_buyume > 0 else "DÜŞÜŞ / ZARAR", "yorum": f"Net kâr {format_milyar_milyon(net_o)}'den {format_milyar_milyon(net_c)}'ye değişti."},
+            {"baslik": "Marjlar Güçleniyor mu?", "deger": f"EFK %{efk_marj_c:.1f}", "durum": "İYİLEŞİYOR" if marj_fark_puan > 0 else "DARALMA", "yorum": f"Operasyonel kâr marjı önceki döneme göre {marj_fark_puan:+.1f} puan değişti."},
+            {"baslik": "Borç Azalıyor mu? (Sağlamlık)", "deger": f"{net_borc_ozk:.2f}x", "durum": "GÜVENLİ" if net_borc_ozk <= 1.0 else "RİSKLİ", "yorum": f"Net Borç / Özkaynak oranı {net_borc_ozk:.2f}x. Kısa vadeli borç payı %{kv_borc_oran:.0f}."},
+            {"baslik": "Parası Var mı? (Nakit Üretimi)", "deger": f"{nakit_donusum_kati:.2f} TL Nakit", "durum": "SAĞLAM" if cfo_ok else "İZLEMEDE", "yorum": f"Her 1 TL net kâra karşılık {nakit_donusum_kati:.2f} TL işletme nakdi üretildi."}
+        ]
 
     def degisim_karti(kalem_adi, c_val, o_val, varlik_onceki, ozel_not):
         fark = c_val - o_val
@@ -1172,6 +1220,7 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
 
     dna_katmani = uret_dna_ve_tercume_katmani({
         "kod": kod, "sektor": sektor, "kategori": kategori, "f_skor": f_skor,
+        "banka_mi": (gercek_banka_sigorta_mi and satis_c <= 0.0),
         "efk_marji": efk_marj_c, "marj_degisim_qoq": marj_fark_puan,
         "ciro_buyume_yoy": satis_buyume, "ina_net_kar_orani": nakit_donusum_kati,
         "net_kar_milyon_tl": net_c, "ozkaynak_orani": ozk_orani_hesap,
@@ -2344,11 +2393,16 @@ if __name__ == "__main__":
     bist_sozluk = {s["kod"]: s for s in tum_sonuclar}
     mevcut_pozisyonlar = portfoy_motoru.portfoy_ve_canli_fiyatlari_getir(bist_sozluk)
 
+    # Geniş Radar Havuzu: Serkan Ünal Bölüm 1 Kırmızı Çizgileri geçen, pozitif nakit/kâr üreten ve F-Skoru >= 6 olan şirketler
     firsat_adaylari = [
         s for s in tum_sonuclar
-        if s["bolum1_gecti_mi"] and s["cfo_buyuk_net_kar"] and s["piotroski_skor"] >= 7 and s.get("roe", 0.0) >= 5.0
+        if s["bolum1_gecti_mi"]
+        and (s["cfo_buyuk_net_kar"] or float(s.get("cfo_milyon_tl", 0.0)) > 0)
+        and int(s.get("piotroski_skor", 0)) >= 6
+        and float(s.get("roe", 0.0)) >= 5.0
     ]
-    print(f"  Analiz Tamamlandı: {len(firsat_adaylari)} şirket filtreyi geçerek fırsat adayı oldu.")
+    altin_aday_sayisi = sum(1 for s in firsat_adaylari if s["cfo_buyuk_net_kar"] and s["piotroski_skor"] >= 7)
+    print(f"  Analiz Tamamlandı: Geniş Radar'da {len(firsat_adaylari)} nitelikli şirket bulundu ({altin_aday_sayisi} tanesi 1. Derece CFO>NetKâr & F>=7).")
 
     havuz_kodlari = set()
     for s in firsat_adaylari: havuz_kodlari.add(s["kod"])
@@ -2356,29 +2410,31 @@ if __name__ == "__main__":
         if k not in ["NAKIT", "TRY", "KASA", "PPF"]:
             havuz_kodlari.add(k)
 
-    katsayi_sozluk = {"Korunaklı": 1.8, "Kırılgan Hendekli": 1.4, "Hendeksiz": 1.0}
-    tavan_sozluk = {"Korunaklı": 10.0, "Kırılgan Hendekli": 5.0, "Hendeksiz": 3.0}
-
-    # --- YENİ SİRKET HAVUZU DÖNGÜSÜ (630 HİSSE) ---
     # ==========================================================================
     # SERKAN ÜNAL 60 HİSSE HEDEF PORTFÖY VE SEKTÖR MOTORU
     # ==========================================================================
-    # 1. Tüm fırsat adaylarına Hibrit Puan (Temel + Teknik) ata
+    # 1. Tüm şirketlere 4 Katmanlı Hibrit Puan (Temel + Sektörel ROE + Değerleme + Teknik) ata
     for s in tum_sonuclar:
         kod = s["kod"]
         tv_veri = KAP_VE_TEKNIK_AMBARI.get("teknik_veriler", {}).get(kod, None)
         s["hibrit_puan"] = hesapla_hibrit_kartal_puani(s, tv_veri)
 
-    # 2. Sektör Kotalı Top 60 Kadrosunu Belirle
-    # (%1.0 asgari pozisyon tabanı ile %20.0 sektör tavanının çarpışmaması için tek sektörden maks 12 hisse alınır)
+    # 2. Sektör Kotalı Top 60 Kadrosunu Belirle (Tam 60 Şirket)
+    # Öncelik Sırası:
+    #   (1) 1. Derece Altın Standart (CFO > Net Kâr ve F-Skor >= 7) olan nitelikli şirketler
+    #   (2) 60 kontenjanı doldurmak için Geniş Radar'daki en yüksek Hibrit Puanlı şirketler
     MAKS_SEKTOR_HISSE_KOTASI = 12
     mevcut_kodlar = {k for k in mevcut_pozisyonlar.keys() if k not in ["NAKIT", "TRY", "KASA", "PPF"]}
     firsat_kodlari = {s["kod"] for s in firsat_adaylari}
 
-    # Tüm nitelikli adayları (mevcut + radar) önce mevcut sahiplik, sonra Hibrit Puan sırasıyla diz
     nitelikli_tum_adaylar = sorted(
         firsat_adaylari,
-        key=lambda x: (1 if x["kod"] in mevcut_kodlar else 0, x["hibrit_puan"], x["piotroski_skor"]),
+        key=lambda x: (
+            1 if (x["cfo_buyuk_net_kar"] and x["piotroski_skor"] >= 7) else 0,
+            1 if x["kod"] in mevcut_kodlar else 0,
+            x["hibrit_puan"],
+            x["piotroski_skor"]
+        ),
         reverse=True
     )
 
