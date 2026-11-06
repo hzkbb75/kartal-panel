@@ -423,6 +423,10 @@ def hesapla_hibrit_kartal_puani(s: dict, teknik_veri: dict = None) -> float:
 
 def analiz_et_sirket(kod: str) -> dict:
     sirket_kaydi = YEREL_MALI_VERITABANI.get(kod)
+
+    # 1. DÜZELTME: Sektor değişkenini en başta tanımlıyoruz!
+    sektor = sirket_kaydi.get("sektor", "Sanayi") if sirket_kaydi else "BIST"
+
     if not sirket_kaydi:
         return {"kod": kod, "bolum1_gecti_mi": False, "cfo_buyuk_net_kar": False, "piotroski_skor": 0}
 
@@ -485,13 +489,18 @@ def analiz_et_sirket(kod: str) -> dict:
             
     medyan_efk_marj = (sorted(gecmis_efk_marjlari)[len(gecmis_efk_marjlari)//2]) if gecmis_efk_marjlari else efk_marj_c
 
-    # Serkan Ünal: Korunaklı (İstikrarlı medyan marj >= %14 veya ROIC/EFK güçlü ve CFO > 0)
+    # === KURUMSAL ALTYAPI & BİLANÇO BÜYÜKLÜĞÜ HENDEĞİ ===
+# Özkaynakları 10 Milyar TL üzerinde olan, borçsuz (Net Borç/ÖZK <= 0.50) ve nakit üreten devler,
+# döngüsel marj diplerinde dahi sektörden silinmez, en az Kırılgan Hendekli (Döngüsel Hendek) kabul edilir.
+    kurumsal_altyapi_hendegi = (ozk_c >= 10000.0 and net_borc_ozkaynak <= 0.50 and cfo_c > 0)
+
+# Serkan Ünal: Korunaklı (İstikrarlı medyan marj >= %14 veya ROIC/EFK güçlü ve CFO > 0)
     if (medyan_efk_marj >= 0.14 or (efk_marj_c >= 0.12 and roic_tahmini >= 0.15)) and cfo_c > 0:
         kategori, tavan = "Korunaklı", 10.0
-    elif (medyan_efk_marj >= 0.07 or efk_marj_c >= 0.07) and cfo_c > 0:
-        kategori, tavan = "Kırılgan Hendekli", 5.0
+    elif (medyan_efk_marj >= 0.07 or efk_marj_c >= 0.07 or kurumsal_altyapi_hendegi) and cfo_c > 0:
+    	kategori, tavan = "Kırılgan Hendekli", 5.0
     else:
-        kategori, tavan = "Hendeksiz", 3.0
+    	kategori, tavan = "Hendeksiz", 3.0
 
     if banka_mi:
         cfo_kaliteli = net_c > 0
@@ -518,7 +527,7 @@ def analiz_et_sirket(kod: str) -> dict:
     # ZİRAAT RESMİ VERİLERİNİ DEVREYE AL
     ziraat = BIST_ANALIZ_TABANI.get(kod, {})
     if ziraat:
-        sektor = ziraat.get("sektor", sirket_kaydi.get("sektor", "Sanayi"))
+        sektor = ziraat.get("sektor", sirket_kaydi.get("sektor", sektor))
         sirket_adi = ziraat.get("sirket_adi", sirket_kaydi.get("sirket_adi", kod))
         if ziraat.get("fiyat", 0) > 0: fiyat = ziraat["fiyat"]
         if ziraat.get("fk", 0) > 0: fk = ziraat["fk"]
@@ -527,7 +536,7 @@ def analiz_et_sirket(kod: str) -> dict:
         if ziraat.get("net_kar_son4c_mn", 0) != 0: net_c = ziraat["net_kar_son4c_mn"]
 
     return {
-        "kod": kod, "sirket_adi": sirket_kaydi.get("sirket_adi", kod), "sektor": sirket_kaydi.get("sektor", "Sanayi"),
+        "kod": kod, "sirket_adi": sirket_kaydi.get("sirket_adi", kod), "sektor": sektor,
         "kategori": kategori, "tavan_agirlik": tavan, "halka_aciklik": halka_aciklik, "net_borc_ozkaynak": net_borc_ozkaynak,
         "bolum1_gecti_mi": bolum1_gecti_mi, "fiyat_tl": fiyat, "cfo_buyuk_net_kar": cfo_kaliteli, "piotroski_skor": f_skor,
         "iliskili_oran": iliskili_oran, "kv_borc_oran": kv_borc_oran, "cfo_milyon_tl": round(cfo_c, 1), "net_kar_milyon_tl": round(net_c, 1),
