@@ -137,7 +137,7 @@ def rasyonel_degerleme_hesapla(fiyat, hbk, dd, roe, sektor_fk=10.0, sermaye_mali
         fiyat = float(fiyat)
         hbk = float(hbk)
         dd = float(dd)
-        roe = float(roe) / 100.0 if roe > 1 else float(roe) 
+        roe = float(roe) / 100.0
         
         v_graham = 0
         if hbk > 0 and dd > 0:
@@ -348,56 +348,104 @@ def degerleme_termometresi_uret(hisse_kodu, mevcut_fiyat, adil_deger, iskonto_or
 
 
 # ==============================================================================
-# 2. ŞİRKET ELEME VE ANALİZ MOTORU
+# 2. ŞİRKET ELEME, 6 KÜMELİ SEKTÖREL ROE VE 4 KATMANLI HİBRİT PUAN MOTORU
 # ==============================================================================
+def sektor_roe_normu_getir(sektor_adi: str) -> tuple:
+    """
+    6 Kümeli DuPont Sektörel ROE Matrisi (Python & JS Tam Senkronize).
+    Döndürür: (min_norm, ust_norm, kume_adi)
+    """
+    sek_l = tr_norm(str(sektor_adi or ""))
+    if any(x in sek_l for x in ["perakende", "magaza", "gida", "icecek"]):
+        return 35.0, 60.0, "Organize Perakende & Tüketim"
+    elif any(x in sek_l for x in ["yazilim", "bilisim", "teknoloji", "savunma", "telekom"]):
+        return 30.0, 50.0, "Hafif Varlık & Teknoloji"
+    elif any(x in sek_l for x in ["banka", "sigorta", "faktoring", "finans", "menkul", "emeklilik"]):
+        return 22.0, 38.0, "Banka & Finans"
+    elif any(x in sek_l for x in ["demir", "celik", "petrol", "kimya", "cimento", "otomotiv", "maden"]):
+        return 15.0, 30.0, "Ağır Sanayi & Döngüsel"
+    elif any(x in sek_l for x in ["gyo", "gayrimenkul", "insaat", "turizm", "enerji", "otel", "tarim"]):
+        return 8.0, 20.0, "Varlık Yoğun & Düşük Devir"
+    elif any(x in sek_l for x in ["holding"]):
+        return 18.0, 32.0, "Holding & İştirak Grubu"
+    return 15.0, 30.0, "Ağır Sanayi & Üretim"
+
+
 def hesapla_hibrit_kartal_puani(s: dict, teknik_veri: dict = None) -> float:
     """
-    Sektör Duyarlı Serkan Ünal Hibrit Puanı: Temel Kalite (%60) + 60G Destek (%40)
+    Serkan Ünal 4 Katmanlı Hibrit Puan Motoru (0 - 100 Puan):
+      1. Bilanço & Nakit Kalitesi (F-Skor + Borçsuzluk): Maks 20 Puan
+      2. Sektör Duyarlı DuPont ROE & Hendek Sınıfı: Maks 25 Puan
+      3. Rasyonel Değerleme Güvenlik Marjı (Bölüm 4) & Dipnot Temizliği (Bölüm 3): Maks 20 Puan
+      4. 60G Teknik Kanal Konumu & BIST Göreceli Güç (RS): Maks 35 Puan
     """
+    # KATMAN 1: F-Skor (Maks 12p) + Net Borç/ÖZK Zırhı (Maks 8p) = 20 Puan
     f_skor = int(s.get("piotroski_skor", 5))
-    temel = (f_skor / 9.0) * 25.0  # F-skor'dan maks 25 puan
-    
-    # Sektör Duyarlı ROE Puanlaması (Maks 20 Puan)
-    roe = float(s.get("roe", 0.0))
-    sek_l = tr_norm(s.get("sektor", ""))
-    
-    if any(x in sek_l for x in ["perakende", "gida", "icecek"]):
-        min_roe = 35.0
-    elif any(x in sek_l for x in ["yazilim", "teknoloji", "savunma", "telekom"]):
-        min_roe = 30.0
-    elif any(x in sek_l for x in ["banka", "sigorta", "faktoring", "finans"]):
-        min_roe = 22.0
-    elif any(x in sek_l for x in ["demir", "celik", "petrol", "kimya", "cimento", "otomotiv"]):
-        min_roe = 15.0
-    else:
-        min_roe = 10.0
+    katman1 = (f_skor / 9.0) * 12.0
 
-    if roe < 5.0:
-        temel -= 10.0  # Reel sermaye erimesine ceza puanı
-    elif roe >= min_roe * 1.3:
-        temel += 20.0  # Sektörün belirgin üzerinde üstün performans
-    elif roe >= min_roe:
-        temel += 15.0  # Sektör normuyla uyumlu
-    else:
-        temel += 5.0   # Sektörün altında
-
-    # Borçsuzluk / Bilanço Puanı (Maks 15 Puan)
     nb_ozk = float(s.get("net_borc_ozkaynak", 1.0))
-    if nb_ozk <= 0.1: temel += 15.0
-    elif nb_ozk <= 0.6: temel += 10.0
-    elif nb_ozk <= 1.2: temel += 5.0
+    if nb_ozk <= 0.10: katman1 += 8.0
+    elif nb_ozk <= 0.50: katman1 += 6.0
+    elif nb_ozk <= 1.00: katman1 += 3.0
 
-    # 60G Teknik Destek Puanı (Maks 40 Puan)
-    teknik = 20.0
+    # KATMAN 2: 6 Kümeli Sektörel ROE (Maks 17p) + Hendek Sınıfı (Maks 8p) = 25 Puan
+    roe = float(s.get("roe", 0.0))
+    min_roe, ust_roe, _ = sektor_roe_normu_getir(s.get("sektor", ""))
+    katman2 = 0.0
+    if roe < 5.0:
+        katman2 -= 10.0  # Reel sermaye erimesi cezası
+    elif roe > ust_roe:
+        katman2 += 17.0  # Sektör normunun üzerinde üstün sermaye verimi
+    elif roe >= min_roe:
+        katman2 += 13.0  # Sektör normuyla tam uyumlu
+    else:
+        katman2 += 5.0   # Sektör normunun altında pozitif ROE
+
+    hendek = s.get("kategori", "Hendeksiz")
+    if hendek == "Korunaklı": katman2 += 8.0
+    elif hendek == "Kırılgan Hendekli": katman2 += 4.0
+
+    # KATMAN 3: Değerleme Güvenlik Marjı (Maks 15p) + Dipnot Kalitesi (Maks 5p / Ceza -15p) = 20 Puan
+    katman3 = 0.0
+    adil_deger = float(s.get("adil_deger_tl", 0.0))
+    iskonto = float(s.get("iskonto_orani", 0.0))
+    fk = float(s.get("fk", 0.0))
+
+    if adil_deger > 0:
+        if iskonto <= -25.0: katman3 += 15.0     # Kelepir (Yüksek güvenlik marjı)
+        elif iskonto <= 0.0: katman3 += 11.0     # Adil değerin altında iskontolu
+        elif iskonto <= 15.0: katman3 += 7.0     # Adil değer bandında
+        elif iskonto <= 35.0: katman3 += 2.0     # Hafif primli
+        else: katman3 -= 5.0                     # Aşırı primli / güvenlik marjı yok
+    elif 0 < fk <= 7.0:
+        katman3 += 10.0
+    elif 0 < fk <= 12.0:
+        katman3 += 6.0
+
+    dts_skor = int(s.get("dts_skor", 0))
+    if dts_skor == 0: katman3 += 5.0
+    elif dts_skor <= 15: katman3 += 2.0
+    elif dts_skor >= 50: katman3 -= 15.0
+    elif dts_skor >= 35: katman3 -= 8.0
+
+    # KATMAN 4: 60G Teknik Kanal Desteği (Maks 30p) + BIST 100 Göreceli Güç (Maks 5p) = 35 Puan
+    katman4 = 17.5  # Teknik veri yoksa nötr
     if teknik_veri:
         konum = float(teknik_veri.get("kanal_konumu", 50.0))
-        if konum <= 25.0: teknik = 40.0
-        elif konum <= 45.0: teknik = 30.0
-        elif konum <= 65.0: teknik = 20.0
-        elif konum <= 85.0: teknik = 10.0
-        else: teknik = 0.0
+        if konum <= 20.0: katman4 = 30.0
+        elif konum <= 35.0: katman4 = 24.0
+        elif konum <= 50.0: katman4 = 18.0
+        elif konum <= 70.0: katman4 = 10.0
+        else: katman4 = 0.0
 
-    return round(temel + teknik, 1)
+        rs_fark = float(teknik_veri.get("rs_bist_fark", 0.0))
+        if rs_fark > 0 and konum <= 55.0:
+            katman4 += 5.0
+        elif rs_fark >= -3.0 and konum <= 40.0:
+            katman4 += 2.5
+
+    toplam_puan = max(0.0, min(100.0, round(katman1 + katman2 + katman3 + katman4, 1)))
+    return toplam_puan
 
 def analiz_et_sirket(kod: str) -> dict:
     sirket_kaydi = YEREL_MALI_VERITABANI.get(kod)
@@ -519,6 +567,20 @@ def analiz_et_sirket(kod: str) -> dict:
     elif not sektor or sektor == "DİĞER":
         sektor = "Sanayi" # Son çare güvenlik ağı
 
+    # BÖLÜM 3 (DİPNOT RÖNTGENİ) & BÖLÜM 4 (RASYONEL DEĞERLEME) ÖN HESABI
+    cari_s_dipnot = [(r[0], r[1], r[1]) for r in satirlar]
+    onceki_s_dipnot = [(r[0], r[2], r[2]) for r in satirlar]
+    dipnot_ozet = hesapla_donem_dipnot_metrikleri(cari_s_dipnot, onceki_s_dipnot)
+    dts_skor = int(dipnot_ozet.get("dts_skor", 0))
+    icr_kati = float(dipnot_ozet.get("icr_kati", 99.0))
+
+    sirket_hbk = round(fiyat / fk, 2) if fk > 0 else 0.0
+    pddd = ziraat.get("pddd", 0.0) if ziraat else 0.0
+    sirket_dd = round(fiyat / pddd, 2) if pddd > 0 else (ozk_c / max((pd_milyar * 1000) / max(fiyat, 1.0), 1.0) if pd_milyar > 0 else 0.0)
+    adil_deger_tl, iskonto_orani, degerleme_durumu = rasyonel_degerleme_hesapla(
+        fiyat=fiyat, hbk=sirket_hbk, dd=sirket_dd, roe=roe_hesap
+    )
+
     return {
         "kod": kod, "sirket_adi": sirket_kaydi.get("sirket_adi", kod), "sektor": sektor,
         "kategori": kategori, "tavan_agirlik": tavan, "halka_aciklik": halka_aciklik, "net_borc_ozkaynak": net_borc_ozkaynak,
@@ -530,7 +592,9 @@ def analiz_et_sirket(kod: str) -> dict:
         "ertelenmis_c": round(ertelenmis_c, 1), "ertelenmis_o": round(ertelenmis_o, 1), "stok_c": round(stok_c, 1), "stok_o": round(stok_o, 1),
         "alacak_c": round(alacak_c, 1), "alacak_o": round(alacak_o, 1), "net_borc_c": round(net_borc_c, 1), "net_borc_o": round(net_borc_o, 1),
         "fin_borc_c": round(fin_borc_c, 1), "nakit_c": round(nakit_c, 1),
-        "piyasa_degeri_milyar": pd_milyar, "fk": fk, "fd_favok": fd_favok, "roe": roe_hesap
+        "piyasa_degeri_milyar": pd_milyar, "fk": fk, "fd_favok": fd_favok, "roe": roe_hesap,
+        "dts_skor": dts_skor, "icr_kati": icr_kati,
+        "adil_deger_tl": adil_deger_tl, "iskonto_orani": iskonto_orani, "degerleme_durumu": degerleme_durumu
     }
 
 
@@ -2221,25 +2285,44 @@ if __name__ == "__main__":
         tv_veri = KAP_VE_TEKNIK_AMBARI.get("teknik_veriler", {}).get(kod, None)
         s["hibrit_puan"] = hesapla_hibrit_kartal_puani(s, tv_veri)
 
-    # 2. Top 60 Kadrosunu Belirle (Sadece filtreyi geçen nitelikli mevcutlar + en yüksek puanlı adaylar)
+    # 2. Sektör Kotalı Top 60 Kadrosunu Belirle
+    # (%1.0 asgari pozisyon tabanı ile %20.0 sektör tavanının çarpışmaması için tek sektörden maks 12 hisse alınır)
+    MAKS_SEKTOR_HISSE_KOTASI = 12
     mevcut_kodlar = {k for k in mevcut_pozisyonlar.keys() if k not in ["NAKIT", "TRY", "KASA", "PPF"]}
     firsat_kodlari = {s["kod"] for s in firsat_adaylari}
-    
-    # Elemeyi geçen adayları puanına göre sırala
-    sirali_adaylar = sorted(
-        [s for s in firsat_adaylari if s["kod"] not in mevcut_kodlar],
-        key=lambda x: x["hibrit_puan"],
+
+    # Tüm nitelikli adayları (mevcut + radar) önce mevcut sahiplik, sonra Hibrit Puan sırasıyla diz
+    nitelikli_tum_adaylar = sorted(
+        firsat_adaylari,
+        key=lambda x: (1 if x["kod"] in mevcut_kodlar else 0, x["hibrit_puan"], x["piotroski_skor"]),
         reverse=True
     )
-    
-    # Hedef 60 kadrosu: Sadece standartları geçen mevcutlar + En iyi adaylar (Tam 60 hisse)
-    hedef_60_kodlari = {k for k in mevcut_kodlar if k in firsat_kodlari}
-    kalan_kontenjan = max(0, 60 - len(hedef_60_kodlari))
-    for s in sirali_adaylar[:kalan_kontenjan]:
-        hedef_60_kodlari.add(s["kod"])
+
+    hedef_60_kodlari = set()
+    sektor_kadro_sayaci = {}
+
+    # 1. Geçiş: Sektör başına en fazla 12 hisse kotasıyla en yüksek puanlıları seç
+    for s in nitelikli_tum_adaylar:
+        if len(hedef_60_kodlari) >= 60:
+            break
+        sek = s.get("sektor", "Sanayi")
+        if sektor_kadro_sayaci.get(sek, 0) < MAKS_SEKTOR_HISSE_KOTASI:
+            hedef_60_kodlari.add(s["kod"])
+            sektor_kadro_sayaci[sek] = sektor_kadro_sayaci.get(sek, 0) + 1
+
+    # 2. Geçiş (Yedek Güvence): Eğer 60 hisseye ulaşılamadıysa %20 tavanını (%1 tabanla) aşmayacak şekilde (maks 18) tamamla
+    if len(hedef_60_kodlari) < 60:
+        for s in nitelikli_tum_adaylar:
+            if len(hedef_60_kodlari) >= 60:
+                break
+            if s["kod"] not in hedef_60_kodlari:
+                sek = s.get("sektor", "Sanayi")
+                if sektor_kadro_sayaci.get(sek, 0) < 18:
+                    hedef_60_kodlari.add(s["kod"])
+                    sektor_kadro_sayaci[sek] = sektor_kadro_sayaci.get(sek, 0) + 1
 
     # 3. Hendek ve Puan Tabanlı Katsayılar (60 Hisse İçin Uyarlanmış)
-    # Korunaklı: ~%2.5 - %3.5, Kırılgan: ~%1.5 - %2.0, Hendeksiz: ~%1.0
+    # Korunaklı: ~%2.5 - %3.5, Kırılgan: ~%1.5 - %2.2, Hendeksiz: ~%1.0 - %1.2
     katsayi_sozluk = {"Korunaklı": 2.2, "Kırılgan Hendekli": 1.5, "Hendeksiz": 1.0}
     tavan_sozluk = {"Korunaklı": 3.5, "Kırılgan Hendekli": 2.2, "Hendeksiz": 1.2}
 
@@ -2254,19 +2337,16 @@ if __name__ == "__main__":
         mevcut_lot = mevcut_pozisyonlar.get(kod, {}).get("adet", 0)
 
         if kod in hedef_60_kodlari:
-            # 60'lık ana portföy kadrosunda
             baz_katsayi = katsayi_sozluk.get(kat, 1.0)
-            # Hibrit puanı yüksek olan hisseye ek katsayı çarpanı
             puan_carpani = max(0.7, s_veri["hibrit_puan"] / 70.0)
             katsayi = round(baz_katsayi * puan_carpani, 2)
             tavan = tavan_sozluk.get(kat, 1.5)
             is_radar = (mevcut_lot == 0)
             kadroda = True
         else:
-            # 60 dışında kalan diğer hisseler (Yedek kulübesi)
             katsayi = 0.0
             tavan = 0.0
-            is_radar = (s_veri in firsat_adaylari)
+            is_radar = (kod in firsat_kodlari)
             kadroda = False
 
         sirket_havuzu.append({
@@ -2314,31 +2394,76 @@ if __name__ == "__main__":
         hisse_portfoy_tl = round(toplam_portfoy_tl * (hedef_hisse_havuzu_orani / 100.0), 2)
         nakit_tl = round(toplam_portfoy_tl * (nakit_orani / 100.0), 2)
 
-    # 5. Ağırlıkları 60 Hisseye Dağıt (Serkan Ünal %1 Taban ve Tavan Kuralı)
+    # 5 & 6. Kısıt Çözücülü (Water-Filling) Ağırlık Dağıtım ve Sektör Kalkanı Motoru
+    # Eşzamanlı Garantiler:
+    #   (a) Her Hedef 60 hissesi: %1.00 <= w_i <= Hendek Tavanı
+    #   (b) Her sektör toplamı: <= %20.00 (SEKTOR_TAVANI)
+    #   (c) Tüm Hedef 60 ağırlıkları toplamı: == hedef_hisse_havuzu_orani
     SEKTOR_TAVANI = 20.0
+    TABAN_AGIRLIK = 1.0
+
+    for item in sirket_havuzu:
+        item["hedef_agirlik"] = 0.0
+
     kadro_60 = [x for x in sirket_havuzu if x["kadroda"]]
-    toplam_katsayi = max(sum(x["katsayi"] for x in kadro_60), 0.1)
+    if kadro_60:
+        toplam_katsayi = max(sum(x["katsayi"] for x in kadro_60), 0.1)
+        for x in kadro_60:
+            x["_w"] = (x["katsayi"] / toplam_katsayi) * hedef_hisse_havuzu_orani
 
-    for item in sirket_havuzu:
-        if item["kadroda"]:
-            pay = (item["katsayi"] / toplam_katsayi) * hedef_hisse_havuzu_orani
-            item["hedef_agirlik"] = min(item["tavan"], max(1.0, round(pay, 2)))
-        else:
-            item["hedef_agirlik"] = 0.0
+        for _ in range(40):
+            # Adım A: Hisse bazlı [Taban %1.0, Hendek Tavanı] sınırlarını uygula
+            for x in kadro_60:
+                x["_w"] = min(x["tavan"], max(TABAN_AGIRLIK, x["_w"]))
 
-    # 6. Sektörel Çeşitlendirme Kalkanı (Maksimum %20 Sektör Üst Sınırı)
+            # Adım B: Sektör tavanını (%20.0) hisse tabanını (%1.0) delmeden uygula
+            sektor_gruplari = {}
+            for x in kadro_60:
+                sektor_gruplari.setdefault(x["sektor"], []).append(x)
 
-    sektor_toplamlari = {}
-    for item in sirket_havuzu:
-        sek = item["sektor"]
-        sektor_toplamlari[sek] = sektor_toplamlari.get(sek, 0.0) + item["hedef_agirlik"]
+            for sek, grup in sektor_gruplari.items():
+                sek_toplam = sum(x["_w"] for x in grup)
+                if sek_toplam > SEKTOR_TAVANI:
+                    asgari_sek_taban = len(grup) * TABAN_AGIRLIK
+                    if asgari_sek_taban >= SEKTOR_TAVANI:
+                        for x in grup:
+                            x["_w"] = SEKTOR_TAVANI / len(grup)
+                    else:
+                        fazla_havuz = sum(max(0.0, x["_w"] - TABAN_AGIRLIK) for x in grup)
+                        hedef_fazla = SEKTOR_TAVANI - asgari_sek_taban
+                        for x in grup:
+                            x["_w"] = (
+                                TABAN_AGIRLIK + (max(0.0, x["_w"] - TABAN_AGIRLIK) / fazla_havuz) * hedef_fazla
+                                if fazla_havuz > 0 else TABAN_AGIRLIK
+                            )
 
-    for sek, toplam_pay in sektor_toplamlari.items():
-        if toplam_pay > SEKTOR_TAVANI:
-            kirpma = SEKTOR_TAVANI / toplam_pay
-            for item in sirket_havuzu:
-                if item["sektor"] == sek:
-                    item["hedef_agirlik"] = round(item["hedef_agirlik"] * kirpma, 2)
+            # Adım C: Toplam portföy ağırlığını hedef_hisse_havuzu_orani'na eşitle
+            mevcut_toplam = sum(x["_w"] for x in kadro_60)
+            fark = hedef_hisse_havuzu_orani - mevcut_toplam
+            if abs(fark) < 1e-4:
+                break
+
+            sektor_toplamlari = {sek: sum(x["_w"] for x in grup) for sek, grup in sektor_gruplari.items()}
+            if fark > 0:
+                uygunlar = [
+                    x for x in kadro_60
+                    if x["_w"] < x["tavan"] - 1e-4 and sektor_toplamlari[x["sektor"]] < SEKTOR_TAVANI - 1e-4
+                ]
+                if not uygunlar:
+                    break
+                uygun_k = sum(x["katsayi"] for x in uygunlar)
+                for x in uygunlar:
+                    x["_w"] += fark * (x["katsayi"] / uygun_k)
+            else:
+                uygunlar = [x for x in kadro_60 if x["_w"] > TABAN_AGIRLIK + 1e-4]
+                if not uygunlar:
+                    break
+                uygun_fazla = sum(x["_w"] - TABAN_AGIRLIK for x in uygunlar)
+                for x in uygunlar:
+                    x["_w"] += fark * ((x["_w"] - TABAN_AGIRLIK) / uygun_fazla)
+
+        for x in kadro_60:
+            x["hedef_agirlik"] = round(x["_w"], 2)
 
     mevcut_sektorler = {}
     for item in sirket_havuzu:
@@ -2358,7 +2483,7 @@ if __name__ == "__main__":
         m_pay = round((m_tutar / toplam_portfoy_tl) * 100, 2)
         h_pay = round(item["hedef_agirlik"], 2)
         h_tutar = round(toplam_portfoy_tl * (h_pay / 100.0), 2)
-        h_lot = int(h_tutar / fiyat) if fiyat > 0 else 0
+        h_lot = int(round(h_tutar / fiyat)) if fiyat > 0 else 0
         
         # Matematiksel Çift Tolerans Filtresi
         aksiyon, fark_lot, islem_tutari = toleransli_aksiyon_hesapla(
@@ -2369,40 +2494,31 @@ if __name__ == "__main__":
         )
         kz_yuzde = round(((fiyat / item["ort_maliyet"]) - 1) * 100, 2) if item["ort_maliyet"] > 0 else 0.0
 
-	# TABLO İÇİN HIZLI ROE ROZETİ (tr_norm ile Türkçe karakter duyarlı)
-        sek_l = tr_norm(str(item["sektor"]))
+        # TABLO İÇİN 6 KÜMELİ SEKTÖR DUYARLI ROE ROZETİ (Modal ile %100 Senkronize)
         r_val = float(item["ham_veri"].get("roe", 0.0))
-        
-        # Sektör alt tabanı
-        if any(x in sek_l for x in ["perakende", "magaza", "gida", "icecek"]):
-            taban = 35.0
-        elif any(x in sek_l for x in ["yazilim", "bilisim", "teknoloji", "savunma", "telekom"]):
-            taban = 30.0
-        elif any(x in sek_l for x in ["banka", "sigorta", "faktoring", "finans", "menkul"]):
-            taban = 22.0
-        elif any(x in sek_l for x in ["demir", "celik", "petrol", "kimya", "cimento", "otomotiv", "maden"]):
-            taban = 15.0
-        else:
-            taban = 10.0
+        min_norm, ust_norm, _ = sektor_roe_normu_getir(item["sektor"])
 
         if r_val < 5.0:
             roe_rozet = f"<span class='badge-fail'>%{r_val:.1f} 🚨</span>"
-        elif r_val < taban:
+        elif r_val < min_norm:
             roe_rozet = f"<span class='badge-warn'>%{r_val:.1f} ⚠️</span>"
-        else:
+        elif r_val <= ust_norm:
             roe_rozet = f"<span class='badge-ok'>%{r_val:.1f} 🟢</span>"
+        else:
+            roe_rozet = f"<span class='badge-ok'>%{r_val:.1f} 🚀</span>"
 
         item["roe_rozet"] = roe_rozet
 
         tablo_verileri.append({
             "Kod": kod, "Sektör": item["sektor"], "Hendek": item["kategori"], "F_Skor": item["f_skor"],
+            "Hibrit_Puan": item["hibrit_puan"],
             "Mevcut_Lot": m_lot, "Fiyat": fiyat, "Mevcut_Tutar": m_tutar, "Mevcut_Pay": m_pay,
             "Hedef_Pay": h_pay, "Hedef_Tutar": h_tutar, "Hedef_Lot": h_lot, "Fark_Lot": fark_lot,
             "Aksiyon": aksiyon, "KZ_Yuzde": kz_yuzde, "Katsayi": item["katsayi"], "Islem_Tutari": islem_tutari,
             "Ort_Maliyet": item["ort_maliyet"],
-	    "kadroda": item["kadroda"], # YENİ EKLENDİ
-	    "is_radar": item["is_radar"], # YENİ EKLENDİ
-	    "ROE_Rozet": item["roe_rozet"] # YENİ EKLENDİ
+            "kadroda": item["kadroda"],
+            "is_radar": item["is_radar"],
+            "ROE_Rozet": item["roe_rozet"]
         })
 
         poz_bilgi = {"agirlik_yuzde": m_pay, "kademe": mevcut_pozisyonlar.get(kod, {}).get("kademe", "1/3 Başlangıç")}
@@ -2410,8 +2526,16 @@ if __name__ == "__main__":
 
     # --- HTML İÇİN 3 KATMANLI SIRALAMA MANTIĞI ---
     tasinan_hisseler = sorted([x for x in tablo_verileri if x["Mevcut_Lot"] > 0], key=lambda x: x["Mevcut_Tutar"], reverse=True)
-    radar_hisseleri = sorted([x for x in tablo_verileri if x["Mevcut_Lot"] == 0 and x["is_radar"]], key=lambda x: (x["F_Skor"], x["Hedef_Pay"]), reverse=True)
-    diger_hisseler = sorted([x for x in tablo_verileri if x["Mevcut_Lot"] == 0 and not x["is_radar"]], key=lambda x: x["F_Skor"], reverse=True)
+    radar_hisseleri = sorted(
+        [x for x in tablo_verileri if x["Mevcut_Lot"] == 0 and (x["kadroda"] or x["is_radar"])],
+        key=lambda x: (1 if x["kadroda"] else 0, x["Hedef_Pay"], x["Hibrit_Puan"], x["F_Skor"]),
+        reverse=True
+    )
+    diger_hisseler = sorted(
+        [x for x in tablo_verileri if x["Mevcut_Lot"] == 0 and not x["kadroda"] and not x["is_radar"]],
+        key=lambda x: (x["Hibrit_Puan"], x["F_Skor"]),
+        reverse=True
+    )
     sirali_liste = tasinan_hisseler + radar_hisseleri + diger_hisseler
     # ---------------------------------------------
 
