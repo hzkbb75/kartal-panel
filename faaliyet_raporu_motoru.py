@@ -425,7 +425,7 @@ def portfoy_ve_masa_verilerini_getir() -> dict:
                 for satir in csv.reader(f, delimiter=";"):
                     if satir and 3 <= len(satir[0].strip()) <= 6:
                         kod = satir[0].strip().upper()
-                        if kod not in {"KOD", "HISSE", "NAKIT", "TRY", "KASA", "PPF"}:
+                        if kod not in {"KOD", "HISSE", "NAKIT", "TRY", "KASA", "PPF", "OSL", "BIST", "XU100"}:
                             masa.setdefault(kod, {})["portfoyde_tasiniyor"] = True
         except Exception:
             pass
@@ -1023,11 +1023,20 @@ def main():
     except Exception:
         pass
 
-    # 4. AŞAMA: index.html 6. Sekme Verisini Anında Güncelle
+    # 4. AŞAMA: index.html 6. Sekme Verisini Anında Güncelle ve GitHub Pages'e Yansıt
     if guncellenen_arsivler:
         yama_basarili = index_html_6_kart_anlik_yama(guncellenen_arsivler)
         if yama_basarili:
             print(f"\n✅ {len(guncellenen_arsivler)} şirketin 4-6 dönemlik karnesi 'FAALIYET_MERKEZI' ve 'index.html' 6. Kart içine anında işlendi!")
+            try:
+                with open(os.path.join(BASE_DIR, ".nojekyll"), "w", encoding="utf-8") as nj:
+                    nj.write("")
+                subprocess.run(["git", "add", "index.html", ".nojekyll"], cwd=BASE_DIR, check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                subprocess.run(["git", "commit", "-m", f"Faaliyet Raporu 6. Kart Güncellemesi ({datetime.now().strftime('%H:%M')})"], cwd=BASE_DIR, check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                subprocess.run(["git", "push", "--force", "origin", "main"], cwd=BASE_DIR, check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                print("🚀 Güncel index.html GitHub Pages'e senkronize edildi!")
+            except Exception:
+                pass
         elif os.path.exists(os.path.join(BASE_DIR, "kartal.py")):
             print("\n🔄 6. Kart verilerini index.html'e basmak için kartal.py çalıştırılıyor...")
             subprocess.run([sys.executable, os.path.join(BASE_DIR, "kartal.py")], cwd=BASE_DIR)

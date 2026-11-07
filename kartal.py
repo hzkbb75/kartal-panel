@@ -889,13 +889,19 @@ def analiz_et_sirket(kod: str) -> dict:
         ]
         f_skor = sum(piotroski_puanlar)
 
-    # Gerçek Piyasa Değeri Türetimi (TV verisi yoksa veya 0 ise Ziraat PD/DD veya F/K üzerinden gerçek PD)
+    # Gerçek Piyasa Değeri Türetimi (bist_mali_tablolar.json içindeki 1000'e bölünmüş 0.00686 gibi hatalı değerleri onar)
     pddd_z = float(ziraat.get("pddd", 0.0) or 0.0) if ziraat else 0.0
-    if pd_milyar <= 0.0:
-        if pddd_z > 0 and ozk_c > 0:
-            pd_milyar = round((ozk_c * pddd_z) / 1000.0, 2)
-        elif fk > 0 and net_kar_ttm > 0:
-            pd_milyar = round((net_kar_ttm * fk) / 1000.0, 2)
+    ziraat_pd_milyar = 0.0
+    if pddd_z > 0 and ozk_c > 0:
+        ziraat_pd_milyar = round((ozk_c * pddd_z) / 1000.0, 2)
+    elif fk > 0 and net_kar_ttm > 0:
+        ziraat_pd_milyar = round((net_kar_ttm * fk) / 1000.0, 2)
+
+    if ziraat_pd_milyar > 0:
+        pd_milyar = ziraat_pd_milyar
+    elif 0 < pd_milyar < 0.25 and ozk_c > 250.0:
+        # 1000 kat küçük kaydedilmiş piyasa değerini gerçek milyar TL ölçeğine düzelt
+        pd_milyar = round(pd_milyar * 1000.0, 2)
 
     # KUSURSUZ SEKTÖR ATAMASI (ALT PAZAR / YAKIN İZLEME PAZARI olan hisselerin unvandan gerçek Ziraat sektörünü bul)
     pazar_etiketleri = {"ALT PAZAR", "YAKIN İZLEME PAZARI", "ANA PAZAR", "YILDIZ PAZAR", "DİĞER", "BIST", "Sanayi", ""}
@@ -1230,6 +1236,42 @@ def uret_dna_ve_tercume_katmani(m: dict) -> dict:
         },
         "oz_turkce_seridi": oz_turkce_seridi
     }
+
+
+def senkronize_teknik_veri(ham_tv: dict, fiyat: float) -> dict:
+    """Tablo fiyatı ile 60G destek/direnç, kanal konumu ve R:R oranını tüm sekmeler ve icra motoru için tek noktada senkronize eder."""
+    if not ham_tv:
+        return None
+    if fiyat <= 0:
+        return dict(ham_tv)
+    teknik_veri = dict(ham_tv)
+    destek_60g = min(float(teknik_veri.get("destek_60g", fiyat * 0.88)), round(fiyat * 0.99, 2))
+    direnc_60g = max(float(teknik_veri.get("direnc_60g", fiyat * 1.15)), round(fiyat * 1.01, 2))
+    kanal_boyu = max(direnc_60g - destek_60g, fiyat * 0.01, 0.01)
+    kanal_konumu = round(max(0.0, min(100.0, ((fiyat - destek_60g) / kanal_boyu) * 100.0)), 1)
+    risk_yuzde = round(max(0.5, ((fiyat - destek_60g) / fiyat) * 100.0), 1)
+    odul_yuzde = round(max(0.5, ((direnc_60g - fiyat) / fiyat) * 100.0), 1)
+    rr_orani = round(odul_yuzde / max(risk_yuzde, 0.5), 2)
+    if kanal_konumu <= 25.0:
+        durum, renk = "🟢 60G DESTEK BÖLGESİ (ALIM FIRSATI)", "#10b981"
+    elif kanal_konumu <= 65.0:
+        durum, renk = "🔵 KANAL ORTA BANT (DENGELİ)", "#38bdf8"
+    elif kanal_konumu <= 85.0:
+        durum, renk = "🟡 DİRENCE YAKIN (DİKKATLİ İZLE)", "#f59e0b"
+    else:
+        durum, renk = "🔴 60G DİRENÇ TAVANI (PRİMLİ)", "#ef4444"
+    teknik_veri.update({
+        "fiyat": round(fiyat, 2),
+        "destek_60g": destek_60g,
+        "direnc_60g": direnc_60g,
+        "kanal_konumu": kanal_konumu,
+        "risk_yuzde": risk_yuzde,
+        "odul_yuzde": odul_yuzde,
+        "rr_orani": rr_orani,
+        "durum": durum,
+        "renk": renk
+    })
+    return teknik_veri
 
 
 def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
@@ -1601,36 +1643,7 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
         kap_verileri.append(_k_kopya)
 
     ham_tv = KAP_VE_TEKNIK_AMBARI.get("teknik_veriler", {}).get(kod, None)
-    if ham_tv and fiyat > 0:
-        teknik_veri = dict(ham_tv)
-        destek_60g = min(float(teknik_veri.get("destek_60g", fiyat * 0.88)), round(fiyat * 0.99, 2))
-        direnc_60g = max(float(teknik_veri.get("direnc_60g", fiyat * 1.15)), round(fiyat * 1.01, 2))
-        kanal_boyu = max(direnc_60g - destek_60g, fiyat * 0.01, 0.01)
-        kanal_konumu = round(max(0.0, min(100.0, ((fiyat - destek_60g) / kanal_boyu) * 100.0)), 1)
-        risk_yuzde = round(max(0.5, ((fiyat - destek_60g) / fiyat) * 100.0), 1)
-        odul_yuzde = round(max(0.5, ((direnc_60g - fiyat) / fiyat) * 100.0), 1)
-        rr_orani = round(odul_yuzde / max(risk_yuzde, 0.5), 2)
-        if kanal_konumu <= 25.0:
-            durum, renk = "🟢 60G DESTEK BÖLGESİ (ALIM FIRSATI)", "#10b981"
-        elif kanal_konumu <= 65.0:
-            durum, renk = "🔵 KANAL ORTA BANT (DENGELİ)", "#38bdf8"
-        elif kanal_konumu <= 85.0:
-            durum, renk = "🟡 DİRENCE YAKIN (DİKKATLİ İZLE)", "#f59e0b"
-        else:
-            durum, renk = "🔴 60G DİRENÇ TAVANI (PRİMLİ)", "#ef4444"
-        teknik_veri.update({
-            "fiyat": round(fiyat, 2),
-            "destek_60g": destek_60g,
-            "direnc_60g": direnc_60g,
-            "kanal_konumu": kanal_konumu,
-            "risk_yuzde": risk_yuzde,
-            "odul_yuzde": odul_yuzde,
-            "rr_orani": rr_orani,
-            "durum": durum,
-            "renk": renk
-        })
-    else:
-        teknik_veri = ham_tv
+    teknik_veri = senkronize_teknik_veri(ham_tv, fiyat)
 
     # === 5. SEKME: HİSSEYE ÖZEL DİNAMİK YÖNETİCİ SENTEZİ, 3 BOYUTLU İPTAL PLANI VE CANLI 5'Lİ ÇIKIŞ RADARI ===
     hedef_agirlik_poz = round(float(pozisyon.get("hedef_agirlik", 0.0)), 2) if pozisyon else 0.0
@@ -3074,8 +3087,11 @@ def toleransli_aksiyon_hesapla(mevcut_lot: int, hedef_lot: int, guncel_fiyat: fl
     else:
         toplam_sat_lot = abs(ham_fark_lot)
         bolum1_temiz = bool(s_veri.get("bolum1_gecti_mi", True)) if s_veri else True
+        f_skor_sat = int(s_veri.get("piotroski_skor", 6)) if s_veri else 6
 
-        if bolum1_temiz and kanal_konumu <= 25.0 and rr_orani >= 2.5 and toplam_sat_lot >= 3:
+        # Dipte Satış Freni yalnızca Hedef 60 içinde kalan (hedef_lot > 0) VEYA F-Skoru >= 6 olan nitelikli hisselerde uygulanır.
+        # F-Skoru <= 5 olup kadrodan tamamen elenen (hedef_lot == 0) hisselerde dipten kademeli satış yapılmaz, doğrudan çıkılır.
+        if bolum1_temiz and (hedef_lot > 0 or f_skor_sat >= 6) and kanal_konumu <= 25.0 and rr_orani >= 2.5 and toplam_sat_lot >= 3:
             # Kural 4A: Dipte Satış Freni (1/3 Pazartesi Azalt, 2/3 Tepkide Sat)
             s1_lot = max(1, int(round(toplam_sat_lot * 0.35)))
             s2_lot = max(0, int(round(toplam_sat_lot * 0.35)))
@@ -3157,7 +3173,8 @@ if __name__ == "__main__":
     # 1. Tüm şirketlere 4 Katmanlı Hibrit Puan (Temel + Sektörel ROE + Değerleme + Teknik) ata
     for s in tum_sonuclar:
         kod = s["kod"]
-        tv_veri = KAP_VE_TEKNIK_AMBARI.get("teknik_veriler", {}).get(kod, None)
+        fiyat_s = mevcut_pozisyonlar.get(kod, {}).get("canli_fiyat", s.get("fiyat_tl", 0.0))
+        tv_veri = senkronize_teknik_veri(KAP_VE_TEKNIK_AMBARI.get("teknik_veriler", {}).get(kod, None), fiyat_s)
         s["hibrit_puan"] = hesapla_hibrit_kartal_puani(s, tv_veri)
 
     # 2. Sektör Kotalı Top 60 Kadrosunu Belirle (Tam 60 Şirket)
@@ -3584,32 +3601,46 @@ if __name__ == "__main__":
 
 
 def github_guncelle():
-    print("\n🚀 Güncel panolar GitHub Pages'e aktarılıyor...")
+    print("\n🚀 Güncel index.html panosu GitHub Pages'e aktarılıyor...")
     try:
-        # 1. Hassas şifre/anahtar dosyalarının Git'e eklenmesini (.gitignore ile) kesin olarak engelle
-        gizli_dosyalar = ["webhook_mail.txt", "token.txt", "chat_id.txt", ".env", "*.key"]
+        # 1. GitHub Pages Jekyll derleyici hatasını ("pages build and deployment" ❌) önlemek için .nojekyll oluştur
+        with open(".nojekyll", "w", encoding="utf-8") as nj:
+            nj.write("")
+
+        # 2. Hassas dosyaların ve devasa yerel veri ambarının (hektor_kutuphane/, PDF'ler) Git'i şişirmesini engelle
+        gizli_ve_agir_dosyalar = [
+            "webhook_mail.txt", "token.txt", "chat_id.txt", ".env", "*.key",
+            "hektor_kutuphane/", "*.pdf", "__pycache__/"
+        ]
         gitignore_mevcut = set()
         if os.path.exists(".gitignore"):
             with open(".gitignore", "r", encoding="utf-8") as gf:
                 gitignore_mevcut = {line.strip() for line in gf if line.strip()}
-        eksik_gizliler = [d for d in gizli_dosyalar if d not in gitignore_mevcut]
+        eksik_gizliler = [d for d in gizli_ve_agir_dosyalar if d not in gitignore_mevcut]
         if eksik_gizliler:
             with open(".gitignore", "a", encoding="utf-8") as gf:
                 gf.write("\n" + "\n".join(eksik_gizliler) + "\n")
 
-        # 2. Önceki commit'te (örn. webhook_mail.txt yüzünden) takılı kalan push varsa origin/main'e yumuşak sıfırla
-        subprocess.run(["git", "reset", "--soft", "origin/main"], check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        # 3. Yerel diskteki dosyalara HİÇ DOKUNMADAN (--cached), sadece Git indeksinden ağır klasörleri çıkar
         subprocess.run(
-            ["git", "rm", "--cached", "--ignore-unmatch", "webhook_mail.txt", "token.txt", "chat_id.txt", "hektor_kutuphane/PORTFOY/index.html"],
+            ["git", "rm", "-r", "--cached", "--ignore-unmatch", "webhook_mail.txt", "token.txt", "chat_id.txt", "hektor_kutuphane"],
             check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
         )
 
-        # 3. Temiz çalışma ağacını ekle, commit et ve GitHub Pages'e gönder
-        subprocess.run(["git", "add", "."], check=True)
-        subprocess.run(["git", "commit", "-m", "Oto-guncelleme: index.html ve panolar güncellendi"], check=True)
-        subprocess.run(["git", "push", "origin", "main"], check=True)
-        print("✅ GitHub Pages başarıyla güncellendi (index.html yayında)!")
+        # 4. Sadece index.html, .nojekyll, .gitignore ve ana Python dosyalarını ekle
+        subprocess.run(["git", "add", "index.html", ".nojekyll", ".gitignore"], check=True)
+        subprocess.run(["git", "add", "-u"], check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+        # Değişiklik varsa commit et
+        commit_res = subprocess.run(
+            ["git", "commit", "-m", f"KARTAL Pano Güncellemesi ({datetime.now().strftime('%Y-%m-%d %H:%M')})"],
+            check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
+        )
+
+        # 5. Farklı bilgisayarlardan çalışırken oluşan "non-fast-forward" reddini önlemek için --force ile main dalına bas
+        subprocess.run(["git", "push", "--force", "origin", "main"], check=True)
+        print("✅ GitHub Pages başarıyla güncellendi -> https://hzkbb75.github.io/kartal-panel/")
     except Exception as e:
-        print(f"⚠️ Git güncelleme atlandı: {e}")
+        print(f"⚠️ Git güncelleme uyarısı: {e}")
 
 github_guncelle()

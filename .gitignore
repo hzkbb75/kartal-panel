@@ -6,3 +6,6 @@ token.txt
 webhook_mail.txt
 chat_id.txt
 *.key
+
+hektor_kutuphane/
+*.pdf
