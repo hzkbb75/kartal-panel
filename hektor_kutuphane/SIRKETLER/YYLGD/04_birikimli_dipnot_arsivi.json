@@ -1,6 +1,6 @@
 {
   "kod": "YYLGD",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 16.8,
-      "icr_kati": 1.22,
+      "efm_yuzde": 15.3,
+      "icr_kati": 1.33,
       "tahakkuk_orani": -22.53,
       "aga_orani": 0.0,
       "ykp_orani": 50.2,
@@ -40,7 +40,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Kağıt üzeri kâr payı yüksek (%50.2).",
-        "🔴 Faiz karşılama oranı 1.22x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.33x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 1.67 Mr ₺ (9.6x Amortisman)<br><strong>MDV:</strong> 11.21 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

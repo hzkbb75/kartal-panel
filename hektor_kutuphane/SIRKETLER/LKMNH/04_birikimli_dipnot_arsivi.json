@@ -1,10 +1,10 @@
 {
   "kod": "LKMNH",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 20.8,
-      "icr_kati": 3.97,
+      "efm_yuzde": 18.2,
+      "icr_kati": 4.54,
       "tahakkuk_orani": -3.42,
       "aga_orani": 0.0,
       "ykp_orani": 0.5,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 13.8,
-      "icr_kati": 4.4,
+      "efm_yuzde": 12.8,
+      "icr_kati": 4.75,
       "tahakkuk_orani": -3.33,
       "aga_orani": 6.8,
       "ykp_orani": 0.5,
@@ -51,8 +51,8 @@
       "dso_delta": 4.2
     },
     "2026/03": {
-      "efm_yuzde": 32.6,
-      "icr_kati": 2.2,
+      "efm_yuzde": 28.2,
+      "icr_kati": 2.54,
       "tahakkuk_orani": -3.59,
       "aga_orani": 71.8,
       "ykp_orani": 1.5,
@@ -75,8 +75,8 @@
       "dso_delta": 20.9
     },
     "2026/06": {
-      "efm_yuzde": 25.8,
-      "icr_kati": 2.42,
+      "efm_yuzde": 21.8,
+      "icr_kati": 2.86,
       "tahakkuk_orani": -7.25,
       "aga_orani": 47.1,
       "ykp_orani": 1.1,

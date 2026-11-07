@@ -1,10 +1,10 @@
 {
   "kod": "EGEEN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 77.1,
-      "icr_kati": 1.22,
+      "efm_yuzde": 63.9,
+      "icr_kati": 1.47,
       "tahakkuk_orani": -2.68,
       "aga_orani": 0.0,
       "ykp_orani": 33.1,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 1.22x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.47x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 72 Mn ₺ (0.7x Amortisman)<br><strong>MDV:</strong> 2.99 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 67.4,
-      "icr_kati": 1.04,
+      "efm_yuzde": 55.8,
+      "icr_kati": 1.25,
       "tahakkuk_orani": -7.57,
       "aga_orani": 0.0,
       "ykp_orani": 47.1,
@@ -40,7 +40,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Kağıt üzeri kâr payı yüksek (%47.1).",
-        "🔴 Faiz karşılama oranı 1.04x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.25x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 250 Mn ₺ (1.2x Amortisman)<br><strong>MDV:</strong> 3.26 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",

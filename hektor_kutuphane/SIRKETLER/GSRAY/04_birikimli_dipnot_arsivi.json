@@ -1,13 +1,13 @@
 {
   "kod": "GSRAY",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.64,
       "tahakkuk_orani": 17.81,
       "aga_orani": 0.0,
-      "ykp_orani": 0.7,
+      "ykp_orani": 0.5,
       "dso_gun": 74.6,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": 60.16,
       "tahakkuk_orani": 16.29,
       "aga_orani": 0.0,
-      "ykp_orani": 0.5,
+      "ykp_orani": 0.4,
       "dso_gun": 40.1,
       "acm_makasi": -43.4,
       "serefiye_ozk_orani": 0.0,

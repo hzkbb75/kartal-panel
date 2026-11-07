@@ -1,6 +1,6 @@
 {
   "kod": "SEGMN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -56,7 +56,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": 0.33,
       "aga_orani": 2.6,
-      "ykp_orani": 49.2,
+      "ykp_orani": 45.5,
       "dso_gun": 81.8,
       "acm_makasi": 35.4,
       "serefiye_ozk_orani": 0.0,
@@ -64,7 +64,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%49.2).",
+        "🟡 Kağıt üzeri kâr payı yüksek (%45.5).",
         "🟡 Alacak-Ciro makası +%35.4 açıldı (DSO: 81.8 gün)."
       ],
       "pdf_dipnot_notlari": {
@@ -81,7 +81,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -3.46,
       "aga_orani": 0.0,
-      "ykp_orani": 35.5,
+      "ykp_orani": 35.4,
       "dso_gun": 69.9,
       "acm_makasi": 27.5,
       "serefiye_ozk_orani": 0.0,
@@ -89,7 +89,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%35.5).",
+        "🟡 Kağıt üzeri kâr payı yüksek (%35.4).",
         "🟡 Alacak-Ciro makası +%27.5 açıldı (DSO: 69.9 gün)."
       ],
       "pdf_dipnot_notlari": {

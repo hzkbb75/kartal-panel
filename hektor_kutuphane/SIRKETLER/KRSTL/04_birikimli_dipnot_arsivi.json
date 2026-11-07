@@ -1,10 +1,10 @@
 {
   "kod": "KRSTL",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 65.1,
-      "icr_kati": 3.19,
+      "efm_yuzde": 28.3,
+      "icr_kati": 7.34,
       "tahakkuk_orani": -20.08,
       "aga_orani": 0.0,
       "ykp_orani": 4.1,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 49.7,
-      "icr_kati": 5.15,
+      "efm_yuzde": 18.5,
+      "icr_kati": 13.81,
       "tahakkuk_orani": -21.26,
       "aga_orani": 0.0,
       "ykp_orani": 2.4,
@@ -75,8 +75,8 @@
       "dso_delta": 0.3
     },
     "2026/06": {
-      "efm_yuzde": 11.7,
-      "icr_kati": 25.87,
+      "efm_yuzde": 3.1,
+      "icr_kati": 98.84,
       "tahakkuk_orani": 4.11,
       "aga_orani": 6.0,
       "ykp_orani": 0.1,

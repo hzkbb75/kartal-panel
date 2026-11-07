@@ -1,6 +1,6 @@
 {
   "kod": "METEN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 39.4,
-      "icr_kati": 0.9,
+      "efm_yuzde": 34.2,
+      "icr_kati": 1.04,
       "tahakkuk_orani": -2.22,
       "aga_orani": 3548.4,
       "ykp_orani": 0.0,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.9x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.04x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 81 Mn ₺ (0.5x Amortisman)<br><strong>MDV:</strong> 17.38 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -75,8 +75,8 @@
       "dso_delta": 43.6
     },
     "2026/06": {
-      "efm_yuzde": 3.6,
-      "icr_kati": 11.92,
+      "efm_yuzde": 3.3,
+      "icr_kati": 12.71,
       "tahakkuk_orani": -1.82,
       "aga_orani": 519.1,
       "ykp_orani": 52.9,
@@ -97,8 +97,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.1 (20 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.15x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%52.9).",
-        "🟡 Alacak-Ciro makası +%41.9 açıldı (DSO: 59.8 gün)."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / KADEMELİ (1/3)]: 4 çeyreklik faaliyet/dipnot taraması temiz (DTS: 30/100 | F-Skor: 7/9 | Hibrit Puan: 71.5). Kalkan Hedef Ağırlığı: %1.39 (+330 lot).",
+        "🟢 4 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/06): DTS 30/100 puan, Alacak tahsil süresi 59.8 gün (+59.8g değişim) ve ICR 12.71x düzeyinde.",
+        "🟡 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 1.6x (agresif kapasite artışı), Konsolide/Yurt içi satış yapısı ve Net YPP/ÖZK %-30.3 (Kur açık pozisyonu izlenmeli).",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %-1.8 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": 15,
       "dso_delta": 16.2

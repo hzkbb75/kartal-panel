@@ -1,6 +1,6 @@
 {
   "kod": "BLCYT",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -81,7 +81,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -0.86,
       "aga_orani": 0.0,
-      "ykp_orani": 88.7,
+      "ykp_orani": 88.6,
       "dso_gun": 252.9,
       "acm_makasi": 69.1,
       "serefiye_ozk_orani": 0.0,
@@ -89,7 +89,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%88.7).",
+        "🟡 Kağıt üzeri kâr payı yüksek (%88.6).",
         "🟡 Alacak-Ciro makası +%69.1 açıldı (DSO: 252.9 gün)."
       ],
       "pdf_dipnot_notlari": {

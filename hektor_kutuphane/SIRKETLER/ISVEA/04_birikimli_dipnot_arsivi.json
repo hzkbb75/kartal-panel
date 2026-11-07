@@ -1,6 +1,6 @@
 {
   "kod": "ISVEA",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
+      "efm_yuzde": 366.1,
       "icr_kati": 1.44,
       "tahakkuk_orani": 2644.11,
       "aga_orani": 0.0,
@@ -52,8 +52,8 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 29.6,
-      "icr_kati": 2.53,
+      "efm_yuzde": 26.7,
+      "icr_kati": 2.8,
       "tahakkuk_orani": -2.95,
       "aga_orani": 1.0,
       "ykp_orani": 0.0,
@@ -76,8 +76,8 @@
       "dso_delta": 184.5
     },
     "2026/06": {
-      "efm_yuzde": 33.5,
-      "icr_kati": 1.93,
+      "efm_yuzde": 29.3,
+      "icr_kati": 2.21,
       "tahakkuk_orani": -5.57,
       "aga_orani": 0.4,
       "ykp_orani": 9.0,

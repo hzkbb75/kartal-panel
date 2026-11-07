@@ -1,13 +1,13 @@
 {
   "kod": "AKYHO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 0.42,
       "tahakkuk_orani": 2.1,
       "aga_orani": 0.0,
-      "ykp_orani": 0.1,
+      "ykp_orani": 0.0,
       "dso_gun": 64.7,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": 0.04,
       "tahakkuk_orani": -0.04,
       "aga_orani": 0.0,
-      "ykp_orani": 1.0,
+      "ykp_orani": 0.8,
       "dso_gun": 57.9,
       "acm_makasi": -10.5,
       "serefiye_ozk_orani": 29.8,

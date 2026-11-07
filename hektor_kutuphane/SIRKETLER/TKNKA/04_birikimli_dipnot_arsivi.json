@@ -1,6 +1,6 @@
 {
   "kod": "TKNKA",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 12.2,
-      "icr_kati": 5.08,
+      "efm_yuzde": 9.6,
+      "icr_kati": 6.46,
       "tahakkuk_orani": -3.84,
       "aga_orani": 1.8,
       "ykp_orani": 1.7,
@@ -75,8 +75,8 @@
       "dso_delta": 86.4
     },
     "2026/06": {
-      "efm_yuzde": 13.8,
-      "icr_kati": 3.32,
+      "efm_yuzde": 11.6,
+      "icr_kati": 3.93,
       "tahakkuk_orani": -4.36,
       "aga_orani": 1.0,
       "ykp_orani": 10.2,

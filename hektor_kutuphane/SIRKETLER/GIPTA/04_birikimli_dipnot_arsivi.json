@@ -1,13 +1,13 @@
 {
   "kod": "GIPTA",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 9.9,
       "tahakkuk_orani": -14.94,
       "aga_orani": 0.0,
-      "ykp_orani": 14.2,
+      "ykp_orani": 0.0,
       "dso_gun": 135.4,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": 8.29,
       "aga_orani": 0.0,
-      "ykp_orani": 83.2,
+      "ykp_orani": 83.0,
       "dso_gun": 112.5,
       "acm_makasi": -25.7,
       "serefiye_ozk_orani": 0.0,
@@ -40,7 +40,7 @@
       "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%8.29): Kâr nakde dönüşmüyor.",
-        "🟡 Kağıt üzeri kâr payı yüksek (%83.2)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%83.0)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 15 Mn ₺ (0.6x Amortisman)<br><strong>MDV:</strong> 1.19 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -56,7 +56,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -6.37,
       "aga_orani": 1.5,
-      "ykp_orani": 83.3,
+      "ykp_orani": 83.2,
       "dso_gun": 126.7,
       "acm_makasi": -8.6,
       "serefiye_ozk_orani": 0.0,
@@ -64,7 +64,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%83.3)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%83.2)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 12 Mn ₺ (1.0x Amortisman)<br><strong>MDV:</strong> 1.45 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -80,7 +80,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -0.67,
       "aga_orani": 0.2,
-      "ykp_orani": 67.3,
+      "ykp_orani": 67.2,
       "dso_gun": 165.1,
       "acm_makasi": 40.3,
       "serefiye_ozk_orani": 0.0,
@@ -88,7 +88,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%67.3).",
+        "🟡 Kağıt üzeri kâr payı yüksek (%67.2).",
         "🟡 Alacak-Ciro makası +%40.3 açıldı (DSO: 165.1 gün)."
       ],
       "pdf_dipnot_notlari": {

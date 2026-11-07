@@ -1,10 +1,10 @@
 {
   "kod": "DGGYO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 10.5,
-      "icr_kati": 2.37,
+      "efm_yuzde": 10.3,
+      "icr_kati": 2.41,
       "tahakkuk_orani": -1.64,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 31.2,
-      "icr_kati": 0.9,
+      "efm_yuzde": 30.8,
+      "icr_kati": 0.91,
       "tahakkuk_orani": -2.66,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.9x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.91x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 6 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -51,8 +51,8 @@
       "dso_delta": 7.8
     },
     "2026/03": {
-      "efm_yuzde": 28.4,
-      "icr_kati": 1.02,
+      "efm_yuzde": 28.0,
+      "icr_kati": 1.03,
       "tahakkuk_orani": 0.07,
       "aga_orani": 0.1,
       "ykp_orani": 0.0,
@@ -64,7 +64,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%517.2 açıldı (DSO: 66.0 gün).",
-        "🔴 Faiz karşılama oranı 1.02x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.03x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 1 Mn ₺ (0.8x Amortisman)<br><strong>MDV:</strong> 5 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -76,8 +76,8 @@
       "dso_delta": 46.5
     },
     "2026/06": {
-      "efm_yuzde": 14.7,
-      "icr_kati": 2.11,
+      "efm_yuzde": 14.4,
+      "icr_kati": 2.14,
       "tahakkuk_orani": -0.19,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -96,11 +96,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -4.00 Mr ₺ (ÖZK %-24.4)<br><strong>Ham YPP:</strong> -4.00 Mr ₺ | <span style='color:#f87171; font-weight:bold;'>Yüksek Kur Riski</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.0 (8 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.21x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
+      "dts_delta": -15,
+      "dso_delta": 34.0,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%441.8 açıldı (DSO: 100.0 gün)."
-      ],
-      "dts_delta": -15,
-      "dso_delta": 34.0
+      ]
     }
   }
 }

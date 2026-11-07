@@ -1,10 +1,10 @@
 {
   "kod": "HTTBT",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 11.6,
-      "icr_kati": 8.07,
+      "efm_yuzde": 9.8,
+      "icr_kati": 9.55,
       "tahakkuk_orani": -1.58,
       "aga_orani": 0.0,
       "ykp_orani": 32.9,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 12.9,
-      "icr_kati": 8.79,
+      "efm_yuzde": 10.9,
+      "icr_kati": 10.35,
       "tahakkuk_orani": -4.12,
       "aga_orani": 105.1,
       "ykp_orani": 27.9,
@@ -96,7 +96,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %3.4 (116 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.13x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / DİPTE (2/3)]: 4 çeyreklik faaliyet/dipnot taraması temiz (DTS: 0/100 | F-Skor: 7/9 | Hibrit Puan: 57.5). Kalkan Hedef Ağırlığı: %1.51 (+452 lot).",
+        "🟢 4 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/06): DTS 0/100 puan, Alacak tahsil süresi 91.2 gün (-7.2g değişim) ve ICR 15.76x düzeyinde.",
+        "🟢 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 2.0x (agresif kapasite artışı), İhracat payı %62.4 ve Net YPP/ÖZK %+7.2 ile dengeli.",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %-3.0 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": 0,
       "dso_delta": 4.9

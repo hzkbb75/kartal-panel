@@ -1,6 +1,6 @@
 {
   "kod": "BNTAS",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -96,7 +96,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.6 (29 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.11x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟡 Alacak-Ciro makası +%26.9 açıldı (DSO: 76.9 gün)."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / KADEMELİ (1/3)]: 4 çeyreklik faaliyet/dipnot taraması temiz (DTS: 15/100 | F-Skor: 6/9 | Hibrit Puan: 84.0). Kalkan Hedef Ağırlığı: %1.43 (+1,344 lot).",
+        "🟢 4 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/06): DTS 15/100 puan, Alacak tahsil süresi 76.9 gün (+16.7g değişim) ve ICR 21.47x düzeyinde.",
+        "🟢 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 0.2x (hasat/düşük CAPEX), İhracat payı %16.6 ve Net YPP/ÖZK %+13.4 ile dengeli.",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %-16.4 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": 0,
       "dso_delta": -2.8

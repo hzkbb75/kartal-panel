@@ -1,6 +1,6 @@
 {
   "kod": "SDTTR",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -9.9
     },
     "2026/03": {
-      "efm_yuzde": 53.3,
-      "icr_kati": 2.33,
+      "efm_yuzde": 28.7,
+      "icr_kati": 4.32,
       "tahakkuk_orani": -1.08,
       "aga_orani": 120.9,
       "ykp_orani": 9.0,
@@ -75,11 +75,11 @@
       "dso_delta": 16.9
     },
     "2026/06": {
-      "efm_yuzde": 46.2,
-      "icr_kati": 2.14,
+      "efm_yuzde": 22.9,
+      "icr_kati": 4.31,
       "tahakkuk_orani": -0.05,
       "aga_orani": 101.3,
-      "ykp_orani": 11.3,
+      "ykp_orani": 10.7,
       "dso_gun": 119.9,
       "acm_makasi": 35.1,
       "serefiye_ozk_orani": 4.1,

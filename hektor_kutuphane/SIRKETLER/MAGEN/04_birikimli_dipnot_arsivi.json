@@ -1,13 +1,13 @@
 {
   "kod": "MAGEN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 29.2,
-      "icr_kati": 0.48,
+      "efm_yuzde": 25.4,
+      "icr_kati": 0.55,
       "tahakkuk_orani": -0.89,
       "aga_orani": 0.0,
-      "ykp_orani": 4.3,
+      "ykp_orani": 3.8,
       "dso_gun": 343.1,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.48x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.55x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 26 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 12.85 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 6.2,
-      "icr_kati": 3.76,
+      "efm_yuzde": 5.8,
+      "icr_kati": 4.04,
       "tahakkuk_orani": -3.12,
       "aga_orani": 0.0,
-      "ykp_orani": 85.5,
+      "ykp_orani": 85.0,
       "dso_gun": 213.6,
       "acm_makasi": -52.4,
       "serefiye_ozk_orani": 0.0,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%85.5)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%85.0)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 17 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 13.54 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -51,8 +51,8 @@
       "dso_delta": -129.5
     },
     "2026/03": {
-      "efm_yuzde": 15.1,
-      "icr_kati": 0.5,
+      "efm_yuzde": 14.2,
+      "icr_kati": 0.53,
       "tahakkuk_orani": 3.67,
       "aga_orani": 1072.6,
       "ykp_orani": 99.6,
@@ -64,7 +64,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Kağıt üzeri kâr payı yüksek (%99.6).",
-        "🔴 Faiz karşılama oranı 0.5x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.53x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 5 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 21.32 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -80,7 +80,7 @@
       "icr_kati": 18.84,
       "tahakkuk_orani": 2.41,
       "aga_orani": 77.1,
-      "ykp_orani": 95.3,
+      "ykp_orani": 94.6,
       "dso_gun": 171.4,
       "acm_makasi": -20.3,
       "serefiye_ozk_orani": 0.0,
@@ -88,7 +88,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%95.3)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%94.6)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 42 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 22.74 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

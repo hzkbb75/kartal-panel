@@ -1,10 +1,10 @@
 {
   "kod": "GWIND",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 16.4,
-      "icr_kati": 12.9,
+      "efm_yuzde": 16.2,
+      "icr_kati": 13.1,
       "tahakkuk_orani": -2.49,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 11.9,
-      "icr_kati": 17.44,
+      "efm_yuzde": 11.6,
+      "icr_kati": 17.75,
       "tahakkuk_orani": -3.95,
       "aga_orani": 43.4,
       "ykp_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 8.4
     },
     "2026/03": {
-      "efm_yuzde": 12.6,
-      "icr_kati": 8.64,
+      "efm_yuzde": 12.4,
+      "icr_kati": 8.82,
       "tahakkuk_orani": -1.3,
       "aga_orani": 631.4,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": -8.8
     },
     "2026/06": {
-      "efm_yuzde": 10.0,
-      "icr_kati": 8.8,
+      "efm_yuzde": 9.8,
+      "icr_kati": 8.95,
       "tahakkuk_orani": 5.89,
       "aga_orani": 485.6,
       "ykp_orani": 71.0,

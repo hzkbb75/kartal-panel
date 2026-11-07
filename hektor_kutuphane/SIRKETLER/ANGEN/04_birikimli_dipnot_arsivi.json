@@ -1,6 +1,6 @@
 {
   "kod": "ANGEN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 0.42,
+      "efm_yuzde": 307.8,
+      "icr_kati": 0.52,
       "tahakkuk_orani": -10.08,
       "aga_orani": 52.7,
       "ykp_orani": 22.8,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.42x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.52x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 187 Mn ₺ (2.0x Amortisman)<br><strong>MDV:</strong> 772 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -51,8 +51,8 @@
       "dso_delta": -0.1
     },
     "2026/03": {
-      "efm_yuzde": 79.0,
-      "icr_kati": -0.24,
+      "efm_yuzde": 67.9,
+      "icr_kati": -0.28,
       "tahakkuk_orani": -8.01,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -64,7 +64,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%45.1 açıldı (DSO: 93.1 gün).",
-        "🔴 Faiz karşılama oranı -0.24x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.28x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 72 Mn ₺ (1.9x Amortisman)<br><strong>MDV:</strong> 1.05 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -76,8 +76,8 @@
       "dso_delta": 28.9
     },
     "2026/06": {
-      "efm_yuzde": 59.2,
-      "icr_kati": 0.25,
+      "efm_yuzde": 55.4,
+      "icr_kati": 0.27,
       "tahakkuk_orani": -10.45,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -89,7 +89,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%48.8 açıldı (DSO: 94.9 gün).",
-        "🔴 Faiz karşılama oranı 0.25x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.27x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 166 Mn ₺ (2.1x Amortisman)<br><strong>MDV:</strong> 1.15 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

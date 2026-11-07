@@ -1,10 +1,10 @@
 {
   "kod": "ARENA",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 25.1,
-      "icr_kati": -0.28,
+      "efm_yuzde": 14.8,
+      "icr_kati": -0.47,
       "tahakkuk_orani": -1.34,
       "aga_orani": 0.0,
       "ykp_orani": 1.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -0.28x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.47x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 26 Mn ₺ (0.4x Amortisman)<br><strong>MDV:</strong> 16 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 38.9,
-      "icr_kati": 0.11,
+      "efm_yuzde": 19.4,
+      "icr_kati": 0.23,
       "tahakkuk_orani": -14.49,
       "aga_orani": 0.0,
       "ykp_orani": 1.7,
@@ -40,7 +40,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%16.8 açıldı (DSO: 110.7 gün).",
-        "🔴 Faiz karşılama oranı 0.11x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.23x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 45 Mn ₺ (0.3x Amortisman)<br><strong>MDV:</strong> 15 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -52,8 +52,8 @@
       "dso_delta": 16.0
     },
     "2026/03": {
-      "efm_yuzde": 14.4,
-      "icr_kati": -0.41,
+      "efm_yuzde": 9.4,
+      "icr_kati": -0.64,
       "tahakkuk_orani": -3.51,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -65,7 +65,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%15.4 açıldı (DSO: 118.8 gün).",
-        "🔴 Faiz karşılama oranı -0.41x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.64x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 42 Mn ₺ (1.0x Amortisman)<br><strong>MDV:</strong> 58 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",

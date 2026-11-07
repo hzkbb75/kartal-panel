@@ -1,10 +1,10 @@
 {
   "kod": "ARDYZ",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 68.1,
-      "icr_kati": 2.98,
+      "efm_yuzde": 61.0,
+      "icr_kati": 3.34,
       "tahakkuk_orani": 1.61,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 44.0,
-      "icr_kati": 2.37,
+      "efm_yuzde": 41.4,
+      "icr_kati": 2.51,
       "tahakkuk_orani": 10.52,
       "aga_orani": 50.6,
       "ykp_orani": 20.7,
@@ -52,8 +52,8 @@
       "dso_delta": 32.3
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 2.54,
+      "efm_yuzde": 93.4,
+      "icr_kati": 3.54,
       "tahakkuk_orani": -2.15,
       "aga_orani": 399.5,
       "ykp_orani": 3.0,
@@ -76,11 +76,11 @@
       "dso_delta": -98.0
     },
     "2026/06": {
-      "efm_yuzde": 69.8,
-      "icr_kati": 3.19,
+      "efm_yuzde": 49.2,
+      "icr_kati": 4.52,
       "tahakkuk_orani": 0.21,
       "aga_orani": 166.9,
-      "ykp_orani": 0.2,
+      "ykp_orani": 0.1,
       "dso_gun": 136.0,
       "acm_makasi": -55.9,
       "serefiye_ozk_orani": 2.2,

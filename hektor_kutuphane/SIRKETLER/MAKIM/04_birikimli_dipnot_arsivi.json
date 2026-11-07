@@ -1,10 +1,10 @@
 {
   "kod": "MAKIM",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 30.0,
-      "icr_kati": 2.58,
+      "efm_yuzde": 23.3,
+      "icr_kati": 3.32,
       "tahakkuk_orani": 3.53,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 51.6,
-      "icr_kati": 0.05,
+      "efm_yuzde": 41.7,
+      "icr_kati": 0.07,
       "tahakkuk_orani": -0.65,
       "aga_orani": 0.0,
       "ykp_orani": 2.9,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.05x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.07x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 26 Mn ₺ (1.0x Amortisman)<br><strong>MDV:</strong> 655 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -51,11 +51,11 @@
       "dso_delta": 5.7
     },
     "2026/03": {
-      "efm_yuzde": 14.7,
-      "icr_kati": 1.54,
+      "efm_yuzde": 11.0,
+      "icr_kati": 2.06,
       "tahakkuk_orani": 4.02,
       "aga_orani": 69.3,
-      "ykp_orani": 39.6,
+      "ykp_orani": 38.7,
       "dso_gun": 88.9,
       "acm_makasi": 88.7,
       "serefiye_ozk_orani": 0.0,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%39.6).",
+        "🟡 Kağıt üzeri kâr payı yüksek (%38.7).",
         "🟡 Alacak-Ciro makası +%88.7 açıldı (DSO: 88.9 gün)."
       ],
       "pdf_dipnot_notlari": {
@@ -76,11 +76,11 @@
       "dso_delta": 33.7
     },
     "2026/06": {
-      "efm_yuzde": 20.6,
-      "icr_kati": 1.55,
+      "efm_yuzde": 16.8,
+      "icr_kati": 1.9,
       "tahakkuk_orani": 11.38,
       "aga_orani": 13.9,
-      "ykp_orani": 16.0,
+      "ykp_orani": 15.5,
       "dso_gun": 84.3,
       "acm_makasi": 57.6,
       "serefiye_ozk_orani": 0.0,

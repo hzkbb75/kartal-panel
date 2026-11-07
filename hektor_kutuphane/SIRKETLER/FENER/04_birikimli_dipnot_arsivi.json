@@ -1,6 +1,6 @@
 {
   "kod": "FENER",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": -8.17,
       "tahakkuk_orani": -16.97,
       "aga_orani": 0.0,
-      "ykp_orani": 6.2,
+      "ykp_orani": 6.1,
       "dso_gun": 65.3,
       "acm_makasi": -5.8,
       "serefiye_ozk_orani": 0.0,
@@ -51,19 +51,18 @@
       "dso_delta": -4.7
     },
     "2026/03": {
-      "efm_yuzde": 5.1,
-      "icr_kati": 22.05,
+      "efm_yuzde": 2.1,
+      "icr_kati": 53.01,
       "tahakkuk_orani": -15.0,
       "aga_orani": 467.9,
-      "ykp_orani": 63.1,
+      "ykp_orani": 0.0,
       "dso_gun": 99.9,
       "acm_makasi": 56.9,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 5.1,
       "iliskili_orani": 0.0,
-      "dts_skor": 30,
+      "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%63.1).",
         "🟡 Alacak-Ciro makası +%56.9 açıldı (DSO: 99.9 gün)."
       ],
       "pdf_dipnot_notlari": {
@@ -73,10 +72,12 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %5.1 (434 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.96x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%63.1).",
-        "🟡 Alacak-Ciro makası +%56.9 açıldı (DSO: 99.9 gün)."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / DİPTE (2/3)]: 3 çeyreklik faaliyet/dipnot taraması temiz (DTS: 15/100 | F-Skor: 7/9 | Hibrit Puan: 65.5). Kalkan Hedef Ağırlığı: %1.24 (+5,348 lot).",
+        "🟢 3 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/03): DTS 15/100 puan, Alacak tahsil süresi 99.9 gün (+29.9g değişim) ve ICR 53.01x düzeyinde.",
+        "🟡 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 4.9x (agresif kapasite artışı), Konsolide/Yurt içi satış yapısı ve Net YPP/ÖZK %-37.0 (Kur açık pozisyonu izlenmeli).",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %-15.0 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
-      "dts_delta": 30,
+      "dts_delta": 15,
       "dso_delta": 34.6
     }
   }

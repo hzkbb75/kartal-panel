@@ -1,6 +1,6 @@
 {
   "kod": "TCKRC",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 8.4
     },
     "2026/03": {
-      "efm_yuzde": 73.9,
-      "icr_kati": 3.71,
+      "efm_yuzde": 69.5,
+      "icr_kati": 3.95,
       "tahakkuk_orani": 5.31,
       "aga_orani": 1.7,
       "ykp_orani": 20.1,
@@ -75,8 +75,8 @@
       "dso_delta": -2.5
     },
     "2026/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 2.94,
+      "efm_yuzde": 104.7,
+      "icr_kati": 3.15,
       "tahakkuk_orani": 8.98,
       "aga_orani": 0.7,
       "ykp_orani": 22.3,

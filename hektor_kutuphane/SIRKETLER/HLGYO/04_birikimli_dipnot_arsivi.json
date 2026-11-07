@@ -1,10 +1,10 @@
 {
   "kod": "HLGYO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 74.8,
-      "icr_kati": 4.95,
+      "efm_yuzde": 55.6,
+      "icr_kati": 6.65,
       "tahakkuk_orani": 6.95,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 18.7,
-      "icr_kati": 35.12,
+      "efm_yuzde": 10.6,
+      "icr_kati": 62.38,
       "tahakkuk_orani": 14.86,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -12.0
     },
     "2026/03": {
-      "efm_yuzde": 1.6,
-      "icr_kati": 130.24,
+      "efm_yuzde": 1.2,
+      "icr_kati": 165.07,
       "tahakkuk_orani": 2.89,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 16.5
     },
     "2026/06": {
-      "efm_yuzde": 33.9,
-      "icr_kati": 3.48,
+      "efm_yuzde": 29.7,
+      "icr_kati": 3.96,
       "tahakkuk_orani": 8.51,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

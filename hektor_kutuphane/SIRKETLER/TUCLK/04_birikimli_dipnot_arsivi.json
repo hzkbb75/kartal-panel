@@ -1,10 +1,10 @@
 {
   "kod": "TUCLK",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 41.5,
-      "icr_kati": 0.91,
+      "efm_yuzde": 34.3,
+      "icr_kati": 1.1,
       "tahakkuk_orani": -0.57,
       "aga_orani": 0.0,
       "ykp_orani": 41.8,
@@ -16,7 +16,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Kağıt üzeri kâr payı yüksek (%41.8).",
-        "🔴 Faiz karşılama oranı 0.91x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.1x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 18 Mn ₺ (0.4x Amortisman)<br><strong>MDV:</strong> 2.07 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -28,8 +28,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 39.6,
-      "icr_kati": 0.81,
+      "efm_yuzde": 32.2,
+      "icr_kati": 0.99,
       "tahakkuk_orani": 5.13,
       "aga_orani": 1.6,
       "ykp_orani": 47.2,
@@ -42,7 +42,7 @@
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%5.13): Kâr nakde dönüşmüyor.",
         "🟡 Kağıt üzeri kâr payı yüksek (%47.2).",
-        "🔴 Faiz karşılama oranı 0.81x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.99x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 68 Mn ₺ (0.8x Amortisman)<br><strong>MDV:</strong> 2.19 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -54,11 +54,11 @@
       "dso_delta": -9.9
     },
     "2026/03": {
-      "efm_yuzde": 13.0,
-      "icr_kati": 1.89,
+      "efm_yuzde": 10.5,
+      "icr_kati": 2.35,
       "tahakkuk_orani": -4.18,
       "aga_orani": 1111.3,
-      "ykp_orani": 11.2,
+      "ykp_orani": 10.4,
       "dso_gun": 304.2,
       "acm_makasi": 74.5,
       "serefiye_ozk_orani": 0.0,
@@ -78,11 +78,11 @@
       "dso_delta": 177.3
     },
     "2026/06": {
-      "efm_yuzde": 1.2,
-      "icr_kati": 18.4,
+      "efm_yuzde": 1.0,
+      "icr_kati": 22.85,
       "tahakkuk_orani": -15.41,
       "aga_orani": 658.4,
-      "ykp_orani": 7.0,
+      "ykp_orani": 6.6,
       "dso_gun": 174.1,
       "acm_makasi": 26.6,
       "serefiye_ozk_orani": 0.0,

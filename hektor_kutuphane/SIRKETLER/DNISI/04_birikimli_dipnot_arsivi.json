@@ -1,6 +1,6 @@
 {
   "kod": "DNISI",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": 2.83,
       "aga_orani": 0.0,
-      "ykp_orani": 87.6,
+      "ykp_orani": 82.1,
       "dso_gun": 59.7,
       "acm_makasi": 9.0,
       "serefiye_ozk_orani": 0.0,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%87.6)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%82.1)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 4 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 1.17 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -51,8 +51,8 @@
       "dso_delta": 4.5
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 0.42,
+      "efm_yuzde": 174.1,
+      "icr_kati": 0.58,
       "tahakkuk_orani": -0.89,
       "aga_orani": 0.0,
       "ykp_orani": 1.4,
@@ -64,7 +64,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%37.9 açıldı (DSO: 77.4 gün).",
-        "🔴 Faiz karşılama oranı 0.42x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.58x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 2 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 1.38 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -80,7 +80,7 @@
       "icr_kati": 0.58,
       "tahakkuk_orani": -5.22,
       "aga_orani": 0.0,
-      "ykp_orani": 2.4,
+      "ykp_orani": 2.3,
       "dso_gun": 82.6,
       "acm_makasi": 38.1,
       "serefiye_ozk_orani": 0.0,

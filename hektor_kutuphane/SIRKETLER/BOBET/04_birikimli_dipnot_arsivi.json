@@ -1,10 +1,10 @@
 {
   "kod": "BOBET",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 31.5,
-      "icr_kati": 1.08,
+      "efm_yuzde": 26.1,
+      "icr_kati": 1.3,
       "tahakkuk_orani": 16.19,
       "aga_orani": 0.0,
       "ykp_orani": 1.2,
@@ -16,7 +16,7 @@
       "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%16.19): Kâr nakde dönüşmüyor.",
-        "🔴 Faiz karşılama oranı 1.08x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.3x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 151 Mn ₺ (0.4x Amortisman)<br><strong>MDV:</strong> 6.21 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -28,8 +28,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 33.1,
-      "icr_kati": 0.88,
+      "efm_yuzde": 28.4,
+      "icr_kati": 1.03,
       "tahakkuk_orani": 7.4,
       "aga_orani": 0.0,
       "ykp_orani": 1.9,
@@ -41,7 +41,7 @@
       "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%7.4): Kâr nakde dönüşmüyor.",
-        "🔴 Faiz karşılama oranı 0.88x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.03x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 211 Mn ₺ (0.2x Amortisman)<br><strong>MDV:</strong> 6.37 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

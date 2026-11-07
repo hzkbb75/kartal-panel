@@ -1,6 +1,6 @@
 {
   "kod": "BURVA",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -51,7 +51,7 @@
       "dso_delta": -1.2
     },
     "2026/03": {
-      "efm_yuzde": 25.0,
+      "efm_yuzde": 6.2,
       "icr_kati": 0.68,
       "tahakkuk_orani": 7.95,
       "aga_orani": 0.0,
@@ -76,8 +76,8 @@
       "dso_delta": -16.1
     },
     "2026/06": {
-      "efm_yuzde": 15.0,
-      "icr_kati": -2.97,
+      "efm_yuzde": 5.6,
+      "icr_kati": -6.61,
       "tahakkuk_orani": 14.71,
       "aga_orani": 0.0,
       "ykp_orani": 1.3,
@@ -90,7 +90,7 @@
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%14.71): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%325.5 açıldı (DSO: 67.9 gün).",
-        "🔴 Faiz karşılama oranı -2.97x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -6.61x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 5 Mn ₺ (1.4x Amortisman)<br><strong>MDV:</strong> 49 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",

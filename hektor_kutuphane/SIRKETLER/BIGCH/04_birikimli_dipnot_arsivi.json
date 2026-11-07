@@ -1,10 +1,10 @@
 {
   "kod": "BIGCH",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 6.5,
-      "icr_kati": 17.89,
+      "efm_yuzde": 4.4,
+      "icr_kati": 26.67,
       "tahakkuk_orani": -12.23,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 3.1,
-      "icr_kati": 35.91,
+      "efm_yuzde": 2.3,
+      "icr_kati": 47.47,
       "tahakkuk_orani": -15.26,
       "aga_orani": 0.0,
       "ykp_orani": 12.2,
@@ -75,8 +75,8 @@
       "dso_delta": 11.5
     },
     "2026/06": {
-      "efm_yuzde": 1.4,
-      "icr_kati": 82.12,
+      "efm_yuzde": 1.1,
+      "icr_kati": 110.98,
       "tahakkuk_orani": -15.02,
       "aga_orani": 10.1,
       "ykp_orani": 0.0,

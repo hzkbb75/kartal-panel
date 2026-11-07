@@ -1,10 +1,10 @@
 {
   "kod": "ASELS",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 0.91,
+      "efm_yuzde": 93.5,
+      "icr_kati": 1.61,
       "tahakkuk_orani": -1.21,
       "aga_orani": 0.0,
       "ykp_orani": 37.2,
@@ -13,10 +13,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 12.1,
       "iliskili_orani": 0.0,
-      "dts_skor": 30,
+      "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%37.2).",
-        "🔴 Faiz karşılama oranı 0.91x (ICR zayıf)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%37.2)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 7.74 Mr ₺ (5.0x Amortisman)<br><strong>MDV:</strong> 41.53 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -28,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 0.99,
+      "efm_yuzde": 90.8,
+      "icr_kati": 1.79,
       "tahakkuk_orani": -4.0,
       "aga_orani": 13.8,
       "ykp_orani": 34.3,
@@ -38,9 +37,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 10.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 0,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.99x (ICR zayıf)."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 16.99 Mr ₺ (5.7x Amortisman)<br><strong>MDV:</strong> 45.72 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -52,8 +51,8 @@
       "dso_delta": -17.2
     },
     "2026/03": {
-      "efm_yuzde": 63.9,
-      "icr_kati": 1.42,
+      "efm_yuzde": 31.1,
+      "icr_kati": 2.92,
       "tahakkuk_orani": -0.07,
       "aga_orani": 218.9,
       "ykp_orani": 37.8,
@@ -62,11 +61,10 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 7.6,
       "iliskili_orani": 0.0,
-      "dts_skor": 45,
+      "dts_skor": 30,
       "uyarilar": [
         "🟡 Kağıt üzeri kâr payı yüksek (%37.8).",
-        "🟡 Alacak-Ciro makası +%35.0 açıldı (DSO: 110.4 gün).",
-        "🔴 Faiz karşılama oranı 1.42x (ICR zayıf)."
+        "🟡 Alacak-Ciro makası +%35.0 açıldı (DSO: 110.4 gün)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 13.08 Mr ₺ (6.9x Amortisman)<br><strong>MDV:</strong> 74.87 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -78,8 +76,8 @@
       "dso_delta": 42.9
     },
     "2026/06": {
-      "efm_yuzde": 33.4,
-      "icr_kati": 2.38,
+      "efm_yuzde": 18.3,
+      "icr_kati": 4.33,
       "tahakkuk_orani": -0.14,
       "aga_orani": 107.2,
       "ykp_orani": 14.2,
@@ -99,9 +97,12 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %7.7 (23.64 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.55x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟡 Alacak-Ciro makası +%54.9 açıldı (DSO: 97.3 gün)."
+        "🟢 KARAR MEKANİZMASI [TAŞINAN HİSSE — KADEMELİ SAT (DİPTE)]: 4 çeyreklik faaliyet/dipnot karnesi onaylandı (DTS: 15/100 | F-Skor: 6/9 | Hibrit Puan: 60.5). Mevcut Pay: %6.56 → Hedef Pay: %1.00 (Pazartesi: -82 lot).",
+        "🟢 4 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/06): DTS 15/100 puan, Alacak tahsil süresi 97.3 gün (+12.6g değişim) ve ICR 4.33x düzeyinde.",
+        "🟢 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 7.6x (agresif kapasite artışı), İhracat payı %17.2 ve Net YPP/ÖZK %+3.6 ile dengeli.",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %-0.1 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
-      "dts_delta": -30,
+      "dts_delta": -15,
       "dso_delta": -13.1
     }
   }

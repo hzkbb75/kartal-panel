@@ -1,10 +1,10 @@
 {
   "kod": "KOTON",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 10.5,
-      "icr_kati": 2.32,
+      "efm_yuzde": 8.0,
+      "icr_kati": 3.05,
       "tahakkuk_orani": -2.53,
       "aga_orani": 0.0,
       "ykp_orani": 0.3,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 21.7,
-      "icr_kati": 3.12,
+      "efm_yuzde": 16.7,
+      "icr_kati": 4.08,
       "tahakkuk_orani": -6.24,
       "aga_orani": 1.7,
       "ykp_orani": 0.3,
@@ -51,8 +51,8 @@
       "dso_delta": -3.3
     },
     "2026/03": {
-      "efm_yuzde": 6.1,
-      "icr_kati": 6.43,
+      "efm_yuzde": 4.3,
+      "icr_kati": 9.09,
       "tahakkuk_orani": -5.33,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -75,11 +75,11 @@
       "dso_delta": -0.4
     },
     "2026/06": {
-      "efm_yuzde": 10.6,
-      "icr_kati": 4.62,
+      "efm_yuzde": 7.3,
+      "icr_kati": 6.74,
       "tahakkuk_orani": -9.19,
       "aga_orani": 148.8,
-      "ykp_orani": 1.5,
+      "ykp_orani": 0.0,
       "dso_gun": 18.0,
       "acm_makasi": 13.0,
       "serefiye_ozk_orani": 0.0,

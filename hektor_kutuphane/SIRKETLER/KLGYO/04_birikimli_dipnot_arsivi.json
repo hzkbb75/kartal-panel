@@ -1,13 +1,13 @@
 {
   "kod": "KLGYO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.39,
       "tahakkuk_orani": -0.34,
       "aga_orani": 0.0,
-      "ykp_orani": 0.2,
+      "ykp_orani": 0.1,
       "dso_gun": 770.7,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": -0.27,
       "tahakkuk_orani": -0.77,
       "aga_orani": 0.0,
-      "ykp_orani": 0.6,
+      "ykp_orani": 0.4,
       "dso_gun": 612.2,
       "acm_makasi": -24.3,
       "serefiye_ozk_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -158.5
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": -1.69,
+      "efm_yuzde": 42.5,
+      "icr_kati": -6.77,
       "tahakkuk_orani": -0.99,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -1.69x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -6.77x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 11 Mn ₺ (1.5x Amortisman)<br><strong>MDV:</strong> 206 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -75,8 +75,8 @@
       "dso_delta": -516.9
     },
     "2026/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": -0.55,
+      "efm_yuzde": 84.0,
+      "icr_kati": -2.21,
       "tahakkuk_orani": -2.78,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -87,7 +87,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -0.55x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -2.21x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 11 Mn ₺ (0.3x Amortisman)<br><strong>MDV:</strong> 187 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

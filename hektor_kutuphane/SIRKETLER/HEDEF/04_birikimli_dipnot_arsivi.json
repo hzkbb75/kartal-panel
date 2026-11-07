@@ -1,6 +1,6 @@
 {
   "kod": "HEDEF",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
+      "efm_yuzde": 1981.7,
       "icr_kati": 0.51,
       "tahakkuk_orani": -15.31,
       "aga_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": -3.6
     },
     "2026/06": {
-      "efm_yuzde": 47.4,
-      "icr_kati": 3.02,
+      "efm_yuzde": 47.2,
+      "icr_kati": 3.04,
       "tahakkuk_orani": 3.56,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

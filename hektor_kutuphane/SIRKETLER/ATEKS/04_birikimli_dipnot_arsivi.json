@@ -1,10 +1,10 @@
 {
   "kod": "ATEKS",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": -2.86,
+      "efm_yuzde": 84.6,
+      "icr_kati": -3.4,
       "tahakkuk_orani": -2.87,
       "aga_orani": 0.0,
       "ykp_orani": 0.2,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -2.86x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -3.4x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 2.54 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 41.6,
-      "icr_kati": -2.76,
+      "efm_yuzde": 32.1,
+      "icr_kati": -3.57,
       "tahakkuk_orani": -2.03,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -2.76x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -3.57x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 2.68 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -75,8 +75,8 @@
       "dso_delta": 1.4
     },
     "2026/06": {
-      "efm_yuzde": 5.5,
-      "icr_kati": -3.03,
+      "efm_yuzde": 5.1,
+      "icr_kati": -3.3,
       "tahakkuk_orani": 0.73,
       "aga_orani": 0.0,
       "ykp_orani": 0.5,
@@ -87,7 +87,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -3.03x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -3.3x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 19 Mn ₺ (0.3x Amortisman)<br><strong>MDV:</strong> 5.46 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

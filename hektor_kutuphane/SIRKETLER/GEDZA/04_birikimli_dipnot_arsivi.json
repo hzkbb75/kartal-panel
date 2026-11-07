@@ -1,6 +1,6 @@
 {
   "kod": "GEDZA",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -2.68,
       "aga_orani": 0.0,
-      "ykp_orani": 1.5,
+      "ykp_orani": 0.0,
       "dso_gun": 87.2,
       "acm_makasi": 5.8,
       "serefiye_ozk_orani": 2.1,
@@ -79,7 +79,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": 7.21,
       "aga_orani": 1.2,
-      "ykp_orani": 7.2,
+      "ykp_orani": 7.1,
       "dso_gun": 114.1,
       "acm_makasi": 32.0,
       "serefiye_ozk_orani": 2.0,

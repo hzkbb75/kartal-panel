@@ -1,10 +1,10 @@
 {
   "kod": "AYDEM",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 11.3,
-      "icr_kati": 2.67,
+      "icr_kati": 2.68,
       "tahakkuk_orani": -3.85,
       "aga_orani": 0.0,
       "ykp_orani": 8.2,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 19.1,
-      "icr_kati": 1.73,
+      "efm_yuzde": 19.0,
+      "icr_kati": 1.75,
       "tahakkuk_orani": -5.81,
       "aga_orani": 7.8,
       "ykp_orani": 17.4,
@@ -55,7 +55,7 @@
       "icr_kati": 17.21,
       "tahakkuk_orani": -3.16,
       "aga_orani": 0.0,
-      "ykp_orani": 8.9,
+      "ykp_orani": 8.3,
       "dso_gun": 51.3,
       "acm_makasi": -13.1,
       "serefiye_ozk_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": -25.3
     },
     "2026/06": {
-      "efm_yuzde": 4.3,
-      "icr_kati": 6.0,
+      "efm_yuzde": 4.2,
+      "icr_kati": 6.08,
       "tahakkuk_orani": 2.54,
       "aga_orani": 0.0,
       "ykp_orani": 79.3,

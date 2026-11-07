@@ -1,6 +1,6 @@
 {
   "kod": "MEYSU",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
+      "efm_yuzde": 250.3,
       "icr_kati": 2.15,
       "tahakkuk_orani": 3394.65,
       "aga_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 60.8,
-      "icr_kati": 1.75,
+      "efm_yuzde": 40.5,
+      "icr_kati": 2.63,
       "tahakkuk_orani": 0.62,
       "aga_orani": 0.0,
       "ykp_orani": 14.8,
@@ -75,8 +75,8 @@
       "dso_delta": 74.4
     },
     "2026/06": {
-      "efm_yuzde": 73.7,
-      "icr_kati": 1.55,
+      "efm_yuzde": 48.0,
+      "icr_kati": 2.37,
       "tahakkuk_orani": 1.93,
       "aga_orani": 3.2,
       "ykp_orani": 23.6,

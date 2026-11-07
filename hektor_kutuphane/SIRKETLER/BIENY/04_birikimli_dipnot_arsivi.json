@@ -1,13 +1,13 @@
 {
   "kod": "BIENY",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 69.6,
-      "icr_kati": 0.25,
+      "efm_yuzde": 55.9,
+      "icr_kati": 0.31,
       "tahakkuk_orani": -2.76,
       "aga_orani": 0.0,
-      "ykp_orani": 97.6,
+      "ykp_orani": 96.3,
       "dso_gun": 124.2,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -15,8 +15,8 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%97.6).",
-        "🔴 Faiz karşılama oranı 0.25x (ICR zayıf)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%96.3).",
+        "🔴 Faiz karşılama oranı 0.31x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 1.23 Mr ₺ (5.5x Amortisman)<br><strong>MDV:</strong> 7.96 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -28,11 +28,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 63.6,
-      "icr_kati": 0.43,
+      "efm_yuzde": 47.0,
+      "icr_kati": 0.58,
       "tahakkuk_orani": -7.09,
       "aga_orani": 0.0,
-      "ykp_orani": 16.1,
+      "ykp_orani": 1.3,
       "dso_gun": 176.2,
       "acm_makasi": 49.1,
       "serefiye_ozk_orani": 0.0,
@@ -41,7 +41,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%49.1 açıldı (DSO: 176.2 gün).",
-        "🔴 Faiz karşılama oranı 0.43x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.58x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 2.59 Mr ₺ (5.4x Amortisman)<br><strong>MDV:</strong> 9.24 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -53,8 +53,8 @@
       "dso_delta": 52.0
     },
     "2026/03": {
-      "efm_yuzde": 8.6,
-      "icr_kati": 2.79,
+      "efm_yuzde": 5.8,
+      "icr_kati": 4.15,
       "tahakkuk_orani": -0.68,
       "aga_orani": 1.9,
       "ykp_orani": 41.5,
@@ -78,8 +78,8 @@
       "dso_delta": 33.5
     },
     "2026/06": {
-      "efm_yuzde": 19.7,
-      "icr_kati": 1.15,
+      "efm_yuzde": 15.0,
+      "icr_kati": 1.5,
       "tahakkuk_orani": 3.67,
       "aga_orani": 0.4,
       "ykp_orani": 20.4,
@@ -88,10 +88,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 2.6,
       "iliskili_orani": 0.0,
-      "dts_skor": 30,
+      "dts_skor": 15,
       "uyarilar": [
-        "🟡 Alacak-Ciro makası +%39.0 açıldı (DSO: 237.3 gün).",
-        "🔴 Faiz karşılama oranı 1.15x (ICR zayıf)."
+        "🟡 Alacak-Ciro makası +%39.0 açıldı (DSO: 237.3 gün)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 392 Mn ₺ (0.7x Amortisman)<br><strong>MDV:</strong> 12.77 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -103,7 +102,7 @@
         "🟡 Alacak-Ciro makası +%39.0 açıldı (DSO: 237.3 gün).",
         "🔴 Faiz karşılama oranı 1.15x (ICR zayıf)."
       ],
-      "dts_delta": 0,
+      "dts_delta": -15,
       "dso_delta": 27.6
     }
   }

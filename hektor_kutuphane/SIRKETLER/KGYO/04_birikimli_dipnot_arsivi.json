@@ -1,6 +1,6 @@
 {
   "kod": "KGYO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 48.6
     },
     "2026/03": {
-      "efm_yuzde": 76.1,
-      "icr_kati": 0.35,
+      "efm_yuzde": 19.0,
+      "icr_kati": 1.4,
       "tahakkuk_orani": 2.47,
       "aga_orani": 0.4,
       "ykp_orani": 75.9,
@@ -64,7 +64,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Kağıt üzeri kâr payı yüksek (%75.9).",
-        "🔴 Faiz karşılama oranı 0.35x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.4x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 14 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -76,8 +76,8 @@
       "dso_delta": -113.6
     },
     "2026/06": {
-      "efm_yuzde": 14.5,
-      "icr_kati": 1.02,
+      "efm_yuzde": 5.0,
+      "icr_kati": 2.95,
       "tahakkuk_orani": 9.39,
       "aga_orani": 0.0,
       "ykp_orani": 15.3,
@@ -86,10 +86,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 1.1,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 20,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%9.39): Kâr nakde dönüşmüyor.",
-        "🔴 Faiz karşılama oranı 1.02x (ICR zayıf)."
+        "🔴 Tahakkuk anomalisi (%9.39): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 13 Mn ₺ (2.8x Amortisman)<br><strong>MDV:</strong> 14 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -101,7 +100,7 @@
         "🔴 Tahakkuk anomalisi (%9.39): Kâr nakde dönüşmüyor.",
         "🔴 Faiz karşılama oranı 1.02x (ICR zayıf)."
       ],
-      "dts_delta": 5,
+      "dts_delta": -10,
       "dso_delta": 3.0
     }
   }

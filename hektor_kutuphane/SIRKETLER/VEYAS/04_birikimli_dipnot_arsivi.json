@@ -1,6 +1,6 @@
 {
   "kod": "VEYAS",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -52,8 +52,8 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 1.22,
+      "efm_yuzde": 121.8,
+      "icr_kati": 1.56,
       "tahakkuk_orani": 6.51,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -62,10 +62,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 4.5,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 20,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%6.51): Kâr nakde dönüşmüyor.",
-        "🔴 Faiz karşılama oranı 1.22x (ICR zayıf)."
+        "🔴 Tahakkuk anomalisi (%6.51): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 281 Mn ₺ (8.8x Amortisman)<br><strong>MDV:</strong> 615 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -73,12 +72,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -234 Mn ₺ (ÖZK %-1.5)<br><strong>Ham YPP:</strong> -234 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %4.5 (701 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.45x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 35,
+      "dts_delta": 20,
       "dso_delta": 91.0
     },
     "2026/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 1.36,
+      "efm_yuzde": 94.5,
+      "icr_kati": 1.63,
       "tahakkuk_orani": 6.28,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -87,10 +86,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 4.7,
       "iliskili_orani": 0.0,
-      "dts_skor": 35,
+      "dts_skor": 20,
       "uyarilar": [
-        "🔴 Tahakkuk anomalisi (%6.28): Kâr nakde dönüşmüyor.",
-        "🔴 Faiz karşılama oranı 1.36x (ICR zayıf)."
+        "🔴 Tahakkuk anomalisi (%6.28): Kâr nakde dönüşmüyor."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 330 Mn ₺ (4.7x Amortisman)<br><strong>MDV:</strong> 621 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

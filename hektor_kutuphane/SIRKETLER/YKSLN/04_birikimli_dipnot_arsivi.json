@@ -1,6 +1,6 @@
 {
   "kod": "YKSLN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -1.3
     },
     "2026/03": {
-      "efm_yuzde": 7.2,
-      "icr_kati": 22.1,
+      "efm_yuzde": 4.0,
+      "icr_kati": 39.58,
       "tahakkuk_orani": 2.73,
       "aga_orani": 0.4,
       "ykp_orani": 6.7,
@@ -75,8 +75,8 @@
       "dso_delta": 15.1
     },
     "2026/06": {
-      "efm_yuzde": 64.7,
-      "icr_kati": 2.22,
+      "efm_yuzde": 39.3,
+      "icr_kati": 3.65,
       "tahakkuk_orani": -2.69,
       "aga_orani": 0.2,
       "ykp_orani": 2.4,
@@ -96,7 +96,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.2 (2 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.00x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / DİPTE (2/3)]: 4 çeyreklik faaliyet/dipnot taraması temiz (DTS: 0/100 | F-Skor: 9/9 | Hibrit Puan: 66.0). Kalkan Hedef Ağırlığı: %1.81 (+8,118 lot).",
+        "🟢 4 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/06): DTS 0/100 puan, Alacak tahsil süresi 91.4 gün (+4.6g değişim) ve ICR 3.65x düzeyinde.",
+        "🟡 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 1.4x (kapasite korunumu), İhracat payı %4.4 ve Net YPP/ÖZK %-20.0 (Kur açık pozisyonu izlenmeli).",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %-2.7 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": -15,
       "dso_delta": -9.2

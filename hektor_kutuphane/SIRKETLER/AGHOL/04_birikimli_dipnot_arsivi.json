@@ -1,6 +1,6 @@
 {
   "kod": "AGHOL",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": 25.57,
       "tahakkuk_orani": -1.94,
       "aga_orani": 128.7,
-      "ykp_orani": 48.1,
+      "ykp_orani": 46.7,
       "dso_gun": 21.7,
       "acm_makasi": 12.5,
       "serefiye_ozk_orani": 36.5,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%48.1)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%46.7)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 19.38 Mr ₺ (1.1x Amortisman)<br><strong>MDV:</strong> 127.91 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -51,8 +51,8 @@
       "dso_delta": 2.0
     },
     "2026/03": {
-      "efm_yuzde": 8.4,
-      "icr_kati": 2.67,
+      "efm_yuzde": 5.5,
+      "icr_kati": 4.09,
       "tahakkuk_orani": 0.0,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -75,11 +75,11 @@
       "dso_delta": 5.2
     },
     "2026/06": {
-      "efm_yuzde": 1.5,
-      "icr_kati": 19.12,
+      "efm_yuzde": 1.0,
+      "icr_kati": 29.63,
       "tahakkuk_orani": -2.38,
       "aga_orani": 597.5,
-      "ykp_orani": 3.4,
+      "ykp_orani": 0.0,
       "dso_gun": 29.6,
       "acm_makasi": 37.6,
       "serefiye_ozk_orani": 35.9,

@@ -1,6 +1,6 @@
 {
   "kod": "AKFYE",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 10.6,
-      "icr_kati": 2.67,
+      "efm_yuzde": 10.2,
+      "icr_kati": 2.79,
       "tahakkuk_orani": 0.18,
       "aga_orani": 22.7,
       "ykp_orani": 48.6,
@@ -51,8 +51,8 @@
       "dso_delta": 10.5
     },
     "2026/03": {
-      "efm_yuzde": 3.8,
-      "icr_kati": 7.35,
+      "efm_yuzde": 3.7,
+      "icr_kati": 7.63,
       "tahakkuk_orani": 0.18,
       "aga_orani": 441.6,
       "ykp_orani": 61.2,
@@ -75,8 +75,8 @@
       "dso_delta": -11.7
     },
     "2026/06": {
-      "efm_yuzde": 10.5,
-      "icr_kati": 2.41,
+      "efm_yuzde": 10.1,
+      "icr_kati": 2.51,
       "tahakkuk_orani": 0.27,
       "aga_orani": 378.2,
       "ykp_orani": 85.6,

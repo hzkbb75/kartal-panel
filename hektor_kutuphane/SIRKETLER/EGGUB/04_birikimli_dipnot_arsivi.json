@@ -1,6 +1,6 @@
 {
   "kod": "EGGUB",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 17.6,
-      "icr_kati": 10.77,
+      "efm_yuzde": 16.4,
+      "icr_kati": 11.55,
       "tahakkuk_orani": -12.16,
       "aga_orani": 0.0,
-      "ykp_orani": 7.4,
+      "ykp_orani": 5.7,
       "dso_gun": 17.9,
       "acm_makasi": 13.5,
       "serefiye_ozk_orani": 7.8,
@@ -55,7 +55,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -1.21,
       "aga_orani": 2.7,
-      "ykp_orani": 8.2,
+      "ykp_orani": 7.0,
       "dso_gun": 23.7,
       "acm_makasi": 47.6,
       "serefiye_ozk_orani": 7.3,
@@ -79,7 +79,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -6.76,
       "aga_orani": 1.0,
-      "ykp_orani": 2.7,
+      "ykp_orani": 0.6,
       "dso_gun": 21.6,
       "acm_makasi": 22.7,
       "serefiye_ozk_orani": 7.3,
@@ -96,7 +96,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.1 (213 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.12x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / DİPTE (2/3)]: 4 çeyreklik faaliyet/dipnot taraması temiz (DTS: 0/100 | F-Skor: 6/9 | Hibrit Puan: 76.0). Kalkan Hedef Ağırlığı: %1.25 (+133 lot).",
+        "🟢 4 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/06): DTS 0/100 puan, Alacak tahsil süresi 21.6 gün (+5.9g değişim) ve ICR 9.90x düzeyinde.",
+        "🟢 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 1.5x (agresif kapasite artışı), Konsolide/Yurt içi satış yapısı ve Net YPP/ÖZK %+1.9 ile dengeli.",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %-6.8 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": 0,
       "dso_delta": -2.1

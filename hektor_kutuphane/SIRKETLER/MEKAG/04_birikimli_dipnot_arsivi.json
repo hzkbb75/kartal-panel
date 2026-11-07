@@ -1,13 +1,13 @@
 {
   "kod": "MEKAG",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 9.9,
       "tahakkuk_orani": -17.57,
       "aga_orani": 0.0,
-      "ykp_orani": 31.3,
+      "ykp_orani": 22.5,
       "dso_gun": 32.7,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": 0.21,
       "tahakkuk_orani": -13.73,
       "aga_orani": 0.0,
-      "ykp_orani": 2.6,
+      "ykp_orani": 2.3,
       "dso_gun": 31.8,
       "acm_makasi": -2.6,
       "serefiye_ozk_orani": 0.0,

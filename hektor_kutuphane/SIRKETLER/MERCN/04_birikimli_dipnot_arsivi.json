@@ -1,13 +1,13 @@
 {
   "kod": "MERCN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 36.0,
-      "icr_kati": 2.59,
+      "efm_yuzde": 30.4,
+      "icr_kati": 3.07,
       "tahakkuk_orani": -3.36,
       "aga_orani": 0.0,
-      "ykp_orani": 27.5,
+      "ykp_orani": 0.0,
       "dso_gun": 56.3,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 41.9,
-      "icr_kati": 1.54,
+      "efm_yuzde": 35.0,
+      "icr_kati": 1.84,
       "tahakkuk_orani": -1.54,
       "aga_orani": 0.0,
-      "ykp_orani": 26.5,
+      "ykp_orani": 10.7,
       "dso_gun": 52.9,
       "acm_makasi": -6.5,
       "serefiye_ozk_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -3.4
     },
     "2026/03": {
-      "efm_yuzde": 10.2,
-      "icr_kati": 2.75,
+      "efm_yuzde": 10.1,
+      "icr_kati": 2.78,
       "tahakkuk_orani": 6.54,
       "aga_orani": 34.5,
       "ykp_orani": 1.9,
@@ -76,11 +76,11 @@
       "dso_delta": 35.4
     },
     "2026/06": {
-      "efm_yuzde": 12.2,
-      "icr_kati": 1.99,
+      "efm_yuzde": 10.8,
+      "icr_kati": 2.25,
       "tahakkuk_orani": 6.27,
       "aga_orani": 26.6,
-      "ykp_orani": 14.0,
+      "ykp_orani": 12.4,
       "dso_gun": 68.8,
       "acm_makasi": 30.7,
       "serefiye_ozk_orani": 0.0,

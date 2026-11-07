@@ -1,10 +1,10 @@
 {
   "kod": "FRIGO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 29.4,
-      "icr_kati": -1.36,
+      "efm_yuzde": 22.8,
+      "icr_kati": -1.76,
       "tahakkuk_orani": 8.88,
       "aga_orani": 0.0,
       "ykp_orani": 1.0,
@@ -16,7 +16,7 @@
       "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%8.88): Kâr nakde dönüşmüyor.",
-        "🔴 Faiz karşılama oranı -1.36x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -1.76x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 12 Mn ₺ (0.4x Amortisman)<br><strong>MDV:</strong> 779 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -28,8 +28,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 49.6,
-      "icr_kati": -1.2,
+      "efm_yuzde": 41.6,
+      "icr_kati": -1.43,
       "tahakkuk_orani": -13.62,
       "aga_orani": 0.0,
       "ykp_orani": 2.8,
@@ -40,7 +40,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -1.2x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -1.43x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 57 Mn ₺ (1.1x Amortisman)<br><strong>MDV:</strong> 844 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -76,8 +76,8 @@
       "dso_delta": 11.9
     },
     "2026/06": {
-      "efm_yuzde": 31.1,
-      "icr_kati": -0.29,
+      "efm_yuzde": 21.1,
+      "icr_kati": -0.42,
       "tahakkuk_orani": -6.05,
       "aga_orani": 0.0,
       "ykp_orani": 0.6,
@@ -88,7 +88,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -0.29x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.42x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 68 Mn ₺ (1.3x Amortisman)<br><strong>MDV:</strong> 1.19 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",

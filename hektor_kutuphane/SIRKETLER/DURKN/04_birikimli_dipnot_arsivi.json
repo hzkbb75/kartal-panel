@@ -1,10 +1,10 @@
 {
   "kod": "DURKN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 15.8,
-      "icr_kati": 2.54,
+      "efm_yuzde": 13.5,
+      "icr_kati": 2.98,
       "tahakkuk_orani": 3.06,
       "aga_orani": 0.0,
       "ykp_orani": 23.9,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 32.2,
-      "icr_kati": 1.13,
+      "efm_yuzde": 29.0,
+      "icr_kati": 1.25,
       "tahakkuk_orani": 5.64,
       "aga_orani": 3.5,
       "ykp_orani": 26.5,
@@ -40,7 +40,7 @@
       "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%5.64): Kâr nakde dönüşmüyor.",
-        "🔴 Faiz karşılama oranı 1.13x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.25x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 107 Mn ₺ (3.4x Amortisman)<br><strong>MDV:</strong> 1.23 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -76,11 +76,11 @@
       "dso_delta": 103.3
     },
     "2026/06": {
-      "efm_yuzde": 9.6,
-      "icr_kati": 0.82,
+      "efm_yuzde": 9.3,
+      "icr_kati": 0.85,
       "tahakkuk_orani": 0.3,
       "aga_orani": 83.9,
-      "ykp_orani": 8.8,
+      "ykp_orani": 8.6,
       "dso_gun": 240.1,
       "acm_makasi": 60.6,
       "serefiye_ozk_orani": 0.0,
@@ -89,7 +89,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%60.6 açıldı (DSO: 240.1 gün).",
-        "🔴 Faiz karşılama oranı 0.82x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.85x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 98 Mn ₺ (3.0x Amortisman)<br><strong>MDV:</strong> 1.71 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

@@ -1,9 +1,9 @@
 {
   "kod": "ARFYE",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 95.0,
+      "efm_yuzde": 1052.0,
       "icr_kati": -0.32,
       "tahakkuk_orani": -21307.48,
       "aga_orani": 0.0,
@@ -28,7 +28,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
+      "efm_yuzde": 319.3,
       "icr_kati": -0.19,
       "tahakkuk_orani": -23230.34,
       "aga_orani": 0.0,
@@ -77,8 +77,8 @@
       "dso_delta": 147.9
     },
     "2026/06": {
-      "efm_yuzde": 6.2,
-      "icr_kati": -1.92,
+      "efm_yuzde": 5.9,
+      "icr_kati": -2.03,
       "tahakkuk_orani": 15.85,
       "aga_orani": 0.0,
       "ykp_orani": 0.4,
@@ -90,7 +90,7 @@
       "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%15.85): Kâr nakde dönüşmüyor.",
-        "🔴 Faiz karşılama oranı -1.92x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -2.03x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 11 Mn ₺ (0.5x Amortisman)<br><strong>MDV:</strong> 1.31 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

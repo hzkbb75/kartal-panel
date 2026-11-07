@@ -1,13 +1,13 @@
 {
   "kod": "OYAKC",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 9.9,
       "tahakkuk_orani": 0.8,
       "aga_orani": 0.0,
-      "ykp_orani": 12.2,
+      "ykp_orani": 10.3,
       "dso_gun": 53.1,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 10.7,
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 29.9,
-      "icr_kati": 6.78,
+      "efm_yuzde": 19.9,
+      "icr_kati": 10.16,
       "tahakkuk_orani": 2.52,
       "aga_orani": 2.4,
-      "ykp_orani": 15.3,
+      "ykp_orani": 14.9,
       "dso_gun": 54.5,
       "acm_makasi": 3.0,
       "serefiye_ozk_orani": 10.1,
@@ -55,7 +55,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -0.48,
       "aga_orani": 42.7,
-      "ykp_orani": 7.9,
+      "ykp_orani": 7.8,
       "dso_gun": 74.2,
       "acm_makasi": 31.3,
       "serefiye_ozk_orani": 9.3,

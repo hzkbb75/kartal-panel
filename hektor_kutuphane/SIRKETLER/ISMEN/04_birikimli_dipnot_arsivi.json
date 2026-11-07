@@ -1,10 +1,10 @@
 {
   "kod": "ISMEN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 48.6,
-      "icr_kati": 1.58,
+      "efm_yuzde": 26.5,
+      "icr_kati": 2.89,
       "tahakkuk_orani": 15.51,
       "aga_orani": 0.0,
       "ykp_orani": 28.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 50.1,
-      "icr_kati": 2.21,
+      "efm_yuzde": 20.8,
+      "icr_kati": 5.32,
       "tahakkuk_orani": 11.87,
       "aga_orani": 12.0,
       "ykp_orani": 16.4,
@@ -51,8 +51,8 @@
       "dso_delta": 0.5
     },
     "2026/03": {
-      "efm_yuzde": 28.9,
-      "icr_kati": 1.85,
+      "efm_yuzde": 11.8,
+      "icr_kati": 4.53,
       "tahakkuk_orani": -9.79,
       "aga_orani": 77.1,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 2.3
     },
     "2026/06": {
-      "efm_yuzde": 21.8,
-      "icr_kati": 2.06,
+      "efm_yuzde": 11.8,
+      "icr_kati": 3.83,
       "tahakkuk_orani": 25.62,
       "aga_orani": 22.1,
       "ykp_orani": 0.0,

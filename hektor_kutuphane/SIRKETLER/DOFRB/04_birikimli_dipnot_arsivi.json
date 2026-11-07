@@ -1,6 +1,6 @@
 {
   "kod": "DOFRB",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 11.6,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 14.3,
-      "icr_kati": 1.75,
+      "efm_yuzde": 13.4,
+      "icr_kati": 1.86,
       "tahakkuk_orani": 11.98,
       "aga_orani": 182.5,
       "ykp_orani": 5.2,

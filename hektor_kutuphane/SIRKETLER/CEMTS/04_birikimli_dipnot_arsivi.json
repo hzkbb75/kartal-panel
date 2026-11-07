@@ -1,13 +1,13 @@
 {
   "kod": "CEMTS",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 9.9,
       "tahakkuk_orani": 1.32,
       "aga_orani": 0.0,
-      "ykp_orani": 1.6,
+      "ykp_orani": 0.0,
       "dso_gun": 44.6,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": 1.69,
       "aga_orani": 1.7,
-      "ykp_orani": 1.8,
+      "ykp_orani": 0.0,
       "dso_gun": 42.2,
       "acm_makasi": -6.2,
       "serefiye_ozk_orani": 0.0,
@@ -51,11 +51,11 @@
       "dso_delta": -2.4
     },
     "2026/03": {
-      "efm_yuzde": 69.3,
-      "icr_kati": 0.92,
+      "efm_yuzde": 60.7,
+      "icr_kati": 1.05,
       "tahakkuk_orani": -2.38,
       "aga_orani": 24.3,
-      "ykp_orani": 4.4,
+      "ykp_orani": 0.0,
       "dso_gun": 61.0,
       "acm_makasi": 33.2,
       "serefiye_ozk_orani": 0.0,
@@ -64,7 +64,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%33.2 açıldı (DSO: 61.0 gün).",
-        "🔴 Faiz karşılama oranı 0.92x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.05x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 27 Mn ₺ (0.2x Amortisman)<br><strong>MDV:</strong> 4.06 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -80,7 +80,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -2.53,
       "aga_orani": 0.0,
-      "ykp_orani": 25.4,
+      "ykp_orani": 23.4,
       "dso_gun": 66.1,
       "acm_makasi": 51.4,
       "serefiye_ozk_orani": 0.0,

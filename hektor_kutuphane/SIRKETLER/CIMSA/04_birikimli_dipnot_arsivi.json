@@ -1,13 +1,13 @@
 {
   "kod": "CIMSA",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 7.32,
       "tahakkuk_orani": 1.72,
       "aga_orani": 0.0,
-      "ykp_orani": 12.9,
+      "ykp_orani": 0.0,
       "dso_gun": 51.3,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 18.2,
@@ -31,7 +31,7 @@
       "icr_kati": 16.39,
       "tahakkuk_orani": 0.58,
       "aga_orani": 91.8,
-      "ykp_orani": 4.9,
+      "ykp_orani": 0.0,
       "dso_gun": 54.7,
       "acm_makasi": 7.6,
       "serefiye_ozk_orani": 16.9,
@@ -51,11 +51,11 @@
       "dso_delta": 3.4
     },
     "2026/03": {
-      "efm_yuzde": 7.1,
-      "icr_kati": 3.4,
+      "efm_yuzde": 6.1,
+      "icr_kati": 3.99,
       "tahakkuk_orani": 4.18,
       "aga_orani": 947.4,
-      "ykp_orani": 9.5,
+      "ykp_orani": 0.0,
       "dso_gun": 68.6,
       "acm_makasi": 33.7,
       "serefiye_ozk_orani": 16.9,
@@ -75,11 +75,11 @@
       "dso_delta": 13.9
     },
     "2026/06": {
-      "efm_yuzde": 3.2,
-      "icr_kati": 9.54,
+      "efm_yuzde": 2.6,
+      "icr_kati": 11.56,
       "tahakkuk_orani": 3.63,
       "aga_orani": 102.3,
-      "ykp_orani": 2.8,
+      "ykp_orani": 0.5,
       "dso_gun": 70.8,
       "acm_makasi": 28.0,
       "serefiye_ozk_orani": 16.7,

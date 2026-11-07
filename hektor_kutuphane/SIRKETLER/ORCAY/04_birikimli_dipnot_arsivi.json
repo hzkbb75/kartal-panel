@@ -1,10 +1,10 @@
 {
   "kod": "ORCAY",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 1.09,
+      "efm_yuzde": 221.5,
+      "icr_kati": 1.12,
       "tahakkuk_orani": -20.58,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 1.09x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.12x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 1 Mn ₺ (0.2x Amortisman)<br><strong>MDV:</strong> 323 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 0.87,
+      "efm_yuzde": 166.8,
+      "icr_kati": 0.98,
       "tahakkuk_orani": -29.32,
       "aga_orani": 0.0,
       "ykp_orani": 0.9,
@@ -40,7 +40,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%30.0 açıldı (DSO: 60.2 gün).",
-        "🔴 Faiz karşılama oranı 0.87x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.98x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 4 Mn ₺ (0.3x Amortisman)<br><strong>MDV:</strong> 340 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

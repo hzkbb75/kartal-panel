@@ -1,9 +1,9 @@
 {
   "kod": "EKIM",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 95.0,
+      "efm_yuzde": 101.6,
       "icr_kati": 1.27,
       "tahakkuk_orani": 20795.5,
       "aga_orani": 0.0,
@@ -28,7 +28,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
+      "efm_yuzde": 122.4,
       "icr_kati": 1.15,
       "tahakkuk_orani": -55695.89,
       "aga_orani": 0.0,
@@ -53,8 +53,8 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 31.9,
-      "icr_kati": 1.83,
+      "efm_yuzde": 31.2,
+      "icr_kati": 1.88,
       "tahakkuk_orani": -1.32,
       "aga_orani": 0.2,
       "ykp_orani": 23.4,
@@ -77,8 +77,8 @@
       "dso_delta": 39.0
     },
     "2026/06": {
-      "efm_yuzde": 37.6,
-      "icr_kati": 1.59,
+      "efm_yuzde": 33.3,
+      "icr_kati": 1.8,
       "tahakkuk_orani": -3.93,
       "aga_orani": 0.1,
       "ykp_orani": 29.8,

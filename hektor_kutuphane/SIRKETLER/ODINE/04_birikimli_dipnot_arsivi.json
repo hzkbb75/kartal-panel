@@ -1,13 +1,13 @@
 {
   "kod": "ODINE",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 9.9,
       "tahakkuk_orani": -18.64,
       "aga_orani": 0.0,
-      "ykp_orani": 81.8,
+      "ykp_orani": 71.5,
       "dso_gun": 121.4,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%81.8)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%71.5)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 72 Mn ₺ (1.4x Amortisman)<br><strong>MDV:</strong> 67 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -31,7 +31,7 @@
       "icr_kati": 0.21,
       "tahakkuk_orani": -22.37,
       "aga_orani": 0.0,
-      "ykp_orani": 0.8,
+      "ykp_orani": 0.6,
       "dso_gun": 95.2,
       "acm_makasi": -20.1,
       "serefiye_ozk_orani": 0.0,
@@ -55,7 +55,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -6.67,
       "aga_orani": 21009.4,
-      "ykp_orani": 77.3,
+      "ykp_orani": 67.9,
       "dso_gun": 107.6,
       "acm_makasi": -31.1,
       "serefiye_ozk_orani": 0.0,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%77.3)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%67.9)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 133 Mn ₺ (2.0x Amortisman)<br><strong>MDV:</strong> 85 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -79,7 +79,7 @@
       "icr_kati": 6.2,
       "tahakkuk_orani": -9.45,
       "aga_orani": 0.0,
-      "ykp_orani": 0.7,
+      "ykp_orani": 0.5,
       "dso_gun": 69.3,
       "acm_makasi": -67.1,
       "serefiye_ozk_orani": 4.9,

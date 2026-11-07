@@ -1,6 +1,6 @@
 {
   "kod": "ENDAE",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -1.18,
       "aga_orani": 1.7,
-      "ykp_orani": 74.5,
+      "ykp_orani": 67.3,
       "dso_gun": 20.3,
       "acm_makasi": 757.9,
       "serefiye_ozk_orani": 0.0,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%74.5)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%67.3)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 359 Mn ₺ (1.2x Amortisman)<br><strong>MDV:</strong> 12.38 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -79,7 +79,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -1.94,
       "aga_orani": 15.8,
-      "ykp_orani": 91.8,
+      "ykp_orani": 90.7,
       "dso_gun": 24.5,
       "acm_makasi": 18.9,
       "serefiye_ozk_orani": 0.0,
@@ -87,7 +87,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%91.8)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%90.7)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 42 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 16.07 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

@@ -1,10 +1,10 @@
 {
   "kod": "RGYAS",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 3.4,
-      "icr_kati": 15.7,
+      "efm_yuzde": 3.3,
+      "icr_kati": 16.29,
       "tahakkuk_orani": -0.53,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 31.7,
-      "icr_kati": 3.75,
+      "efm_yuzde": 30.4,
+      "icr_kati": 3.91,
       "tahakkuk_orani": 0.44,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 20.1,
-      "icr_kati": 2.41,
+      "efm_yuzde": 19.6,
+      "icr_kati": 2.48,
       "tahakkuk_orani": 0.36,
       "aga_orani": 0.2,
       "ykp_orani": 8.6,
@@ -96,7 +96,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.3 (412 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.04x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / DİPTE (2/3)]: 4 çeyreklik faaliyet/dipnot taraması temiz (DTS: 0/100 | F-Skor: 6/9 | Hibrit Puan: 80.5). Kalkan Hedef Ağırlığı: %1.35 (+70 lot).",
+        "🟢 4 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/06): DTS 0/100 puan, Alacak tahsil süresi 24.4 gün (+5.3g değişim) ve ICR 6.47x düzeyinde.",
+        "🟡 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 1.0x (kapasite korunumu), Konsolide/Yurt içi satış yapısı ve Net YPP/ÖZK %-15.9 (Kur açık pozisyonu izlenmeli).",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %+1.6 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": 0,
       "dso_delta": 1.8

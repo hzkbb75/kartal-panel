@@ -1,6 +1,6 @@
 {
   "kod": "KONKA",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -55,7 +55,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": 3.15,
       "aga_orani": 3.8,
-      "ykp_orani": 72.7,
+      "ykp_orani": 72.6,
       "dso_gun": 94.9,
       "acm_makasi": 45.9,
       "serefiye_ozk_orani": 0.0,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%72.7).",
+        "🟡 Kağıt üzeri kâr payı yüksek (%72.6).",
         "🟡 Alacak-Ciro makası +%45.9 açıldı (DSO: 94.9 gün)."
       ],
       "pdf_dipnot_notlari": {
@@ -80,7 +80,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": 3.49,
       "aga_orani": 0.9,
-      "ykp_orani": 45.9,
+      "ykp_orani": 45.8,
       "dso_gun": 115.8,
       "acm_makasi": 44.3,
       "serefiye_ozk_orani": 0.0,
@@ -88,7 +88,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%45.9).",
+        "🟡 Kağıt üzeri kâr payı yüksek (%45.8).",
         "🟡 Alacak-Ciro makası +%44.3 açıldı (DSO: 115.8 gün)."
       ],
       "pdf_dipnot_notlari": {

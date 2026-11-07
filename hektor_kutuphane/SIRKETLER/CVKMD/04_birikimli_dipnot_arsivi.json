@@ -1,13 +1,13 @@
 {
   "kod": "CVKMD",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 4.76,
       "tahakkuk_orani": 0.19,
       "aga_orani": 0.0,
-      "ykp_orani": 14.8,
+      "ykp_orani": 10.6,
       "dso_gun": 29.1,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 24.8,
@@ -31,7 +31,7 @@
       "icr_kati": 7.85,
       "tahakkuk_orani": -13.31,
       "aga_orani": 33.9,
-      "ykp_orani": 25.0,
+      "ykp_orani": 19.7,
       "dso_gun": 19.0,
       "acm_makasi": -38.8,
       "serefiye_ozk_orani": 23.9,
@@ -55,7 +55,7 @@
       "icr_kati": 2.45,
       "tahakkuk_orani": -0.21,
       "aga_orani": 2873.7,
-      "ykp_orani": 6.6,
+      "ykp_orani": 0.0,
       "dso_gun": 6.8,
       "acm_makasi": -60.2,
       "serefiye_ozk_orani": 24.1,
@@ -75,11 +75,11 @@
       "dso_delta": -12.2
     },
     "2026/06": {
-      "efm_yuzde": 9.5,
-      "icr_kati": 5.39,
+      "efm_yuzde": 7.6,
+      "icr_kati": 6.73,
       "tahakkuk_orani": 6.16,
       "aga_orani": 317.6,
-      "ykp_orani": 1.3,
+      "ykp_orani": 0.0,
       "dso_gun": 3.5,
       "acm_makasi": -106.1,
       "serefiye_ozk_orani": 20.4,

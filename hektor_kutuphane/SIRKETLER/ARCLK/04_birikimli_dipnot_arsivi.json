@@ -1,13 +1,13 @@
 {
   "kod": "ARCLK",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 10.4,
-      "icr_kati": 2.14,
+      "efm_yuzde": 7.3,
+      "icr_kati": 3.03,
       "tahakkuk_orani": 2.46,
       "aga_orani": 0.0,
-      "ykp_orani": 1.2,
+      "ykp_orani": 1.0,
       "dso_gun": 72.1,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 12.9,
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 10.5,
-      "icr_kati": 1.83,
+      "efm_yuzde": 7.8,
+      "icr_kati": 2.46,
       "tahakkuk_orani": 3.6,
       "aga_orani": 46.3,
-      "ykp_orani": 1.3,
+      "ykp_orani": 1.0,
       "dso_gun": 76.4,
       "acm_makasi": 6.5,
       "serefiye_ozk_orani": 14.1,
@@ -55,7 +55,7 @@
       "icr_kati": 1.19,
       "tahakkuk_orani": 2.6,
       "aga_orani": 6154.1,
-      "ykp_orani": 5.8,
+      "ykp_orani": 0.0,
       "dso_gun": 87.9,
       "acm_makasi": 21.4,
       "serefiye_ozk_orani": 15.0,
@@ -75,11 +75,11 @@
       "dso_delta": 11.5
     },
     "2026/06": {
-      "efm_yuzde": 1.8,
-      "icr_kati": 7.09,
+      "efm_yuzde": 1.3,
+      "icr_kati": 9.58,
       "tahakkuk_orani": 2.26,
       "aga_orani": 163.0,
-      "ykp_orani": 0.4,
+      "ykp_orani": 0.0,
       "dso_gun": 93.3,
       "acm_makasi": 19.9,
       "serefiye_ozk_orani": 6.8,

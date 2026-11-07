@@ -1,10 +1,10 @@
 {
   "kod": "TTRAK",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 2.6,
-      "icr_kati": 10.13,
+      "efm_yuzde": 2.1,
+      "icr_kati": 12.12,
       "tahakkuk_orani": -2.51,
       "aga_orani": 0.0,
       "ykp_orani": 22.8,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 13.9,
-      "icr_kati": 2.67,
+      "efm_yuzde": 11.7,
+      "icr_kati": 3.17,
       "tahakkuk_orani": -7.46,
       "aga_orani": 0.0,
       "ykp_orani": 3.4,
@@ -51,8 +51,8 @@
       "dso_delta": -12.0
     },
     "2026/03": {
-      "efm_yuzde": 3.9,
-      "icr_kati": -0.13,
+      "efm_yuzde": 3.2,
+      "icr_kati": -0.16,
       "tahakkuk_orani": -5.22,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -0.13x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.16x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 427 Mn ₺ (0.5x Amortisman)<br><strong>MDV:</strong> 11.98 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -75,8 +75,8 @@
       "dso_delta": 24.0
     },
     "2026/06": {
-      "efm_yuzde": 4.2,
-      "icr_kati": 1.75,
+      "efm_yuzde": 3.4,
+      "icr_kati": 2.15,
       "tahakkuk_orani": -7.46,
       "aga_orani": 0.0,
       "ykp_orani": 1.8,

@@ -1,10 +1,10 @@
 {
   "kod": "KUVVA",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 0.46,
+      "efm_yuzde": 206.0,
+      "icr_kati": 0.84,
       "tahakkuk_orani": -10.74,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.46x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.84x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 560 Mn ₺ (4.7x Amortisman)<br><strong>MDV:</strong> 1.55 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 94.0,
-      "icr_kati": 1.93,
+      "efm_yuzde": 50.6,
+      "icr_kati": 3.57,
       "tahakkuk_orani": 1.03,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -55.1
     },
     "2026/03": {
-      "efm_yuzde": 1.2,
-      "icr_kati": 95.46,
+      "efm_yuzde": 0.7,
+      "icr_kati": 130.97,
       "tahakkuk_orani": 0.36,
       "aga_orani": 0.0,
       "ykp_orani": 0.5,
@@ -75,8 +75,8 @@
       "dso_delta": 342.8
     },
     "2026/06": {
-      "efm_yuzde": 1.1,
-      "icr_kati": 50.44,
+      "efm_yuzde": 0.6,
+      "icr_kati": 86.29,
       "tahakkuk_orani": 0.38,
       "aga_orani": 0.0,
       "ykp_orani": 0.6,

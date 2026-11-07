@@ -1,6 +1,6 @@
 {
   "kod": "VBTYZ",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 2.2
     },
     "2026/06": {
-      "efm_yuzde": 9.0,
-      "icr_kati": 11.95,
+      "efm_yuzde": 5.8,
+      "icr_kati": 18.68,
       "tahakkuk_orani": 5.81,
       "aga_orani": 0.0,
       "ykp_orani": 0.3,

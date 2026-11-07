@@ -1,10 +1,10 @@
 {
   "kod": "KRDMB",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 0.4,
-      "icr_kati": 20.74,
+      "efm_yuzde": 0.2,
+      "icr_kati": 24.66,
       "tahakkuk_orani": 1.55,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -96,7 +96,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.3 (266 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.31x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%71.6)."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / DİPTE (2/3)]: 4 çeyreklik faaliyet/dipnot taraması temiz (DTS: 15/100 | F-Skor: 7/9 | Hibrit Puan: 68.0). Kalkan Hedef Ağırlığı: %1.30 (+207 lot).",
+        "🟢 4 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/06): DTS 15/100 puan, Alacak tahsil süresi 43.7 gün (+14.2g değişim) ve ICR 21.86x düzeyinde.",
+        "🟡 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 1.1x (kapasite korunumu), İhracat payı %2.5 ve Net YPP/ÖZK %-19.1 (Kur açık pozisyonu izlenmeli).",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %-1.5 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": 0,
       "dso_delta": -9.9

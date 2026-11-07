@@ -1,13 +1,13 @@
 {
   "kod": "ATATR",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 9.9,
       "tahakkuk_orani": -13282.73,
       "aga_orani": 0.0,
-      "ykp_orani": 25.1,
+      "ykp_orani": 24.0,
       "dso_gun": 0.0,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": 10.98,
       "tahakkuk_orani": 27373.23,
       "aga_orani": 0.0,
-      "ykp_orani": 2.7,
+      "ykp_orani": 2.5,
       "dso_gun": 0.0,
       "acm_makasi": -67.3,
       "serefiye_ozk_orani": 0.0,

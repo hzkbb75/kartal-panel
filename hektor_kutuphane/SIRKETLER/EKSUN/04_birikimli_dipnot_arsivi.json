@@ -1,13 +1,13 @@
 {
   "kod": "EKSUN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 53.0,
-      "icr_kati": 0.58,
+      "efm_yuzde": 44.3,
+      "icr_kati": 0.69,
       "tahakkuk_orani": -6.57,
       "aga_orani": 0.0,
-      "ykp_orani": 18.5,
+      "ykp_orani": 18.4,
       "dso_gun": 38.5,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 1.7,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.58x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.69x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 268 Mn ₺ (5.7x Amortisman)<br><strong>MDV:</strong> 787 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -51,8 +51,8 @@
       "dso_delta": -6.1
     },
     "2026/03": {
-      "efm_yuzde": 10.6,
-      "icr_kati": 2.74,
+      "efm_yuzde": 9.3,
+      "icr_kati": 3.13,
       "tahakkuk_orani": -0.48,
       "aga_orani": 39.8,
       "ykp_orani": 1.9,
@@ -75,8 +75,8 @@
       "dso_delta": 18.7
     },
     "2026/06": {
-      "efm_yuzde": 21.8,
-      "icr_kati": 2.77,
+      "efm_yuzde": 16.2,
+      "icr_kati": 3.73,
       "tahakkuk_orani": -10.08,
       "aga_orani": 18.5,
       "ykp_orani": 1.2,

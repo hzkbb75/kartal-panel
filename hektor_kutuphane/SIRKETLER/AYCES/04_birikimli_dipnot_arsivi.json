@@ -1,6 +1,6 @@
 {
   "kod": "AYCES",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -10.0
     },
     "2026/03": {
-      "efm_yuzde": 63.1,
-      "icr_kati": -1.96,
+      "efm_yuzde": 37.5,
+      "icr_kati": -3.29,
       "tahakkuk_orani": -0.8,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -1.96x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -3.29x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 3 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 6.49 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -75,8 +75,8 @@
       "dso_delta": 8.4
     },
     "2026/06": {
-      "efm_yuzde": 31.0,
-      "icr_kati": -3.49,
+      "efm_yuzde": 19.9,
+      "icr_kati": -5.45,
       "tahakkuk_orani": -1.79,
       "aga_orani": 0.0,
       "ykp_orani": 0.4,
@@ -87,7 +87,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -3.49x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -5.45x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 9 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 6.91 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

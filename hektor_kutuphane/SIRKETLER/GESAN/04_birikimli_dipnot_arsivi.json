@@ -1,10 +1,10 @@
 {
   "kod": "GESAN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 1.8,
+      "efm_yuzde": 83.5,
+      "icr_kati": 3.24,
       "tahakkuk_orani": 2.02,
       "aga_orani": 0.0,
       "ykp_orani": 2.1,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 1.56,
+      "efm_yuzde": 59.8,
+      "icr_kati": 2.6,
       "tahakkuk_orani": 5.84,
       "aga_orani": 2.7,
       "ykp_orani": 10.7,
@@ -51,11 +51,11 @@
       "dso_delta": -1.5
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 1.58,
+      "efm_yuzde": 66.7,
+      "icr_kati": 3.0,
       "tahakkuk_orani": 3.03,
       "aga_orani": 21.9,
-      "ykp_orani": 0.6,
+      "ykp_orani": 0.5,
       "dso_gun": 36.3,
       "acm_makasi": -4.7,
       "serefiye_ozk_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 0.2
     },
     "2026/06": {
-      "efm_yuzde": 48.7,
-      "icr_kati": 1.71,
+      "efm_yuzde": 25.7,
+      "icr_kati": 3.24,
       "tahakkuk_orani": 4.75,
       "aga_orani": 20.7,
       "ykp_orani": 36.4,

@@ -1,13 +1,13 @@
 {
   "kod": "RUZYE",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -0.37,
       "tahakkuk_orani": -0.81,
       "aga_orani": 0.0,
-      "ykp_orani": 4.6,
+      "ykp_orani": 3.1,
       "dso_gun": 36.8,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": 0.15,
       "tahakkuk_orani": 6.5,
       "aga_orani": 0.0,
-      "ykp_orani": 11.3,
+      "ykp_orani": 10.2,
       "dso_gun": 106.1,
       "acm_makasi": 402.8,
       "serefiye_ozk_orani": 0.0,
@@ -56,7 +56,7 @@
       "icr_kati": -0.37,
       "tahakkuk_orani": -4.63,
       "aga_orani": 0.0,
-      "ykp_orani": 2.6,
+      "ykp_orani": 1.0,
       "dso_gun": 86.1,
       "acm_makasi": 253.5,
       "serefiye_ozk_orani": 0.0,
@@ -76,11 +76,11 @@
       "dso_delta": -20.0
     },
     "2026/06": {
-      "efm_yuzde": 50.6,
+      "efm_yuzde": 49.7,
       "icr_kati": -0.26,
       "tahakkuk_orani": -6.34,
       "aga_orani": 0.0,
-      "ykp_orani": 5.1,
+      "ykp_orani": 3.7,
       "dso_gun": 76.5,
       "acm_makasi": -20.6,
       "serefiye_ozk_orani": 0.0,

@@ -1,10 +1,10 @@
 {
   "kod": "KZBGY",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 32.1,
-      "icr_kati": 0.53,
+      "efm_yuzde": 26.8,
+      "icr_kati": 0.64,
       "tahakkuk_orani": 1.82,
       "aga_orani": 0.0,
       "ykp_orani": 62.3,
@@ -16,7 +16,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Kağıt üzeri kâr payı yüksek (%62.3).",
-        "🔴 Faiz karşılama oranı 0.53x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.64x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 12 Mn ₺ (3.2x Amortisman)<br><strong>MDV:</strong> 14 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -28,8 +28,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 4.2,
-      "icr_kati": 11.78,
+      "efm_yuzde": 3.5,
+      "icr_kati": 13.86,
       "tahakkuk_orani": 2.52,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -52,8 +52,8 @@
       "dso_delta": -35.0
     },
     "2026/03": {
-      "efm_yuzde": 38.4,
-      "icr_kati": 0.61,
+      "efm_yuzde": 33.0,
+      "icr_kati": 0.72,
       "tahakkuk_orani": 0.27,
       "aga_orani": 0.6,
       "ykp_orani": 3.3,
@@ -64,7 +64,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.61x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.72x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 2 Mn ₺ (0.4x Amortisman)<br><strong>MDV:</strong> 20 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -76,8 +76,8 @@
       "dso_delta": -79.2
     },
     "2026/06": {
-      "efm_yuzde": 6.2,
-      "icr_kati": 3.74,
+      "efm_yuzde": 5.5,
+      "icr_kati": 4.23,
       "tahakkuk_orani": 0.12,
       "aga_orani": 0.3,
       "ykp_orani": 2.1,

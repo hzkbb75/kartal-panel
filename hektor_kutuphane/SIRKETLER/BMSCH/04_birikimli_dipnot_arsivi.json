@@ -1,10 +1,10 @@
 {
   "kod": "BMSCH",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 15.8,
-      "icr_kati": 0.82,
+      "efm_yuzde": 15.2,
+      "icr_kati": 0.85,
       "tahakkuk_orani": 3.76,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.82x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.85x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 12 Mn ₺ (0.9x Amortisman)<br><strong>MDV:</strong> 1.34 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 21.3,
-      "icr_kati": 0.72,
+      "efm_yuzde": 19.2,
+      "icr_kati": 0.8,
       "tahakkuk_orani": -7.25,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.72x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.8x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 33 Mn ₺ (1.1x Amortisman)<br><strong>MDV:</strong> 1.43 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -51,8 +51,8 @@
       "dso_delta": -4.1
     },
     "2026/03": {
-      "efm_yuzde": 5.5,
-      "icr_kati": 2.66,
+      "efm_yuzde": 4.7,
+      "icr_kati": 3.12,
       "tahakkuk_orani": -0.73,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

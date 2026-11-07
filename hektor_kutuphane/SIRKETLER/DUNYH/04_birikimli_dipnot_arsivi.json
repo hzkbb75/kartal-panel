@@ -1,6 +1,6 @@
 {
   "kod": "DUNYH",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -57,7 +57,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -10.74,
       "aga_orani": 0.0,
-      "ykp_orani": 78.3,
+      "ykp_orani": 42.0,
       "dso_gun": 0.0,
       "acm_makasi": -1070.6,
       "serefiye_ozk_orani": 0.0,
@@ -65,7 +65,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%78.3)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%42.0)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 4 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

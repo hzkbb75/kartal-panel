@@ -1,10 +1,10 @@
 {
   "kod": "KLYPV",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 12.0,
-      "icr_kati": 0.51,
+      "efm_yuzde": 9.8,
+      "icr_kati": 0.62,
       "tahakkuk_orani": -6.38,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.51x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.62x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 289 Mn ₺ (1.9x Amortisman)<br><strong>MDV:</strong> 11.98 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 6.8,
-      "icr_kati": 0.22,
+      "efm_yuzde": 5.8,
+      "icr_kati": 0.26,
       "tahakkuk_orani": -0.26,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -40,7 +40,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%106.8 açıldı (DSO: 169.5 gün).",
-        "🔴 Faiz karşılama oranı 0.22x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.26x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 840 Mn ₺ (2.6x Amortisman)<br><strong>MDV:</strong> 12.56 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -52,8 +52,8 @@
       "dso_delta": 81.7
     },
     "2026/03": {
-      "efm_yuzde": 17.0,
-      "icr_kati": -0.26,
+      "efm_yuzde": 13.9,
+      "icr_kati": -0.32,
       "tahakkuk_orani": -1.9,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -64,7 +64,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -0.26x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.32x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 953 Mn ₺ (5.3x Amortisman)<br><strong>MDV:</strong> 20.54 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -76,8 +76,8 @@
       "dso_delta": -84.4
     },
     "2026/06": {
-      "efm_yuzde": 10.1,
-      "icr_kati": -1.84,
+      "efm_yuzde": 8.8,
+      "icr_kati": -2.13,
       "tahakkuk_orani": -1.97,
       "aga_orani": 0.0,
       "ykp_orani": 6.9,
@@ -88,7 +88,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -1.84x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -2.13x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 1.99 Mr ₺ (4.1x Amortisman)<br><strong>MDV:</strong> 21.75 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

@@ -1,6 +1,6 @@
 {
   "kod": "EKDMR",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -52,8 +52,8 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 12.4,
-      "icr_kati": 2.68,
+      "efm_yuzde": 6.7,
+      "icr_kati": 5.0,
       "tahakkuk_orani": 6.39,
       "aga_orani": 15.0,
       "ykp_orani": 39.2,
@@ -77,8 +77,8 @@
       "dso_delta": 11.2
     },
     "2026/06": {
-      "efm_yuzde": 1.7,
-      "icr_kati": 17.16,
+      "efm_yuzde": 1.0,
+      "icr_kati": 28.07,
       "tahakkuk_orani": 5.92,
       "aga_orani": 6.8,
       "ykp_orani": 34.5,

@@ -1,10 +1,10 @@
 {
   "kod": "INVEO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.9,
-      "icr_kati": -351.85,
+      "icr_kati": -352.0,
       "tahakkuk_orani": -9.12,
       "aga_orani": 0.0,
       "ykp_orani": 0.6,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -351.85x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -352.0x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 0 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -28,7 +28,7 @@
     },
     "2025/06": {
       "efm_yuzde": 10.3,
-      "icr_kati": 85.96,
+      "icr_kati": 85.98,
       "tahakkuk_orani": 34.2,
       "aga_orani": 0.0,
       "ykp_orani": 5.2,
@@ -52,7 +52,7 @@
     },
     "2026/03": {
       "efm_yuzde": 8.7,
-      "icr_kati": -10.96,
+      "icr_kati": -10.98,
       "tahakkuk_orani": -9.81,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -10.96x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -10.98x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 0 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

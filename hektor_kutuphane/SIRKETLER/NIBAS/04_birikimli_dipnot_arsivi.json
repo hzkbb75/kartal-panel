@@ -1,6 +1,6 @@
 {
   "kod": "NIBAS",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": -0.66,
       "tahakkuk_orani": 5.52,
       "aga_orani": 0.0,
-      "ykp_orani": 1.4,
+      "ykp_orani": 0.9,
       "dso_gun": 179.0,
       "acm_makasi": 65.2,
       "serefiye_ozk_orani": 0.0,
@@ -81,7 +81,7 @@
       "icr_kati": -2.27,
       "tahakkuk_orani": 84.6,
       "aga_orani": 0.0,
-      "ykp_orani": 21.4,
+      "ykp_orani": 20.4,
       "dso_gun": 159.9,
       "acm_makasi": -15.3,
       "serefiye_ozk_orani": 0.0,

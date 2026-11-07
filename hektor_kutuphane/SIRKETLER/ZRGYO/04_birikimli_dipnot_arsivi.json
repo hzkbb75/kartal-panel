@@ -1,6 +1,6 @@
 {
   "kod": "ZRGYO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 1.9,
-      "icr_kati": 19.78,
+      "efm_yuzde": 1.8,
+      "icr_kati": 20.8,
       "tahakkuk_orani": 1.07,
       "aga_orani": 0.0,
       "ykp_orani": 62.3,

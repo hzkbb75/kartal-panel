@@ -1,10 +1,10 @@
 {
   "kod": "FROTO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 3.9,
-      "icr_kati": 10.69,
+      "efm_yuzde": 2.8,
+      "icr_kati": 14.75,
       "tahakkuk_orani": -8.58,
       "aga_orani": 0.0,
       "ykp_orani": 24.3,
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 20.3,
-      "icr_kati": 2.57,
+      "efm_yuzde": 14.0,
+      "icr_kati": 3.73,
       "tahakkuk_orani": -15.75,
       "aga_orani": 7.7,
-      "ykp_orani": 25.5,
+      "ykp_orani": 25.3,
       "dso_gun": 28.7,
       "acm_makasi": -11.6,
       "serefiye_ozk_orani": 0.8,
@@ -75,11 +75,11 @@
       "dso_delta": 6.6
     },
     "2026/06": {
-      "efm_yuzde": 5.9,
-      "icr_kati": 4.91,
+      "efm_yuzde": 4.1,
+      "icr_kati": 7.09,
       "tahakkuk_orani": -1.82,
       "aga_orani": 70.5,
-      "ykp_orani": 23.5,
+      "ykp_orani": 23.0,
       "dso_gun": 35.5,
       "acm_makasi": 20.8,
       "serefiye_ozk_orani": 0.7,
@@ -96,7 +96,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %7.2 (12.99 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.04x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+        "🟢 KARAR MEKANİZMASI [TAŞINAN HİSSE — KORU / DENGEDE]: 4 çeyreklik faaliyet/dipnot karnesi onaylandı (DTS: 0/100 | F-Skor: 6/9 | Hibrit Puan: 61.0). Mevcut Pay: %0.79 → Hedef Pay: %1.00 (Pazartesi: +0 lot).",
+        "🟢 4 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/06): DTS 0/100 puan, Alacak tahsil süresi 35.5 gün (+3.5g değişim) ve ICR 7.09x düzeyinde.",
+        "🟡 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 0.8x (kapasite korunumu), İhracat payı %84.0 ve Net YPP/ÖZK %-53.5 (Kur açık pozisyonu izlenmeli).",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %-1.8 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": 0,
       "dso_delta": 0.2

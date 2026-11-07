@@ -1,9 +1,9 @@
 {
   "kod": "ORZAX",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 95.0,
+      "efm_yuzde": 606.6,
       "icr_kati": 1.79,
       "tahakkuk_orani": 8390.01,
       "aga_orani": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
+      "efm_yuzde": 452.8,
       "icr_kati": 1.59,
       "tahakkuk_orani": -8905.47,
       "aga_orani": 0.0,
@@ -51,11 +51,11 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 38.2,
-      "icr_kati": 3.06,
+      "efm_yuzde": 32.3,
+      "icr_kati": 3.62,
       "tahakkuk_orani": -2.76,
       "aga_orani": 26.7,
-      "ykp_orani": 0.4,
+      "ykp_orani": 0.3,
       "dso_gun": 101.7,
       "acm_makasi": -38.9,
       "serefiye_ozk_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 101.7
     },
     "2026/06": {
-      "efm_yuzde": 47.1,
-      "icr_kati": 1.55,
+      "efm_yuzde": 41.7,
+      "icr_kati": 1.75,
       "tahakkuk_orani": -2.91,
       "aga_orani": 18.9,
       "ykp_orani": 9.4,
@@ -96,7 +96,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %8.6 (305 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 1.54x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / DİPTE (2/3)]: 4 çeyreklik faaliyet/dipnot taraması temiz (DTS: 0/100 | F-Skor: 7/9 | Hibrit Puan: 62.0). Kalkan Hedef Ağırlığı: %1.67 (+246 lot).",
+        "🟢 BİRİKİMLİ BİLANÇO İYİLEŞMESİ (2025/03 → 2026/06): 4 çeyrekte DTS 20 puandan 0/100 seviyesine geriledi (DSO: 89.4 gün); dipnot kalitesi güçleniyor.",
+        "🟢 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 1.9x (agresif kapasite artışı), İhracat payı %6.9 ve Net YPP/ÖZK %+3.7 ile dengeli.",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %-2.9 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": 0,
       "dso_delta": -12.3

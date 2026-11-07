@@ -1,13 +1,13 @@
 {
   "kod": "RTALB",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": -0.1,
+      "efm_yuzde": 217.3,
+      "icr_kati": -0.12,
       "tahakkuk_orani": 2.89,
       "aga_orani": 0.0,
-      "ykp_orani": 3.8,
+      "ykp_orani": 2.7,
       "dso_gun": 100.3,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -0.1x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.12x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 1 Mn ₺ (0.2x Amortisman)<br><strong>MDV:</strong> 304 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -31,7 +31,7 @@
       "icr_kati": -0.22,
       "tahakkuk_orani": 6.13,
       "aga_orani": 0.0,
-      "ykp_orani": 8.1,
+      "ykp_orani": 6.9,
       "dso_gun": 101.2,
       "acm_makasi": 0.9,
       "serefiye_ozk_orani": 0.0,
@@ -79,7 +79,7 @@
       "icr_kati": -0.16,
       "tahakkuk_orani": -18.06,
       "aga_orani": 0.0,
-      "ykp_orani": 2.6,
+      "ykp_orani": 2.5,
       "dso_gun": 137.1,
       "acm_makasi": 44.0,
       "serefiye_ozk_orani": 0.0,

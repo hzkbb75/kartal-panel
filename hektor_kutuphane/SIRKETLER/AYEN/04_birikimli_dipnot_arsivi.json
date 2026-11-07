@@ -1,10 +1,10 @@
 {
   "kod": "AYEN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 20.0,
-      "icr_kati": 2.44,
+      "efm_yuzde": 19.3,
+      "icr_kati": 2.53,
       "tahakkuk_orani": -1.33,
       "aga_orani": 0.0,
       "ykp_orani": 14.2,
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 11.0,
-      "icr_kati": 3.82,
+      "efm_yuzde": 10.6,
+      "icr_kati": 3.96,
       "tahakkuk_orani": -2.65,
       "aga_orani": 0.0,
-      "ykp_orani": 15.8,
+      "ykp_orani": 14.4,
       "dso_gun": 33.1,
       "acm_makasi": 17.4,
       "serefiye_ozk_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 4.9
     },
     "2026/03": {
-      "efm_yuzde": 23.5,
-      "icr_kati": 2.49,
+      "efm_yuzde": 23.2,
+      "icr_kati": 2.52,
       "tahakkuk_orani": -1.85,
       "aga_orani": 0.2,
       "ykp_orani": 2.7,
@@ -75,8 +75,8 @@
       "dso_delta": -7.3
     },
     "2026/06": {
-      "efm_yuzde": 15.8,
-      "icr_kati": 2.23,
+      "efm_yuzde": 15.6,
+      "icr_kati": 2.27,
       "tahakkuk_orani": -2.42,
       "aga_orani": 0.2,
       "ykp_orani": 23.9,

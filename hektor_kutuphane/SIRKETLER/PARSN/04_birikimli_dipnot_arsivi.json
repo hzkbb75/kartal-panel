@@ -1,10 +1,10 @@
 {
   "kod": "PARSN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 8.9,
-      "icr_kati": 0.51,
+      "efm_yuzde": 7.2,
+      "icr_kati": 0.63,
       "tahakkuk_orani": -2.63,
       "aga_orani": 0.0,
       "ykp_orani": 1.4,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.51x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.63x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 126 Mn ₺ (0.9x Amortisman)<br><strong>MDV:</strong> 12.24 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 10.3,
-      "icr_kati": 0.65,
+      "efm_yuzde": 8.5,
+      "icr_kati": 0.79,
       "tahakkuk_orani": -3.7,
       "aga_orani": 0.0,
       "ykp_orani": 1.4,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.65x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.79x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 296 Mn ₺ (1.0x Amortisman)<br><strong>MDV:</strong> 14.01 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -51,8 +51,8 @@
       "dso_delta": -3.0
     },
     "2026/03": {
-      "efm_yuzde": 9.2,
-      "icr_kati": 0.6,
+      "efm_yuzde": 7.3,
+      "icr_kati": 0.76,
       "tahakkuk_orani": 1.96,
       "aga_orani": 0.0,
       "ykp_orani": 1.6,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.6x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.76x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 200 Mn ₺ (1.0x Amortisman)<br><strong>MDV:</strong> 17.39 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -75,8 +75,8 @@
       "dso_delta": -2.7
     },
     "2026/06": {
-      "efm_yuzde": 11.8,
-      "icr_kati": 0.45,
+      "efm_yuzde": 9.3,
+      "icr_kati": 0.57,
       "tahakkuk_orani": 1.04,
       "aga_orani": 0.0,
       "ykp_orani": 1.8,
@@ -87,7 +87,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.45x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.57x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 393 Mn ₺ (1.0x Amortisman)<br><strong>MDV:</strong> 18.08 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",

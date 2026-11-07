@@ -1,10 +1,10 @@
 {
   "kod": "ANELE",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 19.9,
-      "icr_kati": 0.11,
+      "efm_yuzde": 6.8,
+      "icr_kati": 0.31,
       "tahakkuk_orani": 0.67,
       "aga_orani": 0.0,
       "ykp_orani": 45.4,
@@ -16,7 +16,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Kağıt üzeri kâr payı yüksek (%45.4).",
-        "🔴 Faiz karşılama oranı 0.11x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.31x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 1 Mn ₺ (0.3x Amortisman)<br><strong>MDV:</strong> 55 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -28,8 +28,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 7.4,
-      "icr_kati": -1.1,
+      "efm_yuzde": 2.6,
+      "icr_kati": -3.16,
       "tahakkuk_orani": -0.58,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -40,7 +40,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -1.1x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -3.16x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 3 Mn ₺ (0.2x Amortisman)<br><strong>MDV:</strong> 57 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -52,8 +52,8 @@
       "dso_delta": -23.2
     },
     "2026/03": {
-      "efm_yuzde": 12.7,
-      "icr_kati": -7.2,
+      "efm_yuzde": 3.8,
+      "icr_kati": -24.13,
       "tahakkuk_orani": -2.76,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -65,7 +65,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%75.5 açıldı (DSO: 441.6 gün).",
-        "🔴 Faiz karşılama oranı -7.2x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -24.13x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 65 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -81,7 +81,7 @@
       "icr_kati": -74.57,
       "tahakkuk_orani": -10.75,
       "aga_orani": 0.0,
-      "ykp_orani": 0.3,
+      "ykp_orani": 0.0,
       "dso_gun": 684.2,
       "acm_makasi": 128.1,
       "serefiye_ozk_orani": 0.0,

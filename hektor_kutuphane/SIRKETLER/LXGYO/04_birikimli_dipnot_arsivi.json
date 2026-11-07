@@ -1,6 +1,6 @@
 {
   "kod": "LXGYO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 94.8,
@@ -28,7 +28,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
+      "efm_yuzde": 331.0,
       "icr_kati": -1.45,
       "tahakkuk_orani": -30900.88,
       "aga_orani": 0.0,

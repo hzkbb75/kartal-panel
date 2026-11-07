@@ -1,6 +1,6 @@
 {
   "kod": "RYSAS",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 6.2,
-      "icr_kati": 14.35,
+      "efm_yuzde": 5.9,
+      "icr_kati": 14.9,
       "tahakkuk_orani": -9.66,
       "aga_orani": 0.0,
       "ykp_orani": 0.5,
@@ -55,7 +55,7 @@
       "icr_kati": 2.04,
       "tahakkuk_orani": -2.13,
       "aga_orani": 0.0,
-      "ykp_orani": 1.8,
+      "ykp_orani": 1.4,
       "dso_gun": 41.3,
       "acm_makasi": -29.6,
       "serefiye_ozk_orani": 0.0,
@@ -79,7 +79,7 @@
       "icr_kati": 2.28,
       "tahakkuk_orani": 3.95,
       "aga_orani": 0.0,
-      "ykp_orani": 1.2,
+      "ykp_orani": 1.0,
       "dso_gun": 42.0,
       "acm_makasi": 17.2,
       "serefiye_ozk_orani": 0.0,

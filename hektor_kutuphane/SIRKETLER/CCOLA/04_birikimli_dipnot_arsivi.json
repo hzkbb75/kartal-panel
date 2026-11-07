@@ -1,13 +1,13 @@
 {
   "kod": "CCOLA",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 1.9,
-      "icr_kati": 20.36,
+      "efm_yuzde": 1.4,
+      "icr_kati": 26.53,
       "tahakkuk_orani": 2.93,
       "aga_orani": 0.0,
-      "ykp_orani": 0.1,
+      "ykp_orani": 0.0,
       "dso_gun": 46.6,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 10.3,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 6.7,
-      "icr_kati": 8.57,
+      "efm_yuzde": 5.0,
+      "icr_kati": 11.63,
       "tahakkuk_orani": -1.0,
       "aga_orani": 12.1,
       "ykp_orani": 0.0,
@@ -55,7 +55,7 @@
       "icr_kati": 18.38,
       "tahakkuk_orani": 0.36,
       "aga_orani": 106.6,
-      "ykp_orani": 3.0,
+      "ykp_orani": 2.9,
       "dso_gun": 55.3,
       "acm_makasi": 20.5,
       "serefiye_ozk_orani": 8.8,
@@ -79,7 +79,7 @@
       "icr_kati": 24.03,
       "tahakkuk_orani": 0.41,
       "aga_orani": 42.1,
-      "ykp_orani": 0.2,
+      "ykp_orani": 0.0,
       "dso_gun": 60.5,
       "acm_makasi": 31.5,
       "serefiye_ozk_orani": 8.5,

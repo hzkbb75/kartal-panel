@@ -1,10 +1,10 @@
 {
   "kod": "KATMR",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 0.4,
-      "icr_kati": 251.87,
+      "efm_yuzde": 0.3,
+      "icr_kati": 364.27,
       "tahakkuk_orani": 4.42,
       "aga_orani": 0.0,
       "ykp_orani": 9.4,
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 3.8,
-      "icr_kati": 30.61,
+      "efm_yuzde": 2.3,
+      "icr_kati": 51.36,
       "tahakkuk_orani": 12.47,
       "aga_orani": 0.0,
-      "ykp_orani": 15.2,
+      "ykp_orani": 10.8,
       "dso_gun": 222.7,
       "acm_makasi": 9.3,
       "serefiye_ozk_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 18.4
     },
     "2026/03": {
-      "efm_yuzde": 38.7,
-      "icr_kati": 2.05,
+      "efm_yuzde": 24.1,
+      "icr_kati": 3.29,
       "tahakkuk_orani": 3.25,
       "aga_orani": 17.1,
       "ykp_orani": 0.1,
@@ -75,8 +75,8 @@
       "dso_delta": 54.4
     },
     "2026/06": {
-      "efm_yuzde": 16.6,
-      "icr_kati": 3.85,
+      "efm_yuzde": 11.4,
+      "icr_kati": 5.59,
       "tahakkuk_orani": 2.43,
       "aga_orani": 17.3,
       "ykp_orani": 7.3,

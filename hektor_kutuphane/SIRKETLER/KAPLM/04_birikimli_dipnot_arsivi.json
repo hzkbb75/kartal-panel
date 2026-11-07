@@ -1,9 +1,9 @@
 {
   "kod": "KAPLM",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 0.4,
+      "efm_yuzde": 0.3,
       "icr_kati": -39.85,
       "tahakkuk_orani": 3.45,
       "aga_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 15.5,
-      "icr_kati": 0.42,
+      "efm_yuzde": 10.3,
+      "icr_kati": 0.62,
       "tahakkuk_orani": 2.59,
       "aga_orani": 0.0,
       "ykp_orani": 0.3,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.42x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.62x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 10 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 1.39 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

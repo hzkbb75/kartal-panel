@@ -1,6 +1,6 @@
 {
   "kod": "EGEGY",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -52,8 +52,8 @@
       "dso_delta": -141.0
     },
     "2026/03": {
-      "efm_yuzde": 27.2,
-      "icr_kati": 16.16,
+      "efm_yuzde": 7.7,
+      "icr_kati": 57.14,
       "tahakkuk_orani": 12.34,
       "aga_orani": 0.9,
       "ykp_orani": 2.9,

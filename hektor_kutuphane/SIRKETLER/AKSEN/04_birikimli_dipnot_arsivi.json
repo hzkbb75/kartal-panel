@@ -1,10 +1,10 @@
 {
   "kod": "AKSEN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 13.7,
-      "icr_kati": 2.76,
+      "efm_yuzde": 12.5,
+      "icr_kati": 3.02,
       "tahakkuk_orani": -5.16,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 9.4,
-      "icr_kati": 3.4,
+      "efm_yuzde": 8.6,
+      "icr_kati": 3.7,
       "tahakkuk_orani": -6.3,
       "aga_orani": 3.8,
       "ykp_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 5.3
     },
     "2026/03": {
-      "efm_yuzde": 7.1,
-      "icr_kati": 3.93,
+      "efm_yuzde": 6.7,
+      "icr_kati": 4.19,
       "tahakkuk_orani": -2.15,
       "aga_orani": 45.8,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": -7.5
     },
     "2026/06": {
-      "efm_yuzde": 7.2,
-      "icr_kati": 3.46,
+      "efm_yuzde": 6.7,
+      "icr_kati": 3.69,
       "tahakkuk_orani": -3.17,
       "aga_orani": 20.0,
       "ykp_orani": 0.2,

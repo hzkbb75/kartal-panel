@@ -1,13 +1,13 @@
 {
   "kod": "SAYAS",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 9.9,
       "tahakkuk_orani": -18.77,
       "aga_orani": 0.0,
-      "ykp_orani": 6.0,
+      "ykp_orani": 0.0,
       "dso_gun": 76.3,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": 4.7,
       "aga_orani": 0.0,
-      "ykp_orani": 16.0,
+      "ykp_orani": 14.2,
       "dso_gun": 81.2,
       "acm_makasi": 8.9,
       "serefiye_ozk_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 4.9
     },
     "2026/03": {
-      "efm_yuzde": 82.3,
-      "icr_kati": 1.95,
+      "efm_yuzde": 52.2,
+      "icr_kati": 3.07,
       "tahakkuk_orani": 1.28,
       "aga_orani": 0.1,
       "ykp_orani": 10.7,
@@ -96,7 +96,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.7 (43 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.44x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / DİPTE (2/3)]: 4 çeyreklik faaliyet/dipnot taraması temiz (DTS: 0/100 | F-Skor: 8/9 | Hibrit Puan: 77.0). Kalkan Hedef Ağırlığı: %2.22 (+608 lot).",
+        "🟢 4 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/06): DTS 0/100 puan, Alacak tahsil süresi 89.9 gün (+13.6g değişim) ve ICR 9.90x düzeyinde.",
+        "🟢 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 0.1x (hasat/düşük CAPEX), İhracat payı %56.8 ve Net YPP/ÖZK %+33.1 ile dengeli.",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %-3.1 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": -15,
       "dso_delta": -16.3

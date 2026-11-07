@@ -1,13 +1,13 @@
 {
   "kod": "TTKOM",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 9.27,
       "tahakkuk_orani": -4.62,
       "aga_orani": 0.0,
-      "ykp_orani": 9.9,
+      "ykp_orani": 9.8,
       "dso_gun": 36.1,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.5,
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 12.2,
-      "icr_kati": 17.14,
+      "efm_yuzde": 9.1,
+      "icr_kati": 23.09,
       "tahakkuk_orani": -11.74,
       "aga_orani": 28.6,
-      "ykp_orani": 5.5,
+      "ykp_orani": 5.4,
       "dso_gun": 36.2,
       "acm_makasi": 0.4,
       "serefiye_ozk_orani": 0.5,
@@ -55,7 +55,7 @@
       "icr_kati": 34.47,
       "tahakkuk_orani": 3.68,
       "aga_orani": 1523.1,
-      "ykp_orani": 1.0,
+      "ykp_orani": 0.9,
       "dso_gun": 48.0,
       "acm_makasi": 35.8,
       "serefiye_ozk_orani": 0.4,
@@ -79,7 +79,7 @@
       "icr_kati": 15.82,
       "tahakkuk_orani": 0.6,
       "aga_orani": 821.2,
-      "ykp_orani": 3.5,
+      "ykp_orani": 3.4,
       "dso_gun": 49.4,
       "acm_makasi": 39.7,
       "serefiye_ozk_orani": 0.4,
@@ -96,7 +96,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %5.5 (14.68 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.50x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟡 Alacak-Ciro makası +%39.7 açıldı (DSO: 49.4 gün)."
+        "🟢 KARAR MEKANİZMASI [TAŞINAN HİSSE — SAT / AZALT]: 4 çeyreklik faaliyet/dipnot karnesi onaylandı (DTS: 15/100 | F-Skor: 3/9 | Hibrit Puan: 68.5). Mevcut Pay: %1.79 → Hedef Pay: %0.00 (Pazartesi: -500 lot).",
+        "🟢 4 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/06): DTS 15/100 puan, Alacak tahsil süresi 49.4 gün (+13.3g değişim) ve ICR 15.82x düzeyinde.",
+        "🟡 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 1.8x (agresif kapasite artışı), İhracat payı %2.5 ve Net YPP/ÖZK %-41.7 (Kur açık pozisyonu izlenmeli).",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %+0.6 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": 0,
       "dso_delta": 1.4

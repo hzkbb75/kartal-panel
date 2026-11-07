@@ -1,21 +1,21 @@
 {
   "kod": "INTET",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/06": {
       "efm_yuzde": 0.0,
       "icr_kati": 9.9,
       "tahakkuk_orani": -35603.83,
       "aga_orani": 0.0,
-      "ykp_orani": 37.5,
+      "ykp_orani": 29.7,
       "dso_gun": 0.0,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 0,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%37.5)."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 92 Mn ₺ (1.3x Amortisman)<br><strong>MDV:</strong> 0 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 2.37,
+      "efm_yuzde": 56.5,
+      "icr_kati": 4.19,
       "tahakkuk_orani": -12.55,
       "aga_orani": 284.0,
       "ykp_orani": 3.5,
@@ -47,12 +47,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 536 Mn ₺ (ÖZK %+31.6)<br><strong>Ham YPP:</strong> 536 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %3.4 (57 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.68x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": -15,
+      "dts_delta": 0,
       "dso_delta": 80.3
     },
     "2026/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 1.85,
+      "efm_yuzde": 108.1,
+      "icr_kati": 2.49,
       "tahakkuk_orani": -15.08,
       "aga_orani": 131.4,
       "ykp_orani": 1.9,

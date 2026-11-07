@@ -1,6 +1,6 @@
 {
   "kod": "BINBN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -56,7 +56,7 @@
       "icr_kati": -0.21,
       "tahakkuk_orani": -30.65,
       "aga_orani": 0.0,
-      "ykp_orani": 2.7,
+      "ykp_orani": 2.2,
       "dso_gun": 99.0,
       "acm_makasi": 48.1,
       "serefiye_ozk_orani": 0.0,
@@ -76,11 +76,11 @@
       "dso_delta": 32.9
     },
     "2026/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": -0.15,
+      "efm_yuzde": 796.3,
+      "icr_kati": -0.59,
       "tahakkuk_orani": -24.3,
       "aga_orani": 0.0,
-      "ykp_orani": 3.3,
+      "ykp_orani": 2.8,
       "dso_gun": 73.2,
       "acm_makasi": 8.0,
       "serefiye_ozk_orani": 0.0,
@@ -88,7 +88,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -0.15x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.59x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 126 Mn ₺ (0.8x Amortisman)<br><strong>MDV:</strong> 560 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",

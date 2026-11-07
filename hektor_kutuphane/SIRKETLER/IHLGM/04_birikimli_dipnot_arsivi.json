@@ -1,13 +1,13 @@
 {
   "kod": "IHLGM",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 9.9,
       "tahakkuk_orani": 10.48,
       "aga_orani": 0.0,
-      "ykp_orani": 9.4,
+      "ykp_orani": 0.6,
       "dso_gun": 154.2,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -48.2
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": -0.13,
+      "efm_yuzde": 378.5,
+      "icr_kati": -0.51,
       "tahakkuk_orani": 4.51,
       "aga_orani": 0.0,
       "ykp_orani": 0.4,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -0.13x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.51x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 7 Mn ₺ (0.6x Amortisman)<br><strong>MDV:</strong> 31 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -75,8 +75,8 @@
       "dso_delta": -61.6
     },
     "2026/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": -0.41,
+      "efm_yuzde": 148.2,
+      "icr_kati": -1.65,
       "tahakkuk_orani": 4.7,
       "aga_orani": 0.0,
       "ykp_orani": 0.3,
@@ -88,7 +88,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%129.0 açıldı (DSO: 198.0 gün).",
-        "🔴 Faiz karşılama oranı -0.41x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -1.65x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 11 Mn ₺ (0.5x Amortisman)<br><strong>MDV:</strong> 38 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

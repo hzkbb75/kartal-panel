@@ -1,6 +1,6 @@
 {
   "kod": "ICBCT",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -96,7 +96,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.0 (0 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.00x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🔴 Tahakkuk anomalisi (%28.03): Kâr nakde dönüşmüyor."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / DİPTE (2/3)]: 4 çeyreklik faaliyet/dipnot taraması temiz (DTS: 20/100 | F-Skor: 8/9 | Hibrit Puan: 90.0). Kalkan Hedef Ağırlığı: %2.73 (+1,728 lot).",
+        "🔴 BİRİKİMLİ DİPNOT BOZULMASI (2025/03 → 2026/06): 4 çeyrekte DTS 0 puandan 20/100 puana yükseldi (DSO: 0g → 0g, +0.0 gün).",
+        "🟢 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 0.0x (hasat/düşük CAPEX), Konsolide/Yurt içi satış yapısı ve Net YPP/ÖZK %+0.0 ile dengeli.",
+        "🟡 SÖYLEM - NAKİT ÇELİŞKİSİ: Muhasebesel kâra karşın tahakkuk oranı (%+16.4) yüksek; kârın kasaya nakit (CFO) girişi izlenmeli."
       ],
       "dts_delta": 0,
       "dso_delta": 0.0

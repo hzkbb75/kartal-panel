@@ -1,10 +1,10 @@
 {
   "kod": "PEKGY",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 20.0,
-      "icr_kati": 2.52,
+      "efm_yuzde": 18.7,
+      "icr_kati": 2.68,
       "tahakkuk_orani": 2.87,
       "aga_orani": 0.0,
       "ykp_orani": 0.3,
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 15.9,
-      "icr_kati": 3.32,
+      "efm_yuzde": 14.6,
+      "icr_kati": 3.62,
       "tahakkuk_orani": 9.49,
       "aga_orani": 0.0,
-      "ykp_orani": 0.3,
+      "ykp_orani": 0.0,
       "dso_gun": 155.4,
       "acm_makasi": -135.8,
       "serefiye_ozk_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -94.0
     },
     "2026/03": {
-      "efm_yuzde": 25.9,
-      "icr_kati": 7.85,
+      "efm_yuzde": 19.0,
+      "icr_kati": 10.68,
       "tahakkuk_orani": 12.02,
       "aga_orani": 0.0,
       "ykp_orani": 22.5,
@@ -76,8 +76,8 @@
       "dso_delta": 1584.2
     },
     "2026/06": {
-      "efm_yuzde": 13.2,
-      "icr_kati": 2.82,
+      "efm_yuzde": 12.9,
+      "icr_kati": 2.88,
       "tahakkuk_orani": 43.92,
       "aga_orani": 0.0,
       "ykp_orani": 12.4,

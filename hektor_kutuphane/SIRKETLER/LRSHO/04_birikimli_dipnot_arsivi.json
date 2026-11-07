@@ -1,6 +1,6 @@
 {
   "kod": "LRSHO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 7.4
     },
     "2026/03": {
-      "efm_yuzde": 41.5,
-      "icr_kati": -1.2,
+      "efm_yuzde": 21.3,
+      "icr_kati": -2.33,
       "tahakkuk_orani": -0.74,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -1.2x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -2.33x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 151 Mn ₺ (2.3x Amortisman)<br><strong>MDV:</strong> 5.38 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -75,8 +75,8 @@
       "dso_delta": -1.6
     },
     "2026/06": {
-      "efm_yuzde": 39.1,
-      "icr_kati": -0.49,
+      "efm_yuzde": 20.5,
+      "icr_kati": -0.94,
       "tahakkuk_orani": -1.21,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -87,7 +87,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -0.49x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.94x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 419 Mn ₺ (2.7x Amortisman)<br><strong>MDV:</strong> 5.92 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

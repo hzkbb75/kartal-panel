@@ -1,13 +1,13 @@
 {
   "kod": "KAREL",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 5.7,
-      "icr_kati": 1.06,
+      "efm_yuzde": 4.5,
+      "icr_kati": 1.35,
       "tahakkuk_orani": -15.79,
       "aga_orani": 0.0,
-      "ykp_orani": 0.3,
+      "ykp_orani": 0.2,
       "dso_gun": 66.5,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 9.8,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 1.06x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.35x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 217 Mn ₺ (0.6x Amortisman)<br><strong>MDV:</strong> 1.90 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 30.4,
-      "icr_kati": 0.61,
+      "efm_yuzde": 22.9,
+      "icr_kati": 0.81,
       "tahakkuk_orani": -21.99,
       "aga_orani": 0.0,
       "ykp_orani": 0.8,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.61x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.81x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 542 Mn ₺ (0.7x Amortisman)<br><strong>MDV:</strong> 2.01 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -51,8 +51,8 @@
       "dso_delta": 2.2
     },
     "2026/03": {
-      "efm_yuzde": 7.7,
-      "icr_kati": 2.67,
+      "efm_yuzde": 5.2,
+      "icr_kati": 3.94,
       "tahakkuk_orani": -7.09,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 8.3
     },
     "2026/06": {
-      "efm_yuzde": 7.6,
-      "icr_kati": 2.9,
+      "efm_yuzde": 5.1,
+      "icr_kati": 4.39,
       "tahakkuk_orani": -5.91,
       "aga_orani": 0.0,
       "ykp_orani": 1.1,

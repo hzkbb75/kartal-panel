@@ -1,13 +1,13 @@
 {
   "kod": "ALTNY",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 8.5,
-      "icr_kati": 15.28,
+      "efm_yuzde": 5.5,
+      "icr_kati": 23.29,
       "tahakkuk_orani": 1.06,
       "aga_orani": 0.0,
-      "ykp_orani": 10.6,
+      "ykp_orani": 7.0,
       "dso_gun": 116.8,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 20.7,
-      "icr_kati": 3.4,
+      "efm_yuzde": 14.0,
+      "icr_kati": 5.04,
       "tahakkuk_orani": 1.18,
       "aga_orani": 75.5,
-      "ykp_orani": 13.2,
+      "ykp_orani": 7.3,
       "dso_gun": 118.9,
       "acm_makasi": 1.7,
       "serefiye_ozk_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 2.1
     },
     "2026/03": {
-      "efm_yuzde": 1.9,
-      "icr_kati": 23.23,
+      "efm_yuzde": 1.2,
+      "icr_kati": 36.2,
       "tahakkuk_orani": -2.49,
       "aga_orani": 1768.8,
       "ykp_orani": 6.1,
@@ -75,8 +75,8 @@
       "dso_delta": 82.3
     },
     "2026/06": {
-      "efm_yuzde": 8.6,
-      "icr_kati": 4.47,
+      "efm_yuzde": 5.7,
+      "icr_kati": 6.66,
       "tahakkuk_orani": -3.82,
       "aga_orani": 761.7,
       "ykp_orani": 3.1,

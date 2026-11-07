@@ -1,21 +1,21 @@
 {
   "kod": "KLRHO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 1.8,
       "tahakkuk_orani": 1.55,
       "aga_orani": 0.0,
-      "ykp_orani": 44.4,
+      "ykp_orani": 30.3,
       "dso_gun": 90.1,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 4.2,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 0,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%44.4)."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 49 Mn ₺ (0.4x Amortisman)<br><strong>MDV:</strong> 4.42 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -31,7 +31,7 @@
       "icr_kati": 0.83,
       "tahakkuk_orani": 0.54,
       "aga_orani": 0.2,
-      "ykp_orani": 66.3,
+      "ykp_orani": 57.7,
       "dso_gun": 79.8,
       "acm_makasi": -15.5,
       "serefiye_ozk_orani": 0.0,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%66.3)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%57.7)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 134 Mn ₺ (0.5x Amortisman)<br><strong>MDV:</strong> 4.65 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -47,15 +47,15 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 0 Mn ₺ (ÖZK %+0.0)<br><strong>Ham YPP:</strong> 0 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %6.3 (1.71 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.32x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
+      "dts_delta": 15,
       "dso_delta": -10.3
     },
     "2026/03": {
-      "efm_yuzde": 50.7,
-      "icr_kati": 1.63,
+      "efm_yuzde": 28.4,
+      "icr_kati": 2.92,
       "tahakkuk_orani": -1.44,
       "aga_orani": 0.0,
-      "ykp_orani": 12.3,
+      "ykp_orani": 0.0,
       "dso_gun": 74.0,
       "acm_makasi": -25.4,
       "serefiye_ozk_orani": 0.0,
@@ -75,11 +75,11 @@
       "dso_delta": -5.8
     },
     "2026/06": {
-      "efm_yuzde": 28.5,
-      "icr_kati": 3.48,
+      "efm_yuzde": 15.1,
+      "icr_kati": 6.56,
       "tahakkuk_orani": -0.25,
       "aga_orani": 0.0,
-      "ykp_orani": 10.1,
+      "ykp_orani": 0.0,
       "dso_gun": 81.0,
       "acm_makasi": 1.7,
       "serefiye_ozk_orani": 0.0,

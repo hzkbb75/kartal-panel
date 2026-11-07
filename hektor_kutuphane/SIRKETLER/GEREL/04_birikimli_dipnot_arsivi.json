@@ -1,10 +1,10 @@
 {
   "kod": "GEREL",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 85.3,
-      "icr_kati": 0.35,
+      "efm_yuzde": 55.3,
+      "icr_kati": 0.54,
       "tahakkuk_orani": -0.14,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.35x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.54x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 18 Mn ₺ (1.6x Amortisman)<br><strong>MDV:</strong> 1.54 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 19.5,
-      "icr_kati": -3.02,
+      "efm_yuzde": 12.9,
+      "icr_kati": -4.59,
       "tahakkuk_orani": -6.3,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -3.02x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -4.59x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 30 Mn ₺ (1.2x Amortisman)<br><strong>MDV:</strong> 1.62 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -75,8 +75,8 @@
       "dso_delta": 36.9
     },
     "2026/06": {
-      "efm_yuzde": 8.3,
-      "icr_kati": 2.08,
+      "efm_yuzde": 7.0,
+      "icr_kati": 2.47,
       "tahakkuk_orani": 9.0,
       "aga_orani": 0.6,
       "ykp_orani": 0.2,

@@ -1,10 +1,10 @@
 {
   "kod": "PATEK",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 76.0,
-      "icr_kati": 1.64,
+      "efm_yuzde": 29.8,
+      "icr_kati": 4.17,
       "tahakkuk_orani": 2.42,
       "aga_orani": 0.0,
       "ykp_orani": 35.7,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 33.0,
-      "icr_kati": -1.75,
+      "efm_yuzde": 9.7,
+      "icr_kati": -5.94,
       "tahakkuk_orani": -18.17,
       "aga_orani": 0.0,
       "ykp_orani": 13.7,
@@ -40,7 +40,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%15.5 açıldı (DSO: 86.3 gün).",
-        "🔴 Faiz karşılama oranı -1.75x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -5.94x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 207 Mn ₺ (1.7x Amortisman)<br><strong>MDV:</strong> 166 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -56,7 +56,7 @@
       "icr_kati": -0.15,
       "tahakkuk_orani": -11.02,
       "aga_orani": 0.0,
-      "ykp_orani": 0.7,
+      "ykp_orani": 0.3,
       "dso_gun": 171.2,
       "acm_makasi": 50.9,
       "serefiye_ozk_orani": 0.0,
@@ -76,11 +76,11 @@
       "dso_delta": 84.9
     },
     "2026/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": -0.2,
+      "efm_yuzde": 179.0,
+      "icr_kati": -0.62,
       "tahakkuk_orani": 1.44,
       "aga_orani": 0.0,
-      "ykp_orani": 2.7,
+      "ykp_orani": 1.3,
       "dso_gun": 138.9,
       "acm_makasi": 33.9,
       "serefiye_ozk_orani": 0.0,
@@ -89,7 +89,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%33.9 açıldı (DSO: 138.9 gün).",
-        "🔴 Faiz karşılama oranı -0.2x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.62x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 262 Mn ₺ (2.0x Amortisman)<br><strong>MDV:</strong> 299 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

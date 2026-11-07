@@ -1,10 +1,10 @@
 {
   "kod": "TMPOL",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 38.8,
-      "icr_kati": 0.61,
+      "efm_yuzde": 33.0,
+      "icr_kati": 0.72,
       "tahakkuk_orani": 1.28,
       "aga_orani": 0.0,
       "ykp_orani": 72.8,
@@ -16,7 +16,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Kağıt üzeri kâr payı yüksek (%72.8).",
-        "🔴 Faiz karşılama oranı 0.61x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.72x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 6 Mn ₺ (0.2x Amortisman)<br><strong>MDV:</strong> 907 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -28,8 +28,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 20.5,
-      "icr_kati": 0.67,
+      "efm_yuzde": 17.6,
+      "icr_kati": 0.78,
       "tahakkuk_orani": 1.1,
       "aga_orani": 0.0,
       "ykp_orani": 61.9,
@@ -41,7 +41,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Kağıt üzeri kâr payı yüksek (%61.9).",
-        "🔴 Faiz karşılama oranı 0.67x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.78x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 16 Mn ₺ (0.7x Amortisman)<br><strong>MDV:</strong> 972 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -53,8 +53,8 @@
       "dso_delta": -4.5
     },
     "2026/03": {
-      "efm_yuzde": 4.0,
-      "icr_kati": 4.67,
+      "efm_yuzde": 2.7,
+      "icr_kati": 6.98,
       "tahakkuk_orani": 4.6,
       "aga_orani": 0.0,
       "ykp_orani": 40.2,
@@ -78,8 +78,8 @@
       "dso_delta": 74.5
     },
     "2026/06": {
-      "efm_yuzde": 22.9,
-      "icr_kati": 0.95,
+      "efm_yuzde": 14.8,
+      "icr_kati": 1.47,
       "tahakkuk_orani": 1.75,
       "aga_orani": 0.1,
       "ykp_orani": 35.0,
@@ -91,7 +91,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%17.8 açıldı (DSO: 117.4 gün).",
-        "🔴 Faiz karşılama oranı 0.95x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.47x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 273 Mn ₺ (6.4x Amortisman)<br><strong>MDV:</strong> 902 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

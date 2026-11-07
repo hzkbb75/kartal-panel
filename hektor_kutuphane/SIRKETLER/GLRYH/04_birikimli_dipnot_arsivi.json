@@ -1,6 +1,6 @@
 {
   "kod": "GLRYH",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 2.13,
+      "efm_yuzde": 179.7,
+      "icr_kati": 2.18,
       "tahakkuk_orani": -4.4,
       "aga_orani": 0.0,
-      "ykp_orani": 0.1,
+      "ykp_orani": 0.0,
       "dso_gun": 58.0,
       "acm_makasi": 8.7,
       "serefiye_ozk_orani": 0.7,

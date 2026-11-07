@@ -1,6 +1,6 @@
 {
   "kod": "MEDTR",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -55,7 +55,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -6.16,
       "aga_orani": 40.5,
-      "ykp_orani": 62.4,
+      "ykp_orani": 62.2,
       "dso_gun": 100.1,
       "acm_makasi": 55.9,
       "serefiye_ozk_orani": 2.3,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%62.4).",
+        "🟡 Kağıt üzeri kâr payı yüksek (%62.2).",
         "🟡 Alacak-Ciro makası +%55.9 açıldı (DSO: 100.1 gün)."
       ],
       "pdf_dipnot_notlari": {
@@ -80,7 +80,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -8.79,
       "aga_orani": 13.5,
-      "ykp_orani": 56.9,
+      "ykp_orani": 56.8,
       "dso_gun": 94.8,
       "acm_makasi": 50.8,
       "serefiye_ozk_orani": 2.3,
@@ -88,7 +88,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%56.9).",
+        "🟡 Kağıt üzeri kâr payı yüksek (%56.8).",
         "🟡 Alacak-Ciro makası +%50.8 açıldı (DSO: 94.8 gün)."
       ],
       "pdf_dipnot_notlari": {

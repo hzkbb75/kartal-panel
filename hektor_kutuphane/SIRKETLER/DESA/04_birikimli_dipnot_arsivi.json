@@ -1,6 +1,6 @@
 {
   "kod": "DESA",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -2.8
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 4.78,
+      "efm_yuzde": 42.2,
+      "icr_kati": 16.71,
       "tahakkuk_orani": -3.49,
       "aga_orani": 2.8,
       "ykp_orani": 43.1,
@@ -75,8 +75,8 @@
       "dso_delta": -1.5
     },
     "2026/06": {
-      "efm_yuzde": 93.6,
-      "icr_kati": 4.42,
+      "efm_yuzde": 35.3,
+      "icr_kati": 11.71,
       "tahakkuk_orani": -2.17,
       "aga_orani": 0.8,
       "ykp_orani": 30.8,
@@ -96,7 +96,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.4 (114 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.26x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / DİPTE (2/3)]: 4 çeyreklik faaliyet/dipnot taraması temiz (DTS: 0/100 | F-Skor: 6/9 | Hibrit Puan: 75.0). Kalkan Hedef Ağırlığı: %1.23 (+1,344 lot).",
+        "🟢 BİRİKİMLİ BİLANÇO İYİLEŞMESİ (2025/03 → 2026/06): 4 çeyrekte DTS 15 puandan 0/100 seviyesine geriledi (DSO: 31.8 gün); dipnot kalitesi güçleniyor.",
+        "🟢 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 0.1x (hasat/düşük CAPEX), İhracat payı %13.4 ve Net YPP/ÖZK %+27.9 ile dengeli.",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %-2.2 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": -15,
       "dso_delta": 1.7

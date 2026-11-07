@@ -1,13 +1,13 @@
 {
   "kod": "ALBTN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 9.9,
       "tahakkuk_orani": -83.55,
       "aga_orani": 0.0,
-      "ykp_orani": 44.7,
+      "ykp_orani": 36.7,
       "dso_gun": 0.0,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%44.7)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%36.7)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 42 Mn ₺ (0.6x Amortisman)<br><strong>MDV:</strong> 0 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
+      "efm_yuzde": 110.2,
       "icr_kati": 1.5,
       "tahakkuk_orani": 15974.11,
       "aga_orani": 0.0,
-      "ykp_orani": 98.7,
+      "ykp_orani": 98.5,
       "dso_gun": 0.0,
       "acm_makasi": -6.3,
       "serefiye_ozk_orani": 0.0,
@@ -40,7 +40,7 @@
       "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%15974.11): Kâr nakde dönüşmüyor.",
-        "🟡 Kağıt üzeri kâr payı yüksek (%98.7)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%98.5)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 24 Mn ₺ (0.2x Amortisman)<br><strong>MDV:</strong> 0 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -52,20 +52,19 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 0.97,
+      "efm_yuzde": 65.7,
+      "icr_kati": 1.66,
       "tahakkuk_orani": -0.43,
       "aga_orani": 19.4,
-      "ykp_orani": 51.3,
+      "ykp_orani": 0.0,
       "dso_gun": 99.1,
       "acm_makasi": -6.0,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 1.2,
       "iliskili_orani": 0.0,
-      "dts_skor": 30,
+      "dts_skor": 0,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%51.3).",
-        "🔴 Faiz karşılama oranı 0.97x (ICR zayıf)."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 77 Mn ₺ (1.1x Amortisman)<br><strong>MDV:</strong> 1.53 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -73,23 +72,23 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 14 Mn ₺ (ÖZK %+0.6)<br><strong>Ham YPP:</strong> 14 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.2 (28 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.56x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": -5,
+      "dts_delta": -35,
       "dso_delta": 99.1
     },
     "2026/06": {
-      "efm_yuzde": 33.2,
-      "icr_kati": 2.96,
+      "efm_yuzde": 17.4,
+      "icr_kati": 5.64,
       "tahakkuk_orani": -0.45,
       "aga_orani": 2.1,
-      "ykp_orani": 42.0,
+      "ykp_orani": 24.2,
       "dso_gun": 88.4,
       "acm_makasi": -15.1,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 1.3,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 0,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%42.0)."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 74 Mn ₺ (0.5x Amortisman)<br><strong>MDV:</strong> 1.55 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -100,7 +99,7 @@
       "tutarlilik_raporu": [
         "🟡 Kağıt üzeri kâr payı yüksek (%42.0)."
       ],
-      "dts_delta": -15,
+      "dts_delta": 0,
       "dso_delta": -10.7
     }
   }

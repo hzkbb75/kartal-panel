@@ -1,13 +1,13 @@
 {
   "kod": "KLSYN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 45.5,
-      "icr_kati": 2.11,
+      "efm_yuzde": 33.2,
+      "icr_kati": 2.88,
       "tahakkuk_orani": -1.78,
       "aga_orani": 0.0,
-      "ykp_orani": 10.3,
+      "ykp_orani": 9.7,
       "dso_gun": 43.4,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 20.7,
-      "icr_kati": 3.17,
+      "efm_yuzde": 15.9,
+      "icr_kati": 4.12,
       "tahakkuk_orani": -3.32,
       "aga_orani": 0.0,
-      "ykp_orani": 17.0,
+      "ykp_orani": 16.9,
       "dso_gun": 37.8,
       "acm_makasi": -12.5,
       "serefiye_ozk_orani": 0.0,
@@ -51,11 +51,11 @@
       "dso_delta": -5.6
     },
     "2026/03": {
-      "efm_yuzde": 5.3,
-      "icr_kati": 8.08,
+      "efm_yuzde": 3.7,
+      "icr_kati": 11.57,
       "tahakkuk_orani": 0.02,
       "aga_orani": 0.0,
-      "ykp_orani": 91.4,
+      "ykp_orani": 91.1,
       "dso_gun": 39.0,
       "acm_makasi": -8.3,
       "serefiye_ozk_orani": 0.0,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%91.4)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%91.1)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 84 Mn ₺ (1.6x Amortisman)<br><strong>MDV:</strong> 3.48 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -75,11 +75,11 @@
       "dso_delta": 1.2
     },
     "2026/06": {
-      "efm_yuzde": 3.9,
-      "icr_kati": 3.44,
+      "efm_yuzde": 3.0,
+      "icr_kati": 4.58,
       "tahakkuk_orani": 4.54,
       "aga_orani": 0.0,
-      "ykp_orani": 1.2,
+      "ykp_orani": 1.1,
       "dso_gun": 49.3,
       "acm_makasi": 26.6,
       "serefiye_ozk_orani": 0.0,

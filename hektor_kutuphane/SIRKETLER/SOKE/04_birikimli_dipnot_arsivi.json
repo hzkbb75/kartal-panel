@@ -1,13 +1,13 @@
 {
   "kod": "SOKE",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 9.9,
       "tahakkuk_orani": 1.37,
       "aga_orani": 0.0,
-      "ykp_orani": 5.9,
+      "ykp_orani": 0.0,
       "dso_gun": 54.1,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 13.3,
@@ -31,7 +31,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -3.9,
       "aga_orani": 0.0,
-      "ykp_orani": 16.2,
+      "ykp_orani": 5.3,
       "dso_gun": 54.6,
       "acm_makasi": 0.7,
       "serefiye_ozk_orani": 13.9,

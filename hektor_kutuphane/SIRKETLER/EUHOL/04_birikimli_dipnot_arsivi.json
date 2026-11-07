@@ -1,13 +1,13 @@
 {
   "kod": "EUHOL",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -1.27,
       "tahakkuk_orani": -7.37,
       "aga_orani": 0.0,
-      "ykp_orani": 0.3,
+      "ykp_orani": 0.2,
       "dso_gun": 0.0,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": -2.0,
       "tahakkuk_orani": 2.51,
       "aga_orani": 0.0,
-      "ykp_orani": 5.1,
+      "ykp_orani": 5.0,
       "dso_gun": 0.0,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -79,7 +79,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": 1.48,
       "aga_orani": 0.0,
-      "ykp_orani": 1.6,
+      "ykp_orani": 0.0,
       "dso_gun": 23.8,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,

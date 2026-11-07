@@ -1,6 +1,6 @@
 {
   "kod": "KLKIM",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -0.72,
       "aga_orani": 0.8,
-      "ykp_orani": 6.9,
+      "ykp_orani": 6.7,
       "dso_gun": 64.3,
       "acm_makasi": -2.2,
       "serefiye_ozk_orani": 1.4,
@@ -55,7 +55,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": 6.58,
       "aga_orani": 20.3,
-      "ykp_orani": 19.4,
+      "ykp_orani": 19.3,
       "dso_gun": 100.6,
       "acm_makasi": 49.5,
       "serefiye_ozk_orani": 1.3,
@@ -80,7 +80,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": 7.87,
       "aga_orani": 6.6,
-      "ykp_orani": 5.4,
+      "ykp_orani": 5.1,
       "dso_gun": 102.6,
       "acm_makasi": 55.8,
       "serefiye_ozk_orani": 1.4,

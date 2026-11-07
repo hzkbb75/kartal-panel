@@ -1,10 +1,10 @@
 {
   "kod": "GOLTS",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 89.2,
-      "icr_kati": 0.82,
+      "efm_yuzde": 68.7,
+      "icr_kati": 1.07,
       "tahakkuk_orani": -0.14,
       "aga_orani": 0.0,
       "ykp_orani": 36.6,
@@ -16,7 +16,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Kağıt üzeri kâr payı yüksek (%36.6).",
-        "🔴 Faiz karşılama oranı 0.82x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.07x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 33 Mn ₺ (0.6x Amortisman)<br><strong>MDV:</strong> 5.54 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -28,11 +28,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 77.8,
-      "icr_kati": 0.6,
+      "efm_yuzde": 57.4,
+      "icr_kati": 0.81,
       "tahakkuk_orani": -1.53,
       "aga_orani": 0.0,
-      "ykp_orani": 57.8,
+      "ykp_orani": 57.2,
       "dso_gun": 68.3,
       "acm_makasi": -7.6,
       "serefiye_ozk_orani": 0.0,
@@ -40,8 +40,8 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%57.8).",
-        "🔴 Faiz karşılama oranı 0.6x (ICR zayıf)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%57.2).",
+        "🔴 Faiz karşılama oranı 0.81x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 259 Mn ₺ (2.3x Amortisman)<br><strong>MDV:</strong> 6.01 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -53,8 +53,8 @@
       "dso_delta": -5.0
     },
     "2026/03": {
-      "efm_yuzde": 13.7,
-      "icr_kati": 6.14,
+      "efm_yuzde": 10.6,
+      "icr_kati": 7.91,
       "tahakkuk_orani": -0.95,
       "aga_orani": 0.3,
       "ykp_orani": 0.2,
@@ -81,7 +81,7 @@
       "icr_kati": 20.42,
       "tahakkuk_orani": -1.0,
       "aga_orani": 0.0,
-      "ykp_orani": 17.7,
+      "ykp_orani": 17.4,
       "dso_gun": 85.5,
       "acm_makasi": 28.2,
       "serefiye_ozk_orani": 0.0,

@@ -1,13 +1,13 @@
 {
   "kod": "ONRYT",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 9.9,
       "tahakkuk_orani": -6.33,
       "aga_orani": 0.0,
-      "ykp_orani": 35.4,
+      "ykp_orani": 35.1,
       "dso_gun": 17.2,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%35.4)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%35.1)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 65 Mn ₺ (4.2x Amortisman)<br><strong>MDV:</strong> 1.08 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -31,7 +31,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -1.0,
       "aga_orani": 8.7,
-      "ykp_orani": 30.3,
+      "ykp_orani": 30.0,
       "dso_gun": 19.6,
       "acm_makasi": 19.1,
       "serefiye_ozk_orani": 0.0,
@@ -55,7 +55,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -4.5,
       "aga_orani": 881.0,
-      "ykp_orani": 36.7,
+      "ykp_orani": 36.4,
       "dso_gun": 74.8,
       "acm_makasi": 280.6,
       "serefiye_ozk_orani": 0.0,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%36.7).",
+        "🟡 Kağıt üzeri kâr payı yüksek (%36.4).",
         "🟡 Alacak-Ciro makası +%280.6 açıldı (DSO: 74.8 gün)."
       ],
       "pdf_dipnot_notlari": {
@@ -76,11 +76,11 @@
       "dso_delta": 55.2
     },
     "2026/06": {
-      "efm_yuzde": 75.5,
-      "icr_kati": 0.76,
+      "efm_yuzde": 68.9,
+      "icr_kati": 0.84,
       "tahakkuk_orani": -0.63,
       "aga_orani": 756.8,
-      "ykp_orani": 55.6,
+      "ykp_orani": 51.4,
       "dso_gun": 55.5,
       "acm_makasi": 94.9,
       "serefiye_ozk_orani": 0.0,
@@ -88,9 +88,9 @@
       "iliskili_orani": 0.0,
       "dts_skor": 45,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%55.6).",
+        "🟡 Kağıt üzeri kâr payı yüksek (%51.4).",
         "🟡 Alacak-Ciro makası +%94.9 açıldı (DSO: 55.5 gün).",
-        "🔴 Faiz karşılama oranı 0.76x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.84x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 110 Mn ₺ (2.6x Amortisman)<br><strong>MDV:</strong> 1.48 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

@@ -1,6 +1,6 @@
 {
   "kod": "BRMEN",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": -1.67,
+      "efm_yuzde": 381.4,
+      "icr_kati": -6.69,
       "tahakkuk_orani": -7.17,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -1.67x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -6.69x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 1 Mn ₺ (0.7x Amortisman)<br><strong>MDV:</strong> 6 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -75,8 +75,8 @@
       "dso_delta": 9.7
     },
     "2026/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": -0.63,
+      "efm_yuzde": 234.8,
+      "icr_kati": -2.52,
       "tahakkuk_orani": 2.77,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -87,7 +87,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -0.63x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -2.52x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 7 Mn ₺ (5.6x Amortisman)<br><strong>MDV:</strong> 12 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

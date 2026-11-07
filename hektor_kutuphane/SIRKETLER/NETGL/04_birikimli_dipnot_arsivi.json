@@ -1,6 +1,6 @@
 {
   "kod": "NETGL",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/06": {
       "efm_yuzde": 88.4,
@@ -28,8 +28,8 @@
       "dso_delta": 0.0
     },
     "2026/06": {
-      "efm_yuzde": 49.2,
-      "icr_kati": 1.36,
+      "efm_yuzde": 39.9,
+      "icr_kati": 1.67,
       "tahakkuk_orani": -2.8,
       "aga_orani": 0.0,
       "ykp_orani": 14.1,
@@ -38,9 +38,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 0.3,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 0,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 1.36x (ICR zayıf)."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 23 Mn ₺ (0.5x Amortisman)<br><strong>MDV:</strong> 3.29 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -51,7 +51,7 @@
       "tutarlilik_raporu": [
         "🔴 Faiz karşılama oranı 1.36x (ICR zayıf)."
       ],
-      "dts_delta": -20,
+      "dts_delta": -35,
       "dso_delta": 144.0
     }
   }

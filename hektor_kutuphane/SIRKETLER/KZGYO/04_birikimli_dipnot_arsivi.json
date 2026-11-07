@@ -1,10 +1,10 @@
 {
   "kod": "KZGYO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 1.2,
-      "icr_kati": 5.31,
+      "efm_yuzde": 1.1,
+      "icr_kati": 5.58,
       "tahakkuk_orani": -0.5,
       "aga_orani": 0.0,
       "ykp_orani": 74.4,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 4.1,
-      "icr_kati": 3.07,
+      "efm_yuzde": 3.8,
+      "icr_kati": 3.31,
       "tahakkuk_orani": 1.44,
       "aga_orani": 1.4,
       "ykp_orani": 95.7,
@@ -51,8 +51,8 @@
       "dso_delta": -1.2
     },
     "2026/03": {
-      "efm_yuzde": 15.0,
-      "icr_kati": -2.02,
+      "efm_yuzde": 13.0,
+      "icr_kati": -2.34,
       "tahakkuk_orani": -0.98,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -2.02x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -2.34x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 3 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -75,11 +75,11 @@
       "dso_delta": -1.4
     },
     "2026/06": {
-      "efm_yuzde": 2.3,
-      "icr_kati": 7.53,
+      "efm_yuzde": 1.8,
+      "icr_kati": 9.68,
       "tahakkuk_orani": -7.19,
       "aga_orani": 9.7,
-      "ykp_orani": 86.8,
+      "ykp_orani": 85.9,
       "dso_gun": 11.6,
       "acm_makasi": 52.9,
       "serefiye_ozk_orani": 0.0,
@@ -87,7 +87,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%86.8)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%85.9)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 6 Mn ₺ (5.1x Amortisman)<br><strong>MDV:</strong> 9 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

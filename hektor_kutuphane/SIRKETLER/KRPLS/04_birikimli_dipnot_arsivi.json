@@ -1,10 +1,10 @@
 {
   "kod": "KRPLS",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 51.9,
-      "icr_kati": 0.7,
+      "efm_yuzde": 39.1,
+      "icr_kati": 0.93,
       "tahakkuk_orani": -5.74,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.7x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.93x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 3 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 315 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 62.8,
-      "icr_kati": 1.01,
+      "efm_yuzde": 47.1,
+      "icr_kati": 1.35,
       "tahakkuk_orani": -6.98,
       "aga_orani": 1.9,
       "ykp_orani": 19.4,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 1.01x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.35x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 4 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 316 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -51,8 +51,8 @@
       "dso_delta": -6.7
     },
     "2026/03": {
-      "efm_yuzde": 54.4,
-      "icr_kati": 1.86,
+      "efm_yuzde": 35.6,
+      "icr_kati": 2.85,
       "tahakkuk_orani": -1.91,
       "aga_orani": 18.9,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 39.4
     },
     "2026/06": {
-      "efm_yuzde": 41.7,
-      "icr_kati": 2.85,
+      "efm_yuzde": 29.3,
+      "icr_kati": 4.05,
       "tahakkuk_orani": -3.54,
       "aga_orani": 6.3,
       "ykp_orani": 0.0,

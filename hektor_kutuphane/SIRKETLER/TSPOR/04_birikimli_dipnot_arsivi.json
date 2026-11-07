@@ -1,6 +1,6 @@
 {
   "kod": "TSPOR",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": -1.41,
       "tahakkuk_orani": 32.7,
       "aga_orani": 0.0,
-      "ykp_orani": 7.8,
+      "ykp_orani": 7.4,
       "dso_gun": 119.4,
       "acm_makasi": 51.8,
       "serefiye_ozk_orani": 0.0,
@@ -57,7 +57,7 @@
       "icr_kati": -2.01,
       "tahakkuk_orani": 10.62,
       "aga_orani": 0.0,
-      "ykp_orani": 6.9,
+      "ykp_orani": 6.8,
       "dso_gun": 80.1,
       "acm_makasi": 20.9,
       "serefiye_ozk_orani": 0.0,

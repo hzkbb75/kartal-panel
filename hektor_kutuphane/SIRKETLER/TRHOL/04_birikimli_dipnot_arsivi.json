@@ -1,10 +1,10 @@
 {
   "kod": "TRHOL",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": -0.06,
+      "efm_yuzde": 199.0,
+      "icr_kati": -0.24,
       "tahakkuk_orani": 5.46,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -16,7 +16,7 @@
       "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%5.46): Kâr nakde dönüşmüyor.",
-        "🔴 Faiz karşılama oranı -0.06x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.24x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 20 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -52,8 +52,8 @@
       "dso_delta": 18.7
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": -0.85,
+      "efm_yuzde": 637.6,
+      "icr_kati": -0.96,
       "tahakkuk_orani": 7.48,
       "aga_orani": 0.0,
       "ykp_orani": 6.8,
@@ -65,7 +65,7 @@
       "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%7.48): Kâr nakde dönüşmüyor.",
-        "🔴 Faiz karşılama oranı -0.85x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.96x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 9 Mn ₺ (29.0x Amortisman)<br><strong>MDV:</strong> 9 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

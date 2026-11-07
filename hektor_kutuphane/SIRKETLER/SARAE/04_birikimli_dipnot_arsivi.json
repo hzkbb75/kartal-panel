@@ -1,13 +1,13 @@
 {
   "kod": "SARAE",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 95.0,
+      "efm_yuzde": 236.0,
       "icr_kati": 1.7,
       "tahakkuk_orani": 104292.33,
       "aga_orani": 0.0,
-      "ykp_orani": 22.7,
+      "ykp_orani": 22.5,
       "dso_gun": 0.0,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
+      "efm_yuzde": 266.1,
       "icr_kati": 0.94,
       "tahakkuk_orani": 156273.61,
       "aga_orani": 0.0,
-      "ykp_orani": 27.7,
+      "ykp_orani": 27.6,
       "dso_gun": 0.0,
       "acm_makasi": -8.9,
       "serefiye_ozk_orani": 0.0,
@@ -52,8 +52,8 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 48.6,
-      "icr_kati": 2.06,
+      "efm_yuzde": 38.2,
+      "icr_kati": 2.62,
       "tahakkuk_orani": 3.38,
       "aga_orani": 25.8,
       "ykp_orani": 3.7,
@@ -76,21 +76,20 @@
       "dso_delta": 122.2
     },
     "2026/06": {
-      "efm_yuzde": 31.8,
-      "icr_kati": 1.49,
+      "efm_yuzde": 24.3,
+      "icr_kati": 1.95,
       "tahakkuk_orani": 8.38,
       "aga_orani": 29.7,
-      "ykp_orani": 38.5,
+      "ykp_orani": 38.4,
       "dso_gun": 130.6,
       "acm_makasi": -63.0,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 2.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 50,
+      "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%8.38): Kâr nakde dönüşmüyor.",
-        "🟡 Kağıt üzeri kâr payı yüksek (%38.5).",
-        "🔴 Faiz karşılama oranı 1.49x (ICR zayıf)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%38.4)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 219 Mn ₺ (0.8x Amortisman)<br><strong>MDV:</strong> 6.25 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -103,7 +102,7 @@
         "🟡 Kağıt üzeri kâr payı yüksek (%38.5).",
         "🔴 Faiz karşılama oranı 1.49x (ICR zayıf)."
       ],
-      "dts_delta": 50,
+      "dts_delta": 35,
       "dso_delta": 8.4
     }
   }

@@ -1,10 +1,10 @@
 {
   "kod": "BALSU",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 11.9,
-      "icr_kati": -0.48,
+      "efm_yuzde": 9.9,
+      "icr_kati": -0.58,
       "tahakkuk_orani": 6.83,
       "aga_orani": 0.0,
       "ykp_orani": 0.1,
@@ -16,7 +16,7 @@
       "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%6.83): Kâr nakde dönüşmüyor.",
-        "🔴 Faiz karşılama oranı -0.48x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.58x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 636 Mn ₺ (14.2x Amortisman)<br><strong>MDV:</strong> 3.51 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -28,11 +28,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 14.7,
-      "icr_kati": 0.39,
+      "efm_yuzde": 11.9,
+      "icr_kati": 0.48,
       "tahakkuk_orani": 10.07,
       "aga_orani": 0.0,
-      "ykp_orani": 5.5,
+      "ykp_orani": 5.4,
       "dso_gun": 87.2,
       "acm_makasi": 57.2,
       "serefiye_ozk_orani": 0.0,
@@ -42,7 +42,7 @@
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%10.07): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%57.2 açıldı (DSO: 87.2 gün).",
-        "🔴 Faiz karşılama oranı 0.39x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.48x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 964 Mn ₺ (12.2x Amortisman)<br><strong>MDV:</strong> 3.96 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

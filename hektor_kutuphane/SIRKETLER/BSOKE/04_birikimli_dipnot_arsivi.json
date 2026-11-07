@@ -1,10 +1,10 @@
 {
   "kod": "BSOKE",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 12.3,
-      "icr_kati": 4.32,
+      "efm_yuzde": 10.2,
+      "icr_kati": 5.22,
       "tahakkuk_orani": 4.51,
       "aga_orani": 0.0,
       "ykp_orani": 79.7,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 8.0,
-      "icr_kati": 4.61,
+      "efm_yuzde": 6.5,
+      "icr_kati": 5.66,
       "tahakkuk_orani": 1.41,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": -1.1
     },
     "2026/03": {
-      "efm_yuzde": 19.9,
-      "icr_kati": 0.99,
+      "efm_yuzde": 13.7,
+      "icr_kati": 1.43,
       "tahakkuk_orani": -3.6,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -64,7 +64,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%39.3 açıldı (DSO: 106.3 gün).",
-        "🔴 Faiz karşılama oranı 0.99x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.43x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 196 Mn ₺ (1.0x Amortisman)<br><strong>MDV:</strong> 15.08 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -76,8 +76,8 @@
       "dso_delta": 32.1
     },
     "2026/06": {
-      "efm_yuzde": 8.4,
-      "icr_kati": 3.01,
+      "efm_yuzde": 5.9,
+      "icr_kati": 4.29,
       "tahakkuk_orani": -2.83,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

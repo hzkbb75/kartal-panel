@@ -1,10 +1,10 @@
 {
   "kod": "TSGYO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 38.1,
-      "icr_kati": 0.96,
+      "efm_yuzde": 35.0,
+      "icr_kati": 1.04,
       "tahakkuk_orani": -1.77,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.96x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.04x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 1 Mn ₺ (0.9x Amortisman)<br><strong>MDV:</strong> 30 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 61.5,
-      "icr_kati": 1.88,
+      "efm_yuzde": 57.5,
+      "icr_kati": 2.02,
       "tahakkuk_orani": -0.96,
       "aga_orani": 0.1,
       "ykp_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 0.1
     },
     "2026/03": {
-      "efm_yuzde": 32.9,
-      "icr_kati": 6.37,
+      "efm_yuzde": 27.6,
+      "icr_kati": 7.58,
       "tahakkuk_orani": -2.39,
       "aga_orani": 0.1,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 4.5
     },
     "2026/06": {
-      "efm_yuzde": 26.7,
-      "icr_kati": 11.98,
+      "efm_yuzde": 23.2,
+      "icr_kati": 13.82,
       "tahakkuk_orani": -1.11,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

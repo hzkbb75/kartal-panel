@@ -1,6 +1,6 @@
 {
   "kod": "ZGYO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -52,8 +52,8 @@
       "dso_delta": 0.0
     },
     "2026/03": {
-      "efm_yuzde": 39.1,
-      "icr_kati": -0.2,
+      "efm_yuzde": 34.8,
+      "icr_kati": -0.22,
       "tahakkuk_orani": 6.39,
       "aga_orani": 0.0,
       "ykp_orani": 0.3,
@@ -65,7 +65,7 @@
       "dts_skor": 35,
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%6.39): Kâr nakde dönüşmüyor.",
-        "🔴 Faiz karşılama oranı -0.2x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -0.22x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 1 Mn ₺ (3.0x Amortisman)<br><strong>MDV:</strong> 1 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -77,8 +77,8 @@
       "dso_delta": 103.7
     },
     "2026/06": {
-      "efm_yuzde": 78.4,
-      "icr_kati": 26.95,
+      "efm_yuzde": 61.3,
+      "icr_kati": 34.5,
       "tahakkuk_orani": 26.78,
       "aga_orani": 0.0,
       "ykp_orani": 1.5,

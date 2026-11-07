@@ -78,7 +78,8 @@ if BIST_ANALIZ_TABANI:
         _sirali_fk = sorted(_liste)
         _orta = len(_sirali_fk) // 2
         _medyan = _sirali_fk[_orta] if len(_sirali_fk) % 2 == 1 else (_sirali_fk[_orta - 1] + _sirali_fk[_orta]) / 2.0
-        SEKTOR_FK_HARITASI[_sek] = round(_medyan, 2)
+        # Serkan Ünal Bölüm 4: Sektör medyan F/K çıpası rasyonel [5.0x - 18.0x] bandını aşamaz (balon çarpanları engeller)
+        SEKTOR_FK_HARITASI[_sek] = round(max(5.0, min(18.0, _medyan)), 2)
 
 # 2. 60 Günlük Teknik Kanal & R:R Veri Ambarını Yükle (Yoksa veya Eksikse Canlı Hesapla)
 KAP_VE_TEKNIK_YOLLARI = [
@@ -312,7 +313,7 @@ def rasyonel_degerleme_hesapla(fiyat, hbk, dd, roe, sektor_fk=10.0, sermaye_mali
             
         v_roe = 0
         if dd > 0 and roe > 0:
-            hak_edilen_pddd = roe / sermaye_maliyeti
+            hak_edilen_pddd = max(0.75, min(6.0, roe / sermaye_maliyeti))
             v_roe = dd * hak_edilen_pddd
             
         v_sektor = 0
@@ -392,19 +393,31 @@ def hesapla_donem_dipnot_metrikleri(satirlar_cari: list, satirlar_onceki: list =
     modv_c = satir_bul(satirlar_cari, ["maddi olmayan duran varliklar"])[0]
     modv_o = satir_bul(onceki, ["maddi olmayan duran varliklar"])[0]
     serefiye_c = satir_bul(satirlar_cari, ["serefiye"])[0]
-    kagit_kar = max(0.0, satir_bul(satirlar_cari, ["yatirim faaliyetlerinden gelirler"])[0]) + max(0.0, satir_bul(satirlar_cari, ["ertelenmis vergi geliri"])[0])
+
+    yat_gelir_c = max(0.0, satir_bul(satirlar_cari, ["yatirim faaliyetlerinden gelirler"])[0])
+    yat_gider_c = abs(satir_bul(satirlar_cari, ["yatirim faaliyetlerinden giderler"])[0])
+    net_yat_gelir_c = max(0.0, yat_gelir_c - yat_gider_c)
+    ert_vergi_gelir_c = max(0.0, satir_bul(satirlar_cari, ["ertelenmis vergi geliri"])[0])
+    kagit_kar = net_yat_gelir_c + ert_vergi_gelir_c
     karsiliklar_c = satir_bul(satirlar_cari, ["borc karsiliklari", "kisa vadeli karsiliklar", "uzun vadeli karsiliklar", "calisanlara saglanan"], mod="topla")[0]
 
     # Net Finansman Gideri ve Operasyonel FAVÖK (EFK + Amortisman) bazlı gerçekçi ICR & Yıllıklandırılmış Borç Maliyeti
-    # Net Nakit (fin_borc_c <= nakit_c) veya ihmal edilebilir finansal borç (<%1.5 aktif) durumunda
-    # gelir tablosundaki finansal giderler kredi faizi değil kur/vade farkı olduğu için yapay %1000+ EFM üretilmez.
+    # UFRS'de (esas faaliyet dışı) finansal giderler satırı; banka kredisi faizinin yanında ticari borç vade farkı
+    # ve dövizli sipariş avanslarının (TFRS 15) kur/finansman giderini de içerir.
+    # Bu nedenle toplam net finansman gideri, finansal borcun toplam yükümlülük tabanındaki ağırlığıyla oransallaştırılır.
+    ticari_borc_c = satir_bul(satirlar_cari, ["ticari borclar"])[0]
+    avans_kur_tabani = satir_bul(satirlar_cari, ["musteri soz. dogan yuk.", "musteri soz.dogan yuk.", "ertelenmis gelirler", "alinan siparis avanslari"], mod="topla")[0]
     net_nakit_mi = (fin_borc_c <= nakit_c) or (fin_borc_c < varlik_c * 0.015)
-    net_fin_gider_c = max(0.0, fin_gider_c - fin_gelir_c)
     ort_borc = max((fin_borc_c + fin_borc_o) / 2.0, 1.0)
+    ham_net_fin_gider = max(0.0, fin_gider_c - fin_gelir_c)
+    toplam_fin_tabani = max(ort_borc + (ticari_borc_c * 0.60) + (avans_kur_tabani * 0.35), ort_borc, 1.0)
+    kredi_payi_carpani = max(0.25, ort_borc / toplam_fin_tabani)
+    net_fin_gider_c = (ham_net_fin_gider * kredi_payi_carpani) if fin_borc_c > 0 else 0.0
+
     if net_nakit_mi or fin_borc_c <= 0:
         efm_yuzde = 0.0
     else:
-        efm_yuzde = round(min(95.0, ((net_fin_gider_c * yillik_carpan) / ort_borc) * 100.0), 1)
+        efm_yuzde = round(((net_fin_gider_c * yillik_carpan) / ort_borc) * 100.0, 1)
 
     operasyonel_nakit_kar = max(efk_c + amort_c, efk_c)
     if net_nakit_mi or net_fin_gider_c <= 0:
@@ -530,8 +543,11 @@ def guncelle_birikimli_dipnot_arsivi(kod: str) -> dict:
             # Eğer PDF madencisinden özel metin geldiyse onu koru, boş kalan alanlarda UFRS dipnot röntgenini kullan
             for k_alan, v_otomatik in hesaplanan["pdf_dipnot_notlari"].items():
                 eski_val = str(eski_notlar.get(k_alan, "")).strip()
-                if eski_val and len(eski_val) > 5 and eski_val != "-" and "CAPEX:" not in eski_val and "Sipariş Avansı:" not in eski_val and "Net YPP" not in eski_val and "Karşılık / ÖZK:" not in eski_val:
-                    hesaplanan["pdf_dipnot_notlari"][k_alan] = eski_val
+                if "Faaliyet Raporu:" in eski_val and "<div style='margin-top:6px;" in eski_val:
+                    pdf_parca = "<div style='margin-top:6px;" + eski_val.split("<div style='margin-top:6px;", 1)[1]
+                    hesaplanan["pdf_dipnot_notlari"][k_alan] = v_otomatik + pdf_parca
+                elif eski_val and len(eski_val) > 5 and eski_val != "-" and "olağandışı bir sapma" not in eski_val and "CAPEX:" not in eski_val and "Sipariş Avansı:" not in eski_val and "Net YPP" not in eski_val and "Karşılık / ÖZK:" not in eski_val:
+                    hesaplanan["pdf_dipnot_notlari"][k_alan] = v_otomatik + f"<div style='margin-top:6px; padding-top:5px; border-top:1px dashed #334155; font-size:10.5px; color:#cbd5e1;'>📄 {eski_val}</div>"
             if eski.get("tutarlilik_raporu"):
                 hesaplanan["tutarlilik_raporu"] = eski["tutarlilik_raporu"]
 
@@ -819,22 +835,43 @@ def analiz_et_sirket(kod: str) -> dict:
             
     medyan_efk_marj = (sorted(gecmis_efk_marjlari)[len(gecmis_efk_marjlari)//2]) if gecmis_efk_marjlari else efk_marj_c
 
+    roe_hesap = round((net_c / max(ozk_c, 1.0)) * 100, 1) if ozk_c > 0 else float(sirket_kaydi.get("roe_tv", 0.0))
+
+    # ZİRAAT RESMİ VERİLERİNİ DEVREYE AL
+    # (UFRS dönemlik net_c ve net_o oran bütünlüğü için korunur; Ziraat 4Ç TTM kârı ayrı saklanır)
+    net_kar_ttm = net_c
+    ziraat = BIST_ANALIZ_TABANI.get(kod, {})
+    if ziraat:
+        if ziraat.get("fiyat", 0) > 0: fiyat = float(ziraat["fiyat"])
+        if ziraat.get("fk", 0) > 0: fk = float(ziraat["fk"])
+        if ziraat.get("fd_favok", 0) > 0: fd_favok = float(ziraat["fd_favok"])
+        if ziraat.get("roe", 0) != 0: roe_hesap = float(ziraat["roe"])
+        if ziraat.get("net_kar_son4c_mn", 0) != 0: net_kar_ttm = float(ziraat["net_kar_son4c_mn"])
+
     # === KURUMSAL ALTYAPI & BİLANÇO BÜYÜKLÜĞÜ HENDEĞİ ===
     # Özkaynakları 10 Milyar TL üzerinde olan, güvenli borçlulukta (Net Borç/ÖZK <= 0.85) ve güçlü nakit üreten devler,
     # ağır yatırım ve döngüsel marj diplerinde dahi en az Kırılgan Hendekli (Döngüsel Hendek) kabul edilir.
     kurumsal_altyapi_hendegi = (ozk_c >= 10000.0 and net_borc_ozkaynak <= 0.85 and cfo_c > 0) or (favok_marj_c >= 0.10 and net_borc_ozkaynak <= 0.80 and cfo_c > 0)
 
     # Serkan Ünal 60 Hisse Portföy Tavanları: Korunaklı (%3.5), Kırılgan Hendekli (%2.2), Hendeksiz (%1.2)
-    if (medyan_efk_marj >= 0.14 or (efk_marj_c >= 0.12 and roic_tahmini >= 0.15)) and cfo_c > 0:
-        kategori, tavan = "Korunaklı", 3.5
-    elif (medyan_efk_marj >= 0.07 or efk_marj_c >= 0.07 or kurumsal_altyapi_hendegi) and cfo_c > 0:
-        kategori, tavan = "Kırılgan Hendekli", 2.2
+    if banka_mi:
+        if net_c > 0 and roe_hesap >= 28.0 and net_c >= net_o:
+            kategori, tavan = "Korunaklı", 3.5
+        elif net_c > 0 and (roe_hesap >= 18.0 or ozk_c >= 25000.0):
+            kategori, tavan = "Kırılgan Hendekli", 2.2
+        else:
+            kategori, tavan = "Hendeksiz", 1.2
     else:
-        kategori, tavan = "Hendeksiz", 1.2
+        if (medyan_efk_marj >= 0.14 or (efk_marj_c >= 0.12 and roic_tahmini >= 0.15)) and cfo_c > 0:
+            kategori, tavan = "Korunaklı", 3.5
+        elif (medyan_efk_marj >= 0.07 or efk_marj_c >= 0.07 or kurumsal_altyapi_hendegi) and cfo_c > 0:
+            kategori, tavan = "Kırılgan Hendekli", 2.2
+        else:
+            kategori, tavan = "Hendeksiz", 1.2
 
     if banka_mi:
         cfo_kaliteli = net_c > 0
-        f_skor = 7 if (net_c > net_o and net_c > 0) else 5
+        f_skor = 8 if (net_c > net_o and net_c > 0 and roe_hesap >= 25.0) else (7 if (net_c > net_o and net_c > 0) else 5)
     else:
         cari_c = round(donen_c / max(kv_c, 1.0), 2)
         cari_o = round(donen_o / max(kv_o, 1.0), 2)
@@ -851,19 +888,6 @@ def analiz_et_sirket(kod: str) -> dict:
             int((satis_c / max(varlik_c, 1.0)) > (satis_o / max(varlik_o, 1.0)))
         ]
         f_skor = sum(piotroski_puanlar)
-
-    roe_hesap = round((net_c / max(ozk_c, 1.0)) * 100, 1) if ozk_c > 0 else float(sirket_kaydi.get("roe_tv", 0.0))
-
-    # ZİRAAT RESMİ VERİLERİNİ DEVREYE AL
-    # (UFRS dönemlik net_c ve net_o oran bütünlüğü için korunur; Ziraat 4Ç TTM kârı ayrı saklanır)
-    net_kar_ttm = net_c
-    ziraat = BIST_ANALIZ_TABANI.get(kod, {})
-    if ziraat:
-        if ziraat.get("fiyat", 0) > 0: fiyat = float(ziraat["fiyat"])
-        if ziraat.get("fk", 0) > 0: fk = float(ziraat["fk"])
-        if ziraat.get("fd_favok", 0) > 0: fd_favok = float(ziraat["fd_favok"])
-        if ziraat.get("roe", 0) != 0: roe_hesap = float(ziraat["roe"])
-        if ziraat.get("net_kar_son4c_mn", 0) != 0: net_kar_ttm = float(ziraat["net_kar_son4c_mn"])
 
     # Gerçek Piyasa Değeri Türetimi (TV verisi yoksa veya 0 ise Ziraat PD/DD veya F/K üzerinden gerçek PD)
     pddd_z = float(ziraat.get("pddd", 0.0) or 0.0) if ziraat else 0.0
@@ -1087,6 +1111,11 @@ def uret_dna_ve_tercume_katmani(m: dict) -> dict:
             "baslik": "Net Nakit & Çelik Bilanço Zırhı",
             "detay": f"%{ozkaynak_orani:.1f} özkaynak oranı ve {net_borc_ozk:.2f}x Net Borç/ÖZK ile yüksek faiz ortamına tam bağışıklı."
         }
+    elif kategori == "Korunaklı" and efk_marji >= 18.0:
+        en_guclu = {
+            "baslik": f"Korunaklı Hendek & Yüksek Marj (%{efk_marji:.1f})",
+            "detay": f"%{efk_marji:.1f} esas faaliyet kâr marjı, %{ozkaynak_orani:.1f} özkaynak oranı ve {ina_nk_orani:.2f}x nakit dönüşümüyle güçlü rekabet üstünlüğüne sahip."
+        }
     elif 0 < fk <= 7.0 and f_skor >= 7:
         en_guclu = {
             "baslik": f"Güvenlik Marjı ({fk:.1f}x F/K) & F-Skor ({f_skor}/9)",
@@ -1098,7 +1127,7 @@ def uret_dna_ve_tercume_katmani(m: dict) -> dict:
             "detay": f"1 TL net kâra karşılık kasaya {ina_nk_orani:.2f} TL gerçek işletme nakdi indirerek operasyonlarını finanse ediyor."
         }
     else:
-        baslik_hendek = f"{kategori} Yapı & Nakit Akışı ({f_skor}/9)" if kategori != "Hendeksiz" else f"Pozitif İşletme Nakit Üretimi ({f_skor}/9)"
+        baslik_hendek = f"{kategori} Hendek & Pozitif Nakit Akışı" if kategori != "Hendeksiz" else "Pozitif İşletme Nakit Üretimi"
         en_guclu = {
             "baslik": baslik_hendek,
             "detay": f"1 TL net kâra karşılık {ina_nk_orani:.2f} TL işletme nakdi üreterek faaliyet döngüsünü finanse ediyor."
@@ -1263,18 +1292,28 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
     karakter_etiketleri = []
     if net_borc_ozk <= 0.05:
         karakter_etiketleri.append('<span style="background:#064e3b; color:#34d399; padding:3px 6px; border-radius:4px; font-size:10.5px; margin-right:6px; font-weight:bold; box-shadow:0 0 4px #064e3b;">[Net Nakit]</span>')
+    elif net_borc_ozk <= 0.30:
+        karakter_etiketleri.append('<span style="background:#065f46; color:#6ee7b7; padding:3px 6px; border-radius:4px; font-size:10.5px; margin-right:6px; font-weight:bold;">[Düşük Borç]</span>')
     elif net_borc_ozk > 1.0:
         karakter_etiketleri.append('<span style="background:#7f1d1d; color:#fca5a5; padding:3px 6px; border-radius:4px; font-size:10.5px; margin-right:6px; font-weight:bold;">[Yüksek Borç]</span>')
         
     if nakit_donusum_kati >= 1.2:
         karakter_etiketleri.append('<span style="background:#1e3a8a; color:#93c5fd; padding:3px 6px; border-radius:4px; font-size:10.5px; margin-right:6px; font-weight:bold; box-shadow:0 0 4px #1e3a8a;">[Nakit Makinesi]</span>')
+    elif nakit_donusum_kati >= 1.0:
+        karakter_etiketleri.append('<span style="background:#1e293b; color:#38bdf8; border:1px solid #0284c7; padding:2px 6px; border-radius:4px; font-size:10.5px; margin-right:6px; font-weight:bold;">[Pozitif Nakit Dönüşümü]</span>')
     elif nakit_donusum_kati < 0.5:
         karakter_etiketleri.append('<span style="background:#78350f; color:#fcd34d; padding:3px 6px; border-radius:4px; font-size:10.5px; margin-right:6px; font-weight:bold;">[Zayıf Tahakkuk]</span>')
+
+    if efk_marj_c >= 20.0:
+        karakter_etiketleri.append('<span style="background:#0c4a6e; color:#7dd3fc; padding:3px 6px; border-radius:4px; font-size:10.5px; margin-right:6px; font-weight:bold;">[Yüksek Faaliyet Marjı]</span>')
+
+    if ertelenmis_c >= satis_c * 0.25 and ertelenmis_c > ertelenmis_o:
+        karakter_etiketleri.append('<span style="background:#312e81; color:#a5b4fc; padding:3px 6px; border-radius:4px; font-size:10.5px; margin-right:6px; font-weight:bold;">[Güçlü Sipariş Avansı]</span>')
         
     if marj_fark_puan >= 2.0:
         karakter_etiketleri.append('<span style="background:#065f46; color:#6ee7b7; padding:3px 6px; border-radius:4px; font-size:10.5px; margin-right:6px; font-weight:bold;">[Marj Genişliyor]</span>')
     elif marj_fark_puan <= -2.0:
-        karakter_etiketleri.append('<span style="background:#450a0a; color:#f87171; padding:3px 6px; border-radius:4px; font-size:10.5px; margin-right:6px; font-weight:bold;">[Marj Baskılı]</span>')
+        karakter_etiketleri.append('<span style="background:#450a0a; color:#f87171; padding:3px 6px; border-radius:4px; font-size:10.5px; margin-right:6px; font-weight:bold;">[Marj Daraldı]</span>')
 
     if roe >= 35.0:
         karakter_etiketleri.append('<span style="background:#4c1d95; color:#c4b5fd; padding:3px 6px; border-radius:4px; font-size:10.5px; margin-right:6px; font-weight:bold; box-shadow:0 0 4px #4c1d95;">[Yüksek ROE]</span>')
@@ -1393,11 +1432,25 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
     mevcut_agirlik = round(float(pozisyon.get("agirlik_yuzde", 0.0)), 2) if pozisyon else 0.0
     kademe_durumu = pozisyon.get("kademe", "1/3 Başlangıç (Radar)") if pozisyon else "1/3 Başlangıç (Yeni Aday)"
 
+    ne_is_yapar_metin = f"{sirket_adi}, {sektor} sektöründe faaliyet gösteren, Bölüm 1 süzgeçlerini geçen BIST şirketidir."
+    urun_ve_pazar_metin = f"{sektor} ana ürün ve hizmetleri | Yurt içi ve ihracat pazarları"
+    yerel_karne_yolu = os.path.join(SIRKETLER_DIR, kod, "03_serkan_unal_karnesi.json")
+    if os.path.exists(yerel_karne_yolu):
+        try:
+            with open(yerel_karne_yolu, "r", encoding="utf-8") as _fk_json:
+                _eski_k = json.load(_fk_json).get("sirketi_tani", {})
+                if _eski_k.get("ne_is_yapar") and "Bölüm 1 süzgeçlerini" not in _eski_k.get("ne_is_yapar", ""):
+                    ne_is_yapar_metin = _eski_k["ne_is_yapar"]
+                if _eski_k.get("urun_ve_pazar") and "ana ürün ve hizmetleri" not in _eski_k.get("urun_ve_pazar", ""):
+                    urun_ve_pazar_metin = _eski_k["urun_ve_pazar"]
+        except Exception:
+            pass
+
     kar_degisim_etiket = f"Zarardan Kâra ({format_milyar_milyon(net_o)} → {format_milyar_milyon(net_c)})" if (net_o < 0 and net_c > 0) else f"%{net_kar_buyume:+.1f} ({format_milyar_milyon(net_o)} → {format_milyar_milyon(net_c)})"
     sirketi_tani = {
         "sirket_adi": sirket_adi,
-        "ne_is_yapar": f"{sirket_adi}, {sektor} sektöründe faaliyet gösteren, Bölüm 1 süzgeçlerini geçen BIST şirketidir.",
-        "urun_ve_pazar": f"{sektor} ana ürün ve hizmetleri | Yurt içi ve ihracat pazarları",
+        "ne_is_yapar": ne_is_yapar_metin,
+        "urun_ve_pazar": urun_ve_pazar_metin,
         "piyasa_degeri": format_milyar_milyon(pd_milyar * 1000.0) if pd_milyar > 0 else format_milyar_milyon(ozk_c),
         "net_kar_12ay": format_milyar_milyon(net_kar_ttm),
         "net_kar_yorum": f"Son 4 çeyrek (TTM) net kâr: {format_milyar_milyon(net_kar_ttm)} | UFRS dönem değişimi: {kar_degisim_etiket}.",
@@ -1495,48 +1548,51 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
         "halka_aciklik": halka_aciklik, "tarihsel_bant_konumu": konum_yuzde
     })
 
-    # DİKKATİMİ ÇEKENLER & SEVMEDİKLERİM (Özet ve Sadeleştirilmiş)
+    # DİKKATİMİ ÇEKENLER & SEVMEDİKLERİM (Çelişkisiz ve Tutarlı Bilanço Dinamiği)
     dikkat_cekenler = []
     if cfo_ok:
         dikkat_cekenler.append(f"Güçlü Nakit Akışı: Her 1 TL net kâra {nakit_donusum_kati:.2f} TL işletme nakdi üretildi.")
-    if net_borc_ozk <= 0.25:
-        dikkat_cekenler.append(f"Çelik Bilanço: Net Borç/ÖZK {net_borc_ozk:.2f}x ile borçsuz veya net nakitte.")
-    if efk_marj_c > 14.0 and marj_fark_puan >= 0:
+    if net_borc_ozk <= 0.05:
+        dikkat_cekenler.append(f"Net Nakit Kalkanı: Net Borç/ÖZK {net_borc_ozk:.2f}x ile şirket borçsuz veya net nakit konumunda.")
+    elif net_borc_ozk <= 0.35:
+        dikkat_cekenler.append(f"Düşük Kaldıraç: Net Borç/ÖZK {net_borc_ozk:.2f}x (Özkaynak oranı %{ozk_orani_hesap:.1f}) ile sağlam bilanço zırhı.")
+    if efk_marj_c >= 14.0 and marj_fark_puan >= 0:
         dikkat_cekenler.append(f"Marj Gücü: Faaliyet marjı %{efk_marj_c:.1f} ({marj_fark_puan:+.1f} puan iyileşme).")
+    elif efk_marj_c >= 20.0:
+        dikkat_cekenler.append(f"Yüksek Operasyonel Marj: Geçen döneme göre daralmaya rağmen %{efk_marj_c:.1f} EFK marjı ile güçlü kârlılık.")
+    if ertelenmis_c >= satis_c * 0.25 and ertelenmis_c > ertelenmis_o:
+        dikkat_cekenler.append(f"Güçlü Sipariş Avansı (Backlog): Alınan sipariş avansları %{avans_buyume_yuzde:+.1f} artışla {format_milyar_milyon(ertelenmis_c)} seviyesine ulaştı.")
     if not dikkat_cekenler:
         dikkat_cekenler.append("Bilanço dengesi stabil; faaliyet rutininde devam ediyor.")
 
     sevmediklerim = []
     if net_borc_ozk > 1.2: 
         sevmediklerim.append(f"Yüksek Borç: Net Borç / Özkaynak {net_borc_ozk:.2f}x sınırını aşıyor.")
-    if nakit_c > 0 and fin_borc_c > (nakit_c * 2):
-        sevmediklerim.append(f"Nakit Baskısı: Borç ({format_milyar_milyon(fin_borc_c)}), nakdin {round(fin_borc_c/nakit_c, 1)} katı.")
+    elif net_borc_ozk > 0.50 and nakit_c > 0 and fin_borc_c > (nakit_c * 2):
+        sevmediklerim.append(f"Nakit Baskısı: Finansal borç ({format_milyar_milyon(fin_borc_c)}), hazır nakdin {round(fin_borc_c/nakit_c, 1)} katı (Net Borç/ÖZK: {net_borc_ozk:.2f}x).")
     if net_kar_buyume < 0:
-        sevmediklerim.append(f"Kâr Gerilemesi: Yıllık net kâr %{abs(net_kar_buyume):.1f} geriledi.")
+        sevmediklerim.append(f"Kâr Gerilemesi: Dönem net kârı %{abs(net_kar_buyume):.1f} geriledi.")
     if marj_fark_puan < -1.5:
-        sevmediklerim.append(f"Marj Erozyonu: Operasyonel marj {abs(marj_fark_puan):.1f} puan daraldı.")
+        sevmediklerim.append(f"Marj Daralması: Esas faaliyet kâr marjı önceki döneme göre {abs(marj_fark_puan):.1f} puan daraldı.")
     if f_skor < 7: 
-        sevmediklerim.append(f"Piotroski {f_skor}/9 ile 7 eşiğinin altında kaldı.")
+        sevmediklerim.append(f"Piotroski {f_skor}/9 ile 7 tam kalite eşiğinin altında kaldı.")
     if not sevmediklerim: 
         sevmediklerim.append("Temel tabloda kırmızı bayrak veya ciddi operasyonel zaaf tespit edilmedi.")
 
-    iptal_kosulu_metni = dna_katmani["dna_ozeti"]["kritik_risk"]["iptal_tetikleyicisi"]
-    borsaci_gozuyle_ozet = (
-        f"{sirket_adi} ({kod}), {sektor} sektöründe '{kategori}' hendek yapısıyla faaliyet gösteriyor. "
-        f"Son dönemde {format_milyar_milyon(satis_c)} ciro ve {format_milyar_milyon(net_c)} net kâr üretildi. "
-        f"Kârın nakde dönüşüm oranı {nakit_donusum_kati:.2f}x ve Net Borç/ÖZK rasyosu {net_borc_ozk:.2f}x seviyesindedir. "
-        f"Şirketin en güçlü kalkanı '{dna_katmani['dna_ozeti']['en_guclu_yani']['baslik']}' iken, "
-        f"yakından izlenen kritik zaafı '{dna_katmani['dna_ozeti']['kritik_risk']['baslik']}' tarafıdır."
-    )
-
-    # KAP_VE_TEKNIK_AMBARI'ndan Gerçek Verileri Bağla & Fiyat Senkronizasyonu Yap
+    # KAP_VE_TEKNIK_AMBARI'ndan Gerçek Verileri Bağla, Mükerrer Haberleri Tekilleştir & Fiyat Senkronizasyonu Yap
     ham_kap_verileri = TUM_KAP_HABERLERI.get(kod) or KAP_VE_TEKNIK_AMBARI.get("kap_haberleri", {}).get(kod, [])
     kap_verileri = []
+    gorulen_haber_anahtarlari = set()
     for _kp in ham_kap_verileri:
         _k_kopya = dict(_kp)
+        _tarih = str(_k_kopya.get("tarih", "")).strip()
         _bsl = str(_k_kopya.get("baslik", "")).strip()
+        _norm_imza = re.sub(r"[^a-z0-9]", "", tr_norm(_bsl))[:28]
+        _tekil_anahtar = f"{_tarih}_{_norm_imza}"
+        if _tekil_anahtar in gorulen_haber_anahtarlari:
+            continue
+        gorulen_haber_anahtarlari.add(_tekil_anahtar)
         if len(_bsl) >= 75 and not _bsl.endswith((".", "!", ")", "KAP", "…")):
-            # Kelime ortasında kesilmiş KAP başlığını son tam kelimede toparla
             if " " in _bsl[-15:]:
                 _bsl = _bsl.rsplit(" ", 1)[0].rstrip(",;:-") + "..."
             else:
@@ -1576,6 +1632,164 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
     else:
         teknik_veri = ham_tv
 
+    # === 5. SEKME: HİSSEYE ÖZEL DİNAMİK YÖNETİCİ SENTEZİ, 3 BOYUTLU İPTAL PLANI VE CANLI 5'Lİ ÇIKIŞ RADARI ===
+    hedef_agirlik_poz = round(float(pozisyon.get("hedef_agirlik", 0.0)), 2) if pozisyon else 0.0
+    aksiyon_poz = str(pozisyon.get("aksiyon", "İZLEMEDE")) if pozisyon else "İZLEMEDE"
+    fark_lot_poz = int(pozisyon.get("fark_lot", 0)) if pozisyon else 0
+    hibrit_puan_poz = float(pozisyon.get("hibrit_puan", 50.0)) if pozisyon else 50.0
+    kadroda_poz = bool(pozisyon.get("kadroda", False)) if pozisyon else False
+    min_roe_norm_s, ust_roe_norm_s, kume_adi_s = sektor_roe_normu_getir(sektor)
+
+    # A. 3 Katmanlı Dinamik Yönetici Sentezi (Bilanço + Değerleme/Teknik + Portföy Karar Gerekçesi)
+    if gercek_banka_sigorta_mi and satis_c <= 0.0:
+        temel_sentez = (
+            f"<strong>1. Bilanço & Sermaye Getirisi:</strong> {sirket_adi} ({kod}), {sektor} sektöründe <strong>'{kategori}'</strong> hendek yapısıyla faaliyet gösteriyor. "
+            f"Özkaynaklarını son dönemde <strong>%{ozk_buyume_yuzde:+.1f}</strong> büyütürken son 4 çeyrekte <strong>{format_milyar_milyon(net_kar_ttm)}</strong> net kâr ve "
+            f"<strong>%{roe:.1f} ROE</strong> (<em>{kume_adi_s} normu: %{min_roe_norm_s:.0f}-%{ust_roe_norm_s:.0f}</em>) üretti."
+        )
+    else:
+        temel_sentez = (
+            f"<strong>1. Operasyonel Güç & Nakit Kalitesi:</strong> {sirket_adi} ({kod}), {sektor} sektöründe <strong>'{kategori}'</strong> hendek yapısıyla faaliyet gösteriyor. "
+            f"Son dönemde <strong>{format_milyar_milyon(satis_c)}</strong> ciro (%{satis_buyume:+.1f}) ve <strong>{format_milyar_milyon(net_c)}</strong> dönem net kârı üretti. "
+            f"Esas faaliyet marjı <strong>%{efk_marj_c:.1f}</strong> ({marj_fark_puan:+.1f} puan), nakit dönüşüm oranı <strong>{nakit_donusum_kati:.2f}x</strong>, "
+            f"ROE <strong>%{roe:.1f}</strong> (<em>{kume_adi_s} normu: %{min_roe_norm_s:.0f}-%{ust_roe_norm_s:.0f}</em>) ve Net Borç/ÖZK <strong>{net_borc_ozk:.2f}x</strong> düzeyindedir."
+        )
+
+    if adil_deger_tl > 0:
+        iskonto_ifade = f"adil değerinin ({adil_deger_tl:.2f} TL) <strong>%{abs(iskonto_yuzde):.1f} {'altında iskontolu' if iskonto_yuzde <= 0 else 'üzerinde primli'}</strong> ({degerleme_durumu})"
+    else:
+        iskonto_ifade = f"cari <strong>{fk:.1f}x F/K</strong> çarpanıyla"
+
+    if teknik_veri:
+        teknik_ifade = (
+            f"60 günlük fiyat kanalının <strong>%{teknik_veri['kanal_konumu']:.1f}</strong> diliminde "
+            f"(Destek: {teknik_veri['destek_60g']} TL | Direnç: {teknik_veri['direnc_60g']} TL | R:R <strong>1:{teknik_veri['rr_orani']}</strong>) işlem görüyor."
+        )
+    else:
+        teknik_ifade = "teknik kanal takibinde izleniyor."
+
+    degerleme_sentez = f"<strong>2. Değerleme & Zamanlama:</strong> Hisse {fiyat:.2f} TL fiyatıyla {iskonto_ifade} konumda olup, {teknik_ifade}"
+
+    ham_fark_poz = int(pozisyon.get("ham_fark_lot", fark_lot_poz)) if pozisyon else fark_lot_poz
+    icra_plani_poz = (pozisyon.get("icra_plani") or {}) if pozisyon else {}
+    icra_aciklama_ek = f" <em>({icra_plani_poz.get('strateji_aciklama', '')})</em>" if icra_plani_poz.get("strateji_aciklama") else ""
+
+    if mevcut_agirlik > 0:
+        if "SAT" in aksiyon_poz:
+            karar_sentez = (
+                f"<strong>3. Portföy Masası & 60G R:R İcra Kararı ({aksiyon_poz}):</strong> Hisse portföyde <strong>%{mevcut_agirlik:.2f}</strong> ağırlıkla taşınıyor. "
+                f"<strong>{hibrit_puan_poz:.1f}/100</strong> Hibrit Puan ve <strong>{f_skor}/9</strong> F-Skor sonucunda hedef ağırlığı <strong>%{hedef_agirlik_poz:.2f}</strong> "
+                f"(Toplam fark: <strong>{ham_fark_poz:,} lot</strong> | Pazartesi aktif icra: <strong>{fark_lot_poz:,} lot</strong>) olarak belirlenmiştir.{icra_aciklama_ek}"
+            )
+        elif "AL" in aksiyon_poz:
+            karar_sentez = (
+                f"<strong>3. Portföy Masası & 60G R:R İcra Kararı ({aksiyon_poz}):</strong> Portföyde <strong>%{mevcut_agirlik:.2f}</strong> payla yer alan hisse, "
+                f"<strong>{hibrit_puan_poz:.1f}/100</strong> Hibrit Puan ve <strong>{f_skor}/9</strong> F-Skor kalitesiyle <strong>%{hedef_agirlik_poz:.2f}</strong> hedef ağırlığı hak ediyor "
+                f"(Toplam fark: <strong>+{ham_fark_poz:,} lot</strong> | Pazartesi aktif icra: <strong>+{fark_lot_poz:,} lot</strong>).{icra_aciklama_ek}"
+            )
+        else:
+            karar_sentez = (
+                f"<strong>3. Portföy Masası Kararı ({aksiyon_poz}):</strong> Portföydeki mevcut <strong>%{mevcut_agirlik:.2f}</strong> ağırlık, "
+                f"<strong>%{hedef_agirlik_poz:.2f}</strong> hedef ağırlıkla Faz 5 tolerans/komisyon kalkanı sınırları içinde dengededir."
+            )
+    elif kadroda_poz:
+        karar_sentez = (
+            f"<strong>3. Portföy Masası & 60G R:R İcra Kararı ({aksiyon_poz}):</strong> Şirket <strong>{hibrit_puan_poz:.1f}/100</strong> Hibrit Puan ve "
+            f"<strong>{f_skor}/9</strong> F-Skor ile Hedef 60 kadrosuna seçilmiş olup <strong>%{hedef_agirlik_poz:.2f}</strong> hedef ağırlık "
+            f"(Toplam hedef: <strong>+{ham_fark_poz:,} lot</strong> | Pazartesi 1. Kademe aktif emir: <strong>+{fark_lot_poz:,} lot</strong>) tahsis edilmiştir.{icra_aciklama_ek}"
+        )
+    else:
+        karar_sentez = (
+            f"<strong>3. Portföy Masası Kararı ({aksiyon_poz}):</strong> Şirket <strong>{hibrit_puan_poz:.1f}/100</strong> Hibrit Puan ve "
+            f"<strong>{f_skor}/9</strong> F-Skor ile Hedef 60 asil kadrosu dışında ({aksiyon_poz}) izlenmektedir."
+        )
+
+    borsaci_gozuyle_ozet = f"{temel_sentez}<br><br>{degerleme_sentez}<br><br>{karar_sentez}"
+
+    # B. 3 Boyutlu Somut Tez İptal & Stop Planı (Bilanço + Değerleme + 60G Teknik)
+    temel_iptal = dna_katmani["dna_ozeti"]["kritik_risk"]["iptal_tetikleyicisi"].replace("ŞARTA BAĞLI İPTAL TETİKLEYİCİSİ: ", "")
+    if adil_deger_tl > 0:
+        primli_esik_tl = round(adil_deger_tl * 1.25, 2)
+        if iskonto_yuzde > 25.0:
+            degerleme_iptal = (
+                f"Hisse mevcut {fiyat:.2f} TL fiyatıyla adil değerinin ({adil_deger_tl:.2f} TL) %{iskonto_yuzde:.1f} üzerinde primlidir; "
+                f"gelecek bilançoda P-F/K ({pfk if pfk > 0 else fk:.1f}x) çarpanını ucuzlatacak kâr ivmesi gelmezse çarpan doygunluğu nedeniyle ağırlık azaltılır."
+            )
+        else:
+            degerleme_iptal = (
+                f"Fiyat {primli_esik_tl:.2f} TL (Adil değerin +%25 üzeri) veya F/K {ust_fk:.1f}x doygunluk sınırını yeni kâr büyümesi olmadan aşarsa kademeli kâr realizasyonu yapılır."
+            )
+    else:
+        degerleme_iptal = f"Cari F/K ({fk:.1f}x) sektör tavanı olan {ust_fk:.1f}x sınırını faaliyet büyümesi olmadan aşarsa pozisyon azaltılır."
+
+    if teknik_veri:
+        teknik_iptal = (
+            f"60 günlük ana kanal desteği olan <strong>{teknik_veri['destek_60g']:.2f} TL</strong> (-%{teknik_veri['risk_yuzde']:.1f}) altında haftalık kapanış "
+            f"gerçekleşirse kısa/orta vadeli kanal tezi bozulur ve yeni alımlar durdurulur (Kanal Direnci: {teknik_veri['direnc_60g']:.2f} TL)."
+        )
+    else:
+        teknik_iptal = "60 günlük kanal desteği altında haftalık kapanışlarda alım kademesi durdurulur."
+
+    iptal_kosulu_metni = (
+        f"<strong>📊 1. Bilanço & Operasyonel İptal:</strong> {temel_iptal}<br>"
+        f"<strong>⚖️ 2. Değerleme & Çarpan İptali:</strong> {degerleme_iptal}<br>"
+        f"<strong>📉 3. Teknik Kanal & Fiyat Stopu (60G):</strong> {teknik_iptal}"
+    )
+
+    # C. Hisseye Özel Canlı 5'li Anayasal Çıkış Radarı (Her Madde Şirketin Gerçek Verisiyle Denetlenir)
+    # 1. Halka Açıklık & Yönetim
+    ha_durum = "🟢 GÜVENLİ" if halka_aciklik <= 55.0 else ("🟡 SINIRDA" if halka_aciklik <= 70.0 else "🚨 İHLAL")
+    kural_1 = (
+        f"[{ha_durum} | Halka Açıklık: %{halka_aciklik:.1f}] — Halka açıklık oranının %70.0 tavanını aşması "
+        f"(mevcut: %{halka_aciklik:.1f}) veya yönetim/hâkim hissedar değişiminde kurumsal nitelik kaybı."
+    )
+
+    # 2. Hâkim Ortak Pay Satışı (Canlı KAP Taraması)
+    ortak_satis_haberi = None
+    for _kh in kap_verileri:
+        _kb_norm = tr_norm(_kh.get("baslik", ""))
+        if any(_w in _kb_norm for _w in ["pay satis", "hisse satis", "ortaklik yapisi", "pay devri", "sermaye azalt"]):
+            ortak_satis_haberi = _kh.get("baslik", "")
+            break
+    if ortak_satis_haberi:
+        kural_2 = f"[🟡 KAP İZLEMEDE | Bildirim Mevcut] — KAP akışında pay/ortaklık bildirimi tespit edildi ('{ortak_satis_haberi[:55]}...'); hâkim ortağın agresif pay satışına dönüşmesi halinde çıkılır."
+    else:
+        kural_2 = f"[🟢 KAP TEMİZ | Son {len(kap_verileri)} Bildirim Tarandı] — Güncel KAP akışında hâkim ortak pay satışı yok; imtiyazlı/hâkim ortağın borsada agresif pay satışına başlaması kesin çıkış nedenidir."
+
+    # 3. İlişkili Taraflara Kaynak Aktarımı
+    iliskili_durum = "🟢 TEMİZ" if iliskili_oran < 1.0 else ("🟡 İZLEMEDE" if iliskili_oran <= 3.0 else "🚨 TEHLİKE")
+    kural_3 = (
+        f"[{iliskili_durum} | İlişkili Alacak/Aktif: %{iliskili_oran:.2f}] — İlişkili taraflardan ticari olmayan alacakların "
+        f"aktifin %3.0 uyarı ve %5.0 kırmızı çizgisini aşarak şirket dışına kaynak transferi yapılması."
+    )
+
+    # 4. Ekonomik Hendek & İş Modeli Kırılması
+    if gercek_banka_sigorta_mi and satis_c <= 0.0:
+        roe_kirilma = round(max(10.0, min_roe_norm_s * 0.65), 1)
+        hendek_durum = "🟢 KORUNUYOR" if roe >= min_roe_norm_s else ("🟡 SEKTÖR ALTI" if roe >= roe_kirilma else "🚨 EROZYON")
+        kural_4 = (
+            f"[{hendek_durum} | {kategori} | ROE: %{roe:.1f}] — {sektor} iş modelinde yapısal bozulma yaşanarak "
+            f"ROE'nin üst üste 2 çeyrek %{roe_kirilma:.1f} eşiğinin (Sektör normu: %{min_roe_norm_s:.0f}) altına çökmesi."
+        )
+    else:
+        efk_kirilma = round(max(3.0, efk_marj_c * 0.60 if efk_marj_c > 0 else 5.0), 1)
+        hendek_durum = "🟢 KORUNUYOR" if (efk_marj_c >= 12.0 and marj_fark_puan >= -2.0) else ("🟡 MARJ BASKISI" if efk_marj_c >= 6.0 else "🚨 EROZYON")
+        kural_4 = (
+            f"[{hendek_durum} | {kategori} | EFK Marjı: %{efk_marj_c:.1f}] — {sektor} pazarında rekabet üstünlüğünün "
+            f"kaybedilerek esas faaliyet marjının üst üste 2 çeyrek %{efk_kirilma:.1f} altına veya ROE'nin (%{roe:.1f}) %5.0 altına inmesi."
+        )
+
+    # 5. Muhasebe Kalitesi & Analiz Tezi Hatası (DTS & Nakit Dönüşümü)
+    dts_son_val = int(son_dipnot.get("dts_skor", 0))
+    tahakkuk_son_val = float(son_dipnot.get("tahakkuk_orani", 0.0))
+    tez_durum = "🟢 SAĞLAM" if (dts_son_val <= 15 and cfo_ok) else ("🟡 DİKKAT" if dts_son_val < 40 else "🚨 ANOMALİ")
+    kural_5 = (
+        f"[{tez_durum} | DTS: {dts_son_val}/100 | İNA/Kâr: {nakit_donusum_kati:.2f}x | Tahakkuk: %{tahakkuk_son_val:+.1f}] — "
+        f"Dipnot Tehlike Skorunun 50/100 eşiğini aşması veya işletme nakit akışının (CFO) üst üste 2 dönem negatife dönmesi."
+    )
+
+    canli_cikis_tetikleyicileri = [kural_1, kural_2, kural_3, kural_4, kural_5]
+
     return {
         "etiketler_html": etiketler_html,
         "buyume_rozetleri_html": buyume_rozetleri_html,
@@ -1585,6 +1799,7 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
         "sirketi_tani": sirketi_tani, "dna_ve_gidisat": dna_ve_gidisat, "bilanco_degisimleri": bilanco_degisimleri,
         "kap_haberleri": kap_verileri,
         "teknik_veri": teknik_veri,
+        "icra_plani": icra_plani_poz,
         "dna_ozeti": dna_katmani["dna_ozeti"],
         "oz_turkce_seridi": dna_katmani["oz_turkce_seridi"],
         "roe_serisi": roe_serisi,
@@ -1602,13 +1817,7 @@ def uret_serkan_unal_karnesi(s: dict, pozisyon: dict = None) -> dict:
         "bolum5_karar_ve_cikis": {
             "hendek_sinifi": kategori,
             "portfoy_tavani": f"Maksimum %{tavan:.1f}",
-            "cikis_tetikleyicileri": [
-                "Yönetim veya hâkim hissedar değişimi ve kurumsal nitelik kaybı",
-                "Hâkim hissedarın borsada doğrudan agresif pay satışı başlatması",
-                "İlişkili taraflara şüpheli kaynak veya fon aktarımı",
-                "Şirketin ana iş modelinde ve pazarında yapısal kırılma",
-                "İlk analiz tezinde kritik bir hesaplama veya temel hata tespiti"
-            ]
+            "cikis_tetikleyicileri": canli_cikis_tetikleyicileri
         }
     }
 
@@ -1715,7 +1924,13 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
             yeni_giris_rozet = ' <span style="background:#10b981; color:#022c22; font-size:9px; padding:2px 5px; border-radius:4px; font-weight:bold; box-shadow: 0 0 5px #10b981; position:relative; top:-2px; margin-left:4px; animation: pulse 2s infinite;">YENİ</span>'
 
         kz_renk = "#34d399" if r["KZ_Yuzde"] >= 0 else "#f87171"
-        fark_metin = f"+{r['Fark_Lot']:,}" if r['Fark_Lot'] > 0 else f"{r['Fark_Lot']:,}"
+        fark_ana = f"+{r['Fark_Lot']:,}" if r['Fark_Lot'] > 0 else f"{r['Fark_Lot']:,}"
+        ham_fark = r.get("Ham_Fark_Lot", r["Fark_Lot"])
+        if ham_fark != r["Fark_Lot"] and r["Fark_Lot"] != 0:
+            ham_str = f"+{ham_fark:,}" if ham_fark > 0 else f"{ham_fark:,}"
+            fark_metin = f"{fark_ana}<div style='font-size:9.5px; color:#94a3b8; font-weight:normal;'>Toplam: {ham_str}</div>"
+        else:
+            fark_metin = fark_ana
 
         # 4'LÜ SINIFLANDIRMA VE CSS ETİKETLERİ
         classes = ["hisse-satiri"]
@@ -1745,7 +1960,14 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
             fark_metin = "-"
             renk = "badge-fail"
         else:
-            renk = "badge-ok" if "AL" in aksiyon else ("badge-fail" if "SAT" in aksiyon else "badge-warn")
+            if "FREN" in aksiyon or "KADEMELİ SAT" in aksiyon:
+                renk = "badge-warn"
+            elif "AL" in aksiyon:
+                renk = "badge-ok"
+            elif "SAT" in aksiyon:
+                renk = "badge-fail"
+            else:
+                renk = "badge-warn"
 
         # Mevcut % ve Hedef % için görsel barlar
         mevcut_bar_w = min(100, int(r['Mevcut_Pay'] * 5))
@@ -1781,7 +2003,7 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
             <td><span class="{renk}">{aksiyon}</span></td>
         </tr>"""
 
-    karneler_json_str = json.dumps(karneler, ensure_ascii=False)
+    karneler_json_str = json.dumps(karneler, ensure_ascii=False).replace('</', '<\\/').replace('\u2028', '\\u2028').replace('\u2029', '\\u2029')
 
     html_icerik = f"""<!DOCTYPE html>
 <html lang="tr">
@@ -2489,6 +2711,33 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
                         '</div>' +
                     '</div>' +
                 '</div>';
+
+                const icra = k.icra_plani;
+                if (icra && icra.kademeler && icra.kademeler.length > 0) {{
+                    let kademeSatirlari = '';
+                    icra.kademeler.forEach(kd => {{
+                        const tutarMetin = kd.tutar > 0 ? kd.tutar.toLocaleString('tr-TR') + ' TL' : '-';
+                        kademeSatirlari += '<tr>' +
+                            '<td><strong style="color:#38bdf8;">' + kd.kademe + '</strong></td>' +
+                            '<td><strong style="color:#f8fafc;">' + kd.lot + '</strong></td>' +
+                            '<td><strong style="color:#facc15;">' + kd.fiyat + ' TL</strong></td>' +
+                            '<td>' + tutarMetin + '</td>' +
+                            '<td style="color:#cbd5e1;">' + kd.kosul + '</td>' +
+                        '</tr>';
+                    }});
+
+                    t4 += '<div class="info-card" style="background:#111827; border:1px solid #1f2937; border-left:4px solid ' + (icra.strateji_renk || '#38bdf8') + '; padding:18px; margin-top:14px;">' +
+                        '<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">' +
+                            '<span style="font-size:14px; font-weight:bold; color:' + (icra.strateji_renk || '#38bdf8') + ';">📋 60G ASİMETRİK R:R KADEMELİ EMİR VE İCRA PLANI: ' + icra.strateji_baslik + '</span>' +
+                            '<span style="font-size:11.5px; color:#94a3b8;">Toplam Hedef Fark: <strong style="color:#f8fafc;">' + (icra.ham_fark_lot > 0 ? '+' : '') + icra.ham_fark_lot + ' Lot</strong> &nbsp;|&nbsp; Pazartesi Aktif: <strong style="color:#facc15;">' + (icra.pazartesi_lot > 0 ? '+' : '') + icra.pazartesi_lot + ' Lot</strong></span>' +
+                        '</div>' +
+                        '<div style="font-size:12px; color:#cbd5e1; margin-bottom:12px; line-height:1.45;">' + icra.strateji_aciklama + '</div>' +
+                        '<table class="matris-table" style="margin:0;">' +
+                            '<thead><tr><th>Kademe & Emir Tipi</th><th>Lot Miktarı</th><th>Emir Fiyatı</th><th>Yaklaşık Tutar</th><th>İcra & Tetikleme Koşulu</th></tr></thead>' +
+                            '<tbody>' + kademeSatirlari + '</tbody>' +
+                        '</table>' +
+                    '</div>';
+                }}
             }} else {{
                 t4 = tvKartHtml + 
                     '<div class="info-card meal-text" style="color:#94a3b8;">Bu hisse için 60 günlük teknik kanal henüz hesaplanmadı. Yukarıdaki butonla TradingView grafiğini canlı inceleyebilirsiniz.</div>';
@@ -2516,10 +2765,11 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
                       '<strong>⚡ Dinamik Çıkış Kuralı (' + dna.kritik_risk.baslik + '):</strong><br>' + iptalKosulu +
                   '</div>';
 
-            t5 += '<div class="section-title" style="color:#f87171;">🚨 SERKAN ÜNAL KESİN ÇIKIŞ TETİKLEYİCİLERİ</div>';
+            t5 += '<div class="section-title" style="color:#f87171;">🚨 SERKAN ÜNAL 5\\'Lİ CANLI ÇIKIŞ RADARI (ANAYASAL TETİKLEYİCİLER)</div>';
             t5 += '<div style="background:#111827; border:1px solid #1f2937; border-radius:8px; padding:10px;">';
             k.bolum5_karar_ve_cikis.cikis_tetikleyicileri.forEach((kural, idx) => {{ 
-                t5 += '<div class="cikis-kural"><strong>' + (idx+1) + '.</strong> ' + kural + '</div>'; 
+                const kSinif = kural.includes('🚨') ? 'cikis-kural' : (kural.includes('🟡') ? 'warn-box' : 'good-box');
+                t5 += '<div class="' + kSinif + '" style="margin-bottom:6px;"><strong>' + (idx+1) + '.</strong> ' + kural + '</div>'; 
             }});
             t5 += '</div>';
             t5 += '</div>';
@@ -2650,31 +2900,216 @@ def uret_portfoy_kalkani_html(tablo_verileri, karneler, toplam_portfoy, hisse_po
         f.write(html_icerik)
 
 # ==============================================================================
-# KANTİTATİF TOLERANS VE KOMİSYON KALKANI (FAZ 5)
+# KANTİTATİF TOLERANS, KOMİSYON KALKANI VE 60G ASİMETRİK R:R İCRA MOTORU (FAZ 5 & FAZ 10)
 # ==============================================================================
-POZISYON_TOLERANS_ORANI = 0.20          # %20: Pozisyon içi sapma eşiği
-ASGARI_PORTFOY_AGIRLIK_ETKISI = 0.005   # %0.5: Portföyün %0.5'inden küçük farklar elenir
+POZISYON_TOLERANS_ORANI = 0.25          # ±%25: Mevcut lot hedef lottan %25'ten az sapmışsa dokunma
+ASGARI_PORTFOY_AGIRLIK_ETKISI = 0.005   # %0.5: Portföyün %0.5'inden (~7.000 TL) küçük farklar elenir
 
-def toleransli_aksiyon_hesapla(mevcut_lot: int, hedef_lot: int, guncel_fiyat: float, toplam_portfoy_tl: float):
-    fark_lot = int(hedef_lot - mevcut_lot)
-    islem_tutari = round(abs(fark_lot * guncel_fiyat), 2)
-    portfoy_etkisi = (islem_tutari / toplam_portfoy_tl) if toplam_portfoy_tl > 0 else 0.0
+def toleransli_aksiyon_hesapla(mevcut_lot: int, hedef_lot: int, guncel_fiyat: float, toplam_portfoy_tl: float, teknik_veri: dict = None, s_veri: dict = None):
+    ham_fark_lot = int(hedef_lot - mevcut_lot)
+    ham_islem_tutari = round(abs(ham_fark_lot * guncel_fiyat), 2)
+    portfoy_etkisi = (ham_islem_tutari / toplam_portfoy_tl) if toplam_portfoy_tl > 0 else 0.0
 
+    # 1. Faz 5 Çift Kalkanlı Tolerans Penceresi (±%25 Lot Toleransı VEYA <%0.5 Portföy Etkisi)
+    dengede_mi = False
     if mevcut_lot > 0:
-        sapma_orani = abs(fark_lot) / mevcut_lot
-        # Sapma %20'den azsa VEYA toplam portföye etkisi %0.5'in altındaysa dokunma
-        if sapma_orani <= POZISYON_TOLERANS_ORANI or portfoy_etkisi < ASGARI_PORTFOY_AGIRLIK_ETKISI:
-            return "KORU / DENGEDE", 0, 0.0
-        elif fark_lot > 0:
-            return "AL / EKLE", fark_lot, islem_tutari
-        else:
-            return "SAT / AZALT", fark_lot, islem_tutari
+        sapma_orani = abs(ham_fark_lot) / max(mevcut_lot, hedef_lot, 1)
+        lot_oransal_fark = abs(ham_fark_lot) / mevcut_lot
+        if lot_oransal_fark <= POZISYON_TOLERANS_ORANI or sapma_orani <= 0.20 or portfoy_etkisi < ASGARI_PORTFOY_AGIRLIK_ETKISI:
+            dengede_mi = True
     else:
-        # Yeni alınacak aday hisse: Portföyün en az %0.5'i kadar ağırlık oluşturuyorsa
-        if portfoy_etkisi >= ASGARI_PORTFOY_AGIRLIK_ETKISI and hedef_lot > 0:
-            return "AL / EKLE", hedef_lot, round(hedef_lot * guncel_fiyat, 2)
+        if portfoy_etkisi < ASGARI_PORTFOY_AGIRLIK_ETKISI or hedef_lot <= 0:
+            dengede_mi = True
+
+    destek_60g = round(guncel_fiyat * 0.88, 2)
+    direnc_60g = round(guncel_fiyat * 1.15, 2)
+    kanal_konumu = 50.0
+    rr_orani = 1.25
+    hacim_kati = 1.0
+    rs_bist_fark = 0.0
+
+    if teknik_veri and guncel_fiyat > 0:
+        destek_60g = min(float(teknik_veri.get("destek_60g", guncel_fiyat * 0.88)), round(guncel_fiyat * 0.99, 2))
+        direnc_60g = max(float(teknik_veri.get("direnc_60g", guncel_fiyat * 1.15)), round(guncel_fiyat * 1.01, 2))
+        kanal_boyu = max(direnc_60g - destek_60g, guncel_fiyat * 0.01, 0.01)
+        kanal_konumu = round(max(0.0, min(100.0, ((guncel_fiyat - destek_60g) / kanal_boyu) * 100.0)), 1)
+        risk_yuzde = round(max(0.5, ((guncel_fiyat - destek_60g) / guncel_fiyat) * 100.0), 1)
+        odul_yuzde = round(max(0.5, ((direnc_60g - guncel_fiyat) / guncel_fiyat) * 100.0), 1)
+        rr_orani = round(odul_yuzde / max(risk_yuzde, 0.5), 2)
+        hacim_kati = float(teknik_veri.get("hacim_kati", 1.0))
+        rs_bist_fark = float(teknik_veri.get("rs_bist_fark", 0.0))
+
+    orta_bant_fiyat = round((destek_60g + direnc_60g) / 2.0, 2)
+    ara_destek_fiyat = round((guncel_fiyat + destek_60g) / 2.0, 2)
+
+    if dengede_mi or ham_fark_lot == 0:
+        icra_plani = {
+            "strateji_baslik": "⚖️ POZİSYON DENGEDE (TOLERANS KALKANI AKTİF)",
+            "strateji_renk": "#f59e0b",
+            "strateji_aciklama": "Mevcut pozisyon ile hedef ağırlık arasındaki fark %20 sapma veya %0.5 portföy komisyon eşiğinin altında olduğu için işlem yapılmaz.",
+            "ham_fark_lot": 0,
+            "pazartesi_lot": 0,
+            "pasif_bekleyen_lot": 0,
+            "kademeler": [
+                {"kademe": "Mevcut Durum", "lot": mevcut_lot, "fiyat": round(guncel_fiyat, 2), "tutar": round(mevcut_lot * guncel_fiyat, 0), "kosul": "Komisyon kalkanı devrede; pozisyon korunuyor."}
+            ]
+        }
+        return "KORU / DENGEDE", 0, 0.0, icra_plani
+
+    # 2. ALIM YÖNÜ (ham_fark_lot > 0) — 4 KURALLI ASİMETRİK R:R & KIRILIM MOTORU
+    if ham_fark_lot > 0:
+        f_skor = int(s_veri.get("piotroski_skor", 6)) if s_veri else 6
+        cfo_kaliteli = bool(s_veri.get("cfo_buyuk_net_kar", False)) if s_veri else False
+        iskonto = float(s_veri.get("iskonto_orani", 0.0)) if s_veri else 0.0
+
+        # İstisna: Hacimli Trend Kırılımı (Breakout)
+        kirilim_istisnasi = (
+            kanal_konumu > 75.0 and f_skor >= 7 and cfo_kaliteli
+            and iskonto <= 15.0 and hacim_kati >= 1.4 and rs_bist_fark >= 4.0
+        )
+
+        if kirilim_istisnasi:
+            k1_lot = max(1, int(round(ham_fark_lot * 0.65)))
+            k2_lot = max(0, ham_fark_lot - k1_lot)
+            aksiyon = "AL / KIRILIM (2/3)"
+            icra_plani = {
+                "strateji_baslik": "🚀 HACİMLİ TREND KIRILIMI (BREAKOUT — 2/3 AKTİF GİRİŞ)",
+                "strateji_renk": "#10b981",
+                "strateji_aciklama": f"Hisse kanal üst bandında (%{kanal_konumu:.1f}) olmasına rağmen {hacim_kati:.2f}x hacim çarpanı, BIST'e göre +%{rs_bist_fark:.1f} göreceli güç ve {f_skor}/9 F-Skor ile yeni trend kırılımı yapıyor.",
+                "ham_fark_lot": ham_fark_lot,
+                "pazartesi_lot": k1_lot,
+                "pasif_bekleyen_lot": k2_lot,
+                "kademeler": [
+                    {"kademe": "1. Kademe (Pazartesi Aktif — %65)", "lot": f"+{k1_lot:,}", "fiyat": round(guncel_fiyat, 2), "tutar": round(k1_lot * guncel_fiyat, 0), "kosul": "Hacimli kırılım teyidiyle Pazartesi doğrudan alım"},
+                    {"kademe": "2. Kademe (Onay / Pullback — %35)", "lot": f"+{k2_lot:,}", "fiyat": ara_destek_fiyat, "tutar": round(k2_lot * ara_destek_fiyat, 0), "kosul": f"{ara_destek_fiyat} TL ara destek onayına pasif alım emri"},
+                    {"kademe": "Kanal Stop / Tez İptal Seviyesi", "lot": "STOP", "fiyat": destek_60g, "tutar": 0, "kosul": f"{destek_60g} TL (60G Ana Destek) altı haftalık kapanışta alım durdurulur"}
+                ]
+            }
+            return aksiyon, k1_lot, round(k1_lot * guncel_fiyat, 2), icra_plani
+
+        elif kanal_konumu <= 30.0 and rr_orani >= 2.0:
+            # Kural 1: Dipte Asimetrik Alım (2/3 Aktif + 1/3 Pasif Destek)
+            k1_lot = max(1, int(round(ham_fark_lot * 0.65)))
+            k2_lot = max(0, ham_fark_lot - k1_lot)
+            aksiyon = "AL / DİPTE (2/3)"
+            icra_plani = {
+                "strateji_baslik": f"🟢 60G DESTEK BÖLGESİ & YÜKSEK ASİMETRİ (R:R 1:{rr_orani} — 2/3 AKTİF ALIM)",
+                "strateji_renk": "#10b981",
+                "strateji_aciklama": f"Fiyat 60 günlük kanalın dip bölgesinde (%{kanal_konumu:.1f}) ve Ödül/Risk oranı 1:{rr_orani} olduğu için toplam hedef lotun %65'i Pazartesi aktif alınır, %35'i ana desteğe pasif yazılır.",
+                "ham_fark_lot": ham_fark_lot,
+                "pazartesi_lot": k1_lot,
+                "pasif_bekleyen_lot": k2_lot,
+                "kademeler": [
+                    {"kademe": "1. Kademe (Pazartesi Aktif — %65)", "lot": f"+{k1_lot:,}", "fiyat": round(guncel_fiyat, 2), "tutar": round(k1_lot * guncel_fiyat, 0), "kosul": "60G destek bölgesinde yüksek R:R ile Pazartesi aktif giriş"},
+                    {"kademe": "2. Kademe (60G Ana Destek — %35)", "lot": f"+{k2_lot:,}", "fiyat": destek_60g, "tutar": round(k2_lot * destek_60g, 0), "kosul": f"{destek_60g} TL 60G ana destek iğnesine pasif limit emir"},
+                    {"kademe": "60G Kanal Direnç Hedefi", "lot": "HEDEF", "fiyat": direnc_60g, "tutar": 0, "kosul": f"{direnc_60g} TL ana direnç bölgesinde R:R yeniden değerlendirilir"}
+                ]
+            }
+            return aksiyon, k1_lot, round(k1_lot * guncel_fiyat, 2), icra_plani
+
+        elif mevcut_lot >= int(hedef_lot * 0.28) and kanal_konumu > 30.0:
+            # KADEME HAFIZA KALKANI: 1. Kademe (%30+) zaten portföyde alınmış ve fiyat henüz 60G desteğe (<=%30) inmemiş!
+            # Her Pazartesi aracı kuruma komisyon ödeyip cari fiyattan lot eklenmez; kalan lotlar destek seviyelerinde pasif bekler.
+            k2_lot = max(1, int(round(ham_fark_lot * 0.50)))
+            k3_lot = max(0, ham_fark_lot - k2_lot)
+            aksiyon = "KORU / DESTEK BEKLE"
+            icra_plani = {
+                "strateji_baslik": f"🛡️ 1. KADEME PORTFÖYDE MEVCUT — YENİ EKLEME İÇİN DESTEK BEKLENİYOR (KANAL %{kanal_konumu:.1f})",
+                "strateji_renk": "#f59e0b",
+                "strateji_aciklama": f"Portföyde {mevcut_lot:,} lot (1. Kademe) zaten mevcut. Fiyat henüz 60G destek bölgesine inmediği için (%{kanal_konumu:.1f}) bu Pazartesi cari fiyattan işlem yapılmaz (0 Lot); kalan +{ham_fark_lot:,} lot aşağıdaki destek seviyelerinde pasif bekler.",
+                "ham_fark_lot": ham_fark_lot,
+                "pazartesi_lot": 0,
+                "pasif_bekleyen_lot": ham_fark_lot,
+                "kademeler": [
+                    {"kademe": "Mevcut 1. Kademe (Portföyde)", "lot": f"{mevcut_lot:,}", "fiyat": round(guncel_fiyat, 2), "tutar": round(mevcut_lot * guncel_fiyat, 0), "kosul": "Öncü kademe alındı; Pazartesi piyasa emri gönderilmez (Komisyon Kalkanı)"},
+                    {"kademe": "2. Kademe (Ara Destek Pasif — %50)", "lot": f"+{k2_lot:,}", "fiyat": ara_destek_fiyat, "tutar": round(k2_lot * ara_destek_fiyat, 0), "kosul": f"Yalnızca fiyat {ara_destek_fiyat} TL ara desteğine çekilirse alım yapılır"},
+                    {"kademe": "3. Kademe (60G Ana Destek Pasif — %50)", "lot": f"+{k3_lot:,}", "fiyat": destek_60g, "tutar": round(k3_lot * destek_60g, 0), "kosul": f"Yalnızca fiyat {destek_60g} TL 60G ana desteğine inerse tamamlanır"}
+                ]
+            }
+            return aksiyon, 0, 0.0, icra_plani
+
+        elif kanal_konumu <= 65.0 and rr_orani >= 1.0:
+            # Kural 2: Kanal Orta Bandı Standart 3 Kademe (%35 - %35 - %30) — Yalnızca 0 Lotlu Yeni Adaylarda 1. Kademeyi Aç
+            k1_lot = max(1, int(round(ham_fark_lot * 0.35)))
+            k2_lot = max(0, int(round(ham_fark_lot * 0.35)))
+            k3_lot = max(0, ham_fark_lot - k1_lot - k2_lot)
+            aksiyon = "AL / KADEMELİ (1/3)"
+            icra_plani = {
+                "strateji_baslik": f"🔵 KANAL ORTA BANT (1/3 - 1/3 - 1/3 KADEMELİ ALIM PLANI)",
+                "strateji_renk": "#38bdf8",
+                "strateji_aciklama": f"Fiyat 60 günlük kanalın orta bölgesinde (%{kanal_konumu:.1f}, R:R 1:{rr_orani}). Serkan Ünal 3 kademeli pozisyon inşası gereği Pazartesi yalnız 1/3 öncü kademe alınır, kalan 2/3 desteklere pasif dizilir.",
+                "ham_fark_lot": ham_fark_lot,
+                "pazartesi_lot": k1_lot,
+                "pasif_bekleyen_lot": k2_lot + k3_lot,
+                "kademeler": [
+                    {"kademe": "1. Kademe (Pazartesi Öncü — %35)", "lot": f"+{k1_lot:,}", "fiyat": round(guncel_fiyat, 2), "tutar": round(k1_lot * guncel_fiyat, 0), "kosul": "Pazartesi cari fiyattan 1/3 başlangıç kademesi"},
+                    {"kademe": "2. Kademe (Ara Destek — %35)", "lot": f"+{k2_lot:,}", "fiyat": ara_destek_fiyat, "tutar": round(k2_lot * ara_destek_fiyat, 0), "kosul": f"{ara_destek_fiyat} TL ara geri çekilme seviyesine pasif alım emri"},
+                    {"kademe": "3. Kademe (60G Ana Destek — %30)", "lot": f"+{k3_lot:,}", "fiyat": destek_60g, "tutar": round(k3_lot * destek_60g, 0), "kosul": f"{destek_60g} TL 60G ana destek tamponuna pasif alım emri"}
+                ]
+            }
+            return aksiyon, k1_lot, round(k1_lot * guncel_fiyat, 2), icra_plani
+
         else:
-            return "KORU / DENGEDE", 0, 0.0
+            # Kural 3: Direnç Tavanında "Tepede Alım Freni" (%20 Öncü / %80 Geri Çekilme)
+            k1_lot = max(1, int(round(ham_fark_lot * 0.20)))
+            k2_lot = max(0, int(round(ham_fark_lot * 0.40)))
+            k3_lot = max(0, ham_fark_lot - k1_lot - k2_lot)
+            aksiyon = "AL / DİRENÇ FRENİ"
+            icra_plani = {
+                "strateji_baslik": f"🟡 DİRENÇTE ALIM FRENİ (KANAL %{kanal_konumu:.1f} | R:R 1:{rr_orani} — %20 İZLEME LOTU)",
+                "strateji_renk": "#f59e0b",
+                "strateji_aciklama": f"Şirket Hedef 60 kadrosunda ancak fiyat 60G direnç bölgesine yakın (%{kanal_konumu:.1f}) ve R:R (1:{rr_orani}) zayıf. Tepede maliyetlenmemek için Pazartesi yalnızca %20 izleme lotu alınır, %80 lot geri çekilmeye saklanır.",
+                "ham_fark_lot": ham_fark_lot,
+                "pazartesi_lot": k1_lot,
+                "pasif_bekleyen_lot": k2_lot + k3_lot,
+                "kademeler": [
+                    {"kademe": "1. Kademe (Pazartesi İzleme — %20)", "lot": f"+{k1_lot:,}", "fiyat": round(guncel_fiyat, 2), "tutar": round(k1_lot * guncel_fiyat, 0), "kosul": "Tepede FOMO önleyici %20 sembolik başlangıç lotu"},
+                    {"kademe": "2. Kademe (Kanal Orta Bant — %40)", "lot": f"+{k2_lot:,}", "fiyat": orta_bant_fiyat, "tutar": round(k2_lot * orta_bant_fiyat, 0), "kosul": f"{orta_bant_fiyat} TL kanal orta bandına soğuma/geri çekilme emri"},
+                    {"kademe": "3. Kademe (60G Ana Destek — %40)", "lot": f"+{k3_lot:,}", "fiyat": destek_60g, "tutar": round(k3_lot * destek_60g, 0), "kosul": f"{destek_60g} TL 60G ana desteğe pasif fırsat emri"}
+                ]
+            }
+            return aksiyon, k1_lot, round(k1_lot * guncel_fiyat, 2), icra_plani
+
+    # 3. SATIŞ / AZALTIM YÖNÜ (ham_fark_lot < 0) — DİPTE SATIŞ FRENİ VEYA DOĞRUDAN AZALTIM
+    else:
+        toplam_sat_lot = abs(ham_fark_lot)
+        bolum1_temiz = bool(s_veri.get("bolum1_gecti_mi", True)) if s_veri else True
+
+        if bolum1_temiz and kanal_konumu <= 25.0 and rr_orani >= 2.5 and toplam_sat_lot >= 3:
+            # Kural 4A: Dipte Satış Freni (1/3 Pazartesi Azalt, 2/3 Tepkide Sat)
+            s1_lot = max(1, int(round(toplam_sat_lot * 0.35)))
+            s2_lot = max(0, int(round(toplam_sat_lot * 0.35)))
+            s3_lot = max(0, toplam_sat_lot - s1_lot - s2_lot)
+            aksiyon = "KADEMELİ SAT (DİPTE)"
+            icra_plani = {
+                "strateji_baslik": f"🛡️ DİPTE SATIŞ FRENİ (KANAL %{kanal_konumu:.1f} | R:R 1:{rr_orani} — 1/3 AZALT / 2/3 TEPKİDE SAT)",
+                "strateji_renk": "#f59e0b",
+                "strateji_aciklama": f"Portföy ağırlık dengesi için toplam -{toplam_sat_lot:,} lot azaltım gerekiyor; ancak hisse 60G kanal desteğinde (%{kanal_konumu:.1f}) ve R:R 1:{rr_orani} olduğu için dipten mal kaptırmamak adına Pazartesi yalnız 1/3'ü (-{s1_lot:,} lot) satılır, kalan 2/3 tepki yükselişine pasif yazılır.",
+                "ham_fark_lot": ham_fark_lot,
+                "pazartesi_lot": -s1_lot,
+                "pasif_bekleyen_lot": -(s2_lot + s3_lot),
+                "kademeler": [
+                    {"kademe": "1. Kademe (Pazartesi Aktif — %35)", "lot": f"-{s1_lot:,}", "fiyat": round(guncel_fiyat, 2), "tutar": round(s1_lot * guncel_fiyat, 0), "kosul": "Ağırlık riskini düşürmek için Pazartesi 1/3 kısmi azaltım"},
+                    {"kademe": "2. Kademe (Kanal Orta Bant — %35)", "lot": f"-{s2_lot:,}", "fiyat": orta_bant_fiyat, "tutar": round(s2_lot * orta_bant_fiyat, 0), "kosul": f"{orta_bant_fiyat} TL kanal orta bant tepkisine pasif satış emri"},
+                    {"kademe": "3. Kademe (60G Ana Direnç — %30)", "lot": f"-{s3_lot:,}", "fiyat": direnc_60g, "tutar": round(s3_lot * direnc_60g, 0), "kosul": f"{direnc_60g} TL 60G ana direnç seviyesine pasif satış emri"}
+                ]
+            }
+            return aksiyon, -s1_lot, round(s1_lot * guncel_fiyat, 2), icra_plani
+        else:
+            # Kural 4B: Standart / Dirençte Doğrudan Satış
+            aksiyon = "SAT / AZALT"
+            icra_plani = {
+                "strateji_baslik": "🔴 DOĞRUDAN POZİSYON AZALTIMI / HEDEF AĞIRLIĞA ÇEKİLME",
+                "strateji_renk": "#ef4444",
+                "strateji_aciklama": f"Hisse 60G dip koruma bölgesi dışında (%{kanal_konumu:.1f}, R:R 1:{rr_orani}) veya kadro dışı olduğu için hedef ağırlığa inmek üzere Pazartesi tek kalemde -{toplam_sat_lot:,} lot azaltılır.",
+                "ham_fark_lot": ham_fark_lot,
+                "pazartesi_lot": ham_fark_lot,
+                "pasif_bekleyen_lot": 0,
+                "kademeler": [
+                    {"kademe": "1. Kademe (Pazartesi Aktif — %100)", "lot": f"-{toplam_sat_lot:,}", "fiyat": round(guncel_fiyat, 2), "tutar": round(toplam_sat_lot * guncel_fiyat, 0), "kosul": "Pazartesi cari fiyattan doğrudan hedef ağırlığa çekilme"}
+                ]
+            }
+            return aksiyon, ham_fark_lot, ham_islem_tutari, icra_plani
 
 # ==============================================================================
 # 5. ANA AKIŞ MOTORU (GERÇEK KASA, SEKTÖR KALKANI & GOOGLE SHEETS AKTARIMI)
@@ -2934,12 +3369,15 @@ if __name__ == "__main__":
         h_tutar = round(toplam_portfoy_tl * (h_pay / 100.0), 2)
         h_lot = int(round(h_tutar / fiyat)) if fiyat > 0 else 0
         
-        # Matematiksel Çift Tolerans Filtresi
-        aksiyon, fark_lot, islem_tutari = toleransli_aksiyon_hesapla(
+        # Matematiksel Çift Tolerans Filtresi & 60G Asimetrik R:R Kademeli İcra Motoru
+        tv_ham_item = KAP_VE_TEKNIK_AMBARI.get("teknik_veriler", {}).get(kod, None)
+        aksiyon, fark_lot, islem_tutari, icra_plani = toleransli_aksiyon_hesapla(
             mevcut_lot=m_lot,
             hedef_lot=h_lot,
             guncel_fiyat=fiyat,
-            toplam_portfoy_tl=toplam_portfoy_tl
+            toplam_portfoy_tl=toplam_portfoy_tl,
+            teknik_veri=tv_ham_item,
+            s_veri=item["ham_veri"]
         )
         kz_yuzde = round(((fiyat / item["ort_maliyet"]) - 1) * 100, 2) if item["ort_maliyet"] > 0 else 0.0
 
@@ -2958,11 +3396,13 @@ if __name__ == "__main__":
 
         item["roe_rozet"] = roe_rozet
 
+        ham_fark_lot_deger = int(icra_plani.get("ham_fark_lot", fark_lot))
         tablo_verileri.append({
             "Kod": kod, "Sektör": item["sektor"], "Hendek": item["kategori"], "F_Skor": item["f_skor"],
             "Hibrit_Puan": item["hibrit_puan"],
             "Mevcut_Lot": m_lot, "Fiyat": fiyat, "Mevcut_Tutar": m_tutar, "Mevcut_Pay": m_pay,
             "Hedef_Pay": h_pay, "Hedef_Tutar": h_tutar, "Hedef_Lot": h_lot, "Fark_Lot": fark_lot,
+            "Ham_Fark_Lot": ham_fark_lot_deger,
             "Aksiyon": aksiyon, "KZ_Yuzde": kz_yuzde, "Katsayi": item["katsayi"], "Islem_Tutari": islem_tutari,
             "Ort_Maliyet": item["ort_maliyet"],
             "kadroda": item["kadroda"],
@@ -2970,7 +3410,27 @@ if __name__ == "__main__":
             "ROE_Rozet": item["roe_rozet"]
         })
 
-        poz_bilgi = {"agirlik_yuzde": m_pay, "kademe": mevcut_pozisyonlar.get(kod, {}).get("kademe", "1/3 Başlangıç")}
+        if not item["kadroda"] and m_lot == 0 and item["is_radar"]:
+            aksiyon_karne = "RADAR / YEDEK"
+        elif not item["kadroda"] and m_lot == 0 and not item["is_radar"]:
+            aksiyon_karne = "ELENDİ"
+        else:
+            aksiyon_karne = aksiyon
+
+        poz_bilgi = {
+            "agirlik_yuzde": m_pay,
+            "hedef_agirlik": h_pay,
+            "mevcut_lot": m_lot,
+            "hedef_lot": h_lot,
+            "fark_lot": fark_lot,
+            "ham_fark_lot": ham_fark_lot_deger,
+            "icra_plani": icra_plani,
+            "aksiyon": aksiyon_karne,
+            "hibrit_puan": item["hibrit_puan"],
+            "kadroda": item["kadroda"],
+            "is_radar": item["is_radar"],
+            "kademe": mevcut_pozisyonlar.get(kod, {}).get("kademe", "1/3 Başlangıç")
+        }
         karneler[kod] = uret_serkan_unal_karnesi(item["ham_veri"], poz_bilgi)
 
     # --- HTML İÇİN 3 KATMANLI SIRALAMA MANTIĞI ---

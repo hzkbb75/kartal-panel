@@ -1,10 +1,10 @@
 {
   "kod": "VESTL",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 0.6,
-      "icr_kati": -26.0,
+      "efm_yuzde": 0.4,
+      "icr_kati": -35.93,
       "tahakkuk_orani": -5.27,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -26.0x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -35.93x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 2.36 Mr ₺ (0.9x Amortisman)<br><strong>MDV:</strong> 62.27 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 2.9,
-      "icr_kati": -6.43,
+      "efm_yuzde": 2.1,
+      "icr_kati": -8.86,
       "tahakkuk_orani": -9.24,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -6.43x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -8.86x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 4.20 Mr ₺ (0.8x Amortisman)<br><strong>MDV:</strong> 65.54 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",

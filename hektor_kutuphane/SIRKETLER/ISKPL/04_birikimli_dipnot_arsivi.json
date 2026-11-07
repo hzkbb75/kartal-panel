@@ -1,10 +1,10 @@
 {
   "kod": "ISKPL",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 15.1,
-      "icr_kati": 2.27,
+      "efm_yuzde": 12.8,
+      "icr_kati": 2.68,
       "tahakkuk_orani": -2.8,
       "aga_orani": 0.0,
       "ykp_orani": 59.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 14.7,
-      "icr_kati": 2.8,
+      "efm_yuzde": 13.8,
+      "icr_kati": 2.97,
       "tahakkuk_orani": -2.84,
       "aga_orani": 0.8,
       "ykp_orani": 25.4,
@@ -51,8 +51,8 @@
       "dso_delta": -20.9
     },
     "2026/03": {
-      "efm_yuzde": 20.3,
-      "icr_kati": 1.52,
+      "efm_yuzde": 18.0,
+      "icr_kati": 1.71,
       "tahakkuk_orani": 3.53,
       "aga_orani": 16.0,
       "ykp_orani": 1.4,

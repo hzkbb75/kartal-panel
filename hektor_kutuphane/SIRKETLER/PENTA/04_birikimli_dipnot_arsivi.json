@@ -1,10 +1,10 @@
 {
   "kod": "PENTA",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 73.3,
-      "icr_kati": 2.0,
+      "efm_yuzde": 18.3,
+      "icr_kati": 7.98,
       "tahakkuk_orani": 3.71,
       "aga_orani": 0.0,
       "ykp_orani": 9.7,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 73.6,
-      "icr_kati": 1.99,
+      "efm_yuzde": 18.4,
+      "icr_kati": 7.94,
       "tahakkuk_orani": 1.32,
       "aga_orani": 0.0,
       "ykp_orani": 18.0,
@@ -51,8 +51,8 @@
       "dso_delta": 2.4
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 1.89,
+      "efm_yuzde": 26.9,
+      "icr_kati": 7.57,
       "tahakkuk_orani": -1.19,
       "aga_orani": 5.1,
       "ykp_orani": 21.2,
@@ -75,8 +75,8 @@
       "dso_delta": 5.7
     },
     "2026/06": {
-      "efm_yuzde": 50.1,
-      "icr_kati": 1.5,
+      "efm_yuzde": 12.5,
+      "icr_kati": 5.99,
       "tahakkuk_orani": 0.51,
       "aga_orani": 2.9,
       "ykp_orani": 18.5,

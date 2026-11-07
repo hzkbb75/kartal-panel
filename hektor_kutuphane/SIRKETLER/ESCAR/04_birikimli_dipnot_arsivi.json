@@ -1,10 +1,10 @@
 {
   "kod": "ESCAR",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 39.5,
-      "icr_kati": 0.55,
+      "efm_yuzde": 38.0,
+      "icr_kati": 0.57,
       "tahakkuk_orani": -11.38,
       "aga_orani": 0.0,
       "ykp_orani": 2.8,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.55x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.57x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 6.68 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 0.26,
+      "efm_yuzde": 133.3,
+      "icr_kati": 0.27,
       "tahakkuk_orani": -16.72,
       "aga_orani": 0.0,
       "ykp_orani": 12.6,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.26x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.27x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 16 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 6.05 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -52,10 +52,10 @@
     },
     "2026/03": {
       "efm_yuzde": 0.6,
-      "icr_kati": 40.97,
+      "icr_kati": 42.59,
       "tahakkuk_orani": -0.95,
       "aga_orani": 0.0,
-      "ykp_orani": 10.8,
+      "ykp_orani": 10.5,
       "dso_gun": 11.7,
       "acm_makasi": -40.3,
       "serefiye_ozk_orani": 0.0,
@@ -75,11 +75,11 @@
       "dso_delta": 0.8
     },
     "2026/06": {
-      "efm_yuzde": 59.3,
-      "icr_kati": 0.8,
+      "efm_yuzde": 54.8,
+      "icr_kati": 0.86,
       "tahakkuk_orani": -10.47,
       "aga_orani": 0.0,
-      "ykp_orani": 10.0,
+      "ykp_orani": 9.7,
       "dso_gun": 14.4,
       "acm_makasi": 35.2,
       "serefiye_ozk_orani": 0.0,
@@ -87,7 +87,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.8x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.86x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 5.46 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

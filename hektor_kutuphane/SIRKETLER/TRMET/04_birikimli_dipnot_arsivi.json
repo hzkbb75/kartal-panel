@@ -1,6 +1,6 @@
 {
   "kod": "TRMET",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -9.2,
       "aga_orani": 0.0,
-      "ykp_orani": 69.1,
+      "ykp_orani": 69.0,
       "dso_gun": 1.0,
       "acm_makasi": -29.9,
       "serefiye_ozk_orani": 0.0,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%69.1)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%69.0)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 2.21 Mr ₺ (3.8x Amortisman)<br><strong>MDV:</strong> 14.86 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

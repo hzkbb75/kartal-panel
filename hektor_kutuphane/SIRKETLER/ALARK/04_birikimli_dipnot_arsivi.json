@@ -1,13 +1,13 @@
 {
   "kod": "ALARK",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 31.6,
-      "icr_kati": 0.11,
+      "efm_yuzde": 29.1,
+      "icr_kati": 0.12,
       "tahakkuk_orani": -1.13,
       "aga_orani": 0.0,
-      "ykp_orani": 0.3,
+      "ykp_orani": 0.2,
       "dso_gun": 82.2,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 1.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.11x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.12x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 2.91 Mr ₺ (8.8x Amortisman)<br><strong>MDV:</strong> 18.07 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 38.1,
+      "efm_yuzde": 34.6,
       "icr_kati": 0.02,
       "tahakkuk_orani": -3.06,
       "aga_orani": 0.0,
-      "ykp_orani": 0.9,
+      "ykp_orani": 0.8,
       "dso_gun": 93.6,
       "acm_makasi": 20.2,
       "serefiye_ozk_orani": 1.1,
@@ -80,7 +80,7 @@
       "icr_kati": 0.13,
       "tahakkuk_orani": -3.55,
       "aga_orani": 0.0,
-      "ykp_orani": 3.4,
+      "ykp_orani": 2.9,
       "dso_gun": 393.3,
       "acm_makasi": 372.8,
       "serefiye_ozk_orani": 1.2,
@@ -97,8 +97,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.6 (1.51 Mr ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.52x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟡 Alacak-Ciro makası +%372.8 açıldı (DSO: 393.3 gün).",
-        "🔴 Faiz karşılama oranı 0.38x (ICR zayıf)."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / KADEMELİ (1/3)]: 4 çeyreklik faaliyet/dipnot taraması temiz (DTS: 15/100 | F-Skor: 8/9 | Hibrit Puan: 66.5). Kalkan Hedef Ağırlığı: %1.26 (+60 lot).",
+        "🟢 4 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/06): DTS 15/100 puan, Alacak tahsil süresi 393.3 gün (+311.1g değişim) ve ICR 0.13x düzeyinde.",
+        "🟡 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 15.7x (agresif kapasite artışı), İhracat payı %38.1 ve Net YPP/ÖZK %-87.8 (Kur açık pozisyonu izlenmeli).",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %-3.5 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": 15,
       "dso_delta": 329.9

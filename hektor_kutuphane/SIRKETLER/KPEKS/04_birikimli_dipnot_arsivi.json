@@ -1,6 +1,6 @@
 {
   "kod": "KPEKS",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -75,11 +75,11 @@
       "dso_delta": 113.5
     },
     "2026/06": {
-      "efm_yuzde": 37.0,
-      "icr_kati": 1.92,
+      "efm_yuzde": 21.1,
+      "icr_kati": 3.37,
       "tahakkuk_orani": 3.38,
       "aga_orani": 1.4,
-      "ykp_orani": 17.6,
+      "ykp_orani": 16.4,
       "dso_gun": 115.0,
       "acm_makasi": -1.2,
       "serefiye_ozk_orani": 2.0,

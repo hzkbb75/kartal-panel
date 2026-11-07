@@ -1,6 +1,6 @@
 {
   "kod": "AKBNK",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -96,7 +96,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.0 (0 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.00x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🔴 Tahakkuk anomalisi (%10.58): Kâr nakde dönüşmüyor."
+        "🟢 KARAR MEKANİZMASI [TAŞINAN HİSSE — SAT / AZALT]: 4 çeyreklik faaliyet/dipnot karnesi onaylandı (DTS: 20/100 | F-Skor: 7/9 | Hibrit Puan: 61.0). Mevcut Pay: %4.87 → Hedef Pay: %1.13 (Pazartesi: -768 lot).",
+        "🟢 4 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/06): DTS 20/100 puan, Alacak tahsil süresi 0.0 gün (+0.0g değişim) ve ICR 99.00x düzeyinde.",
+        "🟢 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 0.0x (hasat/düşük CAPEX), Konsolide/Yurt içi satış yapısı ve Net YPP/ÖZK %+0.0 ile dengeli.",
+        "🟡 SÖYLEM - NAKİT ÇELİŞKİSİ: Muhasebesel kâra karşın tahakkuk oranı (%+6.3) yüksek; kârın kasaya nakit (CFO) girişi izlenmeli."
       ],
       "dts_delta": 0,
       "dso_delta": 0.0

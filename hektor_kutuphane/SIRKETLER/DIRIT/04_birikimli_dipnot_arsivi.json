@@ -1,6 +1,6 @@
 {
   "kod": "DIRIT",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": -27.03,
+      "efm_yuzde": 121.5,
+      "icr_kati": -37.7,
       "tahakkuk_orani": 226.64,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -41,7 +41,7 @@
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%226.64): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%24.9 açıldı (DSO: 922.5 gün).",
-        "🔴 Faiz karşılama oranı -27.03x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -37.7x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 340 Mn ₺ (239.2x Amortisman)<br><strong>MDV:</strong> 109 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -97,11 +97,11 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 0 Mn ₺ (ÖZK %+0.0)<br><strong>Ham YPP:</strong> 0 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2687.7 (27 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 57.28x | <span style='color:#93c5fd;'>Yüksek Karşılık Yükü</span>"
       },
+      "dts_delta": 15,
+      "dso_delta": 644.0,
       "tutarlilik_raporu": [
         "🟡 Alacak-Ciro makası +%32.8 açıldı (DSO: 1362.3 gün)."
-      ],
-      "dts_delta": 15,
-      "dso_delta": 644.0
+      ]
     }
   }
 }

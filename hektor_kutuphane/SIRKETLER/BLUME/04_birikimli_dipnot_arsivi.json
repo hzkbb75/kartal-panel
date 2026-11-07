@@ -1,10 +1,10 @@
 {
   "kod": "BLUME",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 48.5,
-      "icr_kati": 3.15,
+      "efm_yuzde": 47.3,
+      "icr_kati": 3.24,
       "tahakkuk_orani": -8.13,
       "aga_orani": 0.0,
       "ykp_orani": 98.3,
@@ -51,8 +51,8 @@
       "dso_delta": -22.7
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 2.6,
+      "efm_yuzde": 70.8,
+      "icr_kati": 5.22,
       "tahakkuk_orani": -2.91,
       "aga_orani": 9.8,
       "ykp_orani": 32.9,
@@ -75,11 +75,11 @@
       "dso_delta": 37.0
     },
     "2026/06": {
-      "efm_yuzde": 80.8,
-      "icr_kati": 0.39,
+      "efm_yuzde": 49.4,
+      "icr_kati": 0.63,
       "tahakkuk_orani": -12.45,
       "aga_orani": 0.0,
-      "ykp_orani": 0.2,
+      "ykp_orani": 0.0,
       "dso_gun": 83.6,
       "acm_makasi": 617.3,
       "serefiye_ozk_orani": 0.0,
@@ -88,7 +88,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%617.3 açıldı (DSO: 83.6 gün).",
-        "🔴 Faiz karşılama oranı 0.39x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.63x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 3 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 202 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

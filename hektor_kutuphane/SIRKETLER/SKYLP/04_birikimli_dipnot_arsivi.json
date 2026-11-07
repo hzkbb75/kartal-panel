@@ -1,10 +1,10 @@
 {
   "kod": "SKYLP",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 0.45,
+      "efm_yuzde": 290.7,
+      "icr_kati": 0.65,
       "tahakkuk_orani": -13.11,
       "aga_orani": 0.0,
       "ykp_orani": 65.2,
@@ -16,7 +16,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Kağıt üzeri kâr payı yüksek (%65.2).",
-        "🔴 Faiz karşılama oranı 0.45x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.65x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 1 Mn ₺ (0.2x Amortisman)<br><strong>MDV:</strong> 7 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -28,11 +28,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 0.22,
+      "efm_yuzde": 273.9,
+      "icr_kati": 0.4,
       "tahakkuk_orani": -20.45,
       "aga_orani": 0.0,
-      "ykp_orani": 86.8,
+      "ykp_orani": 86.3,
       "dso_gun": 23.6,
       "acm_makasi": -5.4,
       "serefiye_ozk_orani": 16.7,
@@ -40,8 +40,8 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%86.8).",
-        "🔴 Faiz karşılama oranı 0.22x (ICR zayıf)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%86.3).",
+        "🔴 Faiz karşılama oranı 0.4x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 1 Mn ₺ (0.2x Amortisman)<br><strong>MDV:</strong> 5 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -57,7 +57,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -55.01,
       "aga_orani": 0.0,
-      "ykp_orani": 65.9,
+      "ykp_orani": 65.7,
       "dso_gun": 30.9,
       "acm_makasi": 27.4,
       "serefiye_ozk_orani": 8.7,
@@ -65,7 +65,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%65.9)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%65.7)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 5 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -77,11 +77,11 @@
       "dso_delta": 7.3
     },
     "2026/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 0.42,
+      "efm_yuzde": 108.5,
+      "icr_kati": 0.45,
       "tahakkuk_orani": -28.37,
       "aga_orani": 0.0,
-      "ykp_orani": 50.3,
+      "ykp_orani": 48.9,
       "dso_gun": 30.9,
       "acm_makasi": 34.9,
       "serefiye_ozk_orani": 9.3,
@@ -89,8 +89,8 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%50.3).",
-        "🔴 Faiz karşılama oranı 0.42x (ICR zayıf)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%48.9).",
+        "🔴 Faiz karşılama oranı 0.45x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 0 Mn ₺ (0.0x Amortisman)<br><strong>MDV:</strong> 5 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

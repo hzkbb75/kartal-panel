@@ -1,13 +1,13 @@
 {
   "kod": "CONSE",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 3.5,
-      "icr_kati": 5.83,
+      "efm_yuzde": 3.4,
+      "icr_kati": 6.04,
       "tahakkuk_orani": -2.48,
       "aga_orani": 0.0,
-      "ykp_orani": 98.2,
+      "ykp_orani": 97.1,
       "dso_gun": 28.1,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%98.2)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%97.1)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 36 Mn ₺ (0.3x Amortisman)<br><strong>MDV:</strong> 3.29 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -31,7 +31,7 @@
       "icr_kati": 235.73,
       "tahakkuk_orani": -1.02,
       "aga_orani": 5.7,
-      "ykp_orani": 56.0,
+      "ykp_orani": 48.6,
       "dso_gun": 31.4,
       "acm_makasi": 11.3,
       "serefiye_ozk_orani": 0.0,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%56.0)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%48.6)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 217 Mn ₺ (0.9x Amortisman)<br><strong>MDV:</strong> 3.53 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -51,8 +51,8 @@
       "dso_delta": 3.3
     },
     "2026/03": {
-      "efm_yuzde": 10.0,
-      "icr_kati": 0.67,
+      "efm_yuzde": 9.8,
+      "icr_kati": 0.68,
       "tahakkuk_orani": 1.22,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 0.67x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.68x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 1.08 Mr ₺ (10.2x Amortisman)<br><strong>MDV:</strong> 5.48 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -76,7 +76,7 @@
     },
     "2026/06": {
       "efm_yuzde": 3.0,
-      "icr_kati": 1.52,
+      "icr_kati": 1.54,
       "tahakkuk_orani": -8.37,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,

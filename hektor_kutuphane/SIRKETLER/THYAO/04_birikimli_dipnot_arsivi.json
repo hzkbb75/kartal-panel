@@ -1,13 +1,13 @@
 {
   "kod": "THYAO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 6.8,
-      "icr_kati": 1.93,
+      "efm_yuzde": 5.8,
+      "icr_kati": 2.24,
       "tahakkuk_orani": -2.37,
       "aga_orani": 0.0,
-      "ykp_orani": 0.9,
+      "ykp_orani": 0.8,
       "dso_gun": 21.1,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.1,
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 6.0,
-      "icr_kati": 4.11,
+      "efm_yuzde": 5.1,
+      "icr_kati": 4.84,
       "tahakkuk_orani": -4.88,
       "aga_orani": 4.8,
-      "ykp_orani": 50.1,
+      "ykp_orani": 48.1,
       "dso_gun": 18.2,
       "acm_makasi": -15.5,
       "serefiye_ozk_orani": 0.1,
@@ -39,7 +39,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%50.1)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%48.1)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 35.41 Mr ₺ (0.8x Amortisman)<br><strong>MDV:</strong> 302.23 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Kapasite Korunumu / İdame</span>",
@@ -51,11 +51,11 @@
       "dso_delta": -2.9
     },
     "2026/03": {
-      "efm_yuzde": 4.9,
-      "icr_kati": 3.05,
+      "efm_yuzde": 4.2,
+      "icr_kati": 3.57,
       "tahakkuk_orani": -1.55,
       "aga_orani": 0.0,
-      "ykp_orani": 1.3,
+      "ykp_orani": 1.1,
       "dso_gun": 21.8,
       "acm_makasi": 5.2,
       "serefiye_ozk_orani": 0.1,
@@ -75,11 +75,11 @@
       "dso_delta": 3.6
     },
     "2026/06": {
-      "efm_yuzde": 5.4,
-      "icr_kati": 2.6,
+      "efm_yuzde": 4.6,
+      "icr_kati": 3.05,
       "tahakkuk_orani": -2.35,
       "aga_orani": 0.0,
-      "ykp_orani": 2.4,
+      "ykp_orani": 2.2,
       "dso_gun": 21.5,
       "acm_makasi": 26.0,
       "serefiye_ozk_orani": 0.1,

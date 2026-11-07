@@ -1,6 +1,6 @@
 {
   "kod": "GSDDE",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -27,7 +27,7 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 40.1,
+      "efm_yuzde": 39.9,
       "icr_kati": 0.77,
       "tahakkuk_orani": -8.89,
       "aga_orani": 0.0,
@@ -51,11 +51,11 @@
       "dso_delta": 0.4
     },
     "2026/03": {
-      "efm_yuzde": 47.9,
+      "efm_yuzde": 47.4,
       "icr_kati": 0.77,
       "tahakkuk_orani": 0.75,
       "aga_orani": 0.0,
-      "ykp_orani": 2.0,
+      "ykp_orani": 0.4,
       "dso_gun": 10.5,
       "acm_makasi": 7.6,
       "serefiye_ozk_orani": 0.0,
@@ -79,7 +79,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": 4.12,
       "aga_orani": 0.0,
-      "ykp_orani": 73.9,
+      "ykp_orani": 73.3,
       "dso_gun": 2.4,
       "acm_makasi": -77.4,
       "serefiye_ozk_orani": 0.0,
@@ -87,7 +87,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%73.9)."
+        "🟡 Kağıt üzeri kâr payı yüksek (%73.3)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 967 Mn ₺ (15.7x Amortisman)<br><strong>MDV:</strong> 2.30 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -96,7 +96,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %0.2 (6 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.09x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%73.9)."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / DİPTE (2/3)]: 4 çeyreklik faaliyet/dipnot taraması temiz (DTS: 15/100 | F-Skor: 6/9 | Hibrit Puan: 81.0). Kalkan Hedef Ağırlığı: %1.36 (+1,159 lot).",
+        "🟢 4 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/06): DTS 15/100 puan, Alacak tahsil süresi 2.4 gün (-7.4g değişim) ve ICR 9.90x düzeyinde.",
+        "🟢 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 15.7x (agresif kapasite artışı), Konsolide/Yurt içi satış yapısı ve Net YPP/ÖZK %+98.0 ile dengeli.",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %+4.1 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": 0,
       "dso_delta": -8.1

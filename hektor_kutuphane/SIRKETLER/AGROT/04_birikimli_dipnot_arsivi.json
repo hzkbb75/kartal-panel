@@ -1,6 +1,6 @@
 {
   "kod": "AGROT",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": -0.71,
       "tahakkuk_orani": -10.22,
       "aga_orani": 0.0,
-      "ykp_orani": 3.2,
+      "ykp_orani": 2.2,
       "dso_gun": 170.5,
       "acm_makasi": 66.4,
       "serefiye_ozk_orani": 0.0,
@@ -51,11 +51,11 @@
       "dso_delta": 60.9
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": -0.71,
+      "efm_yuzde": 77.0,
+      "icr_kati": -1.32,
       "tahakkuk_orani": -0.08,
       "aga_orani": 0.0,
-      "ykp_orani": 0.4,
+      "ykp_orani": 0.3,
       "dso_gun": 94.7,
       "acm_makasi": -13.1,
       "serefiye_ozk_orani": 0.0,
@@ -63,7 +63,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -0.71x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -1.32x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 75 Mn ₺ (1.7x Amortisman)<br><strong>MDV:</strong> 6.61 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -75,8 +75,8 @@
       "dso_delta": -75.8
     },
     "2026/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": -0.34,
+      "efm_yuzde": 58.8,
+      "icr_kati": -1.09,
       "tahakkuk_orani": -0.94,
       "aga_orani": 0.0,
       "ykp_orani": 1.2,
@@ -87,7 +87,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı -0.34x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı -1.09x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 203 Mn ₺ (4.0x Amortisman)<br><strong>MDV:</strong> 7.20 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",

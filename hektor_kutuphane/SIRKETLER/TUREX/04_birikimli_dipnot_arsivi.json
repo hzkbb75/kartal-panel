@@ -1,6 +1,6 @@
 {
   "kod": "TUREX",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 12.9,
-      "icr_kati": 26.04,
+      "efm_yuzde": 6.7,
+      "icr_kati": 50.46,
       "tahakkuk_orani": -4.57,
       "aga_orani": 9.9,
       "ykp_orani": 20.3,

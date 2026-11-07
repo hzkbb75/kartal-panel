@@ -1,13 +1,13 @@
 {
   "kod": "DCTTR",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 29.1,
-      "icr_kati": 2.33,
+      "efm_yuzde": 26.6,
+      "icr_kati": 2.55,
       "tahakkuk_orani": 20.14,
       "aga_orani": 0.0,
-      "ykp_orani": 5.0,
+      "ykp_orani": 0.0,
       "dso_gun": 38.3,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -27,11 +27,11 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 46.8,
-      "icr_kati": 1.34,
+      "efm_yuzde": 44.5,
+      "icr_kati": 1.41,
       "tahakkuk_orani": 28.39,
       "aga_orani": 0.9,
-      "ykp_orani": 17.1,
+      "ykp_orani": 2.8,
       "dso_gun": 48.4,
       "acm_makasi": 20.7,
       "serefiye_ozk_orani": 0.0,
@@ -41,7 +41,7 @@
       "uyarilar": [
         "🔴 Tahakkuk anomalisi (%28.39): Kâr nakde dönüşmüyor.",
         "🟡 Alacak-Ciro makası +%20.7 açıldı (DSO: 48.4 gün).",
-        "🔴 Faiz karşılama oranı 1.34x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.41x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 20 Mn ₺ (1.6x Amortisman)<br><strong>MDV:</strong> 250 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -53,8 +53,8 @@
       "dso_delta": 10.1
     },
     "2026/03": {
-      "efm_yuzde": 40.3,
-      "icr_kati": 0.51,
+      "efm_yuzde": 34.2,
+      "icr_kati": 0.6,
       "tahakkuk_orani": -4.85,
       "aga_orani": 70.0,
       "ykp_orani": 30.2,
@@ -66,7 +66,7 @@
       "dts_skor": 30,
       "uyarilar": [
         "🟡 Alacak-Ciro makası +%47.5 açıldı (DSO: 90.0 gün).",
-        "🔴 Faiz karşılama oranı 0.51x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 0.6x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 18 Mn ₺ (2.1x Amortisman)<br><strong>MDV:</strong> 320 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -78,7 +78,7 @@
       "dso_delta": 41.6
     },
     "2026/06": {
-      "efm_yuzde": 44.0,
+      "efm_yuzde": 42.7,
       "icr_kati": -0.02,
       "tahakkuk_orani": -12.84,
       "aga_orani": 0.0,

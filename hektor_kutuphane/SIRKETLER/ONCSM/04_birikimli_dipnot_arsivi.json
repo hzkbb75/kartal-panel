@@ -1,6 +1,6 @@
 {
   "kod": "ONCSM",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 1.82,
+      "efm_yuzde": 122.0,
+      "icr_kati": 2.43,
       "tahakkuk_orani": -5.66,
       "aga_orani": 1.6,
       "ykp_orani": 21.6,
@@ -51,8 +51,8 @@
       "dso_delta": 10.7
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 1.69,
+      "efm_yuzde": 117.1,
+      "icr_kati": 2.2,
       "tahakkuk_orani": 0.92,
       "aga_orani": 6.3,
       "ykp_orani": 0.1,
@@ -75,8 +75,8 @@
       "dso_delta": 69.6
     },
     "2026/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 2.18,
+      "efm_yuzde": 71.1,
+      "icr_kati": 3.07,
       "tahakkuk_orani": -3.6,
       "aga_orani": 23.8,
       "ykp_orani": 1.8,

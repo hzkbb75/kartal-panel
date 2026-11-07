@@ -1,6 +1,6 @@
 {
   "kod": "GENKM",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -56,7 +56,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -1.57,
       "aga_orani": 1.4,
-      "ykp_orani": 1.3,
+      "ykp_orani": 0.0,
       "dso_gun": 84.9,
       "acm_makasi": -2.4,
       "serefiye_ozk_orani": 0.0,
@@ -80,7 +80,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -2.91,
       "aga_orani": 1.3,
-      "ykp_orani": 1.4,
+      "ykp_orani": 0.0,
       "dso_gun": 84.8,
       "acm_makasi": 1.9,
       "serefiye_ozk_orani": 0.0,

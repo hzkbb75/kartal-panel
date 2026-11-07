@@ -1,10 +1,10 @@
 {
   "kod": "YUNSA",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 15.5,
-      "icr_kati": 1.02,
+      "efm_yuzde": 11.1,
+      "icr_kati": 1.42,
       "tahakkuk_orani": -1.46,
       "aga_orani": 0.0,
       "ykp_orani": 0.4,
@@ -15,7 +15,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 15,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 1.02x (ICR zayıf)."
+        "🔴 Faiz karşılama oranı 1.42x (ICR zayıf)."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 29 Mn ₺ (0.7x Amortisman)<br><strong>MDV:</strong> 3.11 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",

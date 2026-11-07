@@ -1,21 +1,21 @@
 {
   "kod": "BERA",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": 2.19,
       "tahakkuk_orani": -0.97,
       "aga_orani": 0.0,
-      "ykp_orani": 38.2,
+      "ykp_orani": 20.2,
       "dso_gun": 62.7,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 1.0,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 0,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%38.2)."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 91 Mn ₺ (0.4x Amortisman)<br><strong>MDV:</strong> 14.89 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -31,15 +31,15 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -0.29,
       "aga_orani": 0.9,
-      "ykp_orani": 41.5,
+      "ykp_orani": 31.8,
       "dso_gun": 62.5,
       "acm_makasi": -0.2,
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 1.8,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 0,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%41.5)."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 283 Mn ₺ (1.8x Amortisman)<br><strong>MDV:</strong> 16.29 Mr ₺<br><span style='color:#34d399; font-size:10.5px;'>● Agresif Kapasite Artışı</span>",
@@ -71,7 +71,7 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> 819 Mn ₺ (ÖZK %+2.5)<br><strong>Ham YPP:</strong> 819 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kur Korumalı / Fazla</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.7 (548 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.15x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": 0,
+      "dts_delta": 15,
       "dso_delta": 25.3
     },
     "2026/06": {
@@ -79,7 +79,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -0.33,
       "aga_orani": 4.4,
-      "ykp_orani": 41.4,
+      "ykp_orani": 40.1,
       "dso_gun": 94.8,
       "acm_makasi": 50.2,
       "serefiye_ozk_orani": 0.0,
@@ -87,7 +87,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%41.4).",
+        "🟡 Kağıt üzeri kâr payı yüksek (%40.1).",
         "🟡 Alacak-Ciro makası +%50.2 açıldı (DSO: 94.8 gün)."
       ],
       "pdf_dipnot_notlari": {

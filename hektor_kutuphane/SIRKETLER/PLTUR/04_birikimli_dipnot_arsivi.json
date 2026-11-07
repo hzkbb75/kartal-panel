@@ -1,10 +1,10 @@
 {
   "kod": "PLTUR",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 95.0,
-      "icr_kati": 2.32,
+      "icr_kati": 3.27,
       "tahakkuk_orani": -0.01,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 72.2,
-      "icr_kati": 2.11,
+      "efm_yuzde": 59.7,
+      "icr_kati": 2.55,
       "tahakkuk_orani": 1.16,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -51,8 +51,8 @@
       "dso_delta": 7.0
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 1.73,
+      "efm_yuzde": 76.2,
+      "icr_kati": 2.64,
       "tahakkuk_orani": -8.83,
       "aga_orani": 2.3,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": -27.0
     },
     "2026/06": {
-      "efm_yuzde": 61.2,
-      "icr_kati": 1.87,
+      "efm_yuzde": 42.6,
+      "icr_kati": 2.69,
       "tahakkuk_orani": -10.26,
       "aga_orani": 4.4,
       "ykp_orani": 0.0,

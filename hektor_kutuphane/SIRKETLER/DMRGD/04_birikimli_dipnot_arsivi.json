@@ -1,6 +1,6 @@
 {
   "kod": "DMRGD",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -52,8 +52,8 @@
       "dso_delta": 90.9
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 4.16,
+      "efm_yuzde": 51.8,
+      "icr_kati": 14.91,
       "tahakkuk_orani": 1.68,
       "aga_orani": 0.0,
       "ykp_orani": 35.9,
@@ -98,7 +98,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %2.4 (50 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.37x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / DİPTE (2/3)]: 4 çeyreklik faaliyet/dipnot taraması temiz (DTS: 0/100 | F-Skor: 8/9 | Hibrit Puan: 61.0). Kalkan Hedef Ağırlığı: %1.63 (+1,966 lot).",
+        "🟢 BİRİKİMLİ BİLANÇO İYİLEŞMESİ (2025/03 → 2026/06): 4 çeyrekte DTS 15 puandan 0/100 seviyesine geriledi (DSO: 75.4 gün); dipnot kalitesi güçleniyor.",
+        "🟢 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 0.2x (hasat/düşük CAPEX), İhracat payı %3.9 ve Net YPP/ÖZK %+6.2 ile dengeli.",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %-8.3 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": -30,
       "dso_delta": -78.3

@@ -1,6 +1,6 @@
 {
   "kod": "LYDYE",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
@@ -32,7 +32,7 @@
       "icr_kati": 9.9,
       "tahakkuk_orani": -7.66,
       "aga_orani": 0.0,
-      "ykp_orani": 99.3,
+      "ykp_orani": 99.2,
       "dso_gun": 67.6,
       "acm_makasi": 21.8,
       "serefiye_ozk_orani": 0.0,
@@ -40,7 +40,7 @@
       "iliskili_orani": 0.0,
       "dts_skor": 30,
       "uyarilar": [
-        "🟡 Kağıt üzeri kâr payı yüksek (%99.3).",
+        "🟡 Kağıt üzeri kâr payı yüksek (%99.2).",
         "🟡 Alacak-Ciro makası +%21.8 açıldı (DSO: 67.6 gün)."
       ],
       "pdf_dipnot_notlari": {
@@ -57,7 +57,7 @@
       "icr_kati": 0.0,
       "tahakkuk_orani": -14.23,
       "aga_orani": 0.0,
-      "ykp_orani": 3.2,
+      "ykp_orani": 3.1,
       "dso_gun": 74.9,
       "acm_makasi": 23.3,
       "serefiye_ozk_orani": 0.0,
@@ -81,7 +81,7 @@
       "icr_kati": 0.01,
       "tahakkuk_orani": -15.05,
       "aga_orani": 0.0,
-      "ykp_orani": 3.4,
+      "ykp_orani": 3.3,
       "dso_gun": 77.3,
       "acm_makasi": 11.2,
       "serefiye_ozk_orani": 0.0,

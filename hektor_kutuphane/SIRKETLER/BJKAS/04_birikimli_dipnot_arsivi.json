@@ -1,13 +1,13 @@
 {
   "kod": "BJKAS",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
       "efm_yuzde": 0.0,
       "icr_kati": -10.0,
       "tahakkuk_orani": -19.7,
       "aga_orani": 0.0,
-      "ykp_orani": 8.8,
+      "ykp_orani": 8.6,
       "dso_gun": 28.0,
       "acm_makasi": 0.0,
       "serefiye_ozk_orani": 0.0,
@@ -31,7 +31,7 @@
       "icr_kati": -8.18,
       "tahakkuk_orani": -15.15,
       "aga_orani": 0.0,
-      "ykp_orani": 9.3,
+      "ykp_orani": 8.8,
       "dso_gun": 52.6,
       "acm_makasi": 76.8,
       "serefiye_ozk_orani": 0.0,
@@ -55,7 +55,7 @@
       "icr_kati": -0.7,
       "tahakkuk_orani": -4.22,
       "aga_orani": 0.0,
-      "ykp_orani": 0.3,
+      "ykp_orani": 0.1,
       "dso_gun": 90.8,
       "acm_makasi": 293.7,
       "serefiye_ozk_orani": 0.0,

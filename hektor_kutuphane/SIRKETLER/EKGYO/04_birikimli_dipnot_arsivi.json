@@ -1,10 +1,10 @@
 {
   "kod": "EKGYO",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 27.2,
-      "icr_kati": 8.85,
+      "efm_yuzde": 7.5,
+      "icr_kati": 32.24,
       "tahakkuk_orani": 3.6,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 28.9,
-      "icr_kati": 5.76,
+      "efm_yuzde": 12.7,
+      "icr_kati": 13.09,
       "tahakkuk_orani": 8.94,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -55,7 +55,7 @@
       "icr_kati": 6.0,
       "tahakkuk_orani": 2.75,
       "aga_orani": 0.0,
-      "ykp_orani": 0.6,
+      "ykp_orani": 0.5,
       "dso_gun": 137.9,
       "acm_makasi": 323.4,
       "serefiye_ozk_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 106.0
     },
     "2026/06": {
-      "efm_yuzde": 8.9,
-      "icr_kati": 4.07,
+      "efm_yuzde": 5.1,
+      "icr_kati": 7.13,
       "tahakkuk_orani": 3.54,
       "aga_orani": 0.0,
       "ykp_orani": 0.8,

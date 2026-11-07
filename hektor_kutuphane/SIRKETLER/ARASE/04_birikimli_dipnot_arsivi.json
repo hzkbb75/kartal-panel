@@ -1,10 +1,10 @@
 {
   "kod": "ARASE",
-  "son_guncelleme": "2026-11-06 17:02",
+  "son_guncelleme": "2026-11-07 10:13",
   "donemler": {
     "2025/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 1.45,
+      "efm_yuzde": 163.2,
+      "icr_kati": 2.11,
       "tahakkuk_orani": -3.86,
       "aga_orani": 0.0,
       "ykp_orani": 0.0,
@@ -13,9 +13,9 @@
       "serefiye_ozk_orani": 0.0,
       "karsilik_ozk_orani": 1.4,
       "iliskili_orani": 0.0,
-      "dts_skor": 15,
+      "dts_skor": 0,
       "uyarilar": [
-        "🔴 Faiz karşılama oranı 1.45x (ICR zayıf)."
+        "🟢 Muhasebe makyajı veya anomali tespit edilmedi."
       ],
       "pdf_dipnot_notlari": {
         "yatirim_ve_kapasite": "<strong>CAPEX:</strong> 4 Mn ₺ (0.1x Amortisman)<br><strong>MDV:</strong> 64 Mn ₺<br><span style='color:#34d399; font-size:10.5px;'>● Düşük CAPEX / Hasat Dönemi</span>",
@@ -27,8 +27,8 @@
       "dso_delta": 0.0
     },
     "2025/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 1.58,
+      "efm_yuzde": 140.3,
+      "icr_kati": 2.45,
       "tahakkuk_orani": -11.27,
       "aga_orani": 1.6,
       "ykp_orani": 0.0,
@@ -47,12 +47,12 @@
         "doviz_ve_turev": "<strong>Net YPP (Hedge Dahil):</strong> -376 Mn ₺ (ÖZK %-2.2)<br><strong>Ham YPP:</strong> -376 Mn ₺ | <span style='color:#34d399; font-weight:bold;'>Kontrollü Açık</span>",
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.0 (169 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.29x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
-      "dts_delta": -15,
+      "dts_delta": 0,
       "dso_delta": -3.5
     },
     "2026/03": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 1.71,
+      "efm_yuzde": 173.9,
+      "icr_kati": 2.3,
       "tahakkuk_orani": -4.76,
       "aga_orani": 14.2,
       "ykp_orani": 0.0,
@@ -75,8 +75,8 @@
       "dso_delta": 3.0
     },
     "2026/06": {
-      "efm_yuzde": 95.0,
-      "icr_kati": 1.9,
+      "efm_yuzde": 170.0,
+      "icr_kati": 3.31,
       "tahakkuk_orani": -7.42,
       "aga_orani": 7.5,
       "ykp_orani": 0.0,
@@ -96,7 +96,10 @@
         "tri_rehin_ipotek": "<strong>Karşılık / ÖZK:</strong> %1.4 (344 Mn ₺)<br><strong>KV Yükümlülük / ÖZK:</strong> 0.24x | <span style='color:#93c5fd;'>Temiz / Düşük Karşılık</span>"
       },
       "tutarlilik_raporu": [
-        "🟡 Alacak-Ciro makası +%31.6 açıldı (DSO: 49.4 gün)."
+        "🟢 KARAR MEKANİZMASI [HEDEF 60 ASİL KADRO — AL / DİPTE (2/3)]: 4 çeyreklik faaliyet/dipnot taraması temiz (DTS: 15/100 | F-Skor: 8/9 | Hibrit Puan: 81.0). Kalkan Hedef Ağırlığı: %2.38 (+272 lot).",
+        "🟢 4 ÇEYREKLİK DİPNOT İSTİKRARI (2025/03 → 2026/06): DTS 15/100 puan, Alacak tahsil süresi 49.4 gün (+7.4g değişim) ve ICR 3.31x düzeyinde.",
+        "🟢 YATIRIM & PAZAR DİNAMİĞİ: CAPEX/Amortisman 0.1x (hasat/düşük CAPEX), Konsolide/Yurt içi satış yapısı ve Net YPP/ÖZK %+2.9 ile dengeli.",
+        "🟢 NAKİT & TAHAKKUK TEYİDİ: Tahakkuk oranı %-7.4 (≤%5.0 sağlam) ile bilanço kârı gerçek işletme nakdine dönüşüyor."
       ],
       "dts_delta": 15,
       "dso_delta": 7.9
