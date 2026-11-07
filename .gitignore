@@ -1,11 +1,5 @@
-__pycache__/
-*.pyc
-.env
-kartal_bot.py
-token.txt
-webhook_mail.txt
-chat_id.txt
-*.key
-
-hektor_kutuphane/
-*.pdf
+# KARTAL GitHub Pages: Yalnızca index.html yayınlanır, tüm kod ve veriler yerel diskte korunur
+*
+!index.html
+!.nojekyll
+!.gitignore
